@@ -1,6 +1,19 @@
 .cabecalho{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
+.cabecalho_nav{
+    display: flex;
+    row-gap: 30px;
+}
+
+/* .retangulo{
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+    background-color: black;
+    text-align: center;
+} */
