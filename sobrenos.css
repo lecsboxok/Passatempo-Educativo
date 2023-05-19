@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 a{
-    text-decoration: so;
+    text-decoration: none;
 }
 .cabecalho{
     display: flex;
@@ -26,3 +26,60 @@ a{
     align-items: center;
     justify-content: space-around;
 }
+.cabecalho_nav_item_Doe{
+    background-color: crimson;
+    border-bottom:  10px;
+    padding: 10px 30px;
+}
+.linha{
+width: 1440px;
+height: 16px;
+left: 0px;
+top: -30px;
+
+background: #FFD233;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+.começo{
+  
+width: 1440px;
+height: 412px;
+left: 0px;
+top: 104px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(image.png);
+
+}
+.calendario{
+  
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: url(image.png);
+}
+.h1{
+    width: 247px;
+    height: 55px;
+    left: calc(50% - 247px/2 + 0.5px);
+    top: 613px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.objetivo{
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    right: 450px;
+}
+
+
