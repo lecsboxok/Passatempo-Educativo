@@ -1,14 +1,17 @@
 *{
     margin: 0;
 }
-
+@font-face {
+    font-family:aleo ;
+    src: url(Assets/Aleo-Light.ttf);
+}
 
 .titulo{
     background-color: #DCF4FF;
     
     padding: 200px;
     text-align: center;
-   font: 100px,'mont'sans-serif ;
+   font: 100px,'aleo';
 }
 
 .TDois{
@@ -20,3 +23,7 @@
 .subtitulo{
     margin-top: 20px;
 }
+.titulo .umtitulo{
+
+}
+
