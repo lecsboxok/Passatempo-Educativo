@@ -5,9 +5,10 @@
 
 .titulo{
     background-color: #DCF4FF;
+    
     padding: 200px;
     text-align: center;
-   
+   font: 100px,'mont'sans-serif ;
 }
 
 .TDois{
@@ -16,4 +17,6 @@
     padding: 200px;
     
 }
-
+.subtitulo{
+    margin-top: 20px;
+}
