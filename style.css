@@ -56,11 +56,13 @@ a{
     align-items: center;
 }
 
-.conteiner {
-    display: flex;
-}
+
 
 /* RODAPÉ */
+.container{
+
+}
+
 #contato {
     background: rgba(255, 228, 133, 0.74);
     padding: 73px;
