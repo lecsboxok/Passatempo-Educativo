@@ -63,7 +63,7 @@ a{
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
-    padding: 75px;
+    padding: 73px;
 }
 
 .redes {
@@ -77,8 +77,10 @@ a{
 
 .icone:hover {
     width: 60px;
-    opacity: 0.8;
-    background: linear-gradient(176.84deg, #000000 29.68%, rgba(255, 255, 255, 0) 97.39%);
+}
+
+.texto-rodape {
+    font: 400 20px 'Nunito', sans-serif;
 }
 /* .retangulo{
     width: 500px;
