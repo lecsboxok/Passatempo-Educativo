@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Nunito:wght@300;400;700;800&display=swap');
-
+/* RESET */
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +10,22 @@ a{
     text-decoration: none;
 }
 
+@font-face {
+    font-family: Nunito;
+    src: url(Assets/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Aleo;
+    src: url(Assets/Aleo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Aleo-light;
+    src: url(Assets/Aleo-Light.ttf);
+}
+
+/* CABEÇALHO */
 .cabecalho{
     display: flex;
     flex-direction: row;
@@ -56,11 +71,61 @@ a{
     align-items: center;
 }
 
+/* PRINCIPAL */
+.fundo {
+    background: url(img/principalaviao.jpg);
+    height: 636px;
+}
 
+.textoFrente {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    top: 251px;
+}
+
+/* FRASE */
+.conteudo_2 {
+    background: rgba(255, 236, 171, 0.83);
+    text-align: center;
+    padding: 60px 200px 60px 200px;
+    margin-top: 40px;
+}
+
+.frase, .frase-autor {
+    font: 300 32px 'Aleo-light', serif;
+}
+
+.frase-autor {
+    margin-top: 30px;
+}
+
+/* PRÊMIOS */
+.conteudo_3 {
+    background: rgba(255, 210, 51, 0.08);
+    margin-top: 100px;
+    padding: 55px 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.frasePremios {
+    font: 700 36px 'Nunito', sans-serif;
+    color: #FFD233;
+}
+
+.frasePremio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    text-align: center;
+}
 
 /* RODAPÉ */
-.container{
-
+.conteiner {
+    display: flex;
+    flex-direction: column;
 }
 
 #contato {
