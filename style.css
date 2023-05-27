@@ -122,6 +122,25 @@ a{
     text-align: center;
 }
 
+/* YOUTUBE */
+.conteudoYoutube {
+    background: rgba(51, 157, 255, 0.2);
+    padding: 150px;
+}
+
+/* NOSSA HISTÓRIA */
+.nossaHistoria {
+    background: rgba(180, 219, 255, 0.14);
+    padding: 100px;
+}
+
+/* PARCEIROS E PATROCINADORES */
+.conteudo_6 {
+    padding: 70px;
+    margin: 60px 0;
+    background: rgba(255, 33, 33, 0.46);
+}
+
 /* RODAPÉ */
 .conteiner {
     display: flex;
