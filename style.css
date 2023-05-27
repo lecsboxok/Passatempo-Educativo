@@ -123,10 +123,48 @@ a{
     text-align: center;
 }
 
+/* DOAÇÕES */
+
+.doacoes {
+    box-shadow: 7.69011px 7.69011px 3.07605px rgba(0, 0, 0, 0.25), inset 3.84506px 3.84506px 3.07605px rgba(0, 0, 0, 0.05);
+    margin-left: 315px;
+    margin-right: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 3;
+}
+
+.margemDoacoes {
+    padding: 30px;
+    text-align: center;
+}
+
+.textoDoacoes {
+    font: 400 28px 'Nunito', sans-serif;
+    color: #48A400;
+}
+
+.doacoesItens {
+    display: flex;
+    flex-direction: column;
+}
+
+.doacoesItem {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.topicosDoacoes {
+    font: 400 18px 'Nunito', sans-serif;
+    margin: 30px;
+}
+
 /* YOUTUBE */
 .conteudoYoutube {
     background: rgba(51, 157, 255, 0.2);
     padding: 150px;
+    z-index: -1;
 }
 
 /* NOSSA HISTÓRIA */
