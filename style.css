@@ -26,11 +26,9 @@ a{
 }
 
 /* CABEÇALHO */
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+#cabecalho {
+    margin: 0 35px;
+} 
 
 .cabecalho_sombra {
     height: 16px;
@@ -39,36 +37,30 @@ a{
 }
 
 .cabecalho_nav{
-    width: 80vw;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    font-family: 'Aleo', serif;
+}
+
+.cabecalho_nav_itens {
+    margin-left: 140px;
 }
 
 .cabecalho_nav_item{
+    margin: 20px;
     background: #FFD233;
+    font: 400 20px 'Aleo', serif;
     border-radius: 10px;
     padding: 7px 15px;
     color: #000;
 }
 
-.idioma{
-    display: flex;
-    order: -1;
-}
-
 .cabecalho_nav_item_Doe{
     background-color: #FB2673;
+    font: 400 20px 'Aleo', serif;
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
-}
-
-.cabecalho_tudo{
-    display: flex;
-    align-items: center;
 }
 
 /* PRINCIPAL */
@@ -128,20 +120,37 @@ a{
 .doacoes {
     box-shadow: 7.69011px 7.69011px 3.07605px rgba(0, 0, 0, 0.25), inset 3.84506px 3.84506px 3.07605px rgba(0, 0, 0, 0.05);
     margin-left: 315px;
-    margin-right: 600px;
+    margin-right: 640px;
+    background-color: #FFF;
     display: flex;
     flex-wrap: wrap;
     z-index: 3;
+    position: relative;
+    top: 80px;
 }
 
 .margemDoacoes {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
+    margin: 0 30px;
+}
+
+.doar {
+    margin: 160px 645px 90px 645px;
+}
+
+.sub {
+    font: 800 36px 'Nunito', sans-serif;
 }
 
 .textoDoacoes {
     font: 400 28px 'Nunito', sans-serif;
     color: #48A400;
+}
+
+.textDoacoes {
+    padding: 30px;
+    margin: 20px 50px;
 }
 
 .doacoesItens {
@@ -150,21 +159,31 @@ a{
 }
 
 .doacoesItem {
-    margin: 20px;
+    margin: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .topicosDoacoes {
-    font: 400 18px 'Nunito', sans-serif;
+    font: 400 19px 'Nunito', sans-serif;
     margin: 30px;
+}
+
+.atividades {
+    display: flex;
+    order: 1;
+}
+
+.despesas {
+    display: flex;
+    order: 1;
 }
 
 /* YOUTUBE */
 .conteudoYoutube {
     background: rgba(51, 157, 255, 0.2);
-    padding: 150px;
-    z-index: -1;
+    padding: 238px 150px;
 }
 
 /* NOSSA HISTÓRIA */

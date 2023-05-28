@@ -6,23 +6,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="corpo">
-    <header class="cabecalho">
-        <div class="cabecalho_tudo">
+    <header id="cabecalho">
+        <nav class="cabecalho_nav">
             <div class="imagem">
-                <img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></div>
-            <nav class="cabecalho_nav">
+                <img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo">
+            </div>
+            <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="">Sobre Nós</a>
                 <a class="cabecalho_nav_item" href="">Projetos</a>
                 <a class="cabecalho_nav_item" href="">Voluntários</a>
                 <a class="cabecalho_nav_item" href="">Contato</a>
-                <a class="cabecalho_nav_item_Doe" href="">Doe Agora</a>
-            </nav>
+            </div>
             <div class="idiomas">
                 <img src="img/Brasil.png" alt="Mudar o idioma para Português">
                 <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
                 <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
             </div>
-        </div>
+            <div>
+                <a class="cabecalho_nav_item_Doe" href="">Doe Agora</a>
+            </div>
+        </nav>
     </header>
     <div class="cabecalho_sombra"></div>
     <main class="conteudo">
@@ -48,7 +51,9 @@
             <div class="premio"><img src="img/certificado.png" alt="" class="certificado"></div>
         </section>
         <section>
-            <h2>Doações</h2> 
+            <div class="doar">
+                <h2 class="sub">Doações</h2> 
+            </div>
             <div>
                 <div class="doacoes">
                     <div class="margemDoacoes">
@@ -86,7 +91,7 @@
             </div>
         </section>
         <section class="conteudoYoutube">
-            <h2>Conheça nosso canal no Youtube</h2>
+            <h2 class="sub">Conheça nosso canal no Youtube</h2>
         </section>
         <section class="nossaHistoria">
             <div>
@@ -116,7 +121,7 @@
         </section>
         <section class="conteudo_6">
             <div>
-                <h2>Patrocinadores e parceiros</h2>
+                <h2 class="sub">Patrocinadores e parceiros</h2>
             </div>
         </section>
     </main>
