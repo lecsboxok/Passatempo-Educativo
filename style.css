@@ -126,7 +126,7 @@ a{
     flex-wrap: wrap;
     z-index: 3;
     position: relative;
-    top: 80px;
+    top: 90px;
 }
 
 .margemDoacoes {
@@ -190,6 +190,13 @@ a{
 .nossaHistoria {
     background: rgba(180, 219, 255, 0.14);
     padding: 100px;
+}
+
+.saibaMais {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 /* PARCEIROS E PATROCINADORES */
