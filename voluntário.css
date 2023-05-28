@@ -1,43 +1,68 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Nunito:wght@300;400;700;800&display=swap');
+
+*{
     margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-.titulo {
-    background-color: #DCF4FF;
-    padding: 100px;
-    margin-top: 70px;
-    text-align: center;
+a{
+    text-decoration: none;
 }
 
-.titulodois {
-    background-color: #FFF2F7;
-    padding: 270px;
-    text-align: center;
-
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.tituloDois {
-    text-align: center;
-    top: 300px;
-    left: 80;
-    right: 5px;
-    position: absolute;
-    font-family: 'Aleo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px
+.cabecalho_sombra {
+    height: 16px;
+    background-color: #FFD233;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.tituloum {
-    right: 50px;
-    position: absolute;
-    top: 90px;
-    left: 30px;
-    position: absolute;
-    font-family: 'Nunito';
-    font-style: normal;
+.cabecalho_nav{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    justify-content: space-around;
+    font-family: 'Aleo', serif;
+}
 
-    color: #000000;
+.cabecalho_nav_item{
+    background: #FFD233;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #000;
+}
+
+.idioma{
+    display: flex;
+    order: -1;
+}
+
+.cabecalho_nav_item_Doe{
+    background-color: #FB2673;
+    border-bottom: 10px;
+    padding: 10px 30px;
+    color: #FFF;
+}
+
+.cabecalho_tudo{
+    display: flex;
+    align-items: center;
+}
+.fundoAzul{
+    background-color: #DCF4FF;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url();
+}
+.tituloUm{
+
 }
