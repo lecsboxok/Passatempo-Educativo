@@ -226,6 +226,7 @@ a{
     margin: 20px;
     display: flex;
     align-items: center;
+    height: 50px;
 }
 
 .icone {
