@@ -103,18 +103,18 @@ a{
     height: 48px;
     left: calc(50% - 446px/2);
     top: 140px;
-
 }
 
 .ondas{
     background-image: url(img/OndaRosa.png);
-    top: 140px;
+    top: 160px;
     background-size: 100%;
 }
 
 .retangulo{
     background-color: rgba(254, 199, 219, 0.3);
-    top: 140px;
+    top: 160px;
+    height: 380px;
 
 }
 
@@ -123,4 +123,31 @@ a{
     font: 700 36px 'Nunito', sans-serif;
     text-align: center;
     top: 20px;
+}
+
+.divisao{
+    top: 110px;
+    text-align: center;
+}
+
+.Certificados{
+    padding: 0 20px;
+}
+
+.linha{
+    height: 10px;
+    background-color: #FFBCD4;
+    margin: 160px 0;
+}
+
+#projetos{
+    text-align: center;
+}
+
+#projetos .divisaoImagens{
+    display: flexbox;
+}
+
+#projetos .imagens{
+    padding: 40px;
 }
