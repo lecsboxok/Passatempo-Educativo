@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 a{
@@ -60,4 +61,93 @@ a{
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
+}
+
+
+#main{
+    margin: 0;
+}
+
+.titulo{
+    font: 800 40px 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: 110px;
+    color: #000;
+}
+
+.textoComeco{
+    color: #000;
+    /* position: relative; */
+    font: 400 20px 'Nunito', sans-serif;
+    width: 755px;
+    height: 90px;
+    margin-left: calc(50% - 755px/2 + 0.5px);
+    text-align: center;
+    top: 60px;
+}
+
+.textoComeco2{
+    color: #000;
+    /* position: relative; */
+    font: 400 20px 'Nunito', sans-serif;
+    width: 824px;
+    height: 60px;
+    left: calc(50% - 824px/2);
+    text-align: center;
+    top: 100px;
+}
+
+.objetivos{
+    /* position: relative; */
+    width: 446px;
+    height: 48px;
+    left: calc(50% - 446px/2);
+    top: 140px;
+}
+
+.ondas{
+    background-image: url(img/OndaRosa.png);
+    top: 160px;
+    background-size: 100%;
+}
+
+.retangulo{
+    background-color: rgba(254, 199, 219, 0.3);
+    top: 160px;
+    height: 380px;
+
+}
+
+.certificadosTitulo{
+    color: #000;
+    font: 700 36px 'Nunito', sans-serif;
+    text-align: center;
+    top: 20px;
+}
+
+.divisao{
+    top: 110px;
+    text-align: center;
+}
+
+.Certificados{
+    padding: 0 20px;
+}
+
+.linha{
+    height: 10px;
+    background-color: #FFBCD4;
+    margin: 160px 0;
+}
+
+#projetos{
+    text-align: center;
+}
+
+#projetos .divisaoImagens{
+    display: flexbox;
+}
+
+#projetos .imagens{
+    padding: 40px;
 }
