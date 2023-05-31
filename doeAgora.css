@@ -1,0 +1,143 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Assets/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Aleo;
+    src: url(Assets/Aleo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Aleo-light;
+    src: url(Assets/Aleo-Light.ttf);
+}
+
+/* CABEÇALHO */
+#cabecalho {
+    margin: 0 35px;
+} 
+
+.cabecalho_sombra {
+    height: 16px;
+    background-color: #FFD233;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho_nav_itens {
+    margin-left: 140px;
+}
+
+.cabecalho_nav_item{
+    margin: 20px;
+    background: #FFD233;
+    font: 400 20px 'Aleo', serif;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #000;
+}
+
+.cabecalho_nav_item_Doe{
+    background-color: #FB2673;
+    font: 400 20px 'Aleo', serif;
+    border-bottom: 10px;
+    padding: 10px 30px;
+    color: #FFF;
+}
+
+/* RODAPÉ */
+#contato {
+    background: rgba(255, 228, 133, 0.74);
+    padding: 73px 73px 25px 73px;
+}
+
+#contato .conteiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logoRodape {
+    margin-left: 135px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.icone {
+    width: 55px;
+    padding: 9px;
+}
+
+.icone:hover {
+    width: 62px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.texto-rodape {
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.rodapeTexto {
+    margin: 80px 110px 0 0;
+    text-align: justify;
+    width: 540px;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.iconMaps {
+    margin-right: 20px;
+}
+
+.textoMaps {
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.imgMaps {
+    margin: 0 90px 100px 45px;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.autorais {
+    font: 300 16px 'Aleo-light', serif;
+}
+
+.direito {
+    font: 300 20px 'Aleo-light', serif;
+    margin-top: 10px;
+}
