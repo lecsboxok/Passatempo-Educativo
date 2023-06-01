@@ -58,13 +58,9 @@ z-index: 7;
 }
 
 .qm{
-   
-    width: auto;
-    height: 20px;
-    text-align: center;
-    margin-top: 63px;
     font: 700 30px 'Nunito', sans-serif;
-   font-family: 'Nunito';
+    text-align: center;
+    margin-top: 100px;
 }
 
 .tempo{
@@ -112,20 +108,9 @@ margin: 30px 450px 0;
 
 }
 .historia{
-    left: 100px;
-    right: 200px;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 800;
-font-size: 40px;
-line-height: 55px;
-/* identical to box height */
-
-display: flex;
-align-items: center;
-text-align: center;
+    font: 700 30px 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: 100px; 
 
 }
 /* .imagem2{
@@ -195,4 +180,10 @@ color: #000000;
 .descricao{
     width: 100px;
 
+}
+.conheca{
+font: 700 30px 'Nunito', sans-serif;
+text-align: center;
+margin-top: 100px;
+    
 }
