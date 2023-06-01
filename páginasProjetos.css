@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Assets/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Aleo;
+    src: url(Assets/Aleo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Aleo-light;
+    src: url(Assets/Aleo-Light.ttf);
+}
+
+/* CABEÇALHO */
+#cabecalho {
+    margin: 0 35px;
+} 
+
+.cabecalho_sombra {
+    height: 16px;
+    background-color: #FFD233;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho_nav_itens {
+    margin-left: 140px;
+}
+
+.cabecalho_nav_item{
+    margin: 20px;
+    background: #FFD233;
+    font: 400 20px 'Aleo', serif;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #000;
+}
+
+.cabecalho_nav_item_Doe{
+    background-color: #FB2673;
+    font: 400 20px 'Aleo', serif;
+    border-bottom: 10px;
+    padding: 10px 30px;
+    color: #FFF;
+}
+
+/* COMEÇO */
+#comeco .imagemFundo{
+    width: 100%;
+    position: relative;
+}
+
+#comeco .circular{
+    position: absolute;
+    left: 1020px;
+    top: 180px;
+}
+
+#comeco .retanguloNome{
+    position: absolute;
+    border-radius: 15px;
+    background-color: #FFF;
+    width: 266px;
+    height: 64px;
+    left: 170px;
+    top: 290px;
+}
+
+#comeco .titulo{
+    font: 800 40px 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: #000;
+}
+
+#comeco .seta{
+    margin: 30px 0 0 50px;
+}
+
+/* INTRODUÇÃO */
+
+#introducao .texto1, .texto2{
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+#introducao .texto1{
+    width: 863px;
+    height: 70px;
+    left: calc(50% - 863px/2 - 146.5px);
+    line-height: 35px;
+}
+
+#introducao .texto2{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 20px;
+    line-height: 35px;
+}
+
+#introducao .linha{
+    width: 1203.2px;
+    height: 1px;
+    background-color: #FB2673;
+    background: linear-gradient(to right, #FB2673, #0000001c);
+    top: 110px;
+    left: 145px;
+}
+
+#estrutura .estruturaTexto{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 80px;
+}
+
+#estrutura .figura{
+    position: absolute;
+    width: 269px;
+    height: 307px;
+    left: 150px;
+    top: 85px;
+}
+
+#outros .retanguloOutros{
+    width: 100%;
+    height: 450px;
+    top: 220px;
+    background-color: #FFF8DD;
+    position: relative;
+}
+
+#outros .titulo{
+    position: absolute;
+    font: 800 36px 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    color: #000;
+    left: 540px;
+}
+
+.coracao{
+    position: absolute;
+    width: 52px;
+    height: 48px;
+    left: 970px;
+    top: 50px;
+}
+
+#outros .textoCaixas{
+    font: 400 24px 'Nunito', sans-serif;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    padding-left: 80px;
+}
+
+#outros .caixas{
+    display: flex;
+    top: 200px;
+    padding: 30px;
+}

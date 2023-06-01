@@ -207,18 +207,27 @@ a{
 }
 
 /* RODAPÉ */
-.conteiner {
-    display: flex;
-    flex-direction: column;
-}
-
 #contato {
     background: rgba(255, 228, 133, 0.74);
     padding: 73px;
+    padding-bottom: 15px;
+}
+
+#contato .conteiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logoRodape {
+    margin-left: 135px;
 }
 
 .redes {
+    margin: 20px;
     display: flex;
+    align-items: center;
+    height: 50px;
 }
 
 .icone {
@@ -234,6 +243,47 @@ a{
 
 .texto-rodape {
     font: 400 20px 'Nunito', sans-serif;
+}
+
+.rodapeTexto {
+    margin: 80px 110px 0 0;
+    text-align: justify;
+    width: 540px;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.iconMaps {
+    margin-right: 20px;
+}
+
+.textoMaps {
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.imgMaps {
+    margin: 0 90px 100px 45px;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.autorais {
+    font: 300 16px 'Aleo-light', serif;
+}
+
+.direito {
+    font: 300 20px 'Aleo-light', serif;
+    margin-top: 10px;
 }
 /* .retangulo{
     width: 500px;
