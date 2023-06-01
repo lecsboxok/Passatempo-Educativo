@@ -94,4 +94,60 @@ margin: 30px 450px 0;
     
 
 }
+.retangulo{
+    background-color: #E7FFDF;
+    border: 10px;
+    width: 100%;
+    height: 2000px;
 
+}
+.historia{
+    left: 100px;
+    right: 200px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 55px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+.imagem2{
+    background: url(image.png);
+border-radius: 20px;
+
+}
+.circulo1{
+    background: #FFD233;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 100px;
+    }
+.elemento1{
+    width: 93px;
+    height: 100px;
+    left: 670px;
+    top: 1500px;
+}
+.equipe{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #000000;
+
+}
