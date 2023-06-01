@@ -220,15 +220,17 @@ text-align: center;
 .retangulo2{
      background-color: #D6EBFF;
    padding-top: 50px;
-     width: 550px;
-     height: 95px;
+     width: 587px;
+     height: 85px;
      border-radius: 10px 10px;
      margin: 55px 65px;
     justify-content: center;
-    margin: auto;
+   margin: auto;
+   
     
 }
 .profissionais{
     text-align: center;
 margin-top: -20px;
+text-align: justify;
 }
