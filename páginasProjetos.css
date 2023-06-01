@@ -146,7 +146,7 @@ a{
 
 #outros .retanguloOutros{
     width: 100%;
-    height: 450px;
+    height: 500px;
     top: 220px;
     background-color: #FFF8DD;
     position: relative;
@@ -176,11 +176,109 @@ a{
     align-items: center;
     text-align: center;
     color: #000000;
-    padding-left: 80px;
+    padding-left: 120px;
 }
 
-#outros .caixas{
+#outros .caixas1{
     display: flex;
     top: 200px;
     padding: 30px;
+    padding-left: 160px;
+}
+
+#outros .caixas2{
+    display: flex;
+    top: 200px;
+    padding: 30px;
+    padding-left: 210px;
+}
+
+#outros .caixas3{
+    display: flex;
+    top: 200px;
+    padding: 30px;
+    padding-left: 145px;
+}
+
+#sugestao .retanguloSugestao{
+    position: absolute;
+    width: 894px;
+    height: 616px;
+    left: calc(50% - 894px/2);
+    top: 400px;
+    background: #DEFFC4;
+    border-radius: 20px;
+}
+
+#sugestao .titulo{
+    font: 800 40px 'Nunito', sans-serif;
+    margin-top: 60px;
+    color: #000;
+    left: 70px;
+}
+
+#sugestao .obrigatorio{
+    font: 400 20px 'Aleo', sans-serif;
+    left: 65px;
+    top: 10px;
+}
+
+.nome{
+    width: 360px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    left: 65px;
+    top: 80px;
+}
+
+.email{
+    width: 360px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    left: 95px;
+    top: 80px;
+}
+
+#sugestao .campoSugestao{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    left: 65px;
+    top: 130px;
+    height: 158px;
+    width: 774px;
+}
+
+::placeholder{
+    font: 400 20px 'Aleo', sans-serif;
+    padding-left: 20px;
+}
+
+#sugestao .salva{
+    top: 250px;
+    right: 700px;
+    width: 14px;
+    height: 14px;
+}
+
+#sugestao .salvar{
+    position: absolute;
+    top: 358px;
+    left: 110px;
+    font: 200 20px 'Nunito', sans-serif;
+    color: #000;
+}
+
+button{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    height: 31px;
+    width: 105px;
+    background-color: #00000000;
+    top: 220px;
+    left: 395px;
 }
