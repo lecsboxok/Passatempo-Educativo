@@ -129,6 +129,11 @@ text-align: center;
 }
 .descricao{
     width: 400px;
+    font: 100 16px 'Nunito', sans-serif;
+    text-align: center;
+    margin: 100px 0; 
+    align-items: center;
+text-align: justify;
 
 
 
@@ -136,28 +141,58 @@ text-align: center;
 .roda, .historia, .crianca, .idosos{
 width: 420px;
 }
+
 .tres-pessoas, .elemento, .natal, .predios{
 width: 150px;
 }
 .tres-pessoas{
-    background-color: #FFD233;
 padding: 40px;
-border-radius: 1000px;
 }
+.circulo{
+    background: #FFD233;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center;
+    }
+
 .elemento{
-    background-color: #29166F;
-    padding: 50px;
-border-radius: 900px;
+    padding: 40px;
+}
+.circulo1{
+    background:#29166F;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center; 
 }
 .natal{
-    background-color: #D73838;
     padding: 40px;
-    border-radius: 900px;
+}
+.circulo2{
+    background: #D73838;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center;
 }
 .predios{
-    background-color: #E05100;
     padding: 40px;
-    border-radius: 900px;
+}
+.circulo3{
+    background: #E05100;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .conheca{
@@ -189,10 +224,11 @@ text-align: center;
      height: 95px;
      border-radius: 10px 10px;
      margin: 55px 65px;
-;
+    justify-content: center;
+    margin: auto;
     
 }
 .profissionais{
     text-align: center;
-
+margin-top: -20px;
 }
