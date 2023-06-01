@@ -10,13 +10,13 @@
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo">
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
-                <a class="cabecalho_nav_item" href="">Sobre Nós</a>
-                <a class="cabecalho_nav_item" href="">Projetos</a>
-                <a class="cabecalho_nav_item" href="">Voluntários</a>
-                <a class="cabecalho_nav_item" href="">Contato</a>
+                <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
+                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
+                <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
+                <a class="cabecalho_nav_item" href="#contato">Contato</a>
             </div>
             <div class="idiomas">
                 <img src="img/Brasil.png" alt="Mudar o idioma para Português">
@@ -24,7 +24,7 @@
                 <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
             </div>
             <div>
-                <a class="cabecalho_nav_item_Doe" href="">Doe Agora</a>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
             </div>
         </nav>
     </header>
@@ -38,18 +38,22 @@
                 </div>
             </div>
         </section>
-        <section class="conteudo_2">
-            <p class="frase">“A doação transforma o amor abstrato em um ato concreto. Deixe sua marca amorosa na vida de alguém.”</p>
-            <p class="frase-autor">(Belas Mensagens)</p>
-        </section>    
-        <section class="conteudo_3">
-            <div class="frasePremio">
-                <h3 class="frasePremios">Reconhecimento e conquistas</h3>
+        <section id="frase" class="section">
+            <div class="conteiner">
+                <p class="frase">“A doação transforma o amor abstrato em um ato concreto. Deixe sua marca amorosa na vida de alguém.”</p>
+                <p class="frase-autor">(Belas Mensagens)</p>
             </div>
-            <div class="premio"><img src="img/ONG2022.png" alt="" class="certificado"></div>
-            <div class="premio"><img src="img/ONG2021.png" alt="" class="certificado"></div>
-            <div class="premio"><img src="img/PremioItaú.png" alt="" class="certificado"></div>
-            <div class="premio"><img src="img/certificado.png" alt="" class="certificado"></div>
+        </section>    
+        <section id="premios" class="section">
+            <div class="conteiner">
+                <div class="frasePremio">
+                    <h3 class="frasePremios">Reconhecimento e conquistas</h3>
+                </div>
+                <div class="premio"><img src="img/ONG2022.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/ONG2021.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/PremioItaú.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/certificado.png" alt="" class="certificado"></div>
+            </div>
         </section>
         <section>
             <div class="doar">
@@ -95,37 +99,49 @@
         <section class="conteudoYoutube">
             <h2 class="sub">Conheça nosso canal no Youtube</h2>
         </section>
-        <section class="nossaHistoria">
-            <div class="saibaMais">
-                <div>
-                    <h2 class="tituloSaiba">CONHEÇA NOSSA HISTÓRIA</h2>
-                    <p class="textoSaiba">23 anos trabalhando em projetos culturais, educacionais e ambientais.</p>
-                    <div>
-                        <img src="img/Conhecanossahistoria.jpg" alt="">
-                        <a href="">Sobre Nós</a>
+        <section id="nossaHistoria">
+                <div class="saibaMais">
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba laranja">CONHEÇA NOSSA HISTÓRIA</h2>
+                            <p class="textoSaiba">23 anos trabalhando em projetos culturais, educacionais e ambientais.</p>
+                        </div>
+                        <div class="imgSaiba">
+                            <img src="img/Conhecanossahistoria.jpg" alt="">
+                        </div>
+                            <a href="sobrenos.html">Sobre Nós</a>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba azul">VEJA OS PROJETOS</h2>
+                            <p class="textoSaiba">Nossos projetos tem como objetivo dar continuidade no ensino-aprendizagem.</p>
+                        </div>
+                        <div class="imgSaiba">
+                            <img src="img/vejaosprojetos.jpg" alt="">
+                        </div>
+                            <a href="projetos.html">Saiba mais</a>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba vermelho">SEJA UM VOLUNTÁRIO</h2>
+                            <p class="textoSaiba">Abraçe a causa e faça parte da nossa equipe!</p>
+                        </div>
+                        <div class="imgSaiba">
+                            <img src="img/sejaumvoluntario.jpg" alt="">
+                        </div>
+                        <a href="voluntários.html">Saiba mais</a>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba verde">APOIE NOSSA ONG</h2>
+                            <p class="textoSaiba">Conheça nosso guia de apoio a projetos culturais!</p>
+                        </div>
+                        <div class="imgSaiba">
+                            <img src="img/apoienossaong.jpg" alt="">
+                        </div>
+                        <a href="doeAgora.html">Contribua conosco</a>
                     </div>
                 </div>
-                <div>
-                    <h2 class="tituloSaiba">VEJA OS PROJETOS</h2>
-                    <p class="textoSaiba">Nossos projetos tem como objetivo dar continuidade no ensino-aprendizagem.</p>
-                    <div>
-                        <img src="img/vejaosprojetos.jpg" alt="">
-                        <a href="">Saiba mais</a>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="tituloSaiba">SEJA UM VOLUNTÁRIO</h2>
-                    <p class="textoSaiba">Abraçe a causa e faça parte da nossa equipe!</p>
-                    <img src="img/sejaumvoluntario.jpg" alt="">
-                    <a href="">Saiba mais</a>
-                </div>
-                <div>
-                    <h2 class="tituloSaiba">APOIE NOSSA ONG</h2>
-                    <p class="textoSaiba">Conheça nosso guia de apoio a projetos culturais!</p>
-                    <img src="img/apoienossaong.jpg" alt="">
-                    <a href="">Contribua conosco</a>
-                </div>
-            </div>
         </section>
         <section class="conteudo_6">
             <div>

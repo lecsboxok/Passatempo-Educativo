@@ -78,7 +78,7 @@ a{
 }
 
 /* FRASE */
-.conteudo_2 {
+#frase {
     background: rgba(255, 236, 171, 0.83);
     text-align: center;
     padding: 60px 200px 60px 200px;
@@ -94,7 +94,7 @@ a{
 }
 
 /* PRÊMIOS */
-.conteudo_3 {
+#premios .conteiner {
     background: rgba(255, 210, 51, 0.08);
     margin-top: 100px;
     padding: 55px 130px;
@@ -114,6 +114,7 @@ a{
     width: 450px;
     text-align: center;
 }
+
 
 /* DOAÇÕES */
 
@@ -187,7 +188,7 @@ a{
 }
 
 /* NOSSA HISTÓRIA */
-.nossaHistoria {
+#nossaHistoria {
     background: rgba(180, 219, 255, 0.14);
     padding: 100px;
 }
@@ -197,6 +198,34 @@ a{
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.tituloSaiba {
+    font: 700 34px 'Nunito', sans-serif;
+}
+
+.laranja {
+    color: #E05100;
+}
+
+.azul {
+    color: #29166F;
+}
+
+.vermelho {
+    color: #BA3030;
+}
+
+.verde {
+    color: #48A400;
+}
+
+.imgSaiba {
+    text-align: center;
+}
+
+.textoSaiba {
+    font: 400 19px 'Nunito', sans-serif;
 }
 
 /* PARCEIROS E PATROCINADORES */
