@@ -1,6 +1,11 @@
 *{
+<<<<<<< HEAD
+    border: 0px;
+    margin: 0px;
+=======
     margin: 0;
     border: 0;
+>>>>>>> 1eeaaa77f9cb81e40491ae84b3abdf352e7fa6df
     padding: 0;
     box-sizing: border-box;
 

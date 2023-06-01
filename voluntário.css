@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Nunito:wght@300;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cabecalho_sombra {
+    height: 16px;
+    background-color: #FFD233;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho_nav {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Aleo', serif;
+}
+
+.cabecalho_nav_item {
+    background: #FFD233;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #000;
+}
+
+.idioma {
+    display: flex;
+    order: -1;
+}
+
+.cabecalho_nav_item_Doe {
+    background-color: #FB2673;
+    border-bottom: 10px;
+    padding: 10px 30px;
+    color: #FFF;
+}
+
+.cabecalho_tudo {
+    display: flex;
+    align-items: center;
+}
+
+.fundoAzul {
+    background-color: #DCF4FF;
+    height: 700px;
+    margin: 0 0 0 0;
+}
+
+@font-face {
+    font-family: 'Times New Roman', Times, serif;
+    src: url(Assets/Aleo-Regular.ttf);
+}
+
+.tituloUm {
+    font: 40px, 'Times New Roman', times, serif;
+    text-align: center;
+
+}
+
+.top {
+    text-align: right;
+}
+@font-face {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    src: url(Assets/Aleo-Bold.ttf);
+}
+.rosa {
+    background-color: #FFF2F7;
+    text-align: center;
+    height: 500px;
+    margin: 0 90px 0 90px;
+    font: 40px, 'bold', sans-serif ;
+}

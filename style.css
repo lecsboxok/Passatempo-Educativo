@@ -26,11 +26,9 @@ a{
 }
 
 /* CABEÇALHO */
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+#cabecalho {
+    margin: 0 35px;
+} 
 
 .cabecalho_sombra {
     height: 16px;
@@ -39,41 +37,36 @@ a{
 }
 
 .cabecalho_nav{
-    width: 80vw;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    font-family: 'Aleo', serif;
+}
+
+.cabecalho_nav_itens {
+    margin-left: 140px;
 }
 
 .cabecalho_nav_item{
+    margin: 20px;
     background: #FFD233;
+    font: 400 20px 'Aleo', serif;
     border-radius: 10px;
     padding: 7px 15px;
     color: #000;
 }
 
-.idioma{
-    display: flex;
-    order: -1;
-}
-
 .cabecalho_nav_item_Doe{
     background-color: #FB2673;
+    font: 400 20px 'Aleo', serif;
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
 }
 
-.cabecalho_tudo{
-    display: flex;
-    align-items: center;
-}
-
 /* PRINCIPAL */
 .fundo {
-    background: url(img/principalaviao.jpg);
+    background: url(img/principalaviao.jpg) no-repeat center;
+    background-size: 100%;
     height: 636px;
 }
 
@@ -85,7 +78,7 @@ a{
 }
 
 /* FRASE */
-.conteudo_2 {
+#frase {
     background: rgba(255, 236, 171, 0.83);
     text-align: center;
     padding: 60px 200px 60px 200px;
@@ -101,7 +94,7 @@ a{
 }
 
 /* PRÊMIOS */
-.conteudo_3 {
+#premios .conteiner {
     background: rgba(255, 210, 51, 0.08);
     margin-top: 100px;
     padding: 55px 130px;
@@ -122,19 +115,148 @@ a{
     text-align: center;
 }
 
-/* RODAPÉ */
-.conteiner {
+
+/* DOAÇÕES */
+
+.doacoes {
+    box-shadow: 7.69011px 7.69011px 3.07605px rgba(0, 0, 0, 0.25), inset 3.84506px 3.84506px 3.07605px rgba(0, 0, 0, 0.05);
+    margin-left: 315px;
+    margin-right: 640px;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 3;
+    position: relative;
+    top: 90px;
+}
+
+.margemDoacoes {
+    padding: 10px;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.doar {
+    margin: 160px 645px 90px 645px;
+}
+
+.sub {
+    font: 800 36px 'Nunito', sans-serif;
+}
+
+.textoDoacoes {
+    font: 400 28px 'Nunito', sans-serif;
+    color: #48A400;
+}
+
+.textDoacoes {
+    padding: 30px;
+    margin: 20px 50px;
+}
+
+.doacoesItens {
     display: flex;
     flex-direction: column;
 }
 
+.doacoesItem {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.topicosDoacoes {
+    font: 400 19px 'Nunito', sans-serif;
+    margin: 30px;
+}
+
+.atividades {
+    display: flex;
+    order: 1;
+}
+
+.despesas {
+    display: flex;
+    order: 1;
+}
+
+/* YOUTUBE */
+.conteudoYoutube {
+    background: rgba(51, 157, 255, 0.2);
+    padding: 238px 150px;
+}
+
+/* NOSSA HISTÓRIA */
+#nossaHistoria {
+    background: rgba(180, 219, 255, 0.14);
+    padding: 100px;
+}
+
+.saibaMais {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.tituloSaiba {
+    font: 700 34px 'Nunito', sans-serif;
+}
+
+.laranja {
+    color: #E05100;
+}
+
+.azul {
+    color: #29166F;
+}
+
+.vermelho {
+    color: #BA3030;
+}
+
+.verde {
+    color: #48A400;
+}
+
+.imgSaiba {
+    text-align: center;
+}
+
+.textoSaiba {
+    font: 400 19px 'Nunito', sans-serif;
+}
+
+/* PARCEIROS E PATROCINADORES */
+.conteudo_6 {
+    padding: 70px;
+    margin: 60px 0;
+    background: rgba(255, 33, 33, 0.46);
+}
+
+/* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
     padding: 73px;
+    padding-bottom: 15px;
+}
+
+#contato .conteiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logoRodape {
+    margin-left: 135px;
 }
 
 .redes {
+    margin: 20px;
     display: flex;
+    align-items: center;
+    height: 50px;
 }
 
 .icone {
@@ -150,6 +272,47 @@ a{
 
 .texto-rodape {
     font: 400 20px 'Nunito', sans-serif;
+}
+
+.rodapeTexto {
+    margin: 80px 110px 0 0;
+    text-align: justify;
+    width: 540px;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.iconMaps {
+    margin-right: 20px;
+}
+
+.textoMaps {
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.imgMaps {
+    margin: 0 90px 100px 45px;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.autorais {
+    font: 300 16px 'Aleo-light', serif;
+}
+
+.direito {
+    font: 300 20px 'Aleo-light', serif;
+    margin-top: 10px;
 }
 /* .retangulo{
     width: 500px;

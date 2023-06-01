@@ -4,72 +4,84 @@
     <meta charset="UTF-8">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logoIcon.png">
 </head>
 <body class="corpo">
-    <header class="cabecalho">
-        <div class="cabecalho_tudo">
+    <header id="cabecalho">
+        <nav class="cabecalho_nav">
             <div class="imagem">
-                <img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></div>
-            <nav class="cabecalho_nav">
-                <a class="cabecalho_nav_item" href="">Sobre Nós</a>
-                <a class="cabecalho_nav_item" href="">Projetos</a>
-                <a class="cabecalho_nav_item" href="">Voluntários</a>
-                <a class="cabecalho_nav_item" href="">Prêmios</a>
-                <a class="cabecalho_nav_item" href="">Contato</a>
-                <a class="cabecalho_nav_item_Doe" href="">Doe Agora</a>
-            </nav>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
+            </div>
+            <div class="cabecalho_nav_itens">
+                <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
+                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
+                <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
+                <a class="cabecalho_nav_item" href="#contato">Contato</a>
+            </div>
             <div class="idiomas">
                 <img src="img/Brasil.png" alt="Mudar o idioma para Português">
                 <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
                 <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
             </div>
-        </div>
+            <div>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
+            </div>
+        </nav>
     </header>
     <div class="cabecalho_sombra"></div>
     <main class="conteudo">
         <section class="conteudo_1">
             <div class="fundo">
                 <div class="textoFrente">
-                    <h1>PASSATEMPO EDUCATIVO</h1>
+                    <h1 class="titulo">PASSATEMPO EDUCATIVO</h1>
+                    <h2></h2>
                 </div>
             </div>
         </section>
-        <section class="conteudo_2">
-            <p class="frase">“A doação transforma o amor abstrato em um ato concreto. Deixe sua marca amorosa na vida de alguém.”</p>
-            <p class="frase-autor">(Belas Mensagens)</p>
-        </section>    
-        <section class="conteudo_3">
-            <div class="frasePremio">
-                <h3 class="frasePremios">Reconhecimento e conquistas</h3>
+        <section id="frase" class="section">
+            <div class="conteiner">
+                <p class="frase">“A doação transforma o amor abstrato em um ato concreto. Deixe sua marca amorosa na vida de alguém.”</p>
+                <p class="frase-autor">(Belas Mensagens)</p>
             </div>
-            <div class="premio"><img src="img/ONG2022.png" alt="" class="certificado"></div>
-            <div class="premio"><img src="img/ONG2021.png" alt="" class="certificado"></div>
-            <div class="premio"><img src="img/PremioItaú.png" alt="" class="certificado"></div>
-            <div class="premio"><img src="img/certificado.png" alt="" class="certificado"></div>
+        </section>    
+        <section id="premios" class="section">
+            <div class="conteiner">
+                <div class="frasePremio">
+                    <h3 class="frasePremios">Reconhecimento e conquistas</h3>
+                </div>
+                <div class="premio"><img src="img/ONG2022.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/ONG2021.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/PremioItaú.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/certificado.png" alt="" class="certificado"></div>
+            </div>
         </section>
         <section>
-            <h2>Doações</h2> 
+            <div class="doar">
+                <h2 class="sub">Doações</h2> 
+            </div>
             <div>
-                <div>
-                    <div>
-                        <h3>As doações serão transformadas em:</h3>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="img/material.png" alt="">
-                            <p>Material pedagógico</p>
+                <div class="doacoes">
+                    <div class="margemDoacoes">
+                        <div class="textDoacoes">
+                            <h3 class="textoDoacoes">As doações serão transformadas em:</h3>
                         </div>
-                        <div>
-                            <img src="img/despesas.png" alt="">
-                            <p>Despesas administrativas</p>
-                        </div>
-                        <div>
-                            <img src="img/transporte.png" alt="">
-                            <p>Transporte para projetos</p>
-                        </div>
-                        <div>
-                            <img src="img/multidisciplinares.png" alt="">
-                            <p>Material de consumo para atividades multidisciplinares.</p>
+                        <div class="doacoesItens">
+                            <div class="doacoesItem">
+                                <img src="img/material.png" alt="" class="material Item">
+                                <p class="topicosDoacoes">Material pedagógico</p>
+                            </div>
+                            <div class="doacoesItem">
+                                <img src="img/despesas.png" alt="" class="despesas Item">
+                                <p class="topicosDoacoes">Despesas administrativas</p>
+                            </div>
+                            <div class="doacoesItem">
+                                <img src="img/transporte.png" alt="" class="transporte Item">
+                                <p class="topicosDoacoes">Transporte para projetos</p>
+                            </div>
+                            <div class="doacoesItem">
+                                <img src="img/multidisciplinares.png" alt="" class="atividades Item">
+                                <p class="topicosDoacoes">Material de consumo para atividades multidisciplinares.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,56 +90,76 @@
                         <h3>Seja um doador</h3>
                     </div>
                     <div>
-                     
+                        <a href=""></a>
+                        <a href=""></a>
                     </div>
                 </div>
             </div>
-
         </section>
-        <section>
-            <h2>Conheça nosso canal no Youtube</h2>
+        <section class="conteudoYoutube">
+            <h2 class="sub">Conheça nosso canal no Youtube</h2>
         </section>
-        <section>
-            <div>
-                <h2>CONHEÇA NOSSA HISTÓRIA</h2>
-                <p>23 anos trabalhando em projetos culturais, educacionais e ambientais.</p>
-                <img src="img/Conhecanossahistoria.jpg" alt="">
-                <a href="">Sobre Nós</a>
-            </div>
-            <div>
-                <h2>VEJA OS PROJETOS</h2>
-                <p>Nossos projetos tem como objetivo dar continuidade no ensino-aprendizagem.</p>
-                <img src="img/vejaosprojetos.jpg" alt="">
-                <a href="">Saiba mais</a>
-            </div>
-            <div>
-                <h2>SEJA UM VOLUNTÁRIO</h2>
-                <p>Abraçe a causa e faça parte da nossa equipe!</p>
-                <img src="img/sejaumvoluntario.jpg" alt="">
-                <a href="">Saiba mais</a>
-            </div>
-            <div>
-                <h2>APOIE NOSSA ONG</h2>
-                <p>Conheça nosso guia de apoio a projetos culturais!</p>
-                <img src="img/apoienossaong.jpg" alt="">
-                <a href="">Contribua conosco</a>
-            </div>
+        <section id="nossaHistoria">
+                <div class="saibaMais">
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba laranja">CONHEÇA NOSSA HISTÓRIA</h2>
+                            <p class="textoSaiba">23 anos trabalhando em projetos culturais, educacionais e ambientais.</p>
+                        </div>
+                        <div class="imgSaiba">
+                            <img src="img/Conhecanossahistoria.jpg" alt="">
+                        </div>
+                            <a href="sobrenos.html">Sobre Nós</a>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba azul">VEJA OS PROJETOS</h2>
+                            <p class="textoSaiba">Nossos projetos tem como objetivo dar continuidade no ensino-aprendizagem.</p>
+                        </div>
+                        <div class="imgSaiba">
+                            <img src="img/vejaosprojetos.jpg" alt="">
+                        </div>
+                            <a href="projetos.html">Saiba mais</a>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba vermelho">SEJA UM VOLUNTÁRIO</h2>
+                            <p class="textoSaiba">Abraçe a causa e faça parte da nossa equipe!</p>
+                        </div>
+                        <div class="imgSaiba">
+                            <img src="img/sejaumvoluntario.jpg" alt="">
+                        </div>
+                        <a href="voluntários.html">Saiba mais</a>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba verde">APOIE NOSSA ONG</h2>
+                            <p class="textoSaiba">Conheça nosso guia de apoio a projetos culturais!</p>
+                        </div>
+                        <div class="imgSaiba">
+                            <img src="img/apoienossaong.jpg" alt="">
+                        </div>
+                        <a href="doeAgora.html">Contribua conosco</a>
+                    </div>
+                </div>
         </section>
-        <section>
-
+        <section class="conteudo_6">
+            <div>
+                <h2 class="sub">Patrocinadores e parceiros</h2>
+            </div>
         </section>
     </main>
     <footer>
         <section id="contato" class="section">
-            <div class="container">
+            <div class="conteiner">
                 <div class="rodape-lado1">
-                    <div>
+                    <div class="logoRodape">
                         <img src="img/logoPassatempo.png" alt="">
                     </div>
                     <div>
                         <img src="img/menina.png" alt="">
                     </div>
-                    <div>
+                    <div class="rodapeTexto">
                         <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental e desenvolvimento do turismo sustentável.
                         </p>
                     </div>
@@ -160,10 +192,16 @@
                 </div>
                 <div class="rodape-lado2">
                     <div class="endereco">
-                        <img src="img/iconMaps.png" alt="">
-                        <h4>Rua dos Democratas, 975, São Paulo, Brazil</h4>
-                        <div>
-                            <img src="img/mapa.jpg" alt="Endereço do passatempo educativo">
+                        <div class="enderecoTexto">
+                            <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                <img src="img/iconMaps.png" alt="" class="iconMaps">
+                            </a>
+                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brazil</h4>
+                        </div>
+                        <div class="imgMaps">
+                            <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
+                            </a>
                         </div>
                         <div>
                             <img src="img/amigoSurdo.png" alt="">
@@ -171,8 +209,8 @@
                     </div>
                 </div>
                 <div class="direitos">
-                    <p>Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                    <p>Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
                 </div>
             </div>
         </section>
