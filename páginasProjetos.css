@@ -97,7 +97,7 @@ a{
 
 /* INTRODUÇÃO */
 
-#introducao .texto1, .texto2, .textoLivro{
+#introducao .texto1, .texto2, .textoLivro, .texto2Cultura{
     font: 400 20px 'Nunito', sans-serif;
 }
 
@@ -406,4 +406,37 @@ button:hover{
 }
 
 
-/* LIVROS EM AÇÃO */
+/* FUTEBOL*/
+
+#estrutura .Futebol{
+    display: flex;
+    align-items: center;
+}
+
+#estrutura .figuraFutebol{
+    position: absolute;
+    width: 282px;
+    height: 283px;
+    left: 150px;
+    top: 115px;
+}
+
+#introducao .texto2Cultura{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 70px;
+    line-height: 35px;
+}
+
+/* CULTURA */
+
+#estrutura .estruturaTextoCultura{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 120px;
+}
