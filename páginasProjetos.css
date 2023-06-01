@@ -97,7 +97,7 @@ a{
 
 /* INTRODUÇÃO */
 
-#introducao .texto1, .texto2, .textoLivro{
+#introducao .texto1, .texto2, .textoLivro, .texto2Cultura, .texto2Jogoteca, .texto2Ferias, .texto2Leitor, .texto2Musica{
     font: 400 20px 'Nunito', sans-serif;
 }
 
@@ -261,7 +261,6 @@ a{
 .nome{
     width: 360px;
     height: 44px;
-    background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     left: 65px;
@@ -406,4 +405,118 @@ button:hover{
 }
 
 
-/* LIVROS EM AÇÃO */
+/* FUTEBOL*/
+
+#estrutura .Futebol{
+    display: flex;
+    align-items: center;
+}
+
+#estrutura .figuraFutebol{
+    position: absolute;
+    width: 282px;
+    height: 283px;
+    left: 150px;
+    top: 115px;
+}
+
+#introducao .texto2Cultura{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 70px;
+    line-height: 35px;
+}
+
+/* CULTURA */
+
+#estrutura .estruturaTextoCultura{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 120px;
+}
+
+/* JOGOTECA */
+#introducao .texto2Jogoteca{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 50px;
+    line-height: 35px;
+}
+
+/* FERIAS */
+#introducao .texto2Ferias{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 70px;
+    line-height: 35px;
+}
+#estrutura .estruturaTextoFerias{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 110px;
+}
+
+/* ORIGAMI */
+#estrutura .estruturaTextoOrigami{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 140px;
+}
+
+/* LEITOR */
+#introducao .texto2Leitor{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 55px;
+    line-height: 35px;
+}
+
+#estrutura .estruturaTextoLeitor{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 180px;
+}
+
+/* MÚSICA CLÁSSICA */
+#introducao .texto2Musica{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 80px;
+    line-height: 35px;
+}
+
+#estrutura .estruturaTextoMusica{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 150px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}

@@ -47,7 +47,7 @@ left: 0px;
 top: 104px;
 }
 .calendario{
-   width: 1000px; 
+    
    height: auto;
     left: 1380px;
 right: 0;
@@ -75,6 +75,7 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 margin: 30px 450px 0;
+text-align: center;
 }
 .verde{
 
@@ -92,7 +93,6 @@ margin: 30px 450px 0;
     justify-content: space-around;
     text-align: center;
     margin-top: 40px;
-    width: 100vw;
     flex-wrap: nowrap;
     z-index: 99;
     
@@ -101,89 +101,145 @@ margin: 30px 450px 0;
 .retangulo{
 
     background-color: #E7FFDF;
-    border: 10px;
-    height: 1700px;
-    margin-top: -90px;
-    padding-top: 50px;
+    margin-top: -100px;
+    padding-top: 60px;
+    padding: 0 0 50px;
 
 }
 .historia{
     font: 700 30px 'Nunito', sans-serif;
     text-align: center;
-    margin-top: 100px; 
+    margin: 100px 0; 
+    align-items: center;
+
 
 }
-/* .imagem2{
-    background: url(image.png);
-border-radius: 20px;
+.azul{
+   display: flex;
+   justify-content: center;
 
 }
-.circulo1{
+
+.fase1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+.descricao{
+    width: 400px;
+    font: 100 16px 'Nunito', sans-serif;
+    text-align: center;
+    margin: 100px 0; 
+    align-items: center;
+text-align: justify;
+
+
+
+}
+.roda, .historia, .crianca, .idosos{
+width: 420px;
+}
+
+.tres-pessoas, .elemento, .natal, .predios{
+width: 150px;
+}
+.tres-pessoas{
+padding: 40px;
+}
+.circulo{
     background: #FFD233;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: 100px;
+    display: flex;
+align-items: center;
+justify-content: center;
     }
-.elemento1{
-    width: 93px;
-    height: 100px;
-    left: 670px;
-    top: 1500px;
+
+.elemento{
+    padding: 40px;
 }
-.equipe{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-
-
-display: flex;
-align-items: center;
-text-align: justify;
-
-color: #000000;
-
-}
-.meses{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-
-display: flex;
-align-items: center;
-text-align: justify;
-
-color: #000000;
-
-}
-
-.circulo2{
+.circulo1{
     background:#29166F;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: 100px;
-}
-.elemento2{
-    right: 40px;
-    left: 40px;
-} */
-.fase1{
     display: flex;
-    align-items: center;
-    
+align-items: center;
+justify-content: center; 
 }
-.descricao{
-    width: 100px;
+.natal{
+    padding: 40px;
+}
+.circulo2{
+    background: #D73838;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.predios{
+    padding: 40px;
+}
+.circulo3{
+    background: #E05100;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
 
-}
 .conheca{
+
 font: 700 30px 'Nunito', sans-serif;
 text-align: center;
-margin-top: 100px;
+margin: 80px 100px;
+   
+}
+.nossa{
+    width: 400px;
+height: auto;
+left: 0px;
+top: 104px;
+
+}
+.equipenossa{
+text-align: center;
+
+}
+.feriado{
+    font: 10 15px 'Nunito', sans-serif;
+}
+
+.retangulo2{
+     background-color: #D6EBFF;
+   padding-top: 50px;
+     width: 587px;
+     height: 85px;
+     border-radius: 10px 10px;
+     margin: 55px 65px;
+    justify-content: center;
+   margin: auto;
+   
     
 }
+.profissionais{
+    text-align: center;
+margin-top: -20px;
+text-align: justify;
+}
+.colaboradores{
+
+width: 484px;
+height: 377px;
+left: 150px;
+top: 1000px;
+
+}
+ 

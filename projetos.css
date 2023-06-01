@@ -237,3 +237,26 @@ html{
     font: 300 20px 'Aleo-light', serif;
     margin-top: 10px;
 }
+
+/* HOVER */
+
+#projetos .quadros{
+    margin: 100px;
+}
+
+#projetos .user{
+    width: 100px;
+}
+
+#projetos .imagens1{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    /*POSITION, LEFT E TOP PARA POSICIONAR NA IMAGEM*/
+    display: none; /*PARA FAZER DESAPARECER*/
+    
+}
+
+#projetos .quadros:hover .imagens1 {
+    display: flex;
+}

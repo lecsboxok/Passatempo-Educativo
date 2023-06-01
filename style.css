@@ -27,10 +27,17 @@ a{
 
 /* CABEÇALHO */
 #cabecalho {
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    background-color: #FFF;
+}
+
+#cabecalho .cabecalho_nav {
     margin: 0 35px;
 } 
 
-.cabecalho_sombra {
+#cabecalho .cabecalho_sombra {
     height: 16px;
     background-color: #FFD233;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -117,27 +124,39 @@ a{
 
 
 /* DOAÇÕES */
+#doacoes {
+    text-align: center;
+}
+
 
 .doacoes {
     box-shadow: 7.69011px 7.69011px 3.07605px rgba(0, 0, 0, 0.25), inset 3.84506px 3.84506px 3.07605px rgba(0, 0, 0, 0.05);
-    margin-left: 315px;
-    margin-right: 640px;
+    width: 600px;
     background-color: #FFF;
     display: flex;
     flex-wrap: wrap;
     z-index: 3;
     position: relative;
-    top: 90px;
+    top: 80px;
 }
 
 .margemDoacoes {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     margin: 0 30px;
 }
 
 .doar {
-    margin: 160px 645px 90px 645px;
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgDoar {
+    display: flex;
+    align-self: flex-end;
+    margin-left: 100px;
 }
 
 .sub {
@@ -150,7 +169,7 @@ a{
 }
 
 .textDoacoes {
-    padding: 30px;
+    padding: 15px;
     margin: 20px 50px;
 }
 
@@ -181,10 +200,73 @@ a{
     order: 1;
 }
 
+.doador {
+    background-color: rgba(255, 199, 0, 0.27);
+    height: 415px;
+    width: 400px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+}
+
+.tituloDoador {
+    font: 400 28px 'Nunito', sans-serif;
+    color: #A40000;
+}
+
+.titulo-Doador {
+    text-align: center;
+    margin: 50px 80px;
+}
+
+.linkDoe {
+    text-align: center;
+}
+
+.doe {
+    font: 400 22px 'Nunito', sans-serif;
+    color: #000;
+}
+
+.doeVer {
+    margin: 60px;
+}
+
+.verdeFundo {
+    background: #7ED738;
+    border-radius: 7.69011px;
+    padding: 8px 65px;
+}
+
+.vermelhoFundo {
+    background: #FF5D5D;
+    border-radius: 7.68953px;
+    padding: 8px 45px
+}
+
+.imgdoe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quadros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemDoe {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* YOUTUBE */
-.conteudoYoutube {
+#conteudoYoutube {
     background: rgba(51, 157, 255, 0.2);
     padding: 238px 150px;
+}
+
+.video2 {
+    text-align: end;
 }
 
 /* NOSSA HISTÓRIA */
@@ -227,6 +309,31 @@ a{
 .textoSaiba {
     font: 400 19px 'Nunito', sans-serif;
 }
+
+.conteudoSaiba {
+    margin-bottom: 40px;
+}
+
+.historia {
+    width: 490px;
+    margin: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textoBotao {
+    font: 400 24px 'Nunito', sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+ .bloco {
+    text-align: center;
+}
+
+
 
 /* PARCEIROS E PATROCINADORES */
 .conteudo_6 {
