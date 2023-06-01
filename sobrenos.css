@@ -47,7 +47,7 @@ left: 0px;
 top: 104px;
 }
 .calendario{
-   width: 1000px; 
+    
    height: auto;
     left: 1380px;
 right: 0;
@@ -75,6 +75,7 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 margin: 30px 450px 0;
+text-align: center;
 }
 .verde{
 
@@ -92,7 +93,6 @@ margin: 30px 450px 0;
     justify-content: space-around;
     text-align: center;
     margin-top: 40px;
-    width: 100vw;
     flex-wrap: nowrap;
     z-index: 99;
     
@@ -101,89 +101,98 @@ margin: 30px 450px 0;
 .retangulo{
 
     background-color: #E7FFDF;
-    border: 10px;
-    height: 1700px;
-    margin-top: -90px;
-    padding-top: 50px;
+    margin-top: -100px;
+    padding-top: 60px;
+    padding: 0 0 50px;
 
 }
 .historia{
     font: 700 30px 'Nunito', sans-serif;
     text-align: center;
-    margin-top: 100px; 
+    margin: 100px 0; 
+    align-items: center;
+
 
 }
-/* .imagem2{
-    background: url(image.png);
-border-radius: 20px;
-
-}
-.circulo1{
-    background: #FFD233;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    top: 100px;
-    }
-.elemento1{
-    width: 93px;
-    height: 100px;
-    left: 670px;
-    top: 1500px;
-}
-.equipe{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-
-
-display: flex;
-align-items: center;
-text-align: justify;
-
-color: #000000;
-
-}
-.meses{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-
-display: flex;
-align-items: center;
-text-align: justify;
-
-color: #000000;
+.azul{
+   display: flex;
+   justify-content: center;
 
 }
 
-.circulo2{
-    background:#29166F;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    top: 100px;
-}
-.elemento2{
-    right: 40px;
-    left: 40px;
-} */
 .fase1{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+
     
 }
 .descricao{
-    width: 100px;
+    width: 400px;
+
+
 
 }
+.roda, .historia, .crianca, .idosos{
+width: 420px;
+}
+.tres-pessoas, .elemento, .natal, .predios{
+width: 150px;
+}
+.tres-pessoas{
+    background-color: #FFD233;
+padding: 40px;
+border-radius: 1000px;
+}
+.elemento{
+    background-color: #29166F;
+    padding: 50px;
+border-radius: 900px;
+}
+.natal{
+    background-color: #D73838;
+    padding: 40px;
+    border-radius: 900px;
+}
+.predios{
+    background-color: #E05100;
+    padding: 40px;
+    border-radius: 900px;
+}
+
 .conheca{
+
 font: 700 30px 'Nunito', sans-serif;
 text-align: center;
-margin-top: 100px;
+margin: 80px 100px;
+   
+}
+.nossa{
+    width: 400px;
+height: auto;
+left: 0px;
+top: 104px;
+
+}
+.equipenossa{
+text-align: center;
+
+}
+.feriado{
+    font: 10 15px 'Nunito', sans-serif;
+}
+
+.retangulo2{
+     background-color: #D6EBFF;
+   padding-top: 50px;
+     width: 550px;
+     height: 95px;
+     border-radius: 10px 10px;
+     margin: 55px 65px;
+;
     
+}
+.profissionais{
+    text-align: center;
+
 }
