@@ -1,13 +1,20 @@
-
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 a {
 text-decoration: none;
 }
 
 .item{
+    margin: 20px;
     background: #FFD233;
+    font: 400 20px 'Aleo', serif;
     border-radius: 10px;
-    padding: 10px 30px;
-    color: black;
+    padding: 7px 15px;
+    color: #000;
 }
 .cabecalho{
     display: flex;
@@ -16,11 +23,15 @@ text-decoration: none;
 }
 .doe {
     background-color: #FB2673;
-    color: #fff;
+    font: 400 20px 'Aleo', serif;
+    border-bottom: 10px;
+    padding: 10px 30px;
+    color: #FFF;
+
 }
 
 .linha{
-    width: 1550px;
+    width: 100vw;
 height: 16px;
 left: 0px;
 top: 50px;
@@ -30,13 +41,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 .mundo{
-width: 1600px;
-height: 412px;
+width: 100vw;
+height: auto;
 left: 0px;
 top: 104px;
 }
 .calendario{
-   width: 1000px; 
+    
    height: auto;
     left: 1380px;
 right: 0;
@@ -47,18 +58,13 @@ z-index: 7;
 }
 
 .qm{
-   
-    width: auto;
-    height: 20px;
-    text-align: center;
-    margin-top: 63px;
     font: 700 30px 'Nunito', sans-serif;
-   font-family: 'Nunito';
+    text-align: center;
+    margin-top: 100px;
 }
 
 .tempo{
    
-
 font: 500 20px 'Nunito', sans-serif;
 font-family: 'Nunito';
 font-style: normal;
@@ -69,13 +75,17 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 margin: 30px 450px 0;
+text-align: center;
 }
 .verde{
+
     background-color: #D5FFC6;
     padding: 40px;
     margin: 0 60px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-    width: 500px;
+    width: 400px;
+    z-index: 99;
+
     
 }
 .objetivos{
@@ -83,92 +93,144 @@ margin: 30px 450px 0;
     justify-content: space-around;
     text-align: center;
     margin-top: 40px;
-    width: 950px;
-    margin: auto;
+    flex-wrap: nowrap;
+    z-index: 99;
     
 
 }
 .retangulo{
+
     background-color: #E7FFDF;
-    border: 10px;
-    width: 100%;
-    height: 2000px;
+    margin-top: -100px;
+    padding-top: 60px;
+    padding: 0 0 50px;
 
 }
 .historia{
-    left: 100px;
-    right: 200px;
+    font: 700 30px 'Nunito', sans-serif;
+    text-align: center;
+    margin: 100px 0; 
+    align-items: center;
+
+
+}
+.azul{
+   display: flex;
+   justify-content: center;
+
+}
+
+.fase1{
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 800;
-font-size: 40px;
-line-height: 55px;
-/* identical to box height */
 
-display: flex;
-align-items: center;
-text-align: center;
+    
+}
+.descricao{
+    width: 400px;
+    font: 100 16px 'Nunito', sans-serif;
+    text-align: center;
+    margin: 100px 0; 
+    align-items: center;
+text-align: justify;
+
+
 
 }
-.imagem2{
-    background: url(image.png);
-border-radius: 20px;
-
+.roda, .historia, .crianca, .idosos{
+width: 420px;
 }
-.circulo1{
+
+.tres-pessoas, .elemento, .natal, .predios{
+width: 150px;
+}
+.tres-pessoas{
+padding: 40px;
+}
+.circulo{
     background: #FFD233;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: 100px;
+    display: flex;
+align-items: center;
+justify-content: center;
     }
-.elemento1{
-    width: 93px;
-    height: 100px;
-    left: 670px;
-    top: 1500px;
+
+.elemento{
+    padding: 40px;
 }
-.equipe{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-/* or 150% */
-
-display: flex;
-align-items: center;
-text-align: justify;
-
-color: #000000;
-
-}
-.meses{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-/* or 150% */
-
-display: flex;
-align-items: center;
-text-align: justify;
-
-color: #000000;
-
-}
-
-.circulo2{
+.circulo1{
     background:#29166F;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: 100px;
+    display: flex;
+align-items: center;
+justify-content: center; 
 }
-.elemento2{
-    right: 40px;
-    left: 40px;
+.natal{
+    padding: 40px;
+}
+.circulo2{
+    background: #D73838;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.predios{
+    padding: 40px;
+}
+.circulo3{
+    background: #E05100;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.conheca{
+
+font: 700 30px 'Nunito', sans-serif;
+text-align: center;
+margin: 80px 100px;
+   
+}
+.nossa{
+    width: 400px;
+height: auto;
+left: 0px;
+top: 104px;
+
+}
+.equipenossa{
+text-align: center;
+
+}
+.feriado{
+    font: 10 15px 'Nunito', sans-serif;
+}
+
+.retangulo2{
+     background-color: #D6EBFF;
+   padding-top: 50px;
+     width: 587px;
+     height: 85px;
+     border-radius: 10px 10px;
+     margin: 55px 65px;
+    justify-content: center;
+   margin: auto;
+   
+    
+}
+.profissionais{
+    text-align: center;
+margin-top: -20px;
+text-align: justify;
 }

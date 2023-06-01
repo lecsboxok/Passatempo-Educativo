@@ -79,8 +79,7 @@ a{
     position: absolute;
     border-radius: 15px;
     background-color: #FFF;
-    width: 266px;
-    height: 64px;
+    padding: 2px 40px;
     left: 170px;
     top: 290px;
 }
@@ -88,7 +87,7 @@ a{
 #comeco .titulo{
     font: 800 40px 'Nunito', sans-serif;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 8px;
     color: #000;
 }
 
@@ -98,7 +97,7 @@ a{
 
 /* INTRODUÇÃO */
 
-#introducao .texto1, .texto2{
+#introducao .texto1, .texto2, .textoLivro, .texto2Cultura{
     font: 400 20px 'Nunito', sans-serif;
 }
 
@@ -117,6 +116,14 @@ a{
     line-height: 35px;
 }
 
+#introducao .textoLivro{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 90px;
+    line-height: 35px;
+}
+
 #introducao .linha{
     width: 1203.2px;
     height: 1px;
@@ -124,6 +131,13 @@ a{
     background: linear-gradient(to right, #FB2673, #0000001c);
     top: 110px;
     left: 145px;
+}
+
+#estrutura .saibaMais{
+    color: #4E94D3;
+    font: 400 20px 'Nunito', sans-serif ;
+    top: 90px;
+    padding-left: 500px;
 }
 
 #estrutura .estruturaTexto{
@@ -146,10 +160,12 @@ a{
 
 #outros .retanguloOutros{
     width: 100%;
-    height: 500px;
+    height: 550px;
     top: 220px;
     background-color: #FFF8DD;
     position: relative;
+    justify-items: center;
+    text-align: center;
 }
 
 #outros .titulo{
@@ -176,29 +192,47 @@ a{
     align-items: center;
     text-align: center;
     color: #000000;
-    padding-left: 120px;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+#outros .textoCaixas:hover{
+    border-radius: 10px;
+    background-color: #FFD233;
+}
+
+#outros .Pintado{
+    border-radius: 10px;
+    background-color: #FFD233;
+    padding: 2px 15px;
+    font: 400 24px 'Nunito', sans-serif;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin: 0 20px;
 }
 
 #outros .caixas1{
     display: flex;
     top: 200px;
     padding: 30px;
-    padding-left: 160px;
+    justify-content: center;
 }
 
 #outros .caixas2{
     display: flex;
     top: 200px;
     padding: 30px;
-    padding-left: 210px;
+    justify-content: center;
 }
 
 #outros .caixas3{
     display: flex;
     top: 200px;
     padding: 30px;
-    padding-left: 145px;
-}
+    justify-content: center;}
 
 #sugestao .retanguloSugestao{
     position: absolute;
@@ -217,6 +251,7 @@ a{
     left: 70px;
 }
 
+
 #sugestao .obrigatorio{
     font: 400 20px 'Aleo', sans-serif;
     left: 65px;
@@ -233,7 +268,7 @@ a{
     top: 80px;
 }
 
-.email{
+#sugestao .email{
     width: 360px;
     height: 44px;
     background: #FFFFFF;
@@ -242,6 +277,7 @@ a{
     left: 95px;
     top: 80px;
 }
+
 
 #sugestao .campoSugestao{
     background: #FFFFFF;
@@ -281,4 +317,126 @@ button{
     background-color: #00000000;
     top: 220px;
     left: 395px;
+}
+
+button:hover{
+    background-color: #FFF;
+}
+
+/* RODAPÉ */
+#contato {
+    background: rgba(255, 228, 133, 0.74);
+    padding: 73px;
+    padding-bottom: 15px;
+    position: absolute;
+    top: 1150px;
+}
+
+#contato .conteiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logoRodape {
+    margin-left: 135px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.icone {
+    width: 55px;
+    padding: 9px;
+}
+
+.icone:hover {
+    width: 62px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.texto-rodape {
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.rodapeTexto {
+    margin: 80px 110px 0 0;
+    text-align: justify;
+    width: 540px;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.iconMaps {
+    margin-right: 20px;
+}
+
+.textoMaps {
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.imgMaps {
+    margin: 0 90px 100px 45px;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.autorais {
+    font: 300 16px 'Aleo-light', serif;
+}
+
+.direito {
+    font: 300 20px 'Aleo-light', serif;
+    margin-top: 10px;
+}
+
+
+/* FUTEBOL*/
+
+#estrutura .Futebol{
+    display: flex;
+    align-items: center;
+}
+
+#estrutura .figuraFutebol{
+    position: absolute;
+    width: 282px;
+    height: 283px;
+    left: 150px;
+    top: 115px;
+}
+
+#introducao .texto2Cultura{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 70px;
+    line-height: 35px;
+}
+
+/* CULTURA */
+
+#estrutura .estruturaTextoCultura{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 120px;
 }
