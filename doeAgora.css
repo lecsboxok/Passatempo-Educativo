@@ -65,7 +65,7 @@ a{
 
 /* FORMULÁRIO */
 .imgFundo {
-    background: url(img/kidsfelizes.jpg);
+    background: url(img/kidsfelizes.jpg) no-repeat;
     background-size: 100%;
     height: 1055px;
 }
@@ -132,7 +132,8 @@ input, button {
 }
 
 .check {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 /* RODAPÉ */
