@@ -27,10 +27,17 @@ a{
 
 /* CABEÇALHO */
 #cabecalho {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #FFF;
+}
+
+#cabecalho .cabecalho_nav {
     margin: 0 35px;
 } 
 
-.cabecalho_sombra {
+#cabecalho .cabecalho_sombra {
     height: 16px;
     background-color: #FFD233;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -66,12 +73,13 @@ a{
 
 #main{
     margin: 0;
+    margin-bottom: 180px;
 }
 
 .titulo{
     font: 800 40px 'Nunito', sans-serif;
     text-align: center;
-    margin-top: 110px;
+    padding-top: 160px;
     color: #000;
 }
 
@@ -147,9 +155,6 @@ html{
 #projetos{
     text-align: center;
 }
-
-
-
 
 
 /* RODAPÉ */
@@ -329,6 +334,28 @@ html{
     z-index: 99;
 }
 
+.imagens10{
+    position: absolute;
+    left: 35.5px;
+    display: none;
+    z-index: 99;
+}
+
+.imagens11{
+    position: absolute;
+    left: 90px;
+    display: none;
+    z-index: 99;
+}
+
+.imagens12{
+    position: absolute;
+    left: 90px;
+    display: none;
+    z-index: 99;
+}
+
+
 .quadros:hover .imagens1{
     display: flex;
 }
@@ -362,6 +389,18 @@ html{
 }
 
 .quadros:hover .imagens9{
+    display: flex;
+}
+
+.quadros:hover .imagens10{
+    display: flex;
+}
+
+.quadros:hover .imagens11{
+    display: flex;
+}
+
+.quadros:hover .imagens12{
     display: flex;
 }
 
@@ -444,9 +483,9 @@ html{
     border-radius: 20px;
     width: 300px;
     height: 50px;
-    top: 380px;
+    top: 420px;
     z-index: 99;
-    left: 1025px;
+    left: 610px;
 }
 
 #projetos .retanguloProjeto9{
@@ -454,7 +493,37 @@ html{
     border-radius: 20px;
     width: 300px;
     height: 50px;
-    top: 380px;
+    top: 370px;
+    z-index: 99;
+    left: 1025px;
+}
+
+#projetos .retanguloProjeto10{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 470px;
+    z-index: 99;
+    left: 190px;
+}
+
+#projetos .retanguloProjeto11{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 420px;
+    z-index: 99;
+    left: 610px;
+}
+
+#projetos .retanguloProjeto12{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 370px;
     z-index: 99;
     left: 1025px;
 }

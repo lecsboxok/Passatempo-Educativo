@@ -9,14 +9,16 @@
 </head>
 
 <body>
+
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo">
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
+                        alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
-                <a class="cabecalho_nav_item" href="#cabecalho">Projetos</a>
+                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
                 <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
                 <a class="cabecalho_nav_item" href="#contato">Contato</a>
             </div>
@@ -26,12 +28,27 @@
                 <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
             </div>
             <div>
-                <a class="cabecalho_nav_item_Doe" href="">Doe Agora</a>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
             </div>
         </nav>
+        <div class="cabecalho_sombra"></div>
     </header>
-    <div class="cabecalho_sombra"></div>
 
+
+    <h1>Hand Talk</h1>
+    <h2>Conte com a ajuda do Hugo e da Maya, nossos tradutores virtuais, para tornar a sua comunicação mais acessível.
+    </h2>
+    <p>Oferecemos tradução digital para acessibilidade em Libras, a Língua Brasileira de Sinais.</p>
+    <!-- Pega a ultima versão do plugin Hand Talk -->
+    <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+    <script>
+        var ht = new HT({
+            // Troque por seu token de acesso
+            token: "<TOKEN>"
+        });
+    </script>
+
+    
     <main id="main">
         <h1 class="titulo">Projetos</h1>
         <p class="textoComeco">Conheça alguns de nossos projetos voltados para educação, cultura, meio ambiente,
@@ -71,7 +88,7 @@
             <div class="retanguloProjeto3">
                 <h1 class="tituloQuadrado">FUTEBOL CIÊNCIA</h1>
             </div>
-            
+
             <div class="divisaoImagens">
                 <div class="quadros">
                     <div class="imagens1">
@@ -108,7 +125,7 @@
             </div>
 
 
-            
+
             <div class="retanguloProjeto4">
                 <h1 class="tituloQuadrado">CULTURA ACESSÍVEL</h1>
             </div>
@@ -120,7 +137,7 @@
             <div class="retanguloProjeto6">
                 <h1 class="tituloQuadrado">FÉRIAS</h1>
             </div>
-            
+
             <div class="divisaoImagens">
                 <div class="quadros">
                     <div class="imagens4">
@@ -138,7 +155,8 @@
                         <img src="img/Certif4.png" alt="" class="user">
                     </div>
                     <div class="teste">
-                        <img src="img/ImagemJogoteca.png" alt="Mulheres em volta de uma mesa com livros" class="imagens">
+                        <img src="img/ImagemJogoteca.png" alt="Mulheres em volta de uma mesa com livros"
+                            class="imagens">
                     </div>
                 </div>
 
@@ -158,17 +176,17 @@
 
 
             <div class="retanguloProjeto7">
-                <h1 class="tituloQuadrado">CULTURA ACESSÍVEL</h1>
+                <h1 class="tituloQuadrado">ANIMAIS EM ORIGAMI</h1>
             </div>
 
             <div class="retanguloProjeto8">
-                <h1 class="tituloQuadrado">JOGOTECA</h1>
+                <h1 class="tituloQuadrado">AMIGO LEITOR</h1>
             </div>
 
             <div class="retanguloProjeto9">
-                <h1 class="tituloQuadrado">FÉRIAS</h1>
+                <h1 class="tituloQuadrado">MÚSICA CLÁSSICA</h1>
             </div>
-            
+
             <div class="divisaoImagens">
                 <div class="quadros">
                     <div class="imagens7">
@@ -205,23 +223,136 @@
             </div>
 
 
+            <div class="retanguloProjeto10">
+                <h1 class="tituloQuadrado">ECOBANDA</h1>
+            </div>
+
+            <div class="retanguloProjeto11">
+                <h1 class="tituloQuadrado">MELHOR IDADE</h1>
+            </div>
+
+            <div class="retanguloProjeto12">
+                <h1 class="tituloQuadrado">AVENTURA EDUCATIVA</h1>
+            </div>
+
+            <div class="divisaoImagens">
+                <div class="quadros">
+                    <div class="imagens10">
+                        <img src="img/Certif11.png" alt="" class="user">
+                        <img src="img/Certif12.png" alt="" class="user">
+                        <img src="img/Certif15.png" alt="" class="user">
+                    </div>
+
+                    <div class="teste">
+                        <img src="img/ImagemEcobanda.png" alt="Pessoas vestidas de palhaço" class="imagens">
+                    </div>
+                </div>
 
 
+                <div class="quadros">
+                    <div class="imagens11">
+                        <img src="img/Certif3.png" alt="" class="user">
+                        <img src="img/Certif10.png" alt="" class="user">
+                    </div>
+                    <div class="teste">
+                        <img src="img/ImagemMelhorIdade.png" alt="Idosas com chapéu de cangaceiro" class="imagens">
+                    </div>
+                </div>
 
-
-            
-            
-            
-
-            
-
-            <img src="img/ImagemEcobanda.png" alt="Pessoas vestidas de palhaço" class="imagens">
-            <img src="img/ImagemMelhorIdade.png" alt="Idosas com chapéu de cangaceiro" class="imagens">
-            <img src="img/ImagemAventuraEducativa.png" alt="Quadros de pintura" class="imagens">
-
+                <div class="quadros">
+                    <div class="imagens12">
+                        <img src="img/Certif14.png" alt="" class="user">
+                        <img src="img/Certif15.png" alt="" class="user">
+                    </div>
+                    <div class="teste">
+                        <img src="img/ImagemAventuraEducativa.png" alt="Quadros de pintura" class="imagens">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    
+
+    <footer>
+        <section id="contato" class="section">
+            <div class="conteiner">
+                <div class="rodape-lado1">
+                    <div class="logoRodape">
+                        <img src="img/logoPassatempo.png" alt="">
+                    </div>
+                    <div>
+                        <img src="img/menina.png" alt="">
+                    </div>
+                    <div class="rodapeTexto">
+                        <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins
+                            lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental e
+                            desenvolvimento do turismo sustentável.
+                        </p>
+                    </div>
+                    <div class="redes">
+                        <div>
+                            <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt=""
+                                    class="facebook icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt=""
+                                    class="instagram icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
+                                    class="twitter icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
+                                    src="img/youtube.png" alt="" class="youtube icone"></a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.linkedin.com/?original_referer=http%3A%2F%2Fpassatempoeducativo.org.br%2F"><img
+                                    src="img/In.png" alt="" class="In icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png" alt=""
+                                    class="flickr icone"></a>
+                        </div>
+                        <div>
+                            <a
+                                href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
+                                    src="img/e-mail.png" alt="" class="email icone"></a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
+                                    src="img/whats.png" alt="" class="whatsapp icone"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rodape-lado2">
+                    <div class="endereco">
+                        <div class="enderecoTexto">
+                            <a
+                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                <img src="img/iconMaps.png" alt="" class="iconMaps">
+                            </a>
+                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brazil</h4>
+                        </div>
+                        <div class="imgMaps">
+                            <a
+                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
+                            </a>
+                        </div>
+                        <div>
+                            <img src="img/amigoSurdo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="direitos">
+                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
