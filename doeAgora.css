@@ -89,7 +89,6 @@ a{
     width: 630px;
     height: 702px;
     margin-top: 80px;
-    text-align: center;
     padding: 35px;
 }
 
@@ -101,14 +100,21 @@ a{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+    padding: 25px;
 }
 
 input, button {
     border-radius: 5px;
 }
 
+input {
+    display: flex;
+    text-align: justify;
+}
+
 .campo {
     margin-bottom: 1em;
+    display: flex;
 }
 
 .campo label {
@@ -134,6 +140,11 @@ input, button {
 .check {
     display: flex;
     flex-direction: column;
+}
+
+label {
+    font: 300 15px 'Nunito', sans-serif;
+    width: 100px;
 }
 
 /* RODAPÉ */
