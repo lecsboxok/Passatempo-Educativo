@@ -44,7 +44,7 @@
                             <div>
                                 <h3 id="subtitulo">Primeiramente, diga suas informações:</h3>
                             </div>
-                            <form action="">
+                            <form action="" class="formulario">
                                 <div class="campo">
                                     <label for="Nome">Nome:</label>
                                     <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
@@ -66,19 +66,25 @@
                                     <input type="date" name="data" id="data" required>
                                 </div>
                                 <div>
-                                    <p>Campos obrigatórios são marcados com *</p>
+                                    <p class="aviso">Campos obrigatórios são marcados com *</p>
                                 </div>
                                 <div id="check">
-                                    <input type="checkbox" id="caixa1" name="caixa1" value="Eu concordo que tenho mais de 18 anos." required>
-                                    <label for="caixa1">Eu concordo que tenho mais de 18 anos.</label>
-                                    <input type="checkbox" id="caixa2" name="caixa2" value="Desejo receber notificações referente a Passatempo Educativo.">
-                                    <label for="caixa2">Desejo receber notificações referente a Passatempo Educativo.</label>
+                                    <div>
+                                        <input type="checkbox" id="caixa1" name="caixa1" value="Eu concordo que tenho mais de 18 anos." required>
+                                        <label for="caixa1">Eu concordo que tenho mais de 18 anos.</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="caixa2" name="caixa2" value="Desejo receber notificações referente a Passatempo Educativo.">
+                                        <label for="caixa2">Desejo receber notificações referente a Passatempo Educativo.</label>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h2>Formas de doação:</h2>
+                                <div class="boxDoacao">
+                                    <h2 class="doacao">Formas de doação:</h2>
                                 </div>
-                                <button class="botao" type="submit"><a href="">Doe pelo Pix</a></button>
-                                <button type="submit"><a href="">Doe pelo PayPal</a></button>
+                                <div class="pagamento">
+                                    <button class="botao" type="submit"><a href="">Doe pelo Pix</a></button>
+                                    <button class="botao1" type="submit"><a href="">Doe pelo PayPal</a></button>
+                                </div>
                             </form>
                         </div>
                     </div>
