@@ -87,8 +87,6 @@ text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
     width: 400px;
     z-index: 99;
-
-    
 }
 .objetivos{
     display: flex;
@@ -105,7 +103,7 @@ text-align: center;
     background-color: #E7FFDF;
     margin-top: -100px;
     padding-top: 60px;
-    padding: 0 0 50px;
+    padding: 0 0 60px;
 
 }
 .historia{
@@ -126,8 +124,12 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     
+
+}
+
+.fase2{
+    margin-bottom: 80px ;
 }
 .descricao{
     width: 400px;
@@ -141,61 +143,58 @@ text-align: justify;
 
 }
 .roda, .historia, .crianca, .idosos{
-width: 420px;
+width: 300px;
 }
+
 
 .tres-pessoas, .elemento, .natal, .predios{
 width: 150px;
 }
+
 .tres-pessoas{
-padding: 40px;
+padding: 30px;
 }
+
 .circulo{
-    background: #FFD233;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     display: flex;
 align-items: center;
 justify-content: center;
-    }
+}
+
+.amarelo{
+    background-color: #FFD233;
+}
+
+.azulfundo{
+    background-color: #29166F;
+}
+
+.vermelho{
+    background-color: #D73838;
+}
+
+.laranja{
+    background-color: #E05100;
+}
 
 .elemento{
-    padding: 40px;
+    padding: 30px;
+    text-align: center;
 }
-.circulo1{
-    background:#29166F;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-align-items: center;
-justify-content: center; 
-}
+
 .natal{
-    padding: 40px;
+    padding: 30px;
+    text-align: center;
 }
-.circulo2{
-    background: #D73838;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-align-items: center;
-justify-content: center;
-}
+
 .predios{
-    padding: 40px;
+    padding: 30px;
+    text-align: center;
 }
-.circulo3{
-    background: #E05100;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-align-items: center;
-justify-content: center;
-}
+
 
 .conheca{
 
@@ -227,7 +226,7 @@ text-align: center;
      border-radius: 10px 10px;
      margin: 75px 75px;
      margin-top: 100px;
-   margin-left: 560px;
+   margin-left: 480px;
    
     
 }
@@ -257,11 +256,11 @@ margin: 60px 0px;
     background: rgba(251, 38, 115, 0.29);
     padding: 30px 30px 30px 30px;
      width: 597px;
-     height: 140px;
+     height: 150px;
      border-radius: 10px 10px;
      margin: 55px 55px;
      margin-top: 5px;
-   margin-left: 550px;
+   margin-left: 440px;
  }
 
  .monitor{
@@ -269,3 +268,90 @@ margin: 60px 0px;
     justify-content: center;
 
  }
+
+ /* RODAPÉ */
+#contato {
+    background: rgba(255, 228, 133, 0.74);
+    padding: 73px;
+    padding-bottom: 15px;
+}
+
+#contato .conteiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logoRodape {
+    margin-left: 135px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.icone {
+    width: 55px;
+    padding: 9px;
+}
+
+.icone:hover {
+    width: 62px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.texto-rodape {
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.rodapeTexto {
+    margin: 80px 110px 0 0;
+    text-align: justify;
+    width: 540px;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.iconMaps {
+    margin-right: 20px;
+}
+
+.textoMaps {
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.imgMaps {
+    margin: 0 90px 100px 45px;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.autorais {
+    font: 300 16px 'Aleo-light', serif;
+}
+
+.direito {
+    font: 300 20px 'Aleo-light', serif;
+    margin-top: 10px;
+}
+/* .retangulo{
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+    background-color: black;
+    text-align: center;
+} */
