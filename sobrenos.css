@@ -21,10 +21,12 @@ text-decoration: none;
     justify-content: space-around;
     align-items: center;
 }
+.idiomas{
+    right: 40px;
+}
 .doe {
     background-color: #FB2673;
     font: 400 20px 'Aleo', serif;
-    border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
 
@@ -221,11 +223,11 @@ text-align: center;
      background-color: #D6EBFF;
    padding: 30px 30px 30px 30px;
      width: 587px;
-     height: 85px;
+     height: 95px;
      border-radius: 10px 10px;
-     margin: 55px 65px;
+     margin: 75px 75px;
      margin-top: 100px;
-   margin-left: 550px;
+   margin-left: 560px;
    
     
 }
@@ -234,9 +236,36 @@ text-align: center;
 margin-top: -20px;
     text-align: justify;
 }
-.colaboradores{
-
-
+.gentes{
+width: 400px;  
+margin: 60px 0px; 
 
 }
- 
+ .colaboradores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 1000px;
+ }
+ .professores{
+   display: flex;
+   justify-content: center;
+ }
+
+ .retangulo3{
+    background: rgba(251, 38, 115, 0.29);
+    padding: 30px 30px 30px 30px;
+     width: 597px;
+     height: 140px;
+     border-radius: 10px 10px;
+     margin: 55px 55px;
+     margin-top: 5px;
+   margin-left: 550px;
+ }
+
+ .monitor{
+    display: flex;
+    justify-content: center;
+
+ }
