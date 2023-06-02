@@ -219,27 +219,24 @@ text-align: center;
 
 .retangulo2{
      background-color: #D6EBFF;
-   padding-top: 50px;
+   padding: 30px 30px 30px 30px;
      width: 587px;
      height: 85px;
      border-radius: 10px 10px;
      margin: 55px 65px;
-    justify-content: center;
-   margin: auto;
+     margin-top: 100px;
+   margin-left: 550px;
    
     
 }
 .profissionais{
     text-align: center;
 margin-top: -20px;
-text-align: justify;
+    text-align: justify;
 }
 .colaboradores{
 
-width: 484px;
-height: 377px;
-left: 150px;
-top: 1000px;
+
 
 }
  
