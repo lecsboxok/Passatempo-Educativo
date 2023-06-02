@@ -1,12 +1,12 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ a{
 
 #cabecalho .cabecalho_nav {
     margin: 0 35px;
-} 
+}
 
 #cabecalho .cabecalho_sombra {
     height: 16px;
@@ -43,7 +43,7 @@ a{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.cabecalho_nav{
+.cabecalho_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +53,7 @@ a{
     margin-left: 140px;
 }
 
-.cabecalho_nav_item{
+.cabecalho_nav_item {
     margin: 20px;
     background: #FFD233;
     font: 400 20px 'Aleo', serif;
@@ -62,7 +62,7 @@ a{
     color: #000;
 }
 
-.cabecalho_nav_item_Doe{
+.cabecalho_nav_item_Doe {
     background-color: #FB2673;
     font: 400 20px 'Aleo', serif;
     border-bottom: 10px;
@@ -72,49 +72,52 @@ a{
 
 /* TITULO UM PARTE UM */
 
-.Azul{
+.Azul {
     padding-top: 100px;
 
 }
 
-.Azul{
+.Azul {
     color: #DCF4FF;
     background-color: #DCF4FF;
     width: 100%;
     height: 150vh;
 }
-.tituloUm{
+
+.tituloUm {
     text-align: center;
     font: 800 40px 'Nunito', serif;
     left: 500px;
     color: #000;
     margin-top: 80px;
-   
 
-    
-}
-.MaosUm{
-margin-top: -60px;
-margin-left: 970px;
-height: 79px;
-width: 81px;
+
+
 }
 
-.Formulario{
+.MaosUm {
+    margin-top: -60px;
+    margin-left: 970px;
+    height: 79px;
+    width: 81px;
+}
+
+.Formulario {
     color: #000;
     margin-top: 50px;
     text-align: center;
     font: 400 24px 'Nunito', sans-serif;
 }
 
-.FormularioB{
+.FormularioB {
     color: #000;
     margin-top: 20px;
     text-align: center;
     left: 380px;
     font: 400 16px 'Nunito', sans-serif;
 }
-.rosa{
+
+.rosa {
     background-color: #FFF2F7;
     height: 506px;
     position: absolute;
@@ -125,68 +128,74 @@ width: 81px;
     text-align: center;
 }
 
-.FundoOnda{
+.FundoOnda {
     width: 100%;
-   margin-top: -90px;
+    margin-top: -90px;
 }
 
 /* TITULO DOIS PARTE DOIS */
 
 
-.TituloDois{
+.TituloDois {
     color: #000;
     font: 800 40px 'Nunito', sans-serif;
     text-align: center;
     padding-top: 70px;
 }
-   
+
 /* TEXTO DA PARTE DOIS */
-.TextoUmA{
-font: 400 20px 'Nunito', sans-serif;
-text-align: center;
-
-}
-.TextoUmB{
+.TextoUmA {
     font: 400 20px 'Nunito', sans-serif;
     text-align: center;
 
 }
-.TextoUmC{
+
+.TextoUmB {
+    font: 400 20px 'Nunito', sans-serif;
+    text-align: center;
+
+}
+
+.TextoUmC {
     font: 400 20px 'Nunito', sans-serif;
     text-align: center;
 }
-.textoUm{
+
+.textoUm {
     margin-top: 60px;
 }
 
 /* PARTE DOS ICONES E SETAS */
 
-.tudoIcones{
+.tudoIcones {
     display: flex;
     justify-content: center;
     column-gap: 200px;
     margin-top: 80px;
 
 }
-#Moeda{
+
+#Moeda {
     height: 120px;
     width: 120px;
-}
-#Bolas{
-    height: 120px;
-    width: 120px;
-   
-}
-#Teatro{
-height: 120px;
-width: 120px;
-left: 1000px;
 }
 
-#Menino{
+#Bolas {
+    height: 120px;
+    width: 120px;
+
+}
+
+#Teatro {
+    height: 120px;
+    width: 120px;
+    left: 1000px;
+}
+
+#Menino {
     height: 106px;
     width: 106px;
-   
+
 }
 
 
@@ -199,26 +208,186 @@ left: 1000px;
     width: 90px;
     height: 100px;
 }
-#CULTURA{
+
+#CULTURA {
     width: 90px;
     height: 100px;
 }
-#FUMCAD{
+
+#FUMCAD {
     width: 90px;
     height: 100px;
+
+}
+/* .NomeIcone{
+    display: flex;
+    justify-content: center;
+    column-gap: 90px;
+    margin-top: 80px;
+    margin-left: -30px;
+    font: 100 10px 'Nunito', sans-serif;
+
+} */
+
+
+
+/* SETAS */
+
+.tudoSeta {
+   
+    display: flex;
+    justify-content: center;
+    column-gap: 260px;
+    margin-top: 80px;
+    margin-left: -30px;
+}
+
+.Ro{
+    margin-top: 60px;
+    margin-left: 235px;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
+#ROUANET{
+    margin-left: 100px;
+}
+
+#ESPORTE{
+    margin-left: 0px;
+}
+
+
+/* PARTE TRÊS TEXTO */
+
+
+.quadradoUm {
+    background-color: #FFF1BE;
+    border-radius: 0px;
+    height: 693px;
+    margin-top: 250px;
+    margin-left: 350px;
+    width: 800px;
+    border: 3px dashed #000;
     
 }
 
-.tudoSeta {
+
+/* TEXTO UM LEI ROUANET */
+
+.TextoDoisA {
+    margin-top: 70px;
+    font: 400 20px 'Nunito', sans-serif;
+    padding-left: 80px;
+    width: 716px;
+    text-align: justify;
+
+}
+
+.TextoDoisB {
+    font: 400 20px 'Nunito', sans-serif;
+    text-align: justify;
+    padding-left: 80px;
+    width: 716px;
+
+}
+
+.Md {
+    width: 120px;
+    height: 120px;
+
+}
+
+.ImagemA {
+    padding-top: 50px;
     display: flex;
     justify-content: center;
-    column-gap: 250px;
-    margin-top: 80px;
+   
 }
-.quadradoUm{
+
+/* PARTE DE ESPORTE */
+
+.quadroDois{
     background-color: #FFF1BE;
-    width:580px ; 
-    height: 883px;
-    margin-top: 350px;
-    text-align: center;
+    border-radius: 0px;
+    height: 500px;
+    margin-top: 250px;
+    margin-left: 350px;
+    width: 800px;
+    border: 3px dashed #000;
+}
+
+.imagemB{
+    padding-top: 70px;
+    display: flex;
+    margin-left: 320px;
+    width: 220px;
+    height:220px ;
+}
+.textoTres{
+    margin-top: 70px;
+    font: 400 20px 'Nunito', sans-serif;
+    padding-left: 80px;
+    width: 716px;
+    text-align: justify;
+}
+
+/* PARTE DE ATUAÇÃO */
+.quadroTres{
+    background-color: #FFF1BE;
+    border-radius: 0px;
+    height: 500px;
+    margin-top: 250px;
+    margin-left: 350px;
+    width: 800px;
+    border: 3px dashed #000;
+}
+
+
+
+.imagemC{
+    padding-top: 60px;
+    display: flex;
+    margin-left: 320px;
+    width: 220px;
+    height:220px ;
+}
+
+.textoQuatro{
+    font: 400 20px 'Nunito', sans-serif;
+    text-align: justify;
+    padding-left: 100px;
+    width: 716px;
+    margin-top: 20px;
+}
+
+/* PARTE DO MENINO */
+
+.quadroQuatro{
+    background-color: #FFF1BE;
+    border-radius: 0px;
+    height: 540px;
+    margin-top: 250px;
+    margin-left: 350px;
+    width: 800px;
+    border: 3px dashed #000; 
+}
+
+.imagemD{
+    padding-top: 60px;
+    display: flex;
+    margin-left: 320px;
+    width: 220px;
+    height:220px ;
+}
+.TextoCinco{
+    font: 400 20px 'Nunito', sans-serif;
+    text-align: justify;
+    margin-top: 30px;
+    padding-left: 80px;
+    width: 716px;
+    margin-top: 20px; 
 }
