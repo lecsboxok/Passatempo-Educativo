@@ -70,6 +70,71 @@ a{
     height: 1055px;
 }
 
+#titulo {
+    font: 400 24px 'Nunito', sans-serif;
+}
+
+#subtitulo {
+    font: 200 20px 'Nunito', sans-serif;
+}
+
+#formulario .conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corFundo {
+    background-color: #FFF;
+    width: 630px;
+    height: 702px;
+    margin-top: 80px;
+    text-align: center;
+    padding: 35px;
+}
+
+.fundo {
+    background-color: rgba(232, 232, 232, 0.72);
+    width: 558px;
+    height: 538px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+input, button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #000;
+    display: inline;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"] {
+    padding: 0.2em;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #7ED738;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+}
+
+.check {
+    display: block;
+}
+
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
