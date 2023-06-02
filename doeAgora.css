@@ -72,6 +72,7 @@ a{
 
 #titulo {
     font: 400 24px 'Nunito', sans-serif;
+    text-align: center;
 }
 
 #subtitulo {
@@ -107,9 +108,10 @@ input, button {
     border-radius: 5px;
 }
 
-input {
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"] {
     display: flex;
     text-align: justify;
+    width: 410px;
 }
 
 .campo {
@@ -135,16 +137,60 @@ input {
     margin-bottom: 1em;
     color: #FFF;
     padding: 0.2em 0.6em;
+    width: 140px;
+}
+
+.botao1 {
+    font-size: 1.2em;
+    background: #FF5D5D;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    width: 140px;
 }
 
 .check {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 label {
     font: 300 15px 'Nunito', sans-serif;
     width: 100px;
+}
+
+.formulario {
+    margin-top: 50px;
+}
+
+.aviso {
+    font: 300 12px 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.boxDoacao {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.doacao {
+    font: 200 20px 'Nunito', sans-serif;
+}
+
+.pagamento {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.textBotao {
+    font: 400 15px 'Nunito', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* RODAPÉ */
