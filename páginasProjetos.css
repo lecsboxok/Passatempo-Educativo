@@ -97,7 +97,7 @@ a{
 
 /* INTRODUÇÃO */
 
-#introducao .texto1, .texto2, .textoLivro, .texto2Cultura, .texto2Jogoteca, .texto2Ferias, .texto2Leitor, .texto2Musica{
+#introducao .texto1, .texto2, .textoLivro, .texto2Cultura, .texto2Jogoteca, .texto2Ferias, .texto2Leitor, .texto2Musica, .texto2Ecobanda{
     font: 400 20px 'Nunito', sans-serif;
 }
 
@@ -516,6 +516,24 @@ button:hover{
     top: 150px;
 }
 
+/* ECOBANDA */
+#introducao .texto2Ecobanda{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 80px;
+    line-height: 35px;
+}
+
+#estrutura .estruturaTextoEcobanda{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 120px;
+}
 
 html{
     scroll-behavior: smooth;
