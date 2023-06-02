@@ -17,13 +17,104 @@
                 transform: translateX(calc(100vw - 200px));
             }
         }
+
+        #cabecalho {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #FFF;
+}
+
+#cabecalho .cabecalho_nav {
+    margin: 0 35px;
+} 
+
+#cabecalho .cabecalho_sombra {
+    height: 16px;
+    background-color: #FFD233;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho_nav_itens {
+    margin-left: 140px;
+}
+
+.cabecalho_nav_item{
+    margin: 20px;
+    background: #FFD233;
+    font: 400 20px 'Aleo', serif;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #000;
+}
+
+.cabecalho_nav_item_Doe{
+    background-color: #FB2673;
+    font: 400 20px 'Aleo', serif;
+    border-bottom: 10px;
+    padding: 10px 30px;
+    color: #FFF;
+}
+
+nav{
+    background-color: #444343;
+}
+
+nav li{
+    display: inline-block;
+}
+
+
     </style>
+
+
 </head>
   
 <body>
     <img src="img/aviao.png" alt="" class="aviao">
 
 
-  
+    <header id="cabecalho">
+        <nav class="cabecalho_nav">
+            <div class="imagem">
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
+                        alt="Logo Passatempo educativo"></a>
+            </div>
+            <div class="cabecalho_nav_itens">
+                <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
+                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
+                <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
+                <a class="cabecalho_nav_item" href="#contato">Contato</a>
+            </div>
+            <div class="idiomas">
+                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
+                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
+                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+            </div>
+            <div>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
+            </div>
+        </nav>
+        <div class="cabecalho_sombra"></div>
+    </header>
+<br><br><br><br><br><br><br><br><br>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Sobre</a>
+            </li>
+        </ul>
+    </nav>    
+
 </body>
 </html>
