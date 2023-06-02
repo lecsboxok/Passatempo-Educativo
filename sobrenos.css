@@ -4,47 +4,73 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
 text-decoration: none;
 }
 
-.item{
+@font-face {
+    font-family: Nunito;
+    src: url(Assets/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Aleo;
+    src: url(Assets/Aleo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Aleo-light;
+    src: url(Assets/Aleo-Light.ttf);
+}
+
+/* CABEÇALHO */
+#cabecalho {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #FFF;
+}
+
+#cabecalho .cabecalho_sombra {
+    height: 16px;
+    background-color: #FFD233;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho_nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cabecalho_nav_itens {
+    margin-left: 100px;
+}
+
+.cabecalho_nav_item{
     margin: 20px;
     background: #FFD233;
-    font: 400 20px 'Aleo', serif;
+    font: 400 17px 'Aleo', serif;
     border-radius: 10px;
     padding: 7px 15px;
     color: #000;
 }
-.cabecalho{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.doe {
+.cabecalho_nav_item_Doe{
     background-color: #FB2673;
-    font: 400 20px 'Aleo', serif;
+    font: 400 17px 'Aleo', serif;
+    border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
-
 }
-
-.linha{
-    width: 100vw;
-height: 16px;
-left: 0px;
-top: 50px;
-
-background: #FFD233;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-}
-
+/* FIM DO CABEÇALHO */
 .mundo{
 width: 100vw;
 height: auto;
 left: 0px;
 top: 104px;
+padding-top: 50px;
 }
 .calendario{
     
@@ -272,7 +298,7 @@ margin: 60px 0px;
 
  }
 
- /* RODAPÉ */
+/* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
     padding: 73px;
@@ -320,7 +346,9 @@ margin: 60px 0px;
 .enderecoTexto {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     margin-bottom: 25px;
+    margin-right: 15px;
 }
 
 .iconMaps {
@@ -331,8 +359,24 @@ margin: 60px 0px;
     font: 400 20px 'Nunito', sans-serif;
 }
 
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logotipoRodape {
+    width: 200px;
+}
+
+.maps {
+    border-radius: 10px;
+}
+
 .imgMaps {
-    margin: 0 90px 100px 45px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
 }
 
 .direitos {
@@ -351,10 +395,3 @@ margin: 60px 0px;
     font: 300 20px 'Aleo-light', serif;
     margin-top: 10px;
 }
-/* .retangulo{
-    width: 500px;
-    height: 350px;
-    border: 1px solid black;
-    background-color: black;
-    text-align: center;
-} */
