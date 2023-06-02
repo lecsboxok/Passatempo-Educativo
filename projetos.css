@@ -148,15 +148,9 @@ html{
     text-align: center;
 }
 
-#projetos .divisaoImagens{
-    display: flexbox;
-    text-align: center;
-    margin-bottom: 70px;
-}
 
-#projetos .imagens{
-    padding: 40px;
-}
+
+
 
 /* RODAPÉ */
 #contato {
@@ -240,23 +234,232 @@ html{
 
 /* HOVER */
 
-#projetos .quadros{
+/* #projetos .quadros{
     margin: 100px;
-}
+} */
 
-#projetos .user{
+/* #projetos .user{
     width: 100px;
-}
+} */
 
-#projetos .imagens1{
+/* #projetos .imagens1{
     position: absolute;
     left: 150px;
     top: 50px;
-    /*POSITION, LEFT E TOP PARA POSICIONAR NA IMAGEM*/
-    display: none; /*PARA FAZER DESAPARECER*/
+
     
 }
 
 #projetos .quadros:hover .imagens1 {
     display: flex;
+} */
+
+
+#projetos .imagens{
+    padding: 30px 40px 0px 40px;
+    
+}
+
+
+#projetos .divisaoImagens{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0px;
+    /* padding: 0 20px; */
+    margin-right: 0;
+    top: 0px;
+    
+}
+
+.imagens1{
+    position: absolute;
+    left: 36px;
+    display: none;
+    z-index: 99;
+    top: 0px;
+}
+
+.imagens2{
+    position: absolute;
+    left: 95px;
+    display: none;
+    z-index: 99;
+}
+
+.imagens3{
+    position: absolute;
+    left: 95px;
+    display: none;
+    z-index: 99;
+}
+
+.imagens4, .imagens5{
+    position: absolute;
+    left: 150px;
+    display: none;
+    z-index: 99;
+}
+
+.imagens6{
+    position: absolute;
+    left: 35.5px;
+    display: none;
+    z-index: 99;
+}
+
+.imagens7{
+    position: absolute;
+    left: 35.5px;
+    display: none;
+    z-index: 99;
+}
+
+.imagens8{
+    position: absolute;
+    left: 150px;
+    display: none;
+    z-index: 99;
+}
+
+.imagens9{
+    position: absolute;
+    left: 35.5px;
+    display: none;
+    z-index: 99;
+}
+
+.quadros:hover .imagens1{
+    display: flex;
+}
+
+.quadros:hover .imagens2{
+    display: flex;
+}
+
+.quadros:hover .imagens3{
+    display: flex;
+}
+
+.quadros:hover .imagens4{
+    display: flex;
+}
+
+.quadros:hover .imagens5{
+    display: flex;
+}
+
+.quadros:hover .imagens6{
+    display: flex;
+}
+
+.quadros:hover .imagens7{
+    display: flex;
+}
+
+.quadros:hover .imagens8{
+    display: flex;
+}
+
+.quadros:hover .imagens9{
+    display: flex;
+}
+
+.user{
+    padding: 0 5px;
+}
+
+#projetos .retanguloProjeto1{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 480px;
+    z-index: 99;
+    left: 190px;
+}
+
+#projetos .retanguloProjeto2{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 430px;
+    z-index: 99;
+    left: 610px;
+}
+
+#projetos .retanguloProjeto3{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 380px;
+    z-index: 99;
+    left: 1025px;
+}
+
+#projetos .retanguloProjeto4{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 480px;
+    z-index: 99;
+    left: 190px;
+}
+
+#projetos .retanguloProjeto5{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 430px;
+    z-index: 99;
+    left: 610px;
+}
+
+#projetos .retanguloProjeto6{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 380px;
+    z-index: 99;
+    left: 1025px;
+}
+
+#projetos .retanguloProjeto7{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 470px;
+    z-index: 99;
+    left: 190px;
+}
+
+#projetos .retanguloProjeto8{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 380px;
+    z-index: 99;
+    left: 1025px;
+}
+
+#projetos .retanguloProjeto9{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    top: 380px;
+    z-index: 99;
+    left: 1025px;
+}
+
+.tituloQuadrado{
+    font: 700 24px 'Nunito', sans-serif;
+    top: 10px;
 }
