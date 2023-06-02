@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doe Agora</title>
+    <title>Doe Agora - Passatempo Educativo</title>
     <link rel="stylesheet" href="doeAgora.css">
     <link rel="icon" href="img/logoIcon.png">
 </head>
@@ -32,18 +32,54 @@
     </header>
     <div class="cabecalho_sombra"></div>
     <main>
-        <section>
-            <div class="imgFundo">
-                <div>
-                    <div>
+        <section id="formulario" class="imgFundo">
+            <div>
+                <div class="conteiner">
+                    <div class="corFundo">
                         <div>
-                            <h3>Primeiramente, diga suas informações:</h3>
+                            <h1 id="titulo">Faça sua doação:</h1>
                         </div>
-                        <form action="doeAgora.html">
-                            <label for="Nome">Nome:</label>
-                            <input type="text" placeholder="Insira seu nome">
-                            <label for="Telefone"></label>
-                        </form>
+                        <div class="fundo">
+                            <div>
+                                <h3 id="subtitulo">Primeiramente, diga suas informações:</h3>
+                            </div>
+                            <form action="">
+                                <div class="campo">
+                                    <label for="Nome">Nome:</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="Telefone">Telefone:</label>
+                                    <input type="tel" name="Telefone" id="Telefone" placeholder="(__) _____-____" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" placeholder="Insira seu email">
+                                </div>
+                                <div class="campo">
+                                    <label for="CPF">CPF:</label>
+                                    <input type="text" name="CPF" id="CPF" placeholder="___.___.___-__" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="data">Data de Nascimento</label>
+                                    <input type="date" name="data" id="data" required>
+                                </div>
+                                <div>
+                                    <p>Campos obrigatórios são marcados com *</p>
+                                </div>
+                                <div id="check">
+                                    <input type="checkbox" id="caixa1" name="caixa1" value="Eu concordo que tenho mais de 18 anos." required>
+                                    <label for="caixa1">Eu concordo que tenho mais de 18 anos.</label>
+                                    <input type="checkbox" id="caixa2" name="caixa2" value="Desejo receber notificações referente a Passatempo Educativo.">
+                                    <label for="caixa2">Desejo receber notificações referente a Passatempo Educativo.</label>
+                                </div>
+                                <div>
+                                    <h2>Formas de doação:</h2>
+                                </div>
+                                <button class="botao" type="submit"><a href="">Doe pelo Pix</a></button>
+                                <button type="submit"><a href="">Doe pelo PayPal</a></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
