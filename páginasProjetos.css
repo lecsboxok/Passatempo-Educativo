@@ -27,10 +27,17 @@ a{
 
 /* CABEÇALHO */
 #cabecalho {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #FFF;
+}
+
+#cabecalho .cabecalho_nav {
     margin: 0 35px;
 } 
 
-.cabecalho_sombra {
+#cabecalho .cabecalho_sombra {
     height: 16px;
     background-color: #FFD233;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -61,6 +68,10 @@ a{
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
+}
+
+#main{
+    padding-top: 100px;
 }
 
 /* COMEÇO */
@@ -97,7 +108,7 @@ a{
 
 /* INTRODUÇÃO */
 
-#introducao .texto1, .texto2, .textoLivro, .texto2Cultura, .texto2Jogoteca, .texto2Ferias, .texto2Leitor, .texto2Musica, .texto2Ecobanda{
+#introducao .texto1, .texto2, .textoLivro, .texto2Cultura, .texto2Jogoteca, .texto2Ferias, .texto2Leitor, .texto2Musica, .texto2Ecobanda, .texto2MelhorIdade{
     font: 400 20px 'Nunito', sans-serif;
 }
 
@@ -327,8 +338,7 @@ button:hover{
     background: rgba(255, 228, 133, 0.74);
     padding: 73px;
     padding-bottom: 15px;
-    position: absolute;
-    top: 1150px;
+    margin-top: 1200px;
 }
 
 #contato .conteiner {
@@ -533,6 +543,25 @@ button:hover{
     line-height: 35px;
     text-align: justify;
     top: 120px;
+}
+
+/* MELHOR IDADE */
+#introducao .texto2MelhorIdade{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 80px;
+    line-height: 35px;
+}
+
+#estrutura .estruturaTextoMelhor{
+    width: 841px;
+    height: 350px;
+    left: 500px;
+    font: 400 20px 'Nunito', sans-serif ;
+    line-height: 35px;
+    text-align: justify;
+    top: 110px;
 }
 
 html{
