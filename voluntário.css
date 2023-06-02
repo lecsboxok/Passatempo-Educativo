@@ -97,13 +97,11 @@ a {
 }
 
 .MaoDois {
-    max-width: 600px;
-    max-height: 200px;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 80px;
     position: absolute;
     top: 1330px;
-    left: 800px;
+    left: 900px;
 }
 
 .calendario {
@@ -139,7 +137,18 @@ a {
 
 }
 
-.textoDois {
+.textoDoisA {
+    text-align: center;
+    font-size: 20px;
+    font-family: Nunito;
+}
+
+.textoDoisB{
+    text-align: center;
+    font-size: 20px;
+    font-family: Nunito;
+}
+.textoDoisC{
     text-align: center;
     font-size: 20px;
     font-family: Nunito;
@@ -151,9 +160,9 @@ a {
 
 /* MOEDA */
 
-.Le{
-    
-    top: 234px;
+.Md{
+position: absolute;
+top: 1710px;
 }
 .moeda {
     height: 120px;
@@ -191,13 +200,13 @@ a {
 
 .esporte {
     position: absolute;
-    top: 1850px;
+    top: 1730px;
 }
 
 /* CULTURA COM ICONE */
 .atuacao {
     position: absolute;
-    top: 1820px;
+    top: 1700px;
 }
 
 .teatro {
@@ -229,7 +238,7 @@ a {
 
 .Funcad{
    position: absolute;
-   top: 1880px;
+   top: 1740px;
 }
 .textoF{
     margin-left: 1225px;
