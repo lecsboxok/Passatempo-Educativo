@@ -71,10 +71,15 @@ a{
 }
 
 /* PRINCIPAL */
+.conteudo {
+    padding-top: 100px;
+}
+
 .fundo {
     background: url(img/principalaviao.jpg) no-repeat center;
     background-size: 100%;
     height: 636px;
+    
 }
 
 .textoFrente {
@@ -269,6 +274,43 @@ a{
     text-align: end;
 }
 
+.video1 {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.video3 {
+    display: flex;
+    column-gap: 30px;
+}
+
+.aviao:hover{
+    animation-name: fly;
+    animation-duration: 2s;
+}
+
+@keyframes fly{
+    100%{
+        transform: translateX(calc(100vw - 200px));
+    }
+}
+
+.mundo {
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    top: 30px;
+}
+
+.titulotube {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    column-gap: 40px;
+}
+
+
 /* NOSSA HISTÓRIA */
 #nossaHistoria {
     background: rgba(180, 219, 255, 0.14);
@@ -304,6 +346,7 @@ a{
 
 .imgSaiba {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .textoSaiba {
@@ -325,14 +368,37 @@ a{
 
 .textoBotao {
     font: 400 24px 'Nunito', sans-serif;
-    color: #000;
+    color: #fff;
     text-align: center;
 }
 
- .bloco {
+.bloco {
     text-align: center;
 }
 
+.botao {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    display: inline;
+}
+
+.fundoVerde {
+    background-color: #48A400;
+}
+
+.fundoVermelho {
+    background-color: #A40000;
+}
+
+.fundoLaranja {
+    background-color: #E05100;
+}
+
+.fundoAzul {
+    background-color: #29166F;
+}
 
 
 /* PARCEIROS E PATROCINADORES */
