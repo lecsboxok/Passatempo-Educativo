@@ -108,7 +108,7 @@ a{
 
 /* INTRODUÇÃO */
 
-#introducao .texto1, .texto2, .textoLivro, .texto2Cultura, .texto2Jogoteca, .texto2Ferias, .texto2Leitor, .texto2Musica, .texto2Ecobanda, .texto2MelhorIdade{
+#introducao .texto1, .texto2, .textoLivro, .texto2Cultura, .texto2Jogoteca, .texto2Ferias, .texto2Leitor, .texto2Musica, .texto2Ecobanda, .texto2MelhorIdade, .texto2Aventura{
     font: 400 20px 'Nunito', sans-serif;
 }
 
@@ -562,6 +562,15 @@ button:hover{
     line-height: 35px;
     text-align: justify;
     top: 110px;
+}
+
+/* AVENTURA */
+#introducao .texto2Aventura{
+    width: 1149px;
+    height: 105px;
+    left: calc(50% - 1149px/2 - 3.5px);
+    top: 70px;
+    line-height: 35px;
 }
 
 html{
