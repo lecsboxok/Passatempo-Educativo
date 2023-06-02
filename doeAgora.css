@@ -72,6 +72,7 @@ a{
 
 #titulo {
     font: 400 24px 'Nunito', sans-serif;
+    text-align: center;
 }
 
 #subtitulo {
@@ -136,6 +137,7 @@ input, button {
     margin-bottom: 1em;
     color: #FFF;
     padding: 0.2em 0.6em;
+    width: 140px;
 }
 
 .botao1 {
@@ -145,7 +147,7 @@ input, button {
     margin-bottom: 1em;
     color: #FFF;
     padding: 0.2em 0.6em;
-    margin-right: 10px;
+    width: 140px;
 }
 
 .check {
@@ -180,6 +182,15 @@ label {
 .pagamento {
     text-align: center;
     margin-top: 20px;
+}
+
+.textBotao {
+    font: 400 15px 'Nunito', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* RODAPÉ */
