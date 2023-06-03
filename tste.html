@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     
     <style>
         .aviao:hover{
@@ -62,16 +64,75 @@
     color: #FFF;
 }
 
-nav{
+.teste{
     background-color: #444343;
+    width: 110px;
 }
 
-nav li{
-    display: inline-block;
+ul{
+    list-style: none;
 }
 
+.a-teste{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
 
+.a-teste:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste{
+    display: block;
+    padding: 0 20px;
+}
+
+.teste{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.principal{
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p{
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens{
+    display: none;
+    padding-left: 0;
+}
+
+.imagens-ul{
+    display: none;
+}
     </style>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+
+    </script>
 
 
 </head>
@@ -105,16 +166,37 @@ nav li{
     </header>
 <br><br><br><br><br><br><br><br><br>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">Sobre</a>
+    <nav class="teste">
+        <ul class="principal">
+            <li class="li-p">
+                <a href="javascript://" class="a-teste">
+                    <img src="img/Brasil.png" alt="">
+                    <img src="img/setinha.png" alt="" id="seta">
+                </a>
+
+                <ul class="ul-imagens">
+                    <a href=""><li><img src="img/ingles.png" alt="" class="img-teste"></li></a>
+                    <a href=""><li><img src="img/espanhol.png" alt="" class="img-teste"></li></a>
+                </ul>
             </li>
         </ul>
-    </nav>    
+    </nav>
+    
+    <nav class="teste2">
+        <ul class="principal">
+            <li class="li1">
+                <a href="" class="aHover">
+                    <img src="img/Brasil.png" alt="">
+                    <img src="img/setinha.png" alt="">
+                </a>
+
+                <ul class="imagens-ul">
+                    <a href=""><li><img src="img/ingles.png" alt=""></li></a>
+                    <a href=""><li><img src="img/espanhol.png" alt=""></li></a>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
 </body>
 </html>
