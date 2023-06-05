@@ -5,6 +5,30 @@
     <title>Passatempo Educativo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
 </head>
 <body class="corpo">
     <header id="cabecalho">
@@ -19,9 +43,20 @@
                 <a class="cabecalho_nav_item" href="#contato">Contato</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste">
+                    <ul class="principal">
+                        <li class="li-p">
+                            <a href="javascript://" class="a-teste">
+                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                            </a>
+            
+                            <ul class="ul-imagens">
+                                <a href="index.ingles.html"><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
+                                <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
@@ -29,6 +64,13 @@
         </nav>
         <div class="cabecalho_sombra"></div>
     </header>
+    <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+    <script>
+        var ht = new HT({
+            // Troque por seu token de acesso
+            token: "<TOKEN>"
+        });
+    </script>
     <main class="conteudo">
         <section class="conteudo_1">
             <div class="fundo">

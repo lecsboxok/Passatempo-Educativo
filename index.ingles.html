@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Passatempo Educativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logoIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
+</head>
+<body class="corpo">
+    <header id="cabecalho">
+        <nav class="cabecalho_nav">
+            <div class="imagem">
+                <a href="index.ingles.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
+            </div>
+            <div class="cabecalho_nav_itens">
+                <a class="cabecalho_nav_item" href="sobrenos.ingles.html">About Us</a>
+                <a class="cabecalho_nav_item" href="projetos.ingles.html">Projects</a>
+                <a class="cabecalho_nav_item" href="voluntários.html">Volunteers</a>
+                <a class="cabecalho_nav_item" href="#contato">Contact</a>
+            </div>
+            <div class="idiomas">
+                <nav class="teste2">
+                    <ul class="principal2">
+                        <li class="li-p2">
+                            <a href="javascript://" class="a-teste2">
+                                <img src="img/inglesComSeta.png" alt="Brasil" width="45px" class="Inglês">
+                            </a>
+                
+                            <ul class="ul-imagens2">
+                                <a href="projetos.html"><li><img src="img/Brasil.png" alt="Bandeira do Brasil" class="img-teste2"></li></a>
+                                <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste2"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Donate now</a>
+            </div>
+        </nav>
+        <div class="cabecalho_sombra"></div>
+    </header>
+    <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+    <script>
+        var ht = new HT({
+            // Troque por seu token de acesso
+            token: "<TOKEN>"
+        });
+    </script>
+    <main class="conteudo">
+        <section class="conteudo_1">
+            <div class="fundo">
+                <div class="textoFrente">
+                    <h1 class="titulo">PASSATEMPO EDUCATIVO</h1>
+                    <h2></h2>
+                </div>
+            </div>
+        </section>
+        <section id="frase" class="section">
+            <div class="conteiner">
+                <p class="frase">“A doação transforma o amor abstrato em um ato concreto. Deixe sua marca amorosa na vida de alguém.”</p>
+                <p class="frase-autor">(Belas Mensagens)</p>
+            </div>
+        </section>    
+        <section id="premios" class="section">
+            <div class="conteiner">
+                <div class="frasePremio">
+                    <h3 class="frasePremios">Reconhecimento e conquistas</h3>
+                </div>
+                <div class="premio"><img src="img/ONG2022.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/ONG2021.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/PremioItaú.png" alt="" class="certificado"></div>
+                <div class="premio"><img src="img/certificado.png" alt="" class="certificado"></div>
+            </div>
+        </section>
+        <section id="doacoes">
+            <div class="doar">
+                <h2 class="sub">Doações</h2> 
+                <div class="imgDoar">
+                    <img src="img/maoCoracao.png" alt="">
+                </div>
+            </div>
+            <div class="conteiner quadros">
+                <div class="doacoes">
+                    <div class="margemDoacoes">
+                        <div class="textDoacoes">
+                            <h3 class="textoDoacoes">As doações serão transformadas em:</h3>
+                        </div>
+                        <div class="doacoesItens">
+                            <div class="doacoesItem">
+                                <img src="img/material.png" alt="" class="material Item">
+                                <p class="topicosDoacoes">Material pedagógico</p>
+                            </div>
+                            <div class="doacoesItem">
+                                <img src="img/despesas.png" alt="" class="despesas Item">
+                                <p class="topicosDoacoes">Despesas administrativas</p>
+                            </div>
+                            <div class="doacoesItem">
+                                <img src="img/transporte.png" alt="" class="transporte Item">
+                                <p class="topicosDoacoes">Transporte para projetos</p>
+                            </div>
+                            <div class="doacoesItem">
+                                <img src="img/multidisciplinares.png" alt="" class="atividades Item">
+                                <p class="topicosDoacoes">Material de consumo para atividades multidisciplinares.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doador">
+                    <div class="titulo-Doador">
+                        <h3 class="tituloDoador">Seja um doador</h3>
+                    </div>
+                    <div class="linkDoe">
+                        <div class="doeVer">
+                            <a href="" class="doe verdeFundo">Doe pelo Pix</a>
+                        </div>
+                        <div class="doeVer">
+                            <a href="" class="doe vermelhoFundo">Doe pelo PayPal</a>
+                        </div>
+                    </div>
+                    <div class="imagemDoe">
+                        <img src="img/caixa.png" alt="" class="imgdoe">
+                        <img src="img/caixaLeite.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="conteudoYoutube">
+            <div class="titulotube">
+                <h2 class="sub">Conheça nosso canal no Youtube</h2>
+                <div>
+                    <img src="img/imgTube.png" alt="" class="imgTube">
+                </div>
+            </div>
+            <div class="conteiner">
+                <div class="video1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_UfNUz521YQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div>
+                        <img src="img/aviao.png" alt="" class="aviao">
+                    </div>
+                </div>
+                <div class="video2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/37vZNMvCebQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w831iGxdZZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="mundo">
+                        <img src="img/mundo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="nossaHistoria">
+                <div class="saibaMais">
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba laranja">CONHEÇA NOSSA HISTÓRIA</h2>
+                            <p class="textoSaiba">23 anos trabalhando em projetos culturais, educacionais e ambientais.</p>
+                        </div>
+                        <div class="bloco">
+                            <div class="imgSaiba">
+                                <img src="img/Conhecanossahistoria.jpg" alt="">
+                            </div>
+                            <a href="sobrenos.ingles.html">
+                                <div class="botao fundoLaranja">
+                                    <a href="sobrenos.ingles.html" class="textoBotao">About Us</a>
+                                    <a href="sobrenos.ingles.html"><img src="img/seta.svg" alt=""></a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba azul">VEJA OS PROJETOS</h2>
+                            <p class="textoSaiba">Nossos projetos tem como objetivo dar continuidade no ensino-aprendizagem.</p>
+                        </div>
+                        <div class="bloco">
+                            <div class="imgSaiba">
+                                <img src="img/vejaosprojetos.jpg" alt="">
+                            </div>
+                            <a href="projetos.ingles.html">
+                                <div class="botao fundoAzul">
+                                    <a href="projetos.ingles.html" class="textoBotao">Saiba mais</a>
+                                    <a href="projetos.ingles.html"><img src="img/seta.svg" alt=""></a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba vermelho">SEJA UM VOLUNTÁRIO</h2>
+                            <p class="textoSaiba">Abraçe a causa e faça parte da nossa equipe!</p>
+                        </div>
+                        <div class="bloco">
+                            <div class="imgSaiba">
+                                <img src="img/sejaumvoluntario.jpg" alt="">
+                            </div>
+                            <a href="voluntários.html">
+                                <div class="botao fundoVermelho">
+                                <a href="voluntários.html" class="textoBotao">Saiba mais</a>
+                                <a href="voluntários.html"><img src="img/seta.svg" alt=""></a>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="historia">
+                        <div class="conteudoSaiba">
+                            <h2 class="tituloSaiba verde">APOIE NOSSA ONG</h2>
+                            <p class="textoSaiba">Conheça nosso guia de apoio a projetos culturais!</p>
+                        </div>
+                        <div class="bloco">
+                            <div class="imgSaiba">
+                                <img src="img/apoienossaong.jpg" alt="">
+                            </div>
+                            <a href="doeAgora.html">
+                                <div class="botao fundoVerde">
+                                    <a href="doeAgora.html" class="textoBotao">Contribua conosco</a>
+                                    <a href="doeAgora.html"><img src="img/seta.svg" alt=""></a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="conteudo_6">
+            <div>
+                <h2 class="sub">Patrocinadores e parceiros</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contato" class="section">
+            <div class="conteiner">
+                <div class="rodape-lado1">
+                    <div class="logoRodape">
+                        <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
+                    </div>
+                    <div>
+                        <img src="img/menina.png" alt="">
+                    </div>
+                    <div class="rodapeTexto">
+                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops organization, which develops projects in the educational, cultural, environmental preservation, and development of sustainable tourism.
+                        </p>
+                    </div>
+                    <div class="redes">
+                        <div>
+                            <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt="" class="facebook icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt="" class="instagram icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt="" class="twitter icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img src="img/youtube.png" alt="" class="youtube icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/?original_referer=http%3A%2F%2Fpassatempoeducativo.org.br%2F"><img src="img/In.png" alt="" class="In icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png" alt="" class="flickr icone"></a>
+                        </div>
+                        <div>
+                            <a href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img src="img/e-mail.png" alt="" class="email icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img src="img/whats.png" alt="" class="whatsapp icone"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rodape-lado2">
+                    <div class="endereco">
+                        <div class="enderecoTexto">
+                            <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                <img src="img/iconMaps.png" alt="" class="iconMaps">
+                            </a>
+                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brazil</h4>
+                        </div>
+                        <div class="imgMaps">
+                            <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
+                            </a>
+                        </div>
+                        <div>
+                            <img src="img/amigoSurdo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="direitos">
+                    <p class="autorais">No intent to infringe on the copyright of image use.</p>
+                    <p class="direito">Copyright © 2023 Educational hobby. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

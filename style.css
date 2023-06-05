@@ -66,6 +66,100 @@ a{
     color: #FFF;
 }
 
+.idiomas {
+    margin-top: 15px;
+}
+
+/* IDIOMAS */
+ul{
+    list-style: none;
+}
+
+.a-teste{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+
+}
+
+.a-teste:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste{
+    display: block;
+    padding: 0 20px;
+}
+
+.principal{
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p{
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens{
+    display: none;
+    padding-left: 2px;
+    position: fixed;
+    z-index: 100;
+}
+
+/* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
+
+ul{
+    list-style: none;
+}
+
+.a-teste2{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
+
+.a-teste2:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste2{
+    display: block;
+    padding: 0 20px;
+}
+
+.principal2{
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p2{
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens2{
+    display: none;
+    padding-left: 2px;
+    position: fixed;
+    z-index: 100;
+}
+
 /* PRINCIPAL */
 .conteudo {
     padding-top: 100px;
@@ -281,13 +375,13 @@ a{
     column-gap: 30px;
 }
 
-.aviao:hover{
+.aviao:hover {
     animation-name: fly;
     animation-duration: 2s;
 }
 
-@keyframes fly{
-    100%{
+@keyframes fly {
+    100% {
         transform: translateX(calc(100vw - 200px));
     }
 }
@@ -296,7 +390,7 @@ a{
     display: flex;
     align-self: flex-end;
     position: relative;
-    top: 30px;
+    left: 170px;
 }
 
 .titulotube {
