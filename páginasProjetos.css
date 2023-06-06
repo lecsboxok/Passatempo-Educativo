@@ -367,6 +367,7 @@ ul li ul li{
     border-radius: 20px;
     left: 65px;
     top: 80px;
+    padding-left: 10px;
 }
 
 #sugestao .email{
@@ -377,6 +378,7 @@ ul li ul li{
     border-radius: 20px;
     left: 95px;
     top: 80px;
+    padding-left: 10px;
 }
 
 
@@ -388,7 +390,9 @@ ul li ul li{
     top: 130px;
     height: 158px;
     width: 774px;
+    padding-left: 10px;
 }
+
 
 ::placeholder{
     font: 400 20px 'Aleo', sans-serif;
