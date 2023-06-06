@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 @font-face {
@@ -38,7 +38,7 @@ text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.cabecalho_nav{
+.cabecalho_nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -48,7 +48,7 @@ text-decoration: none;
     margin-left: 100px;
 }
 
-.cabecalho_nav_item{
+.cabecalho_nav_item {
     margin: 20px;
     background: #FFD233;
     font: 400 17px 'Aleo', serif;
@@ -57,53 +57,149 @@ text-decoration: none;
     color: #000;
 }
 
-.cabecalho_nav_item_Doe{
+.cabecalho_nav_item_Doe {
     background-color: #FB2673;
     font: 400 17px 'Aleo', serif;
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
 }
-/* FIM DO CABEÇALHO */
-.mundo{
-width: 100vw;
-height: auto;
-left: 0px;
-top: 104px;
-padding-top: 50px;
-}
-.calendario{
-    
-   height: auto;
-    left: 1380px;
-right: 0;
-top: 150px;
-bottom: 0;
-position: absolute;
-z-index: 7;
+
+.idiomas {
+    margin-top: 15px;
 }
 
-.qm{
+/* IDIOMAS */
+ul{
+    list-style: none;
+}
+
+.a-teste{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+
+}
+
+.a-teste:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste{
+    display: block;
+    padding: 0 20px;
+}
+
+.principal{
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p{
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens{
+    display: none;
+    padding-left: 2px;
+    position: fixed;
+    z-index: 100;
+}
+
+/* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
+
+ul{
+    list-style: none;
+}
+
+.a-teste2{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
+
+.a-teste2:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste2{
+    display: block;
+    padding: 0 20px;
+}
+
+.principal2{
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p2{
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens2{
+    display: none;
+    padding-left: 2px;
+    position: fixed;
+    z-index: 100;
+}
+
+/* FIM DO CABEÇALHO */
+.mundo {
+    width: 100%;
+    height: auto;
+    left: 0px;
+    padding-top: 50px;
+}
+
+.calendario {
+
+    height: auto;
+    left: 1380px;
+    right: 0;
+    top: 150px;
+    bottom: 0;
+    position: absolute;
+    z-index: 7;
+}
+
+.qm {
     font: 700 30px 'Nunito', sans-serif;
     text-align: center;
     margin-top: 100px;
 }
 
-.tempo{
-   
-font: 500 20px 'Nunito', sans-serif;
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-margin: 30px 450px 0;
-text-align: center;
+.tempo {
+
+    font: 500 20px 'Nunito', sans-serif;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 450px 0;
+    text-align: center;
 }
-.verde{
+
+.verde {
 
     background-color: #D5FFC6;
     padding: 40px;
@@ -112,19 +208,25 @@ text-align: center;
     width: 400px;
     z-index: 99;
 }
-.objetivos{
+
+.objetivos {
     display: flex;
     justify-content: space-around;
     text-align: center;
     margin-top: 40px;
     flex-wrap: nowrap;
     z-index: 99;
-     }
+}
 
+.subtitulo {
+    font: 700 32px 'Nunito', sans-serif;
+}
 
+.subtexto {
+    font: 400 15px 'Nunito', sans-serif;
+}
 
-
-.retangulo{
+.retangulo {
 
     background-color: #E7FFDF;
     margin-top: -100px;
@@ -132,171 +234,178 @@ text-align: center;
     padding: 0 0 60px;
 
 }
-.historia{
+
+.historia {
     font: 700 30px 'Nunito', sans-serif;
     text-align: center;
-    margin: 100px 0; 
+    margin: 100px 0;
     align-items: center;
 
 
 }
-.azul{
-   display: flex;
-   justify-content: center;
+
+.azul {
+    display: flex;
+    justify-content: center;
 
 }
 
-.fase1{
+.fase1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 
 }
-.fase2{
+
+.fase2 {
     margin-bottom: 50px;
 }
 
-.descricao{
+.descricao {
     width: 400px;
-    font: 100 16px 'Nunito', sans-serif;
+    font: 400 20px 'Nunito', sans-serif;
     text-align: center;
-    margin: 100px 0; 
+    margin: 100px 0;
     align-items: center;
-text-align: justify;
-
-
+    text-align: justify;
 
 }
-.roda, .historia, .crianca, .idosos{
-width: 400px;
+
+.roda, .historia, .crianca, .idosos {
+    width: 400px;
 }
 
 
-.tres-pessoas, .elemento, .natal, .predios{
-width: 150px;
+.tres-pessoas, .elemento, .natal, .predios {
+    width: 150px;
 }
 
-.tres-pessoas{
-padding: 30px;
-text-align: center;
+.tres-pessoas {
+    padding: 30px;
+    text-align: center;
 }
 
-.circulo{
+.circulo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.amarelo{
+.amarelo {
     background-color: #FFD233;
 }
 
-.azulfundo{
+.azulfundo {
     background-color: #29166F;
 }
 
-.vermelho{
+.vermelho {
     background-color: #D73838;
 }
 
-.laranja{
+.laranja {
     background-color: #E05100;
 }
 
-.elemento{
+.elemento {
     padding: 30px;
     text-align: center;
 }
 
-.natal{
+.natal {
     padding: 30px;
     text-align: center;
 }
 
-.predios{
+.predios {
     padding: 30px;
     text-align: center;
 }
 
 
-.conheca{
+.conheca {
 
-font: 700 30px 'Nunito', sans-serif;
-text-align: center;
-margin: 80px 100px;
-   
+    font: 700 30px 'Nunito', sans-serif;
+    text-align: center;
+    margin: 80px 100px;
+
 }
-.nossa{
+
+.nossa {
     width: 400px;
-height: auto;
-left: 0px;
-top: 104px;
+    height: auto;
+    left: 0px;
+    top: 104px;
 
 }
-.equipenossa{
-text-align: center;
+
+.equipenossa {
+    text-align: center;
 
 }
-.feriado{
+
+.feriado {
     font: 10 15px 'Nunito', sans-serif;
 }
 
-.retangulo2{
-     background-color: #D6EBFF;
-   padding: 30px 30px 30px 30px;
-     width: 587px;
-     height: 95px;
-     border-radius: 10px 10px;
-     margin: 80px 75px;
-     margin-top: 100px;
-   margin-left: 480px;
-   
-    
+.retangulo2 {
+    background-color: #D6EBFF;
+    padding: 30px 30px 30px 30px;
+    width: 587px;
+    height: 95px;
+    border-radius: 10px 10px;
+    margin: 80px 75px;
+    margin-top: 100px;
+    margin-left: 480px;
 }
-.profissionais{
+
+.profissionais {
     text-align: center;
-margin-top: -10px;
+    margin-top: -10px;
     text-align: justify;
-    font:10 15px 'Nunito', sans-serif; 
+    font: 400 15px 'Nunito', sans-serif;
 }
-.gentes{
-width: 400px;  
-margin: 60px 0px; 
+
+.gentes {
+    width: 400px;
+    margin: 60px 0px;
 
 }
- .colaboradores{
+
+.colaboradores {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
     width: 1000px;
- }
- .professores{
-   display: flex;
-   justify-content: center;
- }
+}
 
- .retangulo3{
-    background: rgba(251, 38, 115, 0.29);
-    padding: 30px 30px 30px 30px;
-     width: 597px;
-     height: 150px;
-     border-radius: 10px 10px;
-     margin: 55px 55px;
-     margin-top: 5px;
-   margin-left: 440px;
- }
-
- .monitor{
+.professores {
     display: flex;
     justify-content: center;
-    font:10 15px 'Nunito', sans-serif;
+}
 
- }
+.retangulo3 {
+    background: rgba(251, 38, 115, 0.29);
+    padding: 30px 30px 30px 30px;
+    width: 597px;
+    height: 150px;
+    border-radius: 10px 10px;
+    margin: 55px 55px;
+    margin-top: 5px;
+    margin-left: 440px;
+}
+
+.monitor {
+    display: flex;
+    justify-content: center;
+    font: 400 15px 'Nunito', sans-serif;
+
+}
 
 /* RODAPÉ */
 #contato {

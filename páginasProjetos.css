@@ -29,7 +29,7 @@ a{
 #cabecalho {
     width: 100%;
     position: fixed;
-    z-index: 11;
+    z-index: 100;
     background-color: #FFF;
 }
 
@@ -54,7 +54,7 @@ a{
     background: #FFD233;
     font: 400 17px 'Aleo', serif;
     border-radius: 10px;
-    padding: 7px 15px;
+    padding: 9px 18px;
     color: #000;
 }
 
@@ -64,6 +64,101 @@ a{
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
+}
+
+.idiomas{
+    top: 8px;
+}
+
+
+/* PARA PÁGINAS EM PORTUGUÊS */
+
+ul{
+    list-style: none;
+}
+
+.a-teste{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
+
+.a-teste:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste{
+    display: block;
+    padding: 0 20px;
+}
+
+.principal{
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p{
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens{
+    display: none;
+    padding-left: 2px;
+    position: fixed;
+    z-index: 100;
+}
+
+/* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
+
+ul{
+    list-style: none;
+}
+
+.a-teste2{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
+
+.a-teste2:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste2{
+    display: block;
+    padding: 0 20px;
+}
+
+.principal2{
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p2{
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens2{
+    display: none;
+    padding-left: 2px;
+    position: fixed;
+    z-index: 100;
 }
 
 #main{
@@ -378,7 +473,9 @@ button:hover{
 .enderecoTexto {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     margin-bottom: 25px;
+    margin-right: 15px;
 }
 
 .iconMaps {
@@ -389,8 +486,24 @@ button:hover{
     font: 400 20px 'Nunito', sans-serif;
 }
 
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logotipoRodape {
+    width: 200px;
+}
+
+.maps {
+    border-radius: 10px;
+}
+
 .imgMaps {
-    margin: 0 90px 100px 45px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
 }
 
 .direitos {

@@ -3,18 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Projects - Educational Hobby</title>
+    <title>Projects - Passatempo Educativo</title>
     <link rel="icon" href="img/logoIcon.png">
     <link rel="stylesheet" href="projetos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
 </head>
+
 
 <body>
 
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
-                        alt="Logo Passatempo educativo"></a>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="sobrenos.html">About Us</a>
@@ -23,12 +47,23 @@
                 <a class="cabecalho_nav_item" href="#contato">Contact</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste2">
+                    <ul class="principal2">
+                        <li class="li-p2">
+                            <a href="javascript://" class="a-teste2">
+                                <img src="img/inglesComSeta.png" alt="Brasil" width="45px" class="brasil">
+                            </a>
+                
+                            <ul class="ul-imagens2">
+                                <a href="projetos.html"><li><img src="img/Brasil.png" alt="Bandeira inglesa" class="img-teste2"></li></a>
+                                <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste2"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Donate Now</a>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Donate now</a>
             </div>
         </nav>
         <div class="cabecalho_sombra"></div>
@@ -232,7 +267,7 @@
             </div>
 
             <div class="retanguloProjeto12">
-                <h1 class="tituloQuadrado">EDUCATIONAL ADVENTURE</h1>
+                <h1 class="tituloQuadrado">EDUCATIONAL 'ADV'</h1>
             </div>
 
             <div class="divisaoImagens">
@@ -277,15 +312,13 @@
             <div class="conteiner">
                 <div class="rodape-lado1">
                     <div class="logoRodape">
-                        <img src="img/logoPassatempo.png" alt="">
+                        <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
                     </div>
                     <div>
                         <img src="img/menina.png" alt="">
                     </div>
                     <div class="rodapeTexto">
-                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops
-                            organization, which develops projects in the educational, cultural, environmental preservation, and
-                            development of sustainable tourism.
+                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops organization, which develops projects in the educational, cultural, environmental preservation, and development of sustainable tourism.
                         </p>
                     </div>
                     <div class="redes">

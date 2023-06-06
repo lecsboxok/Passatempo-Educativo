@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     
     <style>
         .aviao:hover{
@@ -112,12 +111,65 @@ ul li ul li{
 
 .ul-imagens{
     display: none;
-    padding-left: 0;
+    padding-left: 2px;
+    position: fixed;
 }
 
-.imagens-ul{
-    display: none;
+
+/* Ingles */
+.teste2{
+    background-color: #444343;
+    width: 110px;
 }
+
+ul{
+    list-style: none;
+}
+
+.a-teste2{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
+
+.a-teste2:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste2{
+    display: block;
+    padding: 0 20px;
+}
+
+.teste2{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.principal2{
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p2{
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li{
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens2{
+    display: none;
+    padding-left: 2px;
+}
+
+
+
     </style>
 
     <script>
@@ -131,6 +183,15 @@ ul li ul li{
     });
 });
 
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
 
     </script>
 
@@ -154,9 +215,20 @@ ul li ul li{
                 <a class="cabecalho_nav_item" href="#contato">Contato</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste">
+                    <ul class="principal">
+                        <li class="li-p">
+                            <a href="javascript://" class="a-teste">
+                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                            </a>
+            
+                            <ul class="ul-imagens">
+                                <a href=""><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
+                                <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
@@ -166,37 +238,37 @@ ul li ul li{
     </header>
 <br><br><br><br><br><br><br><br><br>
 
+
+<!-- PARA PÁGINAS EM PORTUGUÊS -->
     <nav class="teste">
         <ul class="principal">
             <li class="li-p">
                 <a href="javascript://" class="a-teste">
-                    <img src="img/Brasil.png" alt="">
-                    <img src="img/setinha.png" alt="" id="seta">
+                    <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
                 </a>
 
                 <ul class="ul-imagens">
-                    <a href=""><li><img src="img/ingles.png" alt="" class="img-teste"></li></a>
-                    <a href=""><li><img src="img/espanhol.png" alt="" class="img-teste"></li></a>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    
-    <nav class="teste2">
-        <ul class="principal">
-            <li class="li1">
-                <a href="" class="aHover">
-                    <img src="img/Brasil.png" alt="">
-                    <img src="img/setinha.png" alt="">
-                </a>
-
-                <ul class="imagens-ul">
-                    <a href=""><li><img src="img/ingles.png" alt=""></li></a>
-                    <a href=""><li><img src="img/espanhol.png" alt=""></li></a>
+                    <a href=""><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
+                    <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
                 </ul>
             </li>
         </ul>
     </nav>
 
+<!-- PARA PÁGINAS EM INGLÊS -->
+<nav class="teste2">
+    <ul class="principal2">
+        <li class="li-p2">
+            <a href="javascript://" class="a-teste2">
+                <img src="img/inglesComSeta.png" alt="Brasil" width="50px" class="brasil">
+            </a>
+
+            <ul class="ul-imagens2">
+                <a href=""><li><img src="img/Brasil.png" alt="Bandeira inglesa" class="img-teste2"></li></a>
+                <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste2"></li></a>
+            </ul>
+        </li>
+    </ul>
+</nav>
 </body>
 </html>

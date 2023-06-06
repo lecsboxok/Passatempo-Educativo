@@ -8,25 +8,59 @@
     <title>Sobre Nós</title>
     <link rel="stylesheet" href="sobrenos.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
 </head>
 
 <body>
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
-                        alt="Logo Passatempo educativo"></a>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
                 <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
-                <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
+                <a class="cabecalho_nav_item" href="voluntário.html">Voluntários</a>
                 <a class="cabecalho_nav_item" href="#contato">Contato</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste">
+                    <ul class="principal">
+                        <li class="li-p">
+                            <a href="javascript://" class="a-teste">
+                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                            </a>
+            
+                            <ul class="ul-imagens">
+                                <a href="index.ingles.html"><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
+                                <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
@@ -60,14 +94,14 @@
     <div class="objetivo">
         <div class="objetivos">
             <div class="verde">
-                <h2>OBJETIVO</h2>
-                <p>O nosso principal objetivo é ajudar no processo de ensino-aprendizagem, com projetos diretamente
+                <h2 class="subtitulo">OBJETIVO</h2>
+                <p class="subtexto">O nosso principal objetivo é ajudar no processo de ensino-aprendizagem, com projetos diretamente
                     educacionais, que ajudam a diminuir a desigualdade no acesso à educação e fornecer esse meio tão
                     importante aos mais carentes e necessitados.</p>
             </div>
             <div class="verde">
-                <h2>EMPRESA FELIZ</h2>
-                <p>Partimos do pressuposto que uma empresa que se preocupa com o bem- estar de seus colaboradores tem
+                <h2 class="subtitulo">EMPRESA FELIZ</h2>
+                <p class="subtexto">Partimos do pressuposto que uma empresa que se preocupa com o bem- estar de seus colaboradores tem
                     como resultado uma equipe feliz e motivada, aumentando seus resultados e alcançando suas metas.</p>
             </div>
         </div>
