@@ -487,7 +487,7 @@ button {
 .campo input[type="text"],
 .campo input[type="email"],
 .campo input[type="tel"],
-.campo input[type="date"] {
+.campo input[type="date"]{
     display: flex;
     text-align: justify;
     width: 410px;
