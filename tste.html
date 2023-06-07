@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script.js" defer></script>
     
     <style>
         .aviao:hover{
@@ -168,6 +169,71 @@ ul li ul li{
     padding-left: 2px;
 }
 
+*{
+    margin: 0;
+}
+
+
+
+.container-slider {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 1499px; 
+  /* ERA WIDTH 100% */
+  border-radius: 0px;
+  z-index: 99;
+  margin: 0;
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-button, #next-button {
+  width: 100%;
+  height: 100%;
+  /* OS DOIS DE CIMA ERA 30PX */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#prev-button img, #next-button img {
+  /* width: 100%;
+  height: 100%; */
+  width: 50px;
+  height: 80px;
+}
+
+#prev-button img{
+    padding-right: 460px;
+}
+
+#next-button img{
+    padding-left: 460px;
+}
+
+
+
 
 
     </style>
@@ -193,6 +259,8 @@ $(document).ready(function() {
     });
 });
 
+
+
     </script>
 
 
@@ -202,46 +270,14 @@ $(document).ready(function() {
     <img src="img/aviao.png" alt="" class="aviao">
 
 
-    <header id="cabecalho">
-        <nav class="cabecalho_nav">
-            <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
-                        alt="Logo Passatempo educativo"></a>
-            </div>
-            <div class="cabecalho_nav_itens">
-                <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
-                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
-                <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
-                <a class="cabecalho_nav_item" href="#contato">Contato</a>
-            </div>
-            <div class="idiomas">
-                <nav class="teste">
-                    <ul class="principal">
-                        <li class="li-p">
-                            <a href="javascript://" class="a-teste">
-                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
-                            </a>
-            
-                            <ul class="ul-imagens">
-                                <a href=""><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
-                                <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
-            </div>
-        </nav>
-        <div class="cabecalho_sombra"></div>
-    </header>
+    
 <br><br><br><br><br><br><br><br><br>
 
 
 <!-- PARA PÁGINAS EM PORTUGUÊS -->
     <nav class="teste">
-        <ul class="principal">
+        <u
+        l class="principal">
             <li class="li-p">
                 <a href="javascript://" class="a-teste">
                     <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
@@ -270,5 +306,19 @@ $(document).ready(function() {
         </li>
     </ul>
 </nav>
+
+
+<br><br><br><br><br>
+
+<div class="container-slider">
+    <button id="prev-button"><img src="img/SetaEsquerda.png" alt="prev-button" ></button>
+    <div class="container-images">
+      <img src="img/Principal1.png" alt="girl" class="slider on">
+      <img src="img/Principal2.png" alt="girl" class="slider">
+      <img src="img/Principal3.png" alt="girl" class="slider">
+    </div>
+    <button id="next-button"><img src="img/SetaDireita.png" alt="next-button"></button>
+  </div>
+
 </body>
 </html>
