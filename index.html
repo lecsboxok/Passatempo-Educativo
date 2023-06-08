@@ -64,13 +64,18 @@ $(document).ready(function() {
         </nav>
         <div class="cabecalho_sombra"></div>
     </header>
-    <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
-    <script>
-        var ht = new HT({
-            // Troque por seu token de acesso
-            token: "<TOKEN>"
-        });
-    </script>
+   
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
     <main class="conteudo">
         <section class="conteudo_1">
             <div class="fundo">
