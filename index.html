@@ -5,6 +5,7 @@
     <title>Passatempo Educativo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script src="script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script>
@@ -78,11 +79,14 @@ $(document).ready(function() {
 
     <main class="conteudo">
         <section class="conteudo_1">
-            <div class="fundo">
-                <div class="textoFrente">
-                    <h1 class="titulo">PASSATEMPO EDUCATIVO</h1>
-                    <h2></h2>
+            <div class="container-slider">
+                <button id="prev-button"><img src="img/SetaEsquerda.png" alt="prev-button" class="esquerda"></button>
+                <div class="container-images">
+                  <img src="img/Principal1.png" alt="girl" class="slider on">
+                  <img src="img/Principal2.png" alt="girl" class="slider">
+                  <img src="img/Principal3.png" alt="girl" class="slider">
                 </div>
+                <button id="next-button"><img src="img/SetaDireita.png" alt="next-button" class="direita"></button>
             </div>
         </section>
         <section id="frase" class="section">
@@ -316,10 +320,10 @@ $(document).ready(function() {
                         </div>
                     </div>
                 </div>
-                <div class="direitos">
-                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
-                </div>
+            </div>
+            <div class="direitos">
+                <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
             </div>
         </section>
     </footer>

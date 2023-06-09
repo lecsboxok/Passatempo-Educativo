@@ -161,6 +161,64 @@ ul li ul li{
 }
 
 /* PRINCIPAL */
+.container-slider {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 1499px; 
+    /* ERA WIDTH 100% */
+    border-radius: 0px;
+    z-index: 8;
+    margin: 0;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 100%;
+    height: 100%;
+    /* OS DOIS DE CIMA ERA 30PX */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #prev-button img, #next-button img {
+    /* width: 100%;
+    height: 100%; */
+    width: 50px;
+    height: 80px;
+  }
+  
+  #prev-button .esquerda{
+    margin-right: 460px;
+  }
+  
+  #next-button .direita{
+    margin-left: 460px;
+  }
+
+/* SEPARAR */
 .conteudo {
     padding-top: 100px;
 }
@@ -530,7 +588,6 @@ ul li ul li{
 #contato .conteiner {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .logoRodape {
