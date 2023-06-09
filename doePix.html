@@ -5,52 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pix - Passatempo Educativo</title>
+    <link rel="stylesheet" href="doePix.css">
+    <link rel="icon" href="img/logoIcon.png">
 </head>
 <body>
-    <main>
+    <main id="main">
         <div>
-            <img src="img/setaPix.png" alt="seta para voltar">
+            <a href="doeAgora.html"><img src="img/setaPix.png" alt="seta para voltar"></a>
         </div>
-        <div>
+        <div class="titulo">
             <div>
                 <img src="img/piximg.png" alt="">
             </div>
-            <h1>PIX</h1>
+            <h1 id="titulo">PIX</h1>
             <div>
                 <img src="img/piximg.png" alt="">
             </div>
         </div>
-        <div>
-            <h2>Para prosseguir, insira suas informações de endereço:</h2>
+        <div class="subtitulo">
+            <h2 id="subtitulo">Para prosseguir, insira suas informações de endereço:</h2>
         </div>
-        <form action="">
-            <div>
+        <form action="" class="formulario">
+            <div class="campo">
                 <label for="Endereco">Endereço:</label>
-                <input type="text" name="Endereco" id="Endereco">
+                <input type="text" name="Endereco" id="Endereco" required>
             </div>
-            <div>
+            <div class="campo">
                 <label for="numero">Número:</label>
-                <input type="text" name="numero" id="numero">
+                <input type="text" name="numero" id="numero" required>
             </div>
-            <div>
+            <div class="campo">
                 <label for="complemento">Complemento:</label>
                 <input type="text" name="complemento" id="complemento">
+                <div class="check">
+                    <input type="checkbox" id="caixa" name="caixa">
+                    <label for="caixa" class="textCheck">Sem número</label>
+                </div>
             </div>
-            <div>
+            <div class="campo">
                 <label for="CEP">CEP:</label>
-                <input type="text" name="CEP" id="CEP">
+                <input type="text" name="CEP" id="CEP" required>
             </div>
-            <div>
+            <div class="campo">
                 <label for="cidade">Cidade:</label>
-                <input type="text" name="cidade" id="cidade">
+                <input type="text" name="cidade" id="cidade" required>
             </div>
-            <div>
+            <div class="info">
                 <ul>
-                    <li>Para obter o seu código PIX, por favor, confirme a doação no botão abaixo</li>
-                    <li>O PIX possui prazo de pagamento de 72 horas</li>
+                    <li class="textInfo">Para obter o seu código PIX, por favor, confirme a doação no botão abaixo</li>
+                    <li class="textInfo">O PIX possui prazo de pagamento de 72 horas</li>
                 </ul>
             </div>
-            
+            <div class="botao">
+                <button type="submit" class="Obotao">DOAR</button>
+            </div>
         </form>
     </main>
 </body>
