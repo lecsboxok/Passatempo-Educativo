@@ -8,28 +8,64 @@
     <title>Recreatur - Passatempo Educativo</title>
     <link rel="icon" href="img/logoIcon.png">
     <link rel="stylesheet" href="páginasProjetos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
 </head>
 
+
 <body>
+
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
-                        alt="Logo Passatempo educativo"></a>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
-                <a class="cabecalho_nav_item" href="sobrenos.html">About Us</a>
-                <a class="cabecalho_nav_item" href="projetos.html">Projects</a>
-                <a class="cabecalho_nav_item" href="voluntários.html">Volunteers</a>
+                <a class="cabecalho_nav_item" href="sobrenos.ingles.html">About Us</a>
+                <a class="cabecalho_nav_item" href="projetos.ingles.html">Projects</a>
+                <a class="cabecalho_nav_item" href="voluntarioingles.html">Volunteers</a>
                 <a class="cabecalho_nav_item" href="#contato">Contact</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste2">
+                    <ul class="principal2">
+                        <li class="li-p2">
+                            <a href="javascript://" class="a-teste2">
+                                <img src="img/inglesComSeta.png" alt="Brasil" width="45px" class="brasil">
+                            </a>
+                
+                            <ul class="ul-imagens2">
+                                <a href="recreatur.html"><li><img src="img/Brasil.png" alt="Bandeira do brasil" class="img-teste2"></li></a>
+                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste2"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Donate Now</a>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.ingles.html">Donate Now</a>
             </div>
         </nav>
         <div class="cabecalho_sombra"></div>
@@ -43,7 +79,7 @@
                 <div class="retanguloNome">
                     <h1 class="titulo">Recreatur</h1>
                 </div>
-                <a href="projetos.html"><img src="img/seta.png" alt="seta" class="seta"></a>
+                <a href="projetos.ingles.html"><img src="img/seta.png" alt="seta" class="seta"></a>
             </div>
         </section>
 
@@ -62,36 +98,36 @@
             <div class="corpo">
                 <img src="img/figuraRecreatur.png" alt="Brinquedo ABC" class="figura">
                 <p class="estruturaTexto">O Recreatur é o maior e melhor curso de aprendizagem profissional na área de
-                    turismo e recreação do Brasil. Um curso prático em que o participante aprende a elaboração e
-                    planejamento de atividades recreativas pedagógicas e monitoria em turismo lúdico com a criação de
-                    roteiros e espaços educativos. <br> A versão online é realizado em parceria com o Programa de Braços
-                    Abertos do Ministério do Turismo, um programa do Governo Federal, que capacita jovens para o
-                    atendimento ao turista. No ano de 2011 o Projeto Recreatur foi contemplada como finalista regional e
-                    semifinalista Nacional no prêmio Itaú-Unicef, como uma entidade que apoia e valoriza projetos que
-                    promovem a educação integral do ser humano, através da parceria escola – ONGs.</p>
+                    turismo e recreação do Brasil. A practical course in which the participant learns how to elaborate and
+                    planning of recreational activities pedagogical itineraries and educational spaces in ludic tourism with the creation of
+                    itineraries and educational spaces.<br> The online version is carried out in partnership with the Open Arms Program
+                    Ministry of Tourism, a program of the Federal Government, which trains young people for tourist
+                    young people to serve tourists.In 2011 the Recreatur Project was contemplated as a regional finalist and a national semi
+                    National semi-finalist in the Itaú-Unicef award, as an entity that supports and values projects that
+                    promote the integral education of the human being, through the school-NGO partnership.</p>
             </div>
         </section>
         <section id="outros">
             <div class="retanguloOutros">
-                <h1 class="titulo">Know other projects</h1>
+                <h1 class="titulo">Discover other projects</h1>
                 <img src="img/Coração.png" alt="Coração" class="coracao">
                 <div class="caixas1">
-                    <p class="textoCaixa Pintado">Recreatur</p>
-                    <p class="textoCaixas" >Book in action</p></a>
-                    <p class="textoCaixas"> Soccer Science</p>
-                    <p class="textoCaixas">Accessible Culture</p>
+                    <a href="recreatur.ingles.html"><p class="textoCaixas Pintado">Recreatur</p></a>
+                    <a href="livro.ingles.html"><p class="textoCaixas" >Book in action</p></a>
+                    <a href="futebol.ingles.html"><p class="textoCaixas">Soccer Science</p></a>
+                    <a href="culturaIngles.html"><p class="textoCaixas">Accessible Culture</p></a>
                 </div>
                 <div class="caixas2">
-                    <p class="textoCaixas">Jogoteca</p>
-                    <p class="textoCaixas">Vacation</p>
-                    <p class="textoCaixas">Animals in origami</p>
-                    <p class="textoCaixas">Fellow Reader</p>
+                   <a href="jogoteca.ingles.html"><p class="textoCaixas">Jogoteca</p></a>
+                    <a href="ferias.ingles.html"><p class="textoCaixas">Vacation</p></a>
+                    <a href="origami.ingles.html"><p class="textoCaixas">Origami Animals</p></a>
+                   <a href="amigoleitorIngles.html"><p class="textoCaixas">Fellow Reader</p></a> 
                 </div>
                 <div class="caixas3">
-                    <p class="textoCaixas">Classical Music</p>
-                    <p class="textoCaixas">Ecoband</p>
-                    <p class="textoCaixas">Best Age</p>
-                    <p class="textoCaixas">Educational Adventure</p>
+                    <a href="clássicaIngles.html"><p class="textoCaixas">Classical Music</p></a>
+                    <a href="ecobandaIngles.html"><p class="textoCaixas">Ecoband</p></a>
+                    <a href="melhoridade.ingles.html"><p class="textoCaixas">Best Age</p></a>
+                   <a href="aventuraIngles.html"><p class="textoCaixas">Educational Adventure</p></a> 
                 </div>
 
             </div>
@@ -117,15 +153,13 @@
             <div class="conteiner">
                 <div class="rodape-lado1">
                     <div class="logoRodape">
-                        <img src="img/logoPassatempo.png" alt="">
+                        <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
                     </div>
                     <div>
                         <img src="img/menina.png" alt="">
                     </div>
                     <div class="rodapeTexto">
-                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops
-                            organization, which develops projects in the educational, cultural, environmental preservation, and
-                            development of sustainable tourism.
+                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops organization, which develops projects in the educational, cultural, environmental preservation, and development of sustainable tourism.
                         </p>
                     </div>
                     <div class="redes">
@@ -187,7 +221,7 @@
                     </div>
                 </div>
                 <div class="direitos">
-                    <p class="autorais">There is no intention to violate the copyright of image use.</p>
+                    <p class="autorais">No intent to infringe on the copyright of image use.</p>
                     <p class="direito">Copyright © 2023 Educational hobby. All Rights Reserved.</p>
                 </div>
             </div>

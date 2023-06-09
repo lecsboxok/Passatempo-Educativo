@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="sobrenos.css">
     <link rel="icon" href="img/logoIcon.png">
-</head>
-<body>
-    <header id="header">
-        <nav class="cabecalho" >
-            <div class="imagem">
-                <img src="img/logo1.png" alt="logo" class="logo"> 
-            </div>
-           <a href="" class="item">About Us</a>
-           <a href="" class="item">Projects</a>
-           <a href="" class="item">Volunteers</a>
-           <a href="" class="item">Contact</a>
-           <a href="" class=" doe">Donate Now</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-           <div class="idiomas">
-            <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-            <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-            <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
-        </div> 
-</nav>
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <nav class="cabecalho_nav">
+            <div class="imagem">
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
+            </div>
+            <div class="cabecalho_nav_itens">
+                <a class="cabecalho_nav_item" href="sobrenos.ingles.html">About Us</a>
+                <a class="cabecalho_nav_item" href="projetos.ingles.html">Projects</a>
+                <a class="cabecalho_nav_item" href="voluntarioingles.html">Volunteers</a>
+                <a class="cabecalho_nav_item" href="#contato">Contact</a>
+            </div>
+            <div class="idiomas">
+                <nav class="teste">
+                    <ul class="principal">
+                        <li class="li-p">
+                            <a href="javascript://" class="a-teste">
+                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                            </a>
+            
+                            <ul class="ul-imagens">
+                                <a href="sobrenos.html"><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
+                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Donate Now</a>
+            </div>
+        </nav>
+        <div class="cabecalho_sombra"></div>
     </header>
 
     <div vw class="enabled">
@@ -39,172 +80,208 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
 
-<div class="linha">
-    <div class="imagem">
-        <img src="img/linha amarela.png" alt="amarelo" class="linha">
-    </div>
-</div>
-<div class="mundo">
-    <div class="imagem começo">
-        <img src="img/imagem começo do sobre nós.png" alt="comeco" class="mundo">
-    </div>
-</div>
-<div class="calendario">
-    <div class="imagem começo">
-<img src="img/calendario.png" alt="calendario" class="comeco">
-    </div>
-    </div>
-<div class="titulo">
-    <div class="quem">
-        <h4 class="qm">Who we are</h4> 
-    </div>
-</div>
-<div class="texto">
-    <div class="sobre">
-        <h3 class="tempo">Passatempo Educativo is an OSCIP (Civil Society Organization of Public Interest) that has been operating for over 23 years in various projects in order to help in the social and educational development of children.
-        </h3>
-    </div>
-</div>
-<div class="objetivo">
-    <div class="objetivos">
-    <div class="verde">
-        <h2>GOAL</h2>
-        <p>Our main objective is to help in the teaching-learning process, with directly educational projects, which help to reduce inequality in access to education and provide this very important means to the poorest and neediest.</p>
-    </div>
-    <div class="verde">
-        <h2>HAPPY COMPANY</h2>
-        <p>We start from the assumption that a company that cares about the well-being of its employees results in a happy and motivated team, increasing its results and reaching its goals.</p>
-    </div>
-    </div>
-</div>
-<div class="retangulo">
-    <div class="azul">
-      <h3 class="historia">History</h3> 
-      <br><br><br><br><br>
-    </div>
-    <div class="cronograma">
-        <div class="fase1">
-            <img src="img/historia1.png" alt="crianças" class="roda">
-            <div class="circulo amarelo">
-                <img src="img/elemento1.png" alt="elemento" class="tres-pessoas">
-            </div>
-            <p class="descricao">The first work team had only three people, and the initiative for work in this area of ​​educational leisure came from physical education teacher Carla Ravaioli and Carlos Chinen</p>
+    <div class="mundo">
+        <div class="imagem começo">
+            <img src="img/imagem começo do sobre nós.png" alt="comeco" class="mundo">
         </div>
-     
-        <div class="fase1">
-            <p class="descricao">After many months of research and work in schools in São Paulo, the projects gained a social dimension.</p>
-            <div class="circulo azulfundo">
-                <img src="img/elemento2.png" alt="tempo" class="elemento">
-            </div>
-            <img src="img/historia2.png" alt="mulher" class="historia">
+    </div>
+    <div class="calendario">
+        <div class="imagem começo">
+            <img src="img/calendario.png" alt="calendario" class="comeco">
         </div>
-        <div class="fase1 fase2">
-            <img src="img/historia3.png" alt="crianças" class="crianca">
-            <div class="circulo vermelho">
-                <img src="img/elemento3.png" alt="arvore" class="natal">
-            </div>
-            <p class="descricao">Our first activity was a Christmas Party for 150 children in December at the Colmeia Institution, currently known as the Ir.Maria Bernadette Educational Center, located in the northern part of the city of São Paulo. Since that day, educational activities have been carried out for children in this place.</p>
+    </div>
+    <div class="titulo">
+        <div class="quem">
+            <h4 class="qm">About Us</h4>
         </div>
-        <div class="fase1">
-            <p class="descricao">The Maria Bernadette Center is an institution maintained by the Congregation of the Sisters of São José de Chambéry that serves 300 children and adolescents from tenements and slums in the northern region of São Paulo. Even today, one of our projects takes place in this same institution.</p>
-            <div class="circulo laranja">
-                <img src="img/elemento4.png" alt="predio" class="predios">
+    </div>
+    <div class="texto">
+        <div class="sobre">
+            <h3 class="tempo">Passatempo Educativo is an OSCIP (Civil Society Organization of Public Interest)
+                that has been working for more than 23 years in several projects, in order to help in the social and educational development
+                of children.
+            </h3>
+        </div>
+    </div>
+    <div class="objetivo">
+        <div class="objetivos">
+            <div class="verde">
+                <h2 class="subtitulo">OBJECTIVE</h2>
+                <p class="subtexto">Our main goal is to help in the teaching-learning process, with directly
+                    educational projects that help reduce inequality in access to education and provide this important means to the needy.
+                    important means to the needy.</p>
             </div>
-            <img src="img/historia4.png" alt="idoso" class="idosos">
+            <div class="verde">
+                <h2 class="subtitulo">HAPPY COMPANY</h2>
+                <p class="subtexto">We start from the assumption that a company that is concerned with the well-being of its collaborators has as a result a happy and motivated team, increasing its results and reaching its goals.
+                    as a result a happy and motivated team, increasing its results and reaching its goals.</p>
+            </div>
+        </div>
+    </div>
+    <div class="retangulo">
+        <div class="azul">
+            <h3 class="historia">History</h3>
+            <br><br><br><br><br>
+        </div>
+        <div class="cronograma">
+            <div class="fase1">
+                <img src="img/historia1.png" alt="crianças" class="roda">
+                <div class="circulo amarelo">
+                    <img src="img/elemento1.png" alt="elemento" class="tres-pessoas">
+                </div>
+                <p class="descricao"> The first work team had only three people, and the initiative for the work in this area of educational
+                    work in this area of educational leisure came from physical education teacher Carla Ravaioli and
+                    Carlos Chinen</p>
+            </div>
+
+            <div class="fase1">
+                <p class="descricao">After many months of research and work in São Paulo schools, the projects
+                    gained a social dimension.</p>
+                <div class="circulo azulfundo">
+                    <img src="img/elemento2.png" alt="tempo" class="elemento">
+                </div>
+                <img src="img/historia2.png" alt="mulher" class="historia">
+            </div>
+            <div class="fase1 fase2">
+                <img src="img/historia3.png" alt="crianças" class="crianca">
+                <div class="circulo vermelho">
+                    <img src="img/elemento3.png" alt="arvore" class="natal">
+                </div>
+                <p class="descricao">Our first activity was a Christmas Party for 150 children in December at
+                    Institituição Colmeia, now called Centro Educacional Ir.Maria Bernadette, located in the north
+                    located in the northern part of the city of São Paulo. Since that day we have been carrying out educational activities for children
+                    children of this location.</p>
+            </div>
+            <div class="fase1">
+                <p class="descricao">The Maria Bernadette Center is an institution maintained by the Congregation of the Sisters of
+                    Sisters of Saint Joseph of Chambéry, which serves 300 children and adolescents from slums and shantytowns in the northern region of São Paulo.
+                    and slums of the northern zone of São Paulo. Even today, one of our projects takes place in this same institution.</p>
+                <div class="circulo laranja">
+                    <img src="img/elemento4.png" alt="predio" class="predios">
+                </div>
+                <img src="img/historia4.png" alt="idoso" class="idosos">
+            </div>
+        </div>
+
+    </div>
+    <div class="nossaequipe">
+        <div class="equipenossa">
+            <h2 class="conheca">Meet our team</h2>
+            <img src="img/nossaequipe1.png" alt="equipe" class="nossa">
+            <p class="feriado">Educational pastime on holiday</p>
+        </div>
+    </div>
+    <div class="retangulo2">
+        <div>
+            <p class="profissionais">The team is made up of professionals in the areas of Leisure and Tourism, Recreation and
+                Events, Physical Education, Pedagogy, Biology, Psychology, Journalism, Fine Arts, Theater, and by collaborating
+                collaborating teachers.</p>
+        </div>
+    </div>
+    <div class="professores">
+
+
+        <div class="colaboradores">
+            <img src="img/historia5.png" alt="gente" class="gentes">
+            <img src="img/historia6.png" alt="pessoas" class="gentes">
+            <img src="img/historia7.png" alt="pessoal" class="gentes">
         </div>
     </div>
 
-   </div>
-   <div class="nossaequipe">
-    <div class="equipenossa">
-        <h2 class="conheca">Meet our team</h2>
-        <img src="img/nossaequipe1.png" alt="equipe" class="nossa">
-        <p class="feriado">Educational pastime on the holiday</p>
-    </div>
-   </div>
-   <div class="retangulo2">
-    <div><p class="profissionais">The team is made up of professionals from the areas of Leisure and Tourism, Recreation and Events, Physical Education, Pedagogy, Biology, Psychology, Journalism, Plastic Arts, Theater and collaborating professors.</p></div>
-   </div>
-   <div class="professores">
-    
-  
-  <div class="colaboradores">
-    <img src="img/historia5.png" alt="gente" class="gentes">
-    <img src="img/historia6.png" alt="pessoas" class="gentes">
-    <img src="img/historia7.png" alt="pessoal" class="gentes">
-  </div>
-</div>
-
-<div class="retangulo3">
-    <div><p class="monitor">Passatempo Educativo is aware that the values ​​defended by a monitor are very important not only for there to be a relationship of respect and successful work, but, above all, for there to be a positive and healthy exchange of experiences and knowledge among all employees. involved during each project.
-    </p></div>
-</div>
-
-
-<section id="contato" class="section">
-    <div class="conteiner">
-        <div class="rodape-lado1">
-            <div class="logoRodape">
-                <img src="img/logoPassatempo.png" alt="">
-            </div>
-            <div>
-                <img src="img/menina.png" alt="">
-            </div>
-            <div class="rodapeTexto">
-                <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops projects in the educational, cultural, environmental preservation and sustainable tourism development areas.
-                </p>
-            </div>
-            <div class="redes">
-                <div>
-                    <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt="" class="facebook icone"></a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt="" class="instagram icone"></a>
-                </div>
-                <div>
-                    <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt="" class="twitter icone"></a>
-                </div>
-                <div>
-                    <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img src="img/youtube.png" alt="" class="youtube icone"></a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/?original_referer=http%3A%2F%2Fpassatempoeducativo.org.br%2F"><img src="img/In.png" alt="" class="In icone"></a>
-                </div>
-                <div>
-                    <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png" alt="" class="flickr icone"></a>
-                </div>
-                <div>
-                    <a href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img src="img/e-mail.png" alt="" class="email icone"></a>
-                </div>
-                <div>
-                    <a href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img src="img/whats.png" alt="" class="whatsapp icone"></a>
-                </div>
-            </div>
-        </div>
-        <div class="rodape-lado2">
-            <div class="endereco">
-                <div class="enderecoTexto">
-                    <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
-                        <img src="img/iconMaps.png" alt="" class="iconMaps">
-                    </a>
-                    <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brazil</h4>
-                </div>
-                <div class="imgMaps">
-                    <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
-                        <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
-                    </a>
-                </div>
-                <div>
-                    <img src="img/amigoSurdo.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="direitos">
-            <p class="autorais">There is no intention to infringe the copyright of image use.</p>
-            <p class="direito">Copyright © 2023 Educational Hobby. All rights reserved.</p>
+    <div class="retangulo3">
+        <div>
+            <p class="monitor">Passatempo Educativo is aware that the values upheld by a monitor are very important
+                very important not only so that there is a relationship of respect and successful work, but
+                that there is an exchange of experiences and knowledge in a positive and healthy way between all
+                all those involved during each project.
+            </p>
         </div>
     </div>
-</section>
-  
-   </body>
-   </html>
+
+
+    <footer>
+        <section id="contato" class="section">
+            <div class="conteiner">
+                <div class="rodape-lado1">
+                    <div class="logoRodape">
+                        <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
+                    </div>
+                    <div>
+                        <img src="img/menina.png" alt="">
+                    </div>
+                    <div class="rodapeTexto">
+                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops
+                            organization, which develops projects in the educational, cultural, environmental preservation, and
+                            development of sustainable tourism.
+                        </p>
+                    </div>
+                    <div class="redes">
+                        <div>
+                            <a href="https://www.facebook.com/Passatempoedu/">
+                                <img src="img/facebook.png" alt="" class="facebook icone">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/passatempoeducativo/">
+                                <img src="img/insta.png" alt="" class="instagram icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
+                                    class="twitter icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
+                                    src="img/youtube.png" alt="" class="youtube icone"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/?original_referer=http%3A%2F%2Fpassatempoeducativo.org.br%2F">
+                                <img src="img/In.png" alt="" class="In icone">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.flickr.com/photos/passatempoeducativo">
+                                <img src="img/flickr.png" alt="" class="flickr icone"></a>
+                        </div>
+                        <div>
+                            <a href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo">
+                                <img src="img/e-mail.png" alt="" class="email icone">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo.">
+                                <img src="img/whats.png" alt="" class="whatsapp icone">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rodape-lado2">
+                    <div class="endereco">
+                        <div class="enderecoTexto">
+                            <a
+                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                <img src="img/iconMaps.png" alt="" class="iconMaps">
+                            </a>
+                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brazil</h4>
+                        </div>
+                        <div class="imgMaps">
+                            <a
+                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
+                            </a>
+                        </div>
+                        <div>
+                            <img src="img/amigoSurdo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="direitos">
+                    <p class="autorais">There is no intention to violate the copyright of image use.</p>
+                    <p class="direito">Copyright © 2023 Educational hobby. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
