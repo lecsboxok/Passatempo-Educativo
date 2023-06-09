@@ -25,6 +25,10 @@ a {
     src: url(Assets/Aleo-Light.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* CABEÇALHO */
 #cabecalho {
     width: 100%;

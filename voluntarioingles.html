@@ -6,47 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="voluntário.css">
+    <link rel="icon" href="img/logoIcon.png">
 
-    <title>Document</title>
+    <title>Volunteers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
 </head>
-<!-- CABEÇALHO -->
 
-<body class="corpo">
+
+<body>
+
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
-                        alt="Logo Passatempo educativo"></a>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="sobrenos.ingles.html">About Us</a>
                 <a class="cabecalho_nav_item" href="projetos.ingles.html">Projects</a>
-                <a class="cabecalho_nav_item" href="voluntários.ingles.html">Volunteers</a>
+                <a class="cabecalho_nav_item" href="voluntarioingles.html">Volunteers</a>
                 <a class="cabecalho_nav_item" href="#contato">Contact</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste2">
+                    <ul class="principal2">
+                        <li class="li-p2">
+                            <a href="javascript://" class="a-teste2">
+                                <img src="img/inglesComSeta.png" alt="Brasil" width="45px" class="brasil">
+                            </a>
+                
+                            <ul class="ul-imagens2">
+                                <a href="Voluntário.html"><li><img src="img/Brasil.png" alt="Bandeira do brasil" class="img-teste2"></li></a>
+                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste2"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgoraIngles.html">Donate Now</a>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.ingles.html">Donate Now</a>
             </div>
         </nav>
         <div class="cabecalho_sombra"></div>
     </header>
 
-    <h1>Hand Talk</h1>
-  <h2>Count on the help of Hugo and Maya, our virtual translators, to make your communication more accessible.</h2>
-  <p>We offer digital translation for accessibility in Libras, the Brazilian Sign Language.</p>
-  <!-- Pega a ultima versão do plugin Hand Talk -->
-  <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
-  <script>
-    var ht = new HT({
-      // Troque por seu token de acesso
-      token: "<TOKEN>"
-    });
-  </script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
     <!-- FIM DE CABEÇALHO 
              <--fCOMEÇO DO SITE -->

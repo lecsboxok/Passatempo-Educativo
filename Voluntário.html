@@ -9,76 +9,69 @@
     <link rel="icon" href="img/logoIcon.png">
 
     <title>Voluntários</title>
-</head>
-<!-- CABEÇALHO -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<body class="corpo">
     <script>
-        $(document).ready(function () {
-            var botao = $('.a-teste');
-            var dropDown = $('.ul-imagens');
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
 
-            botao.on('click', function (event) {
-                dropDown.stop(true, true).slideToggle();
-                event.stopPropagation();
-            });
-        });
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
 
-        $(document).ready(function () {
-            var botao = $('.a-teste2');
-            var dropDown = $('.ul-imagens2');
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
 
-            botao.on('click', function (event) {
-                dropDown.stop(true, true).slideToggle();
-                event.stopPropagation();
-            });
-        });
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
 
     </script>
-    </head>
+</head>
 
 
-    <body>
+<body>
 
-        <header id="cabecalho">
-            <nav class="cabecalho_nav">
-                <div class="imagem">
-                    <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
-                            alt="Logo Passatempo educativo"></a>
-                </div>
-                <div class="cabecalho_nav_itens">
-                    <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
-                    <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
-                    <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
-                    <a class="cabecalho_nav_item" href="#contato">Contato</a>
-                </div>
-                <div class="idiomas">
-                    <nav class="teste">
-                        <ul class="principal">
-                            <li class="li-p">
-                                <a href="javascript://" class="a-teste">
-                                    <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
-                                </a>
-
-                                <ul class="ul-imagens">
-                                    <a href="projetos.ingles.html">
-                                        <li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li>
-                                    </a>
-                                    <a href="espanhol.html">
-                                        <li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste">
-                                        </li>
-                                    </a>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div>
-                    <a class="cabecalho_nav_item_Doe" href="doeAgora.ingles.html">Doe Agora</a>
-                </div>
-            </nav>
-            <div class="cabecalho_sombra"></div>
-        </header>
+    <header id="cabecalho">
+        <nav class="cabecalho_nav">
+            <div class="imagem">
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
+            </div>
+            <div class="cabecalho_nav_itens">
+                <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
+                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
+                <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
+                <a class="cabecalho_nav_item" href="#contato">Contato</a>
+            </div>
+            <div class="idiomas">
+                <nav class="teste">
+                    <ul class="principal">
+                        <li class="li-p">
+                            <a href="javascript://" class="a-teste">
+                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                            </a>
+            
+                            <ul class="ul-imagens">
+                                <a href="voluntarioingles.html"><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
+                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.ingles.html">Doe Agora</a>
+            </div>
+        </nav>
+        <div class="cabecalho_sombra"></div>
+    </header>
 
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
