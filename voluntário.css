@@ -25,7 +25,7 @@ a {
     src: url(Assets/Aleo-Light.ttf);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -43,7 +43,7 @@ html{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.cabecalho_nav{
+.cabecalho_nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -53,7 +53,7 @@ html{
     margin-left: 100px;
 }
 
-.cabecalho_nav_item{
+.cabecalho_nav_item {
     margin: 20px;
     background: #FFD233;
     font: 400 17px 'Aleo', serif;
@@ -62,7 +62,7 @@ html{
     color: #000;
 }
 
-.cabecalho_nav_item_Doe{
+.cabecalho_nav_item_Doe {
     background-color: #FB2673;
     font: 400 17px 'Aleo', serif;
     border-bottom: 10px;
@@ -70,50 +70,50 @@ html{
     color: #FFF;
 }
 
-.idiomas{
+.idiomas {
     padding-top: 17px;
 }
 
 
 /* PARA PÁGINAS EM PORTUGUÊS */
 
-ul{
+ul {
     list-style: none;
 }
 
-.a-teste{
+.a-teste {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 0 20px;
 }
 
-.a-teste:hover{
+.a-teste:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste{
+.img-teste {
     display: block;
     padding: 0 20px;
 }
 
-.principal{
+.principal {
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p{
+.li-p {
     line-height: 50px;
     float: left;
 }
 
-ul li ul li{
+ul li ul li {
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens{
+.ul-imagens {
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -122,48 +122,49 @@ ul li ul li{
 
 /* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
 
-ul{
+ul {
     list-style: none;
 }
 
-.a-teste2{
+.a-teste2 {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 0 20px;
 }
 
-.a-teste2:hover{
+.a-teste2:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste2{
+.img-teste2 {
     display: block;
     padding: 0 20px;
 }
 
-.principal2{
+.principal2 {
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p2{
+.li-p2 {
     line-height: 50px;
     float: left;
 }
 
-ul li ul li{
+ul li ul li {
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens2{
+.ul-imagens2 {
     display: none;
     padding-left: 2px;
     position: fixed;
     z-index: 100;
 }
+
 /* TITULO UM PARTE UM */
 
 
@@ -223,7 +224,7 @@ ul li ul li{
     text-align: center;
 }
 
-.coracao{
+.coracao {
     width: 50px;
     height: 50px;
     top: -2010px;
@@ -245,12 +246,12 @@ ul li ul li{
     padding-top: 70px;
 }
 
-.MaosDois{
+.MaosDois {
     margin-top: -60px;
     margin-left: 970px;
     height: 79px;
     width: 81px;
-    
+
 }
 
 /* TEXTO DA PARTE DOIS */
@@ -662,7 +663,7 @@ label {
     text-align: center;
 }
 
-.parteTres{
+.parteTres {
     padding-bottom: 170px;
 }
 
@@ -768,15 +769,50 @@ label {
 .box:hover {
     animation-name: rotate;
     animation-duration: 3s;
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
     0% {
-      transform: rotate();
+        transform: rotate();
     }
+
     70% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
- 
+}
+
+
+
+/* MOBILE */
+
+@media screen and (max-width: 400px) {
+
+    .titulo {
+        width: 400px;
+    }
+
+    .tituloUm {
+        font: 100 10px 'Nunito' sans-serif;
+    }
+
+    .rosa {
+        width: 320px;
+        margin-left: -50%;
+
+    }
+
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo input[type="tel"],
+    .campo input[type="date"] {
+        display: flex;
+        text-align: justify;
+        width: 100px;
+    }
+
+    #Moeda{
+        width: 100px;
+    }
+
+
+}
