@@ -269,7 +269,7 @@ label {
 }
 
 .aviso {
-    font: 300 12px 'Nunito', sans-serif;
+    font: 300 15px 'Nunito', sans-serif;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -308,6 +308,7 @@ label {
 #contato .conteiner {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logoRodape {

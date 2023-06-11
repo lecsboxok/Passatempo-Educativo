@@ -36,3 +36,11 @@ btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
 
 
+function imagem(){
+  var img = document.getElementById("img")
+  var imagem = document.getElementById("imagem")
+  if(img.style.display == "none") { //verifica se a imagem está sendo exibida, se não estiver vai executar os comandos abaixo e se tiver vai executar o else
+    img.style.display="block" //exibe a imagem
+  }
+
+ }

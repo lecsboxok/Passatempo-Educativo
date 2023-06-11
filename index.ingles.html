@@ -64,25 +64,33 @@ $(document).ready(function() {
         </nav>
         <div class="cabecalho_sombra"></div>
     </header>
-    <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
-    <script>
-        var ht = new HT({
-            // Troque por seu token de acesso
-            token: "<TOKEN>"
-        });
-    </script>
+   
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
     <main class="conteudo">
         <section class="conteudo_1">
-            <div class="fundo">
-                <div class="textoFrente">
-                    <h1 class="titulo">PASSATEMPO EDUCATIVO</h1>
-                    <h2></h2>
+            <div class="container-slider">
+                <button id="prev-button"><img src="img/SetaEsquerda.png" alt="prev-button" class="esquerda"></button>
+                <div class="container-images">
+                  <img src="img/Principal1.png" alt="girl" class="slider on">
+                  <img src="img/Principal2.png" alt="girl" class="slider">
+                  <img src="img/Principal3.png" alt="girl" class="slider">
                 </div>
+                <button id="next-button"><img src="img/SetaDireita.png" alt="next-button" class="direita"></button>
             </div>
         </section>
         <section id="frase" class="section">
             <div class="conteiner">
-                <p class="frase">“Giving turns abstract love into a concrete act. Leave your loving mark on someone's life.”</p>
+                <p class="frase">“The donation transforms abstract love into a concrete act. Leave your loving mark on someone's life."</p>
                 <p class="frase-autor">(Beautiful Messages)</p>
             </div>
         </section>    
@@ -108,7 +116,7 @@ $(document).ready(function() {
                 <div class="doacoes">
                     <div class="margemDoacoes">
                         <div class="textDoacoes">
-                            <h3 class="textoDoacoes">The donations will be turned into:</h3>
+                            <h3 class="textoDoacoes">Donations will be transformed into:</h3>
                         </div>
                         <div class="doacoesItens">
                             <div class="doacoesItem">
@@ -117,11 +125,11 @@ $(document).ready(function() {
                             </div>
                             <div class="doacoesItem">
                                 <img src="img/despesas.png" alt="" class="despesas Item">
-                                <p class="topicosDoacoes">Administrative Expenses</p>
+                                <p class="topicosDoacoes">Administrative costs</p>
                             </div>
                             <div class="doacoesItem">
                                 <img src="img/transporte.png" alt="" class="transporte Item">
-                                <p class="topicosDoacoes">Transportation for projects</p>
+                                <p class="topicosDoacoes">Transport for projects</p>
                             </div>
                             <div class="doacoesItem">
                                 <img src="img/multidisciplinares.png" alt="" class="atividades Item">
@@ -136,10 +144,10 @@ $(document).ready(function() {
                     </div>
                     <div class="linkDoe">
                         <div class="doeVer">
-                            <a href="" class="doe verdeFundo">Donate via Pix</a>
+                            <a href="doePix.html" class="doe verdeFundo">Donate for pix</a>
                         </div>
                         <div class="doeVer">
-                            <a href="" class="doe vermelhoFundo">Donate via PayPal</a>
+                            <a href="" class="doe vermelhoFundo">Donate for PayPal</a>
                         </div>
                     </div>
                     <div class="imagemDoe">
@@ -151,7 +159,7 @@ $(document).ready(function() {
         </section>
         <section id="conteudoYoutube">
             <div class="titulotube">
-                <h2 class="sub">Get to know our channel on Youtube</h2>
+                <h2 class="sub">Discover our Youtube channel</h2>
                 <div>
                     <img src="img/imgTube.png" alt="" class="imgTube">
                 </div>
@@ -178,17 +186,17 @@ $(document).ready(function() {
                 <div class="saibaMais">
                     <div class="historia">
                         <div class="conteudoSaiba">
-                            <h2 class="tituloSaiba laranja">LEARN ABOUT OUR HISTORY</h2>
-                            <p class="textoSaiba">23 years working in cultural, educational, and environmental projects.</p>
+                            <h2 class="tituloSaiba laranja">KNOW OUR HISTORY</h2>
+                            <p class="textoSaiba">23 years working in cultural, educational and environmental projects.</p>
                         </div>
                         <div class="bloco">
                             <div class="imgSaiba">
                                 <img src="img/Conhecanossahistoria.jpg" alt="">
                             </div>
-                            <a href="sobrenos.ingles.html">
+                            <a href="sobrenos.html">
                                 <div class="botao fundoLaranja">
-                                    <a href="sobrenos.ingles.html" class="textoBotao">About Us</a>
-                                    <a href="sobrenos.ingles.html"><img src="img/seta.svg" alt=""></a>
+                                    <a href="sobrenos.html" class="textoBotao">About Us</a>
+                                    <a href="sobrenos.html"><img src="img/seta.svg" alt=""></a>
                                 </div>
                             </a>
                         </div>
@@ -196,16 +204,16 @@ $(document).ready(function() {
                     <div class="historia">
                         <div class="conteudoSaiba">
                             <h2 class="tituloSaiba azul">SEE THE PROJECTS</h2>
-                            <p class="textoSaiba">Our projects aim to provide continuity in teaching-learning.</p>
+                            <p class="textoSaiba">Our projects aim to provide continuity in teaching and learning.</p>
                         </div>
                         <div class="bloco">
                             <div class="imgSaiba">
                                 <img src="img/vejaosprojetos.jpg" alt="">
                             </div>
-                            <a href="projetos.ingles.html">
+                            <a href="projetos.html">
                                 <div class="botao fundoAzul">
-                                    <a href="projetos.ingles.html" class="textoBotao">Learn More</a>
-                                    <a href="projetos.ingles.html"><img src="img/seta.svg" alt=""></a>
+                                    <a href="projetos.html" class="textoBotao">Know more</a>
+                                    <a href="projetos.html"><img src="img/seta.svg" alt=""></a>
                                 </div>
                             </a>
                         </div>
@@ -219,10 +227,10 @@ $(document).ready(function() {
                             <div class="imgSaiba">
                                 <img src="img/sejaumvoluntario.jpg" alt="">
                             </div>
-                            <a href="voluntários.html">
+                            <a href="voluntário.html">
                                 <div class="botao fundoVermelho">
-                                <a href="voluntarioingles.html" class="textoBotao">Learn More</a>
-                                <a href="voluntarioingles.html"><img src="img/seta.svg" alt=""></a>
+                                <a href="voluntário.html" class="textoBotao">Know more</a>
+                                <a href="voluntário.html"><img src="img/seta.svg" alt=""></a>
                             </div>
                         </a>
                         </div>
@@ -230,16 +238,16 @@ $(document).ready(function() {
                     <div class="historia">
                         <div class="conteudoSaiba">
                             <h2 class="tituloSaiba verde">SUPPORT OUR NGO</h2>
-                            <p class="textoSaiba">Get to know our guide to support cultural projects!</p>
+                            <p class="textoSaiba">Check out our support guide for cultural projects!</p>
                         </div>
                         <div class="bloco">
                             <div class="imgSaiba">
                                 <img src="img/apoienossaong.jpg" alt="">
                             </div>
-                            <a href="doeAgoraIngles.html">
+                            <a href="doeAgora.html">
                                 <div class="botao fundoVerde">
-                                    <a href="doeAgoraIngles.html" class="textoBotao">Contribute with us</a>
-                                    <a href="doeAgoraIngles.html"><img src="img/seta.svg" alt=""></a>
+                                    <a href="doeAgora.html" class="textoBotao">Contribute with us</a>
+                                    <a href="doeAgora.html"><img src="img/seta.svg" alt=""></a>
                                 </div>
                             </a>
                         </div>

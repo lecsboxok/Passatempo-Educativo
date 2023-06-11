@@ -33,7 +33,7 @@ html{
 #cabecalho {
     width: 100%;
     position: fixed;
-    z-index: 11;
+    z-index: 2000;
     background-color: #FFF;
 }
 
@@ -540,7 +540,7 @@ ul li ul li{
 }
 
 .textoBotao {
-    font: 400 24px 'Nunito', sans-serif;
+    font: 400 20px 'Nunito', sans-serif;
     color: #fff;
     text-align: center;
 }
@@ -560,18 +560,22 @@ ul li ul li{
 
 .fundoVerde {
     background-color: #48A400;
+    padding: 10px 18px;
 }
 
 .fundoVermelho {
     background-color: #A40000;
+    padding: 10px 18px;
 }
 
 .fundoLaranja {
     background-color: #E05100;
+    padding: 10px 18px;
 }
 
 .fundoAzul {
     background-color: #29166F;
+    padding: 10px 18px;
 }
 
 
