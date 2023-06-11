@@ -764,3 +764,19 @@ label {
     font: 300 20px 'Aleo-light', serif;
     margin-top: 10px;
 }
+
+.box:hover {
+    animation-name: rotate;
+    animation-duration: 3s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate();
+    }
+    70% {
+      transform: rotate(360deg);
+    }
+  }
+  
+ 
