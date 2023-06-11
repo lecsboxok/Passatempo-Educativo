@@ -375,7 +375,7 @@ ul li ul li {
 
 
 /* PARTE TRÊS TEXTO */
-
+/* TEXTO UM LEI ROUANET */
 
 .quadradoUm {
     background-color: #FFF1BE;
@@ -389,7 +389,7 @@ ul li ul li {
 }
 
 
-/* TEXTO UM LEI ROUANET */
+
 
 .TextoDoisA {
     margin-top: 70px;
@@ -792,7 +792,7 @@ label {
     }
 
     .tituloUm {
-        font: 100 10px 'Nunito' sans-serif;
+        font-size: 25px;
     }
 
     .rosa {
@@ -807,12 +807,305 @@ label {
     .campo input[type="date"] {
         display: flex;
         text-align: justify;
-        width: 100px;
+        width: 135px;
     }
 
-    #Moeda{
-        width: 100px;
-    }
+   .TituloDois{
+  font-size: 25px;
+ 
+   }
+
+.TextoUmA, .TextoUmB, .TextoUmC{
+    font-size: 13px;
+    align-items: center;
+   
+}
+
+.setaUm {
+    margin-top: 40px;
+    margin-left: 35px;
+    width: 20px;
+    height: 20px;
+}
+
+.setaDois {
+    margin-top: 40px;
+    margin-left: 77px;
+    width: 20px;
+    height: 20px;
+}
+
+.setaTres {
+    margin-top: 40px;
+    margin-left: 85px;
+    width: 20px;
+    height: 20px;
+}
+
+.setaQuatro {
+    margin-top: 40px;
+    margin-left: 76px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.tudoIcones {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 80px;
+
+}
+
+#Moeda {
+    height: 50px;
+    width: 50px;
+}
+
+
+#Bolas {
+    height: 50px;
+    width: 50px;
+
+}
+
+#Teatro {
+    height: 50px;
+    width: 50px;
+    left: 1000px;
+}
+
+#Menino {
+    height: 50px;
+    width: 50px;
+
+}
+
+
+#ROUANET {
+    width: 90px;
+    height: 100px;
+}
+
+#ESPORTE {
+    width: 90px;
+    height: 100px;
+}
+
+#CULTURA {
+    width: 90px;
+    height: 100px;
+}
+
+#FUMCAD {
+    width: 90px;
+    height: 100px;
+
+}
+
+.quadradoUm {
+    background-color: #FFF1BE;
+    border-radius: 0px;
+    height: 903px;
+    margin-top: 150px;
+    margin-left: 70px;
+    width: 280px;
+    border: 3px dashed #000;
+
+}
+
+
+.TextoDoisA {
+    margin-top: 40px;
+    font: 400 20px 'Nunito', sans-serif;
+    font-size: 15px;
+    padding-left: 50px;
+    width: 206px;
+    text-align: justify;
+
+}
+
+.tituloDoisA {
+    margin-left: 35%;
+    font: 400 20px 'Nunito', sans-serif;
+    font-size: 15px;
+    margin-top: -35%;
+
+}
+
+.TextoDoisB {
+    font: 400 20px 'Nunito', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    padding-left: 50px;
+    width: 206px;
+    text-align: justify;
+
+}
+
+.Md {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-left: -115%;
+    margin-top: -30px;
+
+}
+
+.ImagemA {
+    padding-top: 50px;
+    margin-left: 320px;
+    width: 180px;
+    height: 180px;
+}
+
+.setaDoisA {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    margin-top: -285%;
+}
+
+/* PARTE DE ESPORTE */
+
+.quadroDois {
+    background-color: #FFF1BE;
+    border-radius: 0px;
+    height: 903px;
+    margin-top: 150px;
+    margin-left: 70px;
+    width: 280px;
+    border: 3px dashed #000;
+}
+
+.tituloDoisB {
+    margin-left: 35%;
+    font: 400 20px 'Nunito', sans-serif;
+    font-size: 15px;
+    margin-top: -35%;
+}
+
+.tituloDoisBB {
+    margin-left: 35%;
+    font: 400 20px 'Nunito', sans-serif;
+    font-size: 15px;
+    margin-top: -35%;
+}
+
+.setaDoisB {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    margin-top: -285%;
+}
+
+.imagemB {
+    padding-top: 50px;
+    margin-left: 320px;
+    width: 50px;
+    height: 50px;
+}
+
+.textoTres {
+    font: 400 20px 'Nunito', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    padding-left: 50px;
+    width: 206px;
+    text-align: justify;
+}
+
+/* PARTE DE ATUAÇÃO */
+.quadroTres {
+    background-color: #FFF1BE;
+    border-radius: 0px;
+    height: 500px;
+    margin-top: 250px;
+    margin-left: 350px;
+    width: 800px;
+    border: 3px dashed #000;
+}
+
+.tituloDoisC {
+    margin-left: 38%;
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.tituloDoisCC {
+    margin-left: 34%;
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+
+
+.imagemC {
+    padding-top: 40px;
+    display: flex;
+    margin-left: 320px;
+    width: 180px;
+    height: 180px;
+    margin-top: -10px;
+}
+
+.textoQuatro {
+    font: 400 20px 'Nunito', sans-serif;
+    text-align: justify;
+    padding-left: 100px;
+    width: 716px;
+    margin-top: 20px;
+}
+
+.setaDoisC {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    margin-top: -56%;
+}
+
+/* PARTE DO MENINO */
+
+.quadroQuatro {
+    background-color: #FFF1BE;
+    border-radius: 0px;
+    height: 540px;
+    margin-top: 250px;
+    margin-left: 350px;
+    width: 800px;
+    border: 3px dashed #000;
+}
+
+.tituloDoisD {
+    margin-left: 42%;
+    font: 400 20px 'Nunito', sans-serif;
+}
+
+.imagemD {
+    padding-top: 60px;
+    display: flex;
+    margin-left: 320px;
+    width: 180px;
+    height: 180px;
+}
+
+.TextoCinco {
+    font: 400 20px 'Nunito', sans-serif;
+    text-align: justify;
+    margin-top: 30px;
+    padding-left: 80px;
+    width: 716px;
+    margin-top: 20px;
+}
+
+.setaDoisD {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    margin-top: -60%;
+}
+
+
 
 
 }
