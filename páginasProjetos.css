@@ -884,7 +884,7 @@ html{
     #outros .Pintado{
         border-radius: 10px;
         background-color: #FFD233;
-        padding: 2px 15px;
+        padding: 2px 13px;
         font: 400 12px 'Nunito', sans-serif;
         line-height: 15px;
         margin: 0 20px;
@@ -995,6 +995,65 @@ html{
         top: 90px;
         left: 20px;
     }
+
+    /* FUTEBOL*/
+
+#estrutura .figuraFutebol{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    top: 30px;
+}
+
+#estrutura .Futebol{
+    top: 120px;
+    height: 200px;
+    bottom: 80px;
+}
+
+#introducao .texto2Cultura{
+    width: 330px;
+    height: 105px;
+    left: 32px;
+    top: 70px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoCultura{
+    width: 330px;
+    left: 35px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    text-align: justify;
+    top: 120px;
+}
+
+/* JOGOTECA */
+#introducao .texto2Jogoteca{
+    width: 330px;
+    height: 105px;
+    left: 32px;
+    top: 50px;
+    line-height: 20px;
+}
+
+/* FERIAS */
+#introducao .texto2Ferias{
+    width: 330px;
+    left: 32px;
+    line-height: 20px;
+}
+#estrutura .estruturaTextoFerias{
+    width: 330px;
+    height: 350px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    text-align: justify;
+    top: 130px;
+}
+
 
 
     
