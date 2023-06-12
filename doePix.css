@@ -115,3 +115,29 @@ input, button {
     color: #000;
     padding: 8px 30px;
 }
+
+.div2 img{
+    width: 250px;
+    top: 400px;
+    position: absolute;
+    left: 980px;
+}
+
+#imagem{
+    list-style-type: none;
+}
+
+.botaoJava{
+    font-size: 1.2em;
+    background: #7ED738;
+    border: 0;
+    margin-bottom: 1em;
+    color: #000;
+    padding: 8px 30px;
+}
+
+.div1{
+    padding-left: 950px;
+    position: absolute;
+    top: 300px;
+}

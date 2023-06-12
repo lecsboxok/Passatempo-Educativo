@@ -7,6 +7,17 @@
     <title>Pix - Passatempo Educativo</title>
     <link rel="stylesheet" href="doePix.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script>
+        function imagem(){
+  var img = document.getElementById("img")
+  var imagem = document.getElementById("imagem")
+  if(img.style.display == "none") { //verifica se a imagem está sendo exibida, se não estiver vai executar os comandos abaixo e se tiver vai executar o else
+    img.style.display="block" //exibe a imagem
+  }
+
+ }
+    </script>
+
 </head>
 <body>
     <main id="main">
@@ -52,13 +63,28 @@
             </div>
             <div class="info">
                 <ul>
-                    <li class="textInfo">Para obter o seu código PIX, por favor, confirme a doação no botão abaixo</li>
+                    <li class="textInfo">Para obter o seu código PIX, por favor, clique no botão a direita</li>
                     <li class="textInfo">O PIX possui prazo de pagamento de 72 horas</li>
+                    <li class="textInfo">Para cadastrar sua doação, preencha os campos acima</li>
                 </ul>
             </div>
             <div class="botao">
                 <button type="submit" class="Obotao">DOAR</button>
             </div>
+            
+            <div class="div1">
+                <ul>
+                  <button class="botaoJava"><li id="imagem" onclick="imagem()" style="cursor:pointer">QR CODE</li></button>
+                </ul>
+                </div>
+            <br><br><br><br>    
+            <div class="div2">
+                <img src="img/qrCode.png" style="display: none;" id="img" height="35%" width="35%"/>
+                </div>
+            
+            
+            
+            
         </form>
     </main>
 </body>
