@@ -5,6 +5,7 @@
     <title>Passatempo Educativo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script src="zz.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script>
@@ -77,16 +78,36 @@ $(document).ready(function() {
       </script>
 
     <main class="conteudo">
-        <section class="conteudo_1">
-            <div class="container-slider">
-                <button id="prev-button"><img src="img/SetaEsquerda.png" alt="prev-button" class="esquerda"></button>
-                <div class="container-images">
-                  <img src="img/Principal1.png" alt="girl" class="slider on">
-                  <img src="img/Principal2.png" alt="girl" class="slider">
-                  <img src="img/Principal3.png" alt="girl" class="slider">
+        <section class="conatainerproje">
+            <div class="slidde-container active">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>Passatempo Educativo</h1>
+                        <h4 class="subPrincipal">23 years of history</h4>
+                    </div>
                 </div>
-                <button id="next-button"><img src="img/SetaDireita.png" alt="next-button" class="direita"></button>
             </div>
+    
+            <div class="slidde-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>Check out all our adventures and memories</h1>
+                        <a href="#" class="btnblog">Take a look at our blog</a>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="slidde-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>MAKE A DONATION<br>DO GOOD</h1>
+                        <a href="#" class="btndoe">DONATE</a>
+                    </div>
+                </div>
+            </div>
+            <div id="prev" onclick="prev()"><img src="img/SetaEsquerda.png" alt=""></div>
+            <div id="next" onclick="next()"><img src="img/SetaDireita.png" alt=""></div>
         </section>
         <section id="frase" class="section">
             <div class="conteiner">
