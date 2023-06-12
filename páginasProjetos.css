@@ -1054,6 +1054,32 @@ html{
     top: 130px;
 }
 
+/* ORIGAMI */
+#estrutura .estruturaTextoOrigami{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    top: 160px;
+    bottom: 50px;
+}
+
+/* AMIGO LEITOR */
+#introducao .texto2Leitor{
+    width: 330px;
+    left: 32px;
+    top: 45px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoLeitor{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+}
+
+
 
 
     
