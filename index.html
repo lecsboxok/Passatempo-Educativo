@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoIcon.png">
     <script src="script.js" defer></script>
+    <script src="zz.js" defer></script>
+    <script src="patro.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script>
@@ -78,16 +80,36 @@ $(document).ready(function() {
       </script>
 
     <main class="conteudo">
-        <section class="conteudo_1">
-            <div class="container-slider">
-                <button id="prev-button"><img src="img/SetaEsquerda.png" alt="prev-button" class="esquerda"></button>
-                <div class="container-images">
-                  <img src="img/Principal1.png" alt="girl" class="slider on">
-                  <img src="img/Principal2.png" alt="girl" class="slider">
-                  <img src="img/Principal3.png" alt="girl" class="slider">
+        <section class="conatainerproje">
+            <div class="slidde-container active">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>Passatempo Educativo</h1>
+                        <h4 class="subPrincipal">23 anos de história</h4>
+                    </div>
                 </div>
-                <button id="next-button"><img src="img/SetaDireita.png" alt="next-button" class="direita"></button>
             </div>
+    
+            <div class="slidde-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>Confira todas as nossas aventuras e memórias</h1>
+                        <a href="#" class="btnblog">Veja o nosso blog</a>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="slidde-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>FAÇA UMA DOAÇÃO<br>FAÇA O BEM!</h1>
+                        <a href="#" class="btndoe">DOE</a>
+                    </div>
+                </div>
+            </div>
+            <div id="prev" onclick="prev()"><img src="img/SetaEsquerda.png" alt=""></div>
+            <div id="next" onclick="next()"><img src="img/SetaDireita.png" alt=""></div>
         </section>
         <section id="frase" class="section">
             <div class="conteiner">
@@ -259,6 +281,26 @@ $(document).ready(function() {
             <div>
                 <h2 class="sub">Patrocinadores e parceiros</h2>
             </div>
+            <div class="fundo">
+                <div class="slider-container" item-display-t="3" item-display-m="1">
+                    <div class="slider-width swiper-slide">
+                        <div class="item"><img src="img/patro01.png" alt=""></div>
+                        <div class="item"><img src="img/patro02.png" alt=""></div>
+                        <div class="item"><img src="img/patro03.png" alt=""></div>
+                        <div class="item"><img src="img/patro04.png" alt=""></div>
+                        <div class="item"><img src="img/patro05.png" alt=""></div>
+                        <div class="item"><img src="img/patro06.png" alt=""></div>
+                        <div class="item"><img src="img/patro07.png" alt=""></div>
+                        <div class="item"><img src="img/patro08.png" alt=""></div>
+                        <div class="item"><img src="img/patro09.png" alt=""></div>
+                        <div class="item"><img src="img/patro10.png" alt=""></div>
+                        <div class="item"><img src="img/patro11.png" alt=""></div>
+                        <div class="item"><img src="img/patro12.png" alt=""></div>
+                    </div>
+                    <div class="btnPrev" onclick="esquerda()"><img src="img/PatroSeta.svg" alt=""></div>
+                    <div class="btnNext" onclick="direita()"><img src="img/PatroSetaDireita.svg" alt=""></div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -327,6 +369,5 @@ $(document).ready(function() {
             </div>
         </section>
     </footer>
-    
 </body>
 </html>
