@@ -704,6 +704,7 @@ html{
 
     #cabecalho{
         width: 100%;
+        position: fixed;
     }
 
     #cabecalho nav.cabecalho_nav{
@@ -717,16 +718,16 @@ html{
         width: 100%;
     }
 
-    .libra{
+    /* .libra{
         display: none;
-    }
+    } */
 
     .geral {
         margin-top: 30px;
         margin-bottom: 30px;
         width: 50px;
         display: flex;
-        left: 30px;
+        left: 150px;
     }
 
     .geral:hover .cabecalho_nav_item {
@@ -761,7 +762,7 @@ html{
     }
 
     #cabecalho .imagem{
-        right: 60px;
+        left: 20px;
     }
 
     .cabecalho_Logo{
@@ -773,7 +774,7 @@ html{
     }
 
     .idiomas{
-        right: 250px;
+        right: 40px;
         top: 12px;
     }
 
@@ -781,7 +782,6 @@ html{
 
     .imagemFundo{
         height: 100px;
-        width: 400px;
     }
 
     #comeco .circular{
@@ -917,11 +917,13 @@ html{
         font: 800 20px 'Nunito', sans-serif;
         margin-top: 40px;
         left: 55px;
+        width: 200px;
     }
     
     #sugestao .obrigatorio{
         font: 400 12px 'Aleo', sans-serif;
         left: 53px;
+        width: 200px;
     }
     
     .nome{
@@ -986,7 +988,7 @@ html{
 }
 
 .logoRodape {
-    margin-left: 15px;
+    margin-left: 90px;
     width: 100px;
 }
 
@@ -1010,10 +1012,11 @@ html{
 }
 
 .icone:hover {
-    width: 60px;
+    width: 45px;
     transition: 0.5s;
     filter: brightness(50%);
 }
+
 
 .texto-rodape {
     font: 400 12px 'Nunito', sans-serif;
@@ -1053,6 +1056,10 @@ html{
     width: 100%;
 }
 
+.imgMaps{
+    right: 50px;
+}
+
 .rodape-lado1{
     width: 100%;
 }
@@ -1066,7 +1073,7 @@ html{
 .maps{
     border-radius: 10px;
     width: 200px;
-    /* right: 170px; */
+    left: 130px;
 }
 
 .a-maps{
