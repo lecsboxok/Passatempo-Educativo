@@ -31,6 +31,7 @@ $(document).ready(function() {
     });
 });
 
+
     </script>
 </head>
 
@@ -43,10 +44,20 @@ $(document).ready(function() {
                 <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
-                <a class="cabecalho_nav_item" href="sobrenos.ingles.html">About Us</a>
-                <a class="cabecalho_nav_item" href="projetos.ingles.html">Projects</a>
-                <a class="cabecalho_nav_item" href="voluntarioingles.html">Volunteers</a>
-                <a class="cabecalho_nav_item" href="#contato">Contact</a>
+                <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
+                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
+                <a class="cabecalho_nav_item" href="voluntários.html">Voluntários</a>
+                <a class="cabecalho_nav_item" href="#contato">Contato</a>
+            </div>
+            <div class="geral">
+                <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
+                <div class="cabecalho_nav_item">
+                    <a class="mobileCabecalho" href="sobrenos.html">About Us</a>
+                    <a class="mobileCabecalho" href="projetos.html">Projects</a>
+                    <a class="mobileCabecalho" href="voluntários.html">Volunteers</a>
+                    <a class="mobileCabecalho" href="#contato">Contact</a>
+                    <a class="mobileCabecalho" href="doeAgora.html">Donate</a>
+                </div>
             </div>
             <div class="idiomas">
                 <nav class="teste2">
@@ -65,48 +76,60 @@ $(document).ready(function() {
                 </nav>
             </div>
             <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgoraIngles.html">Donate Now</a>
+                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
             </div>
         </nav>
         <div class="cabecalho_sombra"></div>
     </header>
 
-    <main id="main">
-        <section id="comeco">
-            <div class="fundo">
-                <img src="img/FundoLivro.png" alt="Estante" class="imagemFundo">
-                <img src="img/CircularLivro.png" alt="Homem lendo para crianças" class="circular">
-                <div class="retanguloNome">
-                    <h1 class="titulo">Books in action</h1>
-                </div>
-                <a href="projetos.ingles.html"><img src="img/seta.png" alt="seta" class="seta"></a>
-            </div>
-        </section>
 
-        <section id="introducao">
-            <div class="textoInicial">
-                <p class="texto1">Project chosen by the Australian Embassy that encourages the practice of reading. <br> A collection with more than 4000 paradidactic books from the renowned Editora Moderna with environmental themes, arts, Afro and indigenous culture, history, nutrition, science, among other subjects.</p>
-                <p class="textoLivro">Thematic workshops and monitored tours related to book reading are part of the project's programming. A digital library is offered by the Bamboleio App that benefits 1000 school students.</p>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+<main id="main">
+    <section id="comeco">
+        <div class="fundo">
+            <img src="img/FundoLivro.png" alt="Livros" class="imagemFundo">
+            <img src="img/CircularLivro.png" alt="Home lendo para as crianças" class="circular">
+            <div class="retanguloNome">
+                <h1 class="titulo">Livro em ação</h1>
             </div>
-            <div class="linha"></div>
-            <br><br><br><br><br><br><br>
-        </section>
-        <section id="estrutura">
-            <div class="corpo">
-                <img src="img/FiguraLivro.png" alt="Livros" class="figura">
-                <p class="estruturaTexto">A socio-cultural animation project is offered that has literature as the basis of the activity. The participants have contact with educational approaches while having fun, improving the fixation of the content developed in the classroom and making it possible to increase their dedication to their studies. <br> Each participating student receives a book that addresses the theme to be presented in the activities, showing that literature is present in the lives and daily lives of children and adolescents. <br> This is a proposal of educational social tourism with low-cost activities, which counts on the support of Editora Moderna, the Australian Embassy, and Firmenich, which offers several titles to be worked on, and which are selected according to the age groups of the participating children. <br> </p>
-                <p class="saibaMais">Learn more at www.passatempolivros.org.br</p>
-            </div>
-        </section>
+            <a href="projetos.html"><img src="img/seta.png" alt="seta" class="seta"></a>
+        </div>
+    </section>
+
+    <section id="introducao">
+        <div class="textoInicial">
+            <p class="texto1">A collection with more than 4000 paradidactic books from the renowned Editora Moderna with environmental themes, arts, Afro and indigenous culture, history, nutrition, science, among other subjects.</p>
+            <br><br>
+            <p class="texto2">Thematic workshops and monitored itineraries related to reading the book are part of the project's schedule. A digital library is offered by the Bamboleio Application, which benefits 1000 school students.</p>
+        </div>
+        <div class="linha"></div>
+        <br><br><br><br><br><br><br>
+    </section>
+    <section id="estrutura">
+        <div class="corpo">
+            <img src="img/FiguraLivro.png" alt="Livro" class="figura">
+            <p class="estruturaTexto">A sociocultural animation project is offered that has literature as the basis of the activity. Participants have contact with educational approaches while having fun, improving the retention of content developed in the classroom and enabling increased dedication to studies. Each participating student receives a book that addresses the theme to be presented in the activities, showing that literature is present in the lives and daily lives of children and adolescents. <br> This is a proposal for pedagogical social tourism with activities at low cost, which has the support of Editora Moderna, Embassy of Australia and Firmenich , which offers several titles to be worked on, and which are selected by age groups of the participating groups of children. <br> Learn more at www.passatempolivros.org.br</p>
+        </div>
+    </section>
         <section id="outros">
             <div class="retanguloOutros">
                 <h1 class="titulo">Discover other projects</h1>
                 <img src="img/Coração.png" alt="Coração" class="coracao">
                 <div class="caixas1">
                     <a href="recreatur.ingles.html"><p class="textoCaixas">Recreatur</p></a>
-                    <a href="livro.ingles.html"><p class="textoCaixas Pintado" >Book in action</p></a>
+                    <a href="livro.ingles.html"><p class="textoCaixas Pintado" >Book in 'act'</p></a>
                     <a href="futebol.ingles.html"><p class="textoCaixas">Soccer Science</p></a>
-                    <a href="cultura.ingles.html"><p class="textoCaixas">Accessible Culture</p></a>
+                    <a href="culturaIngles.html"><p class="textoCaixas">Accessible Culture</p></a>
                 </div>
                 <div class="caixas2">
                    <a href="jogoteca.ingles.html"><p class="textoCaixas">Jogoteca</p></a>
@@ -125,15 +148,15 @@ $(document).ready(function() {
         </section>
         <section id="sugestao">
             <div class="retanguloSugestao">
-                <h1 class="titulo">Leave your suggestion</h1>
-                <p class="obrigatorio">Required fields marked with *</p>
+                <h1 class="titulo">Deixe sua sugestão</h1>
+                <p class="obrigatorio">Campos obrigatórios marcados com *</p>
                 <form>
-                    <input type="text" placeholder="Name*" class="nome">
+                    <input type="text" placeholder="Nome*" class="nome">
                     <input type="email" placeholder="Email*" class="email">
-                    <input type="text" placeholder="Suggestion*" class="campoSugestao">
-                    <input type="checkbox" id="Salva" class="salva"> <label for="Save" class="salvar">Save my data
-                        in this browser for the next time I comment.</label>
-                    <button>Send</button>
+                    <input type="text" placeholder="Sugestão*" class="campoSugestao">
+                    <input type="checkbox" id="Salva" class="salva"> <label for="Salva" class="salvar">Salvar meus dados
+                        neste navegador para a próxima vez que eu comentar.</label>
+                    <button>Enviar</button>
                 </form>
             </div>
         </section>
@@ -147,10 +170,12 @@ $(document).ready(function() {
                         <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
                     </div>
                     <div>
-                        <img src="img/menina.png" alt="">
+                        <img src="img/menina.png" alt="" class="menina">
                     </div>
                     <div class="rodapeTexto">
-                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops organization, which develops projects in the educational, cultural, environmental preservation, and development of sustainable tourism.
+                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization
+                            lucrative, which develops projects in the educational, cultural, environmental preservation and
+                            development of sustainable tourism.
                         </p>
                     </div>
                     <div class="redes">
@@ -195,25 +220,23 @@ $(document).ready(function() {
                     <div class="endereco">
                         <div class="enderecoTexto">
                             <a
-                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
-                                <img src="img/iconMaps.png" alt="" class="iconMaps">
-                            </a>
+                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img src="img/iconMaps.png" alt="" class="iconMaps"></a>
                             <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brazil</h4>
                         </div>
                         <div class="imgMaps">
                             <a
-                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr" class="a-maps">
                                 <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
                             </a>
                         </div>
                         <div>
-                            <img src="img/amigoSurdo.png" alt="">
+                            <img src="img/amigoSurdo.png" alt="" class="amigoSurdo">
                         </div>
                     </div>
                 </div>
                 <div class="direitos">
-                    <p class="autorais">No intent to infringe on the copyright of image use.</p>
-                    <p class="direito">Copyright © 2023 Educational hobby. All Rights Reserved.</p>
+                    <p class="autorais">There is no intention to infringe the copyright of image use.</p>
+                    <p class="direito">Copyright © 2023 Passatempo educativo. All rights reserved.</p>
                 </div>
             </div>
         </section>

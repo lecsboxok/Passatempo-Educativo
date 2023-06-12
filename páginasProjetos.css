@@ -989,6 +989,13 @@ html{
         text-align: justify;
     }
 
+    #estrutura .saibaMais{
+        color: #4E94D3;
+        font: 400 12px 'Nunito', sans-serif ;
+        top: 90px;
+        left: 20px;
+    }
+
 
     
 
