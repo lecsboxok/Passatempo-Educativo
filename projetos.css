@@ -4,6 +4,7 @@
     border: 0;
     box-sizing: border-box;
     position: relative;
+
 }
 
 a{
@@ -23,6 +24,11 @@ a{
 @font-face {
     font-family: Aleo-light;
     src: url(Assets/Aleo-Light.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 1499px;
 }
 
 /* CABEÇALHO */
@@ -175,7 +181,7 @@ ul li ul li{
 .titulo{
     font: 800 40px 'Nunito', sans-serif;
     text-align: center;
-    padding-top: 160px;
+    padding-top: 200px;
     color: #000;
 }
 
@@ -213,13 +219,14 @@ ul li ul li{
     background-image: url(img/OndaRosa.png);
     top: 160px;
     background-size: 100%;
+    /* position: relative; */
 }
 
 .retangulo{
     background-color: rgba(254, 199, 219, 0.3);
     top: 160px;
     height: 380px;
-
+    /* position: relative; */
 }
 
 .certificadosTitulo{
@@ -227,11 +234,13 @@ ul li ul li{
     font: 700 36px 'Nunito', sans-serif;
     text-align: center;
     top: 20px;
+    /* position: relative; */
 }
 
 .divisao{
     top: 110px;
     text-align: center;
+    /* position: relative; */
 }
 
 .Certificados{
@@ -244,9 +253,6 @@ ul li ul li{
     margin: 160px 0;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 #projetos{
     text-align: center;
@@ -647,3 +653,4 @@ html{
     top: 10px;
     color: #000;
 }
+

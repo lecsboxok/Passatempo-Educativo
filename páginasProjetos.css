@@ -689,3 +689,420 @@ button:hover{
 html{
     scroll-behavior: smooth;
 }
+
+.geral{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+
+
+    /* CABEÇALHO */
+
+    #cabecalho{
+        width: 100%;
+        position: fixed;
+    }
+
+    #cabecalho nav.cabecalho_nav{
+        width: 100%;
+    }
+
+    #cabecalho .cabecalho_sombra {
+        height: 16px;
+        background-color: #FFD233;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+
+    /* .libra{
+        display: none;
+    } */
+
+    .geral {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 50px;
+        display: flex;
+        left: 150px;
+    }
+
+    .geral:hover .cabecalho_nav_item {
+        color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+    .cabecalho_nav_item {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1000;
+        left: 270px;
+        top: 40px;
+    }
+
+    a {
+        text-align: center;
+        font-family: 'Aleo', sans-serif;
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        padding-top: 6px;
+    }
+
+    a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .cabecalho_nav_itens {
+        display: none;
+    }
+
+    #cabecalho .imagem{
+        left: 20px;
+    }
+
+    .cabecalho_Logo{
+        width: 120px;
+    }
+
+    .cabecalho_nav_item_Doe{
+        display: none;
+    }
+
+    .idiomas{
+        right: 40px;
+        top: 12px;
+    }
+
+    /* TÉRMINO DO CABEÇALHO */
+
+    .imagemFundo{
+        height: 100px;
+    }
+
+    #comeco .circular{
+        position: absolute;
+        left: 240px;
+        top: 50px;
+        width: 130px;
+    }
+
+    .seta{
+        width: 40px;
+    }
+
+    #introducao .texto1, .texto2, .textoLivro, .texto2Cultura, .texto2Jogoteca, .texto2Ferias, .texto2Leitor, .texto2Musica, .texto2Ecobanda, .texto2MelhorIdade, .texto2Aventura{
+        font: 400 12px 'Nunito', sans-serif;
+    }
+
+    #introducao .texto1{
+        top: 18px;
+        width: 330px;
+        left: 32px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    #comeco .retanguloNome{
+        position: absolute;
+        border-radius: 10px;
+        background-color: #FFF;
+        padding: 2px 30px;
+        left: 40px;
+        top: 80px;
+        height: 30px;
+        width: 150px;
+    }
+    
+    #comeco .titulo{
+        font: 800 20px 'Nunito', sans-serif;
+        text-align: center;
+        margin-top: 0px;
+        color: #000;
+    }
+
+    #introducao .texto2{
+        top: 30px;
+        width: 330px;
+        left: 32px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    #introducao .linha{
+        width: 330px;
+        top: 70px;
+        left: 32px;
+    }
+
+    #estrutura .figura{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 150px;
+        top: 0px;
+    }
+
+    #estrutura .estruturaTexto{
+        width: 330px;
+        left: 35px;
+        font: 400 12px 'Nunito', sans-serif ;
+        line-height: 20px;
+        text-align: justify;
+        top: 120px;
+    }
+
+    #outros .retanguloOutros{
+        height: 410px;
+        top: 130px;
+    }
+    
+    #outros .titulo{
+        font: 800 20px 'Nunito', sans-serif;
+        margin-top: 60px;
+        left: 80px;
+    }
+    
+    .coracao{
+        width: 32px;
+        height: 27px;
+        left: 310px;
+        top: 40px;
+    }
+    
+    #outros .textoCaixas{
+        font: 400 12px 'Nunito', sans-serif;
+        line-height: 15px;
+        margin: 0 6px;
+        padding: 0 20px;
+    }
+    
+    #outros .Pintado{
+        border-radius: 10px;
+        background-color: #FFD233;
+        padding: 2px 15px;
+        font: 400 12px 'Nunito', sans-serif;
+        line-height: 15px;
+        margin: 0 20px;
+    }
+    
+    #outros .caixas1{
+        top: 120px;
+        padding: 20px;
+    }
+    
+    #outros .caixas2{
+        top: 120px;
+        padding: 20px;
+    }
+    
+    #outros .caixas3{
+        top: 120px;
+        padding: 20px;
+    }
+
+    #sugestao .retanguloSugestao{
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        left: 50px;
+        top: 200px;
+    }
+    
+    #sugestao .titulo{
+        font: 800 20px 'Nunito', sans-serif;
+        margin-top: 40px;
+        left: 55px;
+        width: 200px;
+    }
+    
+    #sugestao .obrigatorio{
+        font: 400 12px 'Aleo', sans-serif;
+        left: 53px;
+        width: 200px;
+    }
+    
+    .nome{
+        width: 250px;
+        height: 25px;
+        border-radius: 10px;
+        left: 25px;
+        top: 50px;
+    }
+    
+    #sugestao .email{
+        width: 250px;
+        height: 25px;
+        border-radius: 10px;
+        left: 25px;
+        top: 75px;
+    }
+    
+    
+    #sugestao .campoSugestao{
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        left: 25px;
+        top: 90px;
+    }
+    
+    ::placeholder{
+        font: 400 12px 'Aleo', sans-serif;
+        padding-left: 15px;
+    }
+    
+    #sugestao .salva{
+        top: 148px;
+        right: 225px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    #sugestao .salvar{
+        top: 220px;
+        left: 50px;
+        font: 200 12px 'Nunito', sans-serif;
+        width: 220px;
+    }
+
+    button{
+        border: 1px solid #000000;
+        border-radius: 5px;
+        height: 20px;
+        width: 80px;
+        background-color: #00000000;
+        top: 170px;
+        left: 110px;
+    }
+    
+
+    /* RODAPÉ */
+#contato {
+    margin-top: 700px;
+    width: 400px;
+}
+
+.logoRodape {
+    margin-left: 90px;
+    width: 100px;
+}
+
+.menina{
+    width: 120px;
+    left: 30px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    right: 50px;
+}
+
+.icone {
+    width: 40px;
+    padding: 9px;
+    padding-left: 3px;
+}
+
+.icone:hover {
+    width: 45px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+
+.texto-rodape {
+    font: 400 12px 'Nunito', sans-serif;
+    right: 25px;
+    width: 300px;
+}
+
+.logotipoRodape {
+    width: 120px;
+}
+
+.rodapeTexto{
+    width: 100%;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.endereco{
+    top: 30px;
+}
+
+.iconMaps {
+    right: 25px;
+    width: 30px;
+}
+
+.textoMaps {
+    font: 400 12px 'Nunito', sans-serif;
+    right: 30px;
+    width: 100%;
+}
+
+.imgMaps{
+    right: 50px;
+}
+
+.rodape-lado1{
+    width: 100%;
+}
+
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.maps{
+    border-radius: 10px;
+    width: 200px;
+    left: 130px;
+}
+
+.a-maps{
+    right: 170px;
+}
+
+.amigoSurdo{
+    width: 320px;
+    right: 30px;
+}
+
+.direitos {
+    width: 100%;
+    margin-top: 90px;
+}
+
+.autorais {
+    font: 400 10px 'Aleo-light', serif;
+    width: 290px;
+}
+
+.direito {
+    font: 300 14px 'Aleo-light', serif;
+    margin-top: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* TERMINO DO RODAPÉ */
+
+}

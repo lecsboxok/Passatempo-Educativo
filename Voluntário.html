@@ -6,17 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="voluntário.css">
+    <link rel="icon" href="img/logoIcon.png">
+    <link rel="stylesheet" href="voluntariomobile.css">
 
-    <title>Document</title>
+    <title>Voluntários</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+
+    </script>
 </head>
-<!-- CABEÇALHO -->
 
-<body class="corpo">
+
+<body>
+
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
-                        alt="Logo Passatempo educativo"></a>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
@@ -25,9 +52,20 @@
                 <a class="cabecalho_nav_item" href="#contato">Contato</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste">
+                    <ul class="principal">
+                        <li class="li-p">
+                            <a href="javascript://" class="a-teste">
+                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                            </a>
+            
+                            <ul class="ul-imagens">
+                                <a href="voluntarioingles.html"><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
+                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
@@ -36,270 +74,298 @@
         <div class="cabecalho_sombra"></div>
     </header>
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-
-    <!-- FIM DE CABEÇALHO 
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js">
+        </script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+       
+        <!-- FIM DE CABEÇALHO 
              <--fCOMEÇO DO SITE -->
 
-    <main class="Corpo">
-        <section class="ParteUm">
-            <div class="titulo">
-                <div class="Azul">
-                    <h1 class="tituloUm">Seja um voluntário!</h1>
-                    <img src="img/maoVoluntario.png" alt="Mãos Unidas" class="MaosUm">
+        <main class="Corpo">
+            <section class="ParteUm">
+                <div class="titulo">
+                    <div class="Azul">
+                        <h1 class="tituloUm">Seja um voluntário!</h1>
+                        <div class="box">
+                        <img src="img/maoVoluntario.png" alt="Mãos Unidas" class="MaosUm">
+                        </div>
+                    </div>
+                    <img src="img/FundoOnda.png" alt="Onda Azul" class="FundoOnda">
+
+                    <div class="rosa">
+                        <h2 class="Formulario">Quer fazer parte dessa família?</h2>
+                        <h2 class="FormularioB">Deixe aqui seu contato:</h2>
+
+
+                        <div class="forms">
+                            <form action="" class="formulario">
+                                <div class="campo">
+                                    <label for="Nome">Nome:</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="Email">Email:</label>
+                                    <input type="Email" name="Email" id="Email" placeholder="Insira seu email" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="Cidade">Cidade:</label>
+                                    <input type="text" name="Cidade" id="Cidade" placeholder="Insira sua cidade">
+                                </div>
+                                <div class="campo">
+                                    <label for="CPF">Telefone:</label>
+                                    <input type="text" name="CPF" id="Telefone" placeholder="___.___.___-__" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="data">Mensagem:</label>
+                                    <input type="text" name="Menssagem" id="data" placeholder="Insira sua mensagem">
+                                </div>
+                                <div>
+                                    <p class="aviso">Todos os campos são obrigatórios</p>
+
+                                </div>
+                                <button class="btn"> Enviar</button>
+
+                        </div>
+                        <img src="img/coraçaoVoluntario-removebg-preview-removebg-preview (1).png" alt=""
+                            class="coracao">
+                    </div>
+
+
                 </div>
-                <img src="img/FundoOnda.png" alt="Onda Azul" class="FundoOnda">
 
-                <div class="rosa">
-                    <h2 class="Formulario">Quer fazer parte dessa família?</h2>
-                    <h2 class="FormularioB">Deixe aqui seu contato:</h2>
+            </section>
+            <!-- PARTE DOIS DO TRABLHO COM O SEGUNDO TITULO -->
+            <section class="ParteDois">
 
-                    <div class="forms">
-                        <form action="" class="formulario">
-                            <div class="campo">
-                                <label for="Nome">Nome:*</label>
-                                <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
-                            </div>
-                            <div class="campo">
-                                <label for="Email">Email:</label>
-                                <input type="Email" name="Email" id="Email" placeholder="Insira seu email" required>
-                            </div>
-                            <div class="campo">
-                                <label for="Cidade">Cidade:</label>
-                                <input type="text" name="Cidade" id="Cidade" placeholder="Insira sua cidade">
-                            </div>
-                            <div class="campo">
-                                <label for="CPF">Telefone:</label>
-                                <input type="text" name="CPF" id="Telefone" placeholder="___.___.___-__" required>
-                            </div>
-                            <div class="campo">
-                                <label for="data">Menssagem</label>
-                                <input type="text" name="Menssagem" id="data" placeholder="Insira sua mensagem">
+                <br><br>
+                <h1 class="TituloDois" id="TituloVC">Apoie nossos projetos</h1>
+                <div class="box"> 
+                <img src="img/MaoDoisVoluntario.png" alt="" class="MaosDois">
+               </div>
+               
+                <br><br><br>
+                <p class="TextoUmA">Apoiar um projeto cultural pode ser uma ação estratégica dentro de um planejamento
+                </p>
+                <p class="TextoUmB">de marketing que vise a divulgação dasua marca e a assimilação de sua existência na
+                </p>
+                <p class="TextoUmC"> mente do consumidor .</p>
+
+                <!-- ICONES -->
+                <div class="tudoIcones">
+                    <img src="img/imposto.png" alt="Imposto" id="Moeda">
+                    <img src="img/esportes-com-bolas.png" alt="esportes-com-bolas" id="Bolas">
+                    <img src="img/teatro.png" alt="Máscara de Teatro" id="Teatro">
+                    <img src="img/playtime.png" alt="Menino" id="Menino">
+                </div>
+
+
+
+                <div class="Setas">
+                    <a href="#MOEDA"> <img src="img/setaVoluntario-removebg-preview.png" alt="" class="setaUm"></a>
+                    <a href="#BOLA"> <img src="img/setaVoluntario-removebg-preview.png" alt="" class="setaDois"></a>
+                    <a href="#ATUAÇAO"> <img src="img/setaVoluntario-removebg-preview.png" alt="" class="setaTres"></a>
+                    <a href="#MENINOO"> <img src="img/setaVoluntario-removebg-preview.png" alt=""
+                            class="setaQuatro"></a>
+
+                </div>
+            </section>
+
+
+            <!-- PARTE TRÊS  -->
+
+
+            <!-- MOEDA -->
+            <section class="parteTres">
+                <div class="quadradoUm">
+                    <div class="ImagemA">
+                        <img src="img/imposto.png" alt="Moedaa" class="Md" id="MOEDA">
+
+                    </div>
+                    <br>
+                    <h2 class="tituloDoisA">LEI ROUANET </h2>
+                    <p class="TextoDoisA"> Possibilita que o empresário patrocinador des­conte até 100% do
+                        valor investido
+                        no projeto, do
+                        imposto de renda devido, desde que este não ultrapasse a alíquota permitida com o limite de 4%
+                        do
+                        Imposto de Renda devido pela Pessoa Jurídica e 6% pela Pessoa Física.</p>
+                    <br><br>
+                    <p class="TextoDoisB">Ex.: Se uma empresa paga R$ 10 milhões de IR ao governo, poderá destinar,
+                        portanto, R$ 400 mil para
+                        incentivar e patrocinar um projeto cultural, obtendo as contrapartidas de exposição de um
+                        patrocínio
+                        normal. Esse valor virá como forma de dedução ou abatimento no IR do ano seguinte.</p>
+                    <div class="SetaTextoA">
+                        <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
+                                class="setaDoisA"></a>
+                    </div>
+                </div>
+                <!-- ESPORTE -->
+                <div class="quadroDois">
+                    <div class="imagemB">
+                        <img src="img/esportes-com-bolas.png" alt="Esportes Bolas" class="Bola" id="BOLA">
+                    </div>
+                    <br>
+                    <h2 class="tituloDoisB">LEI DE INCENTIVO </h2>
+                    <h2 class="tituloDoisBB"> AO ESPORTE</h2>
+                    <p class="textoTres">As empresas podem destinar 1% do impos­to de renda devido para projetos
+                        aprovados
+                        na Lei Federal de Incentivo ao Esporte (Lei 11.438/06).
+                        O funcionamento desta lei é muito parecido com o funcionamento da lei federal de incen­tivo à
+                        cultura.</p>
+
+                    <div class="SetaTextoB">
+                        <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
+                                class="setaDoisB"></a>
+                    </div>
+                </div>
+
+                <!-- ATUAÇÃO -->
+                <div class="quadroTres">
+                    <div class="imagemC">
+                        <img src="img/teatro.png" alt="Máscara" id="ATUAÇAO">
+                    </div>
+
+
+                    <h2 class="tituloDoisC">LEI DE INCENTIVO À</h2>
+                    <h2 class="tituloDoisCC"> CULTURA DE SÃO PAULO </h2>
+                    <p class="textoQuatro">O PROAC é um programa estabelecido pela Lei Estadual de Incentivo à Cultura
+                        (Lei
+                        nº 12.268/06). Ele possibilita que o patrocina­dor de projetos aprovados pelo PROAC tenha
+                        direito ao
+                        abatimento do valor investido no projeto, em ICMS, respeitando uma base de percentuais que vai
+                        de
+                        0,038 do ICMS devido (para empresas que pagam imposto igual ou superior a R$ 4 bilhões) a 3% do
+                        ICMS
+                        (para empresas que pagam imposto igual ou inferior a R$ 74.999.999,99).</p>
+                    <div class="SetaTextoC">
+                        <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
+                                class="setaDoisC"></a>
+                    </div>
+
+                </div>
+
+                <!-- PARTE DO MENINO -->
+
+                <div class="quadroQuatro">
+                    <div class="imagemD">
+                        <img src="img/playtime.png" alt="Menino ED" class="Meninoo" id="MENINOO">
+                    </div>
+                    <br>
+                    <h2 class="tituloDoisD">FUMCAD </h2>
+
+                    <p class="TextoCinco">Baseado no Fundo Municipal dos Direitos da Criança e do Adolescente Lei
+                        Federal nº
+                        8.069/90 e Lei Municipal 11.247/92. O projeto tem que ser aprovado pelo Conselho Municipal dos
+                        Direitos da Criança e do Adolescente de São Paulo.
+                        Quem pode doar
+                        Pessoa Jurídica: pode direcionar até 1% do montante do Imposto de Renda apurado com base no
+                        lucro
+                        real para o FUMCAD e ter este valor deduzido no pagamento do imposto.
+                        Pessoa Física: o limite para destinação da restituição é de até 6% e só é possível para quem
+                        utiliza
+                        o formulário completo da Declaração Anual de Ajuste.</p>
+                    <div class="SetaTextoD">
+                        <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
+                                class="setaDoisD"></a>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="contato" class="section">
+                <div class="conteiner">
+                    <div class="rodape-lado1">
+                        <div class="logoRodape">
+                            <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
+                        </div>
+                        <div>
+                            <img src="img/menina.png" alt="">
+                        </div>
+                        <div class="rodapeTexto">
+                            <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins
+                                lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental e
+                                desenvolvimento do turismo sustentável.
+                            </p>
+                        </div>
+                        <div class="redes">
+                            <div>
+                                <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt=""
+                                        class="facebook icone"></a>
                             </div>
                             <div>
-                                <p class="aviso">Todos os campos são obrigatórios</p>
-
+                                <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt=""
+                                        class="instagram icone"></a>
                             </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- PARTE DOIS DO TRABLHO COM O SEGUNDO TITULO -->
-        <section class="ParteDois">
-
-            <br><br>
-            <h1 class="TituloDois" id="TituloVC">Apoie nossos projetos</h1>
-            <br><br><br>
-            <p class="TextoUmA">Apoiar um projeto cultural pode ser uma ação estratégica dentro de um planejamento </p>
-            <p class="TextoUmB">de marketing que vise a divulgação dasua marca e a assimilação de sua existência na </p>
-            <p class="TextoUmC"> mente do consumidor .</p>
-
-            <!-- ICONES -->
-            <div class="tudoIcones">
-                <img src="img/imposto.png" alt="Imposto" id="Moeda">
-                <img src="img/esportes-com-bolas.png" alt="esportes-com-bolas" id="Bolas">
-                <img src="img/teatro.png" alt="Máscara de Teatro" id="Teatro">
-                <img src="img/playtime.png" alt="Menino" id="Menino">
-            </div>
-
-
-
-            <div class="Setas">
-                <a href="#MOEDA"> <img src="img/setaVoluntario-removebg-preview.png" alt="" class="setaUm"></a>
-                <a href="#BOLA"> <img src="img/setaVoluntario-removebg-preview.png" alt="" class="setaDois"></a>
-                <a href="#ATUAÇAO"> <img src="img/setaVoluntario-removebg-preview.png" alt="" class="setaTres"></a>
-                <a href="#MENINOO"> <img src="img/setaVoluntario-removebg-preview.png" alt="" class="setaQuatro"></a>
-
-            </div>
-        </section>
-
-
-        <!-- PARTE TRÊS  -->
-
-
-        <!-- MOEDA -->
-        <section class="parteTres">
-            <div class="quadradoUm">
-                <div class="ImagemA">
-                    <img src="img/imposto.png" alt="Moedaa" class="Md" id="MOEDA">
-
-                </div>
-                <br>
-                <h2 class="tituloDoisA">LEI ROUANET </h2>
-                <p class="TextoDoisA"> Possibilita que o empresário patrocinador des­conte até 100% do
-                    valor investido
-                    no projeto, do
-                    imposto de renda devido, desde que este não ultrapasse a alíquota permitida com o limite de 4% do
-                    Imposto de Renda devido pela Pessoa Jurídica e 6% pela Pessoa Física.</p>
-                <br><br>
-                <p class="TextoDoisB">Ex.: Se uma empresa paga R$ 10 milhões de IR ao governo, poderá destinar,
-                    portanto, R$ 400 mil para
-                    incentivar e patrocinar um projeto cultural, obtendo as contrapartidas de exposição de um patrocínio
-                    normal. Esse valor virá como forma de dedução ou abatimento no IR do ano seguinte.</p>
-                <div class="SetaTextoA">
-                    <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
-                            class="setaDoisA"></a>
-                </div>
-            </div>
-            <!-- ESPORTE -->
-            <div class="quadroDois">
-                <div class="imagemB">
-                    <img src="img/esportes-com-bolas.png" alt="Esportes Bolas" class="Bola" id="BOLA">
-                </div>
-                <br>
-                <h2 class="tituloDoisB">LEI DE INCENTIVO </h2>
-                <h2 class="tituloDoisBB"> AO ESPORTE</h2>
-                <p class="textoTres">As empresas podem destinar 1% do impos­to de renda devido para projetos aprovados
-                    na Lei Federal de Incentivo ao Esporte (Lei 11.438/06).
-                    O funcionamento desta lei é muito parecido com o funcionamento da lei federal de incen­tivo à
-                    cultura.</p>
-
-                <div class="SetaTextoB">
-                    <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
-                            class="setaDoisB"></a>
-                </div>
-            </div>
-
-            <!-- ATUAÇÃO -->
-            <div class="quadroTres">
-                <div class="imagemC">
-                    <img src="img/teatro.png" alt="Máscara" id="ATUAÇAO">
-                </div>
-
-
-                <h2 class="tituloDoisC">LEI DE INCENTIVO À</h2>
-                <h2 class="tituloDoisCC"> CULTURA DE SÃO PAULO </h2>
-                <p class="textoQuatro">O PROAC é um programa estabelecido pela Lei Estadual de Incentivo à Cultura (Lei
-                    nº 12.268/06). Ele possibilita que o patrocina­dor de projetos aprovados pelo PROAC tenha direito ao
-                    abatimento do valor investido no projeto, em ICMS, respeitando uma base de percentuais que vai de
-                    0,038 do ICMS devido (para empresas que pagam imposto igual ou superior a R$ 4 bilhões) a 3% do ICMS
-                    (para empresas que pagam imposto igual ou inferior a R$ 74.999.999,99).</p>
-                <div class="SetaTextoC">
-                    <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
-                            class="setaDoisC"></a>
-                </div>
-
-            </div>
-
-            <!-- PARTE DO MENINO -->
-
-            <div class="quadroQuatro">
-                <div class="imagemD">
-                    <img src="img/playtime.png" alt="Menino ED" class="Meninoo" id="MENINOO">
-                </div>
-                <br>
-                <h2 class="tituloDoisD">FUMCAD </h2>
-
-                <p class="TextoCinco">Baseado no Fundo Municipal dos Direitos da Criança e do Adolescente Lei Federal nº
-                    8.069/90 e Lei Municipal 11.247/92. O projeto tem que ser aprovado pelo Conselho Municipal dos
-                    Direitos da Criança e do Adolescente de São Paulo.
-                    Quem pode doar
-                    Pessoa Jurídica: pode direcionar até 1% do montante do Imposto de Renda apurado com base no lucro
-                    real para o FUMCAD e ter este valor deduzido no pagamento do imposto.
-                    Pessoa Física: o limite para destinação da restituição é de até 6% e só é possível para quem utiliza
-                    o formulário completo da Declaração Anual de Ajuste.</p>
-                <div class="SetaTextoD">
-                    <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
-                            class="setaDoisD"></a>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <section id="contato" class="section">
-            <div class="conteiner">
-                <div class="rodape-lado1">
-                    <div class="logoRodape">
-                        <img src="img/logoPassatempo.png" alt="">
-                    </div>
-                    <div>
-                        <img src="img/menina.png" alt="">
-                    </div>
-                    <div class="rodapeTexto">
-                        <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins
-                            lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental e
-                            desenvolvimento do turismo sustentável.
-                        </p>
-                    </div>
-                    <div class="redes">
-                        <div>
-                            <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt=""
-                                    class="facebook icone"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt=""
-                                    class="instagram icone"></a>
-                        </div>
-                        <div>
-                            <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
-                                    class="twitter icone"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
-                                    src="img/youtube.png" alt="" class="youtube icone"></a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://www.linkedin.com/?original_referer=http%3A%2F%2Fpassatempoeducativo.org.br%2F"><img
-                                    src="img/In.png" alt="" class="In icone"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png" alt=""
-                                    class="flickr icone"></a>
-                        </div>
-                        <div>
-                            <a
-                                href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
-                                    src="img/e-mail.png" alt="" class="email icone"></a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
-                                    src="img/whats.png" alt="" class="whatsapp icone"></a>
+                            <div>
+                                <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
+                                        class="twitter icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
+                                        src="img/youtube.png" alt="" class="youtube icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/?original_referer=http%3A%2F%2Fpassatempoeducativo.org.br%2F"><img
+                                        src="img/In.png" alt="" class="In icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png" alt=""
+                                        class="flickr icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
+                                        src="img/e-mail.png" alt="" class="email icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
+                                        src="img/whats.png" alt="" class="whatsapp icone"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="rodape-lado2">
-                    <div class="endereco">
-                        <div class="enderecoTexto">
-                            <a
-                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
-                                <img src="img/iconMaps.png" alt="" class="iconMaps">
-                            </a>
-                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brazil</h4>
-                        </div>
-                        <div class="imgMaps">
-                            <a
-                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
-                                <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
-                            </a>
-                        </div>
-                        <div>
-                            <img src="img/amigoSurdo.png" alt="">
+                    <div class="rodape-lado2">
+                        <div class="endereco">
+                            <div class="enderecoTexto">
+                                <a
+                                    href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                    <img src="img/iconMaps.png" alt="" class="iconMaps">
+                                </a>
+                                <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
+                            </div>
+                            <div class="imgMaps">
+                                <a
+                                    href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
+                                    <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
+                                </a>
+                            </div>
+                            <div>
+                                <img src="img/amigoSurdo.png" alt="">
+                            </div>
                         </div>
                     </div>
+                    <div class="direitos">
+                        <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                        <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+                    </div>
                 </div>
-                <div class="direitos">
-                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
-                </div>
-            </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
 
 
 
-</body>
+    </body>
 
 </html>

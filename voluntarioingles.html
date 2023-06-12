@@ -6,12 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="voluntário.css">
+    <link rel="icon" href="img/logoIcon.png">
 
-    <title>Document</title>
+    <title>Volunteers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var botao = $('.a-teste');
+            var dropDown = $('.ul-imagens');
+
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
+
+        $(document).ready(function () {
+            var botao = $('.a-teste2');
+            var dropDown = $('.ul-imagens2');
+
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
+
+    </script>
 </head>
-<!-- CABEÇALHO -->
 
-<body class="corpo">
+
+<body>
+
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
@@ -21,13 +47,28 @@
             <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="sobrenos.ingles.html">About Us</a>
                 <a class="cabecalho_nav_item" href="projetos.ingles.html">Projects</a>
-                <a class="cabecalho_nav_item" href="voluntários.ingles.html">Volunteers</a>
+                <a class="cabecalho_nav_item" href="voluntarioingles.html">Volunteers</a>
                 <a class="cabecalho_nav_item" href="#contato">Contact</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste2">
+                    <ul class="principal2">
+                        <li class="li-p2">
+                            <a href="javascript://" class="a-teste2">
+                                <img src="img/inglesComSeta.png" alt="Brasil" width="45px" class="brasil">
+                            </a>
+
+                            <ul class="ul-imagens2">
+                                <a href="Voluntário.html">
+                                    <li><img src="img/Brasil.png" alt="Bandeira do brasil" class="img-teste2"></li>
+                                </a>
+                                <a href="espanhol.html">
+                                    <li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste2"></li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <a class="cabecalho_nav_item_Doe" href="doeAgoraIngles.html">Donate Now</a>
@@ -36,17 +77,16 @@
         <div class="cabecalho_sombra"></div>
     </header>
 
-    <h1>Hand Talk</h1>
-  <h2>Count on the help of Hugo and Maya, our virtual translators, to make your communication more accessible.</h2>
-  <p>We offer digital translation for accessibility in Libras, the Brazilian Sign Language.</p>
-  <!-- Pega a ultima versão do plugin Hand Talk -->
-  <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
-  <script>
-    var ht = new HT({
-      // Troque por seu token de acesso
-      token: "<TOKEN>"
-    });
-  </script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
     <!-- FIM DE CABEÇALHO 
              <--fCOMEÇO DO SITE -->
@@ -56,7 +96,10 @@
             <div class="titulo">
                 <div class="Azul">
                     <h1 class="tituloUm">Be a volunteer!</h1>
-                    <img src="img/maoVoluntario.png" alt="Mãos Unidas" class="MaosUm">
+
+                    <div class="box">
+                        <img src="img/maoVoluntario.png" alt="Mãos Unidas" class="MaosUm">
+                    </div>
                 </div>
                 <img src="img/FundoOnda.png" alt="Onda Azul" class="FundoOnda">
 
@@ -67,7 +110,7 @@
                     <div class="forms">
                         <form action="" class="formulario">
                             <div class="campo">
-                                <label for="Nome">Name:*</label>
+                                <label for="Nome">Name:</label>
                                 <input type="text" name="nome" id="nome" placeholder="Enter your name" required>
                             </div>
                             <div class="campo">
@@ -99,9 +142,13 @@
 
             <br><br>
             <h1 class="TituloDois" id="TituloVC">Support our projects</h1>
+            <div class="box">
+                <img src="img/MaoDoisVoluntario.png" alt="" class="MaosDois">
+            </div>
             <br><br><br>
             <p class="TextoUmA">Supporting a cultural project can be a strategic action within a planning </p>
-            <p class="TextoUmB">marketing that aims at the dissemination of its brand and the assimilation of its existence in the </p>
+            <p class="TextoUmB">marketing that aims at the dissemination of its brand and the assimilation of its
+                existence in the </p>
             <p class="TextoUmC"> consumer's mind.</p>
 
             <!-- ICONES -->
@@ -142,10 +189,12 @@
                     income tax due, as long as it does not exceed the permitted rate with the limit of 4% of the
                     Income Tax due by Legal Entities and 6% by Individuals.</p>
                 <br><br>
-                <p class="TextoDoisB">E.g.: If a company pays R$ 10 million in income tax to the government, it can allocate
+                <p class="TextoDoisB">E.g.: If a company pays R$ 10 million in income tax to the government, it can
+                    allocate
                     therefore, R$ 400 thousand to
                     and sponsor a cultural project, obtaining the exhibition counterparts of a normal sponsorship.
-                    normal sponsorship. This amount will come as a deduction or rebate in the following year's income tax.</p>
+                    normal sponsorship. This amount will come as a deduction or rebate in the following year's income
+                    tax.</p>
                 <div class="SetaTextoA">
                     <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
                             class="setaDoisA"></a>
@@ -181,8 +230,10 @@
                 <h2 class="tituloDoisCC"> CULTURE OF SÃO PAULO </h2>
                 <p class="textoQuatro">PROAC is a program established by the State Law of Incentive to Culture (Law
                     12.268/06). It allows the sponsor of projects approved by PROAC to have the right to
-                    of the value invested in the project, in ICMS, respecting a base of percentages that goes from 0.038 of the
-                    0.038 of the ICMS due (for companies that pay tax equal to or higher than R$ 4 billion) to 3% of the ICMS
+                    of the value invested in the project, in ICMS, respecting a base of percentages that goes from 0.038
+                    of the
+                    0.038 of the ICMS due (for companies that pay tax equal to or higher than R$ 4 billion) to 3% of the
+                    ICMS
                     (for companies that pay tax equal to or less than R$ 74,999,999.99).</p>
                 <div class="SetaTextoC">
                     <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
@@ -201,12 +252,14 @@
                 <h2 class="tituloDoisD">FUMCAD </h2>
 
                 <p class="TextoCinco">Based on the Municipal Fund for the Rights of Children and Adolescents
-                    8.069/90 and Municipal Law 11.247/92. The project has to be approved by the Municipal Council for the
+                    8.069/90 and Municipal Law 11.247/92. The project has to be approved by the Municipal Council for
+                    the
                     Rights of the Child and Adolescent of São Paulo.
                     Who can donate
                     Legal entity: can direct up to 1% of the amount of income tax calculated based on real profit to
                     to the FUMCAD and have this amount deducted in the payment of the tax.
-                    Individuals: the limit for the destination of the refund is up to 6% and is only possible for those who use
+                    Individuals: the limit for the destination of the refund is up to 6% and is only possible for those
+                    who use
                     the complete Annual Adjustment Declaration form.</p>
                 <div class="SetaTextoD">
                     <a href="#TituloVC"> <img src="img/SetaCimaVoluntario-removebg-preview.png" alt=""
@@ -228,8 +281,10 @@
                         <img src="img/menina.png" alt="">
                     </div>
                     <div class="rodapeTexto">
-                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops
-                            organization, which develops projects in the educational, cultural, environmental preservation, and
+                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that
+                            develops
+                            organization, which develops projects in the educational, cultural, environmental
+                            preservation, and
                             development of sustainable tourism.
                         </p>
                     </div>

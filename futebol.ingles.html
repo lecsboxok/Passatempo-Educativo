@@ -5,17 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soccer Science - Educational Hobbies</title>
+    <title>Soccer Science - Passatempo Educativo</title>
     <link rel="icon" href="img/logoIcon.png">
     <link rel="stylesheet" href="páginasProjetos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
 </head>
 
+
 <body>
+
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
-                        alt="Logo Passatempo educativo"></a>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="sobrenos.ingles.html">About Us</a>
@@ -24,12 +49,23 @@
                 <a class="cabecalho_nav_item" href="#contato">Contact</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste2">
+                    <ul class="principal2">
+                        <li class="li-p2">
+                            <a href="javascript://" class="a-teste2">
+                                <img src="img/inglesComSeta.png" alt="Brasil" width="45px" class="brasil">
+                            </a>
+                
+                            <ul class="ul-imagens2">
+                                <a href="futebol.html"><li><img src="img/Brasil.png" alt="Bandeira do brasil" class="img-teste2"></li></a>
+                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste2"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Donate Now</a>
+                <a class="cabecalho_nav_item_Doe" href="doeAgoraIngles.html">Donate Now</a>
             </div>
         </nav>
         <div class="cabecalho_sombra"></div>
@@ -77,18 +113,18 @@
         </section>
         <section id="outros">
             <div class="retanguloOutros">
-                <h1 class="titulo">Know other projects</h1>
+                <h1 class="titulo">Discover other projects</h1>
                 <img src="img/Coração.png" alt="Coração" class="coracao">
                 <div class="caixas1">
                     <a href="recreatur.ingles.html"><p class="textoCaixas">Recreatur</p></a>
-                    <a href="livro.ingles.html"><p class="textoCaixas" >Livro em ação</p></a>
-                    <a href="futebol.ingles.html"><p class="textoCaixas">Soccer Science</p></a>
+                    <a href="livro.ingles.html"><p class="textoCaixas" >Book in action</p></a>
+                    <a href="futebol.ingles.html"><p class="textoCaixas Pintado">Soccer Science</p></a>
                     <a href="cultura.ingles.html"><p class="textoCaixas">Accessible Culture</p></a>
                 </div>
                 <div class="caixas2">
                    <a href="jogoteca.ingles.html"><p class="textoCaixas">Jogoteca</p></a>
-                    <a href="ferias.ingles.html"><p class="textoCaixas Pintado">Vacation</p></a>
-                    <a href="origami.ingles.html"><p class="textoCaixas">Animals in origami</p></a>
+                    <a href="ferias.ingles.html"><p class="textoCaixas">Vacation</p></a>
+                    <a href="origami.ingles.html"><p class="textoCaixas">Origami Animals</p></a>
                    <a href="amigoleitorIngles.html"><p class="textoCaixas">Fellow Reader</p></a> 
                 </div>
                 <div class="caixas3">
@@ -120,15 +156,13 @@
             <div class="conteiner">
                 <div class="rodape-lado1">
                     <div class="logoRodape">
-                        <img src="img/logoPassatempo.png" alt="">
+                        <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
                     </div>
                     <div>
                         <img src="img/menina.png" alt="">
                     </div>
                     <div class="rodapeTexto">
-                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops
-                            organization, which develops projects in the educational, cultural, environmental preservation, and
-                            development of sustainable tourism.
+                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops organization, which develops projects in the educational, cultural, environmental preservation, and development of sustainable tourism.
                         </p>
                     </div>
                     <div class="redes">
@@ -190,7 +224,7 @@
                     </div>
                 </div>
                 <div class="direitos">
-                    <p class="autorais">There is no intention to violate the copyright of image use.</p>
+                    <p class="autorais">No intent to infringe on the copyright of image use.</p>
                     <p class="direito">Copyright © 2023 Educational hobby. All Rights Reserved.</p>
                 </div>
             </div>

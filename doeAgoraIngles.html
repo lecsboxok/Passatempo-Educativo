@@ -7,30 +7,65 @@
     <title>Donate Now - Passatempo Educativo</title>
     <link rel="stylesheet" href="doeAgora.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+ var botao = $('.a-teste');
+ var dropDown = $('.ul-imagens');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+$(document).ready(function() {
+ var botao = $('.a-teste2');
+ var dropDown = $('.ul-imagens2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+
+    </script>
 </head>
 <body>
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo">
+                <a href="index.ingles.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
             </div>
             <div class="cabecalho_nav_itens">
                 <a class="cabecalho_nav_item" href="sobrenos.ingles.html">About Us</a>
-                <a class="cabecalho_nav_item" href="projetos.ingles;html">Projects</a>
-                <a class="cabecalho_nav_item" href="voluntarioingles.html">Volunteers</a>
+                <a class="cabecalho_nav_item" href="projetos.ingles.html">Projects</a>
+                <a class="cabecalho_nav_item" href="voluntários.html">Volunteers</a>
                 <a class="cabecalho_nav_item" href="#contato">Contact</a>
             </div>
             <div class="idiomas">
-                <img src="img/Brasil.png" alt="Mudar o idioma para Português">
-                <img src="img/ingles.png" alt="Mudar o idioma para Inglês">
-                <img src="img/espanhol.png" alt="Mudar o idioma para Espanhol">
+                <nav class="teste2">
+                    <ul class="principal2">
+                        <li class="li-p2">
+                            <a href="javascript://" class="a-teste2">
+                                <img src="img/inglesComSeta.png" alt="Brasil" width="45px" class="Inglês">
+                            </a>
+                
+                            <ul class="ul-imagens2">
+                                <a href="doeAgora.html"><li><img src="img/Brasil.png" alt="Bandeira do Brasil" class="img-teste2"></li></a>
+                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste2"></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgoraIngles.html">Donate Now</a>
+                <a class="cabecalho_nav_item_Doe" href="doeAgoraIngles.html">Donate now</a>
             </div>
         </nav>
+        <div class="cabecalho_sombra"></div>
     </header>
-    <div class="cabecalho_sombra"></div>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -43,7 +78,7 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
 
-    <main>
+    <main class="main">
         <section id="formulario" class="imgFundo">
             <div>
                 <div class="conteiner">
@@ -109,13 +144,13 @@
             <div class="conteiner">
                 <div class="rodape-lado1">
                     <div class="logoRodape">
-                        <img src="img/logoPassatempo.png" alt="">
+                        <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
                     </div>
                     <div>
                         <img src="img/menina.png" alt="">
                     </div>
                     <div class="rodapeTexto">
-                        <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental e desenvolvimento do turismo sustentável.
+                        <p class="texto-rodape">Passatempo Educativo is a non-governmental, non-profit organization that develops organization, which develops projects in the educational, cultural, environmental preservation, and development of sustainable tourism.
                         </p>
                     </div>
                     <div class="redes">
@@ -163,10 +198,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="direitos">
-                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
-                </div>
+            </div>
+            <div class="direitos">
+                <p class="autorais">No intent to infringe on the copyright of image use.</p>
+                <p class="direito">Copyright © 2023 Educational hobby. All Rights Reserved.</p>
             </div>
         </section>
     </footer>

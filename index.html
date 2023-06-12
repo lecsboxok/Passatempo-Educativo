@@ -5,6 +5,9 @@
     <title>Passatempo Educativo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script src="script.js" defer></script>
+    <script src="zz.js" defer></script>
+    <script src="patro.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script>
@@ -52,7 +55,7 @@ $(document).ready(function() {
             
                             <ul class="ul-imagens">
                                 <a href="index.ingles.html"><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
-                                <a href=""><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
+                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
                             </ul>
                         </li>
                     </ul>
@@ -77,13 +80,36 @@ $(document).ready(function() {
       </script>
 
     <main class="conteudo">
-        <section class="conteudo_1">
-            <div class="fundo">
-                <div class="textoFrente">
-                    <h1 class="titulo">PASSATEMPO EDUCATIVO</h1>
-                    <h2></h2>
+        <section class="conatainerproje">
+            <div class="slidde-container active">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>Passatempo Educativo</h1>
+                        <h4 class="subPrincipal">23 anos de história</h4>
+                    </div>
                 </div>
             </div>
+    
+            <div class="slidde-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>Confira todas as nossas aventuras e memórias</h1>
+                        <a href="#" class="btnblog">Veja o nosso blog</a>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="slidde-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h1>FAÇA UMA DOAÇÃO<br>FAÇA O BEM!</h1>
+                        <a href="#" class="btndoe">DOE</a>
+                    </div>
+                </div>
+            </div>
+            <div id="prev" onclick="prev()"><img src="img/SetaEsquerda.png" alt=""></div>
+            <div id="next" onclick="next()"><img src="img/SetaDireita.png" alt=""></div>
         </section>
         <section id="frase" class="section">
             <div class="conteiner">
@@ -141,7 +167,7 @@ $(document).ready(function() {
                     </div>
                     <div class="linkDoe">
                         <div class="doeVer">
-                            <a href="" class="doe verdeFundo">Doe pelo Pix</a>
+                            <a href="doePix.html" class="doe verdeFundo">Doe pelo Pix</a>
                         </div>
                         <div class="doeVer">
                             <a href="" class="doe vermelhoFundo">Doe pelo PayPal</a>
@@ -255,6 +281,26 @@ $(document).ready(function() {
             <div>
                 <h2 class="sub">Patrocinadores e parceiros</h2>
             </div>
+            <div class="fundo">
+                <div class="slider-container" item-display-t="3" item-display-m="1">
+                    <div class="slider-width swiper-slide">
+                        <div class="item"><img src="img/patro01.png" alt=""></div>
+                        <div class="item"><img src="img/patro02.png" alt=""></div>
+                        <div class="item"><img src="img/patro03.png" alt=""></div>
+                        <div class="item"><img src="img/patro04.png" alt=""></div>
+                        <div class="item"><img src="img/patro05.png" alt=""></div>
+                        <div class="item"><img src="img/patro06.png" alt=""></div>
+                        <div class="item"><img src="img/patro07.png" alt=""></div>
+                        <div class="item"><img src="img/patro08.png" alt=""></div>
+                        <div class="item"><img src="img/patro09.png" alt=""></div>
+                        <div class="item"><img src="img/patro10.png" alt=""></div>
+                        <div class="item"><img src="img/patro11.png" alt=""></div>
+                        <div class="item"><img src="img/patro12.png" alt=""></div>
+                    </div>
+                    <div class="btnPrev" onclick="esquerda()"><img src="img/PatroSeta.svg" alt=""></div>
+                    <div class="btnNext" onclick="direita()"><img src="img/PatroSetaDireita.svg" alt=""></div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -304,7 +350,7 @@ $(document).ready(function() {
                             <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
                                 <img src="img/iconMaps.png" alt="" class="iconMaps">
                             </a>
-                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brazil</h4>
+                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
                         </div>
                         <div class="imgMaps">
                             <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr">
@@ -316,13 +362,12 @@ $(document).ready(function() {
                         </div>
                     </div>
                 </div>
-                <div class="direitos">
-                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
-                </div>
+            </div>
+            <div class="direitos">
+                <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
             </div>
         </section>
     </footer>
-    
 </body>
 </html>
