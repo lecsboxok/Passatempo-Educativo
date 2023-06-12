@@ -241,6 +241,41 @@ float:left;
 width:50%;
 }
 
+* {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        .geral {
+            margin-top: 50px;
+            width: 50px;
+            display: flex;
+        }
+        .geral:hover .cabecalho_nav_itens {
+            color: red;
+            display: flex;
+        }
+
+        .cabecalho_nav_itens {
+            display: none;
+            flex-direction: column;
+        }
+
+        a {
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', sans-serif;
+            font-size: 30px;
+            color: blueviolet;
+        }
+
+        a:hover {
+            color: red;
+            background-color: rgb(189, 190, 240);
+        }
+
     </style>
 
     <script>
@@ -337,6 +372,18 @@ $(document).ready(function() {
     </ul>
     </div>
     
+
+
+    <div class="geral">
+        <a href="#"><img src="img/menu.png" alt="" width="70px" height="30px"></a>
+        <div class="cabecalho_nav_itens">
+            <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
+            <a class="mobileCabecalho" href="projetos.html">Projetos</a>
+            <a class="mobileCabecalho" href="voluntários.html">Voluntários</a>
+            <a class="mobileCabecalho" href="#contato">Contato</a>
+        </div>
+    </div>
+
 
 </body>
 </html>
