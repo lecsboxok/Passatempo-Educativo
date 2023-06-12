@@ -884,7 +884,7 @@ html{
     #outros .Pintado{
         border-radius: 10px;
         background-color: #FFD233;
-        padding: 2px 13px;
+        padding: 2px 9px;
         font: 400 12px 'Nunito', sans-serif;
         line-height: 15px;
         margin: 0 20px;
@@ -1078,6 +1078,65 @@ html{
     font: 400 12px 'Nunito', sans-serif ;
     line-height: 20px;
 }
+
+/* MÚSICA CLÁSSICA */
+#introducao .texto2Musica{
+    width: 330px;
+    left: 32px;
+    top: 60px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoMusica{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    top: 150px;
+    height: 300px;
+}
+
+/* ECOBANDA */
+#introducao .texto2Ecobanda{
+    width: 330px;
+    left: 32px;
+    top: 65px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoEcobanda{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    top: 170px;
+}
+
+/* MELHOR IDADE */
+#introducao .texto2MelhorIdade{
+    width: 330px;
+    left: 32px;
+    top: 70px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoMelhor{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    top: 140px;
+}
+
+/* AVENTURA */
+#introducao .texto2Aventura{
+    width: 330px;
+    height: 105px;
+    left: 32px;
+    top: 50px;
+    line-height: 20px;
+}
+
 
 
 
