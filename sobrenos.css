@@ -508,3 +508,6 @@ ul li ul li{
     font: 300 20px 'Aleo-light', serif;
     margin-top: 10px;
 }
+ 
+
+@media screen and (max-width: 400px){}
