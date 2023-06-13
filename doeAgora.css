@@ -396,6 +396,10 @@ label {
     margin-top: 10px;
 }
 
+.geral{
+    display: none;
+}
+
 
 
 @media screen and (max-width: 400px) {
