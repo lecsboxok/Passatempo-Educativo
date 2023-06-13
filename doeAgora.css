@@ -170,8 +170,9 @@ ul li ul li{
 
 .imgFundo {
     background: url(img/kidsfelizes.jpg) no-repeat;
-    background-size: 100%;
-    height: 1055px;
+    background-size: cover;
+    width: 100%;
+    height: 140vh;
 }
 
 #titulo {
@@ -296,6 +297,7 @@ label {
     justify-content: center;
     text-align: center;
 }
+
 
 
 /* RODAPÉ */
@@ -489,10 +491,6 @@ label {
         width: 100%;
     }
 
-    .imgFundo {
-        height: 1055px;
-    }
-
     #titulo {
         font: 400 16px 'Nunito', sans-serif;
         text-align: center;
@@ -504,9 +502,9 @@ label {
     
     .corFundo {
         background-color: #FFF;
-        width: 300px;
+        width: 320px;
         height: 702px;
-        padding: 35px;
+        padding: 20px;
     }
     
     #formulario .fundo {
@@ -528,7 +526,6 @@ label {
     }
 
     .botao {
-
         padding: 0.2em 0.2em;
         width: 80px;
     }
@@ -571,7 +568,9 @@ label {
         font: 400 10px 'Nunito', sans-serif;
     }
 
-    
+    .fundo {
+        margin: 0;
+    }
 
     
 
@@ -580,8 +579,8 @@ label {
 
     /* RODAPÉ */
     #contato {
-        margin-top: 700px;
-        width: 400px;
+        width: 100%;
+        padding: 50px;
     }
     
     .logoRodape {
