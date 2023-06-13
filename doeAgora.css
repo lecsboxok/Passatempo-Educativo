@@ -395,3 +395,307 @@ label {
     font: 300 20px 'Aleo-light', serif;
     margin-top: 10px;
 }
+
+
+
+@media screen and (max-width: 400px) {
+
+
+    /* CABEÇALHO */
+
+    #cabecalho{
+        width: 100%;
+        position: fixed;
+    }
+
+    #cabecalho nav.cabecalho_nav{
+        width: 100%;
+    }
+
+    #cabecalho .cabecalho_sombra {
+        height: 16px;
+        background-color: #FFD233;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+
+    /* .libra{
+        display: none;
+    } */
+
+    .geral {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 50px;
+        display: flex;
+        left: 150px;
+    }
+
+    .geral:hover .cabecalho_nav_item {
+        color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+    .cabecalho_nav_item {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1000;
+        left: 270px;
+        top: 40px;
+    }
+
+    a {
+        text-align: center;
+        font-family: 'Aleo', sans-serif;
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        padding-top: 6px;
+    }
+
+    a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .cabecalho_nav_itens {
+        display: none;
+    }
+
+    #cabecalho .imagem{
+        left: 20px;
+    }
+
+    .cabecalho_Logo{
+        width: 120px;
+    }
+
+    .cabecalho_nav_item_Doe{
+        display: none;
+    }
+
+    .idiomas{
+        right: 40px;
+        top: 12px;
+    }
+
+    /* TÉRMINO DO CABEÇALHO */
+
+    .container{
+        width: 100%;
+    }
+
+    .imgFundo {
+        height: 1055px;
+    }
+
+    #titulo {
+        font: 400 16px 'Nunito', sans-serif;
+        text-align: center;
+    }
+    
+    #subtitulo {
+        font: 300 14px 'Nunito', sans-serif;
+    }
+    
+    .corFundo {
+        background-color: #FFF;
+        width: 300px;
+        height: 702px;
+        padding: 35px;
+    }
+    
+    #formulario .fundo {
+        background-color: rgba(232, 232, 232, 0.72);
+        width: 280px;
+        height: 538px;
+        margin-top: 20px;
+        padding: 25px;
+    }
+
+    .campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"] {
+        padding: 0.2em;
+        border: 1px solid rgba(0, 0, 0, 0.37);
+        width: 150px;
+    }
+    
+    ::placeholder{
+        font-size: 10px;
+    }
+
+    .botao {
+
+        padding: 0.2em 0.2em;
+        width: 80px;
+    }
+    
+    .botao1 {
+        padding: 0.2em 0.1em;
+        width: 100px;
+    }
+    
+    label {
+        font: 400 12px 'Nunito', sans-serif;
+        width: 120px;
+        margin-right: 20px;
+    }
+    
+    .formulario {
+        margin-top: 50px;
+    }
+    
+    .aviso {
+        font: 300 12px 'Nunito', sans-serif;
+        margin-bottom: 15px;
+    }
+    
+    .boxDoacao {
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .doacao {
+        font: 200 14px 'Nunito', sans-serif;
+    }
+    
+    .pagamento {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .textBotao {
+        font: 400 10px 'Nunito', sans-serif;
+    }
+
+    
+
+    
+
+    
+
+
+    /* RODAPÉ */
+    #contato {
+        margin-top: 700px;
+        width: 400px;
+    }
+    
+    .logoRodape {
+        margin-left: 90px;
+        width: 100px;
+    }
+    
+    .menina{
+        width: 120px;
+        left: 30px;
+    }
+    
+    .redes {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        right: 50px;
+    }
+    
+    .icone {
+        width: 40px;
+        padding: 9px;
+        padding-left: 3px;
+    }
+    
+    .icone:hover {
+        width: 45px;
+        transition: 0.5s;
+        filter: brightness(50%);
+    }
+    
+    
+    .texto-rodape {
+        font: 400 12px 'Nunito', sans-serif;
+        right: 25px;
+        width: 300px;
+    }
+    
+    .logotipoRodape {
+        width: 120px;
+    }
+    
+    .rodapeTexto{
+        width: 100%;
+    }
+    
+    .enderecoTexto {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        margin-right: 50px;
+        width: 100%;
+    }
+    
+    .endereco{
+        top: 30px;
+    }
+    
+    .iconMaps {
+        right: 25px;
+        width: 30px;
+    }
+    
+    .textoMaps {
+        font: 400 12px 'Nunito', sans-serif;
+        right: 30px;
+        width: 100%;
+    }
+    
+    .imgMaps{
+        right: 50px;
+    }
+    
+    .rodape-lado1{
+        width: 100%;
+    }
+    
+    .rodape-lado2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .maps{
+        border-radius: 10px;
+        width: 200px;
+        left: 130px;
+    }
+    
+    .a-maps{
+        right: 170px;
+    }
+    
+    .amigoSurdo{
+        width: 320px;
+        right: 30px;
+    }
+    
+    .direitos {
+        width: 100%;
+        margin-top: 90px;
+    }
+    
+    .autorais {
+        font: 400 10px 'Aleo-light', serif;
+        width: 290px;
+    }
+    
+    .direito {
+        font: 300 14px 'Aleo-light', serif;
+        margin-top: 15px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    
+    /* TERMINO DO RODAPÉ */
+
+}
