@@ -766,6 +766,8 @@ label {
     margin-top: 10px;
 }
 
+/* IMAGENS GIRANTES */
+
 .box:hover {
     animation-name: rotate;
     animation-duration: 3s;
