@@ -222,7 +222,7 @@ ul li ul li{
 }
 
 .conatainerproje .slidde-container:nth-child(1) .slide {
-    background: url(img/Principal1.png);
+    background: url(img/Principal1.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -230,7 +230,7 @@ ul li ul li{
 }
 
 .conatainerproje .slidde-container:nth-child(2) .slide {
-    background: url(img/Principal2.png);
+    background: url(img/Principal2.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -238,7 +238,7 @@ ul li ul li{
 }
 
 .conatainerproje .slidde-container:nth-child(3) .slide {
-    background: url(img/Principal3.png);
+    background: url(img/Principal3.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -613,48 +613,19 @@ ul li ul li{
     background: rgba(255, 33, 33, 0.46);
 }
 
-/* CARROSSEL */
-
-.slider-container {
-    position: relative;
-    height: 340px;
-    overflow: hidden;
-}
-
 .slider-width {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 20px;
-    top: 20px;
-    transition: 0.4s ease-in-out;
-    background: #FFF;
-}
-
-.item {
-    margin: 0 80px;
     text-align: center;
+}
+
+.patro {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.slider-container .btnPrev, 
-.slider-container .btnNext {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50);
-    text-align: center; 
-    cursor: pointer;
-}
-
-.slider-container .btnPrev {
-    left: 20px;
-}
-
-.slider-container .btnNext {
-    right: 20px;
+.patroTitulo {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 /* RODAPÉ */
