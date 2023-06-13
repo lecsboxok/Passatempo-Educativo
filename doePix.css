@@ -115,3 +115,119 @@ input, button {
     color: #000;
     padding: 8px 30px;
 }
+
+.div2 img{
+    width: 250px;
+    top: 400px;
+    position: absolute;
+    left: 980px;
+}
+
+#imagem{
+    list-style-type: none;
+}
+
+.botaoJava{
+    font-size: 1.2em;
+    background: #7ED738;
+    border: 0;
+    margin-bottom: 1em;
+    color: #000;
+    padding: 8px 30px;
+}
+
+.div1{
+    padding-left: 950px;
+    position: absolute;
+    top: 300px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    #titulo{
+        font-size: 24px;
+    }
+
+    .titulo img{
+        width: 30px;
+    }
+
+    .seta{
+        width: 40px;
+    }
+
+    #subtitulo{
+        font-size: 16px;
+    }
+
+    .div1{
+        width: 100%;
+        padding-left: 50px;
+        position: absolute;
+        top: 770px;
+    }
+
+    label{
+        font-size: 12px;
+        width: 80px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .campo input[type="text"] {
+        width: 200px;
+        left: 130px;
+        position: absolute;
+    }
+
+    .check {
+        position: relative;
+        left: 150px;
+        top: 4px;
+        column-gap: 10px;
+    }
+    
+    .textCheck {
+        font: 300 12px 'Nunito', sans-serif;
+        left: 20px;
+        top: 0;
+    }
+
+    .textInfo{
+        font-size: 12px;
+        margin-left: 0px;
+        width: 275px;
+    }
+
+    .Obotao {
+        font-size: 14px;
+        padding: 8px 15px;
+        left: 170px;
+        position: absolute;
+    }
+
+    .botaoJava{
+        font-size: 12px;
+        padding: 8px 15px;
+        left: 80px;
+        position: absolute;
+    }
+
+    .div2 img{
+        width: 130px;
+        height: 120px;
+        top: 850px;
+        position: absolute;
+        left: 140px;
+        bottom: 40px;
+    }
+
+    .formulario {
+        margin-left: 0;
+    }
+  
+
+
+}

@@ -704,6 +704,7 @@ html{
 
     #cabecalho{
         width: 100%;
+        position: fixed;
     }
 
     #cabecalho nav.cabecalho_nav{
@@ -717,16 +718,16 @@ html{
         width: 100%;
     }
 
-    .libra{
+    /* .libra{
         display: none;
-    }
+    } */
 
     .geral {
         margin-top: 30px;
         margin-bottom: 30px;
         width: 50px;
         display: flex;
-        left: 30px;
+        left: 150px;
     }
 
     .geral:hover .cabecalho_nav_item {
@@ -761,7 +762,7 @@ html{
     }
 
     #cabecalho .imagem{
-        right: 60px;
+        left: 20px;
     }
 
     .cabecalho_Logo{
@@ -773,7 +774,7 @@ html{
     }
 
     .idiomas{
-        right: 250px;
+        right: 40px;
         top: 12px;
     }
 
@@ -781,7 +782,6 @@ html{
 
     .imagemFundo{
         height: 100px;
-        width: 400px;
     }
 
     #comeco .circular{
@@ -819,7 +819,7 @@ html{
     }
     
     #comeco .titulo{
-        font: 800 20px 'Nunito', sans-serif;
+        font: 800 16px 'Nunito', sans-serif;
         text-align: center;
         margin-top: 0px;
         color: #000;
@@ -884,7 +884,7 @@ html{
     #outros .Pintado{
         border-radius: 10px;
         background-color: #FFD233;
-        padding: 2px 15px;
+        padding: 2px 9px;
         font: 400 12px 'Nunito', sans-serif;
         line-height: 15px;
         margin: 0 20px;
@@ -917,11 +917,13 @@ html{
         font: 800 20px 'Nunito', sans-serif;
         margin-top: 40px;
         left: 55px;
+        width: 200px;
     }
     
     #sugestao .obrigatorio{
         font: 400 12px 'Aleo', sans-serif;
         left: 53px;
+        width: 200px;
     }
     
     .nome{
@@ -977,6 +979,168 @@ html{
         top: 170px;
         left: 110px;
     }
+
+    #introducao .textoLivro{
+        width: 330px;
+        height: 105px;
+        left: 32px;
+        top: 80px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    #estrutura .saibaMais{
+        color: #4E94D3;
+        font: 400 12px 'Nunito', sans-serif ;
+        top: 90px;
+        left: 20px;
+    }
+
+    /* FUTEBOL*/
+
+#estrutura .figuraFutebol{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    top: 30px;
+}
+
+#estrutura .Futebol{
+    top: 120px;
+    height: 200px;
+    bottom: 80px;
+}
+
+#introducao .texto2Cultura{
+    width: 330px;
+    height: 105px;
+    left: 32px;
+    top: 70px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoCultura{
+    width: 330px;
+    left: 35px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    text-align: justify;
+    top: 120px;
+}
+
+/* JOGOTECA */
+#introducao .texto2Jogoteca{
+    width: 330px;
+    height: 105px;
+    left: 32px;
+    top: 50px;
+    line-height: 20px;
+}
+
+/* FERIAS */
+#introducao .texto2Ferias{
+    width: 330px;
+    left: 32px;
+    line-height: 20px;
+}
+#estrutura .estruturaTextoFerias{
+    width: 330px;
+    height: 350px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    text-align: justify;
+    top: 130px;
+}
+
+/* ORIGAMI */
+#estrutura .estruturaTextoOrigami{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    top: 160px;
+    bottom: 50px;
+}
+
+/* AMIGO LEITOR */
+#introducao .texto2Leitor{
+    width: 330px;
+    left: 32px;
+    top: 45px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoLeitor{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+}
+
+/* MÚSICA CLÁSSICA */
+#introducao .texto2Musica{
+    width: 330px;
+    left: 32px;
+    top: 60px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoMusica{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    top: 150px;
+    height: 300px;
+}
+
+/* ECOBANDA */
+#introducao .texto2Ecobanda{
+    width: 330px;
+    left: 32px;
+    top: 65px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoEcobanda{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    top: 170px;
+}
+
+/* MELHOR IDADE */
+#introducao .texto2MelhorIdade{
+    width: 330px;
+    left: 32px;
+    top: 70px;
+    line-height: 20px;
+}
+
+#estrutura .estruturaTextoMelhor{
+    width: 330px;
+    left: 32px;
+    font: 400 12px 'Nunito', sans-serif ;
+    line-height: 20px;
+    top: 140px;
+}
+
+/* AVENTURA */
+#introducao .texto2Aventura{
+    width: 330px;
+    height: 105px;
+    left: 32px;
+    top: 50px;
+    line-height: 20px;
+}
+
+
+
+
+
     
 
     /* RODAPÉ */
@@ -986,7 +1150,7 @@ html{
 }
 
 .logoRodape {
-    margin-left: 15px;
+    margin-left: 90px;
     width: 100px;
 }
 
@@ -1010,10 +1174,11 @@ html{
 }
 
 .icone:hover {
-    width: 60px;
+    width: 45px;
     transition: 0.5s;
     filter: brightness(50%);
 }
+
 
 .texto-rodape {
     font: 400 12px 'Nunito', sans-serif;
@@ -1053,6 +1218,10 @@ html{
     width: 100%;
 }
 
+.imgMaps{
+    right: 50px;
+}
+
 .rodape-lado1{
     width: 100%;
 }
@@ -1066,7 +1235,7 @@ html{
 .maps{
     border-radius: 10px;
     width: 200px;
-    /* right: 170px; */
+    left: 130px;
 }
 
 .a-maps{
