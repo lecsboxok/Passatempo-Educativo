@@ -663,6 +663,7 @@ ul li ul li{
 
     /* CABEÇALHO */
 
+
     #cabecalho{
         width: 100%;
         position: fixed;
@@ -740,6 +741,7 @@ ul li ul li{
     }
 
     /* TÉRMINO DO CABEÇALHO */
+
 
     #main{
         margin-bottom: 70px;
@@ -925,8 +927,6 @@ ul li ul li{
     .user{
         display: none;
     }
-
-
 
 
 
