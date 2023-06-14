@@ -599,7 +599,7 @@ ul li ul li{
     /* TÉRMINO DO CABEÇALHO */
     
     .mundo {
-        width: 115%;
+        width: 100%;
         height: 250px;
         left: 10px;
         padding-top: 50px;
@@ -639,7 +639,7 @@ ul li ul li{
         background-color: #D5FFC6;
         border-radius: 0px;
         height: 200px;
-        margin: 0 40px;
+        margin: 0 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
         width: 400px;
         z-index: 30;
@@ -837,18 +837,18 @@ ul li ul li{
     .retangulo3 {
         background: rgba(251, 38, 115, 0.29);
         padding: 30px 30px 30px 30px;
-        width: 597px;
+        width: 300px;
         height: 150px;
         border-radius: 10px 10px;
         margin: 55px 55px;
-        margin-top: 5px;
-        margin-left: 440px;
+        
     }
     
     .monitor {
         display: flex;
         justify-content: center;
-        font: 400 15px 'Nunito', sans-serif;
+        height: 450px;
+        font: 400 12px 'Nunito', sans-serif;
     
     }
 
