@@ -741,6 +741,195 @@ ul li ul li{
 
     /* TÉRMINO DO CABEÇALHO */
 
-    
+    .titulo{
+        font-size: 20px;
+    }
+
+    .textoComeco{
+        width: 100%;
+        margin-left: 0px;
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+        top: 20px;
+    }
+
+    .textoComeco2{
+        width: 100%;
+        margin-left: 210px;
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+        top: 30px;
+    }
+
+    .objetivos{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
+        height: 30px;
+        margin-left: 25px;
+        top: 40px;
+    }
+
+    .ondas{
+        background-repeat: no-repeat;
+        height: 40px;
+        top: 80px;
+    }
+
+    .retangulo{
+        top: 80px;
+    }
+
+    .certificadosTitulo{
+        font-size: 16px;
+        top: 0px;
+    }
+
+    .Certificados{
+        width: 128px;
+        height: 83px;
+        padding-bottom: 5px;
+    }
+
+    .divisao{
+        top: 40px;
+    }
+
+    .linha{
+        margin: 0;
+        margin-top: 80px;
+    }
+
+    .imagens{
+        width: 300px;
+        
+    }
+
+
+        /* RODAPÉ */
+#contato {
+    margin-top: 700px;
+    width: 400px;
+}
+
+.logoRodape {
+    margin-left: 90px;
+    width: 100px;
+}
+
+.menina{
+    width: 120px;
+    left: 30px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    right: 50px;
+}
+
+.icone {
+    width: 40px;
+    padding: 9px;
+    padding-left: 3px;
+}
+
+.icone:hover {
+    width: 45px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+
+.texto-rodape {
+    font: 400 12px 'Nunito', sans-serif;
+    right: 25px;
+    width: 300px;
+}
+
+.logotipoRodape {
+    width: 120px;
+}
+
+.rodapeTexto{
+    width: 100%;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.endereco{
+    top: 30px;
+}
+
+.iconMaps {
+    right: 25px;
+    width: 30px;
+}
+
+.textoMaps {
+    font: 400 12px 'Nunito', sans-serif;
+    right: 30px;
+    width: 100%;
+}
+
+.imgMaps{
+    right: 50px;
+}
+
+.rodape-lado1{
+    width: 100%;
+}
+
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.maps{
+    border-radius: 10px;
+    width: 200px;
+    left: 130px;
+}
+
+.a-maps{
+    right: 170px;
+}
+
+.amigoSurdo{
+    width: 320px;
+    right: 30px;
+}
+
+.direitos {
+    width: 100%;
+    margin-top: 90px;
+}
+
+.autorais {
+    font: 400 10px 'Aleo-light', serif;
+    width: 290px;
+}
+
+.direito {
+    font: 300 14px 'Aleo-light', serif;
+    margin-top: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* TERMINO DO RODAPÉ */
 
 }
