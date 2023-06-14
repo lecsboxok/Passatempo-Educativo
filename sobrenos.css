@@ -601,14 +601,14 @@ ul li ul li{
     .mundo {
         width: 130%;
         height: 250px;
-        left: 0px;
+        left: 1000px;
         padding-top: 50px;
     }
     
     .calendario {
     
         height: auto;
-        left: 1380px;
+        left: 470px;
         right: 0;
         top: 150px;
         bottom: 0;
@@ -619,7 +619,7 @@ ul li ul li{
     .qm {
         font: 700 30px 'Nunito', sans-serif;
         text-align: center;
-        margin-top: 100px;
+     
     }
     
     .tempo {
