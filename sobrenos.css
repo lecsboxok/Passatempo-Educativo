@@ -619,19 +619,18 @@ ul li ul li{
     
     .qm {
         width: 100%;
-        padding-left: 30px;
-        padding-right: 0px;
+        left: 30px;
         font-size: 16px;
-        font: 700 30px 'Nunito', sans-serif;
     
     }
     
     .tempo {
         width: 100%;
-        padding-left: -20px;
-        padding-right: 30px;
-        font-size: 13px;
-       
+        font-size: 12px;
+       margin: 0;
+       margin-top: 10px;
+       padding-left: 30px;
+       padding-right: 30px;
 
 }
     
