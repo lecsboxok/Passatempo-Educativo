@@ -610,7 +610,7 @@ ul li ul li{
         height: auto;
         left: 350px;
         right: 0;
-        size: 10px;
+        size: 0px;
         top: 130px;
         bottom: 0;
         position: absolute;
@@ -620,7 +620,7 @@ ul li ul li{
     .qm {
         font: 700 30px 'Nunito', sans-serif;
         align-items:center ;
-        right: 100px;i
+        right: 100px;
     }
     
     .tempo {
@@ -634,9 +634,9 @@ ul li ul li{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 30px 150px 0;
-        width: 250px;
-        left: 100px;
+        margin: 20px 150px 0;
+        
+      
         text-align: center;
 
     }
