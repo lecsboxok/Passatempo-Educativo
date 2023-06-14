@@ -435,6 +435,7 @@ label {
         width: 50px;
         display: flex;
         left: 150px;
+        position: relative;
     }
 
     .geral:hover .cabecalho_nav_item {
@@ -470,6 +471,7 @@ label {
 
     #cabecalho .imagem{
         left: 20px;
+        position: relative;
     }
 
     .cabecalho_Logo{
@@ -482,7 +484,8 @@ label {
 
     .idiomas{
         right: 40px;
-        top: 12px;
+        top: 5px;
+        position: relative;
     }
 
     /* TÉRMINO DO CABEÇALHO */
@@ -598,7 +601,8 @@ label {
         display: flex;
         align-items: center;
         height: 50px;
-        right: 50px;
+        right: 30px;
+        position: relative;
     }
     
     .icone {
@@ -653,7 +657,8 @@ label {
     }
     
     .imgMaps{
-        right: 50px;
+        right: 60px;
+        position: relative;
     }
     
     .rodape-lado1{

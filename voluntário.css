@@ -795,12 +795,12 @@ label {
 
     /* CABEÇALHO */
 
-    #cabecalho {
+    #cabecalho{
         width: 100%;
         position: fixed;
     }
 
-    #cabecalho nav.cabecalho_nav {
+    #cabecalho nav.cabecalho_nav{
         width: 100%;
     }
 
@@ -821,6 +821,7 @@ label {
         width: 50px;
         display: flex;
         left: 150px;
+        position: relative;
     }
 
     .geral:hover .cabecalho_nav_item {
@@ -854,21 +855,23 @@ label {
         display: none;
     }
 
-    #cabecalho .imagem {
+    #cabecalho .imagem{
         left: 20px;
+        position: relative;
     }
 
-    .cabecalho_Logo {
+    .cabecalho_Logo{
         width: 120px;
     }
 
-    .cabecalho_nav_item_Doe {
+    .cabecalho_nav_item_Doe{
         display: none;
     }
 
-    .idiomas {
+    .idiomas{
         right: 40px;
-        top: 12px;
+        top: 4px;
+        position: relative;
     }
 
     /* TÉRMINO DO CABEÇALHO */
@@ -878,13 +881,13 @@ label {
     }
 
     .tituloUm {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .rosa {
         width: 320px;
         margin-left: -50%;
-
+        height: 450px;
     }
 
 
@@ -907,8 +910,11 @@ label {
     .TextoUmC {
         font-size: 13px;
         align-items: center;
-
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
     }
+
 
     .setaUm {
         margin-top: 40px;
@@ -969,8 +975,8 @@ label {
     #Menino {
         height: 50px;
         width: 50px;
-
     }
+
 
 
     #ROUANET {
@@ -997,7 +1003,7 @@ label {
     .quadradoUm {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 903px;
+        height: 700px;
         margin-top: 150px;
         margin-left: 70px;
         width: 280px;
@@ -1008,10 +1014,10 @@ label {
 
     .TextoDoisA {
         margin-top: 40px;
-        font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
-        padding-left: 50px;
-        width: 206px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
         text-align: justify;
 
     }
@@ -1025,11 +1031,11 @@ label {
     }
 
     .TextoDoisB {
-        font: 400 20px 'Nunito', sans-serif;
         text-align: justify;
         font-size: 15px;
-        padding-left: 50px;
-        width: 206px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
         text-align: justify;
 
     }
@@ -1059,7 +1065,7 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -287%;
+        margin-top: -220%;
     }
 
     /* PARTE DE ESPORTE */
@@ -1067,8 +1073,8 @@ label {
     .quadroDois {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 583px;
-        margin-top: 150px;
+        height: 460px;
+        margin-top: 100px;
         margin-left: 70px;
         width: 280px;
         border: 3px dashed #000;
@@ -1079,16 +1085,15 @@ label {
     }
 
     .tituloDoisB {
-        margin-left: 36%;
+        margin-left: 27%;
         font: 400 20px 'Nunito', sans-serif;
         margin-top: -38%;
-        margin-left: 20%;
         font-size: 15px;
 
     }
 
     .tituloDoisBB {
-        margin-left: 28%;
+        margin-left: 33%;
         font: 400 20px 'Nunito', sans-serif;
         margin-top: 10px;
         font-size: 15px;
@@ -1098,7 +1103,7 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -162%;
+        margin-top: -130%;
     }
 
     .imagemB {
@@ -1107,7 +1112,7 @@ label {
     }
 
     .Bola {
-        margin-left: 50px;
+        margin-left: 60px;
         width: 70px;
         height: 70px;
         margin-top: -65px;
@@ -1117,8 +1122,9 @@ label {
         margin-top: 40px;
         font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
-        padding-left: 50px;
-        width: 206px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
         text-align: justify;
     }
 
@@ -1126,23 +1132,21 @@ label {
     .quadroTres {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 773px;
-        margin-top: 150px;
+        height: 600px;
+        margin-top: 100px;
         margin-left: 70px;
         width: 280px;
         border: 3px dashed #000;
     }
 
     .tituloDoisC {
-        margin-left: 20%;
-        font: 400 20px 'Nunito', sans-serif;
+        margin-left: 24%;
         margin-top: -0%;
         font-size: 15px;
     }
 
     .tituloDoisCC {
-        margin-left: 13%;
-        font: 400 20px 'Nunito', sans-serif;
+        margin-left: 17%;
         margin-top: 10px;
         font-size: 15px;
     }
@@ -1161,10 +1165,10 @@ label {
 
     .textoQuatro {
         margin-top: 40px;
-        font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
-        padding-left: 50px;
-        width: 206px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
         text-align: justify;
     }
 
@@ -1172,7 +1176,7 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -235%;
+        margin-top: -178%;
     }
 
     /* PARTE DO MENINO */
@@ -1180,22 +1184,21 @@ label {
     .quadroQuatro {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 985px;
-        margin-top: 150px;
+        height: 670px;
+        margin-top: 100px;
         margin-left: 70px;
         width: 280px;
         border: 3px dashed #000;
     }
 
     .tituloDoisD {
-        margin-left: 42%;
-        font: 400 20px 'Nunito', sans-serif;
+        margin-left: 38%;
         font-size: 15px;
     }
 
     .imagemD {
         display: flex;
-        margin-left: 120px;
+        margin-left: 110px;
         width: 120px;
         height: 120px;
         margin-top: -15%;
@@ -1203,10 +1206,10 @@ label {
 
     .TextoCinco {
         margin-top: 40px;
-        font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
-        padding-left: 55;
-        width: 206px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
         margin-top: 5%;
     }
 
@@ -1214,11 +1217,11 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -339%;
+        margin-top: -200%;
     }
 
     .MaosUm {
-        margin-left: 83%;
+        margin-left: 80%;
         width: 50px;
         height: 50px;
     }
@@ -1246,126 +1249,136 @@ label {
     }
 
 
-    /* RODAPÉ */
-    #contato {
-        margin-top: 700px;
-        width: 400px;
-    }
+ /* RODAPÉ */
+ /* RODAPÉ */
+ #contato {
+    margin-top: 0px;
+    width: 400px;
+}
 
-    .logoRodape {
-        margin-left: 90px;
-        width: 100px;
-    }
+.logoRodape {
+    margin-left: 90px;
+    width: 100px;
+}
 
-    .menina {
-        width: 120px;
-        left: 30px;
-    }
+.menina{
+    width: 120px;
+    left: 30px;
+}
 
-    .redes {
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        height: 50px;
-        right: 50px;
-    }
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    right: 50px;
+    position: relative;
+}
 
-    .icone {
-        width: 40px;
-        padding: 9px;
-        padding-left: 3px;
-    }
+.icone {
+    width: 40px;
+    padding: 9px;
+    padding-left: 3px;
+}
 
-    .icone:hover {
-        width: 45px;
-        transition: 0.5s;
-        filter: brightness(50%);
-    }
+.icone:hover {
+    width: 45px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
 
 
-    .texto-rodape {
-        font: 400 12px 'Nunito', sans-serif;
-        right: 25px;
-        width: 300px;
-    }
+.texto-rodape {
+    font: 400 12px 'Nunito', sans-serif;
+    right: 25px;
+    width: 300px;
+    position: relative;
+}
 
-    .logotipoRodape {
-        width: 120px;
-    }
+.logotipoRodape {
+    width: 120px;
+}
 
-    .rodapeTexto {
-        width: 100%;
-    }
+.rodapeTexto{
+    width: 100%;
+}
 
-    .enderecoTexto {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-bottom: 25px;
-        margin-right: 50px;
-        width: 100%;
-    }
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    width: 100%;
+}
 
-    .endereco {
-        top: 30px;
-    }
+.endereco{
+    top: 30px;
+}
 
-    .iconMaps {
-        right: 25px;
-        width: 30px;
-    }
+.iconMaps {
+    right: 25px;
+    width: 30px;
+    position: relative;
+}
 
-    .textoMaps {
-        font: 400 12px 'Nunito', sans-serif;
-        right: 30px;
-        width: 100%;
-    }
+.textoMaps {
+    font: 400 12px 'Nunito', sans-serif;
+    right: 30px;
+    width: 100%;
+    position: relative;
+}
 
-    .imgMaps {
-        right: 50px;
-    }
+.imgMaps{
+    right: 90px;
+    position: relative;
+}
 
-    .rodape-lado1 {
-        width: 100%;
-    }
+.rodape-lado1{
+    width: 100%;
+}
 
-    .rodape-lado2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .maps {
-        border-radius: 10px;
-        width: 200px;
-        left: 130px;
-    }
+.maps{
+    border-radius: 10px;
+    width: 200px;
+    left: 130px;
+}
 
-    .a-maps {
-        right: 170px;
-    }
+.a-maps{
+    right: 170px;
+}
 
-    .amigoSurdo {
-        width: 320px;
-        right: 30px;
-    }
+.amigoSurdo{
+    width: 320px;
+    right: 30px;
+    position: relative;
+}
 
-    .direitos {
-        width: 100%;
-        margin-top: 90px;
-    }
+.direitos {
+    width: 100%;
+    margin-top: 60px;
+}
 
-    .autorais {
-        font: 400 10px 'Aleo-light', serif;
-        width: 290px;
-    }
+.autorais {
+    font: 400 10px 'Aleo-light', serif;
+    width: 290px;
+}
 
-    .direito {
-        font: 300 14px 'Aleo-light', serif;
-        margin-top: 15px;
-        width: 300px;
-        text-align: center;
-    }
+.direito {
+    font: 300 14px 'Aleo-light', serif;
+    margin-top: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* TERMINO DO RODAPÉ */
 
     label {
         font-size: 12px;
@@ -1375,7 +1388,5 @@ label {
         font-size: 12px;
     }
 
-
-    /* TERMINO DO RODAPÉ */
 
 }
