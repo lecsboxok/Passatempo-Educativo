@@ -1146,6 +1146,9 @@ label {
         margin-top: 10px;
         font-size: 15px;
     }
+    .enabled{
+        width: -45px;
+    }
 
     .imagemC {
         /* padding-top: 40px; */
