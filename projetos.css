@@ -705,7 +705,7 @@ ul li ul li{
         top: 40px;
     }
 
-    a {
+    .mobileCabecalho {
         text-align: center;
         font-family: 'Aleo', sans-serif;
         font-size: 10px;
@@ -741,8 +741,13 @@ ul li ul li{
 
     /* TÉRMINO DO CABEÇALHO */
 
+    #main{
+        margin-bottom: 70px;
+    }
+
     .titulo{
         font-size: 20px;
+        padding-top: 130px;
     }
 
     .textoComeco{
@@ -807,10 +812,128 @@ ul li ul li{
         
     }
 
+    .divisaoImagens{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projetos .retanguloProjeto1{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 340px;
+        left: 105px;
+        
+    }
+
+    #projetos .retanguloProjeto2{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 548px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto3{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 750px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto4{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 340px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto5{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 550px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto6{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 755px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto7{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 338px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto8{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 545px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto9{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 750px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto10{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 340px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto11{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 548px;
+        left: 105px;
+    }
+
+    #projetos .retanguloProjeto12{
+        border-radius: 10px;
+        width: 190px;
+        height: 40px;
+        top: 750px;
+        left: 105px;
+    }
+
+
+    
+.tituloQuadrado{
+    font-size: 14px;
+    top: 10px;
+    
+}
+
+    .user{
+        display: none;
+    }
+
+
+
+
+
 
         /* RODAPÉ */
 #contato {
-    margin-top: 700px;
+    margin-top: 10px;
     width: 400px;
 }
 
@@ -928,6 +1051,9 @@ ul li ul li{
     width: 300px;
     text-align: center;
 }
+
+
+
 
 
 /* TERMINO DO RODAPÉ */
