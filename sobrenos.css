@@ -600,7 +600,11 @@ ul li ul li{
     
     .mundo {
         width: 100%;
+<<<<<<< HEAD
         height: 250px;
+=======
+        height: 220px;
+>>>>>>> b5b0473d3472f9ff409b8cb146d4d1dd42fdc4ec
         left: 10px;
         padding-top: 50px;
     }
@@ -642,6 +646,7 @@ ul li ul li{
 }
     
     .verde {
+<<<<<<< HEAD
     
         background-color: #D5FFC6;
         border-radius: 0px;
@@ -649,32 +654,37 @@ ul li ul li{
         margin: 0 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
         width: 400px;
+=======
+        height: 170px;
+        margin: 0;
+        width: 100%;
+>>>>>>> b5b0473d3472f9ff409b8cb146d4d1dd42fdc4ec
         z-index: 30;
+        margin-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .objetivos {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         text-align: center;
         margin-top: 40px;
         flex-wrap: nowrap;
         z-index: 99;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     
     .subtitulo {
-        width: 146px;
-
-        font: 700 20px 'Nunito', sans-serif;
+        width: 100%;
+        font-size: 14px;
+        padding-bottom: 10px;
     }
     
     .subtexto {
-        margin-top: 40px;
-        font: 400 20px 'Nunito', sans-serif;
-        font-size: 15px;
-        padding-left: 80px;
-        width: 206px;
-        text-align: justify;
-
+        font-size: 12px;
     }
     
     .retangulo {
