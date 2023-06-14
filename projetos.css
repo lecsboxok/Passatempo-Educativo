@@ -787,6 +787,7 @@ ul li ul li{
 
     .retangulo{
         top: 80px;
+        width: 100%;
     }
 
     .certificadosTitulo{
@@ -807,11 +808,16 @@ ul li ul li{
     .linha{
         margin: 0;
         margin-top: 80px;
+        width: 100%;
     }
 
     .imagens{
         width: 300px;
         
+    }
+
+    .teste{
+        width: 100%;
     }
 
     .divisaoImagens{
