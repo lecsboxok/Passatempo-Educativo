@@ -599,7 +599,7 @@ ul li ul li{
     /* TÉRMINO DO CABEÇALHO */
     
     .mundo {
-        width: 110%;
+        width: 115%;
         height: 250px;
         left: 10px;
         padding-top: 50px;
@@ -608,7 +608,7 @@ ul li ul li{
     .calendario {
     
         height: auto;
-        left: 350px;
+        left: 430px;
         right: 0;
         size: 0px;
         top: 130px;
@@ -618,162 +618,241 @@ ul li ul li{
     }
     
     .qm {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 0px;
+        font-size: 16px;
         font: 700 30px 'Nunito', sans-serif;
-        align-items:center ;
-        right: 100px;
+    
     }
     
     .tempo {
-    
-        font: 500 20px 'Nunito', sans-serif;
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 20px 150px 0;
-        
-      
-        text-align: center;
+        width: 100%;
+        padding-left: -20px;
+        padding-right: 30px;
+        font-size: 13px;
+       
 
-    }
+}
     
     .verde {
     
         background-color: #D5FFC6;
-        padding: 40px;
-        margin: 0 60px;
+        border-radius: 0px;
+        height: 400px;
+        margin: 0 40px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
         width: 400px;
-        z-index: 99;
+        z-index: 30;
     }
 
-    /* RODAPÉ */
-#contato {
-    margin-top: 700px;
-    width: 400px;
-}
+    .objetivos {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 40px;
+        flex-wrap: nowrap;
+        z-index: 99;
+    }
+    
+    .subtitulo {
+        width: 100px;
 
-.logoRodape {
-    margin-left: 90px;
-    width: 100px;
-}
+        font: 700 16px 'Nunito', sans-serif;
+    }
+    
+    .subtexto {
+        margin-top: 40px;
+        font: 400 20px 'Nunito', sans-serif;
+        font-size: 15px;
+        padding-left: 80px;
+        width: 206px;
+        text-align: justify;
 
-.menina{
-    width: 120px;
-    left: 30px;
-}
+    }
+    
+    .retangulo {
+    
+        background-color: #E7FFDF;
+        margin-top: -100px;
+        padding-left: 400px;
+        padding-top: 60px;
+        padding: 0 0 60px;
+    
+    }
+    
+    .historia {
+        font: 700 30px 'Nunito', sans-serif;
+        text-align: center;
+        margin: 100px 0;
+        align-items: center;
+    
+    
+    }
+    
+    .azul {
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .fase1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    
+    }
+    
+    .fase2 {
+        margin-bottom: 50px;
+    }
+    
+    .descricao {
+        width: 400px;
+        font: 400 20px 'Nunito', sans-serif;
+        text-align: center;
+        margin: 100px 0;
+        align-items: center;
+        text-align: justify;
+    
+    }
+    
+    .roda, .historia, .crianca, .idosos {
+        width: 400px;
+    }
+    
+    
+    .tres-pessoas, .elemento, .natal, .predios {
+        width: 150px;
+    }
+    
+    .tres-pessoas {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .circulo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .amarelo {
+        background-color: #FFD233;
+    }
+    
+    .azulfundo {
+        background-color: #29166F;
+    }
+    
+    .vermelho {
+        background-color: #D73838;
+    }
+    
+    .laranja {
+        background-color: #E05100;
+    }
+    
+    .elemento {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .natal {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .predios {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    
+    .conheca {
+    
+        font: 700 30px 'Nunito', sans-serif;
+        text-align: center;
+        margin: 80px 100px;
+    
+    }
+    
+    .nossa {
+        width: 400px;
+        height: auto;
+        left: 0px;
+        top: 104px;
+    
+    }
+    
+    .equipenossa {
+        text-align: center;
+    
+    }
+    
+    .feriado {
+        font: 10 15px 'Nunito', sans-serif;
+    }
+    
+    .retangulo2 {
+        background-color: #D6EBFF;
+        padding: 30px 30px 30px 30px;
+        width: 587px;
+        height: 95px;
+        border-radius: 10px 10px;
+        margin: 80px 75px;
+        margin-top: 100px;
+        margin-left: 480px;
+    }
+    
+    .profissionais {
+        text-align: center;
+        margin-top: -10px;
+        text-align: justify;
+        font: 400 15px 'Nunito', sans-serif;
+    }
+    
+    .gentes {
+        width: 400px;
+        margin: 60px 0px;
+    
+    }
+    
+    .colaboradores {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
 
-.redes {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    right: 50px;
-}
+    }
+    
+    .professores {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .retangulo3 {
+        background: rgba(251, 38, 115, 0.29);
+        padding: 30px 30px 30px 30px;
+        width: 597px;
+        height: 150px;
+        border-radius: 10px 10px;
+        margin: 55px 55px;
+        margin-top: 5px;
+        margin-left: 440px;
+    }
+    
+    .monitor {
+        display: flex;
+        justify-content: center;
+        font: 400 15px 'Nunito', sans-serif;
+    
+    }
 
-.icone {
-    width: 40px;
-    padding: 9px;
-    padding-left: 3px;
-}
-
-.icone:hover {
-    width: 45px;
-    transition: 0.5s;
-    filter: brightness(50%);
-}
-
-
-.texto-rodape {
-    font: 400 12px 'Nunito', sans-serif;
-    right: 25px;
-    width: 300px;
-}
-
-.logotipoRodape {
-    width: 120px;
-}
-
-.rodapeTexto{
-    width: 100%;
-}
-
-.enderecoTexto {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 25px;
-    margin-right: 50px;
-    width: 100%;
-}
-
-.endereco{
-    top: 30px;
-}
-
-.iconMaps {
-    right: 25px;
-    width: 30px;
-}
-
-.textoMaps {
-    font: 400 12px 'Nunito', sans-serif;
-    right: 30px;
-    width: 100%;
-}
-
-.imgMaps{
-    right: 50px;
-}
-
-.rodape-lado1{
-    width: 100%;
-}
-
-.rodape-lado2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.maps{
-    border-radius: 10px;
-    width: 200px;
-    left: 130px;
-}
-
-.a-maps{
-    right: 170px;
-}
-
-.amigoSurdo{
-    width: 320px;
-    right: 30px;
-}
-
-.direitos {
-    width: 100%;
-    margin-top: 90px;
-}
-
-.autorais {
-    font: 400 10px 'Aleo-light', serif;
-    width: 290px;
-}
-
-.direito {
-    font: 300 14px 'Aleo-light', serif;
-    margin-top: 15px;
-    width: 300px;
-    text-align: center;
-}
-
-
-/* TERMINO DO RODAPÉ */
-
+ 
 }
     
