@@ -639,7 +639,7 @@ ul li ul li{
     
         background-color: #D5FFC6;
         border-radius: 0px;
-        height: 400px;
+        height: 200px;
         margin: 0 40px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
         width: 400px;
@@ -656,9 +656,9 @@ ul li ul li{
     }
     
     .subtitulo {
-        width: 100px;
+        width: 146px;
 
-        font: 700 16px 'Nunito', sans-serif;
+        font: 700 20px 'Nunito', sans-serif;
     }
     
     .subtexto {
