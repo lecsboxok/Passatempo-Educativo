@@ -670,7 +670,7 @@ ul li ul li{
     .retangulo {
     
         background-color: #E7FFDF;
-        width: 410px;
+        width: 400px;
         margin-top: -100px;
         padding-left: 400px;
         padding-top: 60px;
@@ -706,7 +706,7 @@ ul li ul li{
     }
     
     .descricao {
-        width: 400px;
+        width: 300px;
         font: 400 12px 'Nunito', sans-serif;
         text-align: center;
         margin: 100px 0;
