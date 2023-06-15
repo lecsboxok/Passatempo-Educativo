@@ -455,6 +455,7 @@ ul li ul li{
 
 .video2 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -471,6 +472,7 @@ ul li ul li{
 
 .video3 {
     display: flex;
+    align-items: center;
 }
 
 .aviao:hover {
@@ -486,7 +488,13 @@ ul li ul li{
 
 .mundo {
     display: flex;
+    align-self: flex-end;
+    margin-left: 100px;
 } 
+
+.sol {
+    width: 128px;
+}
 
 
 .titulotube {
@@ -804,6 +812,25 @@ ul li ul li{
         font: 400 19px 'Aleo', serif;
         color: #FFF;
     }
+    /* PRINCIPAL */
+    .conatainerproje .slidde-container .slide .contentproje .btnblog {
+        margin-top: 10px;
+        display: inline-block;
+        background: #DA251C;
+        color: #FFF;
+        font: 400 14px 'Aleo', serif;
+        padding: 9px 20px;
+        border-radius: 20px;
+    }
+    
+    .conatainerproje .slidde-container .slide .contentproje .btndoe {
+        margin-top: 10px;
+        display: inline-block;
+        background: #DA251C;
+        color: #FFF;
+        font: 400 14px 'Aleo', serif;
+        padding: 9px 20px;
+    }
 
     /* FRASE */
     #frase {
@@ -929,13 +956,14 @@ ul li ul li{
     }
 
     iframe {
-        width: 360px;
-        height: 190px;
+        width: 300px;
+        height: 150px;
     }
 
     .video2 {
-
-        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     
     .video1 {
@@ -951,6 +979,10 @@ ul li ul li{
     }
 
     /* SAIBA MAIS */
+    #nossaHistoria {
+        padding: 50px 20px;
+    }
+
    .imgMais {
     width: 190px;
    }
@@ -961,6 +993,41 @@ ul li ul li{
 
     .textoSaiba {
         font: 400 12px 'Nunito', sans-serif;
+    }
+
+    .textoBotao {
+        font: 400 12px 'Nunito', sans-serif;
+    }
+    
+    .setaMais {
+        width: 9px;
+    }
+
+    .fundoVerde {
+        background-color: #48A400;
+        padding: 5px 18px;
+    }
+    
+    .fundoVermelho {
+        background-color: #A40000;
+        padding: 5px 18px;
+    }
+    
+    .fundoLaranja {
+        background-color: #E05100;
+        padding: 5px 18px;
+    }
+    
+    .fundoAzul {
+        background-color: #29166F;
+        padding: 5px 18px;
+    }
+
+    /* PATROCINADORES */
+    .conteudo_6 {
+        padding: 30px;
+        margin: 25px 0;
+        background: rgba(255, 33, 33, 0.46);
     }
     
 
