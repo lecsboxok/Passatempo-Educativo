@@ -262,6 +262,14 @@ ul li ul li{
 
 }
 
+.fase1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
 .fase2 {
     margin-bottom: 50px;
 }
