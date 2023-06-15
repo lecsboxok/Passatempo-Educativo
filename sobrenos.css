@@ -270,6 +270,14 @@ ul li ul li{
 
 }
 
+.fasee1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
 .fase2 {
     margin-bottom: 50px;
 }
@@ -709,6 +717,14 @@ ul li ul li{
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
+    
+    }
+
+    .fasee1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
     
     }
     
