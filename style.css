@@ -806,6 +806,7 @@ ul li ul li{
     .idiomas{
         right: 40px;
         top: 12px;
+        position: relative;
     }
 
     .conatainerproje .slidde-container .slide .contentproje h1 {
