@@ -339,28 +339,28 @@ ul li ul li {
 
 .setaUm {
     margin-top: 60px;
-    margin-left: 205px;
+    margin-left: 230px;
     width: 80px;
     height: 80px;
 }
 
 .setaDois {
     margin-top: 60px;
-    margin-left: 240px;
+    margin-left: 250px;
     width: 80px;
     height: 80px;
 }
 
 .setaTres {
     margin-top: 60px;
-    margin-left: 250px;
+    margin-left: 240px;
     width: 80px;
     height: 80px;
 }
 
 .setaQuatro {
     margin-top: 60px;
-    margin-left: 220px;
+    margin-left: 235px;
     width: 80px;
     height: 80px;
 }
@@ -428,8 +428,8 @@ ul li ul li {
 }
 
 .setaDoisA {
-    width: 80px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     margin-top: -70%;
 }
@@ -452,13 +452,13 @@ ul li ul li {
 }
 
 .tituloDoisBB {
-    margin-left: 38%;
+    margin-left: 40%;
     font: 400 20px 'Nunito', sans-serif;
 }
 
 .setaDoisB {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     margin-top: -53%;
 }
@@ -500,8 +500,6 @@ ul li ul li {
     font: 400 20px 'Nunito', sans-serif;
 }
 
-
-
 .imagemC {
     padding-top: 40px;
     display: flex;
@@ -520,8 +518,8 @@ ul li ul li {
 }
 
 .setaDoisC {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     margin-top: -56%;
 }
@@ -561,8 +559,8 @@ ul li ul li {
 }
 
 .setaDoisD {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     margin-top: -60%;
 }
@@ -1002,7 +1000,7 @@ label {
     .quadradoUm {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 903px;
+        height: 773px;
         margin-top: 150px;
         margin-left: 70px;
         width: 280px;
@@ -1018,6 +1016,9 @@ label {
         padding-left: 50px;
         width: 206px;
         text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
 
     }
 
@@ -1026,6 +1027,7 @@ label {
         font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
         margin-top: -35%;
+        
 
     }
 
@@ -1036,6 +1038,9 @@ label {
         padding-left: 50px;
         width: 206px;
         text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
 
     }
 
@@ -1064,7 +1069,7 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -287%;
+        margin-top: -227%;
     }
 
     /* PARTE DE ESPORTE */
@@ -1072,7 +1077,7 @@ label {
     .quadroDois {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 583px;
+        height: 463px;
         margin-top: 150px;
         margin-left: 70px;
         width: 280px;
@@ -1084,16 +1089,15 @@ label {
     }
 
     .tituloDoisB {
-        margin-left: 36%;
+       margin-left: 25%;
         font: 400 20px 'Nunito', sans-serif;
         margin-top: -38%;
-        margin-left: 20%;
         font-size: 15px;
 
     }
 
     .tituloDoisBB {
-        margin-left: 28%;
+        margin-left: 32%;
         font: 400 20px 'Nunito', sans-serif;
         margin-top: 10px;
         font-size: 15px;
@@ -1103,7 +1107,7 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -162%;
+        margin-top: -130%;
     }
 
     .imagemB {
@@ -1112,7 +1116,7 @@ label {
     }
 
     .Bola {
-        margin-left: 50px;
+        margin-left: 65px;
         width: 70px;
         height: 70px;
         margin-top: -65px;
@@ -1122,8 +1126,9 @@ label {
         margin-top: 40px;
         font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
-        padding-left: 50px;
-        width: 206px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
         text-align: justify;
     }
 
@@ -1131,7 +1136,7 @@ label {
     .quadroTres {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 773px;
+        height: 613px;
         margin-top: 150px;
         margin-left: 70px;
         width: 280px;
@@ -1139,14 +1144,14 @@ label {
     }
 
     .tituloDoisC {
-        margin-left: 20%;
+        margin-left: 23%;
         font: 400 20px 'Nunito', sans-serif;
         margin-top: -0%;
         font-size: 15px;
     }
 
     .tituloDoisCC {
-        margin-left: 13%;
+        margin-left: 15%;
         font: 400 20px 'Nunito', sans-serif;
         margin-top: 10px;
         font-size: 15px;
@@ -1168,13 +1173,16 @@ label {
         padding-left: 50px;
         width: 206px;
         text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
     }
 
     .setaDoisC {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -235%;
+        margin-top: -180%;
     }
 
     /* PARTE DO MENINO */
@@ -1182,7 +1190,7 @@ label {
     .quadroQuatro {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 985px;
+        height: 745px;
         margin-top: 150px;
         margin-left: 70px;
         width: 280px;
@@ -1190,33 +1198,36 @@ label {
     }
 
     .tituloDoisD {
-        margin-left: 42%;
+        margin-left: 38%;
         font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
     }
 
     .imagemD {
         display: flex;
-        margin-left: 120px;
+        margin-left: 115px;
         width: 120px;
         height: 120px;
         margin-top: -15%;
     }
 
     .TextoCinco {
-        margin-top: 40px;
+        margin-top: 10%;
         font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
         padding-left: 55;
         width: 206px;
-        margin-top: 5%;
+        
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
     }
 
     .setaDoisD {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -339%;
+        margin-top: -206%;
     }
 
     .MaosUm {
