@@ -503,7 +503,7 @@ label {
     .corFundo {
         background-color: #FFF;
         width: 320px;
-        height: 702px;
+        height: 650px;
         padding: 20px;
     }
     
@@ -581,6 +581,8 @@ label {
     #contato {
         width: 100%;
         padding: 50px;
+        position: relative;
+        padding-bottom: 10px;
     }
     
     .logoRodape {
@@ -684,6 +686,7 @@ label {
     .direitos {
         width: 100%;
         margin-top: 90px;
+        position: relative;
     }
     
     .autorais {

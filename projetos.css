@@ -705,7 +705,7 @@ ul li ul li{
         top: 40px;
     }
 
-    .mobileCabecalho {
+    a {
         text-align: center;
         font-family: 'Aleo', sans-serif;
         font-size: 10px;
@@ -742,188 +742,313 @@ ul li ul li{
     /* TÉRMINO DO CABEÇALHO */
 
     #main{
-        margin-bottom: 70px;
+        margin: 0;
+        margin-bottom: 80px;
     }
-
+    
     .titulo{
         font-size: 20px;
-        padding-top: 130px;
+        padding-top: 150px;
     }
-
+    
     .textoComeco{
-        width: 100%;
-        margin-left: 0px;
         font-size: 12px;
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
         padding-left: 30px;
         padding-right: 30px;
-        top: 20px;
-    }
-
-    .textoComeco2{
-        width: 100%;
-        margin-left: 210px;
-        font-size: 12px;
-        padding-left: 30px;
-        padding-right: 30px;
-        top: 30px;
-    }
-
-    .objetivos{
-        width: 100%;
-        padding-left: 80px;
-        padding-right: 80px;
-        height: 30px;
-        margin-left: 25px;
         top: 40px;
     }
-
+    
+    .textoComeco2{
+        font-size: 12px;
+        width: 100%;
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        left: 0;
+        top: 60px;
+    }
+    
+    .objetivos{
+        width: 205px;
+        height: 28px;
+        left: 100px;
+        top: 60px;
+    }
+    
     .ondas{
+        top: 90px;
         background-repeat: no-repeat;
-        height: 40px;
-        top: 80px;
     }
-
+    
     .retangulo{
-        top: 80px;
+        top: 58px;
+        height: 380px;
+        width: 100%;
     }
-
+    
     .certificadosTitulo{
         font-size: 16px;
         top: 0px;
     }
-
-    .Certificados{
-        width: 128px;
-        height: 83px;
-        padding-bottom: 5px;
-    }
-
+    
     .divisao{
         top: 40px;
     }
-
+    
+    .Certificados{
+        padding: 0 10px;
+        width: 105px;
+        height: 80px;
+    }
+    
     .linha{
-        margin: 0;
-        margin-top: 80px;
+        margin: 58px 0;
     }
 
-    .imagens{
-        width: 300px;
-        
+    .teste{
+        width: 100%;
     }
-
-    .divisaoImagens{
+    
+    #projetos .imagens{
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        width: 200px;
+    }
+    
+    
+    #projetos .divisaoImagens{
         display: flex;
         flex-direction: column;
-    }
-
-    #projetos .retanguloProjeto1{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 340px;
-        left: 105px;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
         
     }
-
-    #projetos .retanguloProjeto2{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 548px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto3{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 750px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto4{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 340px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto5{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 550px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto6{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 755px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto7{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 338px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto8{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 545px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto9{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 750px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto10{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 340px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto11{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 548px;
-        left: 105px;
-    }
-
-    #projetos .retanguloProjeto12{
-        border-radius: 10px;
-        width: 190px;
-        height: 40px;
-        top: 750px;
-        left: 105px;
-    }
-
-
     
-.tituloQuadrado{
-    font-size: 14px;
-    top: 10px;
-    
-}
-
-    .user{
+    .imagens1{
+        position: absolute;
+        left: 0;
         display: none;
+        z-index: 99;
+        top: 0px;
+    }
+    
+    .imagens2{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens3{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens4, .imagens5{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens6{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens7{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens8{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens9{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens10{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens11{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    .imagens12{
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    
+    
+    .quadros:hover .imagens1{
+        display: none;
+    }
+    
+    .quadros:hover .imagens2{
+        display: none;
+    }
+    
+    .quadros:hover .imagens3{
+        display: none;
+    }
+    
+    .quadros:hover .imagens4{
+        display: none;
+    }
+    
+    .quadros:hover .imagens5{
+        display: none;
+    }
+    
+    .quadros:hover .imagens6{
+        display: none;
+    }
+    
+    .quadros:hover .imagens7{
+        display: none;
+    }
+    
+    .quadros:hover .imagens8{
+        display: none;
+    }
+    
+    .quadros:hover .imagens9{
+        display: none;
+    }
+    
+    .quadros:hover .imagens10{
+        display: none;
+    }
+    
+    .quadros:hover .imagens11{
+        display: none;
+    }
+    
+    .quadros:hover .imagens12{
+        display: none;
+    }
+    
+    .user{
+        padding: 0;
+        display: none;
+    }
+    
+    #projetos .retanguloProjeto1{
+        width: 150px;
+        height: 30px;
+        top: 265px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto2{
+        width: 150px;
+        height: 30px;
+        top: 450px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto3{
+        width: 150px;
+        height: 30px;
+        top: 638px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto4{
+        width: 160px;
+        height: 30px;
+        top: 265px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto5{
+        width: 150px;
+        height: 30px;
+        top: 450px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto6{
+        width: 150px;
+        height: 30px;
+        top: 637px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto7{
+        width: 170px;
+        height: 30px;
+        top: 263px;
+        left: 115px;
+    }
+    
+    #projetos .retanguloProjeto8{
+        width: 150px;
+        height: 30px;
+        top: 450px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto9{
+        width: 150px;
+        height: 30px;
+        top: 638px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto10{
+        width: 150px;
+        height: 30px;
+        top: 265px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto11{
+        width: 150px;
+        height: 30px;
+        top: 450px;
+        left: 125px;
+    }
+    
+    #projetos .retanguloProjeto12{
+        width: 180px;
+        height: 30px;
+        top: 637px;
+        left: 110px;
+    }
+    
+    .tituloQuadrado{
+        font-size: 14px;
+        top: 5px;
     }
 
 
