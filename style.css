@@ -33,7 +33,7 @@ html {
 #cabecalho {
     width: 100%;
     position: fixed;
-    z-index: 2000;
+    z-index: 11;
     background-color: #FFF;
 }
 
@@ -43,7 +43,7 @@ html {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.cabecalho_nav {
+.cabecalho_nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -53,7 +53,7 @@ html {
     margin-left: 100px;
 }
 
-.cabecalho_nav_item {
+.cabecalho_nav_item{
     margin: 20px;
     background: #FFD233;
     font: 400 17px 'Aleo', serif;
@@ -62,7 +62,7 @@ html {
     color: #000;
 }
 
-.cabecalho_nav_item_Doe {
+.cabecalho_nav_item_Doe{
     background-color: #FB2673;
     font: 400 17px 'Aleo', serif;
     border-bottom: 10px;
@@ -75,11 +75,11 @@ html {
 }
 
 /* IDIOMAS */
-ul {
+ul{
     list-style: none;
 }
 
-.a-teste {
+.a-teste{
     text-decoration: none;
     color: #fff;
     display: block;
@@ -87,32 +87,32 @@ ul {
 
 }
 
-.a-teste:hover {
+.a-teste:hover{
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste {
+.img-teste{
     display: block;
     padding: 0 20px;
 }
 
-.principal {
+.principal{
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p {
+.li-p{
     line-height: 50px;
     float: left;
 }
 
-ul li ul li {
+ul li ul li{
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens {
+.ul-imagens{
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -121,43 +121,43 @@ ul li ul li {
 
 /* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
 
-ul {
+ul{
     list-style: none;
 }
 
-.a-teste2 {
+.a-teste2{
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 0 20px;
 }
 
-.a-teste2:hover {
+.a-teste2:hover{
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste2 {
+.img-teste2{
     display: block;
     padding: 0 20px;
 }
 
-.principal2 {
+.principal2{
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p2 {
+.li-p2{
     line-height: 50px;
     float: left;
 }
 
-ul li ul li {
+ul li ul li{
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens2 {
+.ul-imagens2{
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -618,11 +618,6 @@ ul li ul li {
     text-align: center;
 }
 
-.patro {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .patroTitulo {
     text-align: center;
@@ -728,6 +723,91 @@ ul li ul li {
 }
 
 @media screen and (max-width: 400px) {
+    
+
+    /* CABEÇALHO */
+
+    #cabecalho{
+        width: 100%;
+        position: fixed;
+    }
+
+    #cabecalho nav.cabecalho_nav{
+        width: 100%;
+    }
+
+    #cabecalho .cabecalho_sombra {
+        height: 16px;
+        background-color: #FFD233;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+
+    /* .libra{
+        display: none;
+    } */
+
+    .geral {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 50px;
+        display: flex;
+        left: 150px;
+    }
+
+    .geral:hover .cabecalho_nav_item {
+        color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+    .cabecalho_nav_item {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1000;
+        left: 270px;
+        top: 40px;
+    }
+
+    a {
+        text-align: center;
+        font-family: 'Aleo', sans-serif;
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        padding-top: 6px;
+    }
+
+    a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .cabecalho_nav_itens {
+        display: none;
+    }
+
+    #cabecalho .imagem{
+        left: 20px;
+    }
+
+    .cabecalho_Logo{
+        width: 120px;
+    }
+
+    .cabecalho_nav_item_Doe{
+        display: none;
+    }
+
+    .idiomas{
+        right: 40px;
+        top: 12px;
+    }
+
+    .conatainerproje .slidde-container .slide .contentproje h1 {
+        font: 400 19px 'Aleo', serif;
+        color: #FFF;
+    }
+    
 
     /* RODAPÉ */
 
