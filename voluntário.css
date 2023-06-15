@@ -801,10 +801,7 @@ label {
 
 /* IMAGENS GIRANTES */
 
-.box:hover {
-    animation-name: rotate;
-    animation-duration: 3s;
-}
+
 
 @keyframes rotate {
     0% {
