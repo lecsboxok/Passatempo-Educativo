@@ -626,16 +626,14 @@ a:hover {
         height: 220px;
         left: -10px;
         right: 100px;
-
         padding-top: 50px;
     }
     
     .calendario {
-    
+        width: 50px;
         height: auto;
         left: 300px;
         right: 0;
-        size: -20px;
         top: 130px;
         bottom: 0;
         position: absolute;
@@ -696,11 +694,11 @@ a:hover {
     
         background-color: #E7FFDF;
         width: 400px;
-        height: 3200px;
+        height: auto;
         margin-top: -100px;
         padding-left: 400px;
-        padding-top: 60px;
-        padding: 0 0 60px;
+        padding: 90px 0 60px;
+        
     
     }
     
@@ -734,7 +732,12 @@ a:hover {
         flex-direction: column-reverse;
     
     }
-    
+    .fase1fase2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
     .fase2 {
         margin-bottom: 50px;
     }
@@ -750,9 +753,13 @@ a:hover {
     }
     
     .roda, .historia, .crianca, .idosos {
-        width: 250px;
+        width: 280px;
     }
-    
+    .roda, .crianca, .idosos, .historia, .descricao {
+margin: 40px 0;
+
+    }
+
     
     .tres-pessoas, .elemento, .natal, .predios {
         width: 130px;
@@ -764,8 +771,8 @@ a:hover {
     }
     
     .circulo {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -875,6 +882,7 @@ a:hover {
         height: 180px;
         border-radius: 10px 10px;
         margin: 55px 55px;
+      
         
     }
     
@@ -1009,7 +1017,7 @@ a:hover {
 
 
 /* TERMINO DO RODAPÉ */
-
+/* TERMINO MOBILE */
 }
 
     
