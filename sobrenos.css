@@ -380,7 +380,7 @@ ul li ul li{
     border-radius: 10px 10px;
     margin: 80px 75px;
     margin-top: 100px;
-    margin-left: 480px;
+    margin-left: 540px;
 }
 
 .profissionais {
@@ -417,7 +417,7 @@ ul li ul li{
     border-radius: 10px 10px;
     margin: 55px 55px;
     margin-top: 5px;
-    margin-left: 440px;
+    margin-left: 530px;
 }
 
 .monitor {
@@ -630,14 +630,7 @@ a:hover {
     }
     
     .calendario {
-        width: 50px;
-        height: auto;
-        left: 300px;
-        right: 0;
-        top: 130px;
-        bottom: 0;
-        position: absolute;
-        z-index: 4;
+        display: none;
     }
     
     .qm {
@@ -895,9 +888,10 @@ margin: 40px 0;
     }
 
  /* RODAPÉ */
-#contato {
-    margin-top: 700px;
+ #contato {
+    margin-top: 100px;
     width: 400px;
+
 }
 
 .logoRodape {
@@ -916,6 +910,7 @@ margin: 40px 0;
     align-items: center;
     height: 50px;
     right: 50px;
+    position: relative;
 }
 
 .icone {
@@ -935,6 +930,7 @@ margin: 40px 0;
     font: 400 12px 'Nunito', sans-serif;
     right: 25px;
     width: 300px;
+    position: relative;
 }
 
 .logotipoRodape {
@@ -952,25 +948,32 @@ margin: 40px 0;
     margin-bottom: 25px;
     margin-right: 50px;
     width: 100%;
+    position: relative;
+
 }
 
 .endereco{
     top: 30px;
+
 }
 
 .iconMaps {
     right: 25px;
     width: 30px;
+    position: relative;
 }
 
 .textoMaps {
     font: 400 12px 'Nunito', sans-serif;
     right: 30px;
     width: 100%;
+    position: relative;
 }
 
 .imgMaps{
-    right: 50px;
+    right: 90px;
+    position: relative;
+
 }
 
 .rodape-lado1{
@@ -996,6 +999,7 @@ margin: 40px 0;
 .amigoSurdo{
     width: 320px;
     right: 30px;
+    position: relative;
 }
 
 .direitos {
@@ -1014,6 +1018,15 @@ margin: 40px 0;
     width: 300px;
     text-align: center;
 }
+
+    label {
+        font-size: 12px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
 
 
 /* TERMINO DO RODAPÉ */
