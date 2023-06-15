@@ -433,8 +433,9 @@ ul li ul li {
     display: flex;
     margin-top: -70%;
 }
+
 /* INGLES */
-.SetaTextoAIn{
+.SetaTextoAIn {
     width: 60px;
     height: 60px;
     display: flex;
@@ -470,8 +471,9 @@ ul li ul li {
     display: flex;
     margin-top: -49%;
 }
+
 /* INGLES */
-.SetaTextoBIn{
+.SetaTextoBIn {
     width: 60px;
     height: 60px;
     display: flex;
@@ -540,13 +542,15 @@ ul li ul li {
     display: flex;
     margin-top: -60%;
 }
+
 /* INGLES */
-.SetaTextoCIn{
+.SetaTextoCIn {
     width: 60px;
     height: 60px;
     display: flex;
     margin-top: -52%;
 }
+
 /* PARTE DO MENINO */
 
 .quadroQuatro {
@@ -578,7 +582,7 @@ ul li ul li {
     margin-top: 7%;
     padding-left: 80px;
     width: 716px;
-   
+
 }
 
 .setaDoisD {
@@ -587,8 +591,9 @@ ul li ul li {
     display: flex;
     margin-top: -62%;
 }
+
 /* INGLES */
-.SetaTextoDIn{
+.SetaTextoDIn {
     width: 60px;
     height: 60px;
     display: flex;
@@ -796,10 +801,7 @@ label {
 
 /* IMAGENS GIRANTES */
 
-.box:hover {
-    animation-name: rotate;
-    animation-duration: 3s;
-}
+
 
 @keyframes rotate {
     0% {
@@ -850,7 +852,7 @@ label {
         display: flex;
         left: 150px;
         position: relative;
-    
+
     }
 
     .geral:hover .cabecalho_nav_item {
@@ -942,7 +944,7 @@ label {
         align-items: center;
         padding-left: 20px;
         padding-right: 20px;
-        
+
 
     }
 
@@ -1094,16 +1096,17 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -225%;
+        margin-top: -616px;
     }
-/* INGLES */
-.SetaTextoAIn{
-    width: 34px;
-    height: 34px;
-    display: flex;
-    margin-top: -193%;
 
-}
+    /* INGLES */
+    .SetaTextoAIn {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        margin-top: 10px;
+
+    }
 
 
 
@@ -1119,12 +1122,12 @@ label {
         border: 3px dashed #000;
     }
 
-    .Formulario{
+    .Formulario {
         font-size: 17px;
     }
 
     .tituloDoisB {
-       margin-left: 25%;
+        margin-left: 25%;
         font: 400 20px 'Nunito', sans-serif;
         margin-top: -38%;
         font-size: 15px;
@@ -1142,19 +1145,25 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -145%;
+        margin-top: 0;
     }
-/* INGLES */
-.SetaTextoBIn{
-    width: 94px;
-    height: 34px;
-    display: flex;
-    margin-top: -110%;
 
-}
+    .SetaTextoB {
+        margin-top: -350px;
+    }
+
+    /* INGLES */
+    .SetaTextoBIn {
+        width: 94px;
+        height: 34px;
+        display: flex;
+        margin-top: -333px;
+
+    }
+
     .imagemB {
-      margin-left: 40px;
-      width: 10px;
+        margin-left: 40px;
+        width: 10px;
     }
 
     .Bola {
@@ -1207,6 +1216,7 @@ label {
         height: 120px;
         margin-top: -12%;
     }
+    
 
     .textoQuatro {
         margin-top: 40px;
@@ -1223,15 +1233,19 @@ label {
     .setaDoisC {
         width: 34px;
         height: 34px;
-        display: flex;
+
         margin-top: -180%;
     }
+    .SetaTextoC{
+        margin-top: -178px;
+    }
+
     /* INGLES */
-    .SetaTextoCIn{
+    .SetaTextoCIn {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -178%;   
+        margin-top: -410px;
     }
 
     /* PARTE DO MENINO */
@@ -1247,22 +1261,26 @@ label {
     }
 
     .tituloDoisD {
-        margin-left: 38%;
+        margin-left: 36%;
         font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
     }
-    /* INGLES */
-.SetaTextoDIn{
-    width: 34px;
-    height: 34px;
-    display: flex;
-    margin-top: -175%;
+    .SetaTextoD{
+        margin-top: -175px;
+    }
 
-}
+    /* INGLES */
+    .SetaTextoDIn {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        margin-top: -475px;
+
+    }
 
     .imagemD {
         display: flex;
-        margin-left: 115px;
+        margin-left: 95px;
         width: 120px;
         height: 120px;
         margin-top: -15%;
@@ -1274,7 +1292,7 @@ label {
         font-size: 15px;
         padding-left: 55;
         width: 206px;
-        
+
         padding-left: 30px;
         padding-right: 30px;
         width: 100%;
@@ -1286,6 +1304,10 @@ label {
         display: flex;
         margin-top: -206%;
     }
+
+
+    /* ______________________________________________ */
+
 
     .MaosUm {
         margin-left: 83%;
@@ -1316,137 +1338,137 @@ label {
     }
 
 
- /* RODAPÉ */
- #contato {
-    margin-top: 100px;
-    width: 400px;
+    /* RODAPÉ */
+    #contato {
+        margin-top: 100px;
+        width: 400px;
 
-}
+    }
 
-.logoRodape {
-    margin-left: 90px;
-    width: 100px;
-}
+    .logoRodape {
+        margin-left: 90px;
+        width: 100px;
+    }
 
-.menina{
-    width: 120px;
-    left: 30px;
-}
+    .menina {
+        width: 120px;
+        left: 30px;
+    }
 
-.redes {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    right: 50px;
-    position: relative;
-}
+    .redes {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        right: 50px;
+        position: relative;
+    }
 
-.icone {
-    width: 40px;
-    padding: 9px;
-    padding-left: 3px;
-}
+    .icone {
+        width: 40px;
+        padding: 9px;
+        padding-left: 3px;
+    }
 
-.icone:hover {
-    width: 45px;
-    transition: 0.5s;
-    filter: brightness(50%);
-}
+    .icone:hover {
+        width: 45px;
+        transition: 0.5s;
+        filter: brightness(50%);
+    }
 
 
-.texto-rodape {
-    font: 400 12px 'Nunito', sans-serif;
-    right: 25px;
-    width: 300px;
-    position: relative;
-}
+    .texto-rodape {
+        font: 400 12px 'Nunito', sans-serif;
+        right: 25px;
+        width: 300px;
+        position: relative;
+    }
 
-.logotipoRodape {
-    width: 120px;
-}
+    .logotipoRodape {
+        width: 120px;
+    }
 
-.rodapeTexto{
-    width: 100%;
-}
+    .rodapeTexto {
+        width: 100%;
+    }
 
-.enderecoTexto {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 25px;
-    margin-right: 50px;
-    width: 100%;
-    position: relative;
+    .enderecoTexto {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        margin-right: 50px;
+        width: 100%;
+        position: relative;
 
-}
+    }
 
-.endereco{
-    top: 30px;
+    .endereco {
+        top: 30px;
 
-}
+    }
 
-.iconMaps {
-    right: 25px;
-    width: 30px;
-    position: relative;
-}
+    .iconMaps {
+        right: 25px;
+        width: 30px;
+        position: relative;
+    }
 
-.textoMaps {
-    font: 400 12px 'Nunito', sans-serif;
-    right: 30px;
-    width: 100%;
-    position: relative;
-}
+    .textoMaps {
+        font: 400 12px 'Nunito', sans-serif;
+        right: 30px;
+        width: 100%;
+        position: relative;
+    }
 
-.imgMaps{
-    right: 90px;
-    position: relative;
+    .imgMaps {
+        right: 90px;
+        position: relative;
 
-}
+    }
 
-.rodape-lado1{
-    width: 100%;
-}
+    .rodape-lado1 {
+        width: 100%;
+    }
 
-.rodape-lado2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    .rodape-lado2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.maps{
-    border-radius: 10px;
-    width: 200px;
-    left: 130px;
-}
+    .maps {
+        border-radius: 10px;
+        width: 200px;
+        left: 130px;
+    }
 
-.a-maps{
-    right: 170px;
-}
+    .a-maps {
+        right: 170px;
+    }
 
-.amigoSurdo{
-    width: 320px;
-    right: 30px;
-    position: relative;
-}
+    .amigoSurdo {
+        width: 320px;
+        right: 30px;
+        position: relative;
+    }
 
-.direitos {
-    width: 100%;
-    margin-top: 90px;
-}
+    .direitos {
+        width: 100%;
+        margin-top: 90px;
+    }
 
-.autorais {
-    font: 400 10px 'Aleo-light', serif;
-    width: 290px;
-}
+    .autorais {
+        font: 400 10px 'Aleo-light', serif;
+        width: 290px;
+    }
 
-.direito {
-    font: 300 14px 'Aleo-light', serif;
-    margin-top: 15px;
-    width: 300px;
-    text-align: center;
-}
+    .direito {
+        font: 300 14px 'Aleo-light', serif;
+        margin-top: 15px;
+        width: 300px;
+        text-align: center;
+    }
 
     label {
         font-size: 12px;
