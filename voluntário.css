@@ -433,6 +433,13 @@ ul li ul li {
     display: flex;
     margin-top: -70%;
 }
+/* INGLES */
+.SetaTextoAIn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin-top: -65%;
+}
 
 /* PARTE DE ESPORTE */
 
@@ -447,8 +454,9 @@ ul li ul li {
 }
 
 .tituloDoisB {
-    margin-left: 36%;
+    margin-left: 37%;
     font: 400 20px 'Nunito', sans-serif;
+    margin-top: -5px;
 }
 
 .tituloDoisBB {
@@ -460,11 +468,20 @@ ul li ul li {
     width: 60px;
     height: 60px;
     display: flex;
-    margin-top: -53%;
+    margin-top: -49%;
+}
+/* INGLES */
+.SetaTextoBIn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin-top: -45%;
 }
 
+
+
 .imagemB {
-    padding-top: 70px;
+    padding-top: 50px;
     display: flex;
     margin-left: 320px;
     width: 180px;
@@ -472,7 +489,7 @@ ul li ul li {
 }
 
 .textoTres {
-    margin-top: 70px;
+    margin-top: 50px;
     font: 400 20px 'Nunito', sans-serif;
     padding-left: 80px;
     width: 716px;
@@ -483,8 +500,8 @@ ul li ul li {
 .quadroTres {
     background-color: #FFF1BE;
     border-radius: 0px;
-    height: 500px;
-    margin-top: 250px;
+    height: 600px;
+    margin-top: 280px;
     margin-left: 350px;
     width: 800px;
     border: 3px dashed #000;
@@ -514,22 +531,28 @@ ul li ul li {
     text-align: justify;
     padding-left: 100px;
     width: 716px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .setaDoisC {
     width: 60px;
     height: 60px;
     display: flex;
-    margin-top: -56%;
+    margin-top: -60%;
 }
-
+/* INGLES */
+.SetaTextoCIn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin-top: -52%;
+}
 /* PARTE DO MENINO */
 
 .quadroQuatro {
     background-color: #FFF1BE;
     border-radius: 0px;
-    height: 540px;
+    height: 590px;
     margin-top: 250px;
     margin-left: 350px;
     width: 800px;
@@ -537,32 +560,39 @@ ul li ul li {
 }
 
 .tituloDoisD {
-    margin-left: 42%;
+    margin-left: 44%;
     font: 400 20px 'Nunito', sans-serif;
 }
 
 .imagemD {
-    padding-top: 60px;
+    padding-top: 40px;
     display: flex;
     margin-left: 320px;
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
 }
 
 .TextoCinco {
     font: 400 20px 'Nunito', sans-serif;
     text-align: justify;
-    margin-top: 30px;
+    margin-top: 7%;
     padding-left: 80px;
     width: 716px;
-    margin-top: 20px;
+   
 }
 
 .setaDoisD {
     width: 60px;
     height: 60px;
     display: flex;
-    margin-top: -60%;
+    margin-top: -62%;
+}
+/* INGLES */
+.SetaTextoDIn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin-top: -58%;
 }
 
 
@@ -910,6 +940,9 @@ label {
     .TextoUmC {
         font-size: 13px;
         align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        
 
     }
 
@@ -1027,8 +1060,6 @@ label {
         font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
         margin-top: -35%;
-        
-
     }
 
     .TextoDoisB {
@@ -1058,19 +1089,23 @@ label {
         margin-left: 40px;
     }
 
-    /* .ImagemA {
-        padding-top: 50px;
-        margin-left: 320px;
-        width: 180px;
-        height: 180px;
-    } */
 
     .setaDoisA {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -227%;
+        margin-top: -225%;
     }
+/* INGLES */
+.SetaTextoAIn{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    margin-top: -193%;
+
+}
+
+
 
     /* PARTE DE ESPORTE */
 
@@ -1107,9 +1142,16 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -130%;
+        margin-top: -145%;
     }
+/* INGLES */
+.SetaTextoBIn{
+    width: 94px;
+    height: 34px;
+    display: flex;
+    margin-top: -110%;
 
+}
     .imagemB {
       margin-left: 40px;
       width: 10px;
@@ -1119,7 +1161,7 @@ label {
         margin-left: 65px;
         width: 70px;
         height: 70px;
-        margin-top: -65px;
+        margin-top: -40px;
     }
 
     .textoTres {
@@ -1184,13 +1226,20 @@ label {
         display: flex;
         margin-top: -180%;
     }
+    /* INGLES */
+    .SetaTextoCIn{
+        width: 34px;
+        height: 34px;
+        display: flex;
+        margin-top: -178%;   
+    }
 
     /* PARTE DO MENINO */
 
     .quadroQuatro {
         background-color: #FFF1BE;
         border-radius: 0px;
-        height: 745px;
+        height: 685px;
         margin-top: 150px;
         margin-left: 70px;
         width: 280px;
@@ -1202,6 +1251,14 @@ label {
         font: 400 20px 'Nunito', sans-serif;
         font-size: 15px;
     }
+    /* INGLES */
+.SetaTextoDIn{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    margin-top: -175%;
+
+}
 
     .imagemD {
         display: flex;
