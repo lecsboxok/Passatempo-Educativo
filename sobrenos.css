@@ -380,7 +380,7 @@ ul li ul li{
     border-radius: 10px 10px;
     margin: 80px 75px;
     margin-top: 100px;
-    margin-left: 480px;
+    margin-left: 540px;
 }
 
 .profissionais {
@@ -417,7 +417,7 @@ ul li ul li{
     border-radius: 10px 10px;
     margin: 55px 55px;
     margin-top: 5px;
-    margin-left: 440px;
+    margin-left: 530px;
 }
 
 .monitor {
@@ -626,20 +626,11 @@ a:hover {
         height: 220px;
         left: -10px;
         right: 100px;
-
         padding-top: 50px;
     }
     
     .calendario {
-    
-        height: auto;
-        left: 300px;
-        right: 0;
-        size: -20px;
-        top: 130px;
-        bottom: 0;
-        position: absolute;
-        z-index: 4;
+        display: none;
     }
     
     .qm {
@@ -696,11 +687,11 @@ a:hover {
     
         background-color: #E7FFDF;
         width: 400px;
-        height: 3200px;
+        height: auto;
         margin-top: -100px;
         padding-left: 400px;
-        padding-top: 60px;
-        padding: 0 0 60px;
+        padding: 90px 0 60px;
+        
     
     }
     
@@ -734,7 +725,12 @@ a:hover {
         flex-direction: column-reverse;
     
     }
-    
+    .fase1fase2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
     .fase2 {
         margin-bottom: 50px;
     }
@@ -750,9 +746,13 @@ a:hover {
     }
     
     .roda, .historia, .crianca, .idosos {
-        width: 250px;
+        width: 280px;
     }
-    
+    .roda, .crianca, .idosos, .historia, .descricao {
+margin: 40px 0;
+
+    }
+
     
     .tres-pessoas, .elemento, .natal, .predios {
         width: 130px;
@@ -764,8 +764,8 @@ a:hover {
     }
     
     .circulo {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -847,6 +847,7 @@ a:hover {
         margin-top: -10px;
         text-align: justify;
         font: 400 15px 'Nunito', sans-serif;
+    
     }
     
     .gentes {
@@ -875,6 +876,7 @@ a:hover {
         height: 180px;
         border-radius: 10px 10px;
         margin: 55px 55px;
+      
         
     }
     
@@ -887,9 +889,10 @@ a:hover {
     }
 
  /* RODAPÉ */
-#contato {
-    margin-top: 700px;
+ #contato {
+    margin-top: 100px;
     width: 400px;
+
 }
 
 .logoRodape {
@@ -908,6 +911,7 @@ a:hover {
     align-items: center;
     height: 50px;
     right: 50px;
+    position: relative;
 }
 
 .icone {
@@ -927,6 +931,7 @@ a:hover {
     font: 400 12px 'Nunito', sans-serif;
     right: 25px;
     width: 300px;
+    position: relative;
 }
 
 .logotipoRodape {
@@ -944,25 +949,32 @@ a:hover {
     margin-bottom: 25px;
     margin-right: 50px;
     width: 100%;
+    position: relative;
+
 }
 
 .endereco{
     top: 30px;
+
 }
 
 .iconMaps {
     right: 25px;
     width: 30px;
+    position: relative;
 }
 
 .textoMaps {
     font: 400 12px 'Nunito', sans-serif;
     right: 30px;
     width: 100%;
+    position: relative;
 }
 
 .imgMaps{
-    right: 50px;
+    right: 90px;
+    position: relative;
+
 }
 
 .rodape-lado1{
@@ -988,6 +1000,7 @@ a:hover {
 .amigoSurdo{
     width: 320px;
     right: 30px;
+    position: relative;
 }
 
 .direitos {
@@ -1007,9 +1020,18 @@ a:hover {
     text-align: center;
 }
 
+    label {
+        font-size: 12px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+
 
 /* TERMINO DO RODAPÉ */
-
+/* TERMINO MOBILE */
 }
 
     
