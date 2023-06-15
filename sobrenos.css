@@ -622,16 +622,18 @@ ul li ul li{
     .qm {
         width: 100%;
         left: 30px;
-        font-size: 16px;
+        font-size: 25px;
     
     }
     
     .tempo {
         width: 100%;
-        padding-left: 0px;
-        padding-right: 30px;
         font-size: 13px;
-       text-align: center;
+        margin: 0;
+        margin-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+       
 
 }
     
@@ -671,6 +673,7 @@ ul li ul li{
     
         background-color: #E7FFDF;
         width: 400px;
+        height: 3200px;
         margin-top: -100px;
         padding-left: 400px;
         padding-top: 60px;
@@ -679,7 +682,7 @@ ul li ul li{
     }
     
     .historia {
-        font: 700 30px 'Nunito', sans-serif;
+        font: 700 25px 'Nunito', sans-serif;
         text-align: center;
         margin: 100px 0;
         align-items: center;
@@ -706,7 +709,7 @@ ul li ul li{
     }
     
     .descricao {
-        width: 300px;
+        width: 350px;
         font: 400 12px 'Nunito', sans-serif;
         text-align: center;
         margin: 100px 0;
@@ -716,12 +719,12 @@ ul li ul li{
     }
     
     .roda, .historia, .crianca, .idosos {
-        width: 200px;
+        width: 250px;
     }
     
     
     .tres-pessoas, .elemento, .natal, .predios {
-        width: 70px;
+        width: 130px;
     }
     
     .tres-pessoas {
@@ -730,8 +733,8 @@ ul li ul li{
     }
     
     .circulo {
-        width: 120px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -765,14 +768,15 @@ ul li ul li{
     }
     
     .predios {
-        padding: 100px;
+        height: -100;
+        padding: 30px;
         text-align: center;
     }
     
     
     .conheca {
     
-        font: 700 30px 'Nunito', sans-serif;
+        font: 700 25px 'Nunito', sans-serif;
         text-align: center;
         margin: 80px 100px;
     
@@ -851,6 +855,130 @@ ul li ul li{
     
     }
 
- 
+ /* RODAPÉ */
+#contato {
+    margin-top: 700px;
+    width: 400px;
 }
+
+.logoRodape {
+    margin-left: 90px;
+    width: 100px;
+}
+
+.menina{
+    width: 120px;
+    left: 30px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    right: 50px;
+}
+
+.icone {
+    width: 40px;
+    padding: 9px;
+    padding-left: 3px;
+}
+
+.icone:hover {
+    width: 45px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+
+.texto-rodape {
+    font: 400 12px 'Nunito', sans-serif;
+    right: 25px;
+    width: 300px;
+}
+
+.logotipoRodape {
+    width: 120px;
+}
+
+.rodapeTexto{
+    width: 100%;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.endereco{
+    top: 30px;
+}
+
+.iconMaps {
+    right: 25px;
+    width: 30px;
+}
+
+.textoMaps {
+    font: 400 12px 'Nunito', sans-serif;
+    right: 30px;
+    width: 100%;
+}
+
+.imgMaps{
+    right: 50px;
+}
+
+.rodape-lado1{
+    width: 100%;
+}
+
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.maps{
+    border-radius: 10px;
+    width: 200px;
+    left: 130px;
+}
+
+.a-maps{
+    right: 170px;
+}
+
+.amigoSurdo{
+    width: 320px;
+    right: 30px;
+}
+
+.direitos {
+    width: 100%;
+    margin-top: 90px;
+}
+
+.autorais {
+    font: 400 10px 'Aleo-light', serif;
+    width: 290px;
+}
+
+.direito {
+    font: 300 14px 'Aleo-light', serif;
+    margin-top: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* TERMINO DO RODAPÉ */
+
+}
+
     
