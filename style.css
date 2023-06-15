@@ -728,6 +728,12 @@ ul li ul li{
 
 @media screen and (max-width: 400px) {
     
+    .conteiner {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
 
     /* CABEÇALHO */
 
@@ -813,7 +819,14 @@ ul li ul li{
         font: 400 19px 'Aleo', serif;
         color: #FFF;
     }
+
+    /* PRÊMIOS */
+    .frasePremio {
+        display: block;
+    }
     
+    /* SAIBA MAIS */
+   
 
     /* RODAPÉ */
 
