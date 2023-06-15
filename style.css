@@ -722,6 +722,10 @@ ul li ul li{
     margin-top: 10px;
 }
 
+.geral{
+    display: none;
+}
+
 @media screen and (max-width: 400px) {
     
 
@@ -753,6 +757,7 @@ ul li ul li{
         width: 50px;
         display: flex;
         left: 150px;
+        position: relative;
     }
 
     .geral:hover .cabecalho_nav_item {
@@ -788,6 +793,7 @@ ul li ul li{
 
     #cabecalho .imagem{
         left: 20px;
+        position: relative;
     }
 
     .cabecalho_Logo{
