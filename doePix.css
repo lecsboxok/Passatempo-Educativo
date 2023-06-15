@@ -232,5 +232,19 @@ input, button {
         padding: 8px 15px;
     }
 
+    .botao2 {
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+    
+    .Obotao2 {
+        font-size: 14px;
+        padding: 8px 15px;
+        background: #7ED738;
+        border: 0;
+        margin-bottom: 1em;
+        color: #000;
+    }
+
 
 }
