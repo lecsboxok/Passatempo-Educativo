@@ -821,6 +821,8 @@ label {
         width: 50px;
         display: flex;
         left: 150px;
+        position: relative;
+    
     }
 
     .geral:hover .cabecalho_nav_item {
@@ -856,6 +858,7 @@ label {
 
     #cabecalho .imagem {
         left: 20px;
+        position: relative;
     }
 
     .cabecalho_Logo {
@@ -868,7 +871,9 @@ label {
 
     .idiomas {
         right: 40px;
-        top: 12px;
+        top: 4px;
+        position: relative;
+
     }
 
     /* TÉRMINO DO CABEÇALHO */
@@ -1245,8 +1250,9 @@ label {
 
  /* RODAPÉ */
  #contato {
-    margin-top: 700px;
+    margin-top: 100px;
     width: 400px;
+
 }
 
 .logoRodape {
@@ -1265,6 +1271,7 @@ label {
     align-items: center;
     height: 50px;
     right: 50px;
+    position: relative;
 }
 
 .icone {
@@ -1284,6 +1291,7 @@ label {
     font: 400 12px 'Nunito', sans-serif;
     right: 25px;
     width: 300px;
+    position: relative;
 }
 
 .logotipoRodape {
@@ -1301,25 +1309,32 @@ label {
     margin-bottom: 25px;
     margin-right: 50px;
     width: 100%;
+    position: relative;
+
 }
 
 .endereco{
     top: 30px;
+
 }
 
 .iconMaps {
     right: 25px;
     width: 30px;
+    position: relative;
 }
 
 .textoMaps {
     font: 400 12px 'Nunito', sans-serif;
     right: 30px;
     width: 100%;
+    position: relative;
 }
 
 .imgMaps{
-    right: 50px;
+    right: 90px;
+    position: relative;
+
 }
 
 .rodape-lado1{
@@ -1345,6 +1360,7 @@ label {
 .amigoSurdo{
     width: 320px;
     right: 30px;
+    position: relative;
 }
 
 .direitos {
