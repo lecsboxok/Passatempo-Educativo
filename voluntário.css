@@ -801,10 +801,7 @@ label {
 
 /* IMAGENS GIRANTES */
 
-.box:hover {
-    animation-name: rotate;
-    animation-duration: 3s;
-}
+
 
 @keyframes rotate {
     0% {
@@ -1099,7 +1096,7 @@ label {
         width: 34px;
         height: 34px;
         display: flex;
-        margin-top: -618px;
+        margin-top: -616px;
     }
 
     /* INGLES */
@@ -1286,7 +1283,7 @@ label {
         margin-left: 95px;
         width: 120px;
         height: 120px;
-        margin-top: -15%;
+        margin-top: -12%;
     }
 
     .TextoCinco {

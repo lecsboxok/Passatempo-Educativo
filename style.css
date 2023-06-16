@@ -492,6 +492,7 @@ ul li ul li{
     margin-left: 100px;
 } 
 
+
 .sol {
     width: 128px;
 }
@@ -611,10 +612,19 @@ ul li ul li{
     text-align: center;
 }
 
+.patroImg {
+    margin: 10px;
+}
 
 .patroTitulo {
     text-align: center;
     margin-bottom: 60px;
+}
+
+.patro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /* RODAPÉ */
@@ -730,7 +740,7 @@ ul li ul li{
 
     /* CABEÇALHO */
 
-    #cabecalho{
+      #cabecalho{
         width: 100%;
         position: fixed;
     }
@@ -805,15 +815,26 @@ ul li ul li{
 
     .idiomas{
         right: 40px;
-        top: 12px;
+        top: 5px;
         position: relative;
     }
 
+    
+    /* PRINCIPAL */
     .conatainerproje .slidde-container .slide .contentproje h1 {
-        font: 400 19px 'Aleo', serif;
+        font: 400 30px 'Aleo', serif;
         color: #FFF;
     }
-    /* PRINCIPAL */
+
+    .conatainerproje .slidde-container .slide .contentproje .subPrincipal {
+        font: 400 20px 'Aleo', serif;
+        color: #FFF;
+    }
+
+    .setinha {
+        width: 10px;
+    }
+
     .conatainerproje .slidde-container .slide .contentproje .btnblog {
         margin-top: 10px;
         display: inline-block;
@@ -835,36 +856,57 @@ ul li ul li{
 
     /* FRASE */
     #frase {
-        padding: 24px 48px;
+        padding: 24px 20px;
         margin-top: 25px;
     }
     
     .frase,
     .frase-autor {
-        font: 300 11px 'Aleo-light', serif;
+        font: 300 13px 'Aleo-light', serif;
     }
-
-
 
     /* PRÊMIOS */
     #premios .conteiner {
-        display: block;
-        padding: 5px 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0px;
         margin-top: 20px;
     }
 
     .frasePremios {
-        font: 700 14px 'Nunito', sans-serif;
+        font: 700 16px 'Nunito', sans-serif;
         color: #FFD233;
+    }
+
+    .frasePremio {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        margin-bottom: 10px;
     }
 
     .certificado {
         width: 48px;
+        margin: 0 15px;
+    }
+
+    .premiosConteiner {
+        display: flex;
+        align-items: center;
     }
 
     /* DOAÇÕES */
     .sub {
-        font: 800 14px 'Nunito', sans-serif;
+        font: 800 20px 'Nunito', sans-serif;
+    }
+
+    .maoCoracao {
+        width: 50px;
+    }
+
+    .imgDoar {
+        display: flex;
+        margin-left: 10px;
     }
 
     .quadros {
@@ -874,6 +916,8 @@ ul li ul li{
 
     .doar {
         margin-top: 60px;
+        display: flex;
+        justify-content: center;
     }
     
     .doacoes {
@@ -897,13 +941,17 @@ ul li ul li{
     }
 
     .topicosDoacoes {
-        font: 400 10px 'Nunito', sans-serif;
+        font: 400 15px 'Nunito', sans-serif;
         margin: 30px;
     }
 
     .imagemDoe {
         display: flex;
         justify-content: space-between;
+    }
+
+    .Item {
+        width: 80px;
     }
 
     .doador {
@@ -979,6 +1027,30 @@ ul li ul li{
         flex-direction: column;
     }
 
+    .maoMundo {
+        width: 50px;
+    }
+
+    .imgTube {
+        width: 30px;
+    }
+
+    .aviao {
+        width: 50px;
+        margin: 30px 0;
+    }
+
+    .sol {
+        width: 35px;
+        margin: 30px 0;
+    }
+
+    .mundo {
+        display: flex;
+        align-self: center;
+        margin: 30px 0;
+    } 
+
     /* SAIBA MAIS */
     #nossaHistoria {
         padding: 50px 20px;
@@ -987,6 +1059,10 @@ ul li ul li{
    .imgMais {
     width: 190px;
    }
+
+   .conteudoSaiba {
+    margin-bottom: 10px;
+}
 
    .tituloSaiba {
     font: 700 20px 'Nunito', sans-serif;
@@ -1026,11 +1102,18 @@ ul li ul li{
 
     /* PATROCINADORES */
     .conteudo_6 {
-        padding: 30px;
+        padding: 10px;
         margin: 25px 0;
         background: rgba(255, 33, 33, 0.46);
     }
+
+    .patroImg {
+        width: 100px;
+    }
     
+    .patroTitulo {
+        margin-top: 20px;
+    }
 
     /* RODAPÉ */
 
@@ -1041,20 +1124,20 @@ ul li ul li{
     }
 
     .logoRodape {
-        margin-left: 90px;
+        text-align: center;
         width: 100px;
     }
 
     #contato .menina {
+        margin-right: 100px;
         width: 120px;
-        left: 30px;
     }
 
     #contato .redes {
-        margin: 20px;
         display: flex;
         align-items: center;
         height: 50px;
+        margin: 15px 0;
     }
 
     .icone {
@@ -1072,45 +1155,45 @@ ul li ul li{
 
     .texto-rodape {
         font: 400 12px 'Nunito', sans-serif;
-        right: 25px;
         width: 300px;
+        text-align: justify;
     }
 
     .logotipoRodape {
         width: 120px;
     }
 
-    .rodapeTexto {
+    .rodapeTexto, .redes {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .enderecoTexto {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+        margin: 0;
         margin-bottom: 25px;
-        margin-right: 50px;
         width: 100%;
     }
 
     .endereco {
-        top: 30px;
+        margin-top: 30px;
     }
 
     .iconMaps {
-        right: 25px;
         width: 30px;
+        margin-right: 10px;
     }
 
     .textoMaps {
         font: 400 12px 'Nunito', sans-serif;
-        right: 30px;
-        width: 100%;
     }
 
     .imgMaps {
-        text-align: center;
-        right: 50px;
+        display: flex;
+        justify-content: center;
     }
 
     .rodape-lado1 {
@@ -1121,21 +1204,24 @@ ul li ul li{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 30px;
     }
 
     .maps {
         border-radius: 10px;
         width: 200px;
-        left: 130px;
+        display: flex;
+        align-items: center;
     }
 
-    .a-maps {
-        right: 170px;
+    .amigo {
+        display: flex;
+        justify-self: center;
+        align-items: center;
     }
 
     .amigoSurdo {
         width: 320px;
-        right: 30px;
     }
 
     .direitos {
