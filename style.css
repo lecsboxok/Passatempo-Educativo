@@ -856,13 +856,13 @@ ul li ul li{
 
     /* FRASE */
     #frase {
-        padding: 24px 30px;
+        padding: 24px 20px;
         margin-top: 25px;
     }
     
     .frase,
     .frase-autor {
-        font: 300 11px 'Aleo-light', serif;
+        font: 300 13px 'Aleo-light', serif;
     }
 
     /* PRÊMIOS */
