@@ -612,9 +612,19 @@ ul li ul li{
     text-align: center;
 }
 
+.patroImg {
+    margin: 10px;
+}
+
 .patroTitulo {
     text-align: center;
     margin-bottom: 60px;
+}
+
+.patro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /* RODAPÉ */
@@ -859,23 +869,25 @@ ul li ul li{
     #premios .conteiner {
         display: flex;
         flex-direction: column;
-        padding: 5px 0px;
+        padding: 15px 0px;
         margin-top: 20px;
     }
 
     .frasePremios {
-        font: 700 14px 'Nunito', sans-serif;
+        font: 700 16px 'Nunito', sans-serif;
         color: #FFD233;
     }
 
     .frasePremio {
         display: flex;
         justify-content: center;
-        width: 200px;
+        width: 250px;
+        margin-bottom: 10px;
     }
 
     .certificado {
         width: 48px;
+        margin: 0 15px;
     }
 
     .premiosConteiner {
@@ -885,11 +897,16 @@ ul li ul li{
 
     /* DOAÇÕES */
     .sub {
-        font: 800 16px 'Nunito', sans-serif;
+        font: 800 20px 'Nunito', sans-serif;
     }
 
     .maoCoracao {
-        width: 80px;
+        width: 50px;
+    }
+
+    .imgDoar {
+        display: flex;
+        margin-left: 10px;
     }
 
     .quadros {
@@ -899,6 +916,8 @@ ul li ul li{
 
     .doar {
         margin-top: 60px;
+        display: flex;
+        justify-content: center;
     }
     
     .doacoes {
@@ -1009,20 +1028,20 @@ ul li ul li{
     }
 
     .maoMundo {
-        width: 35px;
+        width: 50px;
     }
 
     .imgTube {
-        width: 23px;
+        width: 30px;
     }
 
     .aviao {
-        width: 35px;
+        width: 50px;
         margin: 30px 0;
     }
 
     .sol {
-        width: 27px;
+        width: 35px;
         margin: 30px 0;
     }
 
@@ -1040,6 +1059,10 @@ ul li ul li{
    .imgMais {
     width: 190px;
    }
+
+   .conteudoSaiba {
+    margin-bottom: 10px;
+}
 
    .tituloSaiba {
     font: 700 20px 'Nunito', sans-serif;
@@ -1079,7 +1102,7 @@ ul li ul li{
 
     /* PATROCINADORES */
     .conteudo_6 {
-        padding: 30px;
+        padding: 10px;
         margin: 25px 0;
         background: rgba(255, 33, 33, 0.46);
     }
@@ -1088,6 +1111,9 @@ ul li ul li{
         width: 100px;
     }
     
+    .patroTitulo {
+        margin-top: 20px;
+    }
 
     /* RODAPÉ */
 
@@ -1153,24 +1179,21 @@ ul li ul li{
     }
 
     .endereco {
-        top: 30px;
+        margin-top: 30px;
     }
 
     .iconMaps {
         width: 30px;
-        display: flex;
-        align-self: flex-end;
+        margin-right: 10px;
     }
 
     .textoMaps {
         font: 400 12px 'Nunito', sans-serif;
-        width: 100%;
     }
 
     .imgMaps {
         display: flex;
         justify-content: center;
-        margin-left: 40px;
     }
 
     .rodape-lado1 {
@@ -1181,6 +1204,7 @@ ul li ul li{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 30px;
     }
 
     .maps {
@@ -1190,10 +1214,14 @@ ul li ul li{
         align-items: center;
     }
 
+    .amigo {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
 
     .amigoSurdo {
         width: 320px;
-        right: 30px;
     }
 
     .direitos {
