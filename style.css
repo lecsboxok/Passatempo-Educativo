@@ -38,28 +38,31 @@ html {
 }
 
 #cabecalho .cabecalho_sombra {
-    height: 16px;
+    height: 7px;
     background-color: #FFD233;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cabecalho_nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.navegacao {
+    display: flex;
     align-items: center;
 }
 
 .cabecalho_nav_itens {
-    margin-left: 100px;
+    margin-right: 30px;
 }
 
 .cabecalho_nav_item{
-    margin: 20px;
-    background: #FFD233;
-    font: 400 17px 'Aleo', serif;
-    border-radius: 10px;
-    padding: 7px 15px;
+    font: 400 18px 'Aleo', serif;
     color: #000;
+    margin-right: 25px;
 }
 
 .cabecalho_nav_item_Doe{
@@ -71,7 +74,7 @@ html {
 }
 
 .idiomas {
-    margin-top: 15px;
+    margin: 15px 20px 0 0;
 }
 
 /* IDIOMAS */

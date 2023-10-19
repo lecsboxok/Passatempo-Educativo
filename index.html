@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,83 +13,92 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function() {
- var botao = $('.a-teste');
- var dropDown = $('.ul-imagens');    
+        $(document).ready(function () {
+            var botao = $('.a-teste');
+            var dropDown = $('.ul-imagens');
 
-    botao.on('click', function(event){
-        dropDown.stop(true,true).slideToggle();
-        event.stopPropagation();
-    });
-});
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
 
-$(document).ready(function() {
- var botao = $('.a-teste2');
- var dropDown = $('.ul-imagens2');    
+        $(document).ready(function () {
+            var botao = $('.a-teste2');
+            var dropDown = $('.ul-imagens2');
 
-    botao.on('click', function(event){
-        dropDown.stop(true,true).slideToggle();
-        event.stopPropagation();
-    });
-});
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
 
     </script>
 </head>
+
 <body class="corpo">
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
+                        alt="Logo Passatempo educativo"></a>
             </div>
-            <div class="cabecalho_nav_itens">
-                <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
-                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
-                <a class="cabecalho_nav_item" href="Voluntário.html">Voluntários</a>
-                <a class="cabecalho_nav_item" href="#contato">Contato</a>
-            </div>
-            <div class="geral">
-                <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
-                <div class="cabecalho_nav_item">
-                    <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
-                    <a class="mobileCabecalho" href="projetos.html">Projetos</a>
-                    <a class="mobileCabecalho" href="Voluntário.html">Voluntários</a>
-                    <a class="mobileCabecalho" href="#contato">Contato</a>
-                    <a class="mobileCabecalho" href="doeAgora.html">Doe Agora</a>
+            <div class="navegacao">
+                <div class="cabecalho_nav_itens">
+                    <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
+                    <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
+                    <a class="cabecalho_nav_item" href="Voluntário.html">Voluntários</a>
+                    <a class="cabecalho_nav_item" href="#contato">Contato</a>
                 </div>
-            </div>
-            <div class="idiomas">
-                <nav class="teste">
-                    <ul class="principal">
-                        <li class="li-p">
-                            <a href="javascript://" class="a-teste">
-                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
-                            </a>
-            
-                            <ul class="ul-imagens">
-                                <a href="index.ingles.html"><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
-                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
+                <div class="geral">
+                    <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
+                    <div class="cabecalho_nav_item">
+                        <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
+                        <a class="mobileCabecalho" href="projetos.html">Projetos</a>
+                        <a class="mobileCabecalho" href="Voluntário.html">Voluntários</a>
+                        <a class="mobileCabecalho" href="#contato">Contato</a>
+                        <a class="mobileCabecalho" href="doeAgora.html">Doe Agora</a>
+                    </div>
+                </div>
+                <div class="idiomas">
+                    <nav class="teste">
+                        <ul class="principal">
+                            <li class="li-p">
+                                <a href="javascript://" class="a-teste">
+                                    <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                                </a>
+
+                                <ul class="ul-imagens">
+                                    <a href="index.ingles.html">
+                                        <li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li>
+                                    </a>
+                                    <a href="espanhol.html">
+                                        <li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste">
+                                        </li>
+                                    </a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
+                </div>
             </div>
         </nav>
         <div class="cabecalho_sombra"></div>
     </header>
-   
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
 
     <main class="conteudo">
         <section class="conatainerproje">
@@ -100,7 +110,7 @@ $(document).ready(function() {
                     </div>
                 </div>
             </div>
-    
+
             <div class="slidde-container">
                 <div class="slide">
                     <div class="contentproje">
@@ -109,8 +119,8 @@ $(document).ready(function() {
                     </div>
                 </div>
             </div>
-    
-    
+
+
             <div class="slidde-container">
                 <div class="slide">
                     <div class="contentproje">
@@ -124,10 +134,11 @@ $(document).ready(function() {
         </section>
         <section id="frase" class="section">
             <div class="conteiner">
-                <p class="frase">“A doação transforma o amor abstrato em um ato concreto. Deixe sua marca amorosa na vida de alguém.”</p>
+                <p class="frase">“A doação transforma o amor abstrato em um ato concreto. Deixe sua marca amorosa na
+                    vida de alguém.”</p>
                 <p class="frase-autor">(Belas Mensagens)</p>
             </div>
-        </section>    
+        </section>
         <section id="premios" class="section">
             <div class="conteiner">
                 <div class="frasePremio">
@@ -143,7 +154,7 @@ $(document).ready(function() {
         </section>
         <section id="doacoes">
             <div class="doar">
-                <h2 class="sub">Doações</h2> 
+                <h2 class="sub">Doações</h2>
                 <div class="imgDoar">
                     <img src="img/maoCoracao.png" alt="" class="maoCoracao">
                 </div>
@@ -183,7 +194,8 @@ $(document).ready(function() {
                             <a href="doePix.html" class="doe verdeFundo">Doe pelo Pix</a>
                         </div>
                         <div class="doeVer">
-                            <a href="https://www.paypal.com/donate?token=e4i3YuJ-jGQ33j-cbJ8OaPM5tuMSkMbp0mfQarR68z_vviOc1njxA_GS1QWK1ATaI-SHkvFmjA-SAXy4" class="doe vermelhoFundo">Doe pelo PayPal</a>
+                            <a href="https://www.paypal.com/donate?token=e4i3YuJ-jGQ33j-cbJ8OaPM5tuMSkMbp0mfQarR68z_vviOc1njxA_GS1QWK1ATaI-SHkvFmjA-SAXy4"
+                                class="doe vermelhoFundo">Doe pelo PayPal</a>
                         </div>
                     </div>
                     <div class="imagemDoe">
@@ -202,19 +214,28 @@ $(document).ready(function() {
             </div>
             <div class="conteiner">
                 <div class="video1">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_UfNUz521YQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_UfNUz521YQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                     <div>
                         <img src="img/aviao.png" alt="" class="aviao">
                     </div>
                 </div>
                 <div class="video2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/37vZNMvCebQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/37vZNMvCebQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                     <div class="solTube">
                         <img src="img/solTube.png" alt="" class="sol">
                     </div>
                 </div>
                 <div class="video3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w831iGxdZZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w831iGxdZZo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                     <div class="mundo">
                         <img src="img/mundo.png" alt="" class="maoMundo">
                     </div>
@@ -222,82 +243,83 @@ $(document).ready(function() {
             </div>
         </section>
         <section id="nossaHistoria">
-                <div class="saibaMais">
-                    <div class="historia">
-                        <div class="conteudoSaiba">
-                            <h2 class="tituloSaiba laranja">CONHEÇA NOSSA HISTÓRIA</h2>
-                            <p class="textoSaiba">23 anos trabalhando em projetos culturais, educacionais e ambientais.</p>
-                        </div>
-                        <div class="bloco">
-                            <div class="imgSaiba">
-                                <img src="img/Conhecanossahistoria.jpg" alt="" class="imgMais">
-                            </div>
-                            <a href="sobrenos.html">
-                                <div class="botao fundoLaranja">
-                                    <a href="sobrenos.html" class="textoBotao">Sobre Nós</a>
-                                    <a href="sobrenos.html"><img src="img/seta.svg" alt="" class="setaMais"></a>
-                                </div>
-                            </a>
-                        </div>
+            <div class="saibaMais">
+                <div class="historia">
+                    <div class="conteudoSaiba">
+                        <h2 class="tituloSaiba laranja">CONHEÇA NOSSA HISTÓRIA</h2>
+                        <p class="textoSaiba">23 anos trabalhando em projetos culturais, educacionais e ambientais.</p>
                     </div>
-                    <div class="historia">
-                        <div class="conteudoSaiba">
-                            <h2 class="tituloSaiba azul">VEJA OS PROJETOS</h2>
-                            <p class="textoSaiba">Nossos projetos tem como objetivo dar continuidade no ensino-aprendizagem.</p>
+                    <div class="bloco">
+                        <div class="imgSaiba">
+                            <img src="img/Conhecanossahistoria.jpg" alt="" class="imgMais">
                         </div>
-                        <div class="bloco">
-                            <div class="imgSaiba">
-                                <img src="img/vejaosprojetos.jpg" alt="" class="imgMais">
+                        <a href="sobrenos.html">
+                            <div class="botao fundoLaranja">
+                                <a href="sobrenos.html" class="textoBotao">Sobre Nós</a>
+                                <a href="sobrenos.html"><img src="img/seta.svg" alt="" class="setaMais"></a>
                             </div>
-                            <a href="projetos.html">
-                                <div class="botao fundoAzul">
-                                    <a href="projetos.html" class="textoBotao">Saiba mais</a>
-                                    <a href="projetos.html"><img src="img/seta.svg" alt="" class="setaMais"></a>
-                                </div>
-                            </a>
-                        </div>
+                        </a>
                     </div>
-                    <div class="historia">
-                        <div class="conteudoSaiba">
-                            <h2 class="tituloSaiba vermelho">SEJA UM VOLUNTÁRIO</h2>
-                            <p class="textoSaiba">Abraçe a causa e faça parte da nossa equipe!</p>
+                </div>
+                <div class="historia">
+                    <div class="conteudoSaiba">
+                        <h2 class="tituloSaiba azul">VEJA OS PROJETOS</h2>
+                        <p class="textoSaiba">Nossos projetos tem como objetivo dar continuidade no ensino-aprendizagem.
+                        </p>
+                    </div>
+                    <div class="bloco">
+                        <div class="imgSaiba">
+                            <img src="img/vejaosprojetos.jpg" alt="" class="imgMais">
                         </div>
-                        <div class="bloco">
-                            <div class="imgSaiba">
-                                <img src="img/sejaumvoluntario.jpg" alt="" class="imgMais">
+                        <a href="projetos.html">
+                            <div class="botao fundoAzul">
+                                <a href="projetos.html" class="textoBotao">Saiba mais</a>
+                                <a href="projetos.html"><img src="img/seta.svg" alt="" class="setaMais"></a>
                             </div>
-                            <a href="Voluntário.html">
-                                <div class="botao fundoVermelho">
+                        </a>
+                    </div>
+                </div>
+                <div class="historia">
+                    <div class="conteudoSaiba">
+                        <h2 class="tituloSaiba vermelho">SEJA UM VOLUNTÁRIO</h2>
+                        <p class="textoSaiba">Abraçe a causa e faça parte da nossa equipe!</p>
+                    </div>
+                    <div class="bloco">
+                        <div class="imgSaiba">
+                            <img src="img/sejaumvoluntario.jpg" alt="" class="imgMais">
+                        </div>
+                        <a href="Voluntário.html">
+                            <div class="botao fundoVermelho">
                                 <a href="Voluntário.html" class="textoBotao">Saiba mais</a>
                                 <a href="Voluntário.html"><img src="img/seta.svg" alt="" class="setaMais"></a>
                             </div>
                         </a>
-                        </div>
-                    </div>
-                    <div class="historia">
-                        <div class="conteudoSaiba">
-                            <h2 class="tituloSaiba verde">APOIE NOSSA ONG</h2>
-                            <p class="textoSaiba">Conheça nosso guia de apoio a projetos culturais!</p>
-                        </div>
-                        <div class="bloco">
-                            <div class="imgSaiba">
-                                <img src="img/apoienossaong.jpg" alt="" class="imgMais">
-                            </div>
-                            <a href="doeAgora.html">
-                                <div class="botao fundoVerde">
-                                    <a href="doeAgora.html" class="textoBotao">Contribua conosco</a>
-                                    <a href="doeAgora.html"><img src="img/seta.svg" alt="" class="setaMais"></a>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                 </div>
+                <div class="historia">
+                    <div class="conteudoSaiba">
+                        <h2 class="tituloSaiba verde">APOIE NOSSA ONG</h2>
+                        <p class="textoSaiba">Conheça nosso guia de apoio a projetos culturais!</p>
+                    </div>
+                    <div class="bloco">
+                        <div class="imgSaiba">
+                            <img src="img/apoienossaong.jpg" alt="" class="imgMais">
+                        </div>
+                        <a href="doeAgora.html">
+                            <div class="botao fundoVerde">
+                                <a href="doeAgora.html" class="textoBotao">Contribua conosco</a>
+                                <a href="doeAgora.html"><img src="img/seta.svg" alt="" class="setaMais"></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="conteudo_6">
             <div class="patroTitulo">
                 <h2 class="sub">Patrocinadores e parceiros</h2>
             </div>
-             <div class="slider-container">
+            <div class="slider-container">
                 <div class="slider-width">
                     <div class="patro">
                         <img src="img/patro01.png" alt="" class="patroImg">
@@ -351,16 +373,16 @@ $(document).ready(function() {
                                     src="img/youtube.png" alt="" class="youtube icone"></a>
                         </div>
                         <div>
-                            <a
-                                href="https://br.linkedin.com/company/passatempo-educativo"><img
-                                    src="img/In.png" alt="" class="In icone"></a>
+                            <a href="https://br.linkedin.com/company/passatempo-educativo"><img src="img/In.png" alt=""
+                                    class="In icone"></a>
                         </div>
                         <div>
                             <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png" alt=""
                                     class="flickr icone"></a>
                         </div>
                         <div>
-                            <a href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
+                            <a
+                                href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
                                     src="img/e-mail.png" alt="" class="email icone"></a>
                         </div>
                         <div>
@@ -374,12 +396,13 @@ $(document).ready(function() {
                     <div class="endereco">
                         <div class="enderecoTexto">
                             <a
-                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img src="img/iconMaps.png" alt="" class="iconMaps"></a>
+                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img
+                                    src="img/iconMaps.png" alt="" class="iconMaps"></a>
                             <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
                         </div>
                         <div class="imgMaps">
-                            <a
-                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr" class="a-maps">
+                            <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"
+                                class="a-maps">
                                 <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
                             </a>
                         </div>
@@ -396,4 +419,5 @@ $(document).ready(function() {
         </section>
     </footer>
 </body>
+
 </html>
