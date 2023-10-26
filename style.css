@@ -11,18 +11,18 @@ a {
 }
 
 @font-face {
-    font-family: Nunito;
-    src: url(Assets/Nunito-VariableFont_wght.ttf);
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Aleo;
-    src: url(Assets/Aleo-Regular.ttf);
+    font-family: 'Forum';
+    src: url(fonts/Forum-Regular.ttf);
 }
 
 @font-face {
-    font-family: Aleo-light;
-    src: url(Assets/Aleo-Light.ttf);
+    font-family: 'Manrope';
+    src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
 html {
@@ -38,9 +38,9 @@ html {
 }
 
 #cabecalho .cabecalho_sombra {
-    height: 7px;
+    height: 5px;
     background-color: #FFD233;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
 }
 
 .cabecalho_nav{
@@ -60,14 +60,14 @@ html {
 }
 
 .cabecalho_nav_item{
-    font: 400 18px 'Aleo', serif;
+    font: 400 18px 'Montserrat', serif;
     color: #000;
     margin-right: 25px;
 }
 
 .cabecalho_nav_item_Doe{
     background-color: #FB2673;
-    font: 400 17px 'Aleo', serif;
+    font: 400 17px 'Montserrat', serif;
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
@@ -188,32 +188,33 @@ ul li ul li{
 }
 
 .conatainerproje .slidde-container .slide .contentproje h1 {
-    font: 400 65px 'Aleo', serif;
+    font: 500 65px 'Montserrat', serif;
     color: #FFF;
 }
 
 .conatainerproje .slidde-container .slide .contentproje .subPrincipal {
-    font: 400 30px 'Aleo', serif;
+    font: 400 36px 'Forum', serif;
     color: #FFF;
 }
 
-.conatainerproje .slidde-container .slide .contentproje .btnblog {
-    margin-top: 10px;
-    display: inline-block;
-    background: #DA251C;
-    color: #FFF;
-    font: 400 24px 'Aleo', serif;
-    padding: 9px 40px;
-    border-radius: 20px;
+.doeCima {
+    font: 400 60px 'Forum', serif;
+    color: #fff;
 }
 
-.conatainerproje .slidde-container .slide .contentproje .btndoe {
-    margin-top: 10px;
+.blogCima {
+    font: 400 40px 'Forum', serif;
+    color: #fff;
+}
+
+.conatainerproje .slidde-container .slide .contentproje .btndoe, .btnblog {
+    margin-top: 20px;
     display: inline-block;
-    background: #DA251C;
+    background: #FA2573;
     color: #FFF;
-    font: 400 24px 'Aleo', serif;
+    font: 400 24px 'Montserrat', serif;
     padding: 9px 40px;
+    border-radius: 10px;
 }
 
 .conatainerproje .slidde-container {
@@ -268,7 +269,7 @@ ul li ul li{
 
 /* SEPARAR */
 .conteudo {
-    padding-top: 100px;
+    padding-top: 89px;
 }
 
 /* FRASE */
