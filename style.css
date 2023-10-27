@@ -226,7 +226,7 @@ ul li ul li{
 }
 
 .conatainerproje .slidde-container:nth-child(1) .slide {
-    background: url(img/Principal1.png) center;
+    background: url(img/principal1.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -234,7 +234,7 @@ ul li ul li{
 }
 
 .conatainerproje .slidde-container:nth-child(2) .slide {
-    background: url(img/Principal2.png) center;
+    background: url(img/principal2.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -242,7 +242,7 @@ ul li ul li{
 }
 
 .conatainerproje .slidde-container:nth-child(3) .slide {
-    background: url(img/Principal3.png) center;
+    background: url(img/principal3.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -291,7 +291,7 @@ ul li ul li{
 
 /* PRÊMIOS */
 #calculadora .conteiner {
-    margin: 30px 50px;
+    margin: 40px 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -310,7 +310,7 @@ ul li ul li{
 
 .calc {
     text-align: center;
-    margin: 0 50px;
+    margin: 20px 50px 60px 50px;
     width: 280px;
 }
 
@@ -319,9 +319,39 @@ ul li ul li{
 #doacoes {
     background-image: url(img/verdePrincipal.png);
     background-attachment: fixed;
-    padding: 200px;
+    padding: 120px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 30px;
+}
+
+.doacoes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.doacoes div {
+    width: 250px;
+}
+
+.texto-doacoes h3 {
+    font: 700 45px 'Montserrat', serif;
+    color: #fff;
+}
+
+.texto-doacoes {
+    text-align: center;
+}
+
+.btnDoacoes a {
+    background-color: #fff;
+    font: 400 30px 'Forum', serif;
+    color: #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 8px 60px;
+    border-radius: 30px;
 }
 
 /* YOUTUBE */
