@@ -274,180 +274,54 @@ ul li ul li{
 
 /* FRASE */
 #frase {
-    background: rgba(255, 236, 171, 0.83);
     text-align: center;
-    padding: 60px 200px;
+    padding: 60px 450px;
     margin-top: 40px;
 }
 
 .frase,
 .frase-autor {
-    font: 300 32px 'Aleo-light', serif;
+    font: 300 26px 'Forum', serif;
 }
 
 .frase-autor {
+    text-align: center;
     margin-top: 30px;
 }
 
 /* PRÊMIOS */
-#premios .conteiner {
-    background: rgba(255, 210, 51, 0.08);
-    margin-top: 100px;
-    padding: 55px 130px;
+#calculadora .conteiner {
+    margin: 30px 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.frasePremios {
-    font: 700 36px 'Nunito', sans-serif;
-    color: #FFD233;
-}
-
-.frasePremio {
-    display: flex;
-    flex-wrap: wrap;
-    width: 450px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
-.premiosConteiner {
-    display: flex;
+.numero {
+    font: 400 45px 'Manrope', sans-serif;
+    color: #4e94d3;
+}
+
+.calc p {
+    font: 400 18px 'Manrope', sans-serif;
+}
+
+.calc {
+    text-align: center;
+    margin: 0 50px;
+    width: 280px;
 }
 
 
 /* DOAÇÕES */
 #doacoes {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.doacoes {
-    box-shadow: 7.69011px 7.69011px 3.07605px rgba(0, 0, 0, 0.25), inset 3.84506px 3.84506px 3.07605px rgba(0, 0, 0, 0.05);
-    width: 600px;
-    background-color: #FFF;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 3;
-    position: relative;
-    top: 80px;
-}
-
-.margemDoacoes {
-    padding: 5px;
-    text-align: center;
-    margin: 0 30px;
-}
-
-.doar {
-    margin-top: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.imgDoar {
-    display: flex;
-    align-self: flex-end;
-    margin-left: 100px;
-}
-
-.sub {
-    font: 800 36px 'Nunito', sans-serif;
-}
-
-.textoDoacoes {
-    font: 400 28px 'Nunito', sans-serif;
-    color: #48A400;
-}
-
-.textDoacoes {
-    padding: 15px;
-    margin: 20px 50px;
-}
-
-.doacoesItens {
-    display: flex;
-    flex-direction: column;
-}
-
-.doacoesItem {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.topicosDoacoes {
-    font: 400 19px 'Nunito', sans-serif;
-    margin: 30px;
-}
-
-.atividades {
-    display: flex;
-    order: 1;
-}
-
-.despesas {
-    display: flex;
-    order: 1;
-}
-
-.doador {
-    background-color: rgba(255, 199, 0, 0.27);
-    height: 415px;
-    width: 400px;
-    align-self: flex-end;
-    margin-bottom: 40px;
-}
-
-.tituloDoador {
-    font: 400 28px 'Nunito', sans-serif;
-    color: #A40000;
-}
-
-.titulo-Doador {
-    text-align: center;
-    margin: 50px 80px;
-}
-
-.linkDoe {
-    text-align: center;
-}
-
-.doe {
-    font: 400 22px 'Nunito', sans-serif;
-    color: #000;
-}
-
-.doeVer {
-    margin: 60px;
-}
-
-.verdeFundo {
-    background: #7ED738;
-    border-radius: 7.69011px;
-    padding: 8px 65px;
-}
-
-.vermelhoFundo {
-    background: #FF5D5D;
-    border-radius: 7.68953px;
-    padding: 8px 45px
-}
-
-.quadros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imagemDoe {
-    display: flex;
-    justify-content: space-between;
+    background-image: url(img/verdePrincipal.jpg);
+    background-attachment: fixed;
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* YOUTUBE */
