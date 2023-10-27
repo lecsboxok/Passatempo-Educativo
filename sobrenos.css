@@ -166,7 +166,6 @@ ul li ul li{
     position: fixed;
     z-index: 100;
 }
-/* FIM DO CABEÇALHO */
 .mundo {
     width: 100%;
     height: auto;
@@ -246,7 +245,7 @@ ul li ul li{
     border: 1px solid #26B2F4;  
 }
 
-
+/*objetivo*/
 .colaborador{
     background-color: #C8E9FF;
     padding: 30px 30px 30px 30px;
@@ -275,7 +274,7 @@ ul li ul li{
 }
 
 .flecha{
-    margin-top: 180px;
+    margin-top: 150px;
     text-align: center;
     justify-content: center;
     margin-left: 710px;
@@ -286,245 +285,31 @@ ul li ul li{
     text-align: center;
 }
 
-/* .tempo {
-
-    font: 500 20px 'Nunito', sans-serif;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 30px 450px 0;
+.texto{
+    margin-top: 70px;
     text-align: center;
+    font: 400 20px 'Manrope', sans-serif;
 }
+/*FIM OBJ*/
 
-.verde {
-
-    background-color: #D5FFC6;
-    padding: 40px;
-    margin: 0 60px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-    width: 400px;
-    z-index: 99;
-}
-
-.objetivos {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 40px;
-    flex-wrap: nowrap;
-    z-index: 99;
-}
-
-.subtitulo {
-    font: 700 32px 'Nunito', sans-serif;
-}
-
-.subtexto {
-    font: 400 15px 'Nunito', sans-serif;
-}
-
-.retangulo {
-
-    background-color: #E7FFDF;
-    margin-top: -100px;
-    padding-top: 60px;
-    padding: 0 0 60px;
-
-} */
-
-/* .historia {
-    font: 700 30px 'Nunito', sans-serif;
-    text-align: center;
-    margin: 100px 0;
-    align-items: center;
-
-
-}
-
-.azul {
-    display: flex;
-    justify-content: center;
-
-}
-
-.fase1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-
-}
-
-.fase1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-
-}
-
-.fasee1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-
-}
-
-.fase2 {
-    margin-bottom: 50px;
-}
-
-.descricao {
-    width: 400px;
-    font: 400 20px 'Nunito', sans-serif;
-    text-align: center;
-    margin: 100px 0;
-    align-items: center;
-    text-align: justify;
-
-}
-
-.roda, .historia, .crianca, .idosos {
-    width: 400px;
-}
-
-
-.tres-pessoas, .elemento, .natal, .predios {
-    width: 150px;
-}
-
-.tres-pessoas {
-    padding: 30px;
-    text-align: center;
-}
-
-.circulo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.amarelo {
-    background-color: #FFD233;
-}
-
-.azulfundo {
-    background-color: #29166F;
-}
-
-.vermelho {
-    background-color: #D73838;
-}
-
-.laranja {
-    background-color: #E05100;
-}
-
-.elemento {
-    padding: 30px;
-    text-align: center;
-}
-
-.natal {
-    padding: 30px;
-    text-align: center;
-}
-
-.predios {
-    padding: 30px;
-    text-align: center;
-}
- */
-
-.conheca {
-
-    font: 700 30px 'Nunito', sans-serif;
-    text-align: center;
-    margin: 80px 100px;
-
-}
-
-.nossa {
-    width: 400px;
-    height: auto;
-    left: 0px;
-    top: 104px;
-
-}
-
-.equipenossa {
-    text-align: center;
-
-}
-
-.feriado {
-    font: 10 15px 'Nunito', sans-serif;
-}
-
-.retangulo2 {
-    background-color: #D6EBFF;
+.historia-retangulo{
+ 
+    background-color: #FFF6D5;
     padding: 30px 30px 30px 30px;
-    width: 587px;
-    height: 95px;
-    border-radius: 10px 10px;
-    margin: 80px 75px;
+    width: 1550px;
+    height: 1000px;
+    margin-top: 150px;
+}
+
+.retangulo{
     margin-top: 100px;
-    margin-left: 540px;
+   text-align: center;
 }
-
-.profissionais {
+.titulo1{
     text-align: center;
-    margin-top: -10px;
-    text-align: justify;
-    font: 400 15px 'Nunito', sans-serif;
+    align-items: center;
+   
 }
-
-.gentes {
-    width: 400px;
-    margin: 60px 0px;
-
-}
-
-.colaboradores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    width: 1000px;
-}
-
-.professores {
-    display: flex;
-    justify-content: center;
-}
-
-.retangulo3 {
-    background: rgba(251, 38, 115, 0.29);
-    padding: 30px 30px 30px 30px;
-    width: 597px;
-    height: 150px;
-    border-radius: 10px 10px;
-    margin: 55px 55px;
-    margin-top: 5px;
-    margin-left: 530px;
-}
-
-.monitor {
-    display: flex;
-    justify-content: center;
-    font: 400 15px 'Nunito', sans-serif;
-
-}
-
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
