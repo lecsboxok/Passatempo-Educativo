@@ -1,7 +1,8 @@
+/* RESET */
 * {
     margin: 0;
-    border: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -10,67 +11,70 @@ a {
 }
 
 @font-face {
-    font-family: Nunito;
-    src: url(Assets/Nunito-VariableFont_wght.ttf);
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Aleo;
-    src: url(Assets/Aleo-Regular.ttf);
+    font-family: 'Forum';
+    src: url(fonts/Forum-Regular.ttf);
 }
 
 @font-face {
-    font-family: Aleo-light;
-    src: url(Assets/Aleo-Light.ttf);
+    font-family: 'Manrope';
+    src: url(fonts/Manrope-VariableFont_wght.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* CABEÇALHO */
 #cabecalho {
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 11;
     background-color: #FFF;
 }
 
 #cabecalho .cabecalho_sombra {
-    height: 16px;
+    height: 5px;
     background-color: #FFD233;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
 }
 
-.cabecalho_nav {
+.cabecalho_nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.navegacao {
+    display: flex;
     align-items: center;
 }
 
 .cabecalho_nav_itens {
-    margin-left: 100px;
+    margin-right: 30px;
 }
 
-.cabecalho_nav_item {
-    margin: 20px;
-    background: #FFD233;
-    font: 400 17px 'Aleo', serif;
-    border-radius: 10px;
-    padding: 7px 15px;
+.cabecalho_nav_item{
+    font: 400 18px 'Montserrat', serif;
     color: #000;
+    margin-right: 25px;
 }
 
-.cabecalho_nav_item_Doe {
+.cabecalho_nav_item_Doe{
     background-color: #FB2673;
-    font: 400 17px 'Aleo', serif;
+    font: 400 17px 'Montserrat', serif;
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
 }
 
 .idiomas {
-    margin-top: 15px;
-}
-
-html{
-    scroll-behavior: smooth;
+    margin: 15px 20px 0 0;
 }
 
 /* IDIOMAS */
@@ -162,33 +166,127 @@ ul li ul li{
     position: fixed;
     z-index: 100;
 }
-
 /* FIM DO CABEÇALHO */
 .mundo {
     width: 100%;
     height: auto;
     left: 0px;
-    padding-top: 50px;
+    padding-top: 4  x0px;
 }
 
-.calendario {
 
-    height: auto;
-    left: 1380px;
-    right: 0;
-    top: 150px;
-    bottom: 0;
-    position: absolute;
-    z-index: 7;
-}
-
-.qm {
-    font: 700 30px 'Nunito', sans-serif;
+.quem {
+    font: 300 30px 'Montserrat', sans-serif;
     text-align: center;
     margin-top: 100px;
 }
+.preto{
+    font: 500 30px 'Montserrat', sans-serif;
+}
+.azul{
+    font: 700 30px 'Montserrat', sans-serif;
+    color: #26B2F4;
+}
+.historia-sobre{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 
-.tempo {
+}
+.obj{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    font: 400 20px 'Montserrat', sans-serif;
+    margin-top: 80px;
+ border: 1px solid;
+}
+.obj:hover{
+    background-color: #EFFAFF;
+    border: 1px solid #26B2F4;  
+}
+.histo{
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    font: 400 20px 'Montserrat', sans-serif;
+    margin-top: 80px;
+    border: 1px solid;
+}
+.histo:hover{
+    background-color: #EFFAFF;
+    border: 1px solid #26B2F4;  
+}
+.emprefeliz{
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    font: 400 20px 'Montserrat', sans-serif;
+    margin-top: 80px;
+    border: 1px solid;
+}
+.emprefeliz:hover{
+    background-color: #EFFAFF;
+    border: 1px solid #26B2F4;  
+}
+.governanca{
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    font: 400 20px 'Montserrat', sans-serif;
+    margin-top: 80px;
+    border: 1px solid;
+}
+.governanca:hover{
+    background-color: #EFFAFF;
+    border: 1px solid #26B2F4;  
+}
+
+
+.colaborador{
+    background-color: #C8E9FF;
+    padding: 30px 30px 30px 30px;
+    width: 800px;
+    height: 260px;
+    margin-left: 350px;
+    margin-top: 100px;
+   font:400 15px 'Manrope', sans-serif;
+}
+.venha{
+    text-align: center;
+    margin-top: 10px;
+    font: 600 15px 'Manrope', sans-serif;
+    
+}
+
+.prof{
+    font: 500 15px 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.maos{
+    margin-left: 700px;
+    margin-top: -30px;
+}
+
+.flecha{
+    margin-top: 180px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 710px;
+}
+.obj2{
+    color:#FB2673;
+    font:  'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* .tempo {
 
     font: 500 20px 'Nunito', sans-serif;
     font-family: 'Nunito';
@@ -237,9 +335,9 @@ ul li ul li{
     padding-top: 60px;
     padding: 0 0 60px;
 
-}
+} */
 
-.historia {
+/* .historia {
     font: 700 30px 'Nunito', sans-serif;
     text-align: center;
     margin: 100px 0;
@@ -345,7 +443,7 @@ ul li ul li{
     padding: 30px;
     text-align: center;
 }
-
+ */
 
 .conheca {
 
