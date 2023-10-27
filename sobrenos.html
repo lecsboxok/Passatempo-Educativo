@@ -10,69 +10,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script>
-        $(document).ready(function() {
- var botao = $('.a-teste');
- var dropDown = $('.ul-imagens');    
+        $(document).ready(function () {
+            var botao = $('.a-teste');
+            var dropDown = $('.ul-imagens');
 
-    botao.on('click', function(event){
-        dropDown.stop(true,true).slideToggle();
-        event.stopPropagation();
-    });
-});
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
 
-$(document).ready(function() {
- var botao = $('.a-teste2');
- var dropDown = $('.ul-imagens2');    
+        $(document).ready(function () {
+            var botao = $('.a-teste2');
+            var dropDown = $('.ul-imagens2');
 
-    botao.on('click', function(event){
-        dropDown.stop(true,true).slideToggle();
-        event.stopPropagation();
-    });
-});
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
 
     </script>
 </head>
 
-<body>
+<body class="corpo">
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
-                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png" alt="Logo Passatempo educativo"></a>
+                <a href="index.html"><img class="cabecalho_Logo" src="img/logoPassatempo.png"
+                        alt="Logo Passatempo educativo"></a>
             </div>
-            <div class="cabecalho_nav_itens">
-                <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
-                <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
-                <a class="cabecalho_nav_item" href="Voluntário.html">Voluntários</a>
-                <a class="cabecalho_nav_item" href="#contato">Contato</a>
-            </div>
-            <div class="geral">
-                <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
-                <div class="cabecalho_nav_item">
-                    <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
-                    <a class="mobileCabecalho" href="projetos.html">Projetos</a>
-                    <a class="mobileCabecalho" href="Voluntário.html">Voluntários</a>
-                    <a class="mobileCabecalho" href="#contato">Contato</a>
-                    <a class="mobileCabecalho" href="doeAgora.html">Doe Agora</a>
+            <div class="navegacao">
+                <div class="cabecalho_nav_itens">
+                    <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
+                    <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
+                    <a class="cabecalho_nav_item" href="Voluntário.html">Voluntários</a>
+                    <a class="cabecalho_nav_item" href="#contato">Contato</a>
                 </div>
-            </div>
-            <div class="idiomas">
-                <nav class="teste">
-                    <ul class="principal">
-                        <li class="li-p">
-                            <a href="javascript://" class="a-teste">
-                                <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
-                            </a>
-            
-                            <ul class="ul-imagens">
-                                <a href="sobrenos.ingles.html"><li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li></a>
-                                <a href="espanhol.html"><li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste"></li></a>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
+                <div class="geral">
+                    <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
+                    <div class="cabecalho_nav_item">
+                        <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
+                        <a class="mobileCabecalho" href="projetos.html">Projetos</a>
+                        <a class="mobileCabecalho" href="Voluntário.html">Voluntários</a>
+                        <a class="mobileCabecalho" href="#contato">Contato</a>
+                        <a class="mobileCabecalho" href="doeAgora.html">Doe Agora</a>
+                    </div>
+                </div>
+                <div class="idiomas">
+                    <nav class="teste">
+                        <ul class="principal">
+                            <li class="li-p">
+                                <a href="javascript://" class="a-teste">
+                                    <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                                </a>
+
+                                <ul class="ul-imagens">
+                                    <a href="index.ingles.html">
+                                        <li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li>
+                                    </a>
+                                    <a href="espanhol.html">
+                                        <li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste">
+                                        </li>
+                                    </a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
+                </div>
             </div>
         </nav>
         <div class="cabecalho_sombra"></div>
@@ -81,13 +89,14 @@ $(document).ready(function() {
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
+
 
     <div class="mundo">
         <div class="imagem começo">
@@ -102,8 +111,8 @@ $(document).ready(function() {
         </div>
     </div>
     <div class="historia-sobre">
-        <button class="obj">Objetivo</button>
-        <button class="histo">História</button>
+        <a href="#object"><button class="obj">Objetivo</button></a>
+        <a href="#historia"><button class="histo">História</button></a>
         <button class="emprefeliz">Empresa Feliz</button>
         <button class="governanca">Governança</button>
     </div>
@@ -120,93 +129,26 @@ $(document).ready(function() {
     </div>
 </div>
     </div>
-
-
-    <div class="object">
+    <div class="object" id="object">
         <img src="img/SobreNós3.png" alt="" class="flecha">
         <h1 class="obj2">Objetivo</h1>
+        <div class="texto">
+            O nosso principal objetivo é ajudar no processo de ensino-aprendizagem, com projetos <br> diretamente educacionais, que ajudam a diminuir a desigualdade no acesso à educação e <br>fornecer esse meio tão importante aos mais carentes e necessitados.
+        </div>
     </div>
+
+<div class="historia-retangulo" id="historia">
+    <div class="retangulo">
+        <img src="img/SobreNós4.png" alt="">
+        <h1 class="titulo1">História
+        </h1>
+    </div>
+</div>
+
+
    
     
-    <!-- <div class="retangulo">
-        <div class="azul">
-            <h3 class="historia">História</h3>
-            <br><br><br><br><br>
-        </div>
-        <div class="cronograma">
-            <div class="fase1">
-                <img src="img/historia1.png" alt="crianças" class="roda">
-                <div class="circulo amarelo">
-                    <img src="img/elemento1.png" alt="elemento" class="tres-pessoas">
-                </div>
-                <p class="descricao"> A primeira equipe de trabalho tinha apenas três pessoas, e a iniciativa dos
-                    trabalhos nesta área do lazer educacional partiu da professora de educação física Carla Ravaioli e
-                    de Carlos Chinen</p>
-            </div>
-
-            <div class="fasee1">
-                <p class="descricao">Depois de muitos meses de pesquisa e trabalho em escolas paulistanas os projetos
-                    ganharam dimensão social.</p>
-                <div class="circulo azulfundo">
-                    <img src="img/elemento2.png" alt="tempo" class="elemento">
-                </div>
-                <img src="img/historia2.png" alt="mulher" class="historia">
-            </div>
-            <div class="fase1 fase2">
-                <img src="img/historia3.png" alt="crianças" class="crianca">
-                <div class="circulo vermelho">
-                    <img src="img/elemento3.png" alt="arvore" class="natal">
-                </div>
-                <p class="descricao">Nossa primeira atividade foi uma Festa de Natal para 150 crianças em dezembro na
-                    Instituição Colmeia, atualmente titulada de Centro Educacional Ir.Maria Bernadette, localizado na
-                    zona norte da cidade de São Paulo. Desde esse dia são realizadas atividades educativas para crianças
-                    deste local.</p>
-            </div>
-            <div class="fasee1">
-                <p class="descricao">O Centro Maria Bernadette é uma Instituição mantida pela Congregação das Irmãs de
-                    São José de Chambéry que atende 300 crianças e adolescentes de cortiços e favelas da região da zona
-                    norte de São Paulo. Ainda hoje, um de nossos projetos ocorre nesta mesma Instituição.</p>
-                <div class="circulo laranja">
-                    <img src="img/elemento4.png" alt="predio" class="predios">
-                </div>
-                <img src="img/historia4.png" alt="idoso" class="idosos">
-            </div>
-        </div> -->
-
-    </div>
-    <div class="nossaequipe">
-        <div class="equipenossa">
-            <h2 class="conheca">Conheça nossa equipe</h2>
-            <img src="img/nossaequipe1.png" alt="equipe" class="nossa">
-            <p class="feriado">Passatempo Educativo no feriado</p>
-        </div>
-    </div>
-    <div class="retangulo2">
-        <div>
-            <p class="profissionais">A equipe é formada por profissionais das áreas de Lazer e Turismo, Recreação e
-                Eventos, Educação Física, Pedagogia, Biologia, Psicologia, Jornalismo, Artes Plásticas, Teatro e por
-                professores colaboradores.</p>
-        </div>
-    </div>
-    <div class="professores">
-
-
-        <div class="colaboradores">
-            <img src="img/historia5.png" alt="gente" class="gentes">
-            <img src="img/historia6.png" alt="pessoas" class="gentes">
-            <img src="img/historia7.png" alt="pessoal" class="gentes">
-        </div>
-    </div>
-
-    <div class="retangulo3">
-        <div>
-            <p class="monitor">A Passatempo Educativo tem consciência de que os valores defendidos por um monitor são
-                muito importantes não só para que haja uma relação de respeito e trabalho bem-sucedido, mas,
-                principalmente que haja uma troca de experiências e conhecimento de forma positiva e saudável entre
-                todos os envolvidos durante cada projeto.
-            </p>
-        </div>
-    </div>
+    
 
     <footer>
         <section id="contato" class="section">
