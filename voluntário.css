@@ -11,18 +11,18 @@ a {
 }
 
 @font-face {
-    font-family: Nunito;
-    src: url(Assets/Nunito-VariableFont_wght.ttf);
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Aleo;
-    src: url(Assets/Aleo-Regular.ttf);
+    font-family: 'Forum';
+    src: url(fonts/Forum-Regular.ttf);
 }
 
 @font-face {
-    font-family: Aleo-light;
-    src: url(Assets/Aleo-Light.ttf);
+    font-family: 'Manrope';
+    src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
 html {
@@ -33,50 +33,51 @@ html {
 #cabecalho {
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 11;
     background-color: #FFF;
 }
 
 #cabecalho .cabecalho_sombra {
-    height: 16px;
+    height: 5px;
     background-color: #FFD233;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
 }
 
 .cabecalho_nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.navegacao {
+    display: flex;
     align-items: center;
 }
 
 .cabecalho_nav_itens {
-    margin-left: 100px;
+    margin-right: 30px;
 }
 
 .cabecalho_nav_item {
-    margin: 20px;
-    background: #FFD233;
-    font: 400 17px 'Aleo', serif;
-    border-radius: 10px;
-    padding: 9px 18px;
+    font: 400 18px 'Montserrat', serif;
     color: #000;
+    margin-right: 25px;
 }
 
 .cabecalho_nav_item_Doe {
     background-color: #FB2673;
-    font: 400 17px 'Aleo', serif;
+    font: 400 17px 'Montserrat', serif;
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
 }
 
 .idiomas {
-    padding-top: 17px;
+    margin: 15px 20px 0 0;
 }
 
-
-/* PARA PÁGINAS EM PORTUGUÊS */
-
+/* IDIOMAS */
 ul {
     list-style: none;
 }
@@ -86,6 +87,7 @@ ul {
     color: #fff;
     display: block;
     padding: 0 20px;
+
 }
 
 .a-teste:hover {
@@ -165,543 +167,141 @@ ul li ul li {
     z-index: 100;
 }
 
-/* TITULO UM PARTE UM */
-
-
-.Azul {
-    padding-top: 100px;
-
+/* SEPARAR */
+.conteudo {
+    padding-top: 89px;
 }
 
-.Azul {
-    color: #DCF4FF;
-    background-color: #DCF4FF;
-    width: 100%;
-    height: 150vh;
-}
-
-.tituloUm {
+/* FRASE */
+#frase {
     text-align: center;
-    font: 800 40px 'Nunito', serif;
-    left: 500px;
-    color: #000;
-    margin-top: 80px;
-
-
-
+    padding: 60px 450px;
+    margin-top: 40px;
 }
 
-.MaosUm {
-    margin-top: -60px;
-    margin-left: 970px;
-    height: 79px;
-    width: 81px;
+.frase,
+.frase-autor {
+    font: 300 26px 'Forum', serif;
 }
 
-.Formulario {
-    color: #000;
-    margin-top: 50px;
+.frase-autor {
     text-align: center;
-    font: 400 24px 'Nunito', sans-serif;
+    margin-top: 30px;
 }
 
-.FormularioB {
-    color: #000;
-    margin-top: 20px;
-    text-align: center;
-    left: 380px;
-    font: 400 16px 'Nunito', sans-serif;
-}
-
-.rosa {
-    background-color: #FFF2F7;
-    height: 506px;
-    position: absolute;
-    top: 320px;
-    left: 240px;
-    margin: 0 90 0 90;
-    width: 1000px;
-    text-align: center;
-}
-
-.coracao {
-    width: 50px;
-    height: 50px;
-    top: -2010px;
-    margin-left: 900px;
-}
-
-.FundoOnda {
-    width: 100%;
-    margin-top: -90px;
-}
-
-/* TITULO DOIS PARTE DOIS */
-
-
-.TituloDois {
-    color: #000;
-    font: 800 40px 'Nunito', sans-serif;
-    text-align: center;
-    padding-top: 70px;
-}
-
-.MaosDois {
-    margin-top: -60px;
-    margin-left: 970px;
-    height: 79px;
-    width: 81px;
-
-}
-
-/* TEXTO DA PARTE DOIS */
-.TextoUmA {
-    font: 400 20px 'Nunito', sans-serif;
-    text-align: center;
-
-}
-
-.TextoUmB {
-    font: 400 20px 'Nunito', sans-serif;
-    text-align: center;
-
-}
-
-.TextoUmC {
-    font: 400 20px 'Nunito', sans-serif;
-    text-align: center;
-}
-
-.textoUm {
-    margin-top: 60px;
-}
-
-/* PARTE DOS ICONES E SETAS */
-
-.tudoIcones {
+.titulotube {
     display: flex;
     justify-content: center;
-    column-gap: 200px;
-    margin-top: 80px;
-
-}
-
-#Moeda {
-    height: 120px;
-    width: 120px;
+    margin-bottom: 70px;
+    column-gap: 40px;
 }
 
 
-#Bolas {
-    height: 120px;
-    width: 120px;
-
+/* NOSSA HISTÓRIA */
+#nossaHistoria {
+    background: rgba(180, 219, 255, 0.14);
+    padding: 100px;
 }
 
-#Teatro {
-    height: 120px;
-    width: 120px;
-    left: 1000px;
-}
-
-#Menino {
-    height: 106px;
-    width: 106px;
-
-}
-
-
-#ROUANET {
-    width: 90px;
-    height: 100px;
-}
-
-#ESPORTE {
-    width: 90px;
-    height: 100px;
-}
-
-#CULTURA {
-    width: 90px;
-    height: 100px;
-}
-
-#FUMCAD {
-    width: 90px;
-    height: 100px;
-
-}
-
-
-
-/* SETAS */
-
-
-.setaUm {
-    margin-top: 60px;
-    margin-left: 230px;
-    width: 80px;
-    height: 80px;
-}
-
-.setaDois {
-    margin-top: 60px;
-    margin-left: 250px;
-    width: 80px;
-    height: 80px;
-}
-
-.setaTres {
-    margin-top: 60px;
-    margin-left: 240px;
-    width: 80px;
-    height: 80px;
-}
-
-.setaQuatro {
-    margin-top: 60px;
-    margin-left: 235px;
-    width: 80px;
-    height: 80px;
-}
-
-#ROUANET {
-    margin-left: 100px;
-}
-
-#ESPORTE {
-    margin-left: 0px;
-}
-
-
-/* PARTE TRÊS TEXTO */
-/* TEXTO UM LEI ROUANET */
-
-.quadradoUm {
-    background-color: #FFF1BE;
-    border-radius: 0px;
-    height: 693px;
-    margin-top: 250px;
-    margin-left: 350px;
-    width: 800px;
-    border: 3px dashed #000;
-
-}
-
-
-
-
-.TextoDoisA {
-    margin-top: 70px;
-    font: 400 20px 'Nunito', sans-serif;
-    padding-left: 80px;
-    width: 716px;
-    text-align: justify;
-
-}
-
-.tituloDoisA {
-    margin-left: 38%;
-    font: 400 20px 'Nunito', sans-serif;
-
-}
-
-.TextoDoisB {
-    font: 400 20px 'Nunito', sans-serif;
-    text-align: justify;
-    padding-left: 80px;
-    width: 716px;
-
-}
-
-.Md {
-    width: 120px;
-    height: 120px;
-
-}
-
-.ImagemA {
-    padding-top: 50px;
-    margin-left: 320px;
-    width: 180px;
-    height: 180px;
-}
-
-.setaDoisA {
-    width: 60px;
-    height: 60px;
+.saibaMais {
     display: flex;
-    margin-top: -70%;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-/* INGLES */
-.SetaTextoAIn {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-top: -65%;
+.tituloSaiba {
+    font: 700 34px 'Nunito', sans-serif;
 }
 
-/* PARTE DE ESPORTE */
-
-.quadroDois {
-    background-color: #FFF1BE;
-    border-radius: 0px;
-    height: 500px;
-    margin-top: 250px;
-    margin-left: 350px;
-    width: 800px;
-    border: 3px dashed #000;
+.laranja {
+    color: #E05100;
 }
 
-.tituloDoisB {
-    margin-left: 37%;
-    font: 400 20px 'Nunito', sans-serif;
-    margin-top: -5px;
+.azul {
+    color: #29166F;
 }
 
-.tituloDoisBB {
-    margin-left: 40%;
-    font: 400 20px 'Nunito', sans-serif;
+.vermelho {
+    color: #BA3030;
 }
 
-.setaDoisB {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-top: -49%;
-}
-
-/* INGLES */
-.SetaTextoBIn {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-top: -45%;
-}
-
-
-
-.imagemB {
-    padding-top: 50px;
-    display: flex;
-    margin-left: 320px;
-    width: 180px;
-    height: 180px;
-}
-
-.textoTres {
-    margin-top: 50px;
-    font: 400 20px 'Nunito', sans-serif;
-    padding-left: 80px;
-    width: 716px;
-    text-align: justify;
-}
-
-/* PARTE DE ATUAÇÃO */
-.quadroTres {
-    background-color: #FFF1BE;
-    border-radius: 0px;
-    height: 600px;
-    margin-top: 280px;
-    margin-left: 350px;
-    width: 800px;
-    border: 3px dashed #000;
-}
-
-.tituloDoisC {
-    margin-left: 38%;
-    font: 400 20px 'Nunito', sans-serif;
-}
-
-.tituloDoisCC {
-    margin-left: 34%;
-    font: 400 20px 'Nunito', sans-serif;
-}
-
-.imagemC {
-    padding-top: 40px;
-    display: flex;
-    margin-left: 320px;
-    width: 180px;
-    height: 180px;
-    margin-top: -10px;
-}
-
-.textoQuatro {
-    font: 400 20px 'Nunito', sans-serif;
-    text-align: justify;
-    padding-left: 100px;
-    width: 716px;
-    margin-top: 50px;
-}
-
-.setaDoisC {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-top: -60%;
-}
-
-/* INGLES */
-.SetaTextoCIn {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-top: -52%;
-}
-
-/* PARTE DO MENINO */
-
-.quadroQuatro {
-    background-color: #FFF1BE;
-    border-radius: 0px;
-    height: 590px;
-    margin-top: 250px;
-    margin-left: 350px;
-    width: 800px;
-    border: 3px dashed #000;
-}
-
-.tituloDoisD {
-    margin-left: 44%;
-    font: 400 20px 'Nunito', sans-serif;
-}
-
-.imagemD {
-    padding-top: 40px;
-    display: flex;
-    margin-left: 320px;
-    width: 170px;
-    height: 170px;
-}
-
-.TextoCinco {
-    font: 400 20px 'Nunito', sans-serif;
-    text-align: justify;
-    margin-top: 7%;
-    padding-left: 80px;
-    width: 716px;
-
-}
-
-.setaDoisD {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-top: -62%;
-}
-
-/* INGLES */
-.SetaTextoDIn {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-top: -58%;
-}
-
-
-/* FORMULARIO */
-.btn {
-    background-color: #FFF2F7;
-    color: #000000;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    width: 70px;
-    font: 300 16px 'Nunito' sans-serif;
-}
-
-
-
-.forms {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.corFundo {
-    background-color: #FFF;
-    width: 630px;
-    height: 702px;
-    margin-top: 80px;
-    padding: 35px;
-}
-
-.fundo {
-    background-color: rgba(232, 232, 232, 0.72);
-    width: 558px;
-    height: 538px;
-    margin-top: 20px;
+.historia {
+    width: 490px;
+    margin: 60px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
-    padding: 25px;
+    justify-content: center;
 }
 
-input,
-button {
-    border-radius: 5px;
-}
-
-.campo input[type="text"],
-.campo input[type="email"],
-.campo input[type="tel"],
-.campo input[type="date"] {
-    display: flex;
-    text-align: justify;
-    width: 410px;
-}
-
-.campo {
-    margin-bottom: 1em;
-    display: flex;
-}
-
-.campo label {
-    margin-bottom: 0.2em;
-    color: #000;
-    display: inline;
-}
-
-.campo input[type="text"],
-.campo input[type="Email"],
-.campo input[type="tel"],
-.campo input[type="Cidade"] {
-    padding: 0.2em;
-    border: 1px;
-
-}
-
-label {
-    font: 400 17px 'Nunito', sans-serif;
-    width: 100px;
-}
-
-.formulario {
-    margin-top: 50px;
-}
-
-.aviso {
-    font: 200 14px 'Nunito', sans-serif;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.textBotao {
-    font: 400 15px 'Nunito', sans-serif;
+.textoBotao {
+    font: 400 20px 'Nunito', sans-serif;
     color: #fff;
+    text-align: center;
+}
+
+.bloco {
+    text-align: center;
+}
+
+.botao {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    display: inline;
+    border-radius: 7px;
+}
+
+.fundoVerde {
+    background-color: #48A400;
+    padding: 10px 18px;
+}
+
+.fundoVermelho {
+    background-color: #A40000;
+    padding: 10px 18px;
+}
+
+.fundoLaranja {
+    background-color: #E05100;
+    padding: 10px 18px;
+}
+
+.fundoAzul {
+    background-color: #29166F;
+    padding: 10px 18px;
+}
+
+
+/* PARCEIROS E PATROCINADORES */
+.conteudo_6 {
+    padding: 70px;
+    margin: 60px 0;
+    background: rgba(255, 33, 33, 0.46);
+}
+
+.slider-width {
     text-align: center;
 }
 
-.parteTres {
-    padding-bottom: 170px;
+.patroImg {
+    margin: 10px;
 }
 
+.patroTitulo {
+    text-align: center;
+    margin-bottom: 60px;
+}
 
-/* FOOTER */
+.patro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
     padding: 73px;
@@ -799,29 +399,18 @@ label {
     margin-top: 10px;
 }
 
-/* IMAGENS GIRANTES */
-
-
-
-@keyframes rotate {
-    0% {
-        transform: rotate();
-    }
-
-    70% {
-        transform: rotate(360deg);
-    }
-}
-
 .geral {
     display: none;
 }
 
-
-
-/* MOBILE */
-
 @media screen and (max-width: 400px) {
+
+    .conteiner {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
 
     /* CABEÇALHO */
 
@@ -852,7 +441,6 @@ label {
         display: flex;
         left: 150px;
         position: relative;
-
     }
 
     .geral:hover .cabecalho_nav_item {
@@ -901,584 +489,41 @@ label {
 
     .idiomas {
         right: 40px;
-        top: 4px;
-        position: relative;
-
-    }
-
-    /* TÉRMINO DO CABEÇALHO */
-
-    .titulo {
-        width: 400px;
-    }
-
-    .tituloUm {
-        font-size: 25px;
-    }
-
-    .rosa {
-        width: 320px;
-        margin-left: -50%;
-
-    }
-
-
-    .campo input[type="text"],
-    .campo input[type="email"],
-    .campo input[type="tel"],
-    .campo input[type="date"] {
-        display: flex;
-        text-align: justify;
-        width: 135px;
-    }
-
-    .TituloDois {
-        font-size: 25px;
-
-    }
-
-    .TextoUmA,
-    .TextoUmB,
-    .TextoUmC {
-        font-size: 13px;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-
-
-    }
-
-    .setaUm {
-        margin-top: 40px;
-        margin-left: 35px;
-        width: 20px;
-        height: 20px;
-    }
-
-    .setaDois {
-        margin-top: 40px;
-        margin-left: 77px;
-        width: 20px;
-        height: 20px;
-    }
-
-    .setaTres {
-        margin-top: 40px;
-        margin-left: 85px;
-        width: 20px;
-        height: 20px;
-    }
-
-    .setaQuatro {
-        margin-top: 40px;
-        margin-left: 76px;
-        width: 20px;
-        height: 20px;
-    }
-
-
-
-    .tudoIcones {
-        display: flex;
-        justify-content: center;
-        column-gap: 50px;
-        margin-top: 80px;
-
-    }
-
-    #Moeda {
-        height: 50px;
-        width: 50px;
-    }
-
-
-    #Bolas {
-        height: 50px;
-        width: 50px;
-
-    }
-
-    #Teatro {
-        height: 50px;
-        width: 50px;
-        left: 1000px;
-    }
-
-    #Menino {
-        height: 50px;
-        width: 50px;
-
-    }
-
-
-    #ROUANET {
-        width: 90px;
-        height: 100px;
-    }
-
-    #ESPORTE {
-        width: 90px;
-        height: 100px;
-    }
-
-    #CULTURA {
-        width: 90px;
-        height: 100px;
-    }
-
-    #FUMCAD {
-        width: 90px;
-        height: 100px;
-
-    }
-
-    .quadradoUm {
-        background-color: #FFF1BE;
-        border-radius: 0px;
-        height: 773px;
-        margin-top: 150px;
-        margin-left: 70px;
-        width: 280px;
-        border: 3px dashed #000;
-
-    }
-
-
-    .TextoDoisA {
-        margin-top: 40px;
-        font: 400 20px 'Nunito', sans-serif;
-        font-size: 15px;
-        padding-left: 50px;
-        width: 206px;
-        text-align: justify;
-        padding-left: 30px;
-        padding-right: 30px;
-        width: 100%;
-
-    }
-
-    .tituloDoisA {
-        margin-left: 35%;
-        font: 400 20px 'Nunito', sans-serif;
-        font-size: 15px;
-        margin-top: -35%;
-    }
-
-    .TextoDoisB {
-        font: 400 20px 'Nunito', sans-serif;
-        text-align: justify;
-        font-size: 15px;
-        padding-left: 50px;
-        width: 206px;
-        text-align: justify;
-        padding-left: 30px;
-        padding-right: 30px;
-        width: 100%;
-
-    }
-
-    .Md {
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        margin-left: 80px;
-        margin-top: -30px;
-
-    }
-
-    .ImagemA {
-        width: 10px;
-        margin-left: 40px;
-    }
-
-
-    .setaDoisA {
-        width: 34px;
-        height: 34px;
-        display: flex;
-        margin-top: -616px;
-    }
-
-    /* INGLES */
-    .SetaTextoAIn {
-        width: 34px;
-        height: 34px;
-        display: flex;
-        margin-top: 10px;
-
-    }
-
-
-
-    /* PARTE DE ESPORTE */
-
-    .quadroDois {
-        background-color: #FFF1BE;
-        border-radius: 0px;
-        height: 463px;
-        margin-top: 150px;
-        margin-left: 70px;
-        width: 280px;
-        border: 3px dashed #000;
-    }
-
-    .Formulario {
-        font-size: 17px;
-    }
-
-    .tituloDoisB {
-        margin-left: 25%;
-        font: 400 20px 'Nunito', sans-serif;
-        margin-top: -38%;
-        font-size: 15px;
-
-    }
-
-    .tituloDoisBB {
-        margin-left: 32%;
-        font: 400 20px 'Nunito', sans-serif;
-        margin-top: 10px;
-        font-size: 15px;
-    }
-
-    .setaDoisB {
-        width: 34px;
-        height: 34px;
-        display: flex;
-        margin-top: 0;
-    }
-
-    .SetaTextoB {
-        margin-top: -350px;
-    }
-
-    /* INGLES */
-    .SetaTextoBIn {
-        width: 94px;
-        height: 34px;
-        display: flex;
-        margin-top: -333px;
-
-    }
-
-    .imagemB {
-        margin-left: 40px;
-        width: 10px;
-    }
-
-    .Bola {
-        margin-left: 65px;
-        width: 70px;
-        height: 70px;
-        margin-top: -40px;
-    }
-
-    .textoTres {
-        margin-top: 40px;
-        font: 400 20px 'Nunito', sans-serif;
-        font-size: 15px;
-        padding-left: 30px;
-        padding-right: 30px;
-        width: 100%;
-        text-align: justify;
-    }
-
-    /* PARTE DE ATUAÇÃO */
-    .quadroTres {
-        background-color: #FFF1BE;
-        border-radius: 0px;
-        height: 613px;
-        margin-top: 150px;
-        margin-left: 70px;
-        width: 280px;
-        border: 3px dashed #000;
-    }
-
-    .tituloDoisC {
-        margin-left: 23%;
-        font: 400 20px 'Nunito', sans-serif;
-        margin-top: -0%;
-        font-size: 15px;
-    }
-
-    .tituloDoisCC {
-        margin-left: 15%;
-        font: 400 20px 'Nunito', sans-serif;
-        margin-top: 10px;
-        font-size: 15px;
-    }
-
-    .imagemC {
-        /* padding-top: 40px; */
-        display: flex;
-        margin-left: 35%;
-        width: 120px;
-        height: 120px;
-        margin-top: -12%;
-    }
-    
-
-    .textoQuatro {
-        margin-top: 40px;
-        font: 400 20px 'Nunito', sans-serif;
-        font-size: 15px;
-        padding-left: 50px;
-        width: 206px;
-        text-align: justify;
-        padding-left: 30px;
-        padding-right: 30px;
-        width: 100%;
-    }
-
-    .setaDoisC {
-        width: 34px;
-        height: 34px;
-
-        margin-top: -180%;
-    }
-    .SetaTextoC{
-        margin-top: -178px;
-    }
-
-    /* INGLES */
-    .SetaTextoCIn {
-        width: 34px;
-        height: 34px;
-        display: flex;
-        margin-top: -410px;
-    }
-
-    /* PARTE DO MENINO */
-
-    .quadroQuatro {
-        background-color: #FFF1BE;
-        border-radius: 0px;
-        height: 685px;
-        margin-top: 150px;
-        margin-left: 70px;
-        width: 280px;
-        border: 3px dashed #000;
-    }
-
-    .tituloDoisD {
-        margin-left: 36%;
-        font: 400 20px 'Nunito', sans-serif;
-        font-size: 15px;
-    }
-    .SetaTextoD{
-        margin-top: -175px;
-    }
-
-    /* INGLES */
-    .SetaTextoDIn {
-        width: 34px;
-        height: 34px;
-        display: flex;
-        margin-top: -475px;
-
-    }
-
-    .imagemD {
-        display: flex;
-        margin-left: 95px;
-        width: 120px;
-        height: 120px;
-        margin-top: -12%;
-    }
-
-    .TextoCinco {
-        margin-top: 10%;
-        font: 400 20px 'Nunito', sans-serif;
-        font-size: 15px;
-        padding-left: 55;
-        width: 206px;
-
-        padding-left: 30px;
-        padding-right: 30px;
-        width: 100%;
-    }
-
-    .setaDoisD {
-        width: 34px;
-        height: 34px;
-        display: flex;
-        margin-top: -206%;
-    }
-
-
-    /* ______________________________________________ */
-
-
-    .MaosUm {
-        margin-left: 83%;
-        width: 50px;
-        height: 50px;
-    }
-
-    .coracao {
-        margin-left: 80%;
-        margin-top: -10%;
-        width: 30px;
-        height: 30px;
-    }
-
-    .MaosDois {
-        width: 40px;
-        height: 40px;
-        margin-left: 88%;
-        margin-top: -14%;
-    }
-
-    .access-button {
-        margin-left: 5%;
-    }
-
-    .enabled {
-        margin-left: 5%;
-    }
-
-
-    /* RODAPÉ */
-    #contato {
-        margin-top: 100px;
-        width: 400px;
-
-    }
-
-    .logoRodape {
-        margin-left: 90px;
-        width: 100px;
-    }
-
-    .menina {
-        width: 120px;
-        left: 30px;
-    }
-
-    .redes {
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        height: 50px;
-        right: 50px;
+        top: 5px;
         position: relative;
     }
-
-    .icone {
-        width: 40px;
-        padding: 9px;
-        padding-left: 3px;
-    }
-
-    .icone:hover {
-        width: 45px;
-        transition: 0.5s;
-        filter: brightness(50%);
-    }
+}
 
 
-    .texto-rodape {
-        font: 400 12px 'Nunito', sans-serif;
-        right: 25px;
-        width: 300px;
-        position: relative;
-    }
-
-    .logotipoRodape {
-        width: 120px;
-    }
-
-    .rodapeTexto {
-        width: 100%;
-    }
-
-    .enderecoTexto {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-bottom: 25px;
-        margin-right: 50px;
-        width: 100%;
-        position: relative;
-
-    }
-
-    .endereco {
-        top: 30px;
-
-    }
-
-    .iconMaps {
-        right: 25px;
-        width: 30px;
-        position: relative;
-    }
-
-    .textoMaps {
-        font: 400 12px 'Nunito', sans-serif;
-        right: 30px;
-        width: 100%;
-        position: relative;
-    }
-
-    .imgMaps {
-        right: 90px;
-        position: relative;
-
-    }
-
-    .rodape-lado1 {
-        width: 100%;
-    }
-
-    .rodape-lado2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .maps {
-        border-radius: 10px;
-        width: 200px;
-        left: 130px;
-    }
-
-    .a-maps {
-        right: 170px;
-    }
-
-    .amigoSurdo {
-        width: 320px;
-        right: 30px;
-        position: relative;
-    }
-
-    .direitos {
-        width: 100%;
-        margin-top: 90px;
-    }
-
-    .autorais {
-        font: 400 10px 'Aleo-light', serif;
-        width: 290px;
-    }
-
-    .direito {
-        font: 300 14px 'Aleo-light', serif;
-        margin-top: 15px;
-        width: 300px;
-        text-align: center;
-    }
-
-    label {
-        font-size: 12px;
-    }
-
-    ::placeholder {
-        font-size: 12px;
-    }
 
 
-    /* TERMINO DO RODAPÉ */
+
+
+/* COMEÇO DO VOLUNTÁRIOS */
+.imagem-comeco {
+    width: 1440px;
+    height: 483px;
+    top: 97px;
+
+}
+
+.titulo-dois {
+    color: #26B2F4;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+   margin-left: 30px;
+    margin-top: 90px;
+}
+
+.texto-1 {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: justify;
 
 }
