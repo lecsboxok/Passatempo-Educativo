@@ -35,7 +35,7 @@
 
     </script>
 </head>
-
+<!-- 
 <body class="corpo">
     <header id="cabecalho">
         <nav class="cabecalho_nav">
@@ -98,25 +98,123 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    </script> -->
 
-    <!-- fim de Cabeçalho -->
+<!-- fim de Cabeçalho -->
 
 
 
-    <!-- começo agora de voluntários -->
+<!-- começo agora de voluntários -->
 
-    <main>
-        <div class="container">
-            <img class="imagem-comeco" src="img/principal-voluntario.jpg" alt="">
+<main>
+    <div id="container">
+        <img class="imagem-comeco" src="img/principal-voluntario.jpg" alt="">
+    </div>
+    <div id="segunda-parte">
+        <h3 class="titulo-dois">Programa de Voluntariado</h3>
+
+        <p class="texto-1">Quer ser voluntário na Passatempo Educativo? "Junte-se ao programa de voluntariado e
+            ajude a construir um
+            futuro mais brilhante através da educação. É uma oportunidade incrível para fazer a diferença na vida
+            das crianças e promover a educação de forma divertida."</p>
+
+    </div>
+
+    <img class="imagem-coracao" src="img/coração-voluntario.png" alt="">
+
+    <div id="terceira-parte">
+        <img class="retangulo-rosa" src="img/Rectangle 190.png" alt="">
+
+        <div class="imagem-funcio">
+            <img class="menina-funcionamento" src="img/menina-fucionamento.png" alt="">
         </div>
-        <div class="segunda-parte">
-            <h3 class="titulo-dois">Programa de Voluntariado</h3>
 
-            <p class="texto-1">Quer ser voluntário na Passatempo Educativo? "Junte-se ao programa de voluntariado e ajude a construir um
-                futuro mais brilhante através da educação. É uma oportunidade incrível para fazer a diferença na vida
-                das crianças e promover a educação de forma divertida."</p>
+        <div class="funcionamento">
+            <div class="numero-1-tudo">
+                <h3 class="titulo-1">Como funciona?</h3>
+                <img class="numero-1" src="img/numero-1-voluntario.png" alt="">
+                <h3 class="titulo-funcio1">Preencha o formulário</h3>
+                <p class="texto-funcio1">Insira seus dados no formulário abaixo.</p>
+            </div>
+
+
+
+            <div class="numero-2-tudo">
+
+                <div class="imagem-num2"> <img class="numero-2" src="img/numero-2-voluntario.png" alt=""></div>
+                <h3 class="titulo-funcio2">Aguarde o contato</h3>
+                <div class="texto">
+                    <p class="texto-funcio2">Espere a Passatempo Educativo entrar em contato com você referente ao
+                        voluntariado.</p>
+                        <button class="btn">Preencher formulário</button>
+                </div>
+
+
+            </div>
         </div>
-        <img class="imagem-coracao" src="img/coração-voluntario.png" alt="">
+    </div>
 
-    </main>
+    <div id="parte-quatro">
+        <h3 class="titulo-3">O que eu ganho sendo voluntário?</h3>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="img/alvoro-volt.png" alt="Imagem 1">
+                <p class="texto-car">Desenvolvimento pessoal</p>
+            </div>
+            <div class="slide">
+                <img src="img/cerebro-volt.png" alt="Imagem 2">
+                <p class="texto-car">Melhoria da saúde mental</p>
+            </div>
+            <div class="slide">
+                <img src="img/coreano-volt.png" alt="Imagem 3">
+                <p class="texto-car">Sentimento de pertencimento</p>
+            </div>
+            <div class="slide">
+                <img src="img/config-volt.png" alt="Imagem 4">
+                <p class="texto-car">Experiência de carreira</p>
+            </div>
+            <div class="slide">
+                <img src="img/quebra-cabeca-volt.png" alt="Imagem 5">
+                <p class="texto-car">Conexão social</p>
+            </div>
+            <div class="slide">
+                <img src="img/planet-terra-volt.png" alt="Imagem 6">
+                <p class="texto-car">Sentido de propósito</p>
+            </div>
+            
+        </div>
+        <button class="prev-btn" onclick="prevSlide()"> <img src="img/seta-direita-volt.png" alt=""></button>
+        <button class="next-btn" onclick="nextSlide()"> <img src="img/seta-esquerda-volt.png" alt=""></button>
+    </div>
+
+
+
+</main>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        const offset = (i - index) * 100;
+        slide.style.transform = `translateX(${offset}%)`;
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+
+
+</script>
