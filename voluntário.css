@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
 
 @font-face {
     font-family: 'Montserrat';
@@ -25,486 +22,9 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* CABEÇALHO */
-#cabecalho {
-    width: 100%;
-    position: fixed;
-    z-index: 11;
-    background-color: #FFF;
-}
-
-#cabecalho .cabecalho_sombra {
-    height: 5px;
-    background-color: #FFD233;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
-}
-
-.cabecalho_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 70px;
-}
-
-.navegacao {
-    display: flex;
-    align-items: center;
-}
-
-.cabecalho_nav_itens {
-    margin-right: 30px;
-}
-
-.cabecalho_nav_item {
-    font: 400 18px 'Montserrat', serif;
-    color: #000;
-    margin-right: 25px;
-}
-
-.cabecalho_nav_item_Doe {
-    background-color: #FB2673;
-    font: 400 17px 'Montserrat', serif;
-    border-bottom: 10px;
-    padding: 10px 30px;
-    color: #FFF;
-}
-
-.idiomas {
-    margin: 15px 20px 0 0;
-}
-
-/* IDIOMAS */
-ul {
-    list-style: none;
-}
-
-.a-teste {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 0 20px;
-
-}
-
-.a-teste:hover {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.img-teste {
-    display: block;
-    padding: 0 20px;
-}
-
-.principal {
-    background-color: rgba(0, 0, 255, 0);
-    width: 90%;
-    /* margin: auto; */
-}
-
-.li-p {
-    line-height: 50px;
-    float: left;
-}
-
-ul li ul li {
-    background-color: #74747400;
-    height: 50px;
-}
-
-.ul-imagens {
-    display: none;
-    padding-left: 2px;
-    position: fixed;
-    z-index: 100;
-}
-
-/* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
-
-ul {
-    list-style: none;
-}
-
-.a-teste2 {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 0 20px;
-}
-
-.a-teste2:hover {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.img-teste2 {
-    display: block;
-    padding: 0 20px;
-}
-
-.principal2 {
-    background-color: rgba(0, 0, 255, 0);
-    width: 90%;
-    /* margin: auto; */
-}
-
-.li-p2 {
-    line-height: 50px;
-    float: left;
-}
-
-ul li ul li {
-    background-color: #74747400;
-    height: 50px;
-}
-
-.ul-imagens2 {
-    display: none;
-    padding-left: 2px;
-    position: fixed;
-    z-index: 100;
-}
-
-/* SEPARAR */
-.conteudo {
-    padding-top: 89px;
-}
-
-/* FRASE */
-#frase {
-    text-align: center;
-    padding: 60px 450px;
-    margin-top: 40px;
-}
-
-.frase,
-.frase-autor {
-    font: 300 26px 'Forum', serif;
-}
-
-.frase-autor {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.titulotube {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
-    column-gap: 40px;
-}
-
-
-/* NOSSA HISTÓRIA */
-#nossaHistoria {
-    background: rgba(180, 219, 255, 0.14);
-    padding: 100px;
-}
-
-.saibaMais {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.tituloSaiba {
-    font: 700 34px 'Nunito', sans-serif;
-}
-
-.laranja {
-    color: #E05100;
-}
-
-.azul {
-    color: #29166F;
-}
-
-.vermelho {
-    color: #BA3030;
-}
-
-.historia {
-    width: 490px;
-    margin: 60px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.textoBotao {
-    font: 400 20px 'Nunito', sans-serif;
-    color: #fff;
-    text-align: center;
-}
-
-.bloco {
-    text-align: center;
-}
-
-.botao {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 10px;
-    display: inline;
-    border-radius: 7px;
-}
-
-.fundoVerde {
-    background-color: #48A400;
-    padding: 10px 18px;
-}
-
-.fundoVermelho {
-    background-color: #A40000;
-    padding: 10px 18px;
-}
-
-.fundoLaranja {
-    background-color: #E05100;
-    padding: 10px 18px;
-}
-
-.fundoAzul {
-    background-color: #29166F;
-    padding: 10px 18px;
-}
-
-
-/* PARCEIROS E PATROCINADORES */
-.conteudo_6 {
-    padding: 70px;
-    margin: 60px 0;
-    background: rgba(255, 33, 33, 0.46);
-}
-
-.slider-width {
-    text-align: center;
-}
-
-.patroImg {
-    margin: 10px;
-}
-
-.patroTitulo {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.patro {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-/* RODAPÉ */
-#contato {
-    background: rgba(255, 228, 133, 0.74);
-    padding: 73px;
-    padding-bottom: 15px;
-}
-
-#contato .conteiner {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logoRodape {
-    margin-left: 135px;
-}
-
-.redes {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-
-.icone {
-    width: 55px;
-    padding: 9px;
-}
-
-.icone:hover {
-    width: 62px;
-    transition: 0.5s;
-    filter: brightness(50%);
-}
-
-.texto-rodape {
-    font: 400 20px 'Nunito', sans-serif;
-}
-
-.rodapeTexto {
-    margin: 80px 110px 0 0;
-    text-align: justify;
-    width: 540px;
-}
-
-.enderecoTexto {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 25px;
-    margin-right: 15px;
-}
-
-.iconMaps {
-    margin-right: 20px;
-}
-
-.textoMaps {
-    font: 400 20px 'Nunito', sans-serif;
-}
-
-.rodape-lado2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.logotipoRodape {
-    width: 200px;
-}
-
-.maps {
-    border-radius: 10px;
-}
-
-.imgMaps {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 30px;
-}
-
-.direitos {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 120px;
-}
-
-.autorais {
-    font: 300 16px 'Aleo-light', serif;
-}
-
-.direito {
-    font: 300 20px 'Aleo-light', serif;
-    margin-top: 10px;
-}
-
-.geral {
-    display: none;
-}
-
-@media screen and (max-width: 400px) {
-
-    .conteiner {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        box-sizing: border-box;
-    }
-
-    /* CABEÇALHO */
-
-    #cabecalho {
-        width: 100%;
-        position: fixed;
-    }
-
-    #cabecalho nav.cabecalho_nav {
-        width: 100%;
-    }
-
-    #cabecalho .cabecalho_sombra {
-        height: 16px;
-        background-color: #FFD233;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        width: 100%;
-    }
-
-    /* .libra{
-        display: none;
-    } */
-
-    .geral {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 50px;
-        display: flex;
-        left: 150px;
-        position: relative;
-    }
-
-    .geral:hover .cabecalho_nav_item {
-        color: rgb(255, 255, 255);
-        display: flex;
-    }
-
-    .cabecalho_nav_item {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        z-index: 1000;
-        left: 270px;
-        top: 40px;
-    }
-
-    a {
-        text-align: center;
-        font-family: 'Aleo', sans-serif;
-        font-size: 10px;
-        color: rgb(0, 0, 0);
-        padding-top: 6px;
-    }
-
-    a:hover {
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-    }
-
-    .cabecalho_nav_itens {
-        display: none;
-    }
-
-    #cabecalho .imagem {
-        left: 20px;
-        position: relative;
-    }
-
-    .cabecalho_Logo {
-        width: 120px;
-    }
-
-    .cabecalho_nav_item_Doe {
-        display: none;
-    }
-
-    .idiomas {
-        right: 40px;
-        top: 5px;
-        position: relative;
-    }
-}
-
-
-
-
-
-
-/* COMEÇO DO VOLUNTÁRIOS */
 .imagem-comeco {
-    width: 1440px;
+    width: 210vh;
     height: 483px;
-    top: 97px;
-
 }
 
 .titulo-dois {
@@ -514,16 +34,233 @@ ul li ul li {
     font-weight: 700;
     line-height: 34px;
     letter-spacing: 0em;
-   margin-left: 30px;
-    margin-top: 90px;
+    margin-left: 2vw;
+    margin-top: 10vw;
 }
 
 .texto-1 {
     font-family: Manrope;
     font-size: 18px;
     font-weight: 300;
+    line-height: 1.8;
+    margin-right: 52vw;
+    margin-top: 2vw;
+
+
+}
+
+#segunda-parte {
+    margin-left: 13vw;
+    margin-top: 10vw;
+}
+
+.imagem-coracao {
+    margin-left: 70vw;
+    margin-top: -25vw;
+}
+
+
+/* fazendo a terceira parte  */
+
+.funcionamento {
+    margin-top: 7vw;
+}
+
+
+.retangulo-rosa {
+    margin-top: 20vw;
+    width: 210vh;
+}
+
+.menina-funcionamento {
+    margin-top: 10vw;
+
+}
+
+.imagem-funcio {
+    margin-top: -50vw;
+    margin-left: 15vw;
+
+}
+
+
+/* Sobre o funcionamento parte 1 */
+
+.numero-1-tudo {
+    margin-left: 110vh;
+    margin-top: -40vh;
+}
+
+.titulo-1 {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: center;
+    color: #26B2F4;
+    margin-top: -30vw;
+
+}
+
+.titulo-funcio1 {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    margin-left: 40vh;
+    margin-top: -5vh;
+
+
+}
+
+
+/*  */
+.texto-funcio1 {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-left: 32vh;
+    margin-top: 3vh;
+
+}
+
+.numero-1 {
+    margin-top: 4vw;
+    margin-left: 15vw;
+}
+
+
+
+/* Funcionamento 2 */
+
+.imagem-num2 {
+    margin-top: 5vw;
+    margin-left: 66.9vw;
+}
+
+
+.titulo-funcio2 {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    margin-left: 150vh;
+    margin-top: -5vh;
+
+
+}
+
+.texto-funcio2 {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24.59px;
+    margin-right: 20vh;
+    margin-top: 3vh;
+    margin-left: 67vw;
+}
+
+.btn {
+    width: 243px;
+    height: 33px;
+    top: 1541px;
+    left: 893px;
+    background-color: #26B2F4;
+    color: white;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 25px;
     letter-spacing: 0em;
-    text-align: justify;
+    margin-left: 69vw;
+    margin-top: 2vw;
 
+
+}
+
+
+
+/* parte quatro */
+
+.titulo-3 {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    margin-left: 10vw;
+    margin-top: 25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centralize o conteúdo horizontal e verticalmente */
+    background-color: #F5F5F5;
+    border: 2px solid black;
+    flex-direction: column; /* Alinhe o conteúdo verticalmente */
+    margin-top: 10vw;
+    height: 15vw;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.prev-btn {
+    left: -6vw;
+}
+
+.next-btn {
+    right: -3vw;
+}
+
+.texto-car {
+    font-family: 'Forum';
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px;
+    margin: 10px; /* Ajuste o espaçamento entre o texto e o contêiner do slide */
 }
