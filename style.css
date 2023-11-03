@@ -324,22 +324,25 @@ ul li ul li {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .doacoes {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .doacoes div {
-    width: 250px;
+    margin: 0 50px;
 }
 
 .texto-doacoes h3 {
     font: 700 45px 'Montserrat', serif;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .texto-doacoes {
@@ -355,6 +358,33 @@ ul li ul li {
     border-radius: 30px;
 }
 
+/* UTILIDADES */
+.utilidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.utilidade {
+    text-align: center;
+    padding: 150px 80px;
+}
+
+.utilidade h2 {
+    font: 400 26px 'Forum', serif;
+    color: #1F9B6E;
+    margin-bottom: 50px;
+}
+
+.tracejado {
+    border-left: 2px dashed #1F9B6E;
+    border-right: 2px dashed #1F9B6E;
+}
+
+.tracejado2 {
+    border-left: 2px dashed #1F9B6E;
+}
+
 /* YOUTUBE */
 #conteudoYoutube {
     background-image: url(img/lilasPrincipal.png);
@@ -362,7 +392,7 @@ ul li ul li {
     padding: 90px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .video {
@@ -560,14 +590,27 @@ ul li ul li {
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
-    padding: 73px;
+    padding: 73px 0;
     padding-bottom: 15px;
 }
 
 #contato .conteiner {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.rodapeCima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape-lado1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
 }
 
 .logoRodape {
@@ -593,19 +636,17 @@ ul li ul li {
 }
 
 .texto-rodape {
-    font: 400 20px 'Nunito', sans-serif;
+    font: 400 20px 'Montserrat', sans-serif;
 }
 
 .rodapeTexto {
-    margin: 80px 110px 0 0;
     text-align: justify;
-    width: 540px;
 }
 
 .enderecoTexto {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 25px;
     margin-right: 15px;
 }
@@ -615,26 +656,33 @@ ul li ul li {
 }
 
 .textoMaps {
-    font: 400 20px 'Nunito', sans-serif;
+    font: 400 20px 'Montserrat', sans-serif;
 }
 
 .rodape-lado2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0 70px;
 }
 
-.logotipoRodape {
-    width: 200px;
+.logoRodape img {
+    width: 170px;
 }
 
-.maps {
+.menina img {
+    width: 180px;
+}
+
+.imgMaps img {
+    width: 380px;
     border-radius: 10px;
 }
 
 .imgMaps {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -642,17 +690,16 @@ ul li ul li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
     margin-top: 120px;
 }
 
 .autorais {
-    font: 300 16px 'Aleo-light', serif;
+    font: 300 16px 'Montserrat', serif;
 }
 
 .direito {
-    font: 300 20px 'Aleo-light', serif;
-    margin-top: 10px;
+    font: 300 20px 'Montserrat', serif;
+    margin-bottom: 10px;
 }
 
 .geral {
