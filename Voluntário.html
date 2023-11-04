@@ -122,7 +122,13 @@
 
     <img class="imagem-coracao" src="img/coração-voluntario.png" alt="">
 
+   
+
+
     <div id="terceira-parte">
+
+
+
         <img class="retangulo-rosa" src="img/Rectangle 190.png" alt="">
 
         <div class="imagem-funcio">
@@ -130,6 +136,26 @@
         </div>
 
         <div class="funcionamento">
+
+
+
+            <div id="formulario" style="display: none;">
+                <div class="lele"></div>
+                <form class="formulario">
+        
+                    <input type="text" id="resposta1" placeholder=" Insira seu nome">
+        
+                    <input type="text" id="resposta2" placeholder="Insira seu Email">
+        
+                    <input type="text" id="resposta3" placeholder="Por que você quer ser um voluntário?">
+        
+                    <button type="submit" class="btn-enviar">Enviar</button>
+        
+                </form>
+        
+            </div>
+            <button id="fecharFormulario">X</button>
+
             <div class="numero-1-tudo">
                 <h3 class="titulo-1">Como funciona?</h3>
                 <img class="numero-1" src="img/numero-1-voluntario.png" alt="">
@@ -140,19 +166,18 @@
 
 
             <div class="numero-2-tudo">
-
                 <div class="imagem-num2"> <img class="numero-2" src="img/numero-2-voluntario.png" alt=""></div>
                 <h3 class="titulo-funcio2">Aguarde o contato</h3>
                 <div class="texto">
                     <p class="texto-funcio2">Espere a Passatempo Educativo entrar em contato com você referente ao
                         voluntariado.</p>
-                        <button class="btn">Preencher formulário</button>
+                    <button class="btn" id="mostrarFormulario">Preencher formulário</button>
                 </div>
-
 
             </div>
         </div>
     </div>
+    
 
     <div id="parte-quatro">
         <h3 class="titulo-3">O que eu ganho sendo voluntário?</h3>
@@ -183,7 +208,7 @@
                 <img src="img/planet-terra-volt.png" alt="Imagem 6">
                 <p class="texto-car">Sentido de propósito</p>
             </div>
-            
+
         </div>
         <button class="prev-btn" onclick="prevSlide()"> <img src="img/seta-direita-volt.png" alt=""></button>
         <button class="next-btn" onclick="nextSlide()"> <img src="img/seta-esquerda-volt.png" alt=""></button>
@@ -191,30 +216,54 @@
 
 
 
+
+
+
+
+
+
 </main>
 
 <script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        const offset = (i - index) * 100;
-        slide.style.transform = `translateX(${offset}%)`;
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            const offset = (i - index) * 100;
+            slide.style.transform = `translateX(${offset}%)`;
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+
+
+</script>
+
+
+
+<script>
+    const botaoMostrarFormulario = document.getElementById('mostrarFormulario');
+    const botaoFecharFormulario = document.getElementById('fecharFormulario');
+    const formulario = document.getElementById('formulario');
+
+    botaoMostrarFormulario.addEventListener('click', () => {
+        formulario.style.display = 'block';
     });
-}
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}
-
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-}
-
-showSlide(currentSlide);
+    botaoFecharFormulario.addEventListener('click', () => {
+        formulario.style.display = 'none';
+    });
 
 
 </script>

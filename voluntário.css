@@ -264,3 +264,21 @@
     padding: 10px;
     margin: 10px; /* Ajuste o espaçamento entre o texto e o contêiner do slide */
 }
+
+
+
+
+
+/* FORMULÁRIO */
+
+form{
+    background-color: rgb(151, 38, 38);
+    width: 545px;
+    height: 537px;
+  
+    margin-left: 20vw;
+}
+
+.lele, .retangulo-rosa{
+    z-index: 100%;
+}
