@@ -43,7 +43,7 @@ html {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
 }
 
-.cabecalho_nav{
+.cabecalho_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,13 +59,13 @@ html {
     margin-right: 30px;
 }
 
-.cabecalho_nav_item{
+.cabecalho_nav_item {
     font: 400 18px 'Montserrat', serif;
     color: #000;
     margin-right: 25px;
 }
 
-.cabecalho_nav_item_Doe{
+.cabecalho_nav_item_Doe {
     background-color: #FB2673;
     font: 400 17px 'Montserrat', serif;
     border-bottom: 10px;
@@ -78,11 +78,11 @@ html {
 }
 
 /* IDIOMAS */
-ul{
+ul {
     list-style: none;
 }
 
-.a-teste{
+.a-teste {
     text-decoration: none;
     color: #fff;
     display: block;
@@ -90,32 +90,32 @@ ul{
 
 }
 
-.a-teste:hover{
+.a-teste:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste{
+.img-teste {
     display: block;
     padding: 0 20px;
 }
 
-.principal{
+.principal {
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p{
+.li-p {
     line-height: 50px;
     float: left;
 }
 
-ul li ul li{
+ul li ul li {
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens{
+.ul-imagens {
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -124,43 +124,43 @@ ul li ul li{
 
 /* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
 
-ul{
+ul {
     list-style: none;
 }
 
-.a-teste2{
+.a-teste2 {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 0 20px;
 }
 
-.a-teste2:hover{
+.a-teste2:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste2{
+.img-teste2 {
     display: block;
     padding: 0 20px;
 }
 
-.principal2{
+.principal2 {
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p2{
+.li-p2 {
     line-height: 50px;
     float: left;
 }
 
-ul li ul li{
+ul li ul li {
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens2{
+.ul-imagens2 {
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -207,7 +207,8 @@ ul li ul li{
     color: #fff;
 }
 
-.conatainerproje .slidde-container .slide .contentproje .btndoe, .btnblog {
+.conatainerproje .slidde-container .slide .contentproje .btndoe,
+.btnblog {
     margin-top: 20px;
     display: inline-block;
     background: #FA2573;
@@ -323,22 +324,25 @@ ul li ul li{
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .doacoes {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .doacoes div {
-    width: 250px;
+    margin: 0 50px;
 }
 
 .texto-doacoes h3 {
     font: 700 45px 'Montserrat', serif;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .texto-doacoes {
@@ -354,70 +358,106 @@ ul li ul li{
     border-radius: 30px;
 }
 
+/* UTILIDADES */
+.utilidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.utilidade {
+    text-align: center;
+    padding: 100px 80px;
+}
+
+.utilidade h2 {
+    font: 400 26px 'Forum', serif;
+    color: #1F9B6E;
+    margin-bottom: 50px;
+}
+
+.tracejado {
+    border-left: 2px dashed #1F9B6E;
+    border-right: 2px dashed #1F9B6E;
+}
+
+.tracejado2 {
+    border-left: 2px dashed #1F9B6E;
+}
+
 /* YOUTUBE */
 #conteudoYoutube {
-    background: rgba(51, 157, 255, 0.2);
-    padding: 238px 150px;
+    background-image: url(img/lilasPrincipal.png);
+    background-attachment: fixed;
+    padding: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
 }
 
+.video {
+    text-align: center;
+}
 
-.video2 {
+/* PRÊMIOS */
+.premios {
+    margin: 100px 0;
+}
+
+.itemPremio {
+    border: 1px solid #898989;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 30px;
+}
+
+.itensPremios {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.solTube {
-    display: flex;
-    order: -1;
-}
-
-.video1 {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-}
-
-.video3 {
-    display: flex;
-    align-items: center;
-}
-
-.aviao:hover {
-    animation-name: fly;
-    animation-duration: 2s;
-}
-
-@keyframes fly {
-    100% {
-        transform: translateX(calc(100vw - 200px));
-    }
-}
-
-.mundo {
-    display: flex;
-    align-self: flex-end;
-    margin-left: 100px;
-} 
-
-
-.sol {
-    width: 128px;
-}
-
-
-.titulotube {
-    display: flex;
     justify-content: center;
-    margin-bottom: 70px;
-    column-gap: 40px;
+    margin-top: 30px;
 }
 
+.itemPremio img {
+    width: 120px;
+}
+
+.frasePremios {
+    font: 400 24px 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #48ABD9;
+    text-align: center;
+}
+
+.frasePremios span {
+    font: 600 24px 'Montserrat', sans-serif;
+}
+
+.telefone {
+    text-align: center;
+    padding: 0 570px;
+    padding-bottom: 150px;
+}
+
+.textoTel {
+    font: 500 24px 'Montserrat', sans-serif;
+    color: #48ABD9;
+    margin: 20px 0;
+}
+
+.numTel {
+    font: 600 26px 'Montserrat', sans-serif;
+    color: #48ABD9;
+}
 
 /* NOSSA HISTÓRIA */
 #nossaHistoria {
-    background: rgba(180, 219, 255, 0.14);
+    background-image: url(img/azulPrincipal.png);
+    background-attachment: fixed;
     padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .saibaMais {
@@ -428,41 +468,30 @@ ul li ul li{
 }
 
 .tituloSaiba {
-    font: 700 34px 'Nunito', sans-serif;
+    font: 400 24px 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-.laranja {
-    color: #E05100;
-}
-
-.azul {
-    color: #29166F;
-}
-
-.vermelho {
-    color: #BA3030;
-}
-
-.verde {
-    color: #48A400;
+.tituloSaiba span {
+    font: 600 24px 'Montserrat', sans-serif;
 }
 
 .imgSaiba {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.textoSaiba {
-    font: 400 19px 'Nunito', sans-serif;
-}
-
-.conteudoSaiba {
     margin-bottom: 40px;
 }
 
+.imgSaiba img {
+    width: 330px;
+    border-radius: 20px;
+}
+
+.conteudoSaiba {
+    margin-bottom: 35px;
+}
+
 .historia {
-    width: 490px;
-    margin: 60px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -470,50 +499,90 @@ ul li ul li{
 }
 
 .textoBotao {
-    font: 400 20px 'Nunito', sans-serif;
+    font: 400 18px 'Montserrat', sans-serif;
     color: #fff;
     text-align: center;
 }
 
 .bloco {
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .botao {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 50px;
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 10px;
-    display: inline;
-    border-radius: 7px;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    width: 200px;
 }
 
-.fundoVerde {
-    background-color: #48A400;
-    padding: 10px 18px;
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
 }
 
-.fundoVermelho {
-    background-color: #A40000;
-    padding: 10px 18px;
+.botao:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
 }
 
-.fundoLaranja {
-    background-color: #E05100;
-    padding: 10px 18px;
+.botao:hover .icon {
+    transform: translate(4px);
 }
 
-.fundoAzul {
-    background-color: #29166F;
-    padding: 10px 18px;
+.botao:hover::before {
+    animation: shine 1.5s ease-out infinite;
 }
 
+.botao::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
 
 /* PARCEIROS E PATROCINADORES */
 .conteudo_6 {
     padding: 70px;
     margin: 60px 0;
-    background: rgba(255, 33, 33, 0.46);
 }
 
 .slider-width {
@@ -524,9 +593,16 @@ ul li ul li{
     margin: 10px;
 }
 
-.patroTitulo {
+.patroTitulo h2 {
+    font: 400 28px 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.patroTitulo span {
+    font: 600 28px 'Montserrat', sans-serif;
 }
 
 .patro {
@@ -538,14 +614,27 @@ ul li ul li{
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
-    padding: 73px;
+    padding: 73px 0;
     padding-bottom: 15px;
 }
 
 #contato .conteiner {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.rodapeCima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape-lado1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
 }
 
 .logoRodape {
@@ -571,19 +660,17 @@ ul li ul li{
 }
 
 .texto-rodape {
-    font: 400 20px 'Nunito', sans-serif;
+    font: 400 20px 'Montserrat', sans-serif;
 }
 
 .rodapeTexto {
-    margin: 80px 110px 0 0;
     text-align: justify;
-    width: 540px;
 }
 
 .enderecoTexto {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 25px;
     margin-right: 15px;
 }
@@ -593,26 +680,33 @@ ul li ul li{
 }
 
 .textoMaps {
-    font: 400 20px 'Nunito', sans-serif;
+    font: 400 20px 'Montserrat', sans-serif;
 }
 
 .rodape-lado2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0 70px;
 }
 
-.logotipoRodape {
-    width: 200px;
+.logoRodape img {
+    width: 170px;
 }
 
-.maps {
+.menina img {
+    width: 180px;
+}
+
+.imgMaps img {
+    width: 380px;
     border-radius: 10px;
 }
 
 .imgMaps {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -620,25 +714,24 @@ ul li ul li{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
     margin-top: 120px;
 }
 
 .autorais {
-    font: 300 16px 'Aleo-light', serif;
+    font: 300 16px 'Montserrat', serif;
 }
 
 .direito {
-    font: 300 20px 'Aleo-light', serif;
-    margin-top: 10px;
+    font: 300 20px 'Montserrat', serif;
+    margin-bottom: 10px;
 }
 
-.geral{
+.geral {
     display: none;
 }
 
 @media screen and (max-width: 400px) {
-    
+
     .conteiner {
         margin: 0;
         padding: 0;
@@ -648,12 +741,12 @@ ul li ul li{
 
     /* CABEÇALHO */
 
-      #cabecalho{
+    #cabecalho {
         width: 100%;
         position: fixed;
     }
 
-    #cabecalho nav.cabecalho_nav{
+    #cabecalho nav.cabecalho_nav {
         width: 100%;
     }
 
@@ -708,26 +801,26 @@ ul li ul li{
         display: none;
     }
 
-    #cabecalho .imagem{
+    #cabecalho .imagem {
         left: 20px;
         position: relative;
     }
 
-    .cabecalho_Logo{
+    .cabecalho_Logo {
         width: 120px;
     }
 
-    .cabecalho_nav_item_Doe{
+    .cabecalho_nav_item_Doe {
         display: none;
     }
 
-    .idiomas{
+    .idiomas {
         right: 40px;
         top: 5px;
         position: relative;
     }
 
-    
+
     /* PRINCIPAL */
     .conatainerproje .slidde-container .slide .contentproje h1 {
         font: 400 30px 'Aleo', serif;
@@ -752,7 +845,7 @@ ul li ul li{
         padding: 9px 20px;
         border-radius: 20px;
     }
-    
+
     .conatainerproje .slidde-container .slide .contentproje .btndoe {
         margin-top: 10px;
         display: inline-block;
@@ -767,7 +860,7 @@ ul li ul li{
         padding: 24px 20px;
         margin-top: 25px;
     }
-    
+
     .frase,
     .frase-autor {
         font: 300 13px 'Aleo-light', serif;
@@ -827,7 +920,7 @@ ul li ul li{
         display: flex;
         justify-content: center;
     }
-    
+
     .doacoes {
         width: 100%;
         display: flex;
@@ -879,7 +972,7 @@ ul li ul li{
         border-radius: 7.69011px;
         padding: 8px 44px;
     }
-    
+
     .vermelhoFundo {
         background: #FF5D5D;
         border-radius: 7.68953px;
@@ -890,7 +983,7 @@ ul li ul li{
         font: 400 22px 'Nunito', sans-serif;
         color: #A40000;
     }
-    
+
     .titulo-Doador {
         text-align: center;
         margin: 50px 80px;
@@ -900,7 +993,7 @@ ul li ul li{
         margin: 30px;
     }
 
-    
+
 
     /* YOUTUBE */
     #conteudoYoutube {
@@ -922,13 +1015,13 @@ ul li ul li{
         flex-direction: column-reverse;
         align-items: center;
     }
-    
+
     .video1 {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    
+
     .video3 {
         display: flex;
         align-items: center;
@@ -957,23 +1050,23 @@ ul li ul li{
         display: flex;
         align-self: center;
         margin: 30px 0;
-    } 
+    }
 
     /* SAIBA MAIS */
     #nossaHistoria {
         padding: 50px 20px;
     }
 
-   .imgMais {
-    width: 190px;
-   }
+    .imgMais {
+        width: 190px;
+    }
 
-   .conteudoSaiba {
-    margin-bottom: 10px;
-}
+    .conteudoSaiba {
+        margin-bottom: 10px;
+    }
 
-   .tituloSaiba {
-    font: 700 20px 'Nunito', sans-serif;
+    .tituloSaiba {
+        font: 700 20px 'Nunito', sans-serif;
     }
 
     .textoSaiba {
@@ -983,7 +1076,7 @@ ul li ul li{
     .textoBotao {
         font: 400 12px 'Nunito', sans-serif;
     }
-    
+
     .setaMais {
         width: 9px;
     }
@@ -992,17 +1085,17 @@ ul li ul li{
         background-color: #48A400;
         padding: 5px 18px;
     }
-    
+
     .fundoVermelho {
         background-color: #A40000;
         padding: 5px 18px;
     }
-    
+
     .fundoLaranja {
         background-color: #E05100;
         padding: 5px 18px;
     }
-    
+
     .fundoAzul {
         background-color: #29166F;
         padding: 5px 18px;
@@ -1018,7 +1111,7 @@ ul li ul li{
     .patroImg {
         width: 100px;
     }
-    
+
     .patroTitulo {
         margin-top: 20px;
     }
@@ -1071,7 +1164,8 @@ ul li ul li{
         width: 120px;
     }
 
-    .rodapeTexto, .redes {
+    .rodapeTexto,
+    .redes {
         width: 100%;
         display: flex;
         justify-content: center;
