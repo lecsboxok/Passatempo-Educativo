@@ -1,32 +1,31 @@
-*{
+/* RESET */
+* {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    position: relative;
-
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 @font-face {
-    font-family: Nunito;
-    src: url(Assets/Nunito-VariableFont_wght.ttf);
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Aleo;
-    src: url(Assets/Aleo-Regular.ttf);
+    font-family: 'Forum';
+    src: url(fonts/Forum-Regular.ttf);
 }
 
 @font-face {
-    font-family: Aleo-light;
-    src: url(Assets/Aleo-Light.ttf);
+    font-family: 'Manrope';
+    src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -34,87 +33,89 @@ html{
 #cabecalho {
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 11;
     background-color: #FFF;
 }
 
 #cabecalho .cabecalho_sombra {
-    height: 16px;
+    height: 5px;
     background-color: #FFD233;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
 }
 
-.cabecalho_nav{
+.cabecalho_nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.navegacao {
+    display: flex;
     align-items: center;
 }
 
 .cabecalho_nav_itens {
-    margin-left: 100px;
+    margin-right: 30px;
 }
 
-.cabecalho_nav_item{
-    margin: 20px;
-    background: #FFD233;
-    font: 400 17px 'Aleo', serif;
-    border-radius: 10px;
-    padding: 9px 18px;
+.cabecalho_nav_item {
+    font: 400 18px 'Montserrat', serif;
     color: #000;
+    margin-right: 25px;
 }
 
-.cabecalho_nav_item_Doe{
+.cabecalho_nav_item_Doe {
     background-color: #FB2673;
-    font: 400 17px 'Aleo', serif;
+    font: 400 17px 'Montserrat', serif;
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
 }
 
-.idiomas{
-    top: 8px;
+.idiomas {
+    margin: 15px 20px 0 0;
 }
 
-
-/* PARA PÁGINAS EM PORTUGUÊS */
-
-ul{
+/* IDIOMAS */
+ul {
     list-style: none;
 }
 
-.a-teste{
+.a-teste {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 0 20px;
+
 }
 
-.a-teste:hover{
+.a-teste:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste{
+.img-teste {
     display: block;
     padding: 0 20px;
 }
 
-.principal{
+.principal {
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p{
+.li-p {
     line-height: 50px;
     float: left;
 }
 
-ul li ul li{
+ul li ul li {
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens{
+.ul-imagens {
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -123,43 +124,43 @@ ul li ul li{
 
 /* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
 
-ul{
+ul {
     list-style: none;
 }
 
-.a-teste2{
+.a-teste2 {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 0 20px;
 }
 
-.a-teste2:hover{
+.a-teste2:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste2{
+.img-teste2 {
     display: block;
     padding: 0 20px;
 }
 
-.principal2{
+.principal2 {
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p2{
+.li-p2 {
     line-height: 50px;
     float: left;
 }
 
-ul li ul li{
+ul li ul li {
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens2{
+.ul-imagens2 {
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -172,19 +173,19 @@ ul li ul li{
 
 
 
-#main{
+#main {
     margin: 0;
     margin-bottom: 180px;
 }
 
-.titulo{
+.titulo {
     font: 800 40px 'Nunito', sans-serif;
     text-align: center;
     padding-top: 200px;
     color: #000;
 }
 
-.textoComeco{
+.textoComeco {
     color: #000;
     /* position: relative; */
     font: 400 20px 'Nunito', sans-serif;
@@ -195,7 +196,7 @@ ul li ul li{
     top: 60px;
 }
 
-.textoComeco2{
+.textoComeco2 {
     color: #000;
     /* position: relative; */
     font: 400 20px 'Nunito', sans-serif;
@@ -206,7 +207,7 @@ ul li ul li{
     top: 100px;
 }
 
-.objetivos{
+.objetivos {
     /* position: relative; */
     width: 446px;
     height: 48px;
@@ -214,21 +215,21 @@ ul li ul li{
     top: 140px;
 }
 
-.ondas{
+.ondas {
     background-image: url(img/OndaRosa.png);
     top: 160px;
     background-size: 100%;
     /* position: relative; */
 }
 
-.retangulo{
+.retangulo {
     background-color: rgba(254, 199, 219, 0.3);
     top: 160px;
     height: 380px;
     /* position: relative; */
 }
 
-.certificadosTitulo{
+.certificadosTitulo {
     color: #000;
     font: 700 36px 'Nunito', sans-serif;
     text-align: center;
@@ -236,24 +237,24 @@ ul li ul li{
     /* position: relative; */
 }
 
-.divisao{
+.divisao {
     top: 110px;
     text-align: center;
     /* position: relative; */
 }
 
-.Certificados{
+.Certificados {
     padding: 0 20px;
 }
 
-.linha{
+.linha {
     height: 10px;
     background-color: #FFBCD4;
     margin: 160px 0;
 }
 
 
-#projetos{
+#projetos {
     text-align: center;
 }
 
@@ -379,13 +380,13 @@ ul li ul li{
 } */
 
 
-#projetos .imagens{
+#projetos .imagens {
     padding: 30px 40px 0px 40px;
-    
+
 }
 
 
-#projetos .divisaoImagens{
+#projetos .divisaoImagens {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -393,10 +394,10 @@ ul li ul li{
     /* padding: 0 20px; */
     margin-right: 0;
     top: 0px;
-    
+
 }
 
-.imagens1{
+.imagens1 {
     position: absolute;
     left: 36px;
     display: none;
@@ -404,70 +405,71 @@ ul li ul li{
     top: 0px;
 }
 
-.imagens2{
+.imagens2 {
     position: absolute;
     left: 95px;
     display: none;
     z-index: 99;
 }
 
-.imagens3{
+.imagens3 {
     position: absolute;
     left: 95px;
     display: none;
     z-index: 99;
 }
 
-.imagens4, .imagens5{
+.imagens4,
+.imagens5 {
     position: absolute;
     left: 150px;
     display: none;
     z-index: 99;
 }
 
-.imagens6{
+.imagens6 {
     position: absolute;
     left: 35.5px;
     display: none;
     z-index: 99;
 }
 
-.imagens7{
+.imagens7 {
     position: absolute;
     left: 35.5px;
     display: none;
     z-index: 99;
 }
 
-.imagens8{
+.imagens8 {
     position: absolute;
     left: 150px;
     display: none;
     z-index: 99;
 }
 
-.imagens9{
+.imagens9 {
     position: absolute;
     left: 35.5px;
     display: none;
     z-index: 99;
 }
 
-.imagens10{
+.imagens10 {
     position: absolute;
     left: 35.5px;
     display: none;
     z-index: 99;
 }
 
-.imagens11{
+.imagens11 {
     position: absolute;
     left: 90px;
     display: none;
     z-index: 99;
 }
 
-.imagens12{
+.imagens12 {
     position: absolute;
     left: 90px;
     display: none;
@@ -475,59 +477,59 @@ ul li ul li{
 }
 
 
-.quadros:hover .imagens1{
+.quadros:hover .imagens1 {
     display: flex;
 }
 
-.quadros:hover .imagens2{
+.quadros:hover .imagens2 {
     display: flex;
 }
 
-.quadros:hover .imagens3{
+.quadros:hover .imagens3 {
     display: flex;
 }
 
-.quadros:hover .imagens4{
+.quadros:hover .imagens4 {
     display: flex;
 }
 
-.quadros:hover .imagens5{
+.quadros:hover .imagens5 {
     display: flex;
 }
 
-.quadros:hover .imagens6{
+.quadros:hover .imagens6 {
     display: flex;
 }
 
-.quadros:hover .imagens7{
+.quadros:hover .imagens7 {
     display: flex;
 }
 
-.quadros:hover .imagens8{
+.quadros:hover .imagens8 {
     display: flex;
 }
 
-.quadros:hover .imagens9{
+.quadros:hover .imagens9 {
     display: flex;
 }
 
-.quadros:hover .imagens10{
+.quadros:hover .imagens10 {
     display: flex;
 }
 
-.quadros:hover .imagens11{
+.quadros:hover .imagens11 {
     display: flex;
 }
 
-.quadros:hover .imagens12{
+.quadros:hover .imagens12 {
     display: flex;
 }
 
-.user{
+.user {
     padding: 0 5px;
 }
 
-#projetos .retanguloProjeto1{
+#projetos .retanguloProjeto1 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -537,7 +539,7 @@ ul li ul li{
     left: 190px;
 }
 
-#projetos .retanguloProjeto2{
+#projetos .retanguloProjeto2 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -547,7 +549,7 @@ ul li ul li{
     left: 610px;
 }
 
-#projetos .retanguloProjeto3{
+#projetos .retanguloProjeto3 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -557,7 +559,7 @@ ul li ul li{
     left: 1025px;
 }
 
-#projetos .retanguloProjeto4{
+#projetos .retanguloProjeto4 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -567,7 +569,7 @@ ul li ul li{
     left: 190px;
 }
 
-#projetos .retanguloProjeto5{
+#projetos .retanguloProjeto5 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -577,7 +579,7 @@ ul li ul li{
     left: 610px;
 }
 
-#projetos .retanguloProjeto6{
+#projetos .retanguloProjeto6 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -587,7 +589,7 @@ ul li ul li{
     left: 1025px;
 }
 
-#projetos .retanguloProjeto7{
+#projetos .retanguloProjeto7 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -597,7 +599,7 @@ ul li ul li{
     left: 190px;
 }
 
-#projetos .retanguloProjeto8{
+#projetos .retanguloProjeto8 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -607,7 +609,7 @@ ul li ul li{
     left: 610px;
 }
 
-#projetos .retanguloProjeto9{
+#projetos .retanguloProjeto9 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -617,7 +619,7 @@ ul li ul li{
     left: 1025px;
 }
 
-#projetos .retanguloProjeto10{
+#projetos .retanguloProjeto10 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -627,7 +629,7 @@ ul li ul li{
     left: 190px;
 }
 
-#projetos .retanguloProjeto11{
+#projetos .retanguloProjeto11 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -637,7 +639,7 @@ ul li ul li{
     left: 610px;
 }
 
-#projetos .retanguloProjeto12{
+#projetos .retanguloProjeto12 {
     background-color: #ffffff;
     border-radius: 20px;
     width: 300px;
@@ -647,13 +649,13 @@ ul li ul li{
     left: 1025px;
 }
 
-.tituloQuadrado{
+.tituloQuadrado {
     font: 700 24px 'Nunito', sans-serif;
     top: 10px;
     color: #000;
 }
 
-.geral{
+.geral {
     display: none;
 }
 
@@ -663,12 +665,12 @@ ul li ul li{
 
     /* CABEÇALHO */
 
-    #cabecalho{
+    #cabecalho {
         width: 100%;
         position: fixed;
     }
 
-    #cabecalho nav.cabecalho_nav{
+    #cabecalho nav.cabecalho_nav {
         width: 100%;
     }
 
@@ -722,36 +724,36 @@ ul li ul li{
         display: none;
     }
 
-    #cabecalho .imagem{
+    #cabecalho .imagem {
         left: 20px;
     }
 
-    .cabecalho_Logo{
+    .cabecalho_Logo {
         width: 120px;
     }
 
-    .cabecalho_nav_item_Doe{
+    .cabecalho_nav_item_Doe {
         display: none;
     }
 
-    .idiomas{
+    .idiomas {
         right: 40px;
         top: 12px;
     }
 
     /* TÉRMINO DO CABEÇALHO */
 
-    #main{
+    #main {
         margin: 0;
         margin-bottom: 80px;
     }
-    
-    .titulo{
+
+    .titulo {
         font-size: 20px;
         padding-top: 150px;
     }
-    
-    .textoComeco{
+
+    .textoComeco {
         font-size: 12px;
         width: 100%;
         height: 50px;
@@ -760,8 +762,8 @@ ul li ul li{
         padding-right: 30px;
         top: 40px;
     }
-    
-    .textoComeco2{
+
+    .textoComeco2 {
         font-size: 12px;
         width: 100%;
         height: 60px;
@@ -770,283 +772,284 @@ ul li ul li{
         left: 0;
         top: 60px;
     }
-    
-    .objetivos{
+
+    .objetivos {
         width: 205px;
         height: 28px;
         left: 100px;
         top: 60px;
     }
-    
-    .ondas{
+
+    .ondas {
         top: 90px;
         background-repeat: no-repeat;
     }
-    
-    .retangulo{
+
+    .retangulo {
         top: 58px;
         height: 380px;
         width: 100%;
     }
-    
-    .certificadosTitulo{
+
+    .certificadosTitulo {
         font-size: 16px;
         top: 0px;
     }
-    
-    .divisao{
+
+    .divisao {
         top: 40px;
     }
-    
-    .Certificados{
+
+    .Certificados {
         padding: 0 10px;
         width: 105px;
         height: 80px;
     }
-    
-    .linha{
+
+    .linha {
         margin: 58px 0;
     }
 
-    .teste{
+    .teste {
         width: 100%;
     }
-    
-    #projetos .imagens{
+
+    #projetos .imagens {
         padding-bottom: 20px;
         padding-left: 0;
         padding-right: 0;
         padding-top: 0;
         width: 200px;
     }
-    
-    
-    #projetos .divisaoImagens{
+
+
+    #projetos .divisaoImagens {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         margin: 0;
-        
+
     }
-    
-    .imagens1{
+
+    .imagens1 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
         top: 0px;
     }
-    
-    .imagens2{
+
+    .imagens2 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens3{
+
+    .imagens3 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens4, .imagens5{
+
+    .imagens4,
+    .imagens5 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens6{
+
+    .imagens6 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens7{
+
+    .imagens7 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens8{
+
+    .imagens8 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens9{
+
+    .imagens9 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens10{
+
+    .imagens10 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens11{
+
+    .imagens11 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    .imagens12{
+
+    .imagens12 {
         position: absolute;
         left: 0;
         display: none;
         z-index: 99;
     }
-    
-    
-    .quadros:hover .imagens1{
+
+
+    .quadros:hover .imagens1 {
         display: none;
     }
-    
-    .quadros:hover .imagens2{
+
+    .quadros:hover .imagens2 {
         display: none;
     }
-    
-    .quadros:hover .imagens3{
+
+    .quadros:hover .imagens3 {
         display: none;
     }
-    
-    .quadros:hover .imagens4{
+
+    .quadros:hover .imagens4 {
         display: none;
     }
-    
-    .quadros:hover .imagens5{
+
+    .quadros:hover .imagens5 {
         display: none;
     }
-    
-    .quadros:hover .imagens6{
+
+    .quadros:hover .imagens6 {
         display: none;
     }
-    
-    .quadros:hover .imagens7{
+
+    .quadros:hover .imagens7 {
         display: none;
     }
-    
-    .quadros:hover .imagens8{
+
+    .quadros:hover .imagens8 {
         display: none;
     }
-    
-    .quadros:hover .imagens9{
+
+    .quadros:hover .imagens9 {
         display: none;
     }
-    
-    .quadros:hover .imagens10{
+
+    .quadros:hover .imagens10 {
         display: none;
     }
-    
-    .quadros:hover .imagens11{
+
+    .quadros:hover .imagens11 {
         display: none;
     }
-    
-    .quadros:hover .imagens12{
+
+    .quadros:hover .imagens12 {
         display: none;
     }
-    
-    .user{
+
+    .user {
         padding: 0;
         display: none;
     }
-    
-    #projetos .retanguloProjeto1{
+
+    #projetos .retanguloProjeto1 {
         width: 150px;
         height: 30px;
         top: 265px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto2{
+
+    #projetos .retanguloProjeto2 {
         width: 150px;
         height: 30px;
         top: 450px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto3{
+
+    #projetos .retanguloProjeto3 {
         width: 150px;
         height: 30px;
         top: 638px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto4{
+
+    #projetos .retanguloProjeto4 {
         width: 160px;
         height: 30px;
         top: 265px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto5{
+
+    #projetos .retanguloProjeto5 {
         width: 150px;
         height: 30px;
         top: 450px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto6{
+
+    #projetos .retanguloProjeto6 {
         width: 150px;
         height: 30px;
         top: 637px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto7{
+
+    #projetos .retanguloProjeto7 {
         width: 170px;
         height: 30px;
         top: 263px;
         left: 115px;
     }
-    
-    #projetos .retanguloProjeto8{
+
+    #projetos .retanguloProjeto8 {
         width: 150px;
         height: 30px;
         top: 450px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto9{
+
+    #projetos .retanguloProjeto9 {
         width: 150px;
         height: 30px;
         top: 638px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto10{
+
+    #projetos .retanguloProjeto10 {
         width: 150px;
         height: 30px;
         top: 265px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto11{
+
+    #projetos .retanguloProjeto11 {
         width: 150px;
         height: 30px;
         top: 450px;
         left: 125px;
     }
-    
-    #projetos .retanguloProjeto12{
+
+    #projetos .retanguloProjeto12 {
         width: 180px;
         height: 30px;
         top: 637px;
         left: 110px;
     }
-    
-    .tituloQuadrado{
+
+    .tituloQuadrado {
         font-size: 14px;
         top: 5px;
     }
@@ -1056,131 +1059,131 @@ ul li ul li{
 
 
 
-        /* RODAPÉ */
-#contato {
-    margin-top: 10px;
-    width: 400px;
-}
+    /* RODAPÉ */
+    #contato {
+        margin-top: 10px;
+        width: 400px;
+    }
 
-.logoRodape {
-    margin-left: 90px;
-    width: 100px;
-}
+    .logoRodape {
+        margin-left: 90px;
+        width: 100px;
+    }
 
-.menina{
-    width: 120px;
-    left: 30px;
-}
+    .menina {
+        width: 120px;
+        left: 30px;
+    }
 
-.redes {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    right: 50px;
-}
+    .redes {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        right: 50px;
+    }
 
-.icone {
-    width: 40px;
-    padding: 9px;
-    padding-left: 3px;
-}
+    .icone {
+        width: 40px;
+        padding: 9px;
+        padding-left: 3px;
+    }
 
-.icone:hover {
-    width: 45px;
-    transition: 0.5s;
-    filter: brightness(50%);
-}
-
-
-.texto-rodape {
-    font: 400 12px 'Nunito', sans-serif;
-    right: 25px;
-    width: 300px;
-}
-
-.logotipoRodape {
-    width: 120px;
-}
-
-.rodapeTexto{
-    width: 100%;
-}
-
-.enderecoTexto {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 25px;
-    margin-right: 50px;
-    width: 100%;
-}
-
-.endereco{
-    top: 30px;
-}
-
-.iconMaps {
-    right: 25px;
-    width: 30px;
-}
-
-.textoMaps {
-    font: 400 12px 'Nunito', sans-serif;
-    right: 30px;
-    width: 100%;
-}
-
-.imgMaps{
-    right: 50px;
-}
-
-.rodape-lado1{
-    width: 100%;
-}
-
-.rodape-lado2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.maps{
-    border-radius: 10px;
-    width: 200px;
-    left: 130px;
-}
-
-.a-maps{
-    right: 170px;
-}
-
-.amigoSurdo{
-    width: 320px;
-    right: 30px;
-}
-
-.direitos {
-    width: 100%;
-    margin-top: 90px;
-}
-
-.autorais {
-    font: 400 10px 'Aleo-light', serif;
-    width: 290px;
-}
-
-.direito {
-    font: 300 14px 'Aleo-light', serif;
-    margin-top: 15px;
-    width: 300px;
-    text-align: center;
-}
+    .icone:hover {
+        width: 45px;
+        transition: 0.5s;
+        filter: brightness(50%);
+    }
 
 
+    .texto-rodape {
+        font: 400 12px 'Nunito', sans-serif;
+        right: 25px;
+        width: 300px;
+    }
+
+    .logotipoRodape {
+        width: 120px;
+    }
+
+    .rodapeTexto {
+        width: 100%;
+    }
+
+    .enderecoTexto {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        margin-right: 50px;
+        width: 100%;
+    }
+
+    .endereco {
+        top: 30px;
+    }
+
+    .iconMaps {
+        right: 25px;
+        width: 30px;
+    }
+
+    .textoMaps {
+        font: 400 12px 'Nunito', sans-serif;
+        right: 30px;
+        width: 100%;
+    }
+
+    .imgMaps {
+        right: 50px;
+    }
+
+    .rodape-lado1 {
+        width: 100%;
+    }
+
+    .rodape-lado2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .maps {
+        border-radius: 10px;
+        width: 200px;
+        left: 130px;
+    }
+
+    .a-maps {
+        right: 170px;
+    }
+
+    .amigoSurdo {
+        width: 320px;
+        right: 30px;
+    }
+
+    .direitos {
+        width: 100%;
+        margin-top: 90px;
+    }
+
+    .autorais {
+        font: 400 10px 'Aleo-light', serif;
+        width: 290px;
+    }
+
+    .direito {
+        font: 300 14px 'Aleo-light', serif;
+        margin-top: 15px;
+        width: 300px;
+        text-align: center;
+    }
 
 
 
-/* TERMINO DO RODAPÉ */
+
+
+    /* TERMINO DO RODAPÉ */
 
 }
