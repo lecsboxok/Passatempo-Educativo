@@ -103,7 +103,37 @@
             <img src="img/SobreNós1.png" alt="comeco" class="mundo">
         </div>
     </div>
-    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #meuTexto {
+            margin-top: 800px; /* Um espaço inicial para o texto */
+            transition: margin-top 1s ease; /* Adiciona uma transição suave */
+        }
+    </style>
+</head>
+<body onload="subirTexto()">
+    <div id="meuTexto">
+        <p>Quem somos </p>
+           <p>Junte-se a nós na missão de fazer a diferença</p> 
+            <p>
+         A Passatempo Educativo é uma OSCIP (Organização da sociedade civil de interesse público) que atua a mais de 23 anos em diversos projetos, a fim de ajudar no desenvolvimento social e educacional das crianças.
+            </p>
+    </div>
+
+    <script>
+        function subirTexto() {
+            // Obtém a referência ao elemento de texto
+            var texto = document.getElementById('meuTexto');
+
+            // Define a margem superior fixa após a página ser carregada
+            texto.style.marginTop = '-40vh';
+        }
+    </script>
     <div class="titulo">
         <div class="quem">
             <h3 class="preto">Conheça a</h3>
