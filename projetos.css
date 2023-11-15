@@ -176,15 +176,15 @@ ul li ul li {
 
 /* INICIAL MENINA */
 
-main{
+main {
     padding-top: 90px;
 }
 
-.container{
+.container {
     margin: 0 200px;
 }
 
-.inicial-menina img{
+.inicial-menina img {
     width: 100%;
 }
 
@@ -200,46 +200,102 @@ main{
 }
 
 /* INTRODUÇÃO */
-.introducao{
+.introducao {
     margin-top: 50px;
 }
 
-main .introducao p{
+main .introducao p {
     font: 300 20px 'Montserrat', sans-serif;
     text-align: justify;
     margin-right: 150px;
 }
 
-main .introducao{
+main .introducao {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 /* PROJETOS */
-.projetos{
+.projetos {
     margin-top: 160px;
 }
 
-.projetos .linha-projetos img{
+.projetos .linha-projetos img {
     width: 300px;
 }
 
-.linha-projetos{
+.linha-projetos {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
     flex-wrap: wrap;
 }
 
-.projeto-item {
-    position: relative;
-    overflow: hidden;
+.projetos h2 {
+    color: #FFF;
+    font: 400 45px 'Forum', sans-serif;
+    margin-top: 200px;
+}
+
+h3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    font: 400 45px 'Forum', sans-serif;
+    margin-top: 150px;
+}
+
+.projetos h2,
+.projetos button,
+.projetos h3 {
+    position: absolute;
 }
 
 .projeto-item {
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projeto-item button {
+    visibility: hidden;
+    font: 500 20px 'Montserrat', sans-serif;
+    background-color: #FFD233;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 200px;
+    opacity: 0;
+    transform: scale(0.5) translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+}
+
+.projeto-item:hover h2 {
+    margin-top: 140px;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+.projeto-item:hover h3 {
+    margin-top: 90px;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+.projeto-item:not(:hover) h2 {
+    margin-top: 200px;
+    transition: margin-top 0.3s ease;
+}
+
+.projeto-item:not(:hover) h3 {
+    margin-top: 150px;
+    transition: margin-top 0.3s ease;
+}
+
+.projeto-item:hover button {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s;
 }
 
 
