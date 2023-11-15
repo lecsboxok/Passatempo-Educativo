@@ -30,6 +30,7 @@
             });
         });
 
+
     </script>
 </head>
 
@@ -117,21 +118,21 @@
                     <div class="projeto-item">
                         <img src="img/ImagemRecreatur.png" alt="pessoas">
                         <h2>Recreatur</h2>
-                        <button class="saiba-mais">Saiba Mais</button>
+                        <button class="saiba-mais" id="saibaMaisRecreatur">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemLivros.png" alt="professor lendo livro">
                         <h3>Livros em<br>Ação</h3>
-                        <button class="saiba-mais">Saiba Mais</button>
+                        <button class="saiba-mais" id="saibaMaisLivro">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemFutebol.png" alt="menino chutando bola de futebol">
                         <h3>Futebol <br> Ciência</h3>
-                        <button class="saiba-mais">Saiba Mais</button>
+                        <button class="saiba-mais" id="saibaMaisFutebol">Saiba Mais</button>
                     </div>
-                    
+
                     <div class="projeto-item">
                         <img src="img/ImagemCultura.png" alt="criança olhando as flores">
                         <h3>Cultura <br> Acessível</h3>
@@ -151,45 +152,78 @@
                     </div>
 
                     <div class="projeto-item">
-                        <img src="img/ImagemOrigami.png" alt="pessoas">
-                        <h2>Projeto Recreatur</h2>
+                        <img src="img/ImagemOrigami.png" alt="origami">
+                        <h3>Animais em<br>Origami</h3>
                         <button class="saiba-mais">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
-                        <img src="img/ImagemAmigoLeitor.png" alt="pessoas">
-                        <h2>Projeto Recreatur</h2>
+                        <img src="img/ImagemAmigoLeitor.png" alt="crianças em uma biblioteca">
+                        <h2>Amigo Leitor</h2>
                         <button class="saiba-mais">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
-                        <img src="img/ImagemMúsicaClássica.png" alt="pessoas">
-                        <h2>Projeto Recreatur</h2>
+                        <img src="img/ImagemMúsicaClássica.png" alt="ópera">
+                        <h3>Música <br> Clássica</h3>
                         <button class="saiba-mais">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
-                        <img src="img/ImagemEcobanda.png" alt="pessoas">
-                        <h2>Projeto Recreatur</h2>
+                        <img src="img/ImagemEcobanda.png" alt="banda">
+                        <h2>Ecobanda</h2>
                         <button class="saiba-mais">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
-                        <img src="img/ImagemMelhorIdade.png" alt="pessoas">
-                        <h2>Projeto Recreatur</h2>
+                        <img src="img/ImagemMelhorIdade.png" alt="mulheres dançando">
+                        <h2>Melhor Idade</h2>
                         <button class="saiba-mais">Saiba Mais</button>
                     </div>
-                    
+
                     <div class="projeto-item">
-                        <img src="img/ImagemAventuraEducativa.png" alt="pessoas">
-                        <h2>Projeto Recreatur</h2>
+                        <img src="img/ImagemAventuraEducativa.png" alt="quadro de pintura">
+                        <h3>Aventura <br> Educativa</h3>
                         <button class="saiba-mais">Saiba Mais</button>
                     </div>
                 </div>
             </div>
+
+            <div id="modal-recreatur" class="modal">
+                <div class="modal-content">
+                    <span class="fechar" id="fechar">&times;</span>
+                    <p>Conteúdo do modal aqui...</p>
+                </div>
+            </div>
+
+            <div id="desfocado" class="desfocado"></div>
         </div>
     </main>
 
+    <script>
+                function abrirModal(idModal, idFechar) {
+            const modal = document.getElementById(idModal);
+            const fechar = document.getElementById(idFechar);
+            const desfocado = document.getElementById('desfocado');
+
+            modal.style.display = 'block';
+            desfocado.style.display = 'block';
+
+            fechar.addEventListener('click', () => {
+                modal.style.display = 'none';
+                desfocado.style.display = 'none';
+            });
+
+            desfocado.addEventListener('click', () => {
+                modal.style.display = 'none';
+                desfocado.style.display = 'none';
+            });
+        }
+
+        document.getElementById('saibaMaisRecreatur').addEventListener('click', () => {
+            abrirModal('modal-recreatur', 'fechar');
+        });
+    </script>
 
 </body>
 
