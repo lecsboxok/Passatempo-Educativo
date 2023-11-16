@@ -111,154 +111,238 @@
         }
 
         #meuTexto {
-            margin-top: 800px; /* Um espaço inicial para o texto */
-            transition: margin-top 1s ease; /* Adiciona uma transição suave */
+            margin-top: 800px;
+            /* Um espaço inicial para o texto */
+            transition: margin-top 1s ease;
+            /* Adiciona uma transição suave */
+            z-index: 99;
+            position: absolute;
+            top: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
+
+        .le {
+           margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            font-family: Montserrat;
+            font-size: 30px;
+            font-weight: 700;
+
+        }
+
+        .junte {
+            text-align: center;
+            color: white;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .dif {
+            color: #c4faae;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .linha {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 3px solid #c4faae;
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        .oscip {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: Manrope;
+            color: white;
+           padding: 50px 120px;
+           margin: 0 200px;
+           
+
+        }
+
+       
+      
     </style>
-</head>
-<body onload="subirTexto()">
-    <div id="meuTexto">
-        <p>Quem somos </p>
-           <p>Junte-se a nós na missão de fazer a diferença</p> 
-            <p>
-         A Passatempo Educativo é uma OSCIP (Organização da sociedade civil de interesse público) que atua a mais de 23 anos em diversos projetos, a fim de ajudar no desenvolvimento social e educacional das crianças.
-            </p>
-    </div>
+    </head>
 
-    <script>
-        function subirTexto() {
-            // Obtém a referência ao elemento de texto
-            var texto = document.getElementById('meuTexto');
+    <body onload="subirTexto()">
+        <div id="meuTexto">
 
-            // Define a margem superior fixa após a página ser carregada
-            texto.style.marginTop = '-40vh';
-        }
-    </script>
-    <div class="titulo">
-        <div class="quem">
-            <h3 class="preto">Conheça a</h3>
-            <h3 class="azul">Passatempo Educativo</h3>
+            <div class="le">
+                <p class="qms">Quem somos </p>
+            </div>
+            <p class="junte">Junte-se a nós na missão de fazer a</p>
+            <p class="dif"> diferença</p>
+            <div class="linha"></div>
+            <div class="lets">
+                <p class="oscip">
+                    A Passatempo Educativo é uma OSCIP (Organização da sociedade civil de interesse público) que atua
+                    a mais de 23 anos em diversos projetos, a fim de ajudar no desenvolvimento social e educacional das
+                    crianças.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="historia-sobre">
-        <a href="#object"><button class="obj">Objetivo</button></a>
-        <a href="#historia"><button class="histo">História</button></a>
-        <button class="emprefeliz">Empresa Feliz</button>
-        <button class="governanca">Governança</button>
-    </div>
-    <div class="colaborador">
-<div class="prof">
-    <p>A equipe é formada por profissionais das áreas de Lazer , turismo, recreação, eventos, educação física, pedagogia,biologia, psicologia, jornalismo, artes plásticas, teatro e por professores colaboradores.
-        <br>
-        <br>
-        A Passatempo Educativo tem consciência de que os valores defendidos por um monitor são muito importantes não só para que tenha uma relação de respeito e trabalho bem-sucedido, mas, principalmente que tenha uma troca de experiências e conhecimento de forma positiva e saudável entre todos os envolvidos durante cada projeto.
-    </p>
-    <div class="venha">Venha fazer parte desta família!</div>
-    <div class="maos">
-        <img src="img/SobreNós2.png" alt="" >
-    </div>
-</div>
-    </div>
-    <div class="object" id="object">
-        <img src="img/SobreNós3.png" alt="" class="flecha">
-        <h1 class="obj2">Objetivo</h1>
-        <div class="texto">
-            O nosso principal objetivo é ajudar no processo de ensino-aprendizagem, com projetos <br> diretamente educacionais, que ajudam a diminuir a desigualdade no acesso à educação e <br>fornecer esse meio tão importante aos mais carentes e necessitados.
+
+        <script>
+            function subirTexto() {
+                // Obtém a referência ao elemento de texto
+                var texto = document.getElementById('meuTexto');
+
+                // Define a margem superior fixa após a página ser carregada
+                texto.style.marginTop = '-40vh';
+            }
+        </script>
+        <div class="titulo">
+            <div class="quem">
+                <h3 class="preto">Conheça a</h3>
+                <h3 class="azul">Passatempo Educativo</h3>
+            </div>
         </div>
-    </div>
-
-<div class="historia-retangulo" id="historia">
-    <div class="retangulo">
-        <img src="img/SobreNós4.png" alt="">
-        <h1 class="titulo1">História
-        </h1>
-    </div>
-</div>
-
-
-   
-    
-    
-
-    <footer>
-        <section id="contato" class="section">
-            <div class="conteiner">
-                <div class="rodape-lado1">
-                    <div class="logoRodape">
-                        <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
-                    </div>
-                    <div>
-                        <img src="img/menina.png" alt="" class="menina">
-                    </div>
-                    <div class="rodapeTexto">
-                        <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins
-                            lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental e
-                            desenvolvimento do turismo sustentável.
-                        </p>
-                    </div>
-                    <div class="redes">
-                        <div>
-                            <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt=""
-                                    class="facebook icone"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt=""
-                                    class="instagram icone"></a>
-                        </div>
-                        <div>
-                            <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
-                                    class="twitter icone"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
-                                    src="img/youtube.png" alt="" class="youtube icone"></a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://www.linkedin.com/?original_referer=http%3A%2F%2Fpassatempoeducativo.org.br%2F"><img
-                                    src="img/In.png" alt="" class="In icone"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png" alt=""
-                                    class="flickr icone"></a>
-                        </div>
-                        <div>
-                            <a
-                                href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
-                                    src="img/e-mail.png" alt="" class="email icone"></a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
-                                    src="img/whats.png" alt="" class="whatsapp icone"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="rodape-lado2">
-                    <div class="endereco">
-                        <div class="enderecoTexto">
-                            <a
-                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img src="img/iconMaps.png" alt="" class="iconMaps"></a>
-                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
-                        </div>
-                        <div class="imgMaps">
-                            <a
-                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr" class="a-maps">
-                                <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
-                            </a>
-                        </div>
-                        <div>
-                            <img src="img/amigoSurdo.png" alt="" class="amigoSurdo">
-                        </div>
-                    </div>
-                </div>
-                <div class="direitos">
-                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+        <div class="historia-sobre">
+            <a href="#object"><button class="obj">Objetivo</button></a>
+            <a href="#historia"><button class="histo">História</button></a>
+            <button class="emprefeliz">Empresa Feliz</button>
+            <button class="governanca">Governança</button>
+        </div>
+        <div class="colaborador">
+            <div class="prof">
+                <p>A equipe é formada por profissionais das áreas de Lazer , turismo, recreação, eventos, educação
+                    física, pedagogia,biologia, psicologia, jornalismo, artes plásticas, teatro e por professores
+                    colaboradores.
+                    <br>
+                    <br>
+                    A Passatempo Educativo tem consciência de que os valores defendidos por um monitor são muito
+                    importantes não só para que tenha uma relação de respeito e trabalho bem-sucedido, mas,
+                    principalmente que tenha uma troca de experiências e conhecimento de forma positiva e saudável entre
+                    todos os envolvidos durante cada projeto.
+                </p>
+                <div class="venha">Venha fazer parte desta família!</div>
+                <div class="maos">
+                    <img src="img/SobreNós2.png" alt="">
                 </div>
             </div>
-        </section>
-    </footer>
-</body>
+        </div>
+        <div class="object" id="object">
+            <img src="img/SobreNós3.png" alt="" class="flecha">
+            <h1 class="obj2">Objetivo</h1>
+            <div class="texto">
+                O nosso principal objetivo é ajudar no processo de ensino-aprendizagem, com projetos <br> diretamente
+                educacionais, que ajudam a diminuir a desigualdade no acesso à educação e <br>fornecer esse meio tão
+                importante aos mais carentes e necessitados.
+            </div>
+        </div>
+
+        <div class="historia-retangulo" id="historia">
+            <div class="retangulo">
+                <img src="img/SobreNós4.png" alt="">
+                <h1 class="titulo1">História
+                </h1>
+            </div>
+            <div class="etapa1"></div>
+            <img src="img/História1.png" alt="" class="img1">
+            <img src="img/Elemento1His.png" alt="" class="element1">
+            <p class="texto">A primeira equipe de trabalho tinha apenas três pessoas, e a iniciativa dos trabalhos nesta
+                área do lazer educacional partiu da professora de educação física Carla Ravaioli e de Carlos Chinen</p>
+        </div>
+        </div>
+
+
+
+
+
+
+        <footer>
+            <section id="contato" class="section">
+                <div class="conteiner">
+                    <div class="rodape-lado1">
+                        <div class="logoRodape">
+                            <img src="img/logoPassatempo.png" alt="" class="logotipoRodape">
+                        </div>
+                        <div>
+                            <img src="img/menina.png" alt="" class="menina">
+                        </div>
+                        <div class="rodapeTexto">
+                            <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins
+                                lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental
+                                e
+                                desenvolvimento do turismo sustentável.
+                            </p>
+                        </div>
+                        <div class="redes">
+                            <div>
+                                <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt=""
+                                        class="facebook icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt=""
+                                        class="instagram icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
+                                        class="twitter icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
+                                        src="img/youtube.png" alt="" class="youtube icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/?original_referer=http%3A%2F%2Fpassatempoeducativo.org.br%2F"><img
+                                        src="img/In.png" alt="" class="In icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png"
+                                        alt="" class="flickr icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
+                                        src="img/e-mail.png" alt="" class="email icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
+                                        src="img/whats.png" alt="" class="whatsapp icone"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rodape-lado2">
+                        <div class="endereco">
+                            <div class="enderecoTexto">
+                                <a
+                                    href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img
+                                        src="img/iconMaps.png" alt="" class="iconMaps"></a>
+                                <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
+                            </div>
+                            <div class="imgMaps">
+                                <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"
+                                    class="a-maps">
+                                    <img src="img/mapa.jpg" alt="Endereço do passatempo educativo" class="maps">
+                                </a>
+                            </div>
+                            <div>
+                                <img src="img/amigoSurdo.png" alt="" class="amigoSurdo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="direitos">
+                        <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                        <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
 
 </html>
