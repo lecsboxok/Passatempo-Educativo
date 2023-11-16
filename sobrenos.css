@@ -350,6 +350,10 @@ ul li ul li{
     margin-top: -5px;
 }
 
+.linha1{
+    text-align: center;
+    align-items: ;
+}
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
