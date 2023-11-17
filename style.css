@@ -663,6 +663,7 @@ ul li ul li {
 
 .rodapeTexto {
     text-align: justify;
+    width: 33rem;
 }
 
 .enderecoTexto {
@@ -728,7 +729,7 @@ ul li ul li {
     display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
 
     .conteiner {
         margin: 0;
@@ -970,6 +971,10 @@ ul li ul li {
     .redes {
         display: flex;
         justify-content: center;
+    }
+
+    .rodapeTexto {
+        width: 100%;
     }
 
     .enderecoTexto {
