@@ -247,20 +247,99 @@
                 </h1>
             </div>
             <div class="etapa1">
-                <img src="img/Elemento1His.png" alt="" class="element1">
                 <div class="primeiro">
                     <img src="img/historia1.png" alt="" class="img1">
-                   <div class="circulo"></div>
-                   <img src="img/linha1.png" alt="" class="linha1">
-                    <p class="texto1">A primeira equipe de trabalho tinha apenas três pessoas, e a iniciativa dos trabalhos
-                        nesta
-                        área do lazer educacional partiu da professora de educação física Carla Ravaioli e de Carlos Chinen
+                    <p class="texto1">Depois de muitos meses de pesquisa e trabalho em escolas paulistanas os projetos ganharam dimensão social.
                     </p>
+                    <img src="img/historia3.png" alt="" class="img2">
+                    <p class="texto2">O Centro Maria Bernadette é uma Instituição mantida pela Congregação das Irmãs de São José de Chambéry que atende 300 crianças e adolescentes de cortiços e favelas de São Paulo.</p>
                 </div>
             </div>
-
-            
+            <div class="etapa2">
+                <img src="img/setasobrenós.png" class="setameio" alt="">
+            </div>
+            <div class="etapa3">
+                <div class="segundo">
+                <p class="texto3">A primeira equipe de trabalho tinha apenas três pessoas, e a iniciativa dos trabalhos nesta área do lazer educacional partiu da professora de educação física Carla Ravaioli e de Carlos Chinen</p>
+                <img src="img/historia2.png" class="img3" alt="">
+                <p class="texto4">
+                    Nossa primeira atividade foi uma Festa de Natal para 150 crianças em dezembro na Instituição Colmeia, atualmente titulada de Centro Educacional Ir.Maria Bernadette, localizado na zona cidade de São Paulo.
+                </p>
+                <img src="img/historia4.png" class="img4" alt="">
+            </div>
+            </div>
         </div>
+            <!-- EMPRESA FELIZ -->
+<div class="empresa-feliz">
+    <div class="predio">
+        <img src="img/objetivoIMG.png" alt="" >
+        <h1 class="empresa">Empresa Feliz</h1>
+       
+    </div>
+    <div class="estar">
+        <h1>Partimos do pressuposto que uma empresa que se preocupa com o bem- estar de seus colaboradores tem como resultado uma equipe feliz e motivada, aumentando seus resultados e alcançando suas metas.</h1>
+    </div>
+
+<!--CARROSEL-->
+<div class="carousel-container">
+    <div class="carousel">
+        <ul>
+            <li><img src="img/carrosel-1.png" alt="Imagem 1"></li>
+            <li><img src="img/carrosel-2.png" alt="Imagem 2"></li>
+            <li><img src="img/carrosel-3.png" alt="Imagem 3"></li>
+            <li><img src="img/carrosel-4.png" alt="Imagem 4"></li>
+            <li><img src="img/carrosel-5.png" alt="Imagem 5"></li>
+            <li><img src="img/carrosel-6.png" alt="Imagem 6"></li>
+            <li><img src="img/carrosel-7.png" alt="Imagem 5"></li>
+            <li><img src="img/carrosel-8.png" alt="Imagem 6"></li>
+            <li><img src="img/carrosel-9.png" alt="Imagem 5"></li>
+            <li><img src="img/carrosel-10.png" alt="Imagem 6"></li>
+            <li><img src="img/carrosel-11.png" alt="Imagem 5"></li>
+            <li><img src="img/carrosel-12.png" alt="Imagem 6"></li>
+            <!-- Adicione mais imagens conforme necessário -->
+        </ul>
+
+
+    </div>
+    <div class="carousel-button carousel-button-left" onclick="prevSlide()">
+        &lt; <!-- Seta esquerda -->
+    </div>
+    <div class="carousel-button carousel-button-right" onclick="nextSlide()">
+        &gt; <!-- Seta direita -->
+    </div>
+</div>
+
+<script>
+    const carousel = document.querySelector('.carousel');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+    }
+
+    // Função para avançar o carrossel
+    function nextSlide() {
+        currentIndex++;
+        if (currentIndex >= carousel.children[0].children.length - 2) {
+            currentIndex = 0; // Volta para a primeira imagem quando atinge a última
+        }
+        updateCarousel();
+    }
+
+    // Função para retroceder o carrossel
+    function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = carousel.children[0].children.length - 3; // Vai para a última imagem quando estiver na primeira
+        }
+        updateCarousel();
+    }
+
+    updateCarousel(); // Inicializa o carrossel
+</script>
+</div>
+            
+        
 
 
 
