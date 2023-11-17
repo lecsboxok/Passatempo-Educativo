@@ -65,6 +65,10 @@ html {
     margin-right: 25px;
 }
 
+.cabecalho_nav_itens a:hover{
+    color: #5d5d5d;
+}
+
 .cabecalho_nav_item_Doe {
     background-color: #FB2673;
     font: 400 17px 'Montserrat', serif;
