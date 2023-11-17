@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
 
 @font-face {
     font-family: 'Montserrat';
@@ -22,8 +25,151 @@
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
+/* CABEÇALHO */
+#cabecalho {
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    background-color: #FFF;
+}
+
+#cabecalho .cabecalho_sombra {
+    height: 5px;
+    background-color: #FFD233;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
+}
+
+.cabecalho_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_nav_itens {
+    margin-right: 30px;
+}
+
+.cabecalho_nav_item {
+    font: 400 18px 'Montserrat', serif;
+    color: #000;
+    margin-right: 25px;
+}
+
+.cabecalho_nav_item_Doe {
+    background-color: #FB2673;
+    font: 400 17px 'Montserrat', serif;
+    border-bottom: 10px;
+    padding: 10px 30px;
+    color: #FFF;
+}
+
+.idiomas {
+    margin: 15px 20px 0 0;
+}
+
+/* IDIOMAS */
+ul {
+    list-style: none;
+}
+
+.a-teste {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+
+}
+
+.a-teste:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste {
+    display: block;
+    padding: 0 20px;
+}
+
+.principal {
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p {
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li {
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens {
+    display: none;
+    padding-left: 2px;
+    position: fixed;
+    z-index: 100;
+}
+
+/* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
+
+ul {
+    list-style: none;
+}
+
+.a-teste2 {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
+
+.a-teste2:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-teste2 {
+    display: block;
+    padding: 0 20px;
+}
+
+.principal2 {
+    background-color: rgba(0, 0, 255, 0);
+    width: 90%;
+    /* margin: auto; */
+}
+
+.li-p2 {
+    line-height: 50px;
+    float: left;
+}
+
+ul li ul li {
+    background-color: #74747400;
+    height: 50px;
+}
+
+.ul-imagens2 {
+    display: none;
+    padding-left: 2px;
+    position: fixed;
+    z-index: 100;
+}
+
+.geral {
+    display: none;
+}
+
+/* COMEÇO VOLUNTÁRIOS */
 .imagem-comeco {
-    width: 210vh;
+    width: 100%;
     height: 483px;
 }
 
@@ -69,7 +215,7 @@
 
 .retangulo-rosa {
     margin-top: 20vw;
-    width: 210vh;
+    width: 100%;
 }
 
 .menina-funcionamento {
@@ -191,27 +337,25 @@
     font-weight: 700;
     line-height: 34px;
     letter-spacing: 0em;
-    margin-left: 10vw;
-    margin-top: 25vw;
+    margin-top: 45vh;
+    margin-left: 10vh;
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/* CARROSSEL */
 .carousel-container {
-    position: relative;
+
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
 
+
+}
+
+.carrossel-imagem {
+    width: 60px;
+    height: 60px;
+  
 }
 
 .carousel {
@@ -225,17 +369,18 @@
 .slide {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centralize o conteúdo horizontal e verticalmente */
+    justify-content: center;
     background-color: #F5F5F5;
     border: 2px solid black;
-    flex-direction: column; /* Alinhe o conteúdo verticalmente */
+    flex-direction: column;
     margin-top: 10vw;
-    height: 15vw;
+    width: 283.2px;
+    height: 179.8px;
 }
 
 .prev-btn,
 .next-btn {
-    position: absolute;
+
     top: 70%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0);
@@ -247,14 +392,15 @@
 }
 
 .prev-btn {
-    left: -6vw;
+    left: -7vw;
+
 }
 
 .next-btn {
-    right: -3vw;
+    right: 5vw;
 }
 
-.texto-car {
+.texto-carrossel {
     font-family: 'Forum';
     font-size: 15px;
     font-weight: 200;
@@ -262,8 +408,16 @@
     letter-spacing: 0em;
     text-align: center;
     padding: 10px;
-    margin: 10px; /* Ajuste o espaçamento entre o texto e o contêiner do slide */
+    margin: 10px;
+    
 }
+
+
+
+
+
+
+
 
 
 
@@ -271,14 +425,140 @@
 
 /* FORMULÁRIO */
 
-form{
+form {
     background-color: rgb(151, 38, 38);
     width: 545px;
     height: 537px;
-  
+
     margin-left: 20vw;
 }
 
-.lele, .retangulo-rosa{
+.lele,
+.retangulo-rosa {
     z-index: 100%;
+}
+
+
+
+
+
+
+
+/* RODAPÉ */
+#contato {
+    background: rgba(255, 228, 133, 0.74);
+    padding: 73px 0;
+    padding-bottom: 15px;
+}
+
+#contato .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rodapeCima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape-lado1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+}
+
+.logoRodape {
+    margin-left: 135px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.icone {
+    width: 55px;
+    padding: 9px;
+}
+
+.icone:hover {
+    width: 62px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.texto-rodape {
+    font: 400 20px 'Montserrat', sans-serif;
+}
+
+.rodapeTexto {
+    text-align: justify;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+
+.iconMaps {
+    margin-right: 20px;
+}
+
+.textoMaps {
+    font: 400 20px 'Montserrat', sans-serif;
+}
+
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.logoRodape img {
+    width: 170px;
+}
+
+.menina img {
+    width: 180px;
+}
+
+.imgMaps img {
+    width: 380px;
+    border-radius: 10px;
+}
+
+.imgMaps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.autorais {
+    font: 300 16px 'Montserrat', serif;
+}
+
+.direito {
+    font: 300 20px 'Montserrat', serif;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 190px;
 }

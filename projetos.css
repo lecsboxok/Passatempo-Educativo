@@ -25,9 +25,7 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 /* CABEÇALHO */
 #cabecalho {
@@ -57,6 +55,10 @@ html {
 
 .cabecalho_nav_itens {
     margin-right: 30px;
+}
+
+.cabecalho_nav_itens a:hover{
+    color: #5d5d5d;
 }
 
 .cabecalho_nav_item {
@@ -177,37 +179,60 @@ ul li ul li {
 /* INICIAL MENINA */
 
 main {
-    padding-top: 90px;
+    padding-top: 85px;
 }
 
 .container {
     margin: 0 200px;
 }
 
-.inicial-menina img {
+.inicial-menina{
+    background: url(img/Projetos-menina.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 60vh;
+    align-items: center;
+    display: flex;
 }
 
 .inicial-menina h1 {
-    font: 600 50px 'Montserrat', sans-serif;
+    font: 600 7vh 'Montserrat', sans-serif;
     color: white;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%;
+    transform: translateY(-50%); */
     left: 0;
     right: 0;
     text-align: center;
 }
 
+
 /* INTRODUÇÃO */
 .introducao {
-    margin-top: 50px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
 }
 
 main .introducao p {
     font: 300 20px 'Montserrat', sans-serif;
     text-align: justify;
-    margin-right: 150px;
+    margin-top: 20px;
+}
+
+main .introducao h4 {
+    font: 700 28px 'Montserrat', sans-serif;
+    text-align: center;
+    color: #26B2F4;
+}
+
+main .textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
 }
 
 main .introducao {
@@ -216,19 +241,21 @@ main .introducao {
     align-items: center;
 }
 
+
 /* PROJETOS */
 .projetos {
-    margin-top: 160px;
+    margin-top: 80px;
 }
 
 .projetos .linha-projetos img {
-    width: 300px;
+    width: 280px;
 }
 
 .linha-projetos {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .projetos h2 {
@@ -255,7 +282,6 @@ h3{
 .projeto-item {
     display: flex;
     margin-bottom: 100px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -269,6 +295,7 @@ h3{
     opacity: 0;
     transform: scale(0.5) translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+    cursor: pointer;
 }
 
 .projeto-item:hover h2 {
@@ -298,17 +325,19 @@ h3{
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s;
 }
 
+/* MODAL */
+
 .modal {
     display: none;
     position: fixed;
+    height: 100%;
     top: 0;
     right: 0;
+    overflow-y: scroll;
     background-color: white;
-    padding: 20px;
-    border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 200;
-    width: 80%;
+    width: 70%;
     max-width: 600px;
 }
 
@@ -319,8 +348,28 @@ h3{
 .fechar {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     cursor: pointer;
+    background-color: #FFF;
+    border-radius: 22px;
+    padding: 10px 30px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.329);
+}
+
+.fechar:hover{
+    transform: scale(0.9);
+    transition: 0.3s all;
+    background-color: #e8e8e8;
+}
+
+.fechar:not(:hover){
+    transform: scale(1);
+    transition: 0.3s all;
+}
+
+span{
+    font: 600 16px 'Montserrat', sans-serif;
 }
 
 .desfocado {
@@ -332,6 +381,22 @@ h3{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.404);
     z-index: 1;
+}
+
+.modal img{
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+}
+
+.modal p{
+    font: 400 2.5vh 'Manrope', sans-serif;
+    margin: 50px;
+    text-align: justify;
+}
+
+.negrito{
+    font-style: inherit;
 }
 
 
@@ -429,5 +494,25 @@ h3{
     }
 
     /* TÉRMINO DO CABEÇALHO */
+
+    .linha-projetos{
+        justify-content: center;
+    }
+
+    .introducao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        margin: 0 100px;
+    }
+
+    main .textos{
+        margin: 15px 0;
+    }
+
 
 }
