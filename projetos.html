@@ -317,8 +317,62 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharClassica"><span>VOLTAR</span></div>
                     <img src="img/FundoMusica.png" alt="">
-                    <p>A visita monitorada ao Mundo da Música Clássica inicia-se com uma exposição interativa onde grandes compositores famosos como Beethoven, Tchaikowsky, Bach, Mozart contam de sua vida e curiosidades de sua carreira.
-                        <br>
+                    <p>A visita monitorada ao Mundo da Música Clássica inicia-se com uma exposição interativa onde
+                        grandes compositores famosos como Beethoven, Tchaikowsky, Bach, Mozart contam de sua vida e
+                        curiosidades de sua carreira.
+                        <br>Em outro setor da exposição será possível relacionar grandes obras clássicas com o nosso
+                        cotidiano, perceberemos que está muito mais presente do que imaginamos.
+                        Na infância, a música clássica é bem importante. Ela aumenta a concentração, diminui a ansiedade
+                        e aumenta a criatividade.
+                        <br> Para estimular ainda mais a criatividade, fazemos juntos com as crianças: violino de
+                        papelão,
+                        trompete de garrafa pet, flauta de cano PVC e outros instrumentos de música clássica!
+                    </p>
+                </div>
+            </div>
+
+            <div id="modal-ecobanda" class="modal">
+                <div class="modal-content">
+                    <div class="fechar" id="fecharEcobanda"><span>VOLTAR</span></div>
+                    <img src="img/FundoEcobanda.png" alt="">
+                    <p>Atores e atrizes da Passatempo Educativo que tem muitos talentos para cantar e representar que se
+                        uniram com jovens com reconhecido talento para a música, desse casamento surge a Ecobanda com o
+                        espetáculo que é sucesso de público: Os Animais e as Cantigas de Roda.
+                        <br>As cantigas abordadas neste show falam da vida dos animais, usando episódios fictícios, que
+                        comparam a realidade humana com a realidade daquela espécie, fazendo com que a atenção da
+                        criança fique presa à história contada pela música, o que estimula sua imaginação e memória. São
+                        os casos das músicas “A barata diz que tem”, “Peixe vivo” e “Não atire o pau no gato”.
+                        <br>Público-alvo: crianças com idade entre 3-10 anos
+                        <br>Duração: 50 minutos (teatros) / 40minutos (parques)
+                    </p>
+                </div>
+            </div>
+
+            <div id="modal-idade" class="modal">
+                <div class="modal-content">
+                    <div class="fechar" id="fecharIdade"><span>VOLTAR</span></div>
+                    <img src="img/FundoMelhorIdade.png" alt="">
+                    <p>Esta faixa-etária foi escolhida estando contra as inúmeras barreiras sociais que são encontradas
+                        perante os idosos. A atividade é uma proposta de inclusão, valorização e integração, que
+                        possibilita diferentes benefícios e informações.
+                        <br>Mais do que avôs ou pessoas amáveis, os idosos não são o foco do projeto apenas pela
+                        intenção de oferecer benefícios. Não é à toa que todo idoso se sente bem quando percebe ser útil
+                        a algo, isto ocorre porque, de fato, eles são essenciais na construção de qualquer conceito ou
+                        ato do ser humano.
+                        Tudo o que se aprende, alguém precisa ensinar e muito do que não se sabe, estes idosos podem
+                        ensinar, descobrir em conjunto e proporcionar inúmeros momentos agradáveis nesse projeto.
+                    </p>
+                </div>
+            </div>
+
+            <div id="modal-aventura" class="modal">
+                <div class="modal-content">
+                    <div class="fechar" id="fecharAventura"><span>VOLTAR</span></div>
+                    <img src="img/FundoAventura.png" alt="">
+                    <p>Temos diversos projetos durante a Aventura Educativa, sendo o principal:
+                        <br><span class="negrito">Peça No Meio da Floresta</span> - Quer participar de uma peça incrível com os animais da Mata Atlântica? Esta peça teatral com a Tartaruga, Onça Pintada, Jacaré, Mico Leão, Sapo, Tucano e Arara faz um convite para que possamos mudar nossos hábitos em prol do meio ambiente.
+                        <br><br>Numa apresentação interativa são abordados conceitos dos 3R’s, os problemas ocasionados pelo acúmulo e produção de lixo, a importância da economia de água.
+                        <br>Utilizando-se de recursos como mágica, ilusionismo, matemática e ciências os temas ambientais são tratados de uma forma lúdica e divertida.
                     </p>
                 </div>
             </div>
@@ -386,6 +440,18 @@
 
         document.getElementById('saibaMaisClassica').addEventListener('click', () => {
             abrirModal('modal-classica', 'fecharClassica');
+        });
+
+        document.getElementById('saibaMaisEcobanda').addEventListener('click', () => {
+            abrirModal('modal-ecobanda', 'fecharEcobanda');
+        });
+
+        document.getElementById('saibaMaisIdade').addEventListener('click', () => {
+            abrirModal('modal-idade', 'fecharIdade');
+        });
+
+        document.getElementById('saibaMaisAventura').addEventListener('click', () => {
+            abrirModal('modal-aventura', 'fecharAventura');
         });
 
     </script>

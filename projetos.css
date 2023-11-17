@@ -395,6 +395,10 @@ span{
     text-align: justify;
 }
 
+.negrito{
+    font-style: inherit;
+}
+
 
 
 
@@ -509,5 +513,6 @@ span{
     main .textos{
         margin: 15px 0;
     }
+
 
 }
