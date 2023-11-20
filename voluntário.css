@@ -167,276 +167,319 @@ ul li ul li {
     display: none;
 }
 
+
+
+
+
 /* COMEÇO VOLUNTÁRIOS */
-.imagem-comeco {
-    width: 100%;
-    height: 483px;
-}
-
-.titulo-dois {
-    color: #26B2F4;
+h2 {
     font-family: Montserrat;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 34px;
-    letter-spacing: 0em;
-    margin-left: 2vw;
-    margin-top: 10vw;
+    color: #26B2F4;
 }
 
-.texto-1 {
+p,
+h3 {
     font-family: Manrope;
+}
+
+p {
+    line-height: 24.59px;
     font-size: 18px;
-    font-weight: 300;
-    line-height: 1.8;
-    margin-right: 52vw;
-    margin-top: 2vw;
-
-
-}
-
-#segunda-parte {
-    margin-left: 13vw;
-    margin-top: 10vw;
-}
-
-.imagem-coracao {
-    margin-left: 70vw;
-    margin-top: -25vw;
+    text-align: left;
 }
 
 
-/* fazendo a terceira parte  */
+.imagem-voluntario {
+    /* imagem de voluntário logo em segida do cabeçalho */
+    width: 100%;
+    height: auto;
+}
+
+
+/* título e texto do programa voluntariado */
+.programa-voluntario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20vw;
+
+}
+
+.titulo,
+.lee {
+    margin-top: 5vh;
+}
+
+
+
+/*COMO FUNCIONA */
+.retangulo-rosa {
+    width: 100%;
+    height: auto;
+}
+
+
 
 .funcionamento {
-    margin-top: 7vw;
-}
-
-
-.retangulo-rosa {
-    margin-top: 20vw;
-    width: 100%;
-}
-
-.menina-funcionamento {
-    margin-top: 10vw;
-
-}
-
-.imagem-funcio {
-    margin-top: -50vw;
-    margin-left: 15vw;
-
-}
-
-
-/* Sobre o funcionamento parte 1 */
-
-.numero-1-tudo {
-    margin-left: 110vh;
-    margin-top: -40vh;
-}
-
-.titulo-1 {
-    font-family: Montserrat;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 34px;
+    /* Nesse é uma div onde coloquei as coisas dentro do retangulo rosa coloquei várias coisas para deixar no centro */
+    margin-top: -80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: #26B2F4;
-    margin-top: -30vw;
-
-}
-
-.titulo-funcio1 {
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 27px;
-    letter-spacing: 0em;
-    margin-left: 40vh;
-    margin-top: -5vh;
-
-
+    justify-content: space-between;
 }
 
 
-/*  */
-.texto-funcio1 {
-    font-family: Manrope;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 25px;
-    margin-left: 32vh;
+
+.texto,
+.titulo-fuincionamento {
+    display: flex;
     margin-top: 3vh;
-
-}
-
-.numero-1 {
-    margin-top: 4vw;
-    margin-left: 15vw;
-}
-
-
-
-/* Funcionamento 2 */
-
-.imagem-num2 {
-    margin-top: 5vw;
-    margin-left: 66.9vw;
-}
-
-
-.titulo-funcio2 {
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 27px;
-    letter-spacing: 0em;
-    margin-left: 150vh;
-    margin-top: -5vh;
+    margin-right: 13vw;
 
 
 }
 
-.texto-funcio2 {
-    font-family: Manrope;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 24.59px;
-    margin-right: 20vh;
-    margin-top: 3vh;
-    margin-left: 67vw;
+
+.lets {
+    /* Aqui é uma div que tem a imgame com o numero e o texto */
+
+    display: flex;
 }
 
-.btn {
-    width: 243px;
+
+.tt {
+    /* Aqui eu coloquei uma class no titulo para eu abaixar ele e dar um espaço entre o numero e o titulo */
+    margin-top: 5.75vh;
+    margin-left: 2vh;
+}
+
+
+#saibaMais {
+    width: 233px;
     height: 33px;
-    top: 1541px;
-    left: 893px;
     background-color: #26B2F4;
     color: white;
-    font-family: Manrope;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0em;
-    margin-left: 69vw;
-    margin-top: 2vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
 
-
+.lo {
+    margin-left: 10vw;
 }
 
 
+/* PARTE PARA O FORMULÁRIO */
 
-/* parte quatro */
 
-.titulo-3 {
-    font-family: Montserrat;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 34px;
-    letter-spacing: 0em;
-    margin-top: 45vh;
-    margin-left: 10vh;
+.modal {
+    display: none;
+    position: fixed;
+  top: 30%;
+    right: 0;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    width: 800px;
+    height: 700px;
 }
 
+.modal-content {
+    text-align: center;
+}
 
-/* CARROSSEL */
-.carousel-container {
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
 
-    max-width: 1000px;
-    margin: 0 auto;
+.desfocado {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-
-
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+    z-index: 1;
 }
 
-.carrossel-imagem {
-    width: 60px;
-    height: 60px;
+.formulario, .btn{/* para deixar tudo em cima do outro */
+    display:block;
+}
+
+
+.formulario{/* faz com que ele desça um pouco */
+    margin-top: 5vh;
+    
   
 }
 
-.carousel {
-    display: flex;
-    overflow: hidden;
+#Mensagem{/* edita a mensagem */
+    resize: none;
+    height: 108px;
+    border: 1px solid rgba(0, 0, 0, 0.729);
+    border-radius: 5px;
+    margin-top: 5vh;
+    width: 409px;
+}
+
+
+
+input{/* edita inputs */
+    width: 409px;
+    height: 37px;
+    border: 1px solid rgba(0, 0, 0, 0.729);
+    border-radius: 5px;
+    margin-top: 5vh;
+}
+
+.btn{/* aqui é uma div para mexer o botão para deixar no centro */
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F5F5F5;
-    border: 2px solid black;
-    flex-direction: column;
-    margin-top: 10vw;
-    width: 283.2px;
-    height: 179.8px;
-}
-
-.prev-btn,
-.next-btn {
-
-    top: 70%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 24px;
-}
-
-.prev-btn {
-    left: -7vw;
-
-}
-
-.next-btn {
-    right: 5vw;
-}
-
-.texto-carrossel {
-    font-family: 'Forum';
-    font-size: 15px;
-    font-weight: 200;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
+    margin-top: 6vh;
+  
     
 }
 
 
+#btn{/* é o id do botão para estilizar */
+    width: 409px;
+    height: 37px;
+    color: white;
+    background-color: #26B2F4;
+}
+/* CARROSSEL DE IMAGENS */
 
-
-
-
-
-
-
-
-
-
-/* FORMULÁRIO */
-
-form {
-    background-color: rgb(151, 38, 38);
-    width: 545px;
-    height: 537px;
-
-    margin-left: 20vw;
+.titulo-carrossel {
+    /* aqui é o titulo do carrossel dei um margin left só para dá um espaço, não queria deixar no centro */
+    font-family: Montserrat;
+    font-size: 28px;
+    margin-top: 50vh;
+    /* useei margin-top para abaixar meu título */
+    margin-left: 7vw;
 }
 
-.lele,
-.retangulo-rosa {
-    z-index: 100%;
+.tudo-carrossel {    
+    /* coloquei essa div tudo para incluir tudo no carrossel, deixar ele no centro e ultilizei margin top para abaixar ele */
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
+
+.carousel-container {/* ele também tem tudo mas a função dele mesmo é o tamanho em si do carrossel, ele mexe no js */
+
+    position: relative;
+    width: 830px;
+    overflow: hidden;
+
+}
+
+
+.carousel {
+    display: flex;
+    transition: 0.9s;
+
+
+
+}
+
+.carousel ul {/* essa parte ele só pega o conteudo do carrossel ou seja imagens e titulo */
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+img,
+h5 {/* esssa parte foi para arrumar o top dentro do quadrado as imagens */
+    margin-top: 5vh;
+}
+
+
+
+.carousel img {/* essa parte teve que ficar se eu tiro esse auto as imagens ficam diferentes */
+    height: auto;
+}
+
+
+
+.img {/* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
+    width: 243px;
+    height: 236px;
+
+    border: 1px solid black;
+    margin-left: 25px;
+    background-color: #F5F5F5;
+    font-family: Forum;
+    font-size: 22.4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+/* parte de botões do carrossel */
+.carousel-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    /* largura dos botões */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* cor de fundo dos botões */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: 0;
+}
+
+.carousel-button-right {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -560,5 +603,5 @@ form {
 }
 
 footer {
-    margin-top: 190px;
+    margin-top: 300px;
 }
