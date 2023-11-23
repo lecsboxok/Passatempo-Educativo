@@ -670,6 +670,7 @@ span {
     .geral i {
         color: #FFD233;
         font-size: 28px;
+        cursor: pointer;
     }
 
     .modal-menu {
@@ -682,6 +683,7 @@ span {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         z-index: 200;
         width: 100%;
+        transition: 1s ease;
     }
 
     #modal-menu .fechar {
@@ -694,7 +696,7 @@ span {
         box-shadow: none;
     }
 
-    #fecharMenu span{
+    #fecharMenu span {
         font-size: 50px;
     }
 
@@ -704,18 +706,18 @@ span {
         margin-top: 20px;
     }
 
-    .comeco-menu{
+    .comeco-menu {
         display: flex;
         justify-content: space-around
     }
 
-    .as a{
+    .as a {
         font: 700 16px 'Montserrat', sans-serif;
         color: black;
         margin: 12px 0;
     }
 
-    .as{
+    .as {
         margin-top: 70px;
         display: flex;
         flex-direction: column;
@@ -723,13 +725,13 @@ span {
         margin-left: 50px;
     }
 
-    .menina-menu{
+    .menina-menu {
         text-align: left;
         margin-top: 30px;
         margin-left: 30px;
     }
 
-    .menina-menu img{
+    .menina-menu img {
         width: 120px;
     }
 
@@ -743,7 +745,7 @@ span {
         background-color: rgba(0, 0, 0, 0.404);
         z-index: 1;
     }
-    
+
     /* TÉRMINO DO CABEÇALHO */
 
     .linha-projetos {

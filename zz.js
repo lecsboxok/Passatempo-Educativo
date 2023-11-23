@@ -52,3 +52,4 @@ var elements = document.querySelectorAll('.numero');
 elements.forEach(function(element) {
     observer.observe(element);
 });
+

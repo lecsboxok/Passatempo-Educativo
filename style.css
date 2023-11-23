@@ -325,7 +325,6 @@ ul li ul li {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30px;
-    margin-bottom: 10px;
 }
 
 .doacoes {
@@ -372,16 +371,19 @@ ul li ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 3rem;
+    padding: 5rem 3.2rem;
+    margin: 10px 0;
 }
 
 .utilidade h2 {
     font: 400 26px 'Forum', serif;
     color: #1F9B6E;
     margin-bottom: 50px;
+    width: 200px;
+
 }
 
-.tracejado {
+.tracejado, .tracejado2 {
     border-left: 2px dashed #1F9B6E;
 }
 
@@ -392,7 +394,6 @@ ul li ul li {
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 10px;
 }
 
 .video {
@@ -721,15 +722,20 @@ ul li ul li {
 }
 
 .autorais {
-    font: 300 16px 'Montserrat', serif;
+    font: 300 2vh 'Montserrat', serif;
+    margin-bottom: 5px;
 }
 
 .direito {
-    font: 300 20px 'Montserrat', serif;
+    font: 300 2.5vh 'Montserrat', serif;
     margin-bottom: 10px;
 }
 
 .geral {
+    display: none;
+}
+
+.modal {
     display: none;
 }
 
@@ -743,13 +749,18 @@ ul li ul li {
     }
 
     /* CABEÇALHO */
+
     #cabecalho {
         width: 100%;
         position: fixed;
     }
 
-    #cabecalho nav.cabecalho_nav {
-        width: 100%;
+    .cabecalho_nav {
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
     }
 
     #cabecalho .cabecalho_sombra {
@@ -759,68 +770,130 @@ ul li ul li {
         width: 100%;
     }
 
-    /* .libra{
-        display: none;
-    } */
-
-    .geral {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 50px;
-        display: flex;
-        right: 10px;
-        position: relative;
-    }
-
-    .geral:hover .cabecalho_nav_item {
-        color: rgb(255, 255, 255);
-        display: flex;
-    }
-
-    .cabecalho_nav_item {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        z-index: 1000;
-        left: 270px;
-        top: 40px;
-    }
-
-    a {
-        text-align: center;
-        font-family: 'Aleo', sans-serif;
-        font-size: 10px;
-        color: rgb(0, 0, 0);
-        padding-top: 6px;
-    }
-
-    a:hover {
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-    }
-
     .cabecalho_nav_itens {
         display: none;
     }
 
-    #cabecalho .imagem {
-        left: 20px;
-        position: relative;
-    }
-
-    .cabecalho_Logo {
-        width: 120px;
+    .cabecalho_nav_item {
+        display: none;
     }
 
     .cabecalho_nav_item_Doe {
         display: none;
     }
 
-    .idiomas {
-        right: 40px;
-        top: 5px;
-        position: relative;
+    .cabecalho_Logo {
+        width: 120px;
     }
+
+    .navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .a-teste {
+        padding: 0;
+        display: flex;
+    }
+
+    .geral {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .idiomas {
+        margin: 0;
+
+    }
+
+    .img-teste {
+        padding: 0;
+    }
+
+    .ul-imagens {
+        margin-top: 20px;
+    }
+
+    .geral i {
+        color: #FFD233;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .modal-menu {
+        display: none;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 200;
+        width: 100%;
+    }
+
+    #modal-menu .fechar {
+        background-color: transparent;
+        cursor: pointer;
+        left: 20px;
+        border-radius: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+
+    #fecharMenu span{
+        font-size: 50px;
+    }
+
+    .modal-menu img {
+        width: 130px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .comeco-menu{
+        display: flex;
+        justify-content: space-around
+    }
+
+    .as a{
+        font: 700 16px 'Montserrat', sans-serif;
+        color: black;
+        margin: 12px 0;
+    }
+
+    .as{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .menina-menu{
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .menina-menu img{
+        width: 120px;
+    }
+
+    .desfocado {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.404);
+        z-index: 1;
+    }
+    
+    /* TÉRMINO DO CABEÇALHO */
 
 
     /* PRINCIPAL */
@@ -835,7 +908,7 @@ ul li ul li {
     }
 
     .setinha {
-        width: 10px;
+        width: 30px;
     }
 
     .conatainerproje .slidde-container .slide .contentproje .btnblog {
@@ -878,14 +951,23 @@ ul li ul li {
     /* DOAÇÕES */
 
 
+    /* UTILIDADES */
+    .tracejado2 {
+        border: none;
+    }
+
+    .utilidade {
+        padding: 3rem 2rem;
+    }
+
     /* YOUTUBE */
     #conteudoYoutube {
         padding: 64px 0px;
     }
 
     .video iframe {
-        width: 300px;
-        height: 150px;
+        width: 200px;
+        height: 100px;
     }
 
     /* SAIBA MAIS */
@@ -947,15 +1029,19 @@ ul li ul li {
         height: 50px;
         margin: 15px 0;
     }
+    
+    .redes {
+        width: 100%;
+    }
 
     .redes img {
-        width: 40px;
-        padding: 9px;
+        width: 35px;
+        padding: 5px;
         padding-left: 3px;
     }
 
     .icone:hover {
-        width: 45px;
+        width: 40px;
         transition: 0.5s;
         filter: brightness(50%);
     }
@@ -993,9 +1079,13 @@ ul li ul li {
         margin-top: 30px;
     }
 
-    .iconMaps img {
-        width: 30px;
+    .enderecoTexto img {
+        width: 40px;
         margin-right: 10px;
+    }
+
+    .textoMaps {
+        font: 400 14px 'Montserrat', sans-serif;
     }
 
     .imgMaps {
@@ -1027,7 +1117,7 @@ ul li ul li {
     }
 
     .amigo img {
-        width: 300px;
+        width: 270px;
     }
 
     .direitos {
@@ -1035,14 +1125,11 @@ ul li ul li {
         margin-top: 90px;
     }
 
-    .autorais {
-        width: 290px;
-    }
 
-    .direito {
-        margin-top: 15px;
-        width: 300px;
-        text-align: center;
-    }
+}
 
+@media screen and (max-width: 608px) {
+    .tracejado {
+        border: none;
+    }
 }
