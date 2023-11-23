@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha Passatempo</title>
+    <link rel="stylesheet" href="lojinha.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+              <div class="imagem">
+                <img src="img/carrinho-de-compras.png" alt="">
+               </div>
+               <span id="cont-carrinho">0</span>
+            </div>
+<div id="carrinho-itens" style="display: none;">
+    <ul id="itens-lista"></ul>
+    <span id="preco-total">Total: R$0.00</span>
+    <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+</div>
+        </div>
+        
+    </header>
+    <!--MAIN-->
+    <div class="natal">
+        <img src="img/natal.png" alt="">
+    </div>
+    <main>
+        <main id="main">
+            <div class="container">
+                <div class="nome">
+                    <h2 class="nome-secao">Produtos:</h2>
+                </div>
+                <div class="produtos">
+                    <div class="produto-linha">
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto1.png" alt="">
+                            </div>
+                            <div class="infos">
+                                <h3>Garrafa Térmica Inox</h3>
+                                <p>R$50.00</p>
+                                <button onclick="addCarrinho('PELÚCIA STITCH LILO', 30.00)">Adicionar ao Carrinho</button>
+                            </div>
+                        </div> 
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/pelucia2.png" alt="">
+                            </div>
+                            <div class="infos">
+                                <h3>PELÚCIA URSO</h3>
+                                <p>R$35.00</p>
+                                <button onclick="addCarrinho('PELÚCIA URSO', 35.00)">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/pelucia3.png" alt="">
+                            </div>
+                            <div class="infos">
+                                <h3>PELÚCIA AMOR </h3>
+                                <p>R40.00</p>
+                                <button onclick="addCarrinho('PELÚCIA AMOR ', 40.00)">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/pelucia4.png" alt="">
+                            </div>
+                            <div class="infos">
+                                <h3>PELÚCIA PANDA</h3>
+                                <p>R$45.00</p>
+                                <button onclick="addCarrinho('PELÚCIA PANDA', 45.00)">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/pelucia5.png" alt="">
+                            </div>
+                            <div class="infos">
+                                <h3>PELÚCIA PAIXÃO</h3>
+                                <p>R$37.00</p>
+                                <button onclick="addCarrinho('PELÚCIA PAIXÃO', 37.00)">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/pelucia6.png" alt="">
+                            </div>
+                            <div class="infos">
+                                <h3>PELÚCIA ROSA</h3>
+                                <p>R$45.00</p>
+                                <button onclick="addCarrinho('PELÚCIA ROSA', 45.00)">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+    <script src="lojinha.js"></script>
+
+    
+</body>
+</html>
