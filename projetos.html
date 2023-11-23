@@ -7,31 +7,9 @@
     <link rel="icon" href="img/logoIcon.png">
     <link rel="stylesheet" href="projetos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script>
-        $(document).ready(function () {
-            var botao = $('.a-teste');
-            var dropDown = $('.ul-imagens');
-
-            botao.on('click', function (event) {
-                dropDown.stop(true, true).slideToggle();
-                event.stopPropagation();
-            });
-        });
-
-        $(document).ready(function () {
-            var botao = $('.a-teste2');
-            var dropDown = $('.ul-imagens2');
-
-            botao.on('click', function (event) {
-                dropDown.stop(true, true).slideToggle();
-                event.stopPropagation();
-            });
-        });
-
-
-    </script>
 </head>
 
 
@@ -51,7 +29,7 @@
                     <a class="cabecalho_nav_item" href="#contato">Contato</a>
                 </div>
                 <div class="geral">
-                    <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
+                    <i class="fa-solid fa-bars" id="menu"></i>
                     <div class="cabecalho_nav_item">
                         <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
                         <a class="mobileCabecalho" href="projetos.html">Projetos</a>
@@ -261,7 +239,7 @@
             <div id="modal-jogoteca" class="modal">
                 <div class="modal-content">
                     <div class="fechar" id="fecharJogoteca"><span>VOLTAR</span></div>
-                    <img src="img/FundoCultura.png" alt="">
+                    <img src="img/FundoJogoteca.png" alt="">
                     <p>A Jogoteca de todos os tempos e culturas é uma grande aula de história, geografia, matemática e
                         raciocínio lógico, com jogos de tabuleiros de diversos lugares do mundo, em que é possível levar
                         a todos para uma viagem ao cinco continentes, possibilitando se conhecer mais sobre diferentes
@@ -370,19 +348,106 @@
                     <div class="fechar" id="fecharAventura"><span>VOLTAR</span></div>
                     <img src="img/FundoAventura.png" alt="">
                     <p>Temos diversos projetos durante a Aventura Educativa, sendo o principal:
-                        <br><span class="negrito">Peça No Meio da Floresta</span> - Quer participar de uma peça incrível com os animais da Mata Atlântica? Esta peça teatral com a Tartaruga, Onça Pintada, Jacaré, Mico Leão, Sapo, Tucano e Arara faz um convite para que possamos mudar nossos hábitos em prol do meio ambiente.
-                        <br><br>Numa apresentação interativa são abordados conceitos dos 3R’s, os problemas ocasionados pelo acúmulo e produção de lixo, a importância da economia de água.
-                        <br>Utilizando-se de recursos como mágica, ilusionismo, matemática e ciências os temas ambientais são tratados de uma forma lúdica e divertida.
+                        <br><span class="negrito">Peça No Meio da Floresta</span> - Quer participar de uma peça incrível
+                        com os animais da Mata Atlântica? Esta peça teatral com a Tartaruga, Onça Pintada, Jacaré, Mico
+                        Leão, Sapo, Tucano e Arara faz um convite para que possamos mudar nossos hábitos em prol do meio
+                        ambiente.
+                        <br><br>Numa apresentação interativa são abordados conceitos dos 3R’s, os problemas ocasionados
+                        pelo acúmulo e produção de lixo, a importância da economia de água.
+                        <br>Utilizando-se de recursos como mágica, ilusionismo, matemática e ciências os temas
+                        ambientais são tratados de uma forma lúdica e divertida.
                     </p>
                 </div>
             </div>
 
+            <div id="modal-menu" class="modal modal-menu">
+                <div class="modal-content">
+                    <div class="comeco-menu">
+                        <div class="fechar-tudo">
+                            <div class="fechar fechar-menu" id="fecharMenu"><span>&times;</span></div>
+                        </div>
+                        <div class="imagem-menu">
+                            <img src="img/logo1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="as">
+                        <a href="sobrenos.html">Sobre nós</a>
+                        <a href="Voluntário.html">Voluntários</a>
+                        <a href="projetos.html">Projetos</a>
+                        <a href="doeAgora.html">Doe agora</a>
+                    </div>
+                    <div class="menina-menu">
+                        <img src="img/menina.png" alt="menina">
+                    </div>
+                </div>
+            </div>
 
             <div id="desfocado" class="desfocado"></div>
+
         </div>
+
+        <div class="quiz">
+            <div class="container">
+                <div class="div-quiz">
+                    <div class="esquerda-quiz">
+                        <h1>Leilão do <br>Conhecimento</h1>
+                        <p>É um divertido quiz que trabalha o conteúdo escolar, incentivando o trabalho em equipe, a
+                            educação financeira e a capacidade de negociação.</p>
+                        <button>QUIZ</button>
+                    </div>
+                    <div class="direita-quiz">
+                        <img src="img/projeto-martelo.png" alt="martelo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="jornal">
+                <div class="newsletter">
+                    <h1>Receba novidades <span>na nossa Newsletter</span></h1>
+                </div>
+                <div class="formulario">
+                    <form class="form">
+                        <span class="titulo">Inscreva-se para notícias</span>
+                        <p class="descricao">Se inscreva para receber notícias sobre a Passatempo Educativo.</p>
+                        <div>
+                            <input placeholder="Escreva seu email" type="email" name="email" id="email-address"
+                                required>
+                            <button id="requisito">Inscreva-se</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </main>
 
+
+
     <script>
+
+        $(document).ready(function () {
+            var botao = $('.a-teste');
+            var dropDown = $('.ul-imagens');
+
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
+
+        $(document).ready(function () {
+            var botao = $('.a-teste2');
+            var dropDown = $('.ul-imagens2');
+
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
+
+
         function abrirModal(idModal, idFechar) {
             const modal = document.getElementById(idModal);
             const fechar = document.getElementById(idFechar);
@@ -453,6 +518,22 @@
         document.getElementById('saibaMaisAventura').addEventListener('click', () => {
             abrirModal('modal-aventura', 'fecharAventura');
         });
+
+
+        function alerta() {
+            window.alert('Seu email foi registrado')
+        }
+
+        document.getElementById('requisito').addEventListener('click', () => {
+            alerta();
+        })
+
+        document.getElementById('menu').addEventListener('click', () => {
+            abrirModal('modal-menu', 'fecharMenu');
+            document.body.style.overflow = 'hidden';
+        });
+
+
 
     </script>
 
