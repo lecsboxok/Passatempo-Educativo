@@ -203,7 +203,7 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20vw;
+    padding: 15vw;
 
 }
 
@@ -278,7 +278,7 @@ p {
 .modal {
     display: none;
     position: fixed;
-  top: 30%;
+    top: 20%;
     right: 0;
     transform: translate(-50%);
     background-color: white;
@@ -312,18 +312,22 @@ p {
     z-index: 1;
 }
 
-.formulario, .btn{/* para deixar tudo em cima do outro */
-    display:block;
+.formulario,
+.btn {
+    /* para deixar tudo em cima do outro */
+    display: block;
 }
 
 
-.formulario{/* faz com que ele desça um pouco */
+.formulario {
+    /* faz com que ele desça um pouco */
     margin-top: 5vh;
-    
-  
+
+
 }
 
-#Mensagem{/* edita a mensagem */
+#Mensagem {
+    /* edita a mensagem */
     resize: none;
     height: 108px;
     border: 1px solid rgba(0, 0, 0, 0.729);
@@ -334,7 +338,8 @@ p {
 
 
 
-input{/* edita inputs */
+input {
+    /* edita inputs */
     width: 409px;
     height: 37px;
     border: 1px solid rgba(0, 0, 0, 0.729);
@@ -342,22 +347,25 @@ input{/* edita inputs */
     margin-top: 5vh;
 }
 
-.btn{/* aqui é uma div para mexer o botão para deixar no centro */
+.btn {
+    /* aqui é uma div para mexer o botão para deixar no centro */
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 6vh;
-  
-    
+
+
 }
 
 
-#btn{/* é o id do botão para estilizar */
+#btn {
+    /* é o id do botão para estilizar */
     width: 409px;
     height: 37px;
     color: white;
     background-color: #26B2F4;
 }
+
 /* CARROSSEL DE IMAGENS */
 
 .titulo-carrossel {
@@ -369,7 +377,7 @@ input{/* edita inputs */
     margin-left: 7vw;
 }
 
-.tudo-carrossel {    
+.tudo-carrossel {
     /* coloquei essa div tudo para incluir tudo no carrossel, deixar ele no centro e ultilizei margin top para abaixar ele */
     margin-top: 20vh;
     justify-content: center;
@@ -377,7 +385,8 @@ input{/* edita inputs */
     display: flex;
 }
 
-.carousel-container {/* ele também tem tudo mas a função dele mesmo é o tamanho em si do carrossel, ele mexe no js */
+.carousel-container {
+    /* ele também tem tudo mas a função dele mesmo é o tamanho em si do carrossel, ele mexe no js */
 
     position: relative;
     width: 830px;
@@ -394,7 +403,8 @@ input{/* edita inputs */
 
 }
 
-.carousel ul {/* essa parte ele só pega o conteudo do carrossel ou seja imagens e titulo */
+.carousel ul {
+    /* essa parte ele só pega o conteudo do carrossel ou seja imagens e titulo */
     list-style: none;
     display: flex;
     padding: 0;
@@ -403,19 +413,22 @@ input{/* edita inputs */
 }
 
 img,
-h5 {/* esssa parte foi para arrumar o top dentro do quadrado as imagens */
+h5 {
+    /* esssa parte foi para arrumar o top dentro do quadrado as imagens */
     margin-top: 5vh;
 }
 
 
 
-.carousel img {/* essa parte teve que ficar se eu tiro esse auto as imagens ficam diferentes */
+.carousel img {
+    /* essa parte teve que ficar se eu tiro esse auto as imagens ficam diferentes */
     height: auto;
 }
 
 
 
-.img {/* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
+.img {
+    /* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
     width: 243px;
     height: 236px;
 
