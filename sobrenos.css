@@ -334,7 +334,6 @@ ul li ul li {
 }
 
 .img3, .texto3, .img4, .texto4{
-    margin-left: 100px;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -370,6 +369,7 @@ ul li ul li {
     margin-left: 1000px;
     width: 300px;
     margin-top: -145vh;
+
     
  
 }
