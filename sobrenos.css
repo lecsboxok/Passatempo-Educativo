@@ -255,9 +255,17 @@ ul li ul li {
     padding: 30px 30px 30px 30px;
     width: 800px;
     height: 260px;
-    margin-left: 450px;
+  text-align: center;
+  
     margin-top: 100px;
    font:400 15px 'Manrope', sans-serif;
+}
+.colaborador-azul{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
 }
 .venha{
     text-align: center;
@@ -270,6 +278,7 @@ ul li ul li {
     font: 500 15px 'Montserrat', sans-serif;
     text-align: center;
     margin-top: 10px;
+    color: black;
 }
 
 .maos{
@@ -305,6 +314,7 @@ ul li ul li {
     width: 100;
     height: 1500px;
     margin-top: 150px;
+   
 }
 
 .retangulo{
@@ -336,6 +346,7 @@ ul li ul li {
    font-weight: 400;
    
 }
+  
 
 .primeiro{
     display: flex;
@@ -357,8 +368,8 @@ ul li ul li {
     display: flex;
     flex-direction: column;
     margin-left: 1000px;
-    width: 500px;
-    margin-top: -900px;
+    width: 300px;
+    margin-top: -145vh;
     
  
 }
@@ -488,13 +499,13 @@ color: #878F94;
 
 #diretoria{
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-family: 'Forum', sans-serif;
+   width: 95vw;
+   display: flex;
+justify-content: center;
+   font-family: 'Forum', sans-serif;
     font-weight: 400;
     font-size: 35px;
-    padding: 50px;
+  margin-top: 30px;
 
 }
 
@@ -503,34 +514,21 @@ color: #1F9B6E;
 font-size: 25px;
 font-weight: 600;
 } 
-/*nomes larguras*/
-.nome1{
-    margin-left: 300px;
-}
-.nome2{
-    margin-left: 500px;
-    padding: -50px;
-}
-.nome3{
-    margin-left: 300px;
-}
-.nome4{
-    margin-left: 1100px;
-}
+
 
 .text{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-style: italic;
     font-weight: 500;
-    margin-left: 450px;
+    /* margin-left: 450px; */
 }
 .textp{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-style: italic;
     font-weight: 500;
-    margin-left: 350px;
+    /* margin-left: 350px; */
 }
 
 .text1{
@@ -538,48 +536,41 @@ font-weight: 600;
     font-size: 18px;
     font-style: italic;
     font-weight: 500;
-    margin-left: 1130px;
+    /* margin-left: 1130px; */
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
 }
 
 
-/*LINHA*/ .primeira-linha{
+.segunda-linha, .primeira-linha{
     height: 300px;
-    border-left: 2px solid #000;
-    text-align: center; 
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.segunda-linha{
-    height: 300px;
-    border-left: 2px solid #000;
-    text-align: center; 
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 850px;
-    padding:-100px;
+    width: 2px;
+    background-color: black;
+    
+    margin: 0 100px;
    
 }
 
-.presidente{
-    margin-top: -20vh;
-}
+
 .vice-presidente{
     text-align: center;
     display: flex;
-    flex-direction: column;
+   
     align-items: center;
   
 }
 .let{
-    margin-top: -25vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-.conselho ,.fiscal{
+.conselheiro ,.fiscal{
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -587,7 +578,8 @@ font-weight: 600;
     font-family: 'Forum', sans-serif;
     font-weight: 400;
     font-size: 35px;
-padding: 80px;
+/* padding: 80px; */
+
 }
 
 /*NOSSO ESTATUTO*/
