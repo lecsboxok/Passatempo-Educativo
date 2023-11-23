@@ -33,7 +33,7 @@ html {
 #cabecalho {
     width: 100%;
     position: fixed;
-    z-index: 11;
+    z-index: 999;
     background-color: #FFF;
 }
 
@@ -43,7 +43,7 @@ html {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
 }
 
-.cabecalho_nav{
+.cabecalho_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,13 +59,17 @@ html {
     margin-right: 30px;
 }
 
-.cabecalho_nav_item{
+.cabecalho_nav_item {
     font: 400 18px 'Montserrat', serif;
     color: #000;
     margin-right: 25px;
 }
 
-.cabecalho_nav_item_Doe{
+.cabecalho_nav_itens a:hover{
+    color: #5d5d5d;
+}
+
+.cabecalho_nav_item_Doe {
     background-color: #FB2673;
     font: 400 17px 'Montserrat', serif;
     border-bottom: 10px;
@@ -78,44 +82,43 @@ html {
 }
 
 /* IDIOMAS */
-ul{
+ul {
     list-style: none;
 }
 
-.a-teste{
+.a-teste {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 0 20px;
-
 }
 
-.a-teste:hover{
+.a-teste:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste{
+.img-teste {
     display: block;
     padding: 0 20px;
 }
 
-.principal{
+.principal {
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p{
+.li-p {
     line-height: 50px;
     float: left;
 }
 
-ul li ul li{
+ul li ul li {
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens{
+.ul-imagens {
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -124,43 +127,43 @@ ul li ul li{
 
 /* DEIXA ESSE CSS DE INGLÊS TAMBÉM MESMO QUE A PÁGINA SEJA EM PORTUGUES, SÓ MUDA NO HTML */
 
-ul{
+ul {
     list-style: none;
 }
 
-.a-teste2{
+.a-teste2 {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 0 20px;
 }
 
-.a-teste2:hover{
+.a-teste2:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.img-teste2{
+.img-teste2 {
     display: block;
     padding: 0 20px;
 }
 
-.principal2{
+.principal2 {
     background-color: rgba(0, 0, 255, 0);
     width: 90%;
     /* margin: auto; */
 }
 
-.li-p2{
+.li-p2 {
     line-height: 50px;
     float: left;
 }
 
-ul li ul li{
+ul li ul li {
     background-color: #74747400;
     height: 50px;
 }
 
-.ul-imagens2{
+.ul-imagens2 {
     display: none;
     padding-left: 2px;
     position: fixed;
@@ -190,6 +193,7 @@ ul li ul li{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
 }
 .obj{
@@ -251,9 +255,17 @@ ul li ul li{
     padding: 30px 30px 30px 30px;
     width: 800px;
     height: 260px;
-    margin-left: 350px;
+  text-align: center;
+  
     margin-top: 100px;
    font:400 15px 'Manrope', sans-serif;
+}
+.colaborador-azul{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
 }
 .venha{
     text-align: center;
@@ -266,6 +278,7 @@ ul li ul li{
     font: 500 15px 'Montserrat', sans-serif;
     text-align: center;
     margin-top: 10px;
+    color: black;
 }
 
 .maos{
@@ -273,11 +286,12 @@ ul li ul li{
     margin-top: -30px;
 }
 
-.flecha{
+#flecha{
     margin-top: 150px;
     text-align: center;
     justify-content: center;
-    margin-left: 710px;
+    align-items: center;
+   
 }
 .obj2{
     color:#FB2673;
@@ -300,6 +314,7 @@ ul li ul li{
     width: 100;
     height: 1500px;
     margin-top: 150px;
+   
 }
 
 .retangulo{
@@ -319,7 +334,6 @@ ul li ul li{
 }
 
 .img3, .texto3, .img4, .texto4{
-    margin-left: 100px;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -331,6 +345,7 @@ ul li ul li{
    font-weight: 400;
    
 }
+  
 
 .primeiro{
     display: flex;
@@ -352,8 +367,9 @@ ul li ul li{
     display: flex;
     flex-direction: column;
     margin-left: 1000px;
-    width: 500px;
-    margin-top: -900px;
+    width: 300px;
+    margin-top: -145vh;
+
     
  
 }
@@ -376,7 +392,7 @@ ul li ul li{
 }
 
 .empresa{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 28px;
     font-weight: 700px;
     color: #26B2F4;
@@ -384,10 +400,13 @@ ul li ul li{
 
 .estar h1 {
     margin-top: 70px;
-    font: 400 20px 'Manrope', sans-serif;  }
+    font: 400 20px 'Manrope', sans-serif;
+padding: 0 40vh;  }
 
 .projetos{
-    font: 1000 15px 'Montserrat', sans-serif;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
 }
 /*CARROSEL*/
 .carousel-container {
@@ -447,6 +466,142 @@ ul li ul li{
 .carousel-button-right {
     right: 0;
 }
+/*FIM CARROSEL */
+/*GOVERNANÇA*/
+.governo{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 2100px;
+}
+
+#governa{
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ padding: 100px;
+
+}
+
+.gov{
+font-family: 'Montserrat', sans-serif;
+font-size: 28px;
+font-weight: 700px;
+color: #878F94;
+}
+
+.missao{
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+    text-align: center;
+    padding: 0 50vh;
+}
+
+#diretoria{
+    text-align: center;
+   width: 95vw;
+   display: flex;
+justify-content: center;
+   font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+  margin-top: 30px;
+
+}
+
+/*NOMES*/ .nome1, .nome2, .nome3, .nome4{
+color: #1F9B6E;
+font-size: 25px;
+font-weight: 600;
+} 
+
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    /* margin-left: 450px; */
+}
+.textp{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    /* margin-left: 350px; */
+}
+
+.text1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    /* margin-left: 1130px; */
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+
+
+.segunda-linha, .primeira-linha{
+    height: 300px;
+    width: 2px;
+    background-color: black;
+    
+    margin: 0 100px;
+   
+}
+
+
+.vice-presidente{
+    text-align: center;
+    display: flex;
+   
+    align-items: center;
+  
+}
+.let{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.conselheiro ,.fiscal{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+/* padding: 80px; */
+
+}
+
+/*NOSSO ESTATUTO*/
+
+.nosso-estatuto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.aqui{
+    color: #1F9B6E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
