@@ -238,7 +238,7 @@ ul li ul li {
 }
 
 .conatainerproje .slidde-container:nth-child(1) .slide {
-    background: url(img/principal1.png) center;
+    background: url(img/principal1-1.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -246,7 +246,7 @@ ul li ul li {
 }
 
 .conatainerproje .slidde-container:nth-child(2) .slide {
-    background: url(img/principal2.png) center;
+    background: url(img/principal1-2.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -254,7 +254,7 @@ ul li ul li {
 }
 
 .conatainerproje .slidde-container:nth-child(3) .slide {
-    background: url(img/principal3.png) center;
+    background: url(img/principal1-3.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
