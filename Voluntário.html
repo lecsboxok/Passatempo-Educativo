@@ -222,10 +222,32 @@
                 </div>
 
 
+<script>
+                function abrirModal(idModal, idFechar) {
+                    const modal = document.getElementById(idModal);
+                    const fechar = document.getElementById(idFechar);
+                    const desfocado = document.getElementById('desfocado');
+        
+                    modal.style.display = 'block';
+                    desfocado.style.display = 'block';
+        
+                    fechar.addEventListener('click', () => {
+                        modal.style.display = 'none';
+                        desfocado.style.display = 'none';
+                    });
+        
+                    desfocado.addEventListener('click', () => {
+                        modal.style.display = 'none';
+                        desfocado.style.display = 'none';
+                    });
+                }
+        
+        document.getElementById('menu').addEventListener('click', () => {
+                    abrirModal('modal-menu', 'fecharMenu');
+                    document.body.style.overflow = 'hidden';
+                });
 
-
-
-
+</script>
 
 
 
