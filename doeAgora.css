@@ -171,8 +171,8 @@ ul li ul li {
 
 /* COMEÇO DE DOAÇÃO */
 img{
-    width: 100%;
-    height: auto;
+    width: 100%;  
+  height: auto;
 }
 #imagem-comeco{
     font-family: Forum;
@@ -205,36 +205,60 @@ span{
 
 /* BOTÕES */
 .btn{
-    width: 100.4px;
-    height: 43px;
-    border-radius: 9px;
+    width: 176.4px;
+    height: 63px;
+    border-radius: 27px;
     border: 1px solid #FB2673;
     text-align: center;
     background-color: #FFF;
     margin-left: 4vw;
+    font-size: 31.5px;
 }
 
 .botoes{
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 10vh;
 }
 
+.btn, .btnn{
+    font-family: Montserrat;
+    
+}
 .btnn{
-  
-    width: 140.4px;
-    height: 43px;
-    border-radius: 9px;
+    width: 235.13px;
+    height:48.34px;
+    border-radius: 27px;
     text-align: center;
     background-color: #FB2673;
     color: white;
+    font-size: 23.94px;
+    
 }
 .button{
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 7vh;
 }
+
+
+
+
+
+    /* Estilizando o botão */
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    /* Estilo quando o botão é clicado */
+    .btn:active {
+      background-color: #FB2673; /* Cor que desejar */
+    }
+  
 
 
 
