@@ -286,7 +286,7 @@ ul li ul li {
 /* FRASE */
 #frase {
     text-align: center;
-    padding: 60px 54vh;
+    padding: 60px 45vh;
     margin-top: 40px;
 }
 
@@ -901,7 +901,7 @@ ul li ul li {
 
     /* PRINCIPAL */
     .conatainerproje .slidde-container .slide .contentproje h1 {
-        font: 500 6vh 'Montserrat', serif;
+        font: 500 5vh 'Montserrat', serif;
         color: #FFF;
     }
 
