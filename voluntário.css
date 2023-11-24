@@ -459,11 +459,12 @@ h5 {
 }
 
 .carousel-button-left {
-    left: 0;
+    margin-left: 0;
+
 }
 
 .carousel-button-right {
-    right: 0;
+    right: 1vw;
 }
 
 /* RODAPÉ */
