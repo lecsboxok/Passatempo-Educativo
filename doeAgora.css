@@ -216,7 +216,7 @@ span{
 }
 
 .botoes{
-    display: flex;
+   
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -227,7 +227,15 @@ span{
     font-family: Montserrat;
     
 }
-.btnn{
+
+.button{display: flex;
+   align-items: center;
+    justify-content: center; 
+}
+.btnn{ 
+    
+    margin-top: 10vh;
+   
     width: 235.13px;
     height:48.34px;
     border-radius: 27px;
@@ -237,14 +245,6 @@ span{
     font-size: 23.94px;
     
 }
-.button{
-    align-items: center;
-    justify-content: center;
-    margin-top: 7vh;
-}
-
-
-
 
 
     /* Estilizando o botão */
@@ -379,5 +379,5 @@ span{
 }
 
 footer {
-    margin-top: 300px;
+    margin-top: 170px;
 }
