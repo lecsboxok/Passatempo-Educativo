@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,8 @@
     <link rel="stylesheet" href="lojinha.css">
     <link rel="icon" href="img/logoIcon.png">
 </head>
+
 <body>
-    <!--HEADER-->
     <header id="header">
         <div class="container">
             <div class="logo">
@@ -19,19 +20,20 @@
                 <button onclick="buscarSite()">Buscar</button>
             </div>
             <div id="carrinho-icon" onclick="toggleCarrinho()">
-              <div class="imagem">
-                <img src="img/carrinho-de-compras.png" alt="">
-               </div>
-               <span id="cont-carrinho">0</span>
+                <div class="imagem">
+                    <img src="img/carrinho-de-compras.png" alt="">
+                </div>
+                <span id="cont-carrinho">0</span>
             </div>
-<div id="carrinho-itens" style="display: none;">
-    <ul id="itens-lista"></ul>
-    <span id="preco-total">Total: R$0.00</span>
-    <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
-</div>
+            <div id="carrinho-itens" style="display: none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Total: R$0.00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
         </div>
-        
     </header>
+
+
     <!--MAIN-->
     <div class="natal">
         <img src="img/natal.png" alt="">
@@ -46,62 +48,177 @@
                     <div class="produto-linha">
                         <div class="produto">
                             <div class="imagem">
-                                <img src="img/produto1.png" alt="">
+                                <img src="img/produto1.png" alt="garrafa rosa">
                             </div>
                             <div class="infos">
                                 <h3>Garrafa Térmica Inox</h3>
                                 <p>R$50.00</p>
-                                <button onclick="addCarrinho('PELÚCIA STITCH LILO', 50.00)">Adicionar ao Carrinho</button>
+                                <button onclick="addCarrinho('Garrafa Térmica Inox', 50.00)">Adicionar ao
+                                    Carrinho</button>
                             </div>
-                        </div> 
+                        </div>
                         <div class="produto">
                             <div class="imagem">
-                                <img src="img/produto2.png" alt="">
+                                <img src="img/produto2.png" alt="agenda">
                             </div>
                             <div class="infos">
                                 <h3>Agenda Personalizada</h3>
                                 <p>R$39.99</p>
-                                <button onclick="addCarrinho('PELÚCIA URSO', 39.99)">Adicionar ao Carrinho</button>
+                                <button onclick="addCarrinho('Agenda Personalizada', 39.99)">Adicionar ao
+                                    Carrinho</button>
                             </div>
                         </div>
                         <div class="produto">
                             <div class="imagem">
-                                <img src="img/produto3.png" alt="">
+                                <img src="img/produto3.png" alt="kit de canetas">
                             </div>
                             <div class="infos">
                                 <h3>Kit de canetas CIS</h3>
                                 <p>R40.00</p>
-                                <button onclick="addCarrinho('PELÚCIA AMOR ', 40.00)">Adicionar ao Carrinho</button>
+                                <button onclick="addCarrinho('Kit de canetas CIS', 40.00)">Adicionar ao
+                                    Carrinho</button>
                             </div>
                         </div>
                         <div class="produto">
                             <div class="imagem">
-                                <img src="img/pelucia4.png" alt="">
+                                <img src="img/produto4.png" alt="camisa branca">
                             </div>
                             <div class="infos">
-                                <h3>PELÚCIA PANDA</h3>
-                                <p>R$45.00</p>
-                                <button onclick="addCarrinho('PELÚCIA PANDA', 45.00)">Adicionar ao Carrinho</button>
+                                <h3>Camisa Passatempo Feminina</h3>
+                                <p>R$39.00</p>
+                                <button onclick="addCarrinho('Camisa Passatempo Feminina', 39.00)">Adicionar ao
+                                    Carrinho</button>
                             </div>
                         </div>
                         <div class="produto">
                             <div class="imagem">
-                                <img src="img/pelucia5.png" alt="">
+                                <img src="img/produto5.png" alt="camisa branca">
                             </div>
                             <div class="infos">
-                                <h3>PELÚCIA PAIXÃO</h3>
-                                <p>R$37.00</p>
-                                <button onclick="addCarrinho('PELÚCIA PAIXÃO', 37.00)">Adicionar ao Carrinho</button>
+                                <h3>Camisa Passatempo Masculina</h3>
+                                <p>R$39.00</p>
+                                <button onclick="addCarrinho('Camisa Passatempo Masculina', 39.00)">Adicionar ao
+                                    Carrinho</button>
                             </div>
                         </div>
                         <div class="produto">
                             <div class="imagem">
-                                <img src="img/pelucia6.png" alt="">
+                                <img src="img/produto6.png" alt="caneca">
                             </div>
                             <div class="infos">
-                                <h3>PELÚCIA ROSA</h3>
-                                <p>R$45.00</p>
-                                <button onclick="addCarrinho('PELÚCIA ROSA', 45.00)">Adicionar ao Carrinho</button>
+                                <h3>Caneca Van Gogh</h3>
+                                <p>R$29.99</p>
+                                <button onclick="addCarrinho('Caneca Van Gogh', 29.99)">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto7.png" alt="caneca">
+                            </div>
+                            <div class="infos">
+                                <h3>Caneca Passatempo Educativo</h3>
+                                <p>R$26.99</p>
+                                <button onclick="addCarrinho('Caneca Passatempo Educativo', 26.99)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto8.png" alt="brinquedos">
+                            </div>
+                            <div class="infos">
+                                <h3>Brinquedos artesanais infantis</h3>
+                                <p>R$49.99</p>
+                                <button onclick="addCarrinho('Brinquedos artesanais infantis', 49.99)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto9.png" alt="vela">
+                            </div>
+                            <div class="infos">
+                                <h3>Vela aromatizada - Alecrim</h3>
+                                <p>R$18.80</p>
+                                <button onclick="addCarrinho('Vela aromatizada - Alecrim', 18.80)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto10.png" alt="vela">
+                            </div>
+                            <div class="infos">
+                                <h3>Vela aromatizada - Bambo</h3>
+                                <p>R$19.80</p>
+                                <button onclick="addCarrinho('Vela aromatizada - Bambo', 19.80)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto11.png" alt="quebra-cabeça">
+                            </div>
+                            <div class="infos">
+                                <h3>Quebra-cabeça Pixar 1000 peças</h3>
+                                <p>R$72.10</p>
+                                <button onclick="addCarrinho('Quebra-cabeça Pixar 1000 peças', 72.10)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto12.png" alt="quebra-cabeça">
+                            </div>
+                            <div class="infos">
+                                <h3>Quebra-cabeça Nintendo 1000 peças</h3>
+                                <p>R$78.00</p>
+                                <button onclick="addCarrinho('Quebra-cabeça Nintendo 1000 peças', 78.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto13.png" alt="Planner">
+                            </div>
+                            <div class="infos">
+                                <h3>Agenda Planner Semanal</h3>
+                                <p>R$29.00</p>
+                                <button onclick="addCarrinho('Agenda Planner Semanal', 29.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto14.png" alt="Necessaire">
+                            </div>
+                            <div class="infos">
+                                <h3>Kit Necessáire para Viagem</h3>
+                                <p>R$43.99</p>
+                                <button onclick="addCarrinho('Kit Necessáire para Viagem', 43.99)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto15.png" alt="Necessaire">
+                            </div>
+                            <div class="infos">
+                                <h3>Necessáire para maquiagem</h3>
+                                <p>R$32.99</p>
+                                <button onclick="addCarrinho('Necessáire para maquiagem', 32.99)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="produto">
+                            <div class="imagem">
+                                <img src="img/produto16.png" alt="Lousa digital">
+                            </div>
+                            <div class="infos">
+                                <h3>Lousa digital para desenho</h3>
+                                <p>R$57.99</p>
+                                <button onclick="addCarrinho('Lousa digital para desenho', 57.99)">Adicionar ao
+                                    Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -111,6 +228,7 @@
     </main>
     <script src="lojinha.js"></script>
 
-    
+
 </body>
+
 </html>
