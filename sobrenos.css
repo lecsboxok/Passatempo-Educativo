@@ -384,7 +384,7 @@ ul li ul li {
     flex-direction: column;
     margin-left: 1000px;
     width: 300px;
-    margin-top: -130vh;
+    margin-top: -145vh;
     word-break: keep-all;
 
 }
@@ -629,6 +629,7 @@ font-weight: 600;
 font-family: 'Montserrat', sans-serif;
 width: 300px;
 } 
+
 
 
 .text{
