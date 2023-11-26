@@ -25,13 +25,29 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
-/* button{
-    border-radius: 50% ;
+button {
+    border-radius: 50%;
     width: 55px;
     height: 55px;
+    border: 4px solid rgb(229, 64, 91);
+    background-color: white;
 
-} */
+}
 
+.etapas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.linha {
+    background-color: rgb(161, 157, 158);
+    width: 100px;
+    height: 5px;
+    margin-top: 3vh;
+}
 
 .imagem {
     width: 683px;
@@ -42,24 +58,20 @@ a {
     display: flex;
 }
 
-.tudo {
-    display: flex;
-    justify-content: space-between;
-    
-}
-.contato-Form{
-    margin-top: 70vh;
+.tudo{
+display: flex;
 
 }
 
-input {
+.tt{
     display: flex;
-    width: 500px;
-    height: 30px;
-    margin-bottom: 20px;
-    background-color: #7b52b900;
-    border: 0 none;
-    border-bottom: 2px solid rgba(224, 224, 224, 1);
-    outline: 0;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.ttt{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
 }

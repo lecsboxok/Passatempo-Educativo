@@ -389,7 +389,7 @@ input {
     /* ele também tem tudo mas a função dele mesmo é o tamanho em si do carrossel, ele mexe no js */
 
     position: relative;
-    width: 870px;
+    width: 830px;
     overflow: hidden;
 
 }
