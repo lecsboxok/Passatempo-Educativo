@@ -1,51 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-  }
- 
-  img{
-    width: 100%;
-    height: auto;
-  }
-  .container{
-    margin: 0 10px;
-    display: flex;
-  }
-  #header .container{
-     justify-content: space-between;
-     align-items: center;
-  }
-  #main .container{
-    flex-direction: column;
-  }
-  .produto-linha{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .produto{
-margin: 0 80px ;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
-  }
+@font-face {
+  font-family: 'Montserrat';
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
 
-  input{
-    border: 2px solid black;
-    padding: 5px 7px;
-    border-radius: 8px;
-    width: 400px;
+@font-face {
+  font-family: 'Forum';
+  src: url(fonts/Forum-Regular.ttf);
 }
-#carrinho-icon img{
-    width: 50px;
+
+@font-face {
+  font-family: 'Manrope';
+  src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
-#carrinho-icon{
-    display: flex;
+
+
+img {
+  width: 100%;
+  height: auto;
 }
-.produto img{
-  width: 300px;
-  height: 250px;
+
+.container {
+  margin: 0 10px;
+  display: flex;
 }
+
+#header .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main .container {
+  flex-direction: column;
+}
+
+.produto-linha {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+input {
+  border: 2px solid black;
+  padding: 5px 7px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+#carrinho-icon img {
+  width: 50px;
+}
+
+#carrinho-icon {
+  display: flex;
+}
+
 
 
 
@@ -58,7 +73,7 @@ margin: 0 80px ;
 
 
 #header {
-  background-color: #F28A80;
+  background-color: #FB2673;
   color: #fff;
   padding: 15px 0;
 }
@@ -101,7 +116,7 @@ margin: 0 80px ;
 }
 
 #carrinho-itens {
-  background-color: #F2A391;
+  background-color: #FB2673;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 60px;
@@ -116,7 +131,7 @@ margin: 0 80px ;
 }
 
 .nome-secao {
-  color: #fc9c84;
+  color: #FB2673;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -130,11 +145,12 @@ margin: 0 80px ;
 .produto {
   flex: 0 1 calc(30% - 20px);
   margin: 10px;
-  background-color: #fff;
+  background-color: #fefefe;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  border: 1px solid rgb(189, 189, 189);
 }
 
 .produto:hover {
@@ -162,7 +178,7 @@ margin: 0 80px ;
 
 .produto button {
   padding: 10px 20px;
-  background-color: #fbaeac;
+  background-color: #FB2673;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -171,7 +187,7 @@ margin: 0 80px ;
 }
 
 .produto button:hover {
-  background-color: #f99593;
+  background-color: #FB2673;
 }
 
 /* Carrinho Itens */

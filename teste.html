@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -154,4 +154,209 @@
     </script>
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* CARROSSEL DE IMAGENS */
+
+
+
+.titulo-carrossel {
+    /* aqui é o titulo do carrossel dei um margin left só para dá um espaço, não queria deixar no centro */
+    font-family: Montserrat;
+    font-size: 28px;
+    margin-top: 50vh;
+    /* useei margin-top para abaixar meu título */
+    margin-left: 7vw;
+}
+
+.tudo-carrossel {
+    /* coloquei essa div tudo para incluir tudo no carrossel, deixar ele no centro e ultilizei margin top para abaixar ele */
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.carousel-container {
+    /* ele também tem tudo mas a função dele mesmo é o tamanho em si do carrossel, ele mexe no js */
+
+    position: relative;
+    width: 870px;
+    overflow: hidden;
+
+}
+
+
+.carousel {
+    display: flex;
+    transition: 0.9s;
+
+
+
+}
+
+.carousel ul {
+    /* essa parte ele só pega o conteudo do carrossel ou seja imagens e titulo */
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+img,
+h5 {
+    /* esssa parte foi para arrumar o top dentro do quadrado as imagens */
+    margin-top: 5vh;
+}
+
+
+
+.carousel img {
+    /* essa parte teve que ficar se eu tiro esse auto as imagens ficam diferentes */
+    height: auto;
+}
+
+
+
+.img {
+    /* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
+    width: 243px;
+    height: 236px;
+
+    border: 1px solid black;
+    margin-left: 25px;
+    background-color: #F5F5F5;
+    font-family: Forum;
+    font-size: 22.4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+/* parte de botões do carrossel */
+
+.carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            cursor: pointer; 
+        }
+
+        .carousel-button-left {
+            left: 1vw;
+        }
+
+        .carousel-button-right {
+            right: 1vw;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="carrossel">
+        <h1 class="titulo-carrossel">O que eu ganho sendo voluntário?</h1>
+        <div class="tudo-carrossel">
+            <div class="carousel-container">
+                <div class="carousel">
+
+                    <ul>
+                        <div class="img">
+                            <li><img src="img/quebra-cabeca-volt.png" alt="Imagem 1">
+                                <h5>Conexão social</h5>
+                            </li>
+                        </div>
+
+                        <div class="img">
+                            <li><img src="img/planet-terra-volt.png" alt="Imagem 2">
+                                <h5>Sentido de propósito</h5>
+                            </li>
+                        </div>
+
+
+                        <div class="img">
+                            <li><img src="img/alvoro-volt.png" alt="Imagem 3">
+                                <h5>Desenvolvimento pessoal</h5>
+
+                            </li>
+                        </div>
+
+
+                        <div class="img">
+                            <li><img src="img/cerebro-volt.png" alt="Imagem 4">
+                                <h5>Melhoria da saúde mental</h5>
+                            </li>
+                        </div>
+
+
+                        <div class="img">
+                            <li><img src="img/coreano-volt.png" alt="Imagem 5">
+                                <h5>Sentimento de pertencimento</h5>
+                            </li>
+                        </div>
+
+                        <div class="img">
+                            <li><img src="img/config-volt.png" alt="Imagem 6">
+                                <h5>Experiência de carreira</h5>
+                            </li>
+                        </div>
+                        <!-- Adicione mais imagens conforme necessário -->
+                    </ul>
+
+
+                </div>
+
+                <div class="ro">
+                    <div class="carousel-button carousel-button-left" onclick="prevSlide()">
+                        <img class="direita" src="img/seta-direita-volt.png" alt=""> <!-- Seta esquerda -->
+                    </div>
+                    <div class="carousel-button carousel-button-right" onclick="nextSlide()">
+                        <img src="img/seta-esquerda-volt.png" alt=""> <!-- Seta direita -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <script>// <!-- SCRIPT DO CARROSSEL -->
+            const carousel = document.querySelector('.carousel');
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+            }
+
+            // Função para avançar o carrossel
+            function nextSlide() {
+                currentIndex++;
+                if (currentIndex >= carousel.children[0].children.length - 2) {
+                    currentIndex = 0; // Volta para a primeira imagem quando atinge a última
+                }
+                updateCarousel();
+            }
+
+            // Função para retroceder o carrossel
+            function prevSlide() {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = carousel.children[0].children.length - 3; // Vai para a última imagem quando estiver na primeira
+                }
+                updateCarousel();
+            }
+
+            updateCarousel(); // Inicializa o carrossel
+        </script>
+</body>
 </html>
