@@ -176,7 +176,73 @@ ul li ul li {
     padding-top: 4  x0px;
 }
 
+/*QUEM SOMOS*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
+#meuTexto {
+    margin-top: 800px;
+    /* Um espaço inicial para o texto */
+    transition: margin-top 1s ease;
+    /* Adiciona uma transição suave */
+    z-index: 99;
+    position: absolute;
+    top: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.le {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.junte {
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.dif {
+    color: #c4faae;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.linha {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid #c4faae;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.oscip {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Manrope;
+    color: white;
+    padding: 50px 120px;
+    margin: 0 200px;
+
+
+}
 .quem {
     font: 300 30px 'Montserrat', sans-serif;
     text-align: center;
@@ -631,6 +697,7 @@ width: 300px;
 } 
 
 
+
 .text{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -850,9 +917,9 @@ width: 300px;
 /* MOBILE */
 @media screen and (max-width: 768px) {
 
-   /* CABEÇALHO */
+/* CABEÇALHO */
 
-   #cabecalho {
+#cabecalho {
     width: 100%;
     position: fixed;
 }
@@ -995,4 +1062,70 @@ width: 300px;
 }
 
 /* TÉRMINO DO CABEÇALHO */
+
+#meuTexto {
+    margin-top: 800px;
+    /* Um espaço inicial para o texto */
+    transition: margin-top 1s ease;
+    /* Adiciona uma transição suave */
+    z-index: 99;
+    position: absolute;
+    top: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.le {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+
+}
+
+.junte {
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.dif {
+    color: #c4faae;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.linha {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid #c4faae;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.oscip {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Manrope;
+    color: white;
+    padding: 50px 120px;
+    margin: 0 200px;
+
+
+}
+.quem {
+    font: 300 30px 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
 }
