@@ -9,29 +9,7 @@
     <link rel="stylesheet" href="voluntário.css">
     <link rel="icon" href="img/logoIcon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            var botao = $('.a-teste');
-            var dropDown = $('.ul-imagens');
-
-            botao.on('click', function (event) {
-                dropDown.stop(true, true).slideToggle();
-                event.stopPropagation();
-            });
-        });
-
-        $(document).ready(function () {
-            var botao = $('.a-teste2');
-            var dropDown = $('.ul-imagens2');
-
-            botao.on('click', function (event) {
-                dropDown.stop(true, true).slideToggle();
-                event.stopPropagation();
-            });
-        });
-
-    </script>
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -49,7 +27,7 @@
                     <a class="cabecalho_nav_item" href="#contato">Contato</a>
                 </div>
                 <div class="geral">
-                    <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
+                    <i class="fa-solid fa-bars" id="menu"></i>
                     <div class="cabecalho_nav_item">
                         <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
                         <a class="mobileCabecalho" href="projetos.html">Projetos</a>
@@ -107,312 +85,311 @@
                 </div>
                 <div><img class="imagem-mao-coracao" src="img/coração-voluntario.png" alt=""></div>
             </div>
+        </section>
 
-            <section id="como-funciona">
-                <img class="retangulo-rosa" src="img/Rectangle 190.png" alt="">
-                <div class="funcionamento">
-                    <div class="lo"> <img class="imagem-funcionamento" src="img/menina-fucionamento.png" alt=""></div>
-                    <div>
-                        <h2 class="titulo-fuincionamento">Como funciona?</h2>
-                        <div class="preencha-formulario">
+        <section id="como-funciona">
+            <img class="retangulo-rosa" src="img/Rectangle 190.png" alt="">
+            <div class="funcionamento">
+                <div class="lo"> <img class="imagem-funcionamento" src="img/menina-fucionamento.png" alt=""></div>
+                <div>
+                    <h2 class="titulo-fuincionamento">Como funciona?</h2>
+                    <div class="preencha-formulario">
 
-                            <div class="lets">
+                        <div class="lets">
 
 
-                                <img src="img/numero-1-voluntario.png" alt="">
-                                <h3 class="tt">Preencha o formulário</h3>
-                            </div>
-                            <p class="texto">Insira seus dados no formulário abaixo.</p>
+                            <img src="img/numero-1-voluntario.png" alt="">
+                            <h3 class="tt">Preencha o formulário</h3>
                         </div>
+                        <p class="texto">Insira seus dados no formulário abaixo.</p>
+                    </div>
 
-                        <div class="aguarde-contato">
+                    <div class="aguarde-contato">
 
-                            <div class="lets">
-                                <img src="img/numero-2-voluntario.png" alt="">
-                                <h3 class="tt">Aguarde o contato</h3>
+                        <div class="lets">
+                            <img src="img/numero-2-voluntario.png" alt="">
+                            <h3 class="tt">Aguarde o contato</h3>
+                        </div>
+                        <p id="texto" class="texto">Espere a Passatempo Educativo entrar
+                        </p>
+                        <p class="textoo">em contato com você referente ao</p>
+                        <p class="textoo"> voluntariado.</p>
+                    </div>
+
+                    <button id="saibaMais">Preencher formulário</button>
+
+                    <div id="modal" class="modal">
+                        <h2>Seja voluntário da Passatempo Educativo</h2>
+                        <div class="modal-content">
+                            <span class="fechar" id="fechar">&times;</span>
+                            <div class="quadrado"></div>
+                            <form class="login-form">
+                                <div class="formulario">
+                                    <input id="botao-nome" type="text" placeholder="Nome:">
+                                    <input id="botao-email" type="email" placeholder="Email:">
+                                    <textarea id="Mensagem" placeholder="Digite sua Mensagem:"></textarea>
+                                    <div class="btn"><button id="btn">ENVIAR</button></div>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+        </section>
+
+        <section id="carrossel">
+            <h1 class="titulo-carrossel">O que eu ganho sendo voluntário?</h1>
+            <div class="tudo-carrossel">
+                <div class="carousel-container">
+                    <div class="carousel">
+
+                        <ul>
+                            <div class="img">
+                                <li><img src="img/quebra-cabeca-volt.png" alt="Imagem 1">
+                                    <h5>Conexão social</h5>
+                                </li>
                             </div>
-                            <p id="texto" class="texto">Espere a Passatempo Educativo entrar
+
+                            <div class="img">
+                                <li><img src="img/planet-terra-volt.png" alt="Imagem 2">
+                                    <h5>Sentido de propósito</h5>
+                                </li>
+                            </div>
+
+
+                            <div class="img">
+                                <li><img src="img/alvoro-volt.png" alt="Imagem 3">
+                                    <h5>Desenvolvimento pessoal</h5>
+
+                                </li>
+                            </div>
+
+
+                            <div class="img">
+                                <li><img src="img/cerebro-volt.png" alt="Imagem 4">
+                                    <h5>Melhoria da saúde mental</h5>
+                                </li>
+                            </div>
+
+
+                            <div class="img">
+                                <li><img src="img/coreano-volt.png" alt="Imagem 5">
+                                    <h5>Sentimento de pertencimento</h5>
+                                </li>
+                            </div>
+
+                            <div class="img">
+                                <li><img src="img/config-volt.png" alt="Imagem 6">
+                                    <h5>Experiência de carreira</h5>
+                                </li>
+                            </div>
+                            <!-- Adicione mais imagens conforme necessário -->
+                        </ul>
+
+
+                    </div>
+
+                    <div class="ro">
+                        <div class="carousel-button carousel-button-left" onclick="prevSlide()">
+                            <img class="direita" src="img/seta-direita-volt.png" alt=""> <!-- Seta esquerda -->
+                        </div>
+                        <div class="carousel-button carousel-button-right" onclick="nextSlide()">
+                            <img src="img/seta-esquerda-volt.png" alt=""> <!-- Seta direita -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <section id="contato" class="section">
+            <div class="conteiner">
+                <div class="rodapeCima">
+                    <div class="rodape-lado1">
+                        <div class="logoRodape">
+                            <img src="img/logoPassatempo.png" alt="">
+                        </div>
+                        <div class="menina">
+                            <img src="img/menina.png" alt="">
+                        </div>
+                        <div class="rodapeTexto">
+                            <p class="texto-rodape">Passatempo Educativo é uma organização não
+                                governamental, sem fins
+                                lucrativos, que desenvolve projetos na área educacional, cultural,
+                                preservação ambiental
+                                e
+                                desenvolvimento do turismo sustentável.
                             </p>
-                            <p class="textoo">em contato com você referente ao</p>
-                            <p class="textoo"> voluntariado.</p>
                         </div>
-
-                        <button id="saibaMais">Preencher formulário</button>
-
-                        <div id="modal" class="modal">
-                            <h2>Seja voluntário da Passatempo Educativo</h2>
-                            <div class="modal-content">
-                                <span class="fechar" id="fechar">&times;</span>
-                                <div class="quadrado"></div>
-                                <form class="login-form">
-                                    <div class="formulario">
-                                        <input id="botao-nome" type="text" placeholder="Nome:">
-                                        <input id="botao-email" type="email" placeholder="Email:">
-                                        <textarea id="Mensagem" placeholder="Digite sua Mensagem:"></textarea>
-                                        <div class="btn"><button id="btn">ENVIAR</button></div>
-                                    </div>
-                                </form>
-
-
+                        <div class="redes">
+                            <div>
+                                <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt=""
+                                        class="facebook icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt=""
+                                        class="instagram icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
+                                        class="twitter icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
+                                        src="img/youtube.png" alt="" class="youtube icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://br.linkedin.com/company/passatempo-educativo"><img src="img/In.png"
+                                        alt="" class="In icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png"
+                                        alt="" class="flickr icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
+                                        src="img/e-mail.png" alt="" class="email icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
+                                        src="img/whats.png" alt="" class="whatsapp icone"></a>
                             </div>
                         </div>
-            </section>
-
-            <section id="carrossel">
-                <h1 class="titulo-carrossel">O que eu ganho sendo voluntário?</h1>
-                <div class="tudo-carrossel">
-                    <div class="carousel-container">
-                        <div class="carousel">
-
-                            <ul>
-                                <div class="img">
-                                    <li><img src="img/quebra-cabeca-volt.png" alt="Imagem 1">
-                                        <h5>Conexão social</h5>
-                                    </li>
-                                </div>
-
-                                <div class="img">
-                                    <li><img src="img/planet-terra-volt.png" alt="Imagem 2">
-                                        <h5>Sentido de propósito</h5>
-                                    </li>
-                                </div>
-
-
-                                <div class="img">
-                                    <li><img src="img/alvoro-volt.png" alt="Imagem 3">
-                                        <h5>Desenvolvimento pessoal</h5>
-
-                                    </li>
-                                </div>
-
-
-                                <div class="img">
-                                    <li><img src="img/cerebro-volt.png" alt="Imagem 4">
-                                        <h5>Melhoria da saúde mental</h5>
-                                    </li>
-                                </div>
-
-
-                                <div class="img">
-                                    <li><img src="img/coreano-volt.png" alt="Imagem 5">
-                                        <h5>Sentimento de pertencimento</h5>
-                                    </li>
-                                </div>
-
-                                <div class="img">
-                                    <li><img src="img/config-volt.png" alt="Imagem 6">
-                                        <h5>Experiência de carreira</h5>
-                                    </li>
-                                </div>
-                                <!-- Adicione mais imagens conforme necessário -->
-                            </ul>
-
-
-                        </div>
-
-                        <div class="ro">
-                            <div class="carousel-button carousel-button-left" onclick="prevSlide()">
-                                <img class="direita" src="img/seta-direita-volt.png" alt=""> <!-- Seta esquerda -->
+                    </div>
+                    <div class="rodape-lado2">
+                        <div class="endereco">
+                            <div class="enderecoTexto">
+                                <a
+                                    href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img
+                                        src="img/iconMaps.png" alt="" class="iconMaps"></a>
+                                <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
                             </div>
-                            <div class="carousel-button carousel-button-right" onclick="nextSlide()">
-                                <img src="img/seta-esquerda-volt.png" alt=""> <!-- Seta direita -->
+                            <div class="imgMaps">
+                                <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"
+                                    class="a-maps">
+                                    <img src="img/mapa.jpg" alt="Endereço do passatempo educativo">
+                                </a>
+                            </div>
+                            <div class="amigo">
+                                <img src="img/amigoSurdo.png" alt="" class="amigoSurdo">
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="direitos">
+                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.
+                    </p>
+                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos
+                        Reservados.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
-<script>
-                function abrirModal(idModal, idFechar) {
-                    const modal = document.getElementById(idModal);
-                    const fechar = document.getElementById(idFechar);
-                    const desfocado = document.getElementById('desfocado');
-        
-                    modal.style.display = 'block';
-                    desfocado.style.display = 'block';
-        
-                    fechar.addEventListener('click', () => {
-                        modal.style.display = 'none';
-                        desfocado.style.display = 'none';
-                    });
-        
-                    desfocado.addEventListener('click', () => {
-                        modal.style.display = 'none';
-                        desfocado.style.display = 'none';
-                    });
-                }
-        
+
+    <script>
+        $(document).ready(function () {
+            var botao = $('.a-teste');
+            var dropDown = $('.ul-imagens');
+
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
+
+        $(document).ready(function () {
+            var botao = $('.a-teste2');
+            var dropDown = $('.ul-imagens2');
+
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
+
+
+        function abrirModal(idModal, idFechar) {
+            const modal = document.getElementById(idModal);
+            const fechar = document.getElementById(idFechar);
+            const desfocado = document.getElementById('desfocado');
+
+            modal.style.display = 'block';
+            desfocado.style.display = 'block';
+
+            fechar.addEventListener('click', () => {
+                modal.style.display = 'none';
+                desfocado.style.display = 'none';
+            });
+
+            desfocado.addEventListener('click', () => {
+                modal.style.display = 'none';
+                desfocado.style.display = 'none';
+            });
+        }
+
         document.getElementById('menu').addEventListener('click', () => {
-                    abrirModal('modal-menu', 'fecharMenu');
-                    document.body.style.overflow = 'hidden';
-                });
+            abrirModal('modal-menu', 'fecharMenu');
+            document.body.style.overflow = 'hidden';
+        });
 
-</script>
+        // <!-- SCRIPT DO CARROSSEL -->
+        const carousel = document.querySelector('.carousel');
+        let currentIndex = 0;
 
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+        }
 
+        // Função para avançar o carrossel
+        function nextSlide() {
+            currentIndex++;
+            if (currentIndex >= carousel.children[0].children.length - 2) {
+                currentIndex = 0; // Volta para a primeira imagem quando atinge a última
+            }
+            updateCarousel();
+        }
 
+        // Função para retroceder o carrossel
+        function prevSlide() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = carousel.children[0].children.length - 3; // Vai para a última imagem quando estiver na primeira
+            }
+            updateCarousel();
+        }
 
-
-
-
-
-
-
-
-
-                <script>// <!-- SCRIPT DO CARROSSEL -->
-                    const carousel = document.querySelector('.carousel');
-                    let currentIndex = 0;
-
-                    function updateCarousel() {
-                        carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
-                    }
-
-                    // Função para avançar o carrossel
-                    function nextSlide() {
-                        currentIndex++;
-                        if (currentIndex >= carousel.children[0].children.length - 2) {
-                            currentIndex = 0; // Volta para a primeira imagem quando atinge a última
-                        }
-                        updateCarousel();
-                    }
-
-                    // Função para retroceder o carrossel
-                    function prevSlide() {
-                        currentIndex--;
-                        if (currentIndex < 0) {
-                            currentIndex = carousel.children[0].children.length - 3; // Vai para a última imagem quando estiver na primeira
-                        }
-                        updateCarousel();
-                    }
-
-                    updateCarousel(); // Inicializa o carrossel
-                </script>
+        updateCarousel(); // Inicializa o carrossel
 
 
+        //SCRIPT DO FORMULÁRIO PARA APARECER
+        const saibaMaisButton = document.getElementById('saibaMais');
+        const modal = document.getElementById('modal');
+        const desfocado = document.getElementById('desfocado');
+        const fechar = document.getElementById('fechar');
 
+        saibaMaisButton.addEventListener('click', () => {
+            modal.style.display = 'block';
+            desfocado.style.display = 'block';
+        });
 
+        fechar.addEventListener('click', () => {
+            modal.style.display = 'none';
+            desfocado.style.display = 'none';
+        });
 
+        desfocado.addEventListener('click', () => {
+            modal.style.display = 'none';
+            desfocado.style.display = 'none';
+        });
 
-
-
-
-
-                <script> //SCRIPT DO FORMULÁRIO PARA APARECER
-                    const saibaMaisButton = document.getElementById('saibaMais');
-                    const modal = document.getElementById('modal');
-                    const desfocado = document.getElementById('desfocado');
-                    const fechar = document.getElementById('fechar');
-
-                    saibaMaisButton.addEventListener('click', () => {
-                        modal.style.display = 'block';
-                        desfocado.style.display = 'block';
-                    });
-
-                    fechar.addEventListener('click', () => {
-                        modal.style.display = 'none';
-                        desfocado.style.display = 'none';
-                    });
-
-                    desfocado.addEventListener('click', () => {
-                        modal.style.display = 'none';
-                        desfocado.style.display = 'none';
-                    });
-
-                </script>
-
-                <!-- RODAPÉ -->
-                <footer>
-                    <section id="contato" class="section">
-                        <div class="conteiner">
-                            <div class="rodapeCima">
-                                <div class="rodape-lado1">
-                                    <div class="logoRodape">
-                                        <img src="img/logoPassatempo.png" alt="">
-                                    </div>
-                                    <div class="menina">
-                                        <img src="img/menina.png" alt="">
-                                    </div>
-                                    <div class="rodapeTexto">
-                                        <p class="texto-rodape">Passatempo Educativo é uma organização não
-                                            governamental, sem fins
-                                            lucrativos, que desenvolve projetos na área educacional, cultural,
-                                            preservação ambiental
-                                            e
-                                            desenvolvimento do turismo sustentável.
-                                        </p>
-                                    </div>
-                                    <div class="redes">
-                                        <div>
-                                            <a href="https://www.facebook.com/Passatempoedu/"><img
-                                                    src="img/facebook.png" alt="" class="facebook icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.instagram.com/passatempoeducativo/"><img
-                                                    src="img/insta.png" alt="" class="instagram icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png"
-                                                    alt="" class="twitter icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
-                                                    src="img/youtube.png" alt="" class="youtube icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://br.linkedin.com/company/passatempo-educativo"><img
-                                                    src="img/In.png" alt="" class="In icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.flickr.com/photos/passatempoeducativo"><img
-                                                    src="img/flickr.png" alt="" class="flickr icone"></a>
-                                        </div>
-                                        <div>
-                                            <a
-                                                href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
-                                                    src="img/e-mail.png" alt="" class="email icone"></a>
-                                        </div>
-                                        <div>
-                                            <a
-                                                href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
-                                                    src="img/whats.png" alt="" class="whatsapp icone"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rodape-lado2">
-                                    <div class="endereco">
-                                        <div class="enderecoTexto">
-                                            <a
-                                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img
-                                                    src="img/iconMaps.png" alt="" class="iconMaps"></a>
-                                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
-                                        </div>
-                                        <div class="imgMaps">
-                                            <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"
-                                                class="a-maps">
-                                                <img src="img/mapa.jpg" alt="Endereço do passatempo educativo">
-                                            </a>
-                                        </div>
-                                        <div class="amigo">
-                                            <img src="img/amigoSurdo.png" alt="" class="amigoSurdo">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="direitos">
-                                <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.
-                                </p>
-                                <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos
-                                    Reservados.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </footer>
-
-
-
-
+    </script>
 
 
 
