@@ -25,6 +25,8 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
+
+
 /* CABEÇALHO */
 #cabecalho {
     width: 100%;
@@ -53,6 +55,10 @@ a {
 
 .cabecalho_nav_itens {
     margin-right: 30px;
+}
+
+.cabecalho_nav_itens a:hover {
+    color: #5d5d5d;
 }
 
 .cabecalho_nav_item {
@@ -169,17 +175,21 @@ ul li ul li {
 
 
 
+/* TÉRMINO DO CABEÇALHO */
+
+
+
 
 
 /* COMEÇO VOLUNTÁRIOS */
 h2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: #26B2F4;
 }
 
 p,
 h3 {
-    font-family: Manrope;
+    font-family: 'Manrope';
 }
 
 p {
@@ -193,6 +203,7 @@ p {
     /* imagem de voluntário logo em segida do cabeçalho */
     width: 100%;
     height: auto;
+    margin-top: 60px;
 }
 
 
@@ -203,7 +214,7 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 15vw;
+    padding: 8vw 15vw;
 
 }
 
@@ -370,7 +381,7 @@ input {
 
 .titulo-carrossel {
     /* aqui é o titulo do carrossel dei um margin left só para dá um espaço, não queria deixar no centro */
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 28px;
     margin-top: 50vh;
     /* useei margin-top para abaixar meu título */
@@ -411,8 +422,7 @@ input {
     margin: 0;
 
 }
-
-img,
+.lets img,
 h5 {
     /* esssa parte foi para arrumar o top dentro do quadrado as imagens */
     margin-top: 5vh;
@@ -431,7 +441,6 @@ h5 {
     /* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
     width: 243px;
     height: 236px;
-
     border: 1px solid black;
     margin-left: 25px;
     background-color: #F5F5F5;
@@ -440,6 +449,7 @@ h5 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    display: flex;
 
 }
 
@@ -448,15 +458,15 @@ h5 {
 .carousel-button {
     position: absolute;
     top: 0;
-  display: flex;
+    display: flex;
     align-items: center;
-    cursor: pointer; 
-      margin-top: 7vh;
+    cursor: pointer;
+    margin-top: 7vh;
 }
 
 .carousel-button-left {
     margin-left: 1vw;
- 
+
 
 }
 
@@ -588,7 +598,156 @@ footer {
 /* Seus estilos existentes */
 
 /* Media query para telas de até 720px */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
+
+    /* CABEÇALHO */
+
+    #cabecalho {
+        width: 100%;
+        position: fixed;
+    }
+
+    .cabecalho_nav {
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    #cabecalho .cabecalho_sombra {
+        height: 5px;
+        background-color: #FFD233;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+
+    .cabecalho_nav_itens {
+        display: none;
+    }
+
+    .cabecalho_nav_item {
+        display: none;
+    }
+
+    .cabecalho_nav_item_Doe {
+        display: none;
+    }
+
+    .cabecalho_Logo {
+        width: 120px;
+    }
+
+    .navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .a-teste {
+        padding: 0;
+        display: flex;
+    }
+
+    .geral {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .idiomas {
+        margin: 0;
+
+    }
+
+    .img-teste {
+        padding: 0;
+    }
+
+    .ul-imagens {
+        margin-top: 20px;
+    }
+
+    .geral i {
+        color: #FFD233;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .modal-menu {
+        display: none;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 200;
+        width: 100%;
+        transition: 1s ease;
+    }
+
+    #modal-menu .fechar {
+        background-color: transparent;
+        cursor: pointer;
+        left: 20px;
+        border-radius: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+
+    #fecharMenu span {
+        font-size: 50px;
+    }
+
+    .modal-menu img {
+        width: 130px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .comeco-menu {
+        display: flex;
+        justify-content: space-around
+    }
+
+    .as a {
+        font: 700 16px 'Montserrat', sans-serif;
+        color: black;
+        margin: 12px 0;
+    }
+
+    .as {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .menina-menu {
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .menina-menu img {
+        width: 120px;
+    }
+
+    .desfocado {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.404);
+        z-index: 1;
+    }
+
+    /* TÉRMINO DO CABEÇALHO */
+
     .titulo-carrossel {
         font-size: 24px;
         margin-left: 5vw;
@@ -599,197 +758,30 @@ footer {
     }
 
     .carousel-container {
-        width: 80%; /* Reduz a largura do carrossel */
+        width: 80%;
+        /* Reduz a largura do carrossel */
     }
 
     .carousel img {
         height: auto;
-        max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+        max-width: 100%;
+        /* Garante que as imagens não ultrapassem o contêiner */
     }
 
     .img {
-        width: 180px; /* Reduz o tamanho dos quadrados das imagens */
+        width: 180px;
+        /* Reduz o tamanho dos quadrados das imagens */
         height: 180px;
         margin-left: 15px;
-        font-size: 18px; /* Ajusta o tamanho da fonte dentro dos quadrados */
+        font-size: 18px;
+        /* Ajusta o tamanho da fonte dentro dos quadrados */
     }
 
-    /* Ajustes adicionais conforme necessário */
+    .programa-voluntario{
+        flex-direction: column;
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#cabecalho {
-    width: 100%;
-    position: fixed;
+    
 }
-
-.cabecalho_nav {
-    padding: 8px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0;
-}
-
-#cabecalho .cabecalho_sombra {
-    height: 5px;
-    background-color: #FFD233;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 100%;
-}
-
-.cabecalho_nav_itens {
-    display: none;
-}
-
-.cabecalho_nav_item {
-    display: none;
-}
-
-.cabecalho_nav_item_Doe {
-    display: none;
-}
-
-.cabecalho_Logo {
-    width: 120px;
-}
-
-.navegacao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.a-teste {
-    padding: 0;
-    display: flex;
-}
-
-.geral {
-    display: block;
-    padding: 0 20px;
-}
-
-.idiomas {
-    margin: 0;
-
-}
-
-.img-teste {
-    padding: 0;
-}
-
-.ul-imagens {
-    margin-top: 20px;
-}
-
-.geral i {
-    color: #FFD233;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-.modal-menu {
-    display: none;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 200;
-    width: 100%;
-    transition: 1s ease;
-}
-
-#modal-menu .fechar {
-    background-color: transparent;
-    cursor: pointer;
-    left: 20px;
-    border-radius: 0;
-    padding: 0;
-    border: 0;
-    box-shadow: none;
-}
-
-#fecharMenu span {
-    font-size: 50px;
-}
-
-.modal-menu img {
-    width: 130px;
-    height: auto;
-    margin-top: 20px;
-}
-
-.comeco-menu {
-    display: flex;
-    justify-content: space-around
-}
-
-.as a {
-    font: 700 16px 'Montserrat', sans-serif;
-    color: black;
-    margin: 12px 0;
-}
-
-.as {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-left: 50px;
-}
-
-.menina-menu {
-    text-align: left;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-.menina-menu img {
-    width: 120px;
-}
-
-.desfocado {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
-    z-index: 1;
-}
-
-/* TÉRMINO DO CABEÇALHO */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
