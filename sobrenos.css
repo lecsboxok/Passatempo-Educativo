@@ -450,8 +450,8 @@ body {
     flex-direction: column;
     margin-left: 1000px;
     width: 300px;
-    margin-top: -130vh;
-    word-break: keep-all;
+margin-top: -140vh;   
+ word-break: keep-all;
 
 }
  /* Estilize a div que conterá a imagem e as palavras */
