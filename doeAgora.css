@@ -25,6 +25,11 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
+
+
+
+
+
 /* CABEÇALHO */
 #cabecalho {
     width: 100%;
@@ -53,6 +58,10 @@ a {
 
 .cabecalho_nav_itens {
     margin-right: 30px;
+}
+
+.cabecalho_nav_itens a:hover {
+    color: #5d5d5d;
 }
 
 .cabecalho_nav_item {
@@ -166,6 +175,12 @@ ul li ul li {
 .geral {
     display: none;
 }
+
+
+
+/* TÉRMINO DO CABEÇALHO */
+
+
 
 
 
