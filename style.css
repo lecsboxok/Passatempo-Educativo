@@ -209,12 +209,12 @@ ul li ul li {
 }
 
 .doeCima {
-    font: 400 60px 'Forum', serif;
+    font: 400 7vh 'Forum', serif;
     color: #fff;
 }
 
 .blogCima {
-    font: 400 40px 'Forum', serif;
+    font: 400 5vh 'Forum', serif;
     color: #fff;
 }
 
@@ -747,7 +747,7 @@ ul li ul li {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1065px) {
 
     .conteiner {
         margin: 0;
@@ -840,13 +840,13 @@ ul li ul li {
         background-color: white;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         z-index: 200;
-        width: 100%;
+        width: 50%;
     }
 
     #modal-menu .fechar {
         background-color: transparent;
         cursor: pointer;
-        left: 20px;
+        left: 40px;
         border-radius: 0;
         padding: 0;
         border: 0;
@@ -854,11 +854,11 @@ ul li ul li {
     }
 
     #fecharMenu span {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .modal-menu img {
-        width: 130px;
+        width: 150px;
         height: auto;
         margin-top: 20px;
     }
@@ -869,13 +869,13 @@ ul li ul li {
     }
 
     .as a {
-        font: 700 16px 'Montserrat', sans-serif;
+        font: 700 20px 'Montserrat', sans-serif;
         color: black;
         margin: 12px 0;
     }
 
     .as {
-        margin-top: 70px;
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -884,12 +884,12 @@ ul li ul li {
 
     .menina-menu {
         text-align: left;
-        margin-top: 30px;
+        margin-top: 50px;
         margin-left: 30px;
     }
 
     .menina-menu img {
-        width: 120px;
+        width: 140px;
     }
 
     .desfocado {
@@ -914,6 +914,16 @@ ul li ul li {
     .conatainerproje .slidde-container .slide .contentproje .subPrincipal {
         font: 400 4vh 'Forum', serif;
         color: #FFF;
+    }
+
+    .doeCima {
+        font: 400 4.5vh 'Forum', serif;
+        color: #fff;
+    }
+
+    .blogCima {
+        font: 400 3.5vh 'Forum', serif;
+        color: #fff;
     }
 
     .setinha {
@@ -1067,6 +1077,9 @@ ul li ul li {
 
     .endereco {
         margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .enderecoTexto img {
@@ -1124,6 +1137,10 @@ ul li ul li {
     .video iframe {
         width: 285px;
         height: 180px;
+    }
+
+    .modal-menu {
+        width: 100%;
     }
 
 }
