@@ -14,7 +14,6 @@
 
 
 <body>
-
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
@@ -29,7 +28,7 @@
                     <a class="cabecalho_nav_item" href="#contato">Contato</a>
                 </div>
                 <div class="geral">
-                    <i class="fa-solid fa-bars" id="menu"></i>
+                    <i id="menu" class="fa-solid fa-bars"></i>
                     <div class="cabecalho_nav_item">
                         <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
                         <a class="mobileCabecalho" href="projetos.html">Projetos</a>
@@ -240,17 +239,7 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharJogoteca"><span>VOLTAR</span></div>
                     <img src="img/FundoJogoteca.png" alt="">
-                    <p>A Jogoteca de todos os tempos e culturas é uma grande aula de história, geografia, matemática e
-                        raciocínio lógico, com jogos de tabuleiros de diversos lugares do mundo, em que é possível levar
-                        a todos para uma viagem ao cinco continentes, possibilitando se conhecer mais sobre diferentes
-                        culturas.
-                        <br><br>Nosso acervo tem aproximadamente 180 jogos com origens em civilizações antigas e países
-                        dos
-                        cinco continentes, jogos variados de raciocínio, sorte, destreza, estratégia que são
-                        direcionados ao público com idade a partir de 8 anos. <br>
-                        Temos uma série de oficinas e workshops ligados a temas culturais, que incentivem a criatividade
-                        dos participantes como construção de brinquedos com sucata, contação de histórias, rodas
-                        cantadas.
+                    <p>
                     </p>
                 </div>
             </div>
@@ -360,8 +349,8 @@
                 </div>
             </div>
 
-            <div id="modal-menu" class="modal modal-menu">
-                <div class="modal-content">
+            <div id="modal-menu" class="modal-menu">
+                <div class="modal-tudo">
                     <div class="comeco-menu">
                         <div class="fechar-tudo">
                             <div class="fechar fechar-menu" id="fecharMenu"><span>&times;</span></div>
@@ -452,7 +441,7 @@
             const modal = document.getElementById(idModal);
             const fechar = document.getElementById(idFechar);
             const desfocado = document.getElementById('desfocado');
-            
+
 
             modal.style.display = 'block';
             desfocado.style.display = 'block';

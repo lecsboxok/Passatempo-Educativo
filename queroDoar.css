@@ -46,7 +46,7 @@ button {
     background-color: rgb(161, 157, 158);
     width: 100px;
     height: 5px;
-    margin-top: 3vh;
+    margin-top: 2vh;
 }
 
 .imagem {
@@ -64,9 +64,16 @@ display: flex;
 }
 
 .tt{
+  
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     width: 50%;
+    margin-top: -90vh;
 }
+
+
+
+
+
