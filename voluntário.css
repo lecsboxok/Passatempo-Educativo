@@ -226,6 +226,7 @@ p {
 
 
 /*COMO FUNCIONA */
+
 .retangulo-rosa {
     width: 100%;
     height: auto;
@@ -241,6 +242,7 @@ p {
     justify-content: center;
     text-align: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -781,7 +783,17 @@ footer {
         flex-direction: column;
     }
 
+    .retangulo-rosa {
+        height: 1000px;
+    }
+    
+    .funcionamento {
+        margin-top: -80vh;
+        flex-direction: column;
+    }
 
-
+    .imagem-funcionamento{
+        width: 400px;
+    }
     
 }
