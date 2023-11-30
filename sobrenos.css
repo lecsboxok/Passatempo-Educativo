@@ -1177,23 +1177,39 @@ top: 45px;
 }
 .setameio{
    margin-left:-50px;
-    margin-top: -400px;
+    margin-top: 90px;
     width: 140px;
+    display: flex;
 }
 
 
 .texto1{
     width: 400px;
     font-size: 18px;
-    margin-right: 1800px;
+
+
+
    
    
 }
 .texto2{
+    width: 400px;
     font-size: 18px;
+   
 }
 
+.texto3{
+    width: 400px;
+    font-size: 18px;
+   
 
+
+}
+
+.segundo{
+    margin-top: 0;
+    margin-left: 0;
+}
 
 .container:hover .overlay {
   display: none;
