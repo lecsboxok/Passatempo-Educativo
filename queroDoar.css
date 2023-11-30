@@ -64,6 +64,7 @@ display: flex;
 }
 
 .tt{
+  
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -71,3 +72,8 @@ display: flex;
     width: 50%;
     margin-top: -90vh;
 }
+
+
+
+
+
