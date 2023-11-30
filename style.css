@@ -65,7 +65,7 @@ html {
     margin-right: 25px;
 }
 
-.cabecalho_nav_itens a:hover{
+.cabecalho_nav_itens a:hover {
     color: #5d5d5d;
 }
 
@@ -81,7 +81,7 @@ html {
     display: none;
 }
 
-.modal {
+.modal-tudo {
     display: none;
 }
 
@@ -392,7 +392,8 @@ ul li ul li {
 
 }
 
-.tracejado, .tracejado2 {
+.tracejado,
+.tracejado2 {
     border-left: 2px dashed #1F9B6E;
 }
 
@@ -761,6 +762,10 @@ ul li ul li {
         position: fixed;
     }
 
+    .modal-tudo {
+        display: block;
+    }
+
     .cabecalho_nav {
         padding: 8px 0;
         display: flex;
@@ -848,7 +853,7 @@ ul li ul li {
         box-shadow: none;
     }
 
-    #fecharMenu span{
+    #fecharMenu span {
         font-size: 50px;
     }
 
@@ -858,18 +863,18 @@ ul li ul li {
         margin-top: 20px;
     }
 
-    .comeco-menu{
+    .comeco-menu {
         display: flex;
         justify-content: space-around
     }
 
-    .as a{
+    .as a {
         font: 700 16px 'Montserrat', sans-serif;
         color: black;
         margin: 12px 0;
     }
 
-    .as{
+    .as {
         margin-top: 70px;
         display: flex;
         flex-direction: column;
@@ -877,13 +882,13 @@ ul li ul li {
         margin-left: 50px;
     }
 
-    .menina-menu{
+    .menina-menu {
         text-align: left;
         margin-top: 30px;
         margin-left: 30px;
     }
 
-    .menina-menu img{
+    .menina-menu img {
         width: 120px;
     }
 
@@ -897,6 +902,7 @@ ul li ul li {
         background-color: rgba(0, 0, 0, 0.404);
         z-index: 1;
     }
+
     /* TÉRMINO DO CABEÇALHO */
 
     /* PRINCIPAL */
@@ -914,23 +920,15 @@ ul li ul li {
         width: 30px;
     }
 
-    .conatainerproje .slidde-container .slide .contentproje .btnblog {
-        margin-top: 10px;
+    .conatainerproje .slidde-container .slide .contentproje .btndoe,
+    .btnblog {
+        margin-top: 20px;
         display: inline-block;
-        background: #DA251C;
+        background: #FA2573;
         color: #FFF;
-        font: 400 14px 'Aleo', serif;
-        padding: 9px 20px;
-        border-radius: 20px;
-    }
-
-    .conatainerproje .slidde-container .slide .contentproje .btndoe {
-        margin-top: 10px;
-        display: inline-block;
-        background: #DA251C;
-        color: #FFF;
-        font: 400 14px 'Aleo', serif;
-        padding: 9px 20px;
+        font: 400 3vh 'Montserrat', serif;
+        padding: 9px 30px;
+        border-radius: 10px;
     }
 
     /* FRASE */
@@ -962,8 +960,8 @@ ul li ul li {
     }
 
     .video iframe {
-        width: 200px;
-        height: 100px;
+        width: 320px;
+        height: 180px;
     }
 
     /* PRÊMIOS */
@@ -1021,7 +1019,7 @@ ul li ul li {
         height: 50px;
         margin: 15px 0;
     }
-    
+
     .redes {
         width: 100%;
     }
@@ -1122,4 +1120,10 @@ ul li ul li {
     .tracejado {
         border: none;
     }
+
+    .video iframe {
+        width: 285px;
+        height: 180px;
+    }
+
 }
