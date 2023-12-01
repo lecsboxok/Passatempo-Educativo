@@ -820,14 +820,28 @@ width: 300px;
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
-    padding: 73px;
+    padding: 73px 0;
     padding-bottom: 15px;
 }
 
 #contato .conteiner {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.rodapeCima {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rodape-lado1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
 }
 
 .logoRodape {
@@ -853,19 +867,18 @@ width: 300px;
 }
 
 .texto-rodape {
-    font: 400 20px 'Nunito', sans-serif;
+    font: 400 20px 'Montserrat', sans-serif;
 }
 
 .rodapeTexto {
-    margin: 80px 110px 0 0;
     text-align: justify;
-    width: 540px;
+    width: 33rem;
 }
 
 .enderecoTexto {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 25px;
     margin-right: 15px;
 }
@@ -875,26 +888,33 @@ width: 300px;
 }
 
 .textoMaps {
-    font: 400 20px 'Nunito', sans-serif;
+    font: 400 20px 'Montserrat', sans-serif;
 }
 
 .rodape-lado2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0 70px;
 }
 
-.logotipoRodape {
-    width: 200px;
+.logoRodape img {
+    width: 170px;
 }
 
-.maps {
+.menina img {
+    width: 180px;
+}
+
+.imgMaps img {
+    width: 380px;
     border-radius: 10px;
 }
 
 .imgMaps {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -902,22 +922,19 @@ width: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
     margin-top: 120px;
 }
 
 .autorais {
-    font: 300 16px 'Aleo-light', serif;
+    font: 300 2vh 'Montserrat', serif;
+    margin-bottom: 5px;
 }
 
 .direito {
-    font: 300 20px 'Aleo-light', serif;
-    margin-top: 10px;
+    font: 300 2.5vh 'Montserrat', serif;
+    margin-bottom: 10px;
 }
- 
-.geral{
-    display: none;
-}
+
 
 
 /* MOBILE */
@@ -1448,22 +1465,124 @@ width: 100px;
 }
 /*FIM CARROSEL */
 
-/*RODAPE*/
 
-.amigoSurdo{
-    width: 100px;
-    margin: 0;
+
+/* RODAPÉ */
+#contato {
+    background: rgba(255, 228, 133, 0.74);
+    padding: 73px 0;
+    padding-bottom: 15px;
 }
-.maps{
-    width: 100px;
-    margin: 0;
-}
-.texto-rodape{
-    width: 100px;
-}
-.redes{
-    width: 100px;
+
+#contato .conteiner {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
- }
+
+.rodapeCima {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rodape-lado1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+}
+
+.logoRodape {
+    margin-left: 135px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.icone {
+    width: 55px;
+    padding: 9px;
+}
+
+.icone:hover {
+    width: 62px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.texto-rodape {
+    font: 400 20px 'Montserrat', sans-serif;
+}
+
+.rodapeTexto {
+    text-align: justify;
+    width: 33rem;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+
+.iconMaps {
+    margin-right: 20px;
+}
+
+.textoMaps {
+    font: 400 20px 'Montserrat', sans-serif;
+}
+
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.logoRodape img {
+    width: 170px;
+}
+
+.menina img {
+    width: 180px;
+}
+
+.imgMaps img {
+    width: 380px;
+    border-radius: 10px;
+}
+
+.imgMaps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.autorais {
+    font: 300 2vh 'Montserrat', serif;
+    margin-bottom: 5px;
+}
+
+.direito {
+    font: 300 2.5vh 'Montserrat', serif;
+    margin-bottom: 10px;
+}
+
+  }
