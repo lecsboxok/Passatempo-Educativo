@@ -847,6 +847,7 @@ ul li ul li {
         background-color: transparent;
         cursor: pointer;
         left: 40px;
+        margin-top: 38px;
         border-radius: 0;
         padding: 0;
         border: 0;
@@ -967,11 +968,6 @@ ul li ul li {
     /* YOUTUBE */
     #conteudoYoutube {
         padding: 64px 0px;
-    }
-
-    .video iframe {
-        width: 320px;
-        height: 180px;
     }
 
     /* PRÊMIOS */
@@ -1135,8 +1131,8 @@ ul li ul li {
     }
 
     .video iframe {
-        width: 285px;
-        height: 180px;
+        width: 280px;
+        height: 157.5px;
     }
 
     .modal-menu {
