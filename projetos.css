@@ -927,7 +927,7 @@ h3 {
         cursor: pointer;
     }
 
-    .projeto-item h2 {
+    .projeto-item:hover h2 {
         margin-top: 140px;
         transition: none;
     }
@@ -1138,6 +1138,13 @@ h3 {
         transition: none;
         cursor: pointer;
         transform: scale(0.9);
+    }
+
+    .projeto-item:hover button {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(0.9);
+        transition: none;
     }
 
     .projeto-item h2 {
