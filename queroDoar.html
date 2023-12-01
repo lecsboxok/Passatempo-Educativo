@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
     <title> Quero Doar</title>
     <link rel="stylesheet" href="queroDoar.css">
 </head>
@@ -11,47 +12,150 @@
 <body>
 
     <main>
-        <section class="QueroDoar">
+        <!-- <section class="QueroDoar">
 
             <div class="tudo">
                 <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
-                <div class="tt">
+                <div class="tudo-etapa-1">
                     <div class="etapas">
                         <button class="btn">1</button>
                         <div class="linha"></div>
-                        <button class="btn">2</button>
+                        <button class="btn" id="btn2">2</button>
                         <div class="linha"></div>
-                        <button class="btn">3</button>
+                        <button class="btn" id="btn3">3</button>
 
                     </div>
 
-                    <div class="dados-container">
-                        <h2>Dados Pessoais</h2>
-                        <form id="contato-Form">
+                    <div class="texto-dados-etapas">
+                        <p>Doação concluída</p>
+                        <p>Dados de pagamento</p>
+                        <p>Dados pessoais</p>
+                    </div>
 
-                            <input type="text" id="nome" placeholder="Nome Completo:" required>
-                            <input type="number" id="CPF" placeholder="CPF:" required>
-                            <input type="email" id="email" placeholder="Email:" required>
-                            <input type="tel" id="tel" placeholder="Telefone:" required>
-                            <div class="check">
-                                <div class="ppp">
-                                    <input id="idade" type="checkbox" name="idade" value="Eu confirmo que tenho mais de 18 anos e estou ciente da verificação dos meus dados pessoais">
-                                    <label for="idade">Eu confirmo que tenho mais de 18 anos e estou ciente da
-                                        verificação dos meus dados pessoais<label>
+
+
+                    <div class="tudo-formulario-1">
+                        <div class="titulo-forms-primeiro">
+                            <h2>Dados Pessoais</h2>
+                        </div>
+                        <form id="Forms">
+                            <div class="contato-form">
+                                <div class="usuario-formulario-1">
+                                    <i class="fa-solid fa-user " style="color: #a3a3a3;"></i>
+                                    <input type="text" id="nome" placeholder="Nome Completo:" required>
+                                </div>
+                                <div class="cpf-formulario-1">
+                                    <i class="fa-regular fa-address-card fa-lg" style="color: #a3a3a3;"></i>
+                                    <input type="number" id="CPF" placeholder="CPF:" required>
+                                </div>
+                                <div class="email-formulario-1">
+                                    <i class="fa-solid fa-at fa-lg" style="color: #a3a3a3;"></i>
+                                    <input type="email" id="email" placeholder="Email:" required>
+                                </div>
+                                <div class="telefone-formulario-1">
+                                    <i class="fa-solid fa-phone fa-lg" style="color: #a3a3a3;"></i>
+                                    <input type="tel" id="tel" placeholder="Telefone:" required>
                                 </div>
                             </div>
                         </form>
+
+                        <div class="conferir-idade">
+                            <input id="idade" type="checkbox" name="idade"
+                                value="Eu confirmo que tenho mais de 18 anos e estou ciente da verificação dos meus dados pessoais">
+                            <label for="idade">Eu confirmo que tenho mais de 18 anos e estou ciente da
+                                verificação dos meus dados pessoais<label>
+                        </div>
+
+
+                        <div class="botoes-dados-pessoais">
+                            <button class="button-continuar-pagamento">Continuar para Pagamento</button>
+
+                            <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
+                                inicial</a>
+                            <div>
+
+                            </div>
+                        </div>
                     </div>
+
+
+
+
                 </div>
             </div>
-
-
-
-
-
-
-
         </section>
+
+ -->
+
+
+
+        <div class="tudo">
+            <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
+            <div class="tudo-etapa-2">
+                <div class="segunda-etapa">
+                    <button class="button">1</button>
+                    <div class="linha1"></div>
+                    <button class="button" id="botao-outra-cor">2</button>
+                    <div class="linha"></div>
+                    <button class="btn3" id="botao-outra-cor">3</button>
+
+                </div>
+
+                <div class="texto-dados-etapas">
+                    <p>Doação concluída</p>
+                    <p>Dados de pagamento</p>
+                    <p>Dados pessoais</p>
+                </div>
+                <div class="tudo-formulario-1">
+                    <div class="titulo-forms-primeiro">
+                        <h2>Dados de Pagamento</h2>
+                    </div>
+                    <form id="Forms">
+                        <div class="contato-form">
+                            <div class="usuario-formulario-1">
+                                <i class="fa-solid fa-user " style="color: #a3a3a3;"></i>
+                                <input type="text" id="nome" placeholder="Nome que consta no cartão" required>
+                            </div>
+                            <div class="cpf-formulario-1" style="color: #a3a3a3;">
+                                <i class="fa-solid fa-credit-card"></i>
+                                <input type="number" id="cartao" placeholder="Número  do cartão:" required>
+                            </div>
+
+
+                            <div class="email-formulario-1" style="color: #a3a3a3;">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <input type="email" id="validade" placeholder="Validade (MM/AAAA):" required>
+                            </div>
+                            <div class="telefone-formulario-1" style="color: #a3a3a3;">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="tel" id="cvv" placeholder="CVV:" required>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <div class="conferir-idade">
+                        <input id="idade" type="checkbox" name="idade"
+                            value="Eu confirmo que tenho mais de 18 anos e estou ciente da verificação dos meus dados pessoais">
+                        <label for="idade">Eu confirmo que tenho mais de 18 anos e estou ciente da
+                            verificação dos meus dados pessoais<label>
+                    </div>
+
+
+                    <div class="botoes-dados-pessoais">
+                        <button class="button-continuar-pagamento">Continuar para Pagamento</button>
+
+                        <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
+                            inicial</a>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
     </main>
 </body>
 
