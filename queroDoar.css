@@ -10,6 +10,11 @@ a {
     text-decoration: none;
 }
 
+
+h2 {
+    font-family: Montserrat;
+}
+
 @font-face {
     font-family: 'Montserrat';
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
@@ -25,34 +30,73 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
-button {
+
+
+/* FAZENDO A PRIMEIRA PARTE QUE SERIA OS BOTÕES 1 2 3 PARA PASSAR OS COISAS DE PAGAMENTOS */
+
+
+
+.etapas button {
+    /* ESTILIZA TODOS OS BOTÕES PARA QUE FIQUEM CERTINHOS */
+    width: 32px;
+    height: 31px;
+    left: 39px;
     border-radius: 50%;
-    width: 55px;
-    height: 55px;
     border: 4px solid rgb(229, 64, 91);
     background-color: white;
+    color: rgb(229, 64, 91);
 
 }
 
 .etapas {
+    /* DEIXA QUE ELES FIQUEM NO CENTRO E TAMBÉM UM DO LADO DO OUTRO */
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 4vh;
 
 
+}
+
+.texto-dados-etapas {
+    /* FAZ COM ESSES TEXTOS QUE SÃO JUNTOS DO BOTÃO FIQUEM UM DO LADO DO OUTRO */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3vh;
+}
+
+.texto-dados-etapas p {
+    /* AQUI É MAIS PARA PERSONALIZAR ELE */
+    margin: 5vh;
+    font-family: Manrope;
 }
 
 .linha {
+    /* AQUI SERIA A LINHA PARA LIGAR ATÉ OS BOTÕES */
     background-color: rgba(226, 226, 226, 1);
     width: 100px;
     height: 5px;
-    margin-top: 2vh;
+    margin-top: -0.25vh;
+    width: 182px;
+    top: 16px;
+    left: 71px;
+    border: 3px;
+}
+
+#btn2,
+/* SÃO OS BOTÕES QUE AINDA NÃO SÃO ROSAS */
+#btn3 {
+    border: 4px solid rgba(226, 226, 226, 1);
+    color: rgba(226, 226, 226, 1);
 }
 
 .imagem {
+    /* SERIA A IMAGEM PARA FAZER DO LADO ESQUERDO */
     width: 50%;
-    height: 776px;
-    background-color: wheat;
+    height: 756px;
+    background-color: rgb(251, 248, 225);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -60,49 +104,268 @@ button {
 
 .tudo {
     display: flex;
+}
+
+
+/* COMEÇO FORMULÁRIO */
+
+.titulo-forms-primeiro {
+    padding: 8vh;
+}
+
+
+#Forms input {
+    /* NOME DO FORMULÁRIO */
+    width: 500px;
+    display: block;
+    background-color: #7b52b900;
+    border: 0 none;
+    border-bottom: 2px solid rgba(224, 224, 224, 1);
+    padding-left: 30px;
+    outline: 0;
+    margin-bottom: 5vh;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.contato-form {
+    /* É UMA DIV DO FORMULÁRIO COM TODOS OS  INPUTS */
+    display: block;
+    background-color: #7b52b900;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: -7vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.check .conferir-idade {
+    /* ESTILIZA PARA VER SE A PESSOA É MAIOR QUE 18 ANOS */
+    display: flex;
+    /* COLOCO ELE NO CENTRO */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.conferir-idade {
+    /* ESTILIZO A FONT, O TAMANHO, E SUA POSIÇÃO */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 5vh;
 
 
 }
 
-.tt {
+.tudo-formulario-1 {
+    /* ESSA DIV É ONDE ELA PEGA O FORMULÁRIO, O TITULO DELA ELA "GUARDA O FORMULÁRIO" */
+    text-align: center;
+    margin: 15vh;
+    margin-top: 2vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* PARTE DOS ICONES */
+
+.usuario-formulario-1 i {
+    margin-top: 0.15vh;
+}
+
+
+
+.email-formulario-1 i {
+    margin-top: 1vh;
+    margin-left: 2vh;
+
+}
+
+
+.cpf-formulario-1 i {
+    margin-top: 1.25vh;
+
+}
+
+
+.telefone-formulario-1 i {
+    margin-top: 1vh;
+}
+
+
+/* ESSES DOIS ELES AJUDAM MAIS OS ICONES QUE ESTÃO NOS INPUTS */
+.contato-form div {
+    display: flex;
+}
+
+
+.contato-form i {
+    position: absolute;
+    margin-left: -0.15vh;
+}
+
+
+.tudo-etapa-1 {
+    /* AQUI É TUDO JUNTO É A DIV QUE TEM TUDO TODO O FORMULÁRIO, IMAGEM, TUDO */
+    height: 40vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     width: 50%;
-    margin-top: 2vh;
+    margin-top: 40vh;
     padding: 5vh;
 }
 
-.dados-container {
-    text-align: center;
-    margin: 15vh;
-    margin-top: 8vh;
-    flex-direction: column;
+
+
+/* BOTÕES */
+
+.button-continuar-pagamento {
+    width: 311px;
+    height: 29px;
+    left: 117px;
+    border-radius: 20px;
+    background-color: rgba(251, 38, 115, 1);
+    color: white;
+    font-family: Montserrat;
+
+}
+
+.botoes-dados-pessoais {
     align-items: center;
     justify-content: center;
-}
-
-/* Estilos para os inputs */
-#contato-Form input {
-    width: 500px;
-    display: block;
-    background-color: #7b52b900;
-    border: 0 none;
-    border-bottom: 2px solid rgba(224, 224, 224, 1);
-    outline: 0;
-    margin-bottom: 5vh
-}
-
-h2 {
-    font-family: Montserrat;
-    padding: 12vh;
-
-}
-
-.check .ppp{
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
+    padding-top: 2vh;
+    font-family: Montserrat;
+}
+
+.botoes-dados-pessoais a {
+    cursor: pointer;
+    color: rgba(251, 38, 115, 1);
+    margin-top: 2vh;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+
+
+
+
+
+
+/* ................................SEGUNDO FORMULARIO/ SEGUNDA PARTE........................................................... */
+
+
+.button, .btn3 {
+    /* ESTILIZA TODOS OS BOTÕES PARA QUE FIQUEM CERTINHOS */
+    width: 32px;
+    height: 31px;
+    left: 39px;
+    border-radius: 50%;
+    border: 4px solid rgb(229, 64, 91);
+    background-color: white;
+    color: rgb(229, 64, 91);
+
+}
+
+.btn3{/* deixa a botão 3 com cor diferente */
+    border: 4px solid rgba(226, 226, 226, 1);
+    color: rgba(226, 226, 226, 1);
+}
+
+
+.linha1{/* deixa a linha 1 com cor diferente */
+    background-color: rgb(229, 64, 91);;
+}
+
+
+.linha{/* deixa a linha 1 com cor diferente */
+      background-color: rgba(226, 226, 226, 1);
+}
+
+.linha, .linha1 {/* AQUI SERIA A LINHA PARA LIGAR ATÉ OS BOTÕES */
+    width: 100px;
+    height: 5px;
+    margin-top: -0.25vh;
+    width: 182px;
+    top: 16px;
+    left: 71px;
+    border: 3px;
+}
+
+
+
+
+
+
+
+.segunda-etapa {
+    /* DEIXA QUE ELES FIQUEM NO CENTRO E TAMBÉM UM DO LADO DO OUTRO */
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+
+
+}
+
+.texto-dados-etapas {
+    /* FAZ COM ESSES TEXTOS QUE SÃO JUNTOS DO BOTÃO FIQUEM UM DO LADO DO OUTRO */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3vh;
+}
+
+.texto-dados-etapas p {
+    /* AQUI É MAIS PARA PERSONALIZAR ELE */
+    margin: 5vh;
+    font-family: Manrope;
+}
+
+
+
+
+.imagem {
+    /* SERIA A IMAGEM PARA FAZER DO LADO ESQUERDO */
+    width: 50%;
+    height: 756px;
+    background-color: rgb(251, 248, 225);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.tudo {
+    display: flex;
+}
+
+.tudo-etapa-2 {
+    /* AQUI É TUDO JUNTO É A DIV QUE TEM TUDO TODO O FORMULÁRIO, IMAGEM, TUDO */
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 50%;
+    margin-top: 40vh;
+    padding: 5vh;
 }

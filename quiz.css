@@ -5,9 +5,7 @@
     border: 0;
 }
 
-img{
-    width: 100%;
-}
+
 
 
 @font-face {
@@ -37,11 +35,11 @@ img{
 }
 
 
-#main{
-    background: linear-gradient(to right, white 20%,rgb(194, 194, 194) 80%);
+/* #main{
+    background: linear-gradient(to right, white 20%,rgb(120, 4, 4) 80%);
     background-size: 300% 300%;
     animation: colors 20s ease infinite;
-}
+} */
 
 @keyframes colors {
     0%{
@@ -56,8 +54,10 @@ img{
         background-position: 0% 50%;
     }
 }
-.body1{
-    background-color: white;
+.pagina-principal a {
+margin-left: 305px;
+color: black;
+margin-top: 10px;
 }
 h1{
     font:32px 'UnbRegular', sans-serif;
@@ -70,12 +70,14 @@ h1{
     letter-spacing: 1.5px;
     padding: 20px 120px 0 150px;
     text-align: center;
+    text-decoration: none;
 }
 
 .conteudo{
-    padding-bottom: 138px;
     display: flex;
-    padding-top: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .conteudo button{
@@ -86,17 +88,23 @@ h1{
     color: rgb(247, 246, 246);
     margin: 30px 0 0 368px;
     cursor: pointer;
-margin-left: 300px;}
+margin-left: 350px;
+}
 
-.equipe img{
-    width: 600px;
-    height: 700px;
-margin-top: -200px 
-
+.equipe img {
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.equipe{
+   background-color: #eddfdc;
+    width: 2000px;
+    height: 750px;
 }
 
 #body2{
-    background-color: #004AAD;
+    background-color: #eddfdc;
 }
 
 .app{
@@ -110,7 +118,7 @@ margin-top: -200px
 
 .app h1{
     padding: 0;
-    color: #002a61;
+    color: #c49190;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
 }
@@ -140,7 +148,7 @@ margin-top: -200px
 }
 
 .btn:hover:not([disabled]){
-    background: #002b63;
+    background: #c49190;
     color: #fff;
 }
 
@@ -149,7 +157,7 @@ margin-top: -200px
 }
 
 #next-btn{
-    background: #002b63;
+    background: #c49190;
     color: white;
     font: 500 20px 'OpenRegular', sans-serif;
     width: 150px;
@@ -214,3 +222,58 @@ margin-top: -200px
 .yellow{
     background-color: #ddda32;
 }
+
+
+@media screen and (max-width: 768px){
+    .pagina-principal a {
+        margin-left: 180px;
+        color: black;
+           text-decoration: none  ;
+        }
+
+body{
+    background-color:#eddfdc ;
+    width: 100%;
+    height: 100%;
+}
+        .equipe img {
+            width: 0;
+            height: auto;
+        }
+        .equipe{
+           background-color: #eddfdc;
+            width: 0;
+            height: 0;
+        }
+
+        
+        .texto{
+            font: 20px 'OpenRegular', sans-serif;
+            letter-spacing: 1.5px;
+            padding: 20px 100px 0 100px;
+            text-align: center;
+        }
+
+        h1{
+            font:30px  'UnbRegular', sans-serif;
+       color: #c49190;
+ margin-top: 150px ;
+ padding: 0;
+ text-align: center;
+    }
+
+    .conteudo button{
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #c49190;
+        font:18px 'OpenRegular', sans-serif;
+        color: rgb(247, 246, 246);
+        margin: 30px 0 0 368px;
+        cursor: pointer;
+    margin-left:  230px;
+    }
+    
+}
+
+
+
