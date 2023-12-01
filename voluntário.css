@@ -395,14 +395,14 @@ input {
     /* aqui é o titulo do carrossel dei um margin left só para dá um espaço, não queria deixar no centro */
     font-family: 'Montserrat';
     font-size: 28px;
-    margin-top: 50vh;
+    margin-top: 300px;
     /* useei margin-top para abaixar meu título */
     margin-left: 7vw;
 }
 
 .tudo-carrossel {
     /* coloquei essa div tudo para incluir tudo no carrossel, deixar ele no centro e ultilizei margin top para abaixar ele */
-    margin-top: 20vh;
+    margin-top: 15vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -465,21 +465,23 @@ h5 {
 
 }
 
+.ro {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 
-/* parte de botões do carrossel */
 .carousel-button {
     position: absolute;
-    top: 0;
+    top: 50%; /* Ajuste a posição vertical para o meio */
+    transform: translateY(-50%); /* Ajuste para centralizar verticalmente usando transform */
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-top: 7vh;
 }
 
 .carousel-button-left {
     margin-left: 1vw;
-
-
 }
 
 .carousel-button-right {
