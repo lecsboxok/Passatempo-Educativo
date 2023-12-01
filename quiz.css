@@ -57,7 +57,7 @@
 .pagina-principal a {
 margin-left: 305px;
 color: black;
-margin-top: 10px                                        ;
+margin-top: 10px;
 }
 h1{
     font:32px 'UnbRegular', sans-serif;
@@ -70,6 +70,7 @@ h1{
     letter-spacing: 1.5px;
     padding: 20px 120px 0 150px;
     text-align: center;
+    text-decoration: none;
 }
 
 .conteudo{
@@ -221,3 +222,58 @@ margin-left: 350px;
 .yellow{
     background-color: #ddda32;
 }
+
+
+@media screen and (max-width: 768px){
+    .pagina-principal a {
+        margin-left: 180px;
+        color: black;
+           text-decoration: none  ;
+        }
+
+body{
+    background-color:#eddfdc ;
+    width: 100%;
+    height: 100%;
+}
+        .equipe img {
+            width: 0;
+            height: auto;
+        }
+        .equipe{
+           background-color: #eddfdc;
+            width: 0;
+            height: 0;
+        }
+
+        
+        .texto{
+            font: 20px 'OpenRegular', sans-serif;
+            letter-spacing: 1.5px;
+            padding: 20px 100px 0 100px;
+            text-align: center;
+        }
+
+        h1{
+            font:30px  'UnbRegular', sans-serif;
+       color: #c49190;
+ margin-top: 150px ;
+ padding: 0;
+ text-align: center;
+    }
+
+    .conteudo button{
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #c49190;
+        font:18px 'OpenRegular', sans-serif;
+        color: rgb(247, 246, 246);
+        margin: 30px 0 0 368px;
+        cursor: pointer;
+    margin-left:  230px;
+    }
+    
+}
+
+
+
