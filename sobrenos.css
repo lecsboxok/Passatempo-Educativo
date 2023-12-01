@@ -191,6 +191,7 @@ body {
     z-index: 99;
     position: absolute;
     top: 70vh;
+    left: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,9 +240,11 @@ body {
     font-family: Manrope;
     color: white;
     padding: 50px 120px;
-    margin: 0 200px;
 
 
+}
+.lets{
+    margin: -200px 200px 0;
 }
 .quem {
     font: 300 30px 'Montserrat', sans-serif;
@@ -596,43 +599,40 @@ padding: 0 35vh;
     margin: auto;
     border: 2px solid black;
     height: 200px;
+    display: flex;
     align-items: center;
-  
-  
 }
 
 .carousel {
- 
     display: flex;
     transition: 0.5s;
-    align-items: center;
- 
 }
 
 .carousel ul {
     list-style: none;
-    display: flex;
     padding: 0;
     margin: 0;
-  align-items: center;
-
-   
+    display: flex;
+    align-items: center;
 }
 
 .carousel li {
     flex: 0 0 33.33%; /* define a largura das imagens, 33.33% para exibir 3 por vez */
-    height: 100px;
-
+    height: 100%; /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
+    box-sizing: border-box; /* Adicionado para garantir que a borda não afete a largura e altura total */
 }
 
-
+.carousel img {
+    width: 70%; /* Garante que a imagem ocupe 100% da largura da li */
+    height: 100%; /* Garante que a imagem ocupe 100% da altura da li */
+    object-fit: cover; /* Adicionado para garantir que a imagem cubra totalmente a li */
+}
 
 .carousel-button {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 40px; /* largura dos botões */
-    
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -645,7 +645,13 @@ padding: 0 35vh;
 .carousel-button-right {
     right: 0;
 }
+
+/*Imagens*/
+.carrosel-1{
+    
+}
 /*FIM CARROSEL */
+
 /*GOVERNANÇA*/
 .governo{
     background-color: #F5F5F5;
@@ -788,7 +794,7 @@ width: 300px;
     margin-top: 80px;
 }
 
-.aqui{
+.aqui a{
     color: #1F9B6E;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -1077,10 +1083,12 @@ top: 45px;
     z-index: 99;
     position: absolute;
     top: 40vh;
+    left: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .le {
@@ -1088,8 +1096,9 @@ top: 45px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
-    margin-top: 100px;
-    margin-right: 250px;
+  margin-top: 150px;
+
+
 
 }
 
@@ -1097,18 +1106,18 @@ top: 45px;
     text-align: center;
     color: white;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
-    margin-right: 250px;
+
 }
 
 .dif {
     color: #c4faae;
     text-align: center;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    margin-right: 250px;
+  
 }
 
 .linha {
@@ -1118,7 +1127,7 @@ top: 45px;
     border-bottom: 3px solid #c4faae;
     width: 200px;
     margin-top: 20px;
-    margin-right: 250px;
+
 }
 
 .oscip {
@@ -1126,12 +1135,16 @@ top: 45px;
     font-size: 12px;
     font-weight: 600;
     font-family: Manrope;
-    color: white;
-    padding: 50px 100px;
-    margin: 0 200px;
-    margin-right: 250px;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;   
+    width: 250px;
+}
 
-
+.lets{
+    width: 100%;
+    margin: -110px 120px 0;
+    text-align: center;
 }
 .quem {
     font: 300 30px 'Montserrat', sans-serif;
@@ -1164,51 +1177,81 @@ top: 45px;
     color:#FB2673;
     font:  'Montserrat', sans-serif;
     text-align: center;
+   
 }
 
 .texto{
     margin-top: 70px;
     text-align: center;
+  ;
     font: 400 16px 'Manrope', sans-serif;
 }
 
-.img1, .img2, .img3, .img4{
-    display: none;
+
+
+.img1, .texto1, .img2, .texto2{
+   
+    margin-left: 150px;
+    margin-top: 100px;
+    margin-bottom: 17px;
+   
 }
-.setameio{
-   margin-left:-50px;
-    margin-top: 90px;
-    width: 140px;
-    display: flex;
+.img1, .img2, .img3, .img4{
+   display: none;
 }
 
+.historia-retangulo{
+ 
+    background-color: #FFF6D5;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    
+    margin-top: 150px;
+   
+}
+.texto1, .texto2, .texto3, .texto4{
+    width: 300px;
+    font-size: 18px;
+margin: 0;
+left: 0;
+position: absolute;
+
+}
 
 .texto1{
-    width: 400px;
-    font-size: 18px;
-
-
-
-   
-   
+    left: 140px;
+    top: 2570px;
 }
 .texto2{
-    width: 400px;
-    font-size: 18px;
-   
+    left: 140px;
+    top: 2980px;
 }
-
 .texto3{
-    width: 400px;
-    font-size: 18px;
-   
-
-
+    left: 140px;
+    top: 2330px;
 }
-
+.texto4{
+    left:140px;
+    top:2750px;
+}
+.setameio{
+    text-align: center;
+    align-items: center;
+   position: absolute;
+   left: -650px;
+z-index: 99;
+    width: 140px;
+    margin-top: 0px;
+}
 .segundo{
-    margin-top: 0;
-    margin-left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1000px;
+    width: 300px;
+margin-top: -140vh;   
+ word-break: keep-all;
+
 }
 
 .container:hover .overlay {
@@ -1224,4 +1267,203 @@ top: 45px;
 .container4:hover .overlay4{
    display: none;
 }
+
+.estar h1 {
+    margin-top: 70px;
+    font: 400 16px 'Manrope', sans-serif;
+padding: 0 5vh;  
+
 }
+ 
+.gov{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700px;
+    color: #878F94;
+    }
+ 
+    .missao{
+        font-family: 'Manrope', sans-serif;
+        font-size: 16px;
+        font-weight: 400px;
+        text-align: center;
+        padding: 0 5vh;
+    }
+
+
+    
+/*NOMES*/ .nome1, .nome2, .nome3, .nome4{
+color: #1F9B6E;
+font-size: 18px;
+font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+width: 300px;
+} 
+
+
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    width: 300px;
+    /* margin-left: 450px; */
+}
+.textp{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    /* margin-left: 350px; */
+}
+
+.text1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+  
+    /* margin-left: 1130px; */
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  
+}
+
+
+
+.segunda-linha, .primeira-linha{
+ display: none;
+
+ 
+   
+}
+
+.presidente{
+    margin-left: 0;
+
+}
+
+.vice-presidente{
+   margin-left: 0;
+}
+.let{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ margin-left: 0;
+
+}
+
+.conselheiro ,.fiscal{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.empresa-feliz{
+    background-color: white;
+    width: 100%;
+    height: 800px;
+    
+}
+
+.governo{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 1300px;
+}
+
+/*CARROSEL*/
+.carousel-container {
+    position: relative;
+    width: 400px; /* largura do carrossel */
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    height: 150px;
+    align-items: center;
+  
+  
+}
+
+.carousel {
+ 
+    display: flex;
+    transition: 0.5s;
+    align-items: center;
+    
+ 
+}
+
+.carousel ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  align-items: center;
+width: 100px;
+  margin-top: 20px;
+
+   
+}
+
+.carousel li {
+    flex: 0 0 33.33%; /* define a largura das imagens, 33.33% para exibir 3 por vez */
+    height: 100px;
+
+}
+
+
+
+.carousel-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px; /* largura dos botões */
+    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: 0;
+}
+
+.carousel-button-right {
+    right: 0;
+}
+/*FIM CARROSEL */
+
+/*RODAPE*/
+
+.amigoSurdo{
+    width: 100px;
+    margin: 0;
+}
+.maps{
+    width: 100px;
+    margin: 0;
+}
+.texto-rodape{
+    width: 100px;
+}
+.redes{
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+ }
