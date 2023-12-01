@@ -184,6 +184,8 @@ ul li ul li {
 h2 {
     font-family: 'Montserrat';
     color: #26B2F4;
+    font-weight: 700;
+    padding-top: 50px;
 }
 
 p,
@@ -231,8 +233,6 @@ p {
     height: auto;
 }
 
-
-
 .funcionamento {
     /* Nesse é uma div onde coloquei as coisas dentro do retangulo rosa coloquei várias coisas para deixar no centro */
     margin-top: -80vh;
@@ -277,6 +277,8 @@ p {
     color: white;
     margin-right: 10vw;
     margin-top: 5vh;
+    font: 400 16px 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 
 .lo {
@@ -290,16 +292,16 @@ p {
 .modal {
     display: none;
     position: fixed;
-    top: 20%;
-    right: 0;
-    transform: translate(-50%);
+    top: 54%;
+    right: 50%;
+    transform: translate(50%, -50%);
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 2;
-    width: 800px;
-    height: 700px;
+    width: 700px;
+    height: 600px;
 }
 
 .modal-content {
@@ -309,8 +311,9 @@ p {
 .fechar {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 30px;
     cursor: pointer;
+    font-size: 50px;
 }
 
 .desfocado {
@@ -342,10 +345,14 @@ p {
     /* edita a mensagem */
     resize: none;
     height: 108px;
-    border: 1px solid rgba(0, 0, 0, 0.729);
+    border: 1px solid rgb(165, 165, 165);
     border-radius: 5px;
     margin-top: 5vh;
     width: 409px;
+    font: 400 15px 'Manrope', sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
 }
 
 
@@ -354,9 +361,12 @@ input {
     /* edita inputs */
     width: 409px;
     height: 37px;
-    border: 1px solid rgba(0, 0, 0, 0.729);
+    border: 1px solid rgb(165, 165, 165);
     border-radius: 5px;
     margin-top: 5vh;
+    font: 400 15px 'Manrope', sans-serif;
+    padding-left: 10px;
+    outline: none;
 }
 
 .btn {
@@ -376,6 +386,7 @@ input {
     height: 37px;
     color: white;
     background-color: #26B2F4;
+    font: 600 16px 'Manrope', sans-serif;
 }
 
 /* CARROSSEL DE IMAGENS */
@@ -754,9 +765,6 @@ footer {
         flex-direction: column;
     }
 
-    .retangulo-rosa{
-        height: 200vw;
-    }
 
     
 
