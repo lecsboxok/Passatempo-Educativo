@@ -7,6 +7,7 @@
     <title>Lojinha Passatempo</title>
     <link rel="stylesheet" href="lojinha.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,7 +18,8 @@
             </div>
             <div id="buscar">
                 <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
-                <button onclick="buscarSite()">Buscar</button>
+                <button onclick="buscarSite()"><i class="fa-solid fa-magnifying-glass"
+                        style="color: #ffffff;"></i></button>
             </div>
             <div id="carrinho-icon" onclick="toggleCarrinho()">
                 <div class="imagem">
@@ -33,17 +35,14 @@
         </div>
     </header>
 
-
-    <!--MAIN-->
-    <div class="natal">
-        <img src="img/natal.png" alt="">
+    <div class="comeco">
+        <img src="img/lojinha-inicial.png" alt="banner">
     </div>
+
+
     <main>
         <main id="main">
             <div class="container">
-                <div class="nome">
-                    <h2 class="nome-secao">Produtos:</h2>
-                </div>
                 <div class="produtos">
                     <div class="produto-linha">
                         <div class="produto">
@@ -256,6 +255,7 @@
                             </div>
                         </div>
                         <div class="produto">
+                            <div class="indicador"><img src="img/indicador.png" alt=""></div>
                             <div class="imagem">
                                 <img src="img/produto9.png" alt="vela">
                             </div>
@@ -267,6 +267,7 @@
                             </div>
                         </div>
                         <div class="produto">
+                            <div class="indicador"><img src="img/indicador.png" alt=""></div>
                             <div class="imagem">
                                 <img src="img/produto10.png" alt="vela">
                             </div>
@@ -282,6 +283,8 @@
             </div>
         </main>
     </main>
+
+
     <script src="lojinha.js"></script>
 
 

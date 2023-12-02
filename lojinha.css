@@ -33,6 +33,7 @@ img {
 #header .container {
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #main .container {
@@ -49,10 +50,13 @@ img {
 }
 
 input {
-  border: 2px solid black;
-  padding: 5px 7px;
-  border-radius: 8px;
-  width: 400px;
+  font: 400 16px 'Montserrat';
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-right: 0px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 #carrinho-icon img {
@@ -62,6 +66,8 @@ input {
 #carrinho-icon {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 
@@ -73,6 +79,11 @@ input {
   padding: 10px 0;
   border-bottom: 5px solid #FFD233;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.212);
+  z-index: 1000;
+}
+
+#header .logo{
+  flex: 1;
 }
 
 #header .logo img {
@@ -81,28 +92,27 @@ input {
 
 #buscar {
   display: flex;
-}
-
-#buscar-input {
-  padding: 10px;
-  width: 70%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  flex: 1;
 }
 
 #buscar button {
   padding: 10px;
-  background-color: #e16666;
+  background-color: #FB2673;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   cursor: pointer;
+}
+
+#buscar i{
+  font-size: 20px;
 }
 
 
 
 #cont-carrinho {
-  background-color: #e74c3c;
+  background-color: #FB2673;
   color: #fff;
   padding: 5px 8px;
   border-radius: 50%;
@@ -119,15 +129,8 @@ input {
 }
 
 /* Main */
-#main {
-  padding: 40px 0;
-}
-
-.nome-secao {
-  color: #FB2673;
-  font-size: 24px;
-  margin-bottom: 20px;
-  margin-top: 120px;
+.comeco{
+  padding: 100px 0;
 }
 
 .produtos {
@@ -138,17 +141,18 @@ input {
 
 .produto {
   flex: 0 1 calc(30% - 20px);
-  margin: 10px;
+  margin: 25px 10px;
   background-color: #fefefe;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
   border: 1px solid rgb(189, 189, 189);
+  position: relative;
 }
 
 .produto:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .produto .imagem img {
@@ -170,6 +174,13 @@ input {
   color: #616161;
   margin-bottom: 25px;
   font: 500 20px 'Montserrat', sans-serif;
+}
+
+.indicador {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 60px;
 }
 
 .produto button {
@@ -217,4 +228,20 @@ input {
 
 .limpa:hover {
   background-color: #f99593;
+}
+
+
+
+
+@media (max-width: 768px) {
+  #buscar {
+    flex: 100%;
+    order: 3; /* Altera a ordem para a terceira posição na coluna */
+    margin: 20px 0 10px 0;
+  }
+
+  #carrinho-icon {
+    order: 2; /* Altera a ordem para a segunda posição na coluna */
+    justify-content: flex-end; /* Alinha o carrinho ao final da coluna */
+  }
 }
