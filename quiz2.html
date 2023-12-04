@@ -57,53 +57,85 @@
 
 const perguntas = [
     {
-        pergunta: "Os impactos ambientais comumente associados ao Cerrado estão ligados à",
+        pergunta: "Assinale a alternativa que indica a melhor definição de bioma:",
         imagem: "img/quiz-imagem1.png",
         resposta: [
-            { text: "Sócrates", correct: false },
-            { text: "Descartes", correct: true },
-            { text: "Aristóteles", correct: false },
-            { text: "Platão", correct: false },
+            { text: " A) É uma unidade do espaço geográfico que possui características físicas em comum.", correct: true },
+            { text: " B) É uma região formada por espécies de fauna e flora que correm risco de extinção", correct: false },
+            { text: " C) É uma área que tem um grande volume de espécies classificadas como endêmicas.", correct: false },
+            { text: " D) É um espaço formado por plantas homogêneas que possuem estrutura semelhante.", correct: false },
         ]
     },
     {
-        pergunta: "Qual valor de X na equação: 2x + 10 = 20?",
-        imagem: "img/equacao.png",
+        pergunta: "Qual das figuras abaixo é a base de um cone?",
+        imagem: "img/quiz-imagem2.png",
         resposta: [
-            { text: "X = 2", correct: false },
-            { text: "X = 10", correct: false },
-            { text: "X = 4", correct: false },
-            { text: "X = 5", correct: true },
+            { text: "A) Quadrado", correct: false },
+            { text: "B) Retângulo", correct: false },
+            { text: "C) Circulo", correct: true},
+            { text: "D) Triângulo", correct: false},
         ]
     },
     {
-        pergunta: "Qual foi o país pioneiro da Revolução Industrial?",
-        imagem: "img/inglaterra.png",
+        pergunta: "Quantas sílabas tem a palavra fisioterapeuta?",
+        imagem: "img/",
         resposta: [
-            { text: "Inglaterra", correct: true },
-            { text: "França", correct: false },
-            { text: "Brasil", correct: false },
-            { text: "Estados Unidos", correct: false },
+            { text: "A) somente uma", correct: false },
+            { text: "B) duas", correct: false },
+            { text: "C) seis", correct: false },
+            { text: "D) sete", correct: true},
         ]
     },
     {
-        pergunta: "O que é a clorofila?",
-        imagem: "img/clorofila.png",
+        pergunta: "Quantos ossos temos no nosso corpo?",
+        imagem: "img/",
         resposta: [
-            { text: "Célula das plantas", correct: false },
-            { text: "Produto de limpeza", correct: false },
-            { text: "Nome científico do cloro", correct: false },
-            { text: "Pigmento verde das plantas", correct: true },
+            { text: "A) 126", correct: false },
+            { text: "B) 206", correct: true },
+            { text: "C) 18", correct: false },
+            { text: "D) 200", correct: false },
         ]
     },
     {
-        pergunta: "Qual o predicado da oração: 'Renato fez um gol.'?",
-        imagem: "img/predicado.png",
+        pergunta: "Qual das seguintes obras é de autoria de Leonardo da Vinci?",
+        imagem: "img/",
         resposta: [
-            { text: "Renato", correct: false },
-            { text: "Fez", correct: false },
-            { text: "Fez um gol", correct: true },
-            { text: "Um gol", correct: false },
+            { text: "A) Mona Lisa", correct: false },
+            { text: "B) A Ultima Ceia", correct: false },
+            { text: "C) O nascimento de Vênus", correct: false},
+            { text: "D) Alternativa a e b", correct: true },
+        ]
+    },
+
+    {
+        pergunta: "Quais são as 7 maravilhas do mundo moderno?",
+        imagem: "img/",
+        resposta: [
+            { text: "A)  Necrópole de Gizé, Acrópole de Atenas, Angkor Wat, Taj Mahal, Castelo de Neuschwanstein, Estátua da Liberdade, Catedral de São Basílio", correct: false },
+            { text: "B) Pirâmides de Gizé, Praça Vermelha, Torre Eiffel, Tombuctu, Sydney Opera House, Stonehenge, Coliseu de Roma.", correct: false },
+            { text: "C) Coliseu, Necrópole de Gizé, Grande Muralha da China, Pirâmide de Kukulcán, Machu Picchu, Cristo Redentor, Taj Mahal.", correct: true},
+            { text: "D) Acrópole de Atenas, Canal do Panamá, Serengeti, Diques de Marés, Grand Canyon, Galápagos, Monte Everest.", correct: false },
+        ]
+    },
+
+    {
+        pergunta: "Qual das alternativas a seguir apresenta EXCLUSIVAMENTE ondas?",
+        imagem: "img/",
+        resposta: [
+            { text: "A) Luz, moléculas, átomos", correct: false },
+            { text: "B) Som, raios X, moléculas", correct: false },
+            { text: "C) Som, luz, raios X", correct: true, },
+            { text: "D) Vapor, calor, som", correct: false },
+        ]
+    },
+    {
+        pergunta: "Qual é o maior planeta em dimensão do Sistema Solar?",
+        imagem: "img/",
+        resposta: [
+            { text: "A) Júpiter.", correct: true},
+            { text: "B) Urano", correct: false },
+            { text: "C) Marte", correct: false, },
+            { text: "D) Vapor, calor, som", correct: false },
         ]
     }
 ];
@@ -167,32 +199,32 @@ const iconClass = {
     "Um gol": "fa-solid fa-star",
 };
 
-// const styleClass = {
-//     "Sócrates": "#333333",
-//     "Descartes": "#333333",
-//     "Aristóteles": "#333333",
-//     "Platão": "#333333",
+const styleClass = {
+    "Sócrates": "#333333",
+    "Descartes": "#333333",
+    "Aristóteles": "#333333",
+    "Platão": "#333333",
 
-//     "X = 2": "red",
-//     "X = 10": "blue",
-//     "X = 4": "green",
-//     "X = 5": "#ff00a6",
+    "X = 2": "red",
+    "X = 10": "blue",
+    "X = 4": "green",
+    "X = 5": "#ff00a6",
 
-//     "Inglaterra": "red",
-//     "França": "blue",
-//     "Brasil": "green",
-//     "Estados Unidos": "#ff00a6",
+    "Inglaterra": "red",
+    "França": "blue",
+    "Brasil": "green",
+    "Estados Unidos": "#ff00a6",
 
-//     "Célula das plantas": "red",
-//     "Produto de limpeza": "blue",
-//     "Nome científico do cloro": "green",
-//     "Pigmento verde das plantas": "#ff00a6",
+    "Célula das plantas": "red",
+    "Produto de limpeza": "blue",
+    "Nome científico do cloro": "green",
+    "Pigmento verde das plantas": "#ff00a6",
 
-//     "Renato": "red",
-//     "Fez": "blue",
-//     "Fez um gol": "green",
-//     "Um gol": "#ff00a6",
-// };
+    "Renato": "red",
+    "Fez": "blue",
+    "Fez um gol": "green",
+    "Um gol": "#ff00a6",
+};
 
 const colorClass = {
     "Sócrates": "#ff4141",
