@@ -130,13 +130,22 @@ function limparCarrinho() {
 }
 
 function toggleCarrinho() {
-    const itensCarrinhoDiv = document.getElementById("carrinho-itens")
+    const itensCarrinhoDiv = document.getElementById("carrinho-itens");
     if (itensCarrinhoDiv.style.display === "none") {
-        itensCarrinhoDiv.style.display = "block"
+        itensCarrinhoDiv.style.display = "block";
+        setTimeout(() => {
+            itensCarrinhoDiv.classList.add("aberto");
+        }, 0);
     } else {
-        itensCarrinhoDiv.style.display = "none"
+        itensCarrinhoDiv.classList.remove("aberto");
+        setTimeout(() => {
+            itensCarrinhoDiv.style.display = "none";
+        }, 300); // Ajuste o tempo de espera para corresponder ao tempo de transição CSS
     }
 }
+
+
+
 
 function buscarProduto() {
     const buscarInput = document.getElementById("buscar-input")
@@ -191,4 +200,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Atualizar a imagem inicial
     atualizarImagem();
+
   });
