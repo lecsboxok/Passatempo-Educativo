@@ -115,14 +115,33 @@ input {
   font-size: 20px;
 }
 
-
-
 #cont-carrinho {
   background-color: #FB2673;
   color: #fff;
   padding: 5px 8px;
   border-radius: 50%;
   font: 600 14px 'Manrope', sans-serif;
+}
+
+.tema i {
+  font-size: 30px;
+}
+
+.tema button{
+  background-color: transparent;
+}
+
+.modo-escuro {
+  background-color: #000000;
+  color: #fff;
+}
+
+.texto-claro{
+  color: #FFF;
+}
+
+.texto-escuro{
+  color: #000;
 }
 
 
@@ -401,26 +420,7 @@ input {
   font: 500 18px 'Manrope', sans-serif;
 }
 
-.tema i {
-  font-size: 30px;
-}
 
-.tema button{
-  background-color: transparent;
-}
-
-.modo-escuro {
-  background-color: #000000;
-  color: #fff;
-}
-
-.texto-claro{
-  color: #FFF;
-}
-
-.texto-escuro{
-  color: #000;
-}
 
 
 
