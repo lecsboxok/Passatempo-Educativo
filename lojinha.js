@@ -1,6 +1,6 @@
 const itensCarrinho = {}
 
-function addCarrinho(itemNome, itemPreco) {
+function addCarrinho(itemNome, itemPreco, itemImagem) {
     // Verifica se o item adicionado já existe no carrinho
     if (itensCarrinho[itemNome]) {
         // A quantidade do produto vai aumentar
@@ -12,11 +12,20 @@ function addCarrinho(itemNome, itemPreco) {
         const liItem = document.createElement("li")
         liItem.innerHTML = `
         <div class="item">
-            <span>${itemNome}</span>
-            <button class="remove" onclick="removeCarrinho('${itemNome}', ${itemPreco})">-</button>
-            <span class="quantidade">1</span>
-            <button class="add" onclick="addCarrinho('${itemNome}', ${itemPreco})">+</button>
-            <span class="preco-total">R$${itemPreco.toFixed(2)}</span>
+            <div class="produto-e-nome">
+                <div class="imagem">
+                    <img class="produto-imagem" src="${itemImagem}" alt="${itemNome}">
+                </div>
+                <span class="produto-span">${itemNome}</span>
+            </div>
+            <div class="lado">
+                <div class="numero">
+                    <button class="remove" onclick="removeCarrinho('${itemNome}', ${itemPreco})">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="add" onclick="addCarrinho('${itemNome}', ${itemPreco})">+</button>
+                </div>
+                <span class="preco-total">R$${itemPreco.toFixed(2)}</span>
+            </div>
         </div>  
         `
 
@@ -34,7 +43,7 @@ function addCarrinho(itemNome, itemPreco) {
     }
 
     // atualiza o valor total
-    document.getElementById("preco-total").innerHTML = "Valor Total R$" + precoTotal.toFixed(2)
+    document.getElementById("preco-total").innerHTML = "Total: <span class='separar'>R$" + precoTotal.toFixed(2)
     updateCarrinho()
 }
 
@@ -55,13 +64,22 @@ function removeCarrinho(itemNome, itemPreco) {
         updateCarrinho()
     }
 }
+
 function updateCarrinho() {
     let cont = 0;
     for (let item in itensCarrinho) {
         cont += itensCarrinho[item].quantidade;
     }
-    document.getElementById("cont-carrinho").innerHTML = cont
+    document.getElementById("cont-carrinho").innerHTML = cont;
+
+    const mensagemCarrinhoVazio = document.getElementById("mensagem-carrinho-vazio");
+    if (cont === 0) {
+        mensagemCarrinhoVazio.style.display = "block";
+    } else {
+        mensagemCarrinhoVazio.style.display = "none";
+    }
 }
+updateCarrinho();
 
 function limparCarrinho() {
     document.getElementById("itens-lista").innerHTML = ""
@@ -99,24 +117,25 @@ function buscarProdutos() {
 function removeCarrinho(itemNome, itemPreco) {
     if (itensCarrinho[itemNome]) {
         if (itensCarrinho[itemNome].quantidade > 1) {
-            itensCarrinho[itemNome].quantidade--
-            itensCarrinho[itemNome].precoTotal -= itemPreco
-            itensCarrinho[itemNome].liItem.querySelector(".quantidade").innerHTML = itensCarrinho[itemNome].quantidade
-            itensCarrinho[itemNome].liItem.querySelector9(".preco-total").innerHTML = "R$" + itensCarrinho[itemNome].precoTotal.toFixed(2)
+            itensCarrinho[itemNome].quantidade--;
+            itensCarrinho[itemNome].precoTotal -= itemPreco;
+            itensCarrinho[itemNome].liItem.querySelector(".quantidade").innerHTML = itensCarrinho[itemNome].quantidade;
+            itensCarrinho[itemNome].liItem.querySelector(".preco-total").innerHTML = "R$" + itensCarrinho[itemNome].precoTotal.toFixed(2);
         } else {
-            document.getElementById("itens-lista").removeChild(itensCarrinho[itemNome].liItem)
-            delete itensCarrinho[itemNome]
+            document.getElementById("itens-lista").removeChild(itensCarrinho[itemNome].liItem);
+            delete itensCarrinho[itemNome];
         }
-        document.getElementById("preco-total").innerHTML = "Total R$" + precoTotal.toFixed(2)
-        updateCarrinho()
+
+        // Calcula o valor total
+        let precoTotal = 0;
+        for (let itemName in itensCarrinho) {
+            precoTotal += itensCarrinho[itemName].precoTotal;
+        }
+
+        // Atualiza o valor total
+        document.getElementById("preco-total").innerHTML = "Total: <span class='separar'>R$" + precoTotal.toFixed(2) + "</span>";
+        updateCarrinho();
     }
-}
-function updateCarrinho() {
-    let cont = 0
-    for (let item in itensCarrinho) {
-        cont += itensCarrinho[item].quantidade
-    }
-    document.getElementById("cont-carrinho").innerHTML = cont
 }
 
 
@@ -201,4 +220,62 @@ document.addEventListener('DOMContentLoaded', function () {
     // Atualizar a imagem inicial
     atualizarImagem();
 
+    document.getElementById('fechar-carrinho').addEventListener('click', function () {
+        fecharCarrinho();
+    });
+
   });
+
+  function fecharCarrinho() {
+    const itensCarrinhoDiv = document.getElementById("carrinho-itens");
+    if (itensCarrinhoDiv.style.display === "block") {
+        itensCarrinhoDiv.classList.remove("aberto");
+        setTimeout(() => {
+            itensCarrinhoDiv.style.display = "none";
+        }, 300); // Ajuste o tempo de espera para corresponder ao tempo de transição CSS
+    }
+}
+
+const trocarTema = document.getElementById('trocar-tema');
+        const body = document.body;
+        const botaoIcone = document.querySelector('#trocar-tema i.fa-solid');
+
+        let modoEscuro = false;
+
+        trocarTema.addEventListener("click", () => {
+            modoEscuro = !modoEscuro;
+
+            if (modoEscuro) {
+                body.classList.add("modo-escuro");
+                labels.forEach(label => {
+                    label.classList.add("texto-claro");
+                });
+                secoesRoxo.forEach(secao => {
+                    secao.style.backgroundColor = '#37003f';
+                });
+                paragrafos.forEach(paragrafo => {
+                    paragrafo.style.color = 'white';
+                });
+                amarelos.forEach(amarelo => {
+                    amarelo.style.color = '#f1ff77';
+                });
+                botaoIcone.className = 'fa-solid fa-toggle-on';
+                botaoIcone.style.color = '#ffffff';
+            } else {
+                body.classList.remove("modo-escuro");
+                labels.forEach(label => {
+                    label.classList.remove("texto-claro");
+                });
+                secoesRoxo.forEach(secao => {
+                    secao.style.backgroundColor = '';
+                });
+                paragrafos.forEach(paragrafo => {
+                    paragrafo.style.color = '';
+                });
+                amarelos.forEach(amarelo => {
+                    amarelo.style.color = '';
+                });
+                botaoIcone.className = 'fa-solid fa-toggle-off';
+                botaoIcone.style.color = '#FFF';
+            }
+        });
