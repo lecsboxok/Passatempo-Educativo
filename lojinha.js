@@ -186,29 +186,29 @@ document.addEventListener('DOMContentLoaded', function () {
     let indiceAtual = 0;
 
     function atualizarImagem() {
-      const carrosselContainer = document.getElementById('carrosselContainer');
-      const bolinhasContainer = document.querySelector('.bolinhas');
+        const carrosselContainer = document.getElementById('carrosselContainer');
+        const bolinhasContainer = document.querySelector('.bolinhas');
 
-      // Atualizar bolinhas
-      bolinhasContainer.innerHTML = '';
-      for (let i = 0; i < imagens.length; i++) {
-        const bolinha = document.createElement('div');
-        bolinha.className = `bolinha ${i === indiceAtual ? 'ativa' : ''}`;
-        bolinhasContainer.appendChild(bolinha);
-      }
+        // Atualizar bolinhas
+        bolinhasContainer.innerHTML = '';
+        for (let i = 0; i < imagens.length; i++) {
+            const bolinha = document.createElement('div');
+            bolinha.className = `bolinha ${i === indiceAtual ? 'ativa' : ''}`;
+            bolinhasContainer.appendChild(bolinha);
+        }
 
-      // Atualizar posição do carrossel container
-      carrosselContainer.style.transform = `translateX(${-(indiceAtual * 100)}%)`;
+        // Atualizar posição do carrossel container
+        carrosselContainer.style.transform = `translateX(${-(indiceAtual * 100)}%)`;
     }
 
     function proximaImagem() {
-      indiceAtual = (indiceAtual + 1) % imagens.length; // Avançar para o próximo slide
-      atualizarImagem();
+        indiceAtual = (indiceAtual + 1) % imagens.length; // Avançar para o próximo slide
+        atualizarImagem();
     }
 
     function imagemAnterior() {
-      indiceAtual = (indiceAtual - 1 + imagens.length) % imagens.length; // Voltar para o slide anterior
-      atualizarImagem();
+        indiceAtual = (indiceAtual - 1 + imagens.length) % imagens.length; // Voltar para o slide anterior
+        atualizarImagem();
     }
 
     // Configurar intervalo para trocar de imagem a cada 3 segundos
@@ -224,9 +224,9 @@ document.addEventListener('DOMContentLoaded', function () {
         fecharCarrinho();
     });
 
-  });
+});
 
-  function fecharCarrinho() {
+function fecharCarrinho() {
     const itensCarrinhoDiv = document.getElementById("carrinho-itens");
     if (itensCarrinhoDiv.style.display === "block") {
         itensCarrinhoDiv.classList.remove("aberto");
@@ -237,45 +237,9 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 
 const trocarTema = document.getElementById('trocar-tema');
-        const body = document.body;
-        const botaoIcone = document.querySelector('#trocar-tema i');
+  const body = document.body;
 
-        let modoEscuro = false;
-
-        trocarTema.addEventListener("click", () => {
-            modoEscuro = !modoEscuro;
-
-            if (modoEscuro) {
-                body.classList.add("modo-escuro");
-                // labels.forEach(label => {
-                //     label.classList.add("texto-claro");
-                // });
-                // secoesRoxo.forEach(secao => {
-                //     secao.style.backgroundColor = '#37003f';
-                // });
-                // paragrafos.forEach(paragrafo => {
-                //     paragrafo.style.color = 'white';
-                // });
-                // amarelos.forEach(amarelo => {
-                //     amarelo.style.color = '#f1ff77';
-                // });
-                botaoIcone.className = 'fa-solid fa-toggle-on';
-                botaoIcone.style.color = '#000';
-            } else {
-                body.classList.remove("modo-escuro");
-                // labels.forEach(label => {
-                //     label.classList.remove("texto-claro");
-                // });
-                // secoesRoxo.forEach(secao => {
-                //     secao.style.backgroundColor = '';
-                // });
-                // paragrafos.forEach(paragrafo => {
-                //     paragrafo.style.color = '';
-                // });
-                // amarelos.forEach(amarelo => {
-                //     amarelo.style.color = '';
-                // });
-                botaoIcone.className = 'fa-solid fa-toggle-off';
-                botaoIcone.style.color = '#000';
-            }
-        });
+  trocarTema.addEventListener('change', () => {
+    // Adicione ou remova a classe do corpo para alternar entre os temas
+    body.classList.toggle('modo-escuro');
+  });
