@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .slider-container {
+            position: relative;
+            overflow-x: hidden;
+            height: 300px;
+            max-width: 1090px;
+            /* Defina o valor desejado para o máximo de largura */
+            margin: 0 auto;
+        }
+
+        .slider-width {
+            position: absolute;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            left: 0;
+            top: 0;
+            transition: 0.4s ease-in-out;
+        }
+
+
+        .btn {
+            background-color: crimson;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 20px;
+            margin: 20px;
+            padding: 3px 12px;
+            cursor: pointer;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .btn:nth-child(2) {
+            margin-left: -74px;
+        }
+
+        .img {
+            /* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
+            width: 100px;
+            height: 236px;
+            border: 1px solid black;
+            margin-left: 20px;
+            background-color: #F5F5F5;
+            font-family: Forum;
+            font-size: 22.4px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-container" item-display-t="3" item-display-m="1">
+        <div class="slider-width">
+            <div class="img">
+                <li><img src="img/quebra-cabeca-volt.png" alt="Imagem 1" >
+                    <h5>Conexão social</h5>
+                </li>
+            </div>
+
+            <div class="img">
+                <li><img src="img/planet-terra-volt.png" alt="Imagem 2">
+                    <h5>Sentido de propósito</h5>
+                </li>
+            </div>
+
+
+            <div class="img">
+                <li><img src="img/alvoro-volt.png" alt="Imagem 3">
+                    <h5>Desenvolvimento pessoal</h5>
+
+                </li>
+            </div>
+
+
+            <div class="img">
+                <li><img src="img/cerebro-volt.png" alt="Imagem 4">
+                    <h5>Melhoria da saúde mental</h5>
+                </li>
+            </div>
+
+
+            <div class="img">
+                <li><img src="img/coreano-volt.png" alt="Imagem 5">
+                    <h5>Sentimento de pertencimento</h5>
+                </li>
+            </div>
+
+            <div class="img">
+                <li><img src="img/config-volt.png" alt="Imagem 6">
+                    <h5>Experiência de carreira</h5>
+                </li>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn" onclick="prev()">Anterior</button>
+    <button type="button" class="btn" onclick="next()">Próximo</button>
+
+    <script>
+        var contar = 0;
+        var inc = 0;
+        var margin = 0;
+        var slider = document.getElementsByClassName("slider-width")[0];
+        var itemDisplay = 0;
+        var maxWidth = 1090;
+
+        if (maxWidth > 700) {
+            itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-t");
+            margin = itemDisplay * 6.8;
+        }
+
+        if (maxWidth > 280 && maxWidth < 700) {
+            itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-m");
+            margin = itemDisplay * 20;
+        }
+
+        var item = document.getElementsByClassName("img");
+        var itemSlide = Math.floor(item.length / itemDisplay) - 1;
+
+        for (let i = 0; i < item.length; i++) {
+            item[i].style.width = ((maxWidth / itemDisplay) - margin) + "px";
+        }
+
+        function next() {
+            inc++;
+            contar = contar - (maxWidth / itemDisplay);
+
+            // Se ultrapassar o último item, ajuste para mostrar completamente o último item
+            if (inc >= item.length) {
+                inc = 0;
+                contar = -((maxWidth / itemDisplay) * inc);
+            }
+
+            slider.style.left = contar + "px";
+        }
+
+
+        function prev() {
+            if (inc > 0) {
+                inc--;
+                contar = contar + (maxWidth / itemDisplay);
+            } else {
+                // Ao chegar no início, mantenha o último item visível e continue para a esquerda
+                inc = item.length - itemDisplay;
+                contar = -((maxWidth / itemDisplay) * inc);
+            }
+            slider.style.left = contar + "px";
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

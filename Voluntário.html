@@ -70,7 +70,10 @@
 
     <main>
         <section id="comeco-voluntario">
-            <img class="imagem-voluntario" src="img/principal-voluntario.jpg" alt="">
+            <div class="imagem-voluntario">
+
+            </div>
+            <!-- <img class="imagem-voluntario" src="img/principal-voluntario.jpg" alt=""> -->
 
             <div class="programa-voluntario">
                 <div class="texto-programa-volun">
@@ -89,60 +92,63 @@
         </section>
 
         <section id="como-funciona">
-            <!-- <img class="retangulo-rosa" src="img/Rectangle 190.png" alt=""> -->
+
             <div class="retangulo-rosa">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 731" fill="none">
-                    <path
-                        d="M0 22.0001C326.864 33.7146 464.878 56.0269 720 22.0001C975.122 -12.0266 1452.29 0.332954 1440 22.0001V698C1171.79 653.173 1017.02 643.236 720 698C418.247 744.954 263.622 738.056 0 698V22.0001Z"
-                        fill="#FFF2E7" />
+                <div class="desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 731" fill="none">
+                        <path
+                            d="M0 22.0001C326.864 33.7146 464.878 56.0269 720 22.0001C975.122 -12.0266 1452.29 0.332954 1440 22.0001V698C1171.79 653.173 1017.02 643.236 720 698C418.247 744.954 263.622 738.056 0 698V22.0001Z"
+                            fill="#FFF2E7" />
 
-                </svg>
-            </div>
-
-
-            <div class="funcionamento">
-                <div class="lo"> <img class="imagem-funcionamento" src="img/menina-fucionamento.png" alt=""></div>
-                <div>
-                    <h2 class="titulo-fuincionamento">Como funciona?</h2>
-                    <div class="preencha-formulario">
-                        <div class="lets">
-                            <img src="img/numero-1-voluntario.png" alt="">
-                            <h3 class="tt">Preencha o formulário</h3>
-                        </div>
-                        <p class="texto">Insira seus dados no formulário abaixo.</p>
-                    </div>
-
-                    <div class="aguarde-contato">
-                        <div class="lets">
-                            <img src="img/numero-2-voluntario.png" alt="">
-                            <h3 class="tt">Aguarde o contato</h3>
-                        </div>
-                        <p id="texto" class="texto">Espere a Passatempo Educativo entrar
-                        </p>
-                        <p class="textoo">em contato com você referente ao</p>
-                        <p class="textoo"> voluntariado.</p>
-                    </div>
-
-                    <button id="saibaMais">Preencher formulário</button>
-
-                    <div id="modal" class="modal">
-                        <h2>Seja voluntário da Passatempo Educativo</h2>
-                        <div class="modal-content">
-                            <span class="fechar" id="fechar">&times;</span>
-                            <div class="quadrado"></div>
-                            <form class="login-form">
-                                <div class="formulario">
-                                    <input id="botao-nome" type="text" placeholder="Nome:">
-                                    <input id="botao-email" type="email" placeholder="Email:">
-                                    <textarea id="Mensagem" placeholder="Digite sua Mensagem:"></textarea>
-                                    <div class="btn"><button id="btn">ENVIAR</button></div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
+                    </svg>
                 </div>
-            </div>
+
+                <!-- <img class="retangulo-rosa" src="img/Rectangle 190.png" alt=""> -->
+
+
+                <div class="funcionamento">
+                    <div class="lo"> <img class="imagem-funcionamento" src="img/menina-fucionamento.png" alt=""></div>
+                    <div>
+                        <h2 class="titulo-fuincionamento">Como funciona?</h2>
+                        <div class="preencha-formulario">
+                            <div class="lets">
+                                <img src="img/numero-1-voluntario.png" alt="">
+                                <h3 class="tt">Preencha o formulário</h3>
+                            </div>
+                            <p class="texto">Insira seus dados no formulário abaixo.</p>
+                        </div>
+
+                        <div class="aguarde-contato">
+                            <div class="lets">
+                                <img src="img/numero-2-voluntario.png" alt="">
+                                <h3 class="tt">Aguarde o contato</h3>
+                            </div>
+                            <p id="texto" class="texto">Espere a Passatempo Educativo entrar
+                            </p>
+                            <p class="textoo">em contato com você referente ao</p>
+                            <p class="textoo"> voluntariado.</p>
+                        </div>
+
+                        <button id="saibaMais">Preencher formulário</button>
+
+                        <div id="modal" class="modal">
+                            <h2>Seja voluntário da Passatempo Educativo</h2>
+                            <div class="modal-content">
+                                <span class="fechar" id="fechar">&times;</span>
+                                <div class="quadrado"></div>
+                                <form class="login-form">
+                                    <div class="formulario">
+                                        <input id="botao-nome" type="text" placeholder="Nome:">
+                                        <input id="botao-email" type="email" placeholder="Email:">
+                                        <textarea id="Mensagem" placeholder="Digite sua Mensagem:"></textarea>
+                                        <div class="btn"><button id="btn">ENVIAR</button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
         </section>
 
         <section id="carrossel">
@@ -372,7 +378,13 @@
 
         function updateCarousel() {
             carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+            if(window.innerWidth <= 768){
+                carousel.style.transform = `translateX(-${currentIndex * 70}%)`;
+            }
         }
+
+        console.log(window.innerWidth)
+
 
         // Função para avançar o carrossel
         function nextSlide() {
