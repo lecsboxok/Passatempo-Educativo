@@ -31,7 +31,7 @@ img {
 }
 
 #header .container {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -47,12 +47,13 @@ img {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 input {
   font: 400 16px 'Montserrat';
   padding: 10px;
-  width: 100%;
+  width: 50%;
   border: 1px solid #ccc;
   border-right: 0px;
   border-bottom-left-radius: 5px;
@@ -68,8 +69,8 @@ input {
 #carrinho-icon {
   display: flex;
   align-items: flex-start;
+  /* flex: 1; */
   justify-content: flex-end;
-  flex: 1;
 }
 
 .tema{
@@ -87,9 +88,9 @@ input {
   z-index: 1000;
 }
 
-#header .logo {
+/* #header .logo {
   flex: 1;
-}
+} */
 
 #header .logo img {
   width: 68px;
@@ -98,6 +99,8 @@ input {
 #buscar {
   display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 #buscar button {
@@ -133,16 +136,32 @@ input {
 /* ESTILOS PARA MODO ESCURO */
 
 .modo-escuro {
-  background-color: #1D1F2C;
+  background-color: #262626;
   color: #fff;
 }
 
 .modo-escuro #header {
-  background-color: #494B55;
+  background-color: #121212;
   border: none;
 }
 
+.modo-escuro #carrinho-itens {
+  background-color: #000000;
+}
 
+.modo-escuro .titulo-carrinho {
+  background-color: #FB2673;
+}
+
+.modo-escuro #preco-total {
+  color: #ffffff;
+}
+
+.modo-escuro #itens-lista {
+  list-style: none;
+  padding: 0;
+  color: white;
+}
 
 
 
@@ -278,6 +297,7 @@ input {
   text-align: center;
   border-bottom-left-radius: 12px;
   border-top-left-radius: 12px;
+  flex-shrink: 0;
 }
 
 #carrinho-itens.aberto {
@@ -422,7 +442,7 @@ input {
 }
 
 .theme-switch {
-  --toggle-size: 15px;
+  --toggle-size: 12px;
   /* the size is adjusted using font-size,
      this is not transform scale,
      so you can choose any size */
