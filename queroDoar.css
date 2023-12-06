@@ -35,7 +35,9 @@ h2 {
 /* FAZENDO A PRIMEIRA PARTE QUE SERIA OS BOTÕES 1 2 3 PARA PASSAR OS COISAS DE PAGAMENTOS */
 
 
-
+.QueroDoar{
+    display: flex;
+}
 .etapas button {
     /* ESTILIZA TODOS OS BOTÕES PARA QUE FIQUEM CERTINHOS */
     width: 32px;
@@ -311,7 +313,13 @@ h2 {
 
 
 
-
+.titulo-dois{
+    margin-top: -6vh;
+   
+}
+.contato-form{
+    margin-top: 5vh;
+}
 
 
 
@@ -341,20 +349,21 @@ h2 {
 }
 
 
-
-
 .imagem {
     /* SERIA A IMAGEM PARA FAZER DO LADO ESQUERDO */
     width: 50%;
-    height: 756px;
+    height: 786px;
     background-color: rgb(251, 248, 225);
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-.tudo {
+.icones-de-pagamento{
     display: flex;
+   align-items: center;
+   justify-content: space-around;
+ margin-top: 8vh;
 }
 
 .tudo-etapa-2 {
@@ -378,7 +387,48 @@ h2 {
   margin-top: 1.15vh;
 }
 .validade-formulario-2 i{
-    margin-top: -0.35vh;
+    margin-top: 0.15vh;
 
 }
 
+.cadeado-formulario-2{
+    margin-top: 0.15vh;
+}
+
+#form2{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nomes-icones {
+    display: flex;
+    font-family: Manrope;
+
+}
+
+.nomes-icones p {
+    margin-top: -1.15vh;
+    margin-left: 2vh;
+}
+
+.pix {
+    display: flex;
+
+}
+
+.pix p {
+    margin-left: 2vh;
+    margin-top: -0.95vh;
+    font-family: Manrope;
+}

@@ -12,9 +12,9 @@
 <body>
 
     <main>
-        <!-- <section class="QueroDoar">
+        <section class="QueroDoar">
 
-            <div class="tudo">
+            <div class="tudo" id="form1">
                 <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
                 <div class="tudo-etapa-1">
                     <div class="etapas">
@@ -34,7 +34,7 @@
 
 
 
-                    <div class="tudo-formulario-1">
+                    <div class="tudo-formulario-1 ">
                         <div class="titulo-forms-primeiro">
                             <h2>Dados Pessoais</h2>
                         </div>
@@ -68,7 +68,8 @@
 
 
                         <div class="botoes-dados-pessoais">
-                            <button class="button-continuar-pagamento">Continuar para Pagamento</button>
+                            <button class="button-continuar-pagamento" onclick="trocarFormularios()">Continuar para
+                                Pagamento</button>
 
                             <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
                                 inicial</a>
@@ -80,85 +81,227 @@
 
 
 
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="tudo" id="form2" style="display:none;">
+                <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
+                <div class="tudo-etapa-2">
+                    <div class="segunda-etapa">
+                        <button class="button">1</button>
+                        <div class="linha1"></div>
+                        <button class="button" id="botao-outra-cor">2</button>
+                        <div class="linha"></div>
+                        <button class="btn3" id="botao-outra-cor">3</button>
+
+                    </div>
+
+                    <div class="texto-dados-etapas">
+                        <p>Dados pessoais</p>
+
+                        <p>Dados de pagamento</p>
+
+                        <p>Doação concluída</p>
+                    </div>
+                    <div class="tudo-formulario-1">
+                        <div class="titulo-forms-primeiro">
+                            <h2 class="titulo-dois">Dados de Pagamento</h2>
+
+                            <div class="icones-de-pagamento">
+
+
+                                <div class="nomes-icones">
+                                    <i class="fa-solid fa-credit-card fa-xl" style="color: rgb(104, 189, 241);"
+                                        id="cartao"></i>
+                                    <p>Cartão</p>
+                                </div>
+
+
+                                <div class="pix">
+                                    <i class="fa-brands fa-pix fa-xl" style="color: #000000;" id="pix"
+                                        trocarFormaDePagamento()></i>
+                                    <p>Pix</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <form id="Forms">
+                            <div class="contato-form">
+                                <div class="usuario-formulario-2">
+                                    <i class="fa-solid fa-user " style="color: #a3a3a3;"></i>
+                                    <input type="text" id="nome" placeholder="Nome que consta no cartão" required>
+                                </div>
+                                <div class="cartao-formulario-2">
+                                    <i class="fa-solid fa-credit-card" style="color: #a3a3a3;"></i>
+                                    <input type="number" id="cartao" placeholder="Número  do cartão:" required>
+                                </div>
+
+
+                                <div class="validade-formulario-2" style="color: #a3a3a3;">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <input type="email" id="validade" placeholder="Validade (MM/AAAA):" required>
+                                </div>
+                                <div class="cadeado-formulario-2" style="color: #a3a3a3;">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="tel" id="cvv" placeholder="CVV:" required>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="conferir-idade">
+                            <input id="idade" type="checkbox" name="idade"
+                                value="Eu confirmo que tenho mais de 18 anos e estou ciente da verificação dos meus dados pessoais">
+                            <label for="idade">Eu confirmo que tenho mais de 18 anos e estou ciente da
+                                verificação dos meus dados pessoais<label>
+                        </div>
+
+
+                        <div class="botoes-dados-pessoais">
+                            <button class="button-continuar-pagamento">Continuar para conclusão</button>
+
+                            <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
+                                inicial</a>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="pix-formulario">
+                <div class="tudo-etapa-2">
+                    <div class="segunda-etapa">
+                        <button class="button">1</button>
+                        <div class="linha1"></div>
+                        <button class="button" id="botao-outra-cor">2</button>
+                        <div class="linha"></div>
+                        <button class="btn3" id="botao-outra-cor">3</button>
+
+                    </div>
+
+                    <div class="texto-dados-etapas">
+                        <p>Dados pessoais</p>
+
+                        <p>Dados de pagamento</p>
+
+                        <p>Doação concluída</p>
+                    </div>
+                    <div class="tudo-formulario-1">
+                        <div class="titulo-forms-primeiro">
+                            <h2 class="titulo-dois">Dados de Pagamento</h2>
+
+                            <div class="icones-de-pagamento">
+
+
+                                <div class="nomes-icones">
+                                    <i class="fa-solid fa-credit-card fa-xl" style="color: rgb(104, 189, 241);"
+                                        id="cartao"></i>
+                                    <p>Cartão</p>
+                                </div>
+
+
+                                <div class="pix">
+                                    <i class="fa-brands fa-pix fa-xl" style="color: #000000;" id="pix"
+                                        trocarFormaDePagamento()></i>
+                                    <p>Pix</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <form id="Forms">
+                            <div class="contato-form">
+                                <div class="usuario-formulario-2">
+                                    <i class="fa-solid fa-user " style="color: #a3a3a3;"></i>
+                                    <input type="text" id="nome" placeholder="Nome Completo:" required>
+                                </div>
+                                <div class="cartao-formulario-2">
+                                    <i class="fa-solid fa-credit-card" style="color: #a3a3a3;"></i>
+                                    <input type="number" id="cartao" placeholder="Número  do cartão:" required>
+                                </div>
+
+
+                                <div class="validade-formulario-2" style="color: #a3a3a3;">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <input type="email" id="validade" placeholder="Validade (MM/AAAA):" required>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="conferir-idade">
+                            <input id="idade" type="checkbox" name="idade"
+                                value="Eu confirmo que tenho mais de 18 anos e estou ciente da verificação dos meus dados pessoais">
+                            <label for="idade">Eu confirmo que tenho mais de 18 anos e estou ciente da
+                                verificação dos meus dados pessoais<label>
+                        </div>
+
+
+                        <div class="botoes-dados-pessoais">
+                            <button class="button-continuar-pagamento">Continuar para conclusão</button>
+
+                            <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
+                                inicial</a>
+                            <div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
+
+
+
+
+
         </section>
 
- -->
-
-
-
-        <div class="tudo">
-            <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
-            <div class="tudo-etapa-2">
-                <div class="segunda-etapa">
-                    <button class="button">1</button>
-                    <div class="linha1"></div>
-                    <button class="button" id="botao-outra-cor">2</button>
-                    <div class="linha"></div>
-                    <button class="btn3" id="botao-outra-cor">3</button>
-
-                </div>
-
-                <div class="texto-dados-etapas">
-                    <p>Dados pessoais</p>
-
-                    <p>Dados de pagamento</p>
-
-                    <p>Doação concluída</p>
-                </div>
-                <div class="tudo-formulario-1">
-                    <div class="titulo-forms-primeiro">
-                        <h2>Dados de Pagamento</h2>
-                    </div>
-                    <form id="Forms">
-                        <div class="contato-form">
-                            <div class="usuario-formulario-2">
-                                <i class="fa-solid fa-user " style="color: #a3a3a3;"></i>
-                                <input type="text" id="nome" placeholder="Nome que consta no cartão" required>
-                            </div>
-                            <div class="cartao-formulario-2" style="color: #a3a3a3;">
-                                <i class="fa-solid fa-credit-card"></i>
-                                <input type="number" id="cartao" placeholder="Número  do cartão:" required>
-                            </div>
-
-
-                            <div class="validade-formulario-2" style="color: #a3a3a3;">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <input type="email" id="validade" placeholder="Validade (MM/AAAA):" required>
-                            </div>
-                            <div class="telefone-formulario-1" style="color: #a3a3a3;">
-                                <i class="fa-solid fa-lock"></i>
-                                <input type="tel" id="cvv" placeholder="CVV:" required>
-                            </div>
-
-                        </div>
-                    </form>
-
-                    <div class="conferir-idade">
-                        <input id="idade" type="checkbox" name="idade"
-                            value="Eu confirmo que tenho mais de 18 anos e estou ciente da verificação dos meus dados pessoais">
-                        <label for="idade">Eu confirmo que tenho mais de 18 anos e estou ciente da
-                            verificação dos meus dados pessoais<label>
-                    </div>
-
-
-                    <div class="botoes-dados-pessoais">
-                        <button class="button-continuar-pagamento">Continuar para Pagamento</button>
-
-                        <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
-                            inicial</a>
-                        <div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
     </main>
+
+
+    <script>
+        function trocarFormularios() {
+            var form1 = document.getElementById("form1");
+            var form2 = document.getElementById("form2");
+
+            if (form1.style.display === "none") {
+                form1.style.display = "flex";
+                form2.style.display = "none";
+            } else {
+                form1.style.display = "none";
+                form2.style.display = "flex";
+            }
+        }
+
+        function trocarFormaDePagamento() {
+            var pix = document.getElementById("pix");
+            var cartao = document.getElementById("cartao");
+
+
+            if (pix.style.display === "none") {
+                pix.style.display = "flex";
+                cartao.style.display = "none";
+            } else {
+                pix.style.display = "none";
+                cartao.style.display = "flex";
+            }
+
+        }
+    </script>
 </body>
 
 </html>
