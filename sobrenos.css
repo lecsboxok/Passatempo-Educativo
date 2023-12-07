@@ -25,15 +25,11 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 /* CABEÇALHO */
 #cabecalho {
     width: 100%;
     position: fixed;
-    z-index: 999;
+    z-index: 11;
     background-color: #FFF;
 }
 
@@ -65,7 +61,7 @@ html {
     margin-right: 25px;
 }
 
-.cabecalho_nav_itens a:hover{
+.cabecalho_nav_itens a:hover {
     color: #5d5d5d;
 }
 
@@ -75,6 +71,14 @@ html {
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
+}
+
+.geral {
+    display: none;
+}
+
+.modal-tudo {
+    display: none;
 }
 
 .idiomas {
@@ -169,6 +173,9 @@ ul li ul li {
     position: fixed;
     z-index: 100;
 }
+
+/* TÉRMINO DO CABEÇALHO */
+
 .mundo {
     width: 100%;
     height: auto;
@@ -188,7 +195,6 @@ body {
     /* Um espaço inicial para o texto */
     transition: margin-top 1s ease;
     /* Adiciona uma transição suave */
-    z-index: 99;
     position: absolute;
     top: 70vh;
     left: 30%;
@@ -196,6 +202,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .le {
@@ -205,6 +212,8 @@ body {
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
+ 
+  
 
 }
 
@@ -214,6 +223,7 @@ body {
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
+ 
 }
 
 .dif {
@@ -222,6 +232,7 @@ body {
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
+ 
 }
 
 .linha {
@@ -231,6 +242,7 @@ body {
     border-bottom: 3px solid #c4faae;
     width: 400px;
     margin-top: 20px;
+
 }
 
 .oscip {
@@ -240,7 +252,6 @@ body {
     font-family: Manrope;
     color: white;
     padding: 50px 120px;
-
 
 }
 .lets{
@@ -611,21 +622,26 @@ padding: 0 35vh;
 .carousel ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 ;
     display: flex;
-    align-items: center;
+    /* align-items: center;
+    justify-content: center; */
+
 }
 
 .carousel li {
     flex: 0 0 33.33%; /* define a largura das imagens, 33.33% para exibir 3 por vez */
     height: 100%; /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
     box-sizing: border-box; /* Adicionado para garantir que a borda não afete a largura e altura total */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .carousel img {
-    width: 70%; /* Garante que a imagem ocupe 100% da largura da li */
-    height: 100%; /* Garante que a imagem ocupe 100% da altura da li */
-    object-fit: cover; /* Adicionado para garantir que a imagem cubra totalmente a li */
+    width: 50%; /* Garante que a imagem ocupe 100% da largura da li */
+    height: auto; /* Garante que a imagem ocupe 100% da altura da li */
+ 
 }
 
 .carousel-button {
@@ -647,8 +663,15 @@ padding: 0 35vh;
 }
 
 /*Imagens*/
-.carrosel-1{
+ul li .carrosel-11{
+    width: 50%;
     
+}
+ul li .carrosel-12{
+width: 50%;
+}
+ul li .carrosel-10{
+    width: 50%;
 }
 /*FIM CARROSEL */
 
@@ -1134,6 +1157,7 @@ top: 45px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
+    margin-left: 0px;
   
 }
 
@@ -1144,6 +1168,7 @@ top: 45px;
     border-bottom: 3px solid #c4faae;
     width: 200px;
     margin-top: 20px;
+ 
 
 }
 
@@ -1156,6 +1181,7 @@ top: 45px;
     padding: 0;
     margin: 0;   
     width: 250px;
+    
 }
 
 .lets{
