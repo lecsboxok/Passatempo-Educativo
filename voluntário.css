@@ -604,6 +604,7 @@ h5 {
 .direito {
     font: 300 2.5vh 'Montserrat', serif;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 footer {
@@ -911,7 +912,7 @@ footer {
         width: 300px;
     }
 
-    .imagem-mao-coracao{
+    .imagem-mao-coracao {
         width: 230px;
     }
 
@@ -967,17 +968,17 @@ footer {
         width: 85%;
     }
 
-    .titulo-carrossel{
+    .titulo-carrossel {
         margin-top: 100px;
         margin-left: 0;
         font-size: 23px;
     }
 
-    .tudo-carrossel{
+    .tudo-carrossel {
         margin-top: 80px;
     }
 
-    .imagem-voluntario{
+    .imagem-voluntario {
         background-position-x: -140px;
     }
 
