@@ -1,180 +1,265 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da Memória</title>
+
 
     <style>
-        body {
+        * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
-        .slider-container {
+        body {
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            background: cornsilk;
+        }
+
+        #cardboard {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .memory-card {
+            width: calc(25% - 10px);
+            height: 33%;
+            margin: 5px;
+            transform-style: preserve-3d;
+            transition: 0.3s;
             position: relative;
-            overflow-x: hidden;
-            height: 300px;
-            max-width: 1090px;
-            /* Defina o valor desejado para o máximo de largura */
-            margin: 0 auto;
         }
 
-        .slider-width {
+        .memory-card:active {
+            transform: scale(0.97);
+        }
+
+        .memory-card.flip {
+            transform: rotateY(180deg);
+        }
+
+        .front-face,
+        .back-face {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
             position: absolute;
-            display: flex;
-            align-items: start;
-            justify-content: start;
-            left: 0;
-            top: 0;
-            transition: 0.4s ease-in-out;
+            background: darkcyan;
         }
 
+        .front-face {
+            transform: rotateY(180deg);
+        }
 
-        .btn {
-            background-color: crimson;
-            border: none;
-            outline: none;
-            color: white;
+        #pontos {
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: darkcYan;
+        }
+
+        #erro {
             font-size: 20px;
-            margin: 20px;
-            padding: 3px 12px;
-            cursor: pointer;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: red;
         }
 
-        .btn:nth-child(2) {
-            margin-left: -74px;
+        #menu {
+            padding: 25px;
+            border: solid 1px black;
+            height: 520px;
         }
 
-        .img {
-            /* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
-            width: 100px;
-            height: 236px;
-            border: 1px solid black;
-            margin-left: 20px;
-            background-color: #F5F5F5;
-            font-family: Forum;
-            font-size: 22.4px;
-            align-items: center;
-            justify-content: center;
+        #menu_control {
             text-align: center;
-            display: flex;
-
+            padding: 10px;
+            width: 300px;
+            border: solid 1px black;
+            height: 520px;
+            padding-top: 20px;
         }
 
-        li {
-            list-style: none;
+        #nivel {
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            color: black;
+            width: 280px;
+            height: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: cornsilk;
+            color: black;
+        }
+
+        #Start {
+
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: darkcyan;
+            border: none;
+            border-radius: 10px;
+            color: black;
+            width: 280px;
+            height: 50px;
         }
     </style>
 </head>
 
 <body>
-    <div class="slider-container" item-display-t="3" item-display-m="1">
-        <div class="slider-width">
-            <div class="img">
-                <li><img src="img/quebra-cabeca-volt.png" alt="Imagem 1" >
-                    <h5>Conexão social</h5>
-                </li>
-            </div>
+    <div id="cardboard"></div>
+    <div id='menu'>
+        <h1 id='pontos'>
+            PONTUAÇÃO: 0
+        </h1>
+        <h1 id='erro'>
+            ERROS: 0
+        </h1>
+        <div id='final'>
+            <p id='segundos'>segundos : 0</p>
 
-            <div class="img">
-                <li><img src="img/planet-terra-volt.png" alt="Imagem 2">
-                    <h5>Sentido de propósito</h5>
-                </li>
-            </div>
-
-
-            <div class="img">
-                <li><img src="img/alvoro-volt.png" alt="Imagem 3">
-                    <h5>Desenvolvimento pessoal</h5>
-
-                </li>
-            </div>
-
-
-            <div class="img">
-                <li><img src="img/cerebro-volt.png" alt="Imagem 4">
-                    <h5>Melhoria da saúde mental</h5>
-                </li>
-            </div>
-
-
-            <div class="img">
-                <li><img src="img/coreano-volt.png" alt="Imagem 5">
-                    <h5>Sentimento de pertencimento</h5>
-                </li>
-            </div>
-
-            <div class="img">
-                <li><img src="img/config-volt.png" alt="Imagem 6">
-                    <h5>Experiência de carreira</h5>
-                </li>
-            </div>
         </div>
     </div>
-    <button type="button" class="btn" onclick="prev()">Anterior</button>
-    <button type="button" class="btn" onclick="next()">Próximo</button>
+
+    <div id='menu_control'>
+        <br>
+        <button id='Start'>Iniciar</button>
+        <br>
+        <br>
+        <select id='nivel'>
+            <option>Fácil</option>
+            <option>Médio</option>
+            <option>Difícil</option>
+        </select>
+    </div>
 
     <script>
-        var contar = 0;
-        var inc = 0;
-        var margin = 0;
-        var slider = document.getElementsByClassName("slider-width")[0];
-        var itemDisplay = 0;
-        var maxWidth = 1090;
+        const cardBoard = document.querySelector("#cardboard");
+        const placar = document.querySelector('#pontos');
+        const erros = document.querySelector('#erro');
+        let pontos = 0;
+        let errro = 0;
+        const imgs = [
+            "img/Cerfif3.png",
+            "img/Cerfif4.png",
+            "img/Cerfif8.png",
+            "img/Cerfif10.png",
+            "img/Cerfif11.png",
+            "img/Cerfif12.png",
+            "img/Cerfif13.png",
+            "img/Cerfif14.png",
+            "img/Cerfif15.png"
+        ];
 
-        if (maxWidth > 700) {
-            itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-t");
-            margin = itemDisplay * 6.8;
+        function generateRan() {
+            var max = 6;
+            var random = [];
+            for (var i = 0; i < max; i++) {
+                var temp = Math.floor(Math.random() * max);
+                if (random.indexOf(temp) == -1) {
+                    random.push(temp);
+                }
+                else
+                    i--;
+            }
+            return random
         }
 
-        if (maxWidth > 280 && maxWidth < 700) {
-            itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-m");
-            margin = itemDisplay * 20;
+        const valores1 = generateRan();
+        const valores2 = generateRan();
+
+        let cardHTML1 = "";
+        let cardHTML2 = "";
+
+        for (var i = 0; i < 6; i++) {
+            cardHTML1 += `<div class="memory-card" data-card="${imgs[valores1[i]]}">
+  <img class="front-face" src="img/${imgs[valores1[i]]}"/>
+  <img class="back-face" src="img/Certif10.png">
+</div>`
+            cardHTML2 += `<div class="memory-card" data-card="${imgs[valores2[i]]}">
+  <img class="front-face" src="img/${imgs[valores2[i]]}"/>
+  <img class="back-face" src="img/Certif10.png">
+</div>`
         }
 
-        var item = document.getElementsByClassName("img");
-        var itemSlide = Math.floor(item.length / itemDisplay) - 1;
 
-        for (let i = 0; i < item.length; i++) {
-            item[i].style.width = ((maxWidth / itemDisplay) - margin) + "px";
-        }
+        cardBoard.innerHTML = cardHTML1 + cardHTML2;
 
-        function next() {
-            inc++;
-            contar = contar - (maxWidth / itemDisplay);
+        /** Fim da Renderização HTML */
 
-            // Se ultrapassar o último item, ajuste para mostrar completamente o último item
-            if (inc >= item.length) {
-                inc = 0;
-                contar = -((maxWidth / itemDisplay) * inc);
+        const cards = document.querySelectorAll(".memory-card");
+        let firstCard, secondCard;
+        let lockCards = false;
+
+        function flipCard() {
+            if (lockCards) return false;
+            this.classList.add("flip");
+
+            if (!firstCard) {
+                firstCard = this;
+                return false;
             }
 
-            slider.style.left = contar + "px";
+            secondCard = this;
+
+            checkForMatch();
         }
 
+        function checkForMatch() {
+            let isMatch = firstCard.dataset.card === secondCard.dataset.card;
 
-        function prev() {
-            if (inc > 0) {
-                inc--;
-                contar = contar + (maxWidth / itemDisplay);
-            } else {
-                // Ao chegar no início, mantenha o último item visível e continue para a esquerda
-                inc = item.length - itemDisplay;
-                contar = -((maxWidth / itemDisplay) * inc);
+            !isMatch ? unFlipCards() : pontuarCartas();
+        }
+        function pontuarCartas() {
+            pontos++;
+            placar.innerText = 'PONTUAÇÃO: ' + pontos;
+            resetCards(false);
+            if (pontos == 6) {
+                setTimeout(() => {
+                    if (pontos > errro) {
+                        placar.innerText = "VOCÊ GANHOU!!"
+                        placar.style.color = 'blue'
+                    } else if (pontos == errro) {
+                        placar.style.color = 'darkcyan'
+                        placar.innerText = "EMPATE!"
+                    } else if (pontos < errro) {
+                        placar.innerText = "VOCÊ PERDEU!!"
+                        placar.style.color = 'red'
+                    }
+                }, 2000)
             }
-            slider.style.left = contar + "px";
         }
 
+        function unFlipCards() {
+            lockCards = true;
+            errro++
+            erro.innerText = 'ERROS: ' + errro;
+            setTimeout(() => {
+                firstCard.classList.remove("flip");
+                secondCard.classList.remove("flip");
 
+                resetCards();
+            }, 1000);
+        }
 
+        function resetCards(isMatch = false) {
+            if (isMatch) {
+                firstCard.removeEventListener("click", flipCard);
+                secondCard.removeEventListener("click", flipCard);
+            }
 
+            [firstCard, secondCard, lockCards] = [null, null, false];
+            console.log('4')
+        }
+
+        cards.forEach(card => card.addEventListener("click", flipCard));
     </script>
-
 </body>
 
 </html>
