@@ -179,8 +179,6 @@ ul li ul li {
     z-index: 100;
 }
 
-/* TÉRMINO DO CABEÇALHO */
-
 .a-teste img{
     width: 27px;
     transition: ease-in-out 0.3s;
@@ -190,7 +188,7 @@ ul li ul li {
     transform: scale(0.8);
     transition: ease-in-out 0.3s;
 }
-
+/* TÉRMINO DO CABEÇALHO */
 
 /* INICIAL MENINA */
 
