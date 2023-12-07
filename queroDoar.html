@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logoIcon.png">
     <title> Quero Doar</title>
     <link rel="stylesheet" href="queroDoar.css">
 </head>
@@ -14,7 +15,13 @@
     <main>
         <section class="QueroDoar">
 
-            <div class="tudo" id="form1">
+
+
+
+
+            <!-- DADOS PESSOAIS -->
+
+            <div class="tudo" id="dadosPessoais">
                 <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
                 <div class="tudo-etapa-1">
                     <div class="etapas">
@@ -68,7 +75,8 @@
 
 
                         <div class="botoes-dados-pessoais">
-                            <button class="button-continuar-pagamento" onclick="trocarFormularios()">Continuar para
+                            <button type="submit" id="pagamento-botao" class="button-continuar-pagamento"
+                                onclick="mostrarFormasPagamento()">Continuar para
                                 Pagamento</button>
 
                             <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
@@ -89,7 +97,25 @@
 
 
 
-            <div class="tudo" id="form2" style="display:none;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- DADOS DO PAGAMENTO -->
+
+
+            <div class="tudo" id="form2 ">
                 <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
                 <div class="tudo-etapa-2">
                     <div class="segunda-etapa">
@@ -122,7 +148,7 @@
                                 </div>
 
 
-                                <div class="pix">
+                                <div class="pix" onclick="mostrarFormPix()">
                                     <i class="fa-brands fa-pix fa-xl" style="color: #000000;" id="pix"
                                         trocarFormaDePagamento()></i>
                                     <p>Pix</p>
@@ -163,7 +189,8 @@
 
 
                         <div class="botoes-dados-pessoais">
-                            <button class="button-continuar-pagamento">Continuar para conclusão</button>
+                            <button class="button-continuar-pagamento" onclick="mostrarConclusao()">Continuar para
+                                conclusão</button>
 
                             <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
                                 inicial</a>
@@ -180,7 +207,42 @@
 
 
 
-            <div class="pix-formulario">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- PIX -->
+
+
+            <style>
+                .pix-formulario {
+                    display: flex;
+                }
+
+                .cpf-form-pix i {
+                    margin-top: 0.35vh;
+                }
+
+                .fa-pix {
+                    cursor: pointer;
+                }
+            </style>
+
+            <div class="pix-formulario" id="formPix">
+                <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
                 <div class="tudo-etapa-2">
                     <div class="segunda-etapa">
                         <button class="button">1</button>
@@ -206,15 +268,14 @@
 
 
                                 <div class="nomes-icones">
-                                    <i class="fa-solid fa-credit-card fa-xl" style="color: rgb(104, 189, 241);"
-                                        id="cartao"></i>
+                                    <i class="fa-solid fa-credit-card fa-xl    style=" color: black;" id="cartao"></i>
                                     <p>Cartão</p>
                                 </div>
 
 
                                 <div class="pix">
-                                    <i class="fa-brands fa-pix fa-xl" style="color: #000000;" id="pix"
-                                        trocarFormaDePagamento()></i>
+                                    <i class="fa-brands fa-pix fa-xl" id="iconeTrocarFormulario" class="icone"
+                                        style="color:  rgb(104, 189, 241)"></i>
                                     <p>Pix</p>
                                 </div>
 
@@ -226,15 +287,15 @@
                                     <i class="fa-solid fa-user " style="color: #a3a3a3;"></i>
                                     <input type="text" id="nome" placeholder="Nome Completo:" required>
                                 </div>
-                                <div class="cartao-formulario-2">
-                                    <i class="fa-solid fa-credit-card" style="color: #a3a3a3;"></i>
-                                    <input type="number" id="cartao" placeholder="Número  do cartão:" required>
+                                <div class="cpf-form-pix">
+                                    <i class="fa-regular fa-address-card " style="color: #a3a3a3;"></i>
+                                    <input type="number" id="cartao" placeholder="CPF/CNPJ" required>
                                 </div>
 
 
-                                <div class="validade-formulario-2" style="color: #a3a3a3;">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <input type="email" id="validade" placeholder="Validade (MM/AAAA):" required>
+                                <div class="maps-form-pix" style="color: #a3a3a3;">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <input type="email" id="validade" placeholder="CEP" required>
                                 </div>
 
                             </div>
@@ -249,7 +310,8 @@
 
 
                         <div class="botoes-dados-pessoais">
-                            <button class="button-continuar-pagamento">Continuar para conclusão</button>
+                            <button class="button-continuar-pagamento" onclick="mostrarConclusao()">Continuar para
+                                conclusão</button>
 
                             <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
                                 inicial</a>
@@ -266,6 +328,108 @@
 
 
 
+            <!-- CONCLUSÃO -->
+
+
+            <div class="tudo" id="dados-conclusao">
+                <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
+                <div class="tudo-etapa-3">
+                    <div class="etapas">
+                        <button class="btn-3">1</button>
+                        <div class="linha3"></div>
+                        <button class="btn-3">2</button>
+                        <div class="linha3"></div>
+                        <button class="btn-3">3</button>
+
+                    </div>
+
+                    <div class="texto-dados-etapas">
+                        <p>Dados pessoais</p>
+                        <p>Dados de pagamento</p>
+                        <p class="conclusao-titulo">Doação concluída</p>
+                    </div>
+
+                    <div class="tudo-conclusao">
+                        <h2>Doação Concluída</h2>
+
+                        <img src="img/imagem-conclusao.png" alt="">
+
+
+                        <div class="voltar-inicial"> <a class="button-voltar-pagina-inicial " href="doeAgora.html">
+                                Voltar para a Página inicial</a></div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <style>
+                .linha3 {
+                    background-color: rgb(229, 64, 91);
+                    width: 100px;
+                    height: 5px;
+                    margin-top: -0.25vh;
+                    width: 182px;
+                    top: 16px;
+                    left: 71px;
+                    border: 3px;
+                }
+
+                .conclusao-titulo {
+                    color: rgb(229, 64, 91);
+                }
+
+                .etapas button {
+                    width: 32px;
+                    height: 31px;
+                    left: 39px;
+                    border-radius: 50%;
+                    border: 4px solid rgb(229, 64, 91);
+                    background-color: white;
+                    color: rgb(229, 64, 91);
+                }
+
+                .tudo-etapa-3 {
+                    margin-top: 3vh;
+                }
+
+                .tudo-conclusao img {
+                    margin-top: 5vh;
+
+
+                }
+
+                .tudo-conclusao h2 {
+                    text-align: left;
+                    margin-top: 3vh;
+                }
+
+                .tudo-conclusao a {
+                    padding: 10vh;
+                }
+
+                .button-voltar-pagina-inicial {
+                    color: rgb(229, 64, 91);
+                    ;
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+
+                }
+
+                .voltar-inicial {
+                    margin-top: 15vh;
+                }
+            </style>
+
+
+
+
+
 
 
         </section>
@@ -273,35 +437,59 @@
     </main>
 
 
+
+
     <script>
-        function trocarFormularios() {
-            var form1 = document.getElementById("form1");
-            var form2 = document.getElementById("form2");
 
-            if (form1.style.display === "none") {
-                form1.style.display = "flex";
-                form2.style.display = "none";
-            } else {
-                form1.style.display = "none";
-                form2.style.display = "flex";
+
+        // document.addEventListener('DOMContentLoaded', function () {
+
+
+            // Script para controlar a transição entre as etapas do formulário
+            const form1 = document.getElementById('dadosPessoais');
+            const form2 = document.getElementById('form2');
+            const formPix = document.getElementById('formPix');
+            const formConclusao = document.getElementById('dadosConclusao');
+            const pagamentoBotao = document.getElementById('pagamento-botao')
+
+
+            pagamentoBotao.addEventListener('click', function () {
+                if (form1.style.display === 'flex') {
+                    form1.style.display = 'none';
+                    form2.style.display = 'flex';
+                    formPix.style.display = 'none';
+                    formConclusao.style.display = 'none';
+                }
+            })
+            // form1.style.display = 'flex';
+            // form2.style.display = 'none';
+            // formPix.style.display = 'none';
+            // formConclusao.style.display = 'none';
+
+            
+
+            function mostrarFormPix() {
+                // Lógica para transição para o formulário Pix
+                form1.style.display = 'none';
+                form2.style.display = 'none';
+                formPix.style.display = 'flex';
+                formConclusao.style.display = 'none';
             }
-        }
 
-        function trocarFormaDePagamento() {
-            var pix = document.getElementById("pix");
-            var cartao = document.getElementById("cartao");
+            // Adicione mais lógica conforme necessário para as outras etapas...
 
-
-            if (pix.style.display === "none") {
-                pix.style.display = "flex";
-                cartao.style.display = "none";
-            } else {
-                pix.style.display = "none";
-                cartao.style.display = "flex";
+            // Exemplo de lógica para a conclusão
+            function mostrarConclusao() {
+                form1.style.display = 'none';
+                form2.style.display = 'none';
+                formPix.style.display = 'none';
+                formConclusao.style.display = 'flex';
             }
 
-        }
+        
+
     </script>
+
 </body>
 
 </html>

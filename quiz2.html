@@ -25,35 +25,106 @@
             <i class="fa-solid fa-award" style="color: #000000;"></i>
         </div>
     </header> -->
-
-    <header>
-        <div class="comeco">
-            <p id="pontuacao"><i class="fa-solid fa-award" style="color: #000000;"></i> Pontuação: 0</p>
-        </div>
-    </header>
-    
-
-    <main id="segundoMain">
-        <div class="app">
-            <h1>Quiz Pasatempo Educativo</h1>
-            
-            <div class="quiz">
-                <h2 id="questao">Pergunta</h2>
-                <div id="botoesResposta">
-                    <button class="btn">Resposta 1</button>
-                    <button class="btn">Resposta 2</button>
-                    <button class="btn">Resposta 3</button>
-                    <button class="btn">Resposta 4</button>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Ensino Médio</title>
+        <link rel="stylesheet" href="quiz.css">
+        <link rel="icon" href="img/lampada.png">
+        <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="body2">
+        <header>
+            <div class="comeco">
+                <p id="pontuacao"><i class="fa-solid fa-award" style="color: #000000;"></i> Pontuação: 0</p>
+              
+                <div class="countdown-container">
+                    <div id="minutes" class="countdown-item">03:</div>
+                    <div class="countdown-separator">:</div>
+                    <div id="seconds" class="countdown-item">00</div>
                 </div>
-                
-                <button id="next-btn">Próximo</button>
+               
+                <div id="message" class="message"></div>
+                <button id="restartButton" class="restart-button">Recomeçar</button>
             </div>
-        </div>
-    </main>
+        </header>
+    
+        <main id="segundoMain">
+            <div class="app">
+                <h1>Quiz Passatempo Educativo</h1>
+                <div class="quiz">
+                    <h2 id="questao">Pergunta</h2>
+                    <div id="botoesResposta">
+                        <button class="btn">Resposta 1</button>
+                        <button class="btn">Resposta 2</button>
+                        <button class="btn">Resposta 3</button>
+                        <button class="btn">Resposta 4</button>
+                    </div>
+                    <div class="botao2">
 
+                   
+                    <button id="next-btn">Próximo</button>
+                    <button id="voltar"> <a href="projetos.html">Volte a pagina inicial</a></button> </div>
+                </div>
+            </div>
+        </main>
+    
+      
+    </body>
+    </html>
     
     
     <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+            var minutesDisplay = document.getElementById('minutes');
+            var secondsDisplay = document.getElementById('seconds');
+            var messageDisplay = document.getElementById('message');
+            var restartButton = document.getElementById('restartButton');
+
+            var totalSeconds = 3 * 60; // 3 minutes
+            updateDisplay();
+
+            function updateDisplay() {
+                var minutes = Math.floor(totalSeconds / 60);
+                var seconds = totalSeconds % 60;
+
+                minutesDisplay.textContent = minutes < 10 ? '0' + minutes : minutes;
+                secondsDisplay.textContent = seconds < 10 ? '0' + seconds : seconds;
+            }
+
+            function showTimeExpiredMessage() {
+                messageDisplay.textContent = 'Tempo Esgotado!';
+                restartButton.style.display = 'block';
+            }
+
+            var countdownInterval = setInterval(function () {
+                if (totalSeconds > 0) {
+                    totalSeconds--;
+                    updateDisplay();
+                } else {
+                    clearInterval(countdownInterval);
+                    showTimeExpiredMessage();
+                }
+            }, 1000);
+
+            restartButton.addEventListener('click', function () {
+                totalSeconds = 3 * 60;
+                messageDisplay.textContent = '';
+                restartButton.style.display = 'none';
+                countdownInterval = setInterval(function () {
+                    if (totalSeconds > 0) {
+                        totalSeconds--;
+                        updateDisplay();
+                    } else {
+                        clearInterval(countdownInterval);
+                        showTimeExpiredMessage();
+                    }
+                }, 1000);
+            });
+        });
 
 const perguntas = [
     {
@@ -68,7 +139,7 @@ const perguntas = [
     },
     {
         pergunta: "Qual das figuras abaixo é a base de um cone?",
-        imagem: "img/quiz-imagem2.png",
+        imagem: "img/quiz-imagem2.png", 
         resposta: [
             { text: "A) Quadrado", correct: false },
             { text: "B) Retângulo", correct: false },
@@ -78,7 +149,7 @@ const perguntas = [
     },
     {
         pergunta: "Quantas sílabas tem a palavra fisioterapeuta?",
-        imagem: "img/",
+        imagem: "img/quiz-imagem3.png",
         resposta: [
             { text: "A) somente uma", correct: false },
             { text: "B) duas", correct: false },
@@ -88,7 +159,7 @@ const perguntas = [
     },
     {
         pergunta: "Quantos ossos temos no nosso corpo?",
-        imagem: "img/",
+        imagem: "img/quiz-imagem4.png",
         resposta: [
             { text: "A) 126", correct: false },
             { text: "B) 206", correct: true },
@@ -98,7 +169,7 @@ const perguntas = [
     },
     {
         pergunta: "Qual das seguintes obras é de autoria de Leonardo da Vinci?",
-        imagem: "img/",
+        imagem: "img/quiz-imagem5.png",
         resposta: [
             { text: "A) Mona Lisa", correct: false },
             { text: "B) A Ultima Ceia", correct: false },
@@ -109,7 +180,7 @@ const perguntas = [
 
     {
         pergunta: "Quais são as 7 maravilhas do mundo moderno?",
-        imagem: "img/",
+        imagem: "img/quiz-imagem6.png",
         resposta: [
             { text: "A)  Necrópole de Gizé, Acrópole de Atenas, Angkor Wat, Taj Mahal, Castelo de Neuschwanstein, Estátua da Liberdade, Catedral de São Basílio", correct: false },
             { text: "B) Pirâmides de Gizé, Praça Vermelha, Torre Eiffel, Tombuctu, Sydney Opera House, Stonehenge, Coliseu de Roma.", correct: false },
@@ -120,7 +191,7 @@ const perguntas = [
 
     {
         pergunta: "Qual das alternativas a seguir apresenta EXCLUSIVAMENTE ondas?",
-        imagem: "img/",
+        imagem: "img/quiz-imagem7.png",
         resposta: [
             { text: "A) Luz, moléculas, átomos", correct: false },
             { text: "B) Som, raios X, moléculas", correct: false },
@@ -130,7 +201,7 @@ const perguntas = [
     },
     {
         pergunta: "Qual é o maior planeta em dimensão do Sistema Solar?",
-        imagem: "img/",
+        imagem: "img/quiz-imagem8.png",
         resposta: [
             { text: "A) Júpiter.", correct: true},
             { text: "B) Urano", correct: false },
@@ -377,7 +448,11 @@ function mostrarPontuacao(){ //final
     resetarEstado();
     elementoPergunta.innerHTML = `Você fez ${pontuacao} pontos!`;
     proximoBotao.innerHTML = "Jogue novamente";
-    proximoBotao.style.display = "block"
+    proximoBotao.style.display = "block";
+
+    var voltar = document.querySelector('#voltar');
+    voltar.style.display = "block";
+
     const pontuacaoElement = document.getElementById("pontuacao");
 
     pontuacaoElement.style.display = "none";
