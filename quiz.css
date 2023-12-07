@@ -56,14 +56,27 @@
 }
 .pagina-principal a {
 margin-left: 305px;
-color: black;
-margin-top: 10px;
-}
-h1{
-    font:32px 'UnbRegular', sans-serif;
-    padding: 0px 0 0 215px;
+color: #c49190;
+margin-top: 20px;
+text-decoration: none;
 }
 
+#questao{
+    text-align: center;
+}
+.pagina-principal{
+    margin-top: 20px; 
+}
+.h1{
+    font:32px 'UnbRegular', sans-serif;
+    padding: 0px 0 0 215px;
+    text-align: center;
+}
+
+.teste{
+    margin-left: 150px;
+    font:20px 'UnbRegular', sans-serif;
+}
 
 .texto{
     font:22px 'OpenRegular', sans-serif;
@@ -131,6 +144,15 @@ margin-left: 350px;
 
 .quiz{
     padding: 20px 0;
+  
+}
+.botao2{
+    display: flex;
+}
+.botao2 a {
+    display: flex;
+ text-decoration: none;
+ color: white;
 }
 
 .btn{
@@ -183,6 +205,7 @@ margin-left: 350px;
     margin-top: 10px;
 }
 
+
 .comeco{
     background-color: #f9f9f9;
     /* color: white; */
@@ -192,11 +215,7 @@ margin-left: 350px;
     box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.433);
 }
 
-#pontuacao{
-    font: 500 22px 'UnbRegular', sans-serif;
-    text-align: center;
-    padding: 20px 0;
-}
+
 
 #segundoMain{
     padding-top: 80px;
@@ -222,6 +241,93 @@ margin-left: 350px;
 .yellow{
     background-color: #ddda32;
 }
+
+
+
+  
+  .countdown {
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+  }
+ 
+  
+  .message {
+    margin-left: 780px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #000000
+  }
+
+  
+  .restart-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .restart-button:hover {
+    background-color: #555;
+  }
+  
+  #seconds{
+width: 150px;
+  }
+
+  .countdown-container{
+    font-size: 25px;
+    display: flex;
+   
+   }
+  .countdown-separator{
+   margin-top: -0px;
+  
+  }
+  /* ... Outros estilos ... */
+
+.comeco {
+    background-color: #f9f9f9;
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.433);
+    display: flex;
+    justify-content: space-between; /* Adicionado para espaçar os elementos */
+    align-items: center; /* Alinha os elementos verticalmente */
+    padding: 10px; /* Ajustado o espaçamento interno */
+}
+
+#pontuacao {
+    font: 500 22px 'UnbRegular', sans-serif;
+    text-align: center;
+    justify-content: center;
+    /* padding: 20px 0; Removido o espaçamento, pois agora é ajustado no .comeco */
+        padding: 20px 0;
+        margin-left: 50px;
+
+         }
+    
+
+#voltar{
+    background: #c49190;
+    color: white;
+    font: 500 20px 'OpenRegular', sans-serif;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* ... Outros estilos ... */
 
 
 @media screen and (max-width: 768px){
@@ -256,10 +362,12 @@ body{
 
         h1{
             font:30px  'UnbRegular', sans-serif;
-       color: #c49190;
+       color: #000000;
+       font-weight: 700;
  margin-top: 150px ;
  padding: 0;
- text-align: center;
+ margin-left: -100px;
+;
     }
 
     .conteudo button{
@@ -270,8 +378,11 @@ body{
         color: rgb(247, 246, 246);
         margin: 30px 0 0 368px;
         cursor: pointer;
-    margin-left:  230px;
+    margin-left:  200px;
     }
+    .pagina-principal{
+       margin-left: -30px
+     }
     
 }
 
