@@ -21,7 +21,7 @@ function startAnimationIfVisible(entries, observer) {
             element.Counter = 0;
             var targetValue = parseInt(element.textContent);
 
-            var duration = 5000;
+            var duration = 2000;
             var startTime;
             function updateValue(timestamp) {
                 if (!startTime) startTime = timestamp;

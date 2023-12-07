@@ -14,7 +14,7 @@
     <header id="header">
         <div class="container">
             <div class="logo">
-                <img src="img/logoIcon.png" alt="logo">
+                <a href="index.html"><img src="img/logoIcon.png" alt="logo"></a>
             </div>
             <div id="buscar">
                 <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
@@ -70,7 +70,7 @@
         </div>
     </header>
 
-    <div class="comeco">
+    <div class="comeco" id="comeco">
         <div class="carrossel">
             <div id="carrosselContainer" class="carrossel-container">
                 <div class="slide">
@@ -367,6 +367,11 @@
         </main>
     </main>
 
+    <a href="#comeco">
+        <div id="subir">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
 
     <script src="lojinha.js"></script>
 
