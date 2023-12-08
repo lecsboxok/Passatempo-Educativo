@@ -230,7 +230,7 @@ h2 {
     height: 40vh;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+   margin-top: -60vh;
     text-align: center;
     display: flex;
     width: 50%;

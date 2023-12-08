@@ -22,11 +22,11 @@
             </div>
             <div class="navegacao">
                 <div class="cabecalho_nav_itens">
-                    <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
-                    <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
-                    <a class="cabecalho_nav_item" href="Voluntário.html">Voluntários</a>
-                    <a class="cabecalho_nav_item" href="onu.html">ONU 2030</a>
-                    <a class="cabecalho_nav_item" href="lojinha.html">Loja</a>
+                    <a class="cabecalho_nav_item" href="sobrenos.html" id="Theader1">Sobre Nós</a>
+                    <a class="cabecalho_nav_item" href="projetos.html" id="Theader2">Projetos</a>
+                    <a class="cabecalho_nav_item" href="Voluntário.html" id="Theader3">Voluntários</a>
+                    <a class="cabecalho_nav_item" href="onu.html" id="Theader4">ONU 2030</a>
+                    <a class="cabecalho_nav_item" href="lojinha.html" id="Theader5">Loja</a>
                 </div>
                 <div class="geral">
                     <i id="menu" class="fa-solid fa-bars"></i>
@@ -449,7 +449,7 @@
                             Educativo.</p>
                         <div>
                             <input placeholder="Escreva seu email" type="email" name="email"
-                                id="email-address Tprojetos36" required>
+                                id="email-address" required>
                             <button id="requisito">Inscreva-se</button>
                         </div>
                     </form>
@@ -662,7 +662,18 @@
                     document.getElementById('Tprojetos2').innerHTML = texto.Tprojetos2;
                     document.getElementById('Tprojetos3').innerHTML = texto.Tprojetos3;
                     document.getElementById('Tprojetos4').innerHTML = texto.Tprojetos4;
-                    // document.getElementById('Tprojetos5').innerHTML = texto.Tprojetos5;
+                    document.getElementById('saibaMaisRecreatur').innerHTML = texto.Tprojetos5;
+                    document.getElementById('saibaMaisLivro').innerHTML = texto.Tprojetos5a;
+                    document.getElementById('saibaMaisFutebol').innerHTML = texto.Tprojetos5b;
+                    document.getElementById('saibaMaisCultura').innerHTML = texto.Tprojetos5c;
+                    document.getElementById('saibaMaisJogoteca').innerHTML = texto.Tprojetos5d;
+                    document.getElementById('saibaMaisFerias').innerHTML = texto.Tprojetos5e;
+                    document.getElementById('saibaMaisOrigami').innerHTML = texto.Tprojetos5f;
+                    document.getElementById('saibaMaisLeitor').innerHTML = texto.Tprojetos5g;
+                    document.getElementById('saibaMaisClassica').innerHTML = texto.Tprojetos5h;
+                    document.getElementById('saibaMaisEcobanda').innerHTML = texto.Tprojetos5i;
+                    document.getElementById('saibaMaisIdade').innerHTML = texto.Tprojetos5j;
+                    document.getElementById('saibaMaisAventura').innerHTML = texto.Tprojetos5k;
                     document.getElementById('Tprojetos6').innerHTML = texto.Tprojetos6;
                     document.getElementById('Tprojetos7').innerHTML = texto.Tprojetos7;
                     document.getElementById('Tprojetos8').innerHTML = texto.Tprojetos8;
@@ -674,7 +685,18 @@
                     document.getElementById('Tprojetos14').innerHTML = texto.Tprojetos14;
                     document.getElementById('Tprojetos15').innerHTML = texto.Tprojetos15;
                     document.getElementById('Tprojetos16').innerHTML = texto.Tprojetos16;
-                    // document.getElementById('Tprojetos17').innerHTML = texto.Tprojetos17;
+                    document.getElementById('fecharRecreatur').innerHTML = texto.Tprojetos17a;
+                    document.getElementById('fecharLivro').innerHTML = texto.Tprojetos17b;
+                    document.getElementById('fecharFutebol').innerHTML = texto.Tprojetos17c;
+                    document.getElementById('fecharCultura').innerHTML = texto.Tprojetos17d;
+                    document.getElementById('fecharJogoteca').innerHTML = texto.Tprojetos17e;
+                    document.getElementById('fecharFerias').innerHTML = texto.Tprojetos17f;
+                    document.getElementById('fecharOrigami').innerHTML = texto.Tprojetos17g;
+                    document.getElementById('fecharLeitor').innerHTML = texto.Tprojetos17h;
+                    document.getElementById('fecharClassica').innerHTML = texto.Tprojetos17i;
+                    document.getElementById('fecharEcobanda').innerHTML = texto.Tprojetos17j;
+                    document.getElementById('fecharIdade').innerHTML = texto.Tprojetos17k;
+                    document.getElementById('fecharAventura').innerHTML = texto.Tprojetos17l;
                     document.getElementById('Tprojetos18').innerHTML = texto.Tprojetos18;
                     document.getElementById('Tprojetos19').innerHTML = texto.Tprojetos19;
                     document.getElementById('Tprojetos20').innerHTML = texto.Tprojetos20;
@@ -693,8 +715,8 @@
                     document.getElementById('Tprojetos33').innerHTML = texto.Tprojetos33;
                     document.getElementById('Tprojetos34').innerHTML = texto.Tprojetos34;
                     document.getElementById('Tprojetos35').innerHTML = texto.Tprojetos35;
-                    document.getElementById('Tprojetos36').innerHTML = texto.Tprojetos36;
-                    // document.getElementById('Tprojetos37').innerHTML = texto.Tprojetos37;
+                    document.getElementById('email-address').innerHTML = texto.Tprojetos36;
+                    document.getElementById('requisito').innerHTML = texto.Tprojetos37;
                 })
                 .catch(error => console.error('Erro buscando textos:', error));
         }
