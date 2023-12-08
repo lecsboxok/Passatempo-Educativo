@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="projetos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
-
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
@@ -26,15 +25,17 @@
                     <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
                     <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
                     <a class="cabecalho_nav_item" href="Voluntário.html">Voluntários</a>
-                    <a class="cabecalho_nav_item" href="#contato">Contato</a>
+                    <a class="cabecalho_nav_item" href="onu.html">ONU 2030</a>
+                    <a class="cabecalho_nav_item" href="lojinha.html">Loja</a>
                 </div>
                 <div class="geral">
-                    <i class="fa-solid fa-bars" id="menu"></i>
+                    <i id="menu" class="fa-solid fa-bars"></i>
                     <div class="cabecalho_nav_item">
                         <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
                         <a class="mobileCabecalho" href="projetos.html">Projetos</a>
                         <a class="mobileCabecalho" href="Voluntário.html">Voluntários</a>
-                        <a class="mobileCabecalho" href="#contato">Contato</a>
+                        <a class="mobileCabecalho" href="onu.html">ONU 2030</a>
+                        <a class="mobileCabecalho" href="lojinha.html">Loja</a>
                         <a class="mobileCabecalho" href="doeAgora.html">Doe Agora</a>
                     </div>
                 </div>
@@ -42,15 +43,18 @@
                     <nav class="teste">
                         <ul class="principal">
                             <li class="li-p">
-                                <a href="javascript://" class="a-teste">
-                                    <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                                    <a href="javascript://" class="a-teste">
+                                    <img src="img/mundoHeader.png" alt="Brasil" width="50px" class="brasil">
                                 </a>
-
+                                
                                 <ul class="ul-imagens">
-                                    <a href="index.ingles.html">
+                                    <a onclick="Escolher('ptbr')">
+                                        <li><img src="img/Brasil.png" alt="Bandeira do brasil" class="img-teste"></li>
+                                    </a>
+                                    <a onclick="Escolher('en')">
                                         <li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li>
                                     </a>
-                                    <a href="espanhol.html">
+                                    <a onclick="Escolher('es')">
                                         <li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste">
                                         </li>
                                     </a>
@@ -80,15 +84,16 @@
 
     <main>
         <div class="inicial-menina">
-            <h1>Projetos</h1>
+            <h1 id="Tprojetos1">Projetos</h1>
         </div>
 
         <div class="container">
             <div class="introducao">
                 <img src="img/projeto-introducao.png" alt="projeto">
                 <div class="textos">
-                    <h4>Nossos Projetos</h4>
-                    <p>Conheça alguns de nossos projetos voltados para educação, cultura, meio ambiente, esportes,
+                    <h4 id="Tprojetos2">Nossos Projetos</h4>
+                    <p id="Tprojetos3">Conheça alguns de nossos projetos voltados para educação, cultura, meio ambiente,
+                        esportes,
                         desenvolvimento do turismo sustentável e preparação do jovem para o mercado de trabalho.</p>
                 </div>
             </div>
@@ -97,73 +102,73 @@
                 <div class="linha-projetos">
                     <div class="projeto-item">
                         <img src="img/ImagemRecreatur.png" alt="pessoas">
-                        <h2>Recreatur</h2>
+                        <h2 id="Tprojetos4">Recreatur</h2>
                         <button class="saiba-mais" id="saibaMaisRecreatur">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemLivros.png" alt="professor lendo livro">
-                        <h3>Livros em<br>Ação</h3>
+                        <h3 id="Tprojetos6">Livros em<br>Ação</h3>
                         <button class="saiba-mais" id="saibaMaisLivro">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemFutebol.png" alt="menino chutando bola de futebol">
-                        <h3>Futebol <br> Ciência</h3>
+                        <h3 id="Tprojetos7">Futebol <br> Ciência</h3>
                         <button class="saiba-mais" id="saibaMaisFutebol">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemCultura.png" alt="criança olhando as flores">
-                        <h3>Cultura <br> Acessível</h3>
+                        <h3 id="Tprojetos8">Cultura <br> Acessível</h3>
                         <button class="saiba-mais" id="saibaMaisCultura">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemJogoteca.png" alt="jogos">
-                        <h2>Jogoteca</h2>
+                        <h2 id="Tprojetos9">Jogoteca</h2>
                         <button class="saiba-mais" id="saibaMaisJogoteca">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemFérias.png" alt="crianças segurando cartaz">
-                        <h2>Férias</h2>
+                        <h2 id="Tprojetos10">Férias</h2>
                         <button class="saiba-mais" id="saibaMaisFerias">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemOrigami.png" alt="origami">
-                        <h3>Animais em<br>Origami</h3>
+                        <h3 id="Tprojetos11">Animais em<br>Origami</h3>
                         <button class="saiba-mais" id="saibaMaisOrigami">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemAmigoLeitor.png" alt="crianças em uma biblioteca">
-                        <h2>Amigo Leitor</h2>
+                        <h2 id="Tprojetos12">Amigo Leitor</h2>
                         <button class="saiba-mais" id="saibaMaisLeitor">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemMúsicaClássica.png" alt="ópera">
-                        <h3>Música <br> Clássica</h3>
+                        <h3 id="Tprojetos13">Música <br> Clássica</h3>
                         <button class="saiba-mais" id="saibaMaisClassica">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemEcobanda.png" alt="banda">
-                        <h2>Ecobanda</h2>
+                        <h2 id="Tprojetos14">Ecobanda</h2>
                         <button class="saiba-mais" id="saibaMaisEcobanda">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemMelhorIdade.png" alt="mulheres dançando">
-                        <h2>Melhor Idade</h2>
+                        <h2 id="Tprojetos15">Melhor Idade</h2>
                         <button class="saiba-mais" id="saibaMaisIdade">Saiba Mais</button>
                     </div>
 
                     <div class="projeto-item">
                         <img src="img/ImagemAventuraEducativa.png" alt="quadro de pintura">
-                        <h3>Aventura <br> Educativa</h3>
+                        <h3 id="Tprojetos16">Aventura <br> Educativa</h3>
                         <button class="saiba-mais" id="saibaMaisAventura">Saiba Mais</button>
                     </div>
                 </div>
@@ -173,7 +178,8 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharRecreatur"><span>VOLTAR</span></div>
                     <img src="img/FundoRecreatur.png" alt="">
-                    <p>O Recreatur é o maior e melhor curso de aprendizagem profissional na área de turismo e recreação
+                    <p id="Tprojetos18">O Recreatur é o maior e melhor curso de aprendizagem profissional na área de
+                        turismo e recreação
                         do Brasil. Um curso prático em que o participante aprende a elaboração e planejamento de
                         atividades recreativas pedagógicas e monitoria em turismo lúdico com a criação de roteiros e
                         espaços educativos.
@@ -190,7 +196,8 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharLivro"><span>VOLTAR</span></div>
                     <img src="img/FundoLivro.png" alt="">
-                    <p>É oferecido um projeto de animação sociocultural que tem a literatura como base da atividade. Os
+                    <p id="Tprojetos19">É oferecido um projeto de animação sociocultural que tem a literatura como base
+                        da atividade. Os
                         participantes tem contato com abordagens educativas enquanto se divertem, melhorando a fixação
                         dos conteúdos desenvolvidos em sala de aula.
                         <br>Cada aluno participante recebe um livro que aborda o tema a ser apresentado nas atividades,
@@ -207,7 +214,8 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharFutebol"><span>VOLTAR</span></div>
                     <img src="img/FundoFutebol.png" alt="">
-                    <p>É um projeto que alia a prática e aprendizagem do futebol, através das interfaces deste com a
+                    <p id="Tprojetos20">É um projeto que alia a prática e aprendizagem do futebol, através das
+                        interfaces deste com a
                         biologia, a física e a história (áreas do conhecimento presentes na grade curricular de ensino
                         de crianças e adolescentes e que podem ser melhor assimiladas através da continuidade do
                         ensino-aprendizagem, tendo o futebol como estratégia e suporte).
@@ -223,7 +231,8 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharCultura"><span>VOLTAR</span></div>
                     <img src="img/FundoCultura.png" alt="">
-                    <p>O Projeto Lazer Especial - Cultura Acessível é realizado desde 2011, possibilitando às pessoas
+                    <p id="Tprojetos21">O Projeto Lazer Especial - Cultura Acessível é realizado desde 2011,
+                        possibilitando às pessoas
                         com deficiência,vinculadas a centros de reabilitação a participação no circuito cultural de uma
                         forma acessível.
                         <br>Tornar acessível visitas educativas monitoradas a roteiros culturais como museus,
@@ -240,17 +249,17 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharJogoteca"><span>VOLTAR</span></div>
                     <img src="img/FundoJogoteca.png" alt="">
-                    <p>A Jogoteca de todos os tempos e culturas é uma grande aula de história, geografia, matemática e
+                    <p id="Tprojetos22">A Jogoteca de todos os tempos e culturas é uma grande aula de história,
+                        geografia, matemática e
                         raciocínio lógico, com jogos de tabuleiros de diversos lugares do mundo, em que é possível levar
                         a todos para uma viagem ao cinco continentes, possibilitando se conhecer mais sobre diferentes
                         culturas.
-                        <br><br>Nosso acervo tem aproximadamente 180 jogos com origens em civilizações antigas e países
-                        dos
+                        Nosso acervo tem aproximadamente 180 jogos com origens em civilizações antigas e países dos
                         cinco continentes, jogos variados de raciocínio, sorte, destreza, estratégia que são
-                        direcionados ao público com idade a partir de 8 anos. <br>
-                        Temos uma série de oficinas e workshops ligados a temas culturais, que incentivem a criatividade
-                        dos participantes como construção de brinquedos com sucata, contação de histórias, rodas
-                        cantadas.
+                        direcionados ao público com idade a partir de 8 anos.
+                        <br>Temos uma série de oficinas e workshops ligados a temas culturais, que incentivem a
+                        criatividade dos participantes como construção de brinquedos com sucata, contação de histórias,
+                        rodas cantadas.
                     </p>
                 </div>
             </div>
@@ -259,7 +268,8 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharFerias"><span>VOLTAR</span></div>
                     <img src="img/FundoFérias.png" alt="">
-                    <p>Nos meses de janeiro e julho em parceria com prefeituras e secretarias de educação, crianças e
+                    <p id="Tprojetos23">Nos meses de janeiro e julho em parceria com prefeituras e secretarias de
+                        educação, crianças e
                         adolescentes das escolas locais tem a oportunidade de passarem umas férias diferentes com 30
                         oficinas educativas e culturais diferente em período integral.
                         <br> - Nutrição (Projetos “Reaproveitamento de Alimentos”, “Recreio Saudável” e “Aprendendo a
@@ -274,11 +284,29 @@
                 </div>
             </div>
 
+            <div id="modal-origami" class="modal">
+                <div class="modal-content">
+                    <div class="fechar" id="fecharOrigami"><span>VOLTAR</span></div>
+                    <img src="img/FundoOrigami.png" alt="">
+                    <p id="Tprojetos24">Um projeto de educação ambiental que busca através da técnica oriental do
+                        origami a
+                        conscientização dos 3R´s (reduzir, reciclar, reutilizar).
+                        <br><br>O Projeto já foi realizado no Aquário de Ubatuba (SP), Projeto Tamar – Base Regência
+                        (ES), Projeto Tamar – Base Guriri (ES), Projeto Tamar – Base Ubatuba(SP), Instituto Baleia
+                        Jubarte – Base Praia do Forte (BA), Projeto Tamar – Base Praia do Forte (BA), Projeto Tamar –
+                        Base Arembepe (BA), tendo a participação de crianças, adolescentes, adultos e melhor idade. <br>
+                        Mais de 20.000 pessoas do litoral de SC, SP, RJ, ES, BA, SE, AL e PB já visitaram as obras de
+                        arte em papel.
+                    </p>
+                </div>
+            </div>
+
             <div id="modal-leitor" class="modal">
                 <div class="modal-content">
                     <div class="fechar" id="fecharLeitor"><span>VOLTAR</span></div>
                     <img src="img/FundoLeitor.png" alt="">
-                    <p>O Projeto visa realizar um intercâmbio educacional na área de meio ambiente e cultura entre os
+                    <p id="Tprojetos25">O Projeto visa realizar um intercâmbio educacional na área de meio ambiente e
+                        cultura entre os
                         alunos de escolas de diferentes regiões do Brasil e do Mundo.
                         <br><br>Alunos do Bairro do Jaraguá em São Paulo, escolas rurais de Campos do Jordão e até
                         alunos do continente africano em Achada Grande Cabo Verde.
@@ -295,7 +323,8 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharClassica"><span>VOLTAR</span></div>
                     <img src="img/FundoMusica.png" alt="">
-                    <p>A visita monitorada ao Mundo da Música Clássica inicia-se com uma exposição interativa onde
+                    <p id="Tprojetos26">A visita monitorada ao Mundo da Música Clássica inicia-se com uma exposição
+                        interativa onde
                         grandes compositores famosos como Beethoven, Tchaikowsky, Bach, Mozart contam de sua vida e
                         curiosidades de sua carreira.
                         <br>Em outro setor da exposição será possível relacionar grandes obras clássicas com o nosso
@@ -313,7 +342,8 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharEcobanda"><span>VOLTAR</span></div>
                     <img src="img/FundoEcobanda.png" alt="">
-                    <p>Atores e atrizes da Passatempo Educativo que tem muitos talentos para cantar e representar que se
+                    <p id="Tprojetos27">Atores e atrizes da Passatempo Educativo que tem muitos talentos para cantar e
+                        representar que se
                         uniram com jovens com reconhecido talento para a música, desse casamento surge a Ecobanda com o
                         espetáculo que é sucesso de público: Os Animais e as Cantigas de Roda.
                         <br>As cantigas abordadas neste show falam da vida dos animais, usando episódios fictícios, que
@@ -330,7 +360,8 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharIdade"><span>VOLTAR</span></div>
                     <img src="img/FundoMelhorIdade.png" alt="">
-                    <p>Esta faixa-etária foi escolhida estando contra as inúmeras barreiras sociais que são encontradas
+                    <p id="Tprojetos28">Esta faixa-etária foi escolhida estando contra as inúmeras barreiras sociais que
+                        são encontradas
                         perante os idosos. A atividade é uma proposta de inclusão, valorização e integração, que
                         possibilita diferentes benefícios e informações.
                         <br>Mais do que avôs ou pessoas amáveis, os idosos não são o foco do projeto apenas pela
@@ -347,7 +378,7 @@
                 <div class="modal-content">
                     <div class="fechar" id="fecharAventura"><span>VOLTAR</span></div>
                     <img src="img/FundoAventura.png" alt="">
-                    <p>Temos diversos projetos durante a Aventura Educativa, sendo o principal:
+                    <p id="Tprojetos29">Temos diversos projetos durante a Aventura Educativa, sendo o principal:
                         <br><span class="negrito">Peça No Meio da Floresta</span> - Quer participar de uma peça incrível
                         com os animais da Mata Atlântica? Esta peça teatral com a Tartaruga, Onça Pintada, Jacaré, Mico
                         Leão, Sapo, Tucano e Arara faz um convite para que possamos mudar nossos hábitos em prol do meio
@@ -360,8 +391,8 @@
                 </div>
             </div>
 
-            <div id="modal-menu" class="modal modal-menu">
-                <div class="modal-content">
+            <div id="modal-menu" class="modal-menu">
+                <div class="modal-tudo">
                     <div class="comeco-menu">
                         <div class="fechar-tudo">
                             <div class="fechar fechar-menu" id="fecharMenu"><span>&times;</span></div>
@@ -375,6 +406,9 @@
                         <a href="Voluntário.html">Voluntários</a>
                         <a href="projetos.html">Projetos</a>
                         <a href="doeAgora.html">Doe agora</a>
+                        <a href="onu.html">ONU 2030</a>
+                        <a href="lojinha.html">Loja</a>
+
                     </div>
                     <div class="menina-menu">
                         <img src="img/menina.png" alt="menina">
@@ -390,10 +424,11 @@
             <div class="container">
                 <div class="div-quiz">
                     <div class="esquerda-quiz">
-                        <h1>Leilão do <br>Conhecimento</h1>
-                        <p>É um divertido quiz que trabalha o conteúdo escolar, incentivando o trabalho em equipe, a
+                        <h1 id="Tprojetos30">Leilão do <br>Conhecimento</h1>
+                        <p id="Tprojetos31">É um divertido quiz que trabalha o conteúdo escolar, incentivando o trabalho
+                            em equipe, a
                             educação financeira e a capacidade de negociação.</p>
-                        <button>QUIZ</button>
+                        <a href="quiz1.html"><button id="Tprojetos32">QUIZ</button></a>
                     </div>
                     <div class="direita-quiz">
                         <img src="img/projeto-martelo.png" alt="martelo">
@@ -405,15 +440,16 @@
         <div class="container">
             <div class="jornal">
                 <div class="newsletter">
-                    <h1>Receba novidades <span>na nossa Newsletter</span></h1>
+                    <h1 id="Tprojetos33">Receba novidades <span>na nossa Newsletter</span></h1>
                 </div>
                 <div class="formulario">
                     <form class="form">
-                        <span class="titulo">Inscreva-se para notícias</span>
-                        <p class="descricao">Se inscreva para receber notícias sobre a Passatempo Educativo.</p>
+                        <span class="titulo" id="Tprojetos34">Inscreva-se para notícias</span>
+                        <p class="descricao" id="Tprojetos35">Se inscreva para receber notícias sobre a Passatempo
+                            Educativo.</p>
                         <div>
-                            <input placeholder="Escreva seu email" type="email" name="email" id="email-address"
-                                required>
+                            <input placeholder="Escreva seu email" type="email" name="email"
+                                id="email-address Tprojetos36" required>
                             <button id="requisito">Inscreva-se</button>
                         </div>
                     </form>
@@ -422,6 +458,88 @@
         </div>
 
     </main>
+    <footer>
+        <section id="contato" class="section">
+            <div class="conteiner">
+                <div class="rodapeCima">
+                    <div class="rodape-lado1">
+                        <div class="logoRodape">
+                            <img src="img/logoPassatempo.png" alt="">
+                        </div>
+                        <div class="menina">
+                            <img src="img/menina.png" alt="">
+                        </div>
+                        <div class="rodapeTexto">
+                            <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins
+                                lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental
+                                e
+                                desenvolvimento do turismo sustentável.
+                            </p>
+                        </div>
+                        <div class="redes">
+                            <div>
+                                <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt=""
+                                        class="facebook icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt=""
+                                        class="instagram icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
+                                        class="twitter icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
+                                        src="img/youtube.png" alt="" class="youtube icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://br.linkedin.com/company/passatempo-educativo"><img src="img/In.png"
+                                        alt="" class="In icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png"
+                                        alt="" class="flickr icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
+                                        src="img/e-mail.png" alt="" class="email icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
+                                        src="img/whats.png" alt="" class="whatsapp icone"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rodape-lado2">
+                        <div class="endereco">
+                            <div class="enderecoTexto">
+                                <a
+                                    href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img
+                                        src="img/iconMaps.png" alt="" class="iconMaps"></a>
+                                <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
+                            </div>
+                            <div class="imgMaps">
+                                <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"
+                                    class="a-maps">
+                                    <img src="img/mapa.jpg" alt="Endereço do passatempo educativo">
+                                </a>
+                            </div>
+                            <div class="amigo">
+                                <img src="img/amigoSurdo.png" alt="" class="amigoSurdo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="direitos">
+                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
 
@@ -452,7 +570,7 @@
             const modal = document.getElementById(idModal);
             const fechar = document.getElementById(idFechar);
             const desfocado = document.getElementById('desfocado');
-            
+
 
             modal.style.display = 'block';
             desfocado.style.display = 'block';
@@ -533,6 +651,54 @@
             abrirModal('modal-menu', 'fecharMenu');
             document.body.style.overflow = 'hidden';
         });
+
+
+        function Escolher(idioma) {
+
+            fetch(`textos_${idioma}.json`)
+                .then(resposta => resposta.json())
+                .then(texto => {
+                    document.getElementById('Tprojetos1').innerHTML = texto.Tprojetos1;
+                    document.getElementById('Tprojetos2').innerHTML = texto.Tprojetos2;
+                    document.getElementById('Tprojetos3').innerHTML = texto.Tprojetos3;
+                    document.getElementById('Tprojetos4').innerHTML = texto.Tprojetos4;
+                    // document.getElementById('Tprojetos5').innerHTML = texto.Tprojetos5;
+                    document.getElementById('Tprojetos6').innerHTML = texto.Tprojetos6;
+                    document.getElementById('Tprojetos7').innerHTML = texto.Tprojetos7;
+                    document.getElementById('Tprojetos8').innerHTML = texto.Tprojetos8;
+                    document.getElementById('Tprojetos9').innerHTML = texto.Tprojetos9;
+                    document.getElementById('Tprojetos10').innerHTML = texto.Tprojetos10;
+                    document.getElementById('Tprojetos11').innerHTML = texto.Tprojetos11;
+                    document.getElementById('Tprojetos12').innerHTML = texto.Tprojetos12;
+                    document.getElementById('Tprojetos13').innerHTML = texto.Tprojetos13;
+                    document.getElementById('Tprojetos14').innerHTML = texto.Tprojetos14;
+                    document.getElementById('Tprojetos15').innerHTML = texto.Tprojetos15;
+                    document.getElementById('Tprojetos16').innerHTML = texto.Tprojetos16;
+                    // document.getElementById('Tprojetos17').innerHTML = texto.Tprojetos17;
+                    document.getElementById('Tprojetos18').innerHTML = texto.Tprojetos18;
+                    document.getElementById('Tprojetos19').innerHTML = texto.Tprojetos19;
+                    document.getElementById('Tprojetos20').innerHTML = texto.Tprojetos20;
+                    document.getElementById('Tprojetos21').innerHTML = texto.Tprojetos21;
+                    document.getElementById('Tprojetos22').innerHTML = texto.Tprojetos22;
+                    document.getElementById('Tprojetos23').innerHTML = texto.Tprojetos23;
+                    document.getElementById('Tprojetos24').innerHTML = texto.Tprojetos24;
+                    document.getElementById('Tprojetos25').innerHTML = texto.Tprojetos25;
+                    document.getElementById('Tprojetos26').innerHTML = texto.Tprojetos26;
+                    document.getElementById('Tprojetos27').innerHTML = texto.Tprojetos27;
+                    document.getElementById('Tprojetos28').innerHTML = texto.Tprojetos28;
+                    document.getElementById('Tprojetos29').innerHTML = texto.Tprojetos29;
+                    document.getElementById('Tprojetos30').innerHTML = texto.Tprojetos30;
+                    document.getElementById('Tprojetos31').innerHTML = texto.Tprojetos31;
+                    document.getElementById('Tprojetos32').innerHTML = texto.Tprojetos32;
+                    document.getElementById('Tprojetos33').innerHTML = texto.Tprojetos33;
+                    document.getElementById('Tprojetos34').innerHTML = texto.Tprojetos34;
+                    document.getElementById('Tprojetos35').innerHTML = texto.Tprojetos35;
+                    document.getElementById('Tprojetos36').innerHTML = texto.Tprojetos36;
+                    // document.getElementById('Tprojetos37').innerHTML = texto.Tprojetos37;
+                })
+                .catch(error => console.error('Erro buscando textos:', error));
+        }
+
 
 
 

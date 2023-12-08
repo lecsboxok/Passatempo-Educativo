@@ -8,6 +8,7 @@
     <title>Passatempo Educativo</title>
     <link rel="stylesheet" href="doeAgora.css">
     <link rel="icon" href="img/logoIcon.png">
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script>
@@ -49,7 +50,7 @@
                     <a class="cabecalho_nav_item" href="#contato">Contato</a>
                 </div>
                 <div class="geral">
-                    <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
+                    <i id="menu" class="fa-solid fa-bars"></i>
                     <div class="cabecalho_nav_item">
                         <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
                         <a class="mobileCabecalho" href="projetos.html">Projetos</a>
@@ -90,15 +91,16 @@
     <main>
         <section id="imagem-comeco">
             <div class="comeco">
-            <img src="img/imagem-principal-doação.png" alt="">
-            <h2 class="le">Seja um doador e mude a vida de </h2>
-               <h2> uma criança!</h2>
-</div>
+                <img src="img/imagem-principal-doação.png" alt="">
+                <h2 class="le">Seja um doador e mude a vida de </h2>
+                <h2> uma criança!</h2>
+            </div>
         </section>
 
         <section id="texto">
-            <p>Aqui na Passatempo Educativo você doa a quantia que quiser. </p> 
-                </span> <p><span>Escolha o valor da sua doação.</p>
+            <p>Aqui na Passatempo Educativo você doa a quantia que quiser. </p>
+            </span>
+            <p><span>Escolha o valor da sua doação.</p>
 
             <div class="botoes">
                 <button class="btn">R$ 30</button>
@@ -106,108 +108,165 @@
                 <button class="btn">R$ 60</button>
                 <button class="btn">R$ 100</button>
                 <button class="btn">R$ ___</button>
-       <div class="button">   <a href="queroDoar.html">   <button class="btnn">Quero doar agora</button>  </a> </div>
+                <div class="button"> <a href="queroDoar.html"> <button class="btnn">Quero doar agora</button> </a>
+                </div>
             </div>
 
         </section>
     </main>
 
+
+    <div id="modal-menu" class="modal-menu">
+        <div class="modal-tudo">
+            <div class="comeco-menu">
+                <div class="fechar-tudo">
+                    <div class="fechar fechar-menu" id="fecharMenu"><span>&times;</span></div>
+                </div>
+                <div class="imagem-menu">
+                    <img src="img/logo1.png" alt="logo">
+                </div>
+            </div>
+            <div class="as">
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="Voluntário.html">Voluntários</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="doeAgora.html">Doe agora</a>
+            </div>
+            <div class="menina-menu">
+                <img src="img/menina.png" alt="menina">
+            </div>
+        </div>
+    </div>
+
+    <div id="desfocado" class="desfocado"></div>
+
     <script>
         // Script para adicionar a funcionalidade de trocar a cor ao clicar
         const botao = document.querySelector('.btn');
-        botao.addEventListener('click', function() {
-          // Aqui você pode adicionar qualquer ação que desejar ao clicar no botão
-          // Neste exemplo, alteramos a cor de fundo ao clicar
-          botao.style.backgroundColor = '#'; // Cor que desejar
+        botao.addEventListener('click', function () {
+            // Aqui você pode adicionar qualquer ação que desejar ao clicar no botão
+            // Neste exemplo, alteramos a cor de fundo ao clicar
+            botao.style.backgroundColor = '#'; // Cor que desejar
         });
-      </script>
-    </body>
-    </html>
-                <!-- RODAPÉ -->
-                <footer>
-                    <section id="contato" class="section">
-                        <div class="conteiner">
-                            <div class="rodapeCima">
-                                <div class="rodape-lado1">
-                                    <div class="logoRodape">
-                                        <img src="img/logoPassatempo.png" alt="">
-                                    </div>
-                                    <div class="menina">
-                                        <img src="img/menina.png" alt="">
-                                    </div>
-                                    <div class="rodapeTexto">
-                                        <p class="texto-rodape">Passatempo Educativo é uma organização não
-                                            governamental, sem fins
-                                            lucrativos, que desenvolve projetos na área educacional, cultural,
-                                            preservação ambiental
-                                            e
-                                            desenvolvimento do turismo sustentável.
-                                        </p>
-                                    </div>
-                                    <div class="redes">
-                                        <div>
-                                            <a href="https://www.facebook.com/Passatempoedu/"><img
-                                                    src="img/facebook.png" alt="" class="facebook icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.instagram.com/passatempoeducativo/"><img
-                                                    src="img/insta.png" alt="" class="instagram icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png"
-                                                    alt="" class="twitter icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
-                                                    src="img/youtube.png" alt="" class="youtube icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://br.linkedin.com/company/passatempo-educativo"><img
-                                                    src="img/In.png" alt="" class="In icone"></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.flickr.com/photos/passatempoeducativo"><img
-                                                    src="img/flickr.png" alt="" class="flickr icone"></a>
-                                        </div>
-                                        <div>
-                                            <a
-                                                href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
-                                                    src="img/e-mail.png" alt="" class="email icone"></a>
-                                        </div>
-                                        <div>
-                                            <a
-                                                href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
-                                                    src="img/whats.png" alt="" class="whatsapp icone"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rodape-lado2">
-                                    <div class="endereco">
-                                        <div class="enderecoTexto">
-                                            <a
-                                                href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img
-                                                    src="img/iconMaps.png" alt="" class="iconMaps"></a>
-                                            <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
-                                        </div>
-                                        <div class="imgMaps">
-                                            <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"
-                                                class="a-maps">
-                                                <img src="img/mapa.jpg" alt="Endereço do passatempo educativo">
-                                            </a>
-                                        </div>
-                                        <div class="amigo">
-                                            <img src="img/amigoSurdo.png" alt="" class="amigoSurdo">
-                                        </div>
-                                    </div>
-                                </div>
+
+
+        function abrirModal(idModal, idFechar) {
+            const modal = document.getElementById(idModal);
+            const fechar = document.getElementById(idFechar);
+            const desfocado = document.getElementById('desfocado');
+
+
+            modal.style.display = 'block';
+            desfocado.style.display = 'block';
+
+            fechar.addEventListener('click', () => {
+                modal.style.display = 'none';
+                desfocado.style.display = 'none';
+            });
+
+            desfocado.addEventListener('click', () => {
+                modal.style.display = 'none';
+                desfocado.style.display = 'none';
+            });
+            
+        }
+
+        document.getElementById('menu').addEventListener('click', () => {
+            abrirModal('modal-menu', 'fecharMenu');
+            document.body.style.overflow = 'hidden';
+        });
+    </script>
+
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <section id="contato" class="section">
+            <div class="conteiner">
+                <div class="rodapeCima">
+                    <div class="rodape-lado1">
+                        <div class="logoRodape">
+                            <img src="img/logoPassatempo.png" alt="">
+                        </div>
+                        <div class="menina">
+                            <img src="img/menina.png" alt="">
+                        </div>
+                        <div class="rodapeTexto">
+                            <p class="texto-rodape">Passatempo Educativo é uma organização não
+                                governamental, sem fins
+                                lucrativos, que desenvolve projetos na área educacional, cultural,
+                                preservação ambiental
+                                e
+                                desenvolvimento do turismo sustentável.
+                            </p>
+                        </div>
+                        <div class="redes">
+                            <div>
+                                <a href="https://www.facebook.com/Passatempoedu/"><img src="img/facebook.png" alt=""
+                                        class="facebook icone"></a>
                             </div>
-                            <div class="direitos">
-                                <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.
-                                </p>
-                                <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos
-                                    Reservados.
-                                </p>
+                            <div>
+                                <a href="https://www.instagram.com/passatempoeducativo/"><img src="img/insta.png" alt=""
+                                        class="instagram icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://twitter.com/passatempoedu"><img src="img/twitter.png" alt=""
+                                        class="twitter icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/channel/UCmjjEtnmVvDNJAkpQmU6gUA"><img
+                                        src="img/youtube.png" alt="" class="youtube icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://br.linkedin.com/company/passatempo-educativo"><img src="img/In.png"
+                                        alt="" class="In icone"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.flickr.com/photos/passatempoeducativo"><img src="img/flickr.png"
+                                        alt="" class="flickr icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="mailto:passatempo@passatempoeducativo.org.br?subject=D%C3%BAvidas%20sobre%20a%20Passatempo%20Educativo&body=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo"><img
+                                        src="img/e-mail.png" alt="" class="email icone"></a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=551199757954&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Passatempo%20Educativo."><img
+                                        src="img/whats.png" alt="" class="whatsapp icone"></a>
                             </div>
                         </div>
-                    </section>
-                </footer>
+                    </div>
+                    <div class="rodape-lado2">
+                        <div class="endereco">
+                            <div class="enderecoTexto">
+                                <a
+                                    href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"><img
+                                        src="img/iconMaps.png" alt="" class="iconMaps"></a>
+                                <h4 class="textoMaps">Rua dos Democratas, 975, São Paulo, Brasil</h4>
+                            </div>
+                            <div class="imgMaps">
+                                <a href="https://www.google.com/maps/place/R.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000/@-23.6286885,-46.6418175,15z/data=!4m16!1m9!3m8!1s0x94ce5afde1dab309:0x416a1b89278a671e!2sR.+dos+Democratas,+975+-+Vila+Monte+Alegre,+S%C3%A3o+Paulo+-+SP,+04305-000!3b1!8m2!3d-23.6286885!4d-46.6330628!10e5!16s%2Fg%2F11c4tzq1fr!3m5!1s0x94ce5afde1dab309:0x416a1b89278a671e!8m2!3d-23.6286885!4d-46.6330628!16s%2Fg%2F11c4tzq1fr"
+                                    class="a-maps">
+                                    <img src="img/mapa.jpg" alt="Endereço do passatempo educativo">
+                                </a>
+                            </div>
+                            <div class="amigo">
+                                <img src="img/amigoSurdo.png" alt="" class="amigoSurdo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="direitos">
+                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.
+                    </p>
+                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos
+                        Reservados.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

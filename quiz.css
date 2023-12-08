@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+@font-face {
+    font-family: 'UnbRegular';
+    src: url(fonts/Unbounded-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'UnbBold';
+    src: url(fonts/Unbounded-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenBold';
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenRegular';
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+.cabecalho{
+    background-color: white;
+    border-bottom: 2px solid rgb(161, 161, 161);
+
+}
+
+
+/* #main{
+    background: linear-gradient(to right, white 20%,rgb(120, 4, 4) 80%);
+    background-size: 300% 300%;
+    animation: colors 20s ease infinite;
+} */
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 50% 100%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.pagina-principal a {
+margin-left: 305px;
+color: #c49190;
+margin-top: 20px;
+text-decoration: none;
+}
+
+#questao{
+    text-align: center;
+}
+.pagina-principal{
+    margin-top: 20px; 
+}
+.h1{
+    font:32px 'UnbRegular', sans-serif;
+    padding: 0px 0 0 215px;
+    text-align: center;
+}
+
+.teste{
+    margin-left: 150px;
+    font:20px 'UnbRegular', sans-serif;
+}
+
+.texto{
+    font:22px 'OpenRegular', sans-serif;
+    letter-spacing: 1.5px;
+    padding: 20px 120px 0 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.conteudo button{
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #c49190;
+    font:18px 'OpenRegular', sans-serif;
+    color: rgb(247, 246, 246);
+    margin: 30px 0 0 368px;
+    cursor: pointer;
+margin-left: 350px;
+}
+
+.equipe img {
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.equipe{
+   background-color: #eddfdc;
+    width: 2000px;
+    height: 750px;
+}
+
+#body2{
+    background-color: #eddfdc;
+}
+
+.app{
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 60px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1{
+    padding: 0;
+    color: #c49190;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz h2{
+    font: 500 22px 'OpenBold', sans-serif;
+    color: #000000;
+    padding-bottom: 18px;
+}
+
+.quiz{
+    padding: 20px 0;
+  
+}
+.botao2{
+    display: flex;
+}
+.botao2 a {
+    display: flex;
+ text-decoration: none;
+ color: white;
+}
+
+.btn{
+    background: #fff;
+    color: #222;
+    font: 500 20px 'OpenRegular', sans-serif;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]){
+    background: #c49190;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: #c49190;
+    color: white;
+    font: 500 20px 'OpenRegular', sans-serif;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correto{
+    background: #9aeabc;
+}
+
+.incorreto{
+    background: #ff9393;
+}
+
+.imagem-pergunta {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+.comeco{
+    background-color: #f9f9f9;
+    /* color: white; */
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.433);
+}
+
+
+
+#segundoMain{
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.fa-solid{
+    padding-right: 7px;
+}
+
+.red{
+    background-color: #ff4141;
+}
+
+.blue{
+    background-color: #7d7dff;
+}
+
+.green{
+    background-color: #56ff56;
+}
+
+.yellow{
+    background-color: #ddda32;
+}
+
+
+
+  
+  .countdown {
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+  }
+ 
+  
+  .message {
+    margin-left: 780px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #000000
+  }
+
+  
+  .restart-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .restart-button:hover {
+    background-color: #555;
+  }
+  
+  #seconds{
+width: 150px;
+  }
+
+  .countdown-container{
+    font-size: 25px;
+    display: flex;
+   
+   }
+  .countdown-separator{
+   margin-top: -0px;
+  
+  }
+  /* ... Outros estilos ... */
+
+.comeco {
+    background-color: #f9f9f9;
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.433);
+    display: flex;
+    justify-content: space-between; /* Adicionado para espaçar os elementos */
+    align-items: center; /* Alinha os elementos verticalmente */
+    padding: 10px; /* Ajustado o espaçamento interno */
+}
+
+#pontuacao {
+    font: 500 22px 'UnbRegular', sans-serif;
+    text-align: center;
+    justify-content: center;
+    /* padding: 20px 0; Removido o espaçamento, pois agora é ajustado no .comeco */
+        padding: 20px 0;
+        margin-left: 50px;
+
+         }
+    
+
+#voltar{
+    background: #c49190;
+    color: white;
+    font: 500 20px 'OpenRegular', sans-serif;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* ... Outros estilos ... */
+
+
+@media screen and (max-width: 768px){
+    .pagina-principal a {
+        margin-left: 180px;
+        color: black;
+           text-decoration: none  ;
+        }
+
+body{
+    background-color:#eddfdc ;
+    width: 100%;
+    height: 100%;
+}
+        .equipe img {
+            width: 0;
+            height: auto;
+        }
+        .equipe{
+           background-color: #eddfdc;
+            width: 0;
+            height: 0;
+        }
+
+        
+        .texto{
+            font: 20px 'OpenRegular', sans-serif;
+            letter-spacing: 1.5px;
+            padding: 20px 100px 0 100px;
+            text-align: center;
+        }
+
+        h1{
+            font:30px  'UnbRegular', sans-serif;
+       color: #000000;
+       font-weight: 700;
+ margin-top: 150px ;
+ padding: 0;
+ margin-left: -100px;
+;
+    }
+
+    .conteudo button{
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #c49190;
+        font:18px 'OpenRegular', sans-serif;
+        color: rgb(247, 246, 246);
+        margin: 30px 0 0 368px;
+        cursor: pointer;
+    margin-left:  200px;
+    }
+    .pagina-principal{
+       margin-left: -30px
+     }
+    
+}
+
+
+

@@ -25,6 +25,12 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
+
+
+
+
+
+
 /* CABEÇALHO */
 #cabecalho {
     width: 100%;
@@ -61,12 +67,24 @@ a {
     margin-right: 25px;
 }
 
+.cabecalho_nav_itens a:hover {
+    color: #5d5d5d;
+}
+
 .cabecalho_nav_item_Doe {
     background-color: #FB2673;
     font: 400 17px 'Montserrat', serif;
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
+}
+
+.geral {
+    display: none;
+}
+
+.modal-tudo {
+    display: none;
 }
 
 .idiomas {
@@ -83,7 +101,6 @@ ul {
     color: #fff;
     display: block;
     padding: 0 20px;
-
 }
 
 .a-teste:hover {
@@ -163,14 +180,14 @@ ul li ul li {
     z-index: 100;
 }
 
-.geral {
-    display: none;
-}
+/* TÉRMINO DO CABEÇALHO */
+
+
 
 
 
 /* COMEÇO DE DOAÇÃO */
-img{
+#imagem-comeco img{
     width: 100%;  
   height: auto;
 }
@@ -199,7 +216,7 @@ p{
     font-size: 20px;
     text-align: center;
 }
-span{
+#texto span{
     color: #FB2673;
 }
 
@@ -381,4 +398,180 @@ span{
 
 footer {
     margin-top: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1065px) {
+
+    /* CABEÇALHO */
+    #cabecalho {
+        width: 100%;
+        position: fixed;
+    }
+
+    .modal-tudo {
+        display: block;
+    }
+
+    .cabecalho_nav {
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    #cabecalho .cabecalho_sombra {
+        height: 5px;
+        background-color: #FFD233;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+
+    .cabecalho_nav_itens {
+        display: none;
+    }
+
+    .cabecalho_nav_item {
+        display: none;
+    }
+
+    .cabecalho_nav_item_Doe {
+        display: none;
+    }
+
+    .cabecalho_Logo {
+        width: 120px;
+    }
+
+    .navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .a-teste {
+        padding: 0;
+        display: flex;
+    }
+
+    .geral {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .idiomas {
+        margin: 0;
+    }
+
+    .img-teste {
+        padding: 0;
+    }
+
+    .ul-imagens {
+        margin-top: 20px;
+    }
+
+    .geral i {
+        color: #FFD233;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .modal-menu {
+        display: none;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 200;
+        width: 50%;
+    }
+
+    #modal-menu .fechar {
+        background-color: transparent;
+        cursor: pointer;
+        left: 40px;
+        border-radius: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        margin-top: 30px;
+    }
+
+    #fecharMenu span {
+        font-size: 60px;
+    }
+
+    .modal-menu img {
+        width: 150px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .comeco-menu {
+        display: flex;
+        justify-content: space-around
+    }
+
+    .desfocado {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.404);
+        z-index: 1;
+    }
+
+    .as a {
+        font: 700 20px 'Montserrat', sans-serif;
+        color: black;
+        margin: 12px 0;
+    }
+
+    .as {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .menina-menu {
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .menina-menu img {
+        width: 140px;
+    }
+
+}
+
+@media screen and (max-width: 608px){
+    .modal-menu{
+        width: 100%;
+    }
 }

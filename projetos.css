@@ -25,6 +25,10 @@ a {
     src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
+/* @media (min-width: 769px) {
+
+} */
+
 
 
 /* CABEÇALHO */
@@ -57,14 +61,14 @@ a {
     margin-right: 30px;
 }
 
-.cabecalho_nav_itens a:hover {
-    color: #5d5d5d;
-}
-
 .cabecalho_nav_item {
     font: 400 18px 'Montserrat', serif;
     color: #000;
     margin-right: 25px;
+}
+
+.cabecalho_nav_itens a:hover {
+    color: #5d5d5d;
 }
 
 .cabecalho_nav_item_Doe {
@@ -73,6 +77,14 @@ a {
     border-bottom: 10px;
     padding: 10px 30px;
     color: #FFF;
+}
+
+.geral {
+    display: none;
+}
+
+.modal-tudo {
+    display: none;
 }
 
 .idiomas {
@@ -89,7 +101,6 @@ ul {
     color: #fff;
     display: block;
     padding: 0 20px;
-
 }
 
 .a-teste:hover {
@@ -164,19 +175,20 @@ ul li ul li {
 
 .ul-imagens2 {
     display: none;
-    padding-left: 2px;
     position: fixed;
     z-index: 100;
 }
 
-.geral {
-    display: none;
+.a-teste img{
+    width: 27px;
+    transition: ease-in-out 0.3s;
 }
 
-
-
+.a-teste img:hover{
+    transform: scale(0.8);
+    transition: ease-in-out 0.3s;
+}
 /* TÉRMINO DO CABEÇALHO */
-
 
 /* INICIAL MENINA */
 
@@ -377,7 +389,7 @@ h3 {
     transition: 0.3s all;
 }
 
-span {
+.modal span {
     font: 600 16px 'Montserrat', sans-serif;
 }
 
@@ -435,6 +447,7 @@ span {
     padding: 0 4vw;
     margin-top: 30px;
 }
+
 
 .esquerda-quiz {
     display: flex;
@@ -538,6 +551,7 @@ span {
     background: linear-gradient(69deg, #3672AA 0%, #7BAFDF 97.12%);
     padding: 30px;
     max-width: 480px;
+    flex-wrap: wrap;
 }
 
 .titulo {
@@ -555,7 +569,7 @@ span {
 
 .form div {
     display: flex;
-    max-width: 28rem;
+    flex-wrap: wrap;
 }
 
 .form div input {
@@ -597,22 +611,144 @@ span {
 
 /* TÉRMINO DO FORMULÁRIO */
 
+/* RODAPÉ */
+#contato {
+    background: rgba(255, 228, 133, 0.74);
+    padding: 73px 0;
+    padding-bottom: 15px;
+}
 
-@media screen and (max-width: 768px) {
+#contato .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rodapeCima {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rodape-lado1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+}
+
+.logoRodape {
+    margin-left: 135px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.icone {
+    width: 55px;
+    padding: 9px;
+}
+
+.icone:hover {
+    width: 62px;
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.texto-rodape {
+    font: 400 20px 'Montserrat', sans-serif;
+}
+
+.rodapeTexto {
+    text-align: justify;
+    width: 33rem;
+}
+
+.enderecoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+
+.iconMaps {
+    margin-right: 20px;
+}
+
+.textoMaps {
+    font: 400 20px 'Montserrat', sans-serif;
+}
+
+.rodape-lado2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.logoRodape img {
+    width: 170px;
+}
+
+.menina img {
+    width: 180px;
+}
+
+.imgMaps img {
+    width: 380px;
+    border-radius: 10px;
+}
+
+.imgMaps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.autorais {
+    font: 300 2vh 'Montserrat', serif;
+    margin-bottom: 5px;
+}
+
+.direito {
+    font: 300 2.5vh 'Montserrat', serif;
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
 
     /* CABEÇALHO */
-
     #cabecalho {
         width: 100%;
         position: fixed;
+    }
+
+    .modal-tudo {
+        display: block;
     }
 
     .cabecalho_nav {
         padding: 8px 0;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        margin: 0;
+        justify-content: space-between;
+        margin: 0 40px;
     }
 
     #cabecalho .cabecalho_sombra {
@@ -656,7 +792,6 @@ span {
 
     .idiomas {
         margin: 0;
-
     }
 
     .img-teste {
@@ -682,26 +817,27 @@ span {
         background-color: white;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         z-index: 200;
-        width: 100%;
-        transition: 1s ease;
+        width: 50%;
+        overflow-y: scroll;
     }
 
     #modal-menu .fechar {
         background-color: transparent;
         cursor: pointer;
-        left: 20px;
+        left: 40px;
         border-radius: 0;
         padding: 0;
         border: 0;
         box-shadow: none;
+        margin-top: 30px;
     }
 
     #fecharMenu span {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .modal-menu img {
-        width: 130px;
+        width: 150px;
         height: auto;
         margin-top: 20px;
     }
@@ -709,30 +845,6 @@ span {
     .comeco-menu {
         display: flex;
         justify-content: space-around
-    }
-
-    .as a {
-        font: 700 16px 'Montserrat', sans-serif;
-        color: black;
-        margin: 12px 0;
-    }
-
-    .as {
-        margin-top: 70px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left: 50px;
-    }
-
-    .menina-menu {
-        text-align: left;
-        margin-top: 30px;
-        margin-left: 30px;
-    }
-
-    .menina-menu img {
-        width: 120px;
     }
 
     .desfocado {
@@ -745,6 +857,31 @@ span {
         background-color: rgba(0, 0, 0, 0.404);
         z-index: 1;
     }
+
+    .as a {
+        font: 700 20px 'Montserrat', sans-serif;
+        color: black;
+        margin: 12px 0;
+    }
+
+    .as {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .menina-menu {
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .menina-menu img {
+        width: 140px;
+    }
+
 
     /* TÉRMINO DO CABEÇALHO */
 
@@ -760,8 +897,12 @@ span {
     }
 
     .container {
-        margin: 0 80px;
+        margin: 0 60px;
         padding: 0;
+    }
+
+    .quiz .container{
+        margin: 0 40px;
     }
 
     main .textos {
@@ -793,7 +934,7 @@ span {
         cursor: pointer;
     }
 
-    .projeto-item h2 {
+    .projeto-item:hover h2 {
         margin-top: 140px;
         transition: none;
     }
@@ -814,9 +955,232 @@ span {
     }
 
     .modal p {
-        font-size: 2.8vh;
+        font-size: 2.4vh;
+    }
+
+    .modal {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .modal img {
+        width: 100%;
+        height: 50vw;
+        object-fit: cover;
+    }
+
+    
+
+
+    /* RODAPÉ */
+
+    #contato {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rodapeCima {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoRodape {
+        text-align: center;
+        width: 100px;
+        margin-left: 100px;
+    }
+
+    #contato .menina img {
+        margin-right: 100px;
+        width: 120px;
+    }
+
+    #contato .redes {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        margin: 15px 0;
+    }
+
+    .redes {
+        width: 100%;
+    }
+
+    .redes img {
+        width: 35px;
+        padding: 5px;
+        padding-left: 3px;
+    }
+
+    .icone:hover {
+        width: 40px;
+        transition: 0.5s;
+        filter: brightness(50%);
+    }
+
+    .texto-rodape {
+        padding: 5px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .logoRodape img {
+        width: 120px;
+    }
+
+    .rodapeTexto,
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rodapeTexto {
+        width: 100%;
+    }
+
+    .enderecoTexto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .endereco {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enderecoTexto img {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .textoMaps {
+        font: 400 14px 'Montserrat', sans-serif;
+    }
+
+    .imgMaps {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rodape-lado1 {
+        width: 100%;
+    }
+
+    .rodape-lado2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imgMaps img {
+        border-radius: 10px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .amigo {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .amigo img {
+        width: 270px;
+    }
+
+    .direitos {
+        width: 100%;
+        margin-top: 90px;
     }
 
 
+
+}
+
+@media screen and (max-width: 608px){
+    .modal-menu{
+        width: 100%;
+    }
+
+    .descricao {
+        padding: 0;
+    }
+
+    .form div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form div input{
+        margin-right: 0;
+    }
+
+    .form div button{
+        margin-top: 15px;
+    }
+
+    .form span{
+        font-size: 35px;
+    }
+
+    .projetos .linha-projetos img {
+        width: 230px;
+    }
+
+    .projeto-item button {
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        transition: none;
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+
+    .projeto-item:hover button {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(0.9);
+        transition: none;
+    }
+
+    .projeto-item h2 {
+        margin-top: 110px;
+        transition: none;
+        font-size: 35px;
+    }
+
+    .projeto-item:hover h3 {
+        margin-top: 70px;
+        transition: none;
+        font-size: 35px;
+    }
+
+    .projeto-item:not(:hover) h2 {
+        margin-top: 110px;
+        transition: none;
+        font-size: 35px;
+    }
+
+    .projeto-item:not(:hover) h3 {
+        margin-top: 70px;
+        transition: none;
+        font-size: 35px;
+    }
+
+    .projeto-item button{
+        margin-top: 150px;
+    }
+    
 
 }
