@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/logoIcon.png">
+
+    <title>Jogo da memória - Passatempo Educativo</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            border: none;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        body {
+            background-color: #1f9b6e;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-image: url('../images/bg.jpg');
+            background-size: cover;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 20px 50px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2em;
+            width: 100%;
+            padding: 30px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .grade {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 10px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .carta {
+            aspect-ratio: 4/4;
+            width: 100%;
+            border-radius: 5px;
+            position: relative;
+            transition: all 400ms ease;
+            transform-style: preserve-3d;
+            background-color: #ccc;
+            text-align: center;
+        }
+
+        .face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 5px;
+            transition: all 400ms ease;
+        }
+
+        .frente {
+            transform: rotateY(180deg);
+        }
+
+        .verso {
+            background-color: #e9e9e9;
+            backface-visibility: hidden
+        }
+
+        .carta-revelada {
+            transform: rotateY(180deg);
+        }
+
+        .carta-desativada {
+            filter: saturate(0);
+            opacity: 0.5;
+        }
+
+        h1 {
+            font: 600 6vh 'Montserrat', sans-serif;
+            color: #fff;
+        }
+
+        section p {
+            font: 600 30px 'Montserrat', sans-serif;
+            color: #fff;
+        }
+
+        section img {
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width:920px) {
+            .grade {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="jogador"></span>
+        <span>Tempo: <span class="temporizador">00</span></span>
+        <span>Rodadas: <span class="contador-rodadas">0</span></span>
+    </header>
+
+    <main>
+
+
+        <section>
+            <div class="section">
+                <img src="img/memoriaIcon.png" alt="">
+                <h1>JOGO DA MEMÓRIA</h1>
+            </div>
+
+        </section>
+
+        <div class="grade"></div>
+    </main>
+
+    <script defer>
+        const grade = document.querySelector('.grade');
+        const spanJogador = document.querySelector('.jogador');
+        const temporizador = document.querySelector('.temporizador');
+        const contadorRodadas = document.querySelector('.contador-rodadas'); // Adicionado
+
+        const personagens = [
+            'Certif1',
+            'Certif2',
+            'Certif3',
+            'Certif4',
+            'Certif5',
+            'Certif6',
+            'Certif7',
+            'Certif8',
+            'Certif9',
+            'Certif10',
+            'Certif11',
+            'Certif12',
+            'Certif13',
+            'Certif14',
+            'Certif15',
+            'Certif16',
+            'Certif17',
+            'Certif18',
+        ];
+
+        const criarElemento = (tag, classe) => {
+            const elemento = document.createElement(tag);
+            elemento.className = classe;
+            return elemento;
+        }
+
+        let primeiraCarta = '';
+        let segundaCarta = '';
+
+        let rodadas = 0;
+
+        const verificarFimJogo = () => {
+            const cartasDesativadas = document.querySelectorAll('.carta-desativada');
+
+            if (cartasDesativadas.length === 36) {
+                clearInterval(this.loop);
+                alert(`Parabéns, ${spanJogador.innerHTML}! Seu tempo foi de: ${temporizador.innerHTML} segundos. Você acertou em ${rodadas} rodadas.`);
+            }
+        }
+
+        const verificarCartas = () => {
+            const primeiroPersonagem = primeiraCarta.getAttribute('data-personagem');
+            const segundoPersonagem = segundaCarta.getAttribute('data-personagem');
+
+            if (primeiroPersonagem === segundoPersonagem) {
+
+                primeiraCarta.firstChild.classList.add('carta-desativada');
+                segundaCarta.firstChild.classList.add('carta-desativada');
+
+                primeiraCarta = '';
+                segundaCarta = '';
+
+                verificarFimJogo();
+
+            } else {
+                setTimeout(() => {
+
+                    primeiraCarta.classList.remove('carta-revelada');
+                    segundaCarta.classList.remove('carta-revelada');
+
+                    primeiraCarta = '';
+                    segundaCarta = '';
+
+                }, 500);
+            }
+
+            rodadas++;
+            contadorRodadas.innerHTML = rodadas; // Atualiza o número de rodadas no HTML
+        }
+
+        const revelarCarta = ({ target }) => {
+
+            if (target.parentNode.className.includes('carta-revelada')) {
+                return;
+            }
+
+            if (primeiraCarta === '') {
+
+                target.parentNode.classList.add('carta-revelada');
+                primeiraCarta = target.parentNode;
+
+            } else if (segundaCarta === '') {
+
+                target.parentNode.classList.add('carta-revelada');
+                segundaCarta = target.parentNode;
+
+                verificarCartas();
+
+            }
+        }
+
+
+        const criarCarta = (personagem) => {
+
+            const carta = criarElemento('div', 'carta');
+            const frente = criarElemento('div', 'face frente');
+            const verso = criarElemento('div', 'face verso');
+
+            frente.style.backgroundImage = `url('img/${personagem}.png')`;
+
+            carta.appendChild(frente);
+            carta.appendChild(verso);
+
+            carta.addEventListener('click', revelarCarta);
+            carta.setAttribute('data-personagem', personagem)
+
+            return carta;
+        }
+
+        const carregarJogo = () => {
+            const personagensDuplicados = [...personagens, ...personagens];
+
+            const arrayEmbaralhado = personagensDuplicados.sort(() => Math.random() - 0.5);
+
+            arrayEmbaralhado.forEach((personagem) => {
+                const carta = criarCarta(personagem);
+                grade.appendChild(carta);
+            });
+        }
+
+        const iniciarTemporizador = () => {
+
+            this.loop = setInterval(() => {
+                const tempoAtual = +temporizador.innerHTML;
+                temporizador.innerHTML = tempoAtual + 1;
+            }, 1000);
+
+        }
+
+
+
+        window.onload = () => {
+            spanJogador.innerHTML = localStorage.getItem('jogador');
+            iniciarTemporizador();
+            carregarJogo();
+        }
+    </script>
+
+</body>
+
+</html>
