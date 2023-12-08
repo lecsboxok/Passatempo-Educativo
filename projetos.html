@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -43,10 +43,10 @@
                     <nav class="teste">
                         <ul class="principal">
                             <li class="li-p">
-                                    <a href="javascript://" class="a-teste">
+                                <a href="javascript://" class="a-teste">
                                     <img src="img/mundoHeader.png" alt="Brasil" width="50px" class="brasil">
                                 </a>
-                                
+
                                 <ul class="ul-imagens">
                                     <a onclick="Escolher('ptbr')">
                                         <li><img src="img/Brasil.png" alt="Bandeira do brasil" class="img-teste"></li>
@@ -448,8 +448,8 @@
                         <p class="descricao" id="Tprojetos35">Se inscreva para receber notícias sobre a Passatempo
                             Educativo.</p>
                         <div>
-                            <input placeholder="Escreva seu email" type="email" name="email"
-                                id="email-address" required>
+                            <input placeholder="Escreva seu email" type="email" name="email" id="email-address"
+                                required>
                             <button id="requisito">Inscreva-se</button>
                         </div>
                     </form>
@@ -715,8 +715,10 @@
                     document.getElementById('Tprojetos33').innerHTML = texto.Tprojetos33;
                     document.getElementById('Tprojetos34').innerHTML = texto.Tprojetos34;
                     document.getElementById('Tprojetos35').innerHTML = texto.Tprojetos35;
-                    document.getElementById('email-address').innerHTML = texto.Tprojetos36;
+                    document.getElementById('email-address').placeholder = texto.Tprojetos36;
                     document.getElementById('requisito').innerHTML = texto.Tprojetos37;
+                    // var elementoHtml = document.querySelector('html');
+                    // elementoHtml.setAttribute('lang', texto.lang);
                 })
                 .catch(error => console.error('Erro buscando textos:', error));
         }
