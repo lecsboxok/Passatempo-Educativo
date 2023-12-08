@@ -56,7 +56,7 @@ html{
 
 input {
   font: 400 16px 'Montserrat';
-  padding: 11px;
+  padding: 10px;
   width: 50%;
   border: 1px solid #ccc;
   border-right: 0px;
@@ -688,7 +688,7 @@ input {
 @media (max-width: 768px) {
   #buscar {
     flex: 100%;
-    order: 3;
+    order: 4;
     /* Altera a ordem para a terceira posição na coluna */
     margin: 20px 0 10px 0;
   }
@@ -700,8 +700,21 @@ input {
     /* Alinha o carrinho ao final da coluna */
   }
 
+  .tema{
+    order: 3;
+    margin: 0;
+  }
+
   #carrinho-itens {
     width: 100%;
+  }
+
+  #header .container{
+    margin: 0 70px;
+  }
+
+  .carrossel{
+    margin-top: 75px;
   }
 
 
