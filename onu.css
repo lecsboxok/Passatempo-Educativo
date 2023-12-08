@@ -262,7 +262,7 @@ p {
 }
 
 /* CIRCULO */
-.imagem-circulo2030, .imagem-memoria {
+.imagem-circulo2030 {
     text-align: center;
     margin: 20px 0;
 }
@@ -279,6 +279,49 @@ p {
 .texto-2030 {
     margin: 0 50px;
 }
+
+
+
+/* JOGO MEMÓRIA */
+
+.texto-memoria {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+}
+
+.jogoMemoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+h3 {
+    color: #FFF;
+}
+
+.textMemoria {
+    font: 800 50px 'Montserrat', sans-serif;
+    margin: 10px 0;
+}
+
+.text2Memoria {
+    font: 800 40px 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+.jogoMemoria a {
+    font: 400 23px 'Montserrat', sans-serif;
+    color: #FFF;
+    background-color: #1F9B6E;
+    padding: 5px 60px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* CONTAGEM REGRESSIVA 2030 */
+
 
 /* RODAPÉ */
 #contato {
