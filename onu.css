@@ -322,6 +322,87 @@ h3 {
 
 /* CONTAGEM REGRESSIVA 2030 */
 
+#contagem {
+    background-color: #EFF9FF;
+    padding: 100px 0;
+}
+
+.contagem {
+    text-align: center;
+}
+
+.contagem h4 {
+    font: 400 40px 'Forum', sans-serif;
+}
+
+#contagem-regressiva {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempo span {
+    font: 400 50px 'Montserrat', sans-serif;
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: #0D0D0D;
+    font: 400 40px 'Forum', sans-serif;
+}
+
+#barraProgresso {
+    width: 960px;
+    height: 24px;
+    background-color: #F2F2F2;
+    border: 1px solid #000;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#progresso {
+    height: 100%;
+    width: 0;
+    background-color: #0086CD;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: 1s linear;
+}
+
+/* CONTRIBUIÇÕES */
+.contribuir {
+    margin: 150px 0;
+}
+
+.textoContribuir {
+    margin: 0px 6vw;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.arrumar p {
+    text-align: center;
+}
+
+.objetivoContribuir {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+}
+
+.textosObjetivo, .imagemContribuir {
+    margin: 0 40px;
+}
+
+.textoObjetivo, .imagemContribuir  {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 /* RODAPÉ */
 #contato {
