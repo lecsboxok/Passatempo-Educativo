@@ -18,7 +18,7 @@
             box-sizing: border-box;
             list-style: none;
             border: none;
-            font-family: 'Press Start 2P', cursive;
+            font-family: 'Press Start 2P';
         }
 
         body {
@@ -47,6 +47,16 @@
             padding: 30px;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
+            text-align: center;
+        }
+
+        header span {
+            width: 100%;
+        }
+
+        .oi {
+            display: inline-block;
+            min-width: 50px;
         }
 
         .grade {
@@ -136,13 +146,14 @@
                 grid-template-columns: repeat(5, 1fr);
             }
         }
+
     </style>
 </head>
 
 <body>
     <header>
         <span class="jogador"></span>
-        <span>Tempo: <span class="temporizador">00</span></span>
+        <span class="oi">Tempo: <span class="temporizador">00</span></span>
         <span>Rodadas: <span class="contador-rodadas">0</span></span>
     </header>
 

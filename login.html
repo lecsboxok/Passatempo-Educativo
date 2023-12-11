@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Passatempo Educativo</title>
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logoIcon.png">
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @font-face {
+            font-family: 'Montserrat';
+            src: url(fonts/Montserrat-VariableFont_wght.ttf);
+        }
+
+        @font-face {
+            font-family: 'Forum';
+            src: url(fonts/Forum-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Manrope';
+            src: url(fonts/Manrope-VariableFont_wght.ttf);
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #6352EC, #865BDF, #B967C9);
+            background-repeat: no-repeat;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 125px 0;
+        }
+
+        .login {
+            background-color: white;
+            padding: 81.7px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo-login {
+            font: 600 26px 'Montserrat', sans-serif;
+            text-align: center;
+            color: #9b55dc;
+            margin-bottom: 30px;
+        }
+
+        input {
+            font: 500 18px 'Montserrat', sans-serif;
+            width: 300px;
+            border: 0 none;
+            outline: 0;
+            border-bottom: 2px solid rgba(173, 173, 173, 0.364);
+            padding: 5px 5px;
+            margin: 10px 0;
+            transition: all .3s ease-in-out;
+        }
+
+        input:focus {
+            border-bottom: 2px solid #9b55dc;
+        }
+
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            font: 500 16px 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #CC6FC1, #B572CB, #8C6CE2);
+            border-radius: 10px;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            transition: 0.3s;
+            cursor: pointer;
+            margin: 25px 0 30px 0;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        i {
+            background-color: white;
+            color: #9b55dc;
+            border-radius: 35px;
+            padding: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(0.9);
+        }
+
+        button:hover i {
+            transform: scale(0.9);
+        }
+
+        .divisor {
+            height: 1px;
+            background-color: gray;
+            margin: 10px 0;
+            width: 130px;
+        }
+
+        .divisor-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .ou {
+            padding: 0 10px;
+            font: 500 16px 'Montserrat', sans-serif;
+        }
+
+        .mensagem {
+            margin-top: 20px;
+            font: 500 16px 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        a {
+            font: 600 16px 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #865BDF;
+        }
+
+
+        h1 {
+            font: 600 36px 'Montserrat', sans-serif;
+            color: white;
+            text-align: center;
+            margin: 10px 0 30px 0;
+        }
+
+        .texto,
+        .aproveite {
+            font: 500 17px 'Montserrat', sans-serif;
+            color: white;
+            line-height: 30px;
+            text-align: justify;
+            padding: 0 8%;
+        }
+
+        .aproveite {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 102px;
+            margin-left: 20px;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        .input-container i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        .input-container input {
+            padding-left: 40px;
+        }
+
+
+        /* PARTE DE CADASTRO */
+
+        .cadastro {
+            background-color: white;
+            padding: 80px 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .botao {
+            padding: 5px 15px;
+        }
+
+        .botao i {
+            padding: 5px 6px;
+        }
+
+        .esquerdo-cadastre {
+            padding: 143.2px 0;
+        }
+
+        .esquerdo-cadastre h1 {
+            margin-top: 0;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .esquerdo {
+                margin-bottom: 70px;
+            }
+
+            .cadastro {
+                padding: 80px 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class="login">
+            <div class="form">
+                <p class="titulo-login">Login</p>
+                <form class="login-form">
+                    <div class="input-container">
+                        <i class="fa-solid fa-user" style="color: #a3a3a3;"></i>
+                        <input type="text" placeholder="Usuário" class="usuario">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa-solid fa-key" style="color: #a3a3a3;"></i>
+                        <input type="password" placeholder="Senha" class="senha">
+                    </div>
+                    <button type="submit">Entrar <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="divisor-div">
+                    <hr class="divisor">
+                    </hr>
+                    <p class="ou">OU</p>
+                    <hr class="divisor">
+                    </hr>
+                </div>
+                <p class="mensagem">Não tem uma conta? <a href="cadastro.html">Cadastre-se!</a></p>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script>
+        const form = document.querySelector('.login-form'); //Seleciona o formulário de login
+
+        //Seleciona o campo de entrada do formulário
+        const usuarioInput = form.querySelector("input[type='text']"); //Pega a tag pelo tipo dela
+        const senhaInput = form.querySelector("input[type='password']"); //Pega a tag pelo tipo dela
+
+        form.addEventListener('submit', (event) => { //Adiciona um ouvinte quando clicar no botão
+
+            event.preventDefault(); //Evita que a página seja recarregada
+
+
+            //o trim remove os espaços em branco no começo e no final
+            const usuario = usuarioInput.value.trim(); //Obtém os valores dos campos de entrada do usuário
+            const senha = senhaInput.value.trim(); //Obtém os valores dos campos de entrada da senha
+
+            if (usuario === '' || senha === '') {
+                alert("Por favor, preencha os campos");
+            } else if (usuario === 'PassatempoEducativo' && senha === '1234') { //Verifica e as informações de login estão corretas
+                alert("Bem- vindo!")
+                location.replace("/lojinha.html", ("_self"))
+
+            } else {
+                alert("Usuário ou senha incorreto, tente novamente") //Exibe uma mensagem de erro
+            }
+        })
+    </script>
+</body>
+
+</html>
