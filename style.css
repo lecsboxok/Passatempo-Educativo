@@ -173,9 +173,18 @@ ul li ul li {
 
 .ul-imagens2 {
     display: none;
-    padding-left: 2px;
     position: fixed;
     z-index: 100;
+}
+
+.a-teste img{
+    width: 27px;
+    transition: ease-in-out 0.3s;
+}
+
+.a-teste img:hover{
+    transform: scale(0.8);
+    transition: ease-in-out 0.3s;
 }
 
 /* PRINCIPAL */
