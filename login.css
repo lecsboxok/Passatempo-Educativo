@@ -26,7 +26,7 @@
         }
 
         body {
-            background: linear-gradient(to bottom right, #6352EC, #865BDF, #B967C9);
+            background: linear-gradient(to bottom right, #26b3f4d5, #fb2674d5);
             background-repeat: no-repeat;
         }
 
@@ -439,6 +439,10 @@
         .modo-escuro i{
             background-color: transparent;
             color: white;
+        }
+
+        .modo-escuro body {
+            background: linear-gradient(to bottom right, #003750, #4e001d);
         }
 
 
