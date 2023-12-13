@@ -22,19 +22,21 @@
             </div>
             <div class="navegacao">
                 <div class="cabecalho_nav_itens">
-                    <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
-                    <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
-                    <a class="cabecalho_nav_item" href="Voluntário.html">Voluntários</a>
-                    <a class="cabecalho_nav_item" href="lojinha.html">Loja</a>
+                    <a class="cabecalho_nav_item" href="sobrenos.html" id="Theader1">Sobre Nós</a>
+                    <a class="cabecalho_nav_item" href="projetos.html" id="Theader2">Projetos</a>
+                    <a class="cabecalho_nav_item" href="Voluntário.html" id="Theader3">Voluntários</a>
+                    <a class="cabecalho_nav_item" href="onu.html" id="Theader4">ONU 2030</a>
+                    <a class="cabecalho_nav_item" href="lojinha.html" id="Theader5">Loja</a>
                 </div>
                 <div class="geral">
                     <i id="menu" class="fa-solid fa-bars"></i>
                     <div class="cabecalho_nav_item">
-                        <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
-                        <a class="mobileCabecalho" href="projetos.html">Projetos</a>
-                        <a class="mobileCabecalho" href="Voluntário.html">Voluntários</a>
-                        <a class="mobileCabecalho" href="lojinha.html">Loja</a>
-                        <a class="mobileCabecalho" href="doeAgora.html">Doe Agora</a>
+                        <a class="mobileCabecalho" href="sobrenos.html" id="Theader6">Sobre Nós</a>
+                        <a class="mobileCabecalho" href="projetos.html" id="Theader7">Projetos</a>
+                        <a class="mobileCabecalho" href="Voluntário.html" id="Theader8">Voluntários</a>
+                        <a class="mobileCabecalho" href="onu.html" id="Theader9">ONU 2030</a>
+                        <a class="mobileCabecalho" href="lojinha.html" id="Theader10">Loja</a>
+                        <a class="mobileCabecalho" href="doeAgora.html" id="Theader11">Doe Agora</a>
                     </div>
                 </div>
                 <div class="idiomas">
@@ -42,14 +44,17 @@
                         <ul class="principal">
                             <li class="li-p">
                                 <a href="javascript://" class="a-teste">
-                                    <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                                    <img src="img/mundoHeader.png" alt="Brasil" width="50px" class="brasil">
                                 </a>
 
                                 <ul class="ul-imagens">
-                                    <a href="index.ingles.html">
+                                    <a onclick="Escolher('ptbr')">
+                                        <li><img src="img/Brasil.png" alt="Bandeira do brasil" class="img-teste"></li>
+                                    </a>
+                                    <a onclick="Escolher('en')">
                                         <li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li>
                                     </a>
-                                    <a href="espanhol.html">
+                                    <a onclick="Escolher('es')">
                                         <li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste">
                                         </li>
                                     </a>
@@ -59,12 +64,23 @@
                     </nav>
                 </div>
                 <div>
-                    <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
+                    <a class="cabecalho_nav_item_Doe" href="doeAgora.html" id="Theader12">Doe Agora</a>
                 </div>
             </div>
         </nav>
         <div class="cabecalho_sombra"></div>
     </header>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 
 
@@ -432,6 +448,43 @@
             modal.style.display = 'none';
             desfocado.style.display = 'none';
         });
+
+
+
+
+        function Escolher(idioma) {
+
+fetch(`textos_${idioma}.json`)
+    .then(resposta => resposta.json())
+    .then(texto => {
+
+
+  
+        document.getElementById('Tvoluntarios1').innerHTML = texto.Tvoluntarios1;
+        document.getElementById('Tvoluntarios2').innerHTML = texto.Tvoluntarios2;
+        document.getElementById('Tvoluntarios3').innerHTML = texto.Tvoluntarios3;
+        document.getElementById('Tvoluntarios4').innerHTML = texto.Tvoluntarios4;
+        document.getElementById('Tvoluntarios5').innerHTML = texto.Tvoluntarios5;
+        document.getElementById('Tvoluntarios6').innerHTML = texto.Tvoluntarios6;
+        document.getElementById('Tvoluntarios7').innerHTML = texto.Tvoluntarios7;
+        document.getElementById('Tvoluntarios8').innerHTML = texto.Tvoluntarios8;
+        document.getElementById('Tvoluntarios9').innerHTML = texto.Tvoluntarios9;
+        document.getElementById('Tvoluntarios10').innerHTML = texto.Tvoluntarios10;
+        document.getElementById('Tvoluntarios11').innerHTML = texto.Tvoluntarios11;
+        document.getElementById('Tvoluntarios12').innerHTML = texto.Tvoluntarios12;
+        document.getElementById('Tvoluntarios13').innerHTML = texto.Tvoluntarios13;
+        document.getElementById('Tvoluntarios14').innerHTML = texto.Tvoluntarios14;
+        document.getElementById('Tvoluntarios15').innerHTML = texto.Tvoluntarios15;
+        document.getElementById('Tvoluntarios16').innerHTML = texto.Tvoluntarios16;
+       
+
+ 
+        // var elementoHtml = document.querySelector('html');
+        // elementoHtml.setAttribute('lang', texto.lang);
+    })
+    .catch(error => console.error('Erro buscando textos:', error));
+}
+
 
     </script>
 
