@@ -478,6 +478,44 @@
             abrirModal('modal-menu', 'fecharMenu');
             document.body.style.overflow = 'hidden';
         });
+
+        function Escolher(idioma) {
+
+fetch(`textos_${idioma}.json`)
+    .then(resposta => resposta.json())
+    .then(texto => {
+        document.getElementById('Tprincipal1').innerHTML = texto.Tprincipal1
+        document.getElementById('Tprincipal2').innerHTML = texto.Tprincipal2
+        document.getElementById('Tprincipal3').innerHTML = texto.Tprincipal3
+        document.getElementById('Tprincipal4').innerHTML = texto.Tprincipal4
+        document.getElementById('Tprincipal5').innerHTML = texto.Tprincipal5
+        document.getElementById('Tprincipal6').innerHTML = texto.Tprincipal6
+        document.getElementById('Tprincipal7').innerHTML = texto.Tprincipal7
+        document.getElementById('Tprincipal8').innerHTML = texto.Tprincipal8
+        document.getElementById('Tprincipal9').innerHTML = texto.Tprincipal9
+        document.getElementById('Tprincipal10').innerHTML = texto.Tprincipal10
+        document.getElementById('Tprincipal11').innerHTML = texto.Tprincipal11
+        document.getElementById('Tprincipal12').innerHTML = texto.Tprincipal12
+        document.getElementById('Tprincipal13').innerHTML = texto.Tprincipal13
+        document.getElementById('Tprincipal14').innerHTML = texto.Tprincipal14
+        document.getElementById('Tprincipal15').innerHTML = texto.Tprincipal15
+        document.getElementById('Tprincipal16').innerHTML = texto.Tprincipal16
+        document.getElementById('Tprincipal17').innerHTML = texto.Tprincipal17
+        document.getElementById('Tprincipal18').innerHTML = texto.Tprincipal18
+        document.getElementById('Tprincipal19').innerHTML = texto.Tprincipal19
+        document.getElementById('Tprincipal20').innerHTML = texto.Tprincipal20
+        document.getElementById('Tprincipal21').innerHTML = texto.Tprincipal21
+        document.getElementById('Tprincipal22').innerHTML = texto.Tprincipal22
+        document.getElementById('Tprincipal23').innerHTML = texto.Tprincipal23
+        document.getElementById('Tprincipal24').innerHTML = texto.Tprincipal24
+        document.getElementById('Tprincipal25').innerHTML = texto.Tprincipal25
+        document.getElementById('Tprincipal26').innerHTML = texto.Tprincipal26
+        document.getElementById('Tprincipal27').innerHTML = texto.Tprincipal27
+        document.getElementById('Tprincipal28').innerHTML = texto.Tprincipal28
+
+    })
+    .catch(error => console.error('Erro buscando textos:', error));
+}
     </script>
 </body>
 

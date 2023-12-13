@@ -400,6 +400,25 @@ window.onload = function () {
     relogio = setInterval(atualizarContador, 1000);
 };
 
+function Escolher(idioma) {
+
+fetch(`textos_${idioma}.json`)
+    .then(resposta => resposta.json())
+    .then(texto => {
+        document.getElementById('Tonu1').innerHTML = texto.Tonu1
+        document.getElementById('Tonu2').innerHTML = texto.Tonu2
+        document.getElementById('Tonu3').innerHTML = texto.Tonu3
+        document.getElementById('Tonu4').innerHTML = texto.Tonu4
+        document.getElementById('Tonu5').innerHTML = texto.Tonu5
+        document.getElementById('Tonu6').innerHTML = texto.Tonu6
+        document.getElementById('Tonu7').innerHTML = texto.Tonu7
+        document.getElementById('Tonu8').innerHTML = texto.Tonu8
+        document.getElementById('Tonu9').innerHTML = texto.Tonu9
+        document.getElementById('Tonu10').innerHTML = texto.Tonu10
+    })
+    .catch(error => console.error('Erro buscando textos:', error));
+}
+
     </script>
 </body>
 
