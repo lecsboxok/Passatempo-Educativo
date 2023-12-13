@@ -336,6 +336,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tempo span {
@@ -826,6 +827,9 @@ h3 {
 }
 
 @media screen and (max-width: 950px) {
+    .margem{
+        margin: 0 60px;
+    }
     /* O QUE É */
     .oquee {
         display: flex;
@@ -852,7 +856,7 @@ h3 {
     /* CONTRIBUIÇÕES */
     .objetivoContribuir {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .textoObjetivo {
@@ -869,6 +873,29 @@ h3 {
 
     .imagemContribuir {
         margin-top: 20px;
+    }
+
+    /* CIRCULO */
+    .imagem-circulo2030 img{
+        width: 50vh;
+    }
+
+    /* CONTAGEM */
+    #contagem .container{
+        margin: 0 60px;
+    }
+
+    /* CONTRIBUIR */
+    .textoContribuir{
+        margin: 130px 0 60px 0;
+    }
+
+    .imagemContribuir img{
+        width: 60vh;
+    }
+
+    .ultima{
+        margin-bottom: 100px;
     }
 
 }
@@ -892,5 +919,9 @@ h3 {
 @media screen and (max-width: 608px) {
     .modal-menu {
         width: 100%;
+    }
+
+    .margem{
+        margin: 0 40px;
     }
 }
