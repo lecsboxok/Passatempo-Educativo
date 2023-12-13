@@ -666,6 +666,11 @@ input {
   transform: translateY(-50%);
 }
 
+.login i{
+  font-size: 28px;
+}
+
+
 #subir{
   position: fixed;
   right: 10px;
