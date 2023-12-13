@@ -26,7 +26,7 @@
         }
 
         body {
-            background: linear-gradient(to bottom right, #6352EC, #865BDF, #B967C9);
+            background: linear-gradient(to bottom right, #26b3f4d5, #fb2674d5);
             background-repeat: no-repeat;
         }
 
@@ -423,7 +423,7 @@
             margin-bottom: 20px;
         }
 
-        .modo-escuro .login{
+        .modo-escuro .login, .modo-escuro .cadastro{
             background-color: #1D1F2C;
         }
 
@@ -439,6 +439,10 @@
         .modo-escuro i{
             background-color: transparent;
             color: white;
+        }
+
+        .modo-body {
+            background: linear-gradient(to bottom right, #005780, #81002f);
         }
 
 

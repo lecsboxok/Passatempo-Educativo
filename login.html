@@ -85,7 +85,7 @@
             if (usuario === '' || senha === '') {
                 alert("Por favor, preencha os campos");
             } else if (usuario === 'PassatempoEducativo' && senha === '1234') { //Verifica e as informações de login estão corretas
-                alert("Bem- vindo!")
+                alert("Bem- vindo(a) a Loja Passatempo Educativo!")
                 location.replace("/lojinha.html", ("_self"))
 
             } else {
@@ -99,6 +99,7 @@
         trocarTema.addEventListener('change', () => {
             // Adicione ou remova a classe do corpo para alternar entre os temas
             body.classList.toggle('modo-escuro');
+            body.classList.toggle('modo-body')
         });
     </script>
 </body>
