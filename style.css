@@ -173,9 +173,18 @@ ul li ul li {
 
 .ul-imagens2 {
     display: none;
-    padding-left: 2px;
     position: fixed;
     z-index: 100;
+}
+
+.a-teste img{
+    width: 27px;
+    transition: ease-in-out 0.3s;
+}
+
+.a-teste img:hover{
+    transform: scale(0.8);
+    transition: ease-in-out 0.3s;
 }
 
 /* PRINCIPAL */
@@ -745,19 +754,10 @@ ul li ul li {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1200px) {
 
-
-@media screen and (max-width: 1065px) {
-
-    .conteiner {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        box-sizing: border-box;
-    }
-
-    /* CABEÇALHO */
-    #cabecalho {
+     /* CABEÇALHO */
+     #cabecalho {
         width: 100%;
         position: fixed;
     }
@@ -770,8 +770,8 @@ ul li ul li {
         padding: 8px 0;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        margin: 0;
+        justify-content: space-between;
+        margin: 0 40px;
     }
 
     #cabecalho .cabecalho_sombra {
@@ -841,17 +841,18 @@ ul li ul li {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         z-index: 200;
         width: 50%;
+        overflow-y: scroll;
     }
 
     #modal-menu .fechar {
         background-color: transparent;
         cursor: pointer;
         left: 40px;
-        margin-top: 38px;
         border-radius: 0;
         padding: 0;
         border: 0;
         box-shadow: none;
+        margin-top: 30px;
     }
 
     #fecharMenu span {
@@ -867,6 +868,17 @@ ul li ul li {
     .comeco-menu {
         display: flex;
         justify-content: space-around
+    }
+
+    .desfocado {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.404);
+        z-index: 1;
     }
 
     .as a {
@@ -893,18 +905,18 @@ ul li ul li {
         width: 140px;
     }
 
-    .desfocado {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.404);
-        z-index: 1;
-    }
-
     /* TÉRMINO DO CABEÇALHO */
+
+}
+
+@media screen and (max-width: 880px) {
+
+    .conteiner {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
 
     /* PRINCIPAL */
     .conatainerproje .slidde-container .slide .contentproje h1 {
@@ -1011,7 +1023,7 @@ ul li ul li {
     .logoRodape {
         text-align: center;
         width: 100px;
-        margin-left: 100px;
+        margin-left: 31vw;
     }
 
     #contato .menina img {

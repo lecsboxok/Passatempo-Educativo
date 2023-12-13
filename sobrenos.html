@@ -1,39 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Sobre Nós - Passatempo Educativo</title>
-    <link rel="stylesheet" href="sobrenos.css">
     <link rel="icon" href="img/logoIcon.png">
+    <link rel="stylesheet" href="sobrenos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script>
-        $(document).ready(function () {
-            var botao = $('.a-teste');
-            var dropDown = $('.ul-imagens');
-
-            botao.on('click', function (event) {
-                dropDown.stop(true, true).slideToggle();
-                event.stopPropagation();
-            });
-        });
-
-        $(document).ready(function () {
-            var botao = $('.a-teste2');
-            var dropDown = $('.ul-imagens2');
-
-            botao.on('click', function (event) {
-                dropDown.stop(true, true).slideToggle();
-                event.stopPropagation();
-            });
-        });
-
-    </script>
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="corpo">
+
+<body>
     <header id="cabecalho">
         <nav class="cabecalho_nav">
             <div class="imagem">
@@ -42,19 +22,21 @@
             </div>
             <div class="navegacao">
                 <div class="cabecalho_nav_itens">
-                    <a class="cabecalho_nav_item" href="sobrenos.html">Sobre Nós</a>
-                    <a class="cabecalho_nav_item" href="projetos.html">Projetos</a>
-                    <a class="cabecalho_nav_item" href="Voluntário.html">Voluntários</a>
-                    <a class="cabecalho_nav_item" href="#contato">Contato</a>
+                    <a class="cabecalho_nav_item" href="sobrenos.html" id="Theader1">Sobre Nós</a>
+                    <a class="cabecalho_nav_item" href="projetos.html" id="Theader2">Projetos</a>
+                    <a class="cabecalho_nav_item" href="Voluntário.html" id="Theader3">Voluntários</a>
+                    <a class="cabecalho_nav_item" href="onu.html" id="Theader4">ONU 2030</a>
+                    <a class="cabecalho_nav_item" href="lojinha.html" id="Theader5">Loja</a>
                 </div>
                 <div class="geral">
-                    <a href="#"><img src="img/menu.png" alt="" width="35px" height="20px" class="menu"></a>
+                    <i id="menu" class="fa-solid fa-bars"></i>
                     <div class="cabecalho_nav_item">
-                        <a class="mobileCabecalho" href="sobrenos.html">Sobre Nós</a>
-                        <a class="mobileCabecalho" href="projetos.html">Projetos</a>
-                        <a class="mobileCabecalho" href="Voluntário.html">Voluntários</a>
-                        <a class="mobileCabecalho" href="#contato">Contato</a>
-                        <a class="mobileCabecalho" href="doeAgora.html">Doe Agora</a>
+                        <a class="mobileCabecalho" href="sobrenos.html" id="Theader6">Sobre Nós</a>
+                        <a class="mobileCabecalho" href="projetos.html" id="Theader7">Projetos</a>
+                        <a class="mobileCabecalho" href="Voluntário.html" id="Theader8">Voluntários</a>
+                        <a class="mobileCabecalho" href="onu.html" id="Theader9">ONU 2030</a>
+                        <a class="mobileCabecalho" href="lojinha.html" id="Theader10">Loja</a>
+                        <a class="mobileCabecalho" href="doeAgora.html" id="Theader11">Doe Agora</a>
                     </div>
                 </div>
                 <div class="idiomas">
@@ -62,14 +44,17 @@
                         <ul class="principal">
                             <li class="li-p">
                                 <a href="javascript://" class="a-teste">
-                                    <img src="img/BrasilComSeta.png" alt="Brasil" width="50px" class="brasil">
+                                    <img src="img/mundoHeader.png" alt="Brasil" width="3.125rem" class="brasil">
                                 </a>
 
                                 <ul class="ul-imagens">
-                                    <a href="index.ingles.html">
+                                    <a onclick="Escolher('ptbr')">
+                                        <li><img src="img/Brasil.png" alt="Bandeira do brasil" class="img-teste"></li>
+                                    </a>
+                                    <a onclick="Escolher('en')">
                                         <li><img src="img/ingles.png" alt="Bandeira inglesa" class="img-teste"></li>
                                     </a>
-                                    <a href="espanhol.html">
+                                    <a onclick="Escolher('es')">
                                         <li><img src="img/espanhol.png" alt="Bandeira da espanha" class="img-teste">
                                         </li>
                                     </a>
@@ -79,7 +64,7 @@
                     </nav>
                 </div>
                 <div>
-                    <a class="cabecalho_nav_item_Doe" href="doeAgora.html">Doe Agora</a>
+                    <a class="cabecalho_nav_item_Doe" href="doeAgora.html" id="Theader12">Doe Agora</a>
                 </div>
             </div>
         </nav>
@@ -97,7 +82,6 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
-
    
         
         </head>
@@ -112,46 +96,38 @@
         <div id="meuTexto">
 
             <div class="le">
-                <p class="qms">Quem somos </p>
+                <p class="qms" id="Tsobrenos1">Quem somos </p>
             </div>
-            <p class="junte">Junte-se a nós na missão de fazer a</p>
-            <p class="dif"> diferença</p>
+            <p class="junte" id="Tsobrenos2">Junte-se a nós na missão de fazer a</p>
+            <p class="dif" id="Tsobrenos3"> diferença</p>
             <div class="linha"></div>
            
         </div>
          <div class="lets">
-           <p class="oscip">
+           <p class="oscip" id="Tsobrenos4">
                 A Passatempo Educativo é uma OSCIP (Organização da sociedade civil de interesse público) que atua
                 a mais de 23 anos em diversos projetos, a fim de ajudar no desenvolvimento social e educacional das
                 crianças.
             </p>
         </div>
-        <script>
-            function subirTexto() {
-                // Obtém a referência ao elemento de texto
-                var texto = document.getElementById('meuTexto');
 
-                // Define a margem superior fixa após a página ser carregada
-                texto.style.marginTop = '-40vh';
-            }
-        </script>
         <div class="titulo">
             <div class="quem">
-                <h3 class="preto">Conheça a</h3>
-                <h3 class="azul">Passatempo Educativo</h3>
+                <h3 class="preto" id="Tsobrenos5">Conheça a</h3>
+                <h3 class="azul" id="Tsobrenos6">Passatempo Educativo</h3>
             </div>
         </div>
         <div class="historia-sobre">
-            <a href="#object"><button class="obj">Objetivo</button></a>
-            <a href="#historia"><button class="histo">História</button></a>
-            <a href="#empresa-feliz"><button class="emprefeliz">Empresa Feliz</button></a>
-            <a href="#governanca"><button class="governanca">Governança</button></a>
+            <a href="#object"><button class="obj" id="Tsobrenos7">Objetivo</button></a>
+            <a href="#historia"><button class="histo" id="Tsobrenos8">História</button></a>
+            <a href="#empresa-feliz"><button class="emprefeliz" id="Tsobrenos9">Empresa Feliz</button></a>
+            <a href="#governanca"><button class="governanca" id="Tsobrenos10">Governança</button></a>
         </div>
         <div class="colaborador-azul">
             <div class="colaborador">
 
                 <div class="prof">
-                    <p>A equipe é formada por profissionais das áreas de Lazer , turismo, recreação, eventos, educação
+                    <p id="Tsobrenos11">A equipe é formada por profissionais das áreas de Lazer , turismo, recreação, eventos, educação
                         física, pedagogia,biologia, psicologia, jornalismo, artes plásticas, teatro e por professores
                         colaboradores.
                         <br>
@@ -162,7 +138,7 @@
                         entre
                         todos os envolvidos durante cada projeto.
                     </p>
-                    <div class="venha">Venha fazer parte desta família!</div>
+                    <div class="venha" id="Tsobrenos12">Venha fazer parte desta família!</div>
                     <div class="maos">
                         <img src="img/SobreNós2.png" alt="">
                     </div>
@@ -171,8 +147,8 @@
         </div>
         <div class="object" id="object">
             <div id="flecha"> <img src="img/SobreNós3.png" alt="" class="flecha"></div>
-            <h1 class="obj2">Objetivo</h1>
-            <div class="texto">
+            <h1 class="obj2" id="Tsobrenos13">Objetivo</h1>
+            <div class="texto" id="Tsobrenos14">
                 O nosso principal objetivo é ajudar no processo de ensino-aprendizagem, com projetos <br> diretamente
                 educacionais, que ajudam a diminuir a desigualdade no acesso à educação e <br>fornecer esse meio tão
                 importante aos mais carentes e necessitados.
@@ -183,7 +159,7 @@
         <div class="historia-retangulo" id="historia">
             <div class="retangulo">
                 <img src="img/SobreNós4.png" alt="">
-                <h1 class="titulo1">História
+                <h1 class="titulo1" id="Tsobrenos15">História
                 </h1>
             </div>
 
@@ -192,20 +168,20 @@
                     <div class="primeiro">
                         <img src="img/historia1.png" alt="" class="img1">
                         <div class="overlay">
-                            <p class="container-texto">Primeira foto da Passatempo Educativo 23 anos atrás </p>
+                            <p class="container-texto" id="Tsobrenos16">Primeira foto da Passatempo Educativo 23 anos atrás </p>
                         </div>
                     </div>
                 </div>
-                <p class="texto1">Depois de muitos meses de pesquisa e trabalho em escolas paulistanas os projetos
+                <p class="texto1" id="Tsobrenos17">Depois de muitos meses de pesquisa e trabalho em escolas paulistanas os projetos
                     ganharam dimensão social.
                 </p>
                 <div class="container2">
                     <img src="img/historia3.png" alt="" class="img2">
                     <div class="overlay2">
-                        <p class="container-texto">Cidade de Analândia(SP) recebe show da EcoBanda</p>
+                        <p class="container-texto" id="Tsobrenos18">Cidade de Analândia(SP) recebe show da EcoBanda</p>
                     </div>
                 </div>
-                <p class="texto2">O Centro Maria Bernadette é uma Instituição mantida pela Congregação das Irmãs de
+                <p class="texto2" id="Tsobrenos19">O Centro Maria Bernadette é uma Instituição mantida pela Congregação das Irmãs de
                     São José de Chambéry que atende 300 crianças e adolescentes de cortiços e favelas de São Paulo.
                 </p>
             </div>
@@ -216,16 +192,16 @@
             <div class="etapa3">
 
                 <div class="segundo">
-                    <p class="texto3">A primeira equipe de trabalho tinha apenas três pessoas, e a iniciativa dos
+                    <p class="texto3" id="Tsobrenos20">A primeira equipe de trabalho tinha apenas três pessoas, e a iniciativa dos
                         trabalhos nesta área do lazer educacional partiu da professora de educação física Carla Ravaioli
                         e de Carlos Chinen</p>
                     <div class="container3">
                         <img src="img/historia2.png" class="img3" alt="">
                         <div class="overlay3">
-                            <p class="container-texto">Apresentação EcoBanda - Parque Estatual do Jaguará</p>
+                            <p class="container-texto" id="Tsobrenos21">Apresentação EcoBanda - Parque Estatual do Jaguará</p>
                         </div>
                     </div>
-                    <p class="texto4">
+                    <p class="texto4" id="Tsobrenos22">
                         Nossa primeira atividade foi uma Festa de Natal para 150 crianças em dezembro na Instituição
                         Colmeia, atualmente titulada de Centro Educacional Ir.Maria Bernadette, localizado na zona
                         cidade de São Paulo.
@@ -233,7 +209,7 @@
                     <div class="container4">
                         <img src="img/historia4.png" class="img4" alt="">
                         <div class="overlay4">
-                            <p class="container-texto">Congregação das Irmãs de São José de Chambéry </p>
+                            <p class="container-texto" id="Tsobrenos23">Congregação das Irmãs de São José de Chambéry </p>
                         </div>
                     </div>
                 </div>
@@ -244,11 +220,11 @@
         <div class="empresa-feliz">
             <div class="predio">
                 <img src="img/objetivoIMG.png" alt="">
-                <h1 class="empresa">Empresa Feliz</h1>
+                <h1 class="empresa" id="Tsobrenos24">Empresa Feliz</h1>
 
             </div>
             <div class="estar">
-                <h1>Partimos do pressuposto que uma empresa que se preocupa com o bem- estar de seus colaboradores tem
+                <h1 id="Tsobrenos25">Partimos do pressuposto que uma empresa que se preocupa com o bem- estar de seus colaboradores tem
                     como resultado uma equipe feliz e motivada, aumentando seus resultados e alcançando suas metas.</h1>
             </div>
             <div class="projetos">
@@ -284,84 +260,57 @@
                 </div>
             </div>
 
-            <script>
-                const carousel = document.querySelector('.carousel');
-                let currentIndex = 0;
-
-                function updateCarousel() {
-                    carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
-                }
-
-                // Função para avançar o carrossel
-                function nextSlide() {
-                    currentIndex++;
-                    if (currentIndex >= carousel.children[0].children.length - 2) {
-                        currentIndex = 0; // Volta para a primeira imagem quando atinge a última
-                    }
-                    updateCarousel();
-                }
-
-                // Função para retroceder o carrossel
-                function prevSlide() {
-                    currentIndex--;
-                    if (currentIndex < 0) {
-                        currentIndex = carousel.children[0].children.length - 3; // Vai para a última imagem quando estiver na primeira
-                    }
-                    updateCarousel();
-                }
-
-                updateCarousel(); // Inicializa o carrossel
-            </script>
+         
         </div>
         <!-- FIM CARROSEL -->
         <!--GOVERNANÇA-->
 
         <div class="governo" id="governanca">
             <div id="governa"> <img src="img/Governança.png" alt="" class="governa">
-                <h1 class="gov">Governança</h1>
+                <h1 class="gov" id="Tsobrenos26">Governança</h1>
             </div>
 
             <div class="missao">
-                <p>Nossa missão é impactar positivamente o aprendizado e o conhecimento, incentivando o ensino de
+                <p id="Tsobrenos27">Nossa missão é impactar positivamente o aprendizado e o conhecimento, incentivando o ensino de
                     maneira lúdica, contribuindo na criação de condições e oportunidades que possibilitem o
                     desenvolvimento sócio-cultural de crianças e jovens carentes, gerando transformação social.</p>
             </div>
             <!--DIRETORIA-->
             <div id="diretoria">
-                <h1 id="diretoria">Diretoria Executiva</h1>
+                <h1 class="diretoria" id="Tsobrenos28">Diretoria Executiva</h1>
             </div>
             <div class="dados">
                 <div class="presidente">
-                    <h1 class="nome1">Carlos Augusto Kobata Chinen</h1>
-                    <p class="text">Presidente</p>
+                    <h1 class="nome1" id="Tsobrenos29">Carlos Augusto Kobata Chinen</h1>
+                    <p class="text" id="Tsobrenos30">Presidente</p>
                 </div>
                 <div class="vice-presidente">
                     <div class="primeira-linha"></div>
                     <div class="let">
-                        <h1 class="nome2">Barbara Rossini</h1>
-                        <p class="text">Vice-presidente</p>
-                        <h1 class="nome2">Bruna Roberta da Silva</h1>
-                        <p class="text">Tesoureira</p>
+                        <h1 class="nome2" id="Tsobrenos31">Barbara Rossini</h1>
+                        <p class="text" id="Tsobrenos32">Vice-presidente</p>
+                        <h1 class="nome2" id="Tsobrenos33">Bruna Roberta da Silva</h1>
+                        <p class="text" id="Tsobrenos34">Tesoureira</p>
                     </div>
                 </div>
             </div>
 
             <!--DIRETORIA-->
             <div id="diretoria">
-                <h1 id="diretoria">Conselho Executivo</h1>
+                <h1 class="diretoria" id="Tsobrenos35">Conselho Executivo</h1>
             </div>
             <div class="dados">
                 <div class="presidente">
-                    <h1 class="nome1">Alexandre da Silva <br></h1>
-                    <p class="text">Presidente</p>
+                    <h1 class="nome1" id="Tsobrenos36">Alexandre da Silva <br></h1>
+                    <p class="text" id="Tsobrenos37">Presidente</p>
                 </div>
                 <div class="vice-presidente">
                     <div class="primeira-linha"></div>
                     <div class="let">
-                        <h1 class="nome2">Rafael Alves</h1>
-                        <p class="text">Conselheiro</p>
-                        <h1 class="nome2">Nayara Franco</h1>
-                        <p class="text">Conselheira</p>
+                        <h1 class="nome2" id="Tsobrenos38">Rafael Alves</h1>
+                        <p class="text" id="Tsobrenos39">Conselheiro</p>
+                        <h1 class="nome2" id="Tsobrenos40">Nayara Franco</h1>
+                        <p class="text" id="Tsobrenos41">Conselheira</p>
                     </div>
                 </div>
             </div>
@@ -390,19 +339,44 @@
             </div> -->
             <!--NOSSO ESTATUTO-->
             <div class="titulo-estatuto">
-                <h1 class="nosso-estatuto">Nosso estatuto está disponível</h1>
+                <h1 class="nosso-estatuto" id="Tsobrenos42">Nosso estatuto está disponível</h1>
                 <div class="aqui">
-                    <a href="https://passatempoeducativo.org.br/gallery/estatuto%203a.%20altera%C3%A7%C3%A3o.pdf">
+                    <a href="https://passatempoeducativo.org.br/gallery/estatuto%203a.%20altera%C3%A7%C3%A3o.pdf" id="Tsobrenos43">
                        AQUI
                     </a>
                 </div>
                 <div class="denuncia">
-                    <p>Para denúncias em sigilo utilize o canal com nossa ouvidoria@passatempoeducativo.org.br</p>
+                    <p id="Tsobrenos44">Para denúncias em sigilo utilize o canal com nossa ouvidoria@passatempoeducativo.org.br</p>
                 </div>
             </div>
         </div>
 
+        <div id="modal-menu" class="modal-menu">
+            <div class="modal-tudo">
+                <div class="comeco-menu">
+                    <div class="fechar-tudo">
+                        <div class="fechar fechar-menu" id="fecharMenu"><span>&times;</span></div>
+                    </div>
+                    <div class="imagem-menu">
+                        <img src="img/logo1.png" alt="logo">
+                    </div>
+                </div>
+                <div class="as">
+                    <a href="sobrenos.html" id="Theader13">Sobre nós</a>
+                        <a href="Voluntário.html" id="Theader14">Voluntários</a>
+                        <a href="projetos.html" id="Theader15">Projetos</a>
+                        <a href="doeAgora.html" id="Theader16">Doe agora</a>
+                        <a href="onu.html" id="Theader17">ONU 2030</a>
+                        <a href="lojinha.html" id="Theader18">Loja</a>
 
+                </div>
+                <div class="menina-menu">
+                    <img src="img/menina.png" alt="menina">
+                </div>
+            </div>
+        </div>
+
+        <div id="desfocado" class="desfocado"></div>
 
 
 
@@ -422,7 +396,7 @@
                             <img src="img/menina.png" alt="" class="menina">
                         </div>
                         <div class="rodapeTexto">
-                            <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins
+                            <p class="texto-rodape" id="TRodape1">Passatempo Educativo é uma organização não governamental, sem fins
                                 lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental
                                 e
                                 desenvolvimento do turismo sustentável.
@@ -486,12 +460,91 @@
                         </div>
                     </div>
                     <div class="direitos">
-                        <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                        <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+                        <p class="autorais" id="TRodape2">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                        <p class="direito" id="TRodape3">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
                     </div>
                 </div>
             </section>
         </footer>
+        <script>
+            $(document).ready(function () {
+            var botao = $('.a-teste');
+            var dropDown = $('.ul-imagens');
+
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
+
+        $(document).ready(function () {
+            var botao = $('.a-teste2');
+            var dropDown = $('.ul-imagens2');
+
+            botao.on('click', function (event) {
+                dropDown.stop(true, true).slideToggle();
+                event.stopPropagation();
+            });
+        });
+            function subirTexto() {
+                // Obtém a referência ao elemento de texto
+                var texto = document.getElementById('meuTexto');
+
+                // Define a margem superior fixa após a página ser carregada
+                texto.style.marginTop = '-40vh';
+
+            }
+            function abrirModal(idModal, idFechar) {
+            const modal = document.getElementById(idModal);
+            const fechar = document.getElementById(idFechar);
+            const desfocado = document.getElementById('desfocado');
+
+
+            modal.style.display = 'block';
+            desfocado.style.display = 'block';
+
+            fechar.addEventListener('click', () => {
+                modal.style.display = 'none';
+                desfocado.style.display = 'none';
+            });
+
+            desfocado.addEventListener('click', () => {
+                modal.style.display = 'none';
+                desfocado.style.display = 'none';
+            });
+        }
+        document.getElementById('menu').addEventListener('click', () => {
+            abrirModal('modal-menu', 'fecharMenu');
+            document.body.style.overflow = 'hidden';
+        });
+
+            const carousel = document.querySelector('.carousel');
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+            }
+
+            // Função para avançar o carrossel
+            function nextSlide() {
+                currentIndex++;
+                if (currentIndex >= carousel.children[0].children.length - 2) {
+                    currentIndex = 0; // Volta para a primeira imagem quando atinge a última
+                }
+                updateCarousel();
+            }
+
+            // Função para retroceder o carrossel
+            function prevSlide() {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = carousel.children[0].children.length - 3; // Vai para a última imagem quando estiver na primeira
+                }
+                updateCarousel();
+            }
+
+            updateCarousel(); // Inicializa o carrossel
+        </script>
     </body>
 
 </html>

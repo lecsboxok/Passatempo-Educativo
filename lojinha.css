@@ -65,6 +65,16 @@ input {
   outline: none;
 }
 
+.user{
+  margin-left: 30px;
+}
+
+.user i{
+  font-size: 25px;
+  color: black;
+}
+
+
 #carrinho-icon img {
   width: 60px;
   cursor: pointer;
@@ -164,6 +174,14 @@ input {
 .modo-escuro #itens-lista {
   list-style: none;
   padding: 0;
+  color: white;
+}
+
+.modo-escuro .produto{
+  background-color: rgb(52, 52, 52);
+}
+
+.modo-escuro .produto h3, .modo-escuro .produto p{
   color: white;
 }
 
@@ -648,6 +666,11 @@ input {
   transform: translateY(-50%);
 }
 
+.login i{
+  font-size: 28px;
+}
+
+
 #subir{
   position: fixed;
   right: 10px;
@@ -670,7 +693,7 @@ input {
 @media (max-width: 768px) {
   #buscar {
     flex: 100%;
-    order: 3;
+    order: 4;
     /* Altera a ordem para a terceira posição na coluna */
     margin: 20px 0 10px 0;
   }
@@ -682,8 +705,21 @@ input {
     /* Alinha o carrinho ao final da coluna */
   }
 
+  .tema{
+    order: 3;
+    margin: 0;
+  }
+
   #carrinho-itens {
     width: 100%;
+  }
+
+  #header .container{
+    margin: 0 70px;
+  }
+
+  .carrossel{
+    margin-top: 75px;
   }
 
 
