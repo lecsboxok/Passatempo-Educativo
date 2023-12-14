@@ -56,7 +56,7 @@ html{
 
 input {
   font: 400 16px 'Montserrat';
-  padding: 10px;
+  padding: 11px;
   width: 50%;
   border: 1px solid #ccc;
   border-right: 0px;
@@ -65,13 +65,28 @@ input {
   outline: none;
 }
 
-.user{
-  margin-left: 30px;
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px 0 0 ;
 }
 
-.user i{
-  font-size: 25px;
-  color: black;
+.login a{
+  text-align: center;
+  text-decoration: none;
+}
+
+.login i{
+  font-size: 20px;
+  color: rgb(148, 148, 148);
+}
+
+.login p{
+  font: 400 14px 'Montserrat';
+  color: rgb(148, 148, 148);
+  margin-top: 5px;
 }
 
 
@@ -88,7 +103,7 @@ input {
 }
 
 .tema{
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #header {
@@ -464,7 +479,7 @@ input {
 }
 
 .theme-switch {
-  --toggle-size: 12px;
+  --toggle-size: 10px;
   /* the size is adjusted using font-size,
      this is not transform scale,
      so you can choose any size */
@@ -666,9 +681,6 @@ input {
   transform: translateY(-50%);
 }
 
-.login i{
-  font-size: 28px;
-}
 
 
 #subir{
@@ -690,23 +702,33 @@ input {
 
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 900px) {
+  .logo{
+    order: 2;
+  }
   #buscar {
     flex: 100%;
-    order: 4;
+    order: 5;
     /* Altera a ordem para a terceira posição na coluna */
     margin: 20px 0 10px 0;
   }
 
   #carrinho-icon {
-    order: 2;
+    order: 4;
     /* Altera a ordem para a segunda posição na coluna */
     justify-content: flex-end;
     /* Alinha o carrinho ao final da coluna */
   }
 
-  .tema{
+  .login{
     order: 3;
+    margin: 0 5px 0 0;
+  }
+
+  .tema{
+    order: 5;
     margin: 0;
   }
 
@@ -715,7 +737,7 @@ input {
   }
 
   #header .container{
-    margin: 0 70px;
+    margin: 0 10px;
   }
 
   .carrossel{
