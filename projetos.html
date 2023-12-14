@@ -470,7 +470,8 @@
                             <img src="img/menina.png" alt="">
                         </div>
                         <div class="rodapeTexto">
-                            <p class="texto-rodape" id="TRodape1">Passatempo Educativo é uma organização não governamental, sem fins
+                            <p class="texto-rodape" id="TRodape1">Passatempo Educativo é uma organização não
+                                governamental, sem fins
                                 lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental
                                 e
                                 desenvolvimento do turismo sustentável.
@@ -534,8 +535,10 @@
                     </div>
                 </div>
                 <div class="direitos">
-                    <p class="autorais" id="TRodape2">Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                    <p class="direito" id="TRodape3">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+                    <p class="autorais" id="TRodape2">Não há intenção de violar os direitos autorais de uso de imagem.
+                    </p>
+                    <p class="direito" id="TRodape3">Copyright © 2023 Passatempo educativo. Todos os Direitos
+                        Reservados.</p>
                 </div>
             </div>
         </section>
@@ -565,7 +568,7 @@
             });
         });
 
-
+        
         function abrirModal(idModal, idFechar) {
             const modal = document.getElementById(idModal);
             const fechar = document.getElementById(idFechar);
@@ -648,9 +651,19 @@
         })
 
         document.getElementById('menu').addEventListener('click', () => {
+            const modal = document.querySelector('.modal-menu');
+            const desfocado = document.getElementById('desfocado');
+
             abrirModal('modal-menu', 'fecharMenu');
             document.body.style.overflow = 'hidden';
+            // modal.style.transform = translateX(1);
+            // modal.classList.add('active');
+            desfocado.style.display = "none"
         });
+
+        // document.getElementById('menu').addEventListener('click', function () {
+        //     document.getElementById('modal-menu').classList.toggle('active');
+        // });
 
 
         function Escolher(idioma) {

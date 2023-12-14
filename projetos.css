@@ -179,15 +179,16 @@ ul li ul li {
     z-index: 100;
 }
 
-.a-teste img{
+.a-teste img {
     width: 27px;
     transition: ease-in-out 0.3s;
 }
 
-.a-teste img:hover{
+.a-teste img:hover {
     transform: scale(0.8);
     transition: ease-in-out 0.3s;
 }
+
 /* TÉRMINO DO CABEÇALHO */
 
 /* INICIAL MENINA */
@@ -821,6 +822,8 @@ h3 {
         z-index: 200;
         width: 50%;
         overflow-y: scroll;
+        animation: fadeInLeft;
+        animation-duration: 0.6s;
     }
 
     #modal-menu .fechar {
@@ -903,7 +906,7 @@ h3 {
         padding: 0;
     }
 
-    .quiz .container{
+    .quiz .container {
         margin: 0 40px;
     }
 
@@ -971,7 +974,7 @@ h3 {
         object-fit: cover;
     }
 
-    
+
 
 
     /* RODAPÉ */
@@ -1109,8 +1112,8 @@ h3 {
 
 }
 
-@media screen and (max-width: 608px){
-    .modal-menu{
+@media screen and (max-width: 608px) {
+    .modal-menu {
         width: 100%;
     }
 
@@ -1118,21 +1121,21 @@ h3 {
         padding: 0;
     }
 
-    .form div{
+    .form div {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .form div input{
+    .form div input {
         margin-right: 0;
     }
 
-    .form div button{
+    .form div button {
         margin-top: 15px;
     }
 
-    .form span{
+    .form span {
         font-size: 35px;
     }
 
@@ -1180,9 +1183,9 @@ h3 {
         font-size: 35px;
     }
 
-    .projeto-item button{
+    .projeto-item button {
         margin-top: 150px;
     }
-    
+
 
 }
