@@ -843,14 +843,24 @@ h3 {
         margin: 25px;
     }
 
+    .imagem-2030{
+        text-align: center;
+    }
+
     .imagem-2030 img {
-        height: 20vh;
+        /* height: 20vh; */
+        width: 90%;
+    }
+
+    .texto-2030{
+        margin: 25px 0;
     }
 
     /* TEXTO SOBRE 2030 */
     .textos-sobre2030 {
         display: flex;
         flex-wrap: wrap;
+        margin: 90px 0;
     }
 
     /* CONTRIBUIÇÕES */
@@ -877,7 +887,7 @@ h3 {
 
     /* CIRCULO */
     .imagem-circulo2030 img{
-        width: 50vh;
+        width: 90%;
     }
 
     /* CONTAGEM */
@@ -887,15 +897,31 @@ h3 {
 
     /* CONTRIBUIR */
     .textoContribuir{
-        margin: 130px 0 60px 0;
+        margin: 130px 40px 60px 40px;
     }
 
     .imagemContribuir img{
-        width: 60vh;
+        width: 100%;
     }
 
     .ultima{
         margin-bottom: 100px;
+    }
+
+    .objetivoContribuir{
+        margin: 0;
+    }
+
+    .textMemoria{
+        font-size: 6vh;
+    }
+
+    .text2Memoria{
+        font-size: 4vh;
+    }
+
+    .jogoMemoria a{
+        font-size: 3.5vh;
     }
 
 }
