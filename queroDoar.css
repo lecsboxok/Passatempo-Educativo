@@ -406,10 +406,7 @@ h2 {
     margin-top: 0.15vh;
 }
 
-#form2{
-    display: none;
 
-}
 
 .tudo-etapa-3{
     margin: 15vh;
@@ -423,7 +420,7 @@ h2 {
 }
 
 .nomes-icones p {
-    margin-top: -1.15vh;
+    margin-top: -0.15vh;
     margin-left: 2vh;
 }
 
@@ -440,8 +437,15 @@ h2 {
 
 
 
+/* nome parte do botao com texto no inicio 1 2 3 as fases */
+.dados-pagamento-texto{
+    color: rgba(251, 38, 115, 1);;
+}
+
 
 @media screen and (max-width: 1200px){
+
+
 
     .imagem{
         display: none;
@@ -461,13 +465,23 @@ h2 {
 }
 
 #Forms input{
-width: 350px;
+width: 250px;
+align-items: center;
+}
+
+.botoes-dados-pessoais button{
+    width:210px ;
 }
 
 .tudo-etapa-1{
     margin-top: 10vh;
+    width: 100%;
 }
 
+.conferir-idade{
+    display: flex;
+  
+}
 .texto-dados-etapas{
 margin-left: 1vh;
 }

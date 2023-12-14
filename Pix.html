@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="queroDoar.css">
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -19,11 +20,17 @@
 
                 .cpf-form-pix i {
                     margin-top: 0.35vh;
+
+                  
                 }
 
-                .fa-pix {
-                    cursor: pointer;
-                }
+                .nomes-icones i{
+                    cursor: pointer;   
+
+                    }
+                    .nomes-icones a{
+                        color: black;
+                    }
             </style>
 
             <div class="pix-formulario" id="formPix">
@@ -41,7 +48,7 @@
                     <div class="texto-dados-etapas">
                         <p>Dados pessoais</p>
 
-                        <p>Dados de pagamento</p>
+                        <p class="dados-pagamento-texto6">Dados de pagamento</p>
 
                         <p>Doação concluída</p>
                     </div>
@@ -53,7 +60,7 @@
 
 
                                 <div class="nomes-icones">
-                                    <i class="fa-solid fa-credit-card fa-xl    style=" color: black;" id="cartao"></i>
+                                 <a href="form-pagament0.html">   <i class="fa-solid fa-credit-card fa-xl    style=" color: black;" id="cartao"></i></a>
                                     <p>Cartão</p>
                                 </div>
 
@@ -95,8 +102,8 @@
 
 
                         <div class="botoes-dados-pessoais">
-                            <button class="button-continuar-pagamento" onclick="trocarFormulario(4)">Continuar para
-                                conclusão</button>
+                         <a href="conclusao-queroDoar.html">  <button class="button-continuar-pagamento" onclick="trocarFormulario(4)">Continuar para
+                                conclusão</button></a> 
 
                             <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
                                 inicial</a>
