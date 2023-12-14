@@ -169,9 +169,18 @@ ul li ul li {
 
 .ul-imagens2 {
     display: none;
-    padding-left: 2px;
     position: fixed;
     z-index: 100;
+}
+
+.a-teste img {
+    width: 27px;
+    transition: ease-in-out 0.3s;
+}
+
+.a-teste img:hover {
+    transform: scale(0.8);
+    transition: ease-in-out 0.3s;
 }
 
 /* TÉRMINO DO CABEÇALHO */
@@ -199,16 +208,44 @@ p {
     text-align: left;
 }
 
-
+.imagem-volunt img{
+   width: 100%;
+}
 .imagem-voluntario {
     /* imagem de voluntário logo em segida do cabeçalho */
-    /* width: 100%;
-    height: auto;
+   
+    /* height: auto;
     margin-top: 60px; */
-    background: url(img/principal-voluntario.jpg);
     background-size: cover;
     height: 70vh;
 }
+
+.titulo-principal {
+    
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 73px;
+    letter-spacing: 0em;
+  
+
+}
+.titulo-dois-principal{
+    text-align: left;
+    margin-top: 2vh;
+    font-family:Forum ;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.div {
+    text-align: left;
+    margin-top: -48vh;
+    margin-left: 16vh;
+   
+}
+
 
 
 /* título e texto do programa voluntariado */
@@ -619,6 +656,11 @@ footer {
 
 @media screen and (max-width: 1065px) {
 
+
+
+
+
+
     /* CABEÇALHO */
     #cabecalho {
         width: 100%;
@@ -914,6 +956,7 @@ footer {
 
     .imagem-mao-coracao {
         width: 230px;
+        margin-top: -1vh;
     }
 
     #carrossel {
@@ -978,14 +1021,40 @@ footer {
         margin-top: 80px;
     }
 
-    .imagem-voluntario {
-        background-position-x: -140px;
-    }
-
+ 
 }
 
 @media screen and (max-width: 608px) {
     .modal-menu {
         width: 100%;
+
+
+
+
     }
+
+
+
+
+
+}
+@media screen and (max-width: 1002px) {
+.imagem-volunt{
+    padding-top: 12vh;
+}
+
+
+.div{
+    margin-top: -24vh;
+   
+}
+.titulo-principal{
+    font-size: 17px;
+    text-align: left;
+}
+
+.titulo-dois-principal{
+    font-size: 10px;
+    margin-top: -2vh;
+}
 }

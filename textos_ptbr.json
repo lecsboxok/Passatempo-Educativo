@@ -58,14 +58,8 @@
     "Tprojetos35": "Se inscreva para receber notícias sobre a Passatempo Educativo.",
     "Tprojetos36": "Escreva seu email",
     "Tprojetos37": "Inscreva-se",
-
-
-
-
-
-
     "Tvoluntarios1": "Programa de Voluntariado",
-    "Tvoluntarios2":"Quer ser voluntário na Passatempo Educativo? Junte-se ao programa de voluntariado e ajude a construir um futuro mais brilhante através da educação. É uma oportunidade incrível para fazer a diferença na vida das crianças e promover a educação de forma divertida.",
+    "Tvoluntarios2": "Quer ser voluntário na Passatempo Educativo? Junte-se ao programa de voluntariado e ajude a construir um futuro mais brilhante através da educação. É uma oportunidade incrível para fazer a diferença na vida das crianças e promover a educação de forma divertida.",
     "Tvoluntarios3": "Como funciona?",
     "Tvoluntarios4": "Preencha o formulário",
     "Tvoluntarios5": "Insira seus dados no formulário abaixo.",
@@ -79,7 +73,24 @@
     "Tvoluntarios13": "Sentido de propósito",
     "Tvoluntarios14": "Desenvolvimento pessoal",
     "Tvoluntarios15": "Melhoria da saúde mental",
-    "Tvoluntarios16": "Experiência de carreira",
+    "Tvoluntarios16": "Sentimento de pertencimento",
+    "Tvoluntarios17": "Experiência de carreira",
+    "Tvoluntarios18": "Voluntariado",
+    "Tvoluntarios19": "Lutamos por um mundo melhor!",
+    "botaoNome": "Nome",
+    "botaoEmail": "Email",
+    "Mensagem": "Digite sua Mensagem:",
+    "btn": "Enviar",
+    "saibaMais": "Preencher formulário",
+
+
+
+    "TqueroDoar1": "Seja um doador e mude a vida de",
+    "TqueroDoar2": "uma criança!",
+    "TqueroDoar3": "Aqui na Passatempo Educativo você doa a quantia que quiser.",
+    "TqueroDoar4": "Escolha o valor da sua doação.",
+    "TqueroDoar5": "Quero doar agora",
+
 
     "Theader1": "Sobre Nós",
     "Theader2": "Projetos",
@@ -192,7 +203,4 @@
 "Tprincipal26": "Seja um Voluntário",
 "Tprincipal27": "Saiba mais",
 "Tprincipal28": "Parceiros da Passatempo Educativo"
-
-
-
 }

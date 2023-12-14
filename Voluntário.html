@@ -87,16 +87,22 @@
     <main>
         <section id="comeco-voluntario">
             <div class="imagem-voluntario">
-
+             <div class="imagem-volunt">  <img src="img/imgvoltunt.png" alt=""></div> 
+                <div class="div">
+                    <h1 class="titulo-principal" id="Tvoluntarios18">Voluntariado</h1>
+                    <h4 class="titulo-dois-principal" id="Tvoluntarios19">lutamos por um mundo melhor!</h4>
+                </div>
             </div>
-            <!-- <img class="imagem-voluntario" src="img/principal-voluntario.jpg" alt=""> -->
+
+
 
             <div class="programa-voluntario">
                 <div class="texto-programa-volun">
 
                     <h2 id="Tvoluntarios1" class="titulo">Programa de Voluntariado</h2>
 
-                    <p id="Tvoluntarios2" class="lee">Quer ser voluntário na Passatempo Educativo? "Junte-se ao programa de voluntariado e
+                    <p id="Tvoluntarios2" class="lee">Quer ser voluntário na Passatempo Educativo? "Junte-se ao programa
+                        de voluntariado e
                         ajude a
                         construir um futuro mais brilhante através da educação. É uma oportunidade incrível para
                         fazer a
@@ -139,13 +145,13 @@
                                 <img src="img/numero-2-voluntario.png" alt="">
                                 <h3 id="Tvoluntarios6" class="tt">Aguarde o contato</h3>
                             </div>
-                            <p  id="Tvoluntarios7" class="texto">Espere a Passatempo Educativo entrar
+                            <p id="Tvoluntarios7" class="texto">Espere a Passatempo Educativo entrar
                             </p>
                             <p id="Tvoluntarios8" class="textoo">em contato com você referente ao</p>
                             <p id="Tvoluntarios9" class="textoo"> voluntariado.</p>
                         </div>
 
-                        <button id="saibaMais">Preencher formulário</button>
+                        <button id="saibaMais" >Preencher formulário</button>
 
                         <div id="modal" class="modal">
                             <h2 id="Tvoluntarios10">Seja voluntário da Passatempo Educativo</h2>
@@ -213,7 +219,7 @@
                                     <h5 id="Tvoluntarios17">Experiência de carreira</h5>
                                 </li>
                             </div>
-                            <!-- Adicione mais imagens conforme necessário -->
+                            
                         </ul>
 
 
@@ -270,7 +276,7 @@
                             <img src="img/menina.png" alt="">
                         </div>
                         <div class="rodapeTexto">
-                            <p class="texto-rodape">Passatempo Educativo é uma organização não governamental, sem fins
+                            <p class="texto-rodape" id="TRodape1">Passatempo Educativo é uma organização não governamental, sem fins
                                 lucrativos, que desenvolve projetos na área educacional, cultural, preservação ambiental
                                 e
                                 desenvolvimento do turismo sustentável.
@@ -334,8 +340,8 @@
                     </div>
                 </div>
                 <div class="direitos">
-                    <p class="autorais">Não há intenção de violar os direitos autorais de uso de imagem.</p>
-                    <p class="direito">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
+                    <p class="autorais" id="TRodape2">Não há intenção de violar os direitos autorais de uso de imagem.</p>
+                    <p class="direito"  id="TRodape3">Copyright © 2023 Passatempo educativo. Todos os Direitos Reservados.</p>
                 </div>
             </div>
         </section>
@@ -454,36 +460,69 @@
 
         function Escolher(idioma) {
 
-fetch(`textos_${idioma}.json`)
-    .then(resposta => resposta.json())
-    .then(texto => {
+            fetch(`textos_${idioma}.json`)
+                .then(resposta => resposta.json())
+                .then(texto => {
 
 
-  
-        document.getElementById('Tvoluntarios1').innerHTML = texto.Tvoluntarios1;
-        document.getElementById('Tvoluntarios2').innerHTML = texto.Tvoluntarios2;
-        document.getElementById('Tvoluntarios3').innerHTML = texto.Tvoluntarios3;
-        document.getElementById('Tvoluntarios4').innerHTML = texto.Tvoluntarios4;
-        document.getElementById('Tvoluntarios5').innerHTML = texto.Tvoluntarios5;
-        document.getElementById('Tvoluntarios6').innerHTML = texto.Tvoluntarios6;
-        document.getElementById('Tvoluntarios7').innerHTML = texto.Tvoluntarios7;
-        document.getElementById('Tvoluntarios8').innerHTML = texto.Tvoluntarios8;
-        document.getElementById('Tvoluntarios9').innerHTML = texto.Tvoluntarios9;
-        document.getElementById('Tvoluntarios10').innerHTML = texto.Tvoluntarios10;
-        document.getElementById('Tvoluntarios11').innerHTML = texto.Tvoluntarios11;
-        document.getElementById('Tvoluntarios12').innerHTML = texto.Tvoluntarios12;
-        document.getElementById('Tvoluntarios13').innerHTML = texto.Tvoluntarios13;
-        document.getElementById('Tvoluntarios14').innerHTML = texto.Tvoluntarios14;
-        document.getElementById('Tvoluntarios15').innerHTML = texto.Tvoluntarios15;
-        document.getElementById('Tvoluntarios16').innerHTML = texto.Tvoluntarios16;
+
+                    document.getElementById('Tvoluntarios1').innerHTML = texto.Tvoluntarios1;
+                    document.getElementById('Tvoluntarios2').innerHTML = texto.Tvoluntarios2;
+                    document.getElementById('Tvoluntarios3').innerHTML = texto.Tvoluntarios3;
+                    document.getElementById('Tvoluntarios4').innerHTML = texto.Tvoluntarios4;
+                    document.getElementById('Tvoluntarios5').innerHTML = texto.Tvoluntarios5;
+                    document.getElementById('Tvoluntarios6').innerHTML = texto.Tvoluntarios6;
+                    document.getElementById('Tvoluntarios7').innerHTML = texto.Tvoluntarios7;
+                    document.getElementById('Tvoluntarios8').innerHTML = texto.Tvoluntarios8;
+                    document.getElementById('Tvoluntarios9').innerHTML = texto.Tvoluntarios9;
+                    document.getElementById('Tvoluntarios10').innerHTML = texto.Tvoluntarios10;
+                    document.getElementById('Tvoluntarios11').innerHTML = texto.Tvoluntarios11;
+                    document.getElementById('Tvoluntarios12').innerHTML = texto.Tvoluntarios12;
+                    document.getElementById('Tvoluntarios13').innerHTML = texto.Tvoluntarios13;
+                    document.getElementById('Tvoluntarios14').innerHTML = texto.Tvoluntarios14;
+                    document.getElementById('Tvoluntarios15').innerHTML = texto.Tvoluntarios15;
+                    document.getElementById('Tvoluntarios16').innerHTML = texto.Tvoluntarios16;
+                    document.getElementById('Tvoluntarios17').innerHTML = texto.Tvoluntarios17;
+                    document.getElementById('Tvoluntarios18').innerHTML = texto.Tvoluntarios18;
+                    document.getElementById('Tvoluntarios19').innerHTML = texto.Tvoluntarios19;
+                    document.getElementById('btn').innerHTML = texto.btn;
+                    document.getElementById('saibaMais').innerHTML = texto.saibaMais;
+                    document.getElementById('botao-nome').placeholder = texto.botaoNome;
+                    document.getElementById('botao-email').placeholder = texto.botaoEmail;
+                    document.getElementById('Mensagem').placeholder = texto.Mensagem;
+
+
+                   
+
+
+                    // var elementoHtml = document.querySelector('html');
+                    // elementoHtml.setAttribute('lang', texto.lang);
        
-
- 
-        // var elementoHtml = document.querySelector('html');
-        // elementoHtml.setAttribute('lang', texto.lang);
-    })
-    .catch(error => console.error('Erro buscando textos:', error));
-}
+                    // PARTE DO CABEÇALHO E RODAPÉ
+                    document.getElementById('Theader1').innerHTML = texto.Theader1;
+                    document.getElementById('Theader2').innerHTML = texto.Theader2;
+                    document.getElementById('Theader3').innerHTML = texto.Theader3;
+                    document.getElementById('Theader4').innerHTML = texto.Theader4;
+                    document.getElementById('Theader5').innerHTML = texto.Theader5;
+                    document.getElementById('Theader6').innerHTML = texto.Theader6;
+                    document.getElementById('Theader7').innerHTML = texto.Theader7;
+                    document.getElementById('Theader8').innerHTML = texto.Theader8;
+                    document.getElementById('Theader9').innerHTML = texto.Theader9;
+                    document.getElementById('Theader10').innerHTML = texto.Theader10;
+                    document.getElementById('Theader11').innerHTML = texto.Theader11;
+                    document.getElementById('Theader12').innerHTML = texto.Theader12;
+                    document.getElementById('Theader13').innerHTML = texto.Theader13;
+                    document.getElementById('Theader14').innerHTML = texto.Theader14;
+                    document.getElementById('Theader15').innerHTML = texto.Theader15;
+                    document.getElementById('Theader16').innerHTML = texto.Theader16;
+                    document.getElementById('Theader17').innerHTML = texto.Theader17;
+                    document.getElementById('Theader18').innerHTML = texto.Theader18;
+                    document.getElementById('TRodape1').innerHTML = texto.TRodape1;
+                    document.getElementById('TRodape2').innerHTML = texto.TRodape2;
+                    document.getElementById('TRodape3').innerHTML = texto.TRodape3;
+                })
+                .catch(error => console.error('Erro buscando textos:', error));
+        }
 
 
     </script>

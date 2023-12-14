@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="queroDoar.css">
 </head>
+
 <body>
-      <!-- PIX -->
+    
 
-
-      <style>
+<!-- PIX -->
+    <style>
         .pix-formulario {
             display: flex;
         }
@@ -20,32 +22,49 @@
         .cpf-form-pix i {
             margin-top: 0.35vh;
 
-          
+
         }
 
-        #cartao i{
-            cursor: pointer;   
-  
-            }
-            
-            #cartao a{
-                color: black;
-            }
-#cartao p{
-    margin-top: -0.95vh;
-    margin-left: 0.75vh;
+        #cartao i {
+            cursor: pointer;
+
+        }
+
+        #cartao a {
+            color: black;
+        }
+
+        #cartao p {
+            margin-top: -0.95vh;
+            margin-left: 0.75vh;
+            font-family: Manrope;
+        }
+
+        #cartao {
+            display: flex;
+
+
+        }
+
+        #pix {
+
+display: flex;
+
+        }
+#pix i{
+    margin-top: 1vh;
+}
+
+#pix p{
+    margin-left: 1vh;
     font-family: Manrope;
 }
-            #cartao {
-           display: flex;
 
-           
-            }
     </style>
 
     <div class="pix-formulario">
         <div class="imagem"> <img src="img/ImgDoações0.2.png" alt=""></div>
-        <div class="tudo-etapa-2" >
+        <div class="tudo-etapa-2">
             <div class="segunda-etapa">
                 <button class="button">1</button>
                 <div class="linha1"></div>
@@ -69,13 +88,13 @@
                     <div class="icones-de-pagamento">
 
 
-                        <div id="cartao">
-                         <a href="form-pagament0.html">   <i class="fa-solid fa-credit-card fa-xl    style=" color: black;" id="cartao"></i></a>
+                        <div id="cartao" class="cartao">
+                            <a href="form-pagament0.html"> <i class="fa-solid fa-credit-card fa-xl"  id="cartao" style="color: black;"></i></a>
                             <p>Cartão</p>
                         </div>
 
 
-                        <div class="pix">
+                        <div id="pix" >
                             <i class="fa-brands fa-pix fa-xl" id="iconeTrocarFormulario" class="icone"
                                 style="color:  rgb(104, 189, 241)"></i>
                             <p>Pix</p>
@@ -112,8 +131,9 @@
 
 
                 <div class="botoes-dados-pessoais">
-                 <a href="conclusao-queroDoar.html">  <button class="button-continuar-pagamento" onclick="trocarFormulario(4)">Continuar para
-                        conclusão</button></a> 
+                    <a href="conclusao-queroDoar.html"> <button class="button-continuar-pagamento"
+                            onclick="trocarFormulario(4)">Continuar para
+                            conclusão</button></a>
 
                     <a class="button-voltar-pagina-inicial " href="doeAgora.html">Voltar para a Página
                         inicial</a>
@@ -128,4 +148,5 @@
         </div>
     </div>
 </body>
+
 </html>
