@@ -544,6 +544,71 @@
             }
 
             updateCarousel(); // Inicializa o carrossel
+
+
+            function Escolher(idioma) {
+
+fetch(`textos_${idioma}.json`)
+    .then(resposta => resposta.json())
+    .then(texto => {
+
+
+  
+        document.getElementById('Tsobrenos1').innerHTML = texto.Tsobrenos1;
+        document.getElementById('Tsobrenos2').innerHTML = texto.Tsobrenos2;
+        document.getElementById('Tsobrenos3').innerHTML = texto.Tsobrenos3;
+        document.getElementById('Tsobrenos4').innerHTML = texto.Tsobrenos4;
+        document.getElementById('Tsobrenos5').innerHTML = texto.Tsobrenos5;
+        document.getElementById('Tsobrenos6').innerHTML = texto.Tsobrenos6;
+        document.getElementById('Tsobrenos7').innerHTML = texto.Tsobrenos7;
+        document.getElementById('Tsobrenos8').innerHTML = texto.Tsobrenos8;
+        document.getElementById('Tsobrenos9').innerHTML = texto.Tsobrenos9;
+        document.getElementById('Tsobrenos10').innerHTML = texto.Tsobrenos10;
+        document.getElementById('Tsobrenos11').innerHTML = texto.Tsobrenos11;
+        document.getElementById('Tsobrenos12').innerHTML = texto.Tsobrenos12;
+        document.getElementById('Tsobrenos13').innerHTML = texto.Tsobrenos13;
+        document.getElementById('Tsobrenos14').innerHTML = texto.Tsobrenos14;
+        document.getElementById('Tsobrenos15').innerHTML = texto.Tsobrenos15;
+        document.getElementById('Tsobrenos16').innerHTML = texto.Tsobrenos16;
+        document.getElementById('Tsobrenos17').innerHTML = texto.Tsobrenos17;
+        document.getElementById('Tsobrenos18').innerHTML = texto.Tsobrenos18;
+        document.getElementById('Tsobrenos19').innerHTML = texto.Tsobrenos19;
+        document.getElementById('Tsobrenos20').innerHTML = texto.Tsobrenos20;
+        document.getElementById('Tsobrenos21').innerHTML = texto.Tsobrenos21;
+        document.getElementById('Tsobrenos22').innerHTML = texto.Tsobrenos22;
+        document.getElementById('Tsobrenos23').innerHTML = texto.Tsobrenos23;
+        document.getElementById('Tsobrenos24').innerHTML = texto.Tsobrenos24;
+        document.getElementById('Tsobrenos25').innerHTML = texto.Tsobrenos25;
+        document.getElementById('projetos').innerHTML = texto.projetos;
+        document.getElementById('Tsobrenos26').innerHTML = texto.Tsobrenos26;
+        document.getElementById('Tsobrenos27').innerHTML = texto.Tsobrenos27;
+        document.getElementById('Tsobrenos28').innerHTML = texto.Tsobrenos28;
+        document.getElementById('Tsobrenos29').innerHTML = texto.Tsobrenos29;
+        document.getElementById('Tsobrenos30').innerHTML = texto.Tsobrenos30;
+        document.getElementById('Tsobrenos31').innerHTML = texto.Tsobrenos31;
+        document.getElementById('Tsobrenos32').innerHTML = texto.Tsobrenos32;
+        document.getElementById('Tsobrenos33').innerHTML = texto.Tsobrenos33;
+        document.getElementById('Tsobrenos34').innerHTML = texto.Tsobrenos34;
+        document.getElementById('Tsobrenos35').innerHTML = texto.Tsobrenos35;
+        document.getElementById('Tsobrenos36').innerHTML = texto.Tsobrenos36;
+        document.getElementById('Tsobrenos37').innerHTML = texto.Tsobrenos37;
+        document.getElementById('Tsobrenos38').innerHTML = texto.Tsobrenos38;
+        document.getElementById('Tsobrenos39').innerHTML = texto.Tsobrenos39;
+        document.getElementById('Tsobrenos40').innerHTML = texto.Tsobrenos40;
+        document.getElementById('Tsobrenos41').innerHTML = texto.Tsobrenos41;
+        document.getElementById('Tsobrenos42').innerHTML = texto.Tsobrenos42;
+        document.getElementById('Tsobrenos43').innerHTML = texto.Tsobrenos43;
+        document.getElementById('Tsobrenos44').innerHTML = texto.Tsobrenos44;
+
+
+ 
+        // var elementoHtml = document.querySelector('html');
+        // elementoHtml.setAttribute('lang', texto.lang);
+    })
+    .catch(error => console.error('Erro buscando textos:', error));
+}
+            
+
         </script>
     </body>
 
