@@ -175,9 +175,18 @@ ul li ul li {
 
 .ul-imagens2 {
     display: none;
-    padding-left: 2px;
     position: fixed;
     z-index: 100;
+}
+
+.a-teste img{
+    width: 27px;
+    transition: ease-in-out 0.3s;
+}
+
+.a-teste img:hover{
+    transform: scale(0.8);
+    transition: ease-in-out 0.3s;
 }
 
 /* TÉRMINO DO CABEÇALHO */
@@ -252,8 +261,7 @@ p{
 .btnn{ 
     
     margin-top: 10vh;
-   
-    width: 235.13px;
+    width: 275.13px;
     height:48.34px;
     border-radius: 27px;
     text-align: center;
@@ -298,6 +306,7 @@ p{
 .rodapeCima {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -331,10 +340,12 @@ p{
 
 .texto-rodape {
     font: 400 20px 'Montserrat', sans-serif;
+    text-align: justify;
 }
 
 .rodapeTexto {
     text-align: justify;
+    width: 33rem;
 }
 
 .enderecoTexto {
@@ -388,11 +399,12 @@ p{
 }
 
 .autorais {
-    font: 300 16px 'Montserrat', serif;
+    font: 300 2vh 'Montserrat', serif;
+    margin-bottom: 5px;
 }
 
 .direito {
-    font: 300 20px 'Montserrat', serif;
+    font: 300 2.5vh 'Montserrat', serif;
     margin-bottom: 10px;
 }
 
@@ -418,8 +430,15 @@ footer {
 
 
 
-@media screen and (max-width: 1065px) {
+@media screen and (max-width: 1200px) {
 
+
+.comeco{
+    padding-top:13vh ;
+}
+.btn{
+margin: 2vh;
+}
     /* CABEÇALHO */
     #cabecalho {
         width: 100%;
@@ -568,10 +587,153 @@ footer {
         width: 140px;
     }
 
+
+
+
+
+    /* RODAPÉ */
+
+    #contato {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rodapeCima {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoRodape {
+        text-align: center;
+        width: 100px;
+        margin-left: 31vw;
+    }
+
+    #contato .menina img {
+        margin-right: 100px;
+        width: 120px;
+    }
+
+    #contato .redes {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        margin: 15px 0;
+    }
+
+    .redes {
+        width: 100%;
+    }
+
+    .redes img {
+        width: 35px;
+        padding: 5px;
+        padding-left: 3px;
+    }
+
+    .icone:hover {
+        width: 40px;
+        transition: 0.5s;
+        filter: brightness(50%);
+    }
+
+    .texto-rodape {
+        padding: 5px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .logoRodape img {
+        width: 120px;
+    }
+
+    .rodapeTexto,
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rodapeTexto {
+        width: 100%;
+    }
+
+    .enderecoTexto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .endereco {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enderecoTexto img {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .textoMaps {
+        font: 400 14px 'Montserrat', sans-serif;
+    }
+
+    .imgMaps {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rodape-lado1 {
+        width: 100%;
+    }
+
+    .rodape-lado2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imgMaps img {
+        border-radius: 10px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .amigo {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .amigo img {
+        width: 270px;
+    }
+
+    .direitos {
+        width: 100%;
+        margin-top: 90px;
+    }
+
 }
 
 @media screen and (max-width: 608px){
     .modal-menu{
         width: 100%;
     }
+
+
+
+
+    
+    /* RODAPÉ */
+
+    
 }
