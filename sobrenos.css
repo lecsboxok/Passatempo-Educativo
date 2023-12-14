@@ -204,13 +204,20 @@ body {
 }
 
 #meuTexto {
-    margin-top: 800px;
+
+    
+
+    animation:bounceInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    /* margin-top: 0px; */
     /* Um espaço inicial para o texto */
-    transition: margin-top 1s ease;
     /* Adiciona uma transição suave */
     position: absolute;
-    top: 70vh;
-    left: 28%;
+    /* position: relative; */
+    top: 30vh;
+    /* left: 28%; */
+    margin: auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,7 +226,7 @@ body {
 }
 
 .le {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     text-align: center;
     color: white;
     font-family: Montserrat;
@@ -267,9 +274,7 @@ body {
     padding: 50px 120px;
 
 }
-.lets{
-    margin: -200px 200px 0;
-}
+
 .quem {
     font: 300 30px 'Montserrat', sans-serif;
     text-align: center;
@@ -1143,19 +1148,21 @@ height: 300px;
 top: 45px;
 }
 #meuTexto {
-    margin-top: 1000px;
+    
+    animation:bounceInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    margin-top: -100px;
     /* Um espaço inicial para o texto */
-    transition: margin-top 1s ease;
     /* Adiciona uma transição suave */
     z-index: 99;
     position: absolute;
-    top: 40vh;
-    left: 15%;
+    top: 20vh;
+    /* left: 15%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    text-align: center;
 }
 
 .le {
@@ -1163,7 +1170,8 @@ top: 45px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
-  margin-top: 130px;
+  margin-top: 70px;
+  text-align: center;
 
 
 
@@ -1175,6 +1183,7 @@ top: 45px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
 
 
 }
@@ -1186,6 +1195,7 @@ top: 45px;
     font-size: 18px;
     font-weight: 700;
     margin-left: 0px;
+    text-align: center;
   
 }
 
@@ -1209,7 +1219,9 @@ top: 45px;
     padding: 0;
     margin: 0;   
     width: 280px;
-    margin-top: 30px;
+    margin-top: 120px;
+    
+
   
     
     
@@ -1219,6 +1231,8 @@ top: 45px;
     width: 100%;
     margin: -110px 100px 0;
     text-align: center;
+    justify-content: center;
+    display: flex;
 }
 .quem {
     font: 300 30px 'Montserrat', sans-serif;
@@ -1522,7 +1536,7 @@ width: 300px;
 }
 
 /*Imagens*/
-ul li .carrosel-11{
+/* ul li .carrosel-11{
     width: 50%;
     
 }
@@ -1531,7 +1545,8 @@ width: 50%;
 }
 ul li .carrosel-10{
     width: 50%;
-}
+} */
+
 /*FIM CARROSEL */
 
 
