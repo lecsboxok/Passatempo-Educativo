@@ -383,7 +383,27 @@ body{
     .pagina-principal{
        margin-left: -30px
      }
-    
+    .app h1{
+        margin-left: 5px;
+    }
+
+    .restart-button {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 1em;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+        margin-left: 200px;
+      }
+      
+      .restart-button:hover {
+        background-color: #555;
+      }
+      
 }
 
 
