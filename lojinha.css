@@ -697,9 +697,258 @@ input {
   color: #FB2673;
 }
 
+/* RODAPÉ */
+#contato {
+  background: rgba(255, 228, 133, 0.74);
+  padding: 73px 0;
+  padding-bottom: 15px;
+}
+
+#contato .conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rodapeCima {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rodape-lado1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 70px;
+}
+
+.logoRodape {
+  margin-left: 135px;
+}
+
+.redes {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.icone {
+  width: 55px;
+  padding: 9px;
+}
+
+.icone:hover {
+  width: 62px;
+  transition: 0.5s;
+  filter: brightness(50%);
+}
+
+.texto-rodape {
+  font: 400 20px 'Montserrat', sans-serif;
+}
+
+.rodapeTexto {
+  text-align: justify;
+  width: 33rem;
+}
+
+.enderecoTexto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-right: 15px;
+}
+
+.iconMaps {
+  margin-right: 20px;
+}
+
+.textoMaps {
+  font: 400 20px 'Montserrat', sans-serif;
+}
+
+.rodape-lado2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.logoRodape img {
+  width: 170px;
+}
+
+.menina img {
+  width: 180px;
+}
+
+.imgMaps img {
+  width: 380px;
+  border-radius: 10px;
+}
+
+.imgMaps {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.direitos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.autorais {
+  font: 300 2vh 'Montserrat', serif;
+  margin-bottom: 5px;
+}
+
+.direito {
+  font: 300 2.5vh 'Montserrat', serif;
+  margin-bottom: 10px;
+}
 
 
+@media screen and (max-width: 1200px) {
+/* RODAPÉ */
 
+#contato {
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.rodapeCima {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoRodape {
+  text-align: center;
+  width: 100px;
+  margin-left: 100px;
+}
+
+#contato .menina img {
+  margin-right: 100px;
+  width: 120px;
+}
+
+#contato .redes {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 15px 0;
+}
+
+.redes {
+  width: 100%;
+}
+
+.redes img {
+  width: 35px;
+  padding: 5px;
+  padding-left: 3px;
+}
+
+.icone:hover {
+  width: 40px;
+  transition: 0.5s;
+  filter: brightness(50%);
+}
+
+.texto-rodape {
+  padding: 5px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.logoRodape img {
+  width: 120px;
+}
+
+.rodapeTexto,
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+.rodapeTexto {
+  width: 100%;
+}
+
+.enderecoTexto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.endereco {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enderecoTexto img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.textoMaps {
+  font: 400 14px 'Montserrat', sans-serif;
+}
+
+.imgMaps {
+  display: flex;
+  justify-content: center;
+}
+
+.rodape-lado1 {
+  width: 100%;
+}
+
+.rodape-lado2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgMaps img {
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.amigo {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.amigo img {
+  width: 270px;
+}
+
+.direitos {
+  width: 100%;
+  margin-top: 90px;
+}
+
+}
 
 
 
