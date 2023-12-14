@@ -177,12 +177,12 @@ ul li ul li {
     z-index: 100;
 }
 
-.a-teste img{
+.a-teste img {
     width: 27px;
     transition: ease-in-out 0.3s;
 }
 
-.a-teste img:hover{
+.a-teste img:hover {
     transform: scale(0.8);
     transition: ease-in-out 0.3s;
 }
@@ -205,10 +205,12 @@ body {
 
 #meuTexto {
 
-    
 
-    animation:bounceInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+
+    animation: bounceInUp;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
     /* margin-top: 0px; */
     /* Um espaço inicial para o texto */
     /* Adiciona uma transição suave */
@@ -232,8 +234,8 @@ body {
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
- 
-  
+
+
 
 }
 
@@ -243,7 +245,7 @@ body {
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
- 
+
 }
 
 .dif {
@@ -252,7 +254,7 @@ body {
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
- 
+
 }
 
 .linha {
@@ -280,34 +282,40 @@ body {
     text-align: center;
     margin-top: 100px;
 }
-.preto{
+
+.preto {
     font: 500 30px 'Montserrat', sans-serif;
 }
-.azul{
+
+.azul {
     font: 700 30px 'Montserrat', sans-serif;
     color: #26B2F4;
 }
-.historia-sobre{
+
+.historia-sobre {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
-.obj{
+
+.obj {
     background-color: #fff;
     border-radius: 10px;
     width: 180px;
     height: 50px;
     font: 400 20px 'Montserrat', sans-serif;
     margin-top: 80px;
- border: 1px solid;
+    border: 1px solid;
 }
-.obj:hover{
+
+.obj:hover {
     background-color: #EFFAFF;
-    border: 1px solid #26B2F4;  
+    border: 1px solid #26B2F4;
 }
-.histo{
+
+.histo {
     background-color: #FFF;
     border-radius: 10px;
     width: 180px;
@@ -316,11 +324,13 @@ body {
     margin-top: 80px;
     border: 1px solid;
 }
-.histo:hover{
+
+.histo:hover {
     background-color: #EFFAFF;
-    border: 1px solid #26B2F4;  
+    border: 1px solid #26B2F4;
 }
-.emprefeliz{
+
+.emprefeliz {
     background-color: #FFF;
     border-radius: 10px;
     width: 180px;
@@ -329,11 +339,13 @@ body {
     margin-top: 80px;
     border: 1px solid;
 }
-.emprefeliz:hover{
+
+.emprefeliz:hover {
     background-color: #EFFAFF;
-    border: 1px solid #26B2F4;  
+    border: 1px solid #26B2F4;
 }
-.governanca{
+
+.governanca {
     background-color: #FFF;
     border-radius: 10px;
     width: 180px;
@@ -342,126 +354,148 @@ body {
     margin-top: 80px;
     border: 1px solid;
 }
-.governanca:hover{
+
+.governanca:hover {
     background-color: #EFFAFF;
-    border: 1px solid #26B2F4;  
+    border: 1px solid #26B2F4;
 }
 
 /*objetivo*/
-.colaborador{
+.colaborador {
     background-color: #C8E9FF;
     padding: 30px 30px 30px 30px;
     width: 800px;
     height: 260px;
-  text-align: center;
-  
+    text-align: center;
+
     margin-top: 100px;
-   font:400 15px 'Manrope', sans-serif;
+    font: 400 15px 'Manrope', sans-serif;
 }
-.colaborador-azul{
+
+.colaborador-azul {
     text-align: center;
     align-items: center;
     justify-content: center;
 
     display: flex;
 }
-.venha{
+
+.venha {
     text-align: center;
     margin-top: 10px;
     font: 600 15px 'Manrope', sans-serif;
-    
+
 }
 
-.prof{
+.prof {
     font: 500 15px 'Montserrat', sans-serif;
     text-align: center;
     margin-top: 10px;
     color: black;
 }
 
-.maos{
+.maos {
     margin-left: 700px;
     margin-top: -30px;
 }
 
-#flecha{
+#flecha {
     margin-top: 150px;
     text-align: center;
     justify-content: center;
     align-items: center;
-   
+
 }
-.obj2{
-    color:#FB2673;
-    font:  'Montserrat', sans-serif;
+
+.obj2 {
+    color: #FB2673;
+    font: 'Montserrat', sans-serif;
     text-align: center;
 }
 
-.texto{
+.texto {
     margin-top: 70px;
     text-align: center;
     font: 400 20px 'Manrope', sans-serif;
 }
+
 /*FIM OBJ*/
 
 /*HISTÓRIA*/
-.historia-retangulo{
- 
+.historia-retangulo {
+
     background-color: #FFF6D5;
     padding: 30px 30px 30px 30px;
     width: 100;
     height: 1500px;
     margin-top: 150px;
-   
+
 }
 
-.retangulo{
+.retangulo {
     margin-top: 100px;
-   text-align: center;
+    text-align: center;
 }
-.titulo1{
+
+.titulo1 {
     text-align: center;
     align-items: center;
-   
+
 }
 
-.img1, .texto1, .img2, .texto2{
-   
+.img1,
+.texto1,
+.img2,
+.texto2 {
+
     margin-left: 150px;
     margin-top: 100px;
     margin-bottom: 17px;
-   
+
 }
-.im1{
+
+.im1 {
     width: 350px;
 }
-.img2{
+
+.img2 {
     width: 350px;
 }
-.img3{
+
+.img3 {
     width: 350px;
 }
-.img4{
+
+.img4 {
     width: 350px;
 }
-.texto1, .texto2{
+
+.texto1,
+.texto2 {
     width: 400px;
 }
-.img3, .texto3, .img4, .texto4{
+
+.img3,
+.texto3,
+.img4,
+.texto4 {
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
 
-.texto1, .texto2, .texto3, .texto4{
-   font-family: 'Manrope';
-   font-size: 18px;
-   font-weight: 400;
-   
-}
-  
+.texto1,
+.texto2,
+.texto3,
+.texto4 {
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
 
-.primeiro{
+}
+
+
+.primeiro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -469,25 +503,30 @@ body {
 
 }
 
-.setameio{
+.setameio {
     text-align: center;
     align-items: center;
     margin-left: 650px;
     margin-top: -2000px;
     width: 140px;
 }
-.segundo{
+
+.segundo {
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-left: 1000px;
     width: 300px;
-margin-top: -140vh;   
- word-break: keep-all;
+    margin-top: -140vh;
+    word-break: keep-all;
 
 }
- /* Estilize a div que conterá a imagem e as palavras */
- .container, .container2, .container3, .container4{
+
+/* Estilize a div que conterá a imagem e as palavras */
+.container,
+.container2,
+.container3,
+.container4 {
     position: relative;
     display: inline-block;
 }
@@ -500,7 +539,8 @@ margin-top: -140vh;
     position: absolute;
     top: 275px;
     left: 154px;
-    opacity: 0; /* Inicialmente, as palavras estão invisíveis */
+    opacity: 0;
+    /* Inicialmente, as palavras estão invisíveis */
     transition: opacity 0.3s ease;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -510,14 +550,15 @@ margin-top: -140vh;
     height: 50px;
     border-radius: 15px;
     box-sizing: border-box;
-    
-} 
 
-.overlay2{
+}
+
+.overlay2 {
     position: absolute;
     top: 293px;
     left: 150px;
-    opacity: 0; /* Inicialmente, as palavras estão invisíveis */
+    opacity: 0;
+    /* Inicialmente, as palavras estão invisíveis */
     transition: opacity 0.3s ease;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -529,11 +570,12 @@ margin-top: -140vh;
     box-sizing: border-box;
 }
 
-.overlay3{
+.overlay3 {
     position: absolute;
     top: 245px;
     left: 40 px;
-    opacity: 0; /* Inicialmente, as palavras estão invisíveis */
+    opacity: 0;
+    /* Inicialmente, as palavras estão invisíveis */
     transition: opacity 0.3s ease;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -545,11 +587,12 @@ margin-top: -140vh;
     box-sizing: border-box;
 }
 
-.overlay4{
+.overlay4 {
     position: absolute;
     top: 245px;
-    left: 2px;   
-    opacity: 0; /* Inicialmente, as palavras estão invisíveis */
+    left: 2px;
+    opacity: 0;
+    /* Inicialmente, as palavras estão invisíveis */
     transition: opacity 0.3s ease;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -561,42 +604,46 @@ margin-top: -140vh;
     box-sizing: border-box;
 }
 
-.container-texto{
+.container-texto {
     font-family: 'Forum', sans-serif;
 }
+
 /* Quando o mouse passa sobre a imagem, torne as palavras visíveis */
 .container:hover .overlay {
     opacity: 1;
 }
-  
-.container2:hover .overlay2{
+
+.container2:hover .overlay2 {
     opacity: 1;
 }
-.container3:hover .overlay3{
+
+.container3:hover .overlay3 {
     opacity: 1;
 }
-.container4:hover .overlay4{
+
+.container4:hover .overlay4 {
     opacity: 1;
 }
+
 /* FIM HISTÓRIA*/
 
 
 /*EMPRESA-FELIZ */
-.empresa-feliz{
+.empresa-feliz {
     background-color: white;
     width: 100%;
     height: 800px;
-    
+
 }
 
-.predio{
+.predio {
     text-align: center;
     align-items: center;
     justify-content: center;
     margin-top: 150px;
 }
 
-.empresa{
+.empresa {
     font-family: 'Montserrat';
     font-size: 28px;
     font-weight: 700px;
@@ -606,12 +653,12 @@ margin-top: -140vh;
 .estar h1 {
     margin-top: 70px;
     font: 400 20px 'Manrope', sans-serif;
-padding: 0 35vh;  
+    padding: 0 35vh;
 
 }
 
-.projetos{
-    font-family:  'Montserrat', sans-serif;
+.projetos {
+    font-family: 'Montserrat', sans-serif;
     font-size: 9px;
     font-weight: 600;
     text-align: center;
@@ -619,10 +666,12 @@ padding: 0 35vh;
     justify-content: center;
     margin-top: 100px;
 }
+
 /*CARROSEL*/
 .carousel-container {
     position: relative;
-    width: 60%; /* largura do carrossel */
+    width: 60%;
+    /* largura do carrossel */
     overflow: hidden;
     text-align: center;
     margin: auto;
@@ -641,7 +690,7 @@ padding: 0 35vh;
 .carousel ul {
     list-style: none;
     padding: 0;
-    margin: 0 ;
+    margin: 0;
     display: flex;
     /* align-items: center;
     justify-content: center; */
@@ -649,25 +698,31 @@ padding: 0 35vh;
 }
 
 .carousel li {
-    flex: 0 0 33.33%; /* define a largura das imagens, 33.33% para exibir 3 por vez */
-    height: 100%; /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
-    box-sizing: border-box; /* Adicionado para garantir que a borda não afete a largura e altura total */
+    flex: 0 0 33.33%;
+    /* define a largura das imagens, 33.33% para exibir 3 por vez */
+    height: 100%;
+    /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
+    box-sizing: border-box;
+    /* Adicionado para garantir que a borda não afete a largura e altura total */
     display: flex;
     align-items: center;
     padding: 0 0 0 55px;
 }
 
 .carousel img {
-    width: 70%; /* Garante que a imagem ocupe 100% da largura da li */
-    height: auto; /* Garante que a imagem ocupe 100% da altura da li */
- 
+    width: 70%;
+    /* Garante que a imagem ocupe 100% da largura da li */
+    height: auto;
+    /* Garante que a imagem ocupe 100% da altura da li */
+
 }
 
 .carousel-button {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 40px; /* largura dos botões */
+    width: 40px;
+    /* largura dos botões */
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -682,10 +737,11 @@ padding: 0 35vh;
 }
 
 /*Imagens*/
-ul li .carrosel-11{
+ul li .carrosel-11 {
     width: 50%;
-    
+
 }
+
 /* ul li .carrosel-12{
 width: 50%;
 } */
@@ -695,28 +751,28 @@ width: 50%;
 /*FIM CARROSEL */
 
 /*GOVERNANÇA*/
-.governo{
+.governo {
     background-color: #F5F5F5;
     width: 100%;
     height: 1500px;
 }
 
-#governa{
- text-align: center;
- align-items: center;
- justify-content: center;
- padding: 100px 0 50px 0;
+#governa {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 50px 0;
 
 }
 
-.gov{
-font-family: 'Montserrat', sans-serif;
-font-size: 28px;
-font-weight: 700px;
-color: #878F94;
+.gov {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700px;
+    color: #878F94;
 }
 
-.missao{
+.missao {
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
     font-weight: 400px;
@@ -724,29 +780,33 @@ color: #878F94;
     padding: 0 50vh;
 }
 
-.diretoria{
+.diretoria {
     text-align: center;
-   display: flex;
-justify-content: center;
-   font-family: 'Forum', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-family: 'Forum', sans-serif;
     font-weight: 400;
     font-size: 35px;
-  margin-top: 70px;
-  margin-bottom: 30px;
+    margin-top: 70px;
+    margin-bottom: 30px;
 
 }
 
-/*NOMES*/ .nome1, .nome2, .nome3, .nome4{
-color: #1F9B6E;
-font-size: 25px;
-font-weight: 600;
-font-family: 'Montserrat', sans-serif;
-width: 300px;
-} 
+/*NOMES*/
+.nome1,
+.nome2,
+.nome3,
+.nome4 {
+    color: #1F9B6E;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+}
 
 
 
-.text{
+.text {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-style: italic;
@@ -755,7 +815,8 @@ width: 300px;
     /* margin-left: 450px; */
     margin-bottom: 35px;
 }
-.textp{
+
+.textp {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-style: italic;
@@ -763,55 +824,58 @@ width: 300px;
     /* margin-left: 350px; */
 }
 
-.text1{
+.text1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-style: italic;
     font-weight: 500;
-  
+
     /* margin-left: 1130px; */
 }
 
-.dados{
+.dados {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-  
+
 }
 
 
 
-.segunda-linha, .primeira-linha{
+.segunda-linha,
+.primeira-linha {
     height: 300px;
     width: 2px;
     background-color: black;
- 
-   
+
+
 }
 
-.presidente{
+.presidente {
     margin-right: 50px;
 
 }
 
-.vice-presidente{
+.vice-presidente {
     text-align: center;
     display: flex;
-   
+
     align-items: center;
-  
-}
-.let{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- margin-left: 50px;
 
 }
 
-.conselheiro ,.fiscal{
+.let {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+
+}
+
+.conselheiro,
+.fiscal {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -820,13 +884,13 @@ width: 300px;
     font-weight: 400;
     font-size: 35px;
 
-/* padding: 80px; */
+    /* padding: 80px; */
 
 }
 
 /*NOSSO ESTATUTO*/
 
-.nosso-estatuto{
+.nosso-estatuto {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -837,7 +901,7 @@ width: 300px;
     margin-top: 80px;
 }
 
-.aqui a{
+.aqui a {
     color: #1F9B6E;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -846,18 +910,18 @@ width: 300px;
     align-items: center;
     text-align: center;
     justify-content: center;
-    
+
 }
 
-.aqui{
+.aqui {
     margin-top: 10px;
 }
 
-.denuncia{
+.denuncia {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color:#1F9B6E;
+    color: #1F9B6E;
     display: flex;
     align-items: center;
     text-align: center;
@@ -985,7 +1049,8 @@ width: 300px;
 
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1065px) {
+
     /* CABEÇALHO */
     #cabecalho {
         width: 100%;
@@ -1137,240 +1202,266 @@ width: 300px;
 
 
     /* TÉRMINO DO CABEÇALHO */
+
 }
+
 /* MOBILE */
 @media screen and (max-width: 768px) {
 
 
-.mundo{
-width: 100%;
-height: 300px;
-top: 45px;
-}
-#meuTexto {
-    
-    animation:bounceInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-    margin-top: -100px;
-    /* Um espaço inicial para o texto */
-    /* Adiciona uma transição suave */
-    z-index: 99;
-    position: absolute;
-    top: 20vh;
-    /* left: 15%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.le {
-    color: white;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-  margin-top: 70px;
-  text-align: center;
-
-
-
-}
-
-.junte {
-    text-align: center;
-    color: white;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-
-
-}
-
-.dif {
-    color: #c4faae;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 0px;
-    text-align: center;
-  
-}
-
-.linha {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 3px solid #c4faae;
-    width: 200px;
-    margin-top: 5px;
- 
-
-}
-
-.oscip {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: Manrope;
-    color: rgb(255, 255, 255);
-    padding: 0;
-    margin: 0;   
-    width: 280px;
-    margin-top: 120px;
-    
-
-  
-    
-    
-}
-
-.lets{
-    width: 100%;
-    margin: -110px 100px 0;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.quem {
-    font: 300 30px 'Montserrat', sans-serif;
-    text-align: center;
-    margin-top: 100px;
-}
-
-.colaborador{
-    background-color: #C8E9FF;
-    padding: 30px 30px 30px 30px;
-    width: 450px;
-    height: 350px;
-  text-align: center;
-    margin-top: 100px;
-   font:400 15px 'Manrope', sans-serif;
-}
-.colaborador-azul{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.maos{
-    margin-left: 350px;
-    margin-top: -30px;
-}
-
-.obj2{
-    color:#FB2673;
-    font:  'Montserrat', sans-serif;
-    text-align: center;
-   
-}
-
-.texto{
-    margin-top: 70px;
-    text-align: center;
-  ;
-    font: 400 16px 'Manrope', sans-serif;
-}
-
-
-
-.img1, .texto1, .img2, .texto2{
-   
-    margin-left: 150px;
-    margin-top: 100px;
-    margin-bottom: 17px;
-   
-}
-.img1, .img2, .img3, .img4{
-   display: none;
-}
-
-.historia-retangulo{
- 
-    background-color: #FFF6D5;
-    padding: 30px 30px 30px 30px;
-    width: 100%;
-    
-    margin-top: 150px;
-   
-}
-.texto1, .texto2, .texto3, .texto4{
-    width: 300px;
-    font-size: 18px;
-margin: 0;
-left: 0;
-position: absolute;
-
-}
-
-.texto1{
-    left: 140px;
-    top: 2570px;
-}
-.texto2{
-    left: 140px;
-    top: 2980px;
-}
-.texto3{
-    left: 140px;
-    top: 2330px;
-}
-.texto4{
-    left:140px;
-    top:2750px;
-}
-.setameio{
-    text-align: center;
-    align-items: center;
-   position: absolute;
-   left: -650px;
-z-index: 2;
-    width: 140px;
-    margin-top: 0px;
-}
-.segundo{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 1000px;
-    width: 300px;
-margin-top: -140vh;   
- word-break: keep-all;
-
-}
-
-.container:hover .overlay {
-  display: none;
-}
-  
-.container2:hover .overlay2{
-   display: none;
- 
- }  .container3:hover .overlay3{
-    display: none;
-}
-.container4:hover .overlay4{
-   display: none;
-}
-
-.estar h1 {
-    margin-top: 70px;
-    font: 400 16px 'Manrope', sans-serif;
-padding: 0 5vh;  
-
-}
- 
-.gov{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    font-weight: 700px;
-    color: #878F94;
+    .mundo {
+        width: 100%;
+        height: 300px;
+        top: 45px;
     }
- 
-    .missao{
+
+    #meuTexto {
+
+        animation: bounceInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+        margin-top: -100px;
+        /* Um espaço inicial para o texto */
+        /* Adiciona uma transição suave */
+        z-index: 99;
+        position: absolute;
+        top: 20vh;
+        /* left: 15%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .le {
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 70px;
+        text-align: center;
+
+
+
+    }
+
+    .junte {
+        text-align: center;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+
+
+    }
+
+    .dif {
+        color: #c4faae;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 0px;
+        text-align: center;
+
+    }
+
+    .linha {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 3px solid #c4faae;
+        width: 200px;
+        margin-top: 5px;
+
+
+    }
+
+    .oscip {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: Manrope;
+        color: rgb(255, 255, 255);
+        padding: 0;
+        margin: 0;
+        width: 280px;
+        margin-top: 120px;
+
+
+
+
+
+    }
+
+    .lets {
+        width: 100%;
+        margin: -110px 100px 0;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .quem {
+        font: 300 30px 'Montserrat', sans-serif;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .colaborador {
+        background-color: #C8E9FF;
+        padding: 30px 30px 30px 30px;
+        width: 450px;
+        height: 350px;
+        text-align: center;
+        margin-top: 100px;
+        font: 400 15px 'Manrope', sans-serif;
+    }
+
+    .colaborador-azul {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .maos {
+        margin-left: 350px;
+        margin-top: -30px;
+    }
+
+    .obj2 {
+        color: #FB2673;
+        font: 'Montserrat', sans-serif;
+        text-align: center;
+
+    }
+
+    .texto {
+        margin-top: 70px;
+        text-align: center;
+        ;
+        font: 400 16px 'Manrope', sans-serif;
+    }
+
+
+
+    .img1,
+    .texto1,
+    .img2,
+    .texto2 {
+
+        margin-left: 150px;
+        margin-top: 100px;
+        margin-bottom: 17px;
+
+    }
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+        display: none;
+    }
+
+    .historia-retangulo {
+
+        background-color: #FFF6D5;
+        padding: 30px 30px 30px 30px;
+        width: 100%;
+
+        margin-top: 150px;
+
+    }
+
+    .texto1,
+    .texto2,
+    .texto3,
+    .texto4 {
+        width: 300px;
+        font-size: 18px;
+        margin: 0;
+        left: 0;
+        position: absolute;
+
+    }
+
+    .texto1 {
+        left: 140px;
+        top: 2570px;
+    }
+
+    .texto2 {
+        left: 140px;
+        top: 2980px;
+    }
+
+    .texto3 {
+        left: 140px;
+        top: 2330px;
+    }
+
+    .texto4 {
+        left: 140px;
+        top: 2750px;
+    }
+
+    .setameio {
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        left: -650px;
+        z-index: 2;
+        width: 140px;
+        margin-top: 0px;
+    }
+
+    .segundo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1000px;
+        width: 300px;
+        margin-top: -140vh;
+        word-break: keep-all;
+
+    }
+
+    .container:hover .overlay {
+        display: none;
+    }
+
+    .container2:hover .overlay2 {
+        display: none;
+
+    }
+
+    .container3:hover .overlay3 {
+        display: none;
+    }
+
+    .container4:hover .overlay4 {
+        display: none;
+    }
+
+    .estar h1 {
+        margin-top: 70px;
+        font: 400 16px 'Manrope', sans-serif;
+        padding: 0 5vh;
+
+    }
+
+    .gov {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        font-weight: 700px;
+        color: #878F94;
+    }
+
+    .missao {
         font-family: 'Manrope', sans-serif;
         font-size: 16px;
         font-weight: 400px;
@@ -1379,164 +1470,189 @@ padding: 0 5vh;
     }
 
 
-    
-/*NOMES*/ .nome1, .nome2, .nome3, .nome4{
-color: #1F9B6E;
-font-size: 18px;
-font-weight: 600;
-font-family: 'Montserrat', sans-serif;
-width: 300px;
-} 
+
+    /*NOMES*/
+    .nome1,
+    .nome2,
+    .nome3,
+    .nome4 {
+        color: #1F9B6E;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        width: 300px;
+    }
 
 
 
-.text{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 500;
-    width: 300px;
-    /* margin-left: 450px; */
-}
-.textp{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 500;
-    /* margin-left: 350px; */
-}
+    .text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 500;
+        width: 300px;
+        /* margin-left: 450px; */
+    }
 
-.text1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 500;
-  
-    /* margin-left: 1130px; */
-}
+    .textp {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 500;
+        /* margin-left: 350px; */
+    }
 
-.dados{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-  
-}
+    .text1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 500;
+
+        /* margin-left: 1130px; */
+    }
+
+    .dados {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
 
 
 
-.segunda-linha, .primeira-linha{
- display: none;
+    .segunda-linha,
+    .primeira-linha {
+        display: none;
 
- 
-   
-}
 
-.presidente{
-    margin-right: 0;
 
-}
+    }
 
-.vice-presidente{
-   margin-left: 0;
-}
-.let{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- margin-left: 0;
+    .presidente {
+        margin-right: 0;
 
-}
+    }
 
-.conselheiro ,.fiscal{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-family: 'Forum', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+    .vice-presidente {
+        margin-left: 0;
+    }
 
-}
+    .let {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
 
-.empresa-feliz{
-    background-color: white;
-    width: 100%;
-    height: 800px;
-    
-}
+    }
 
-.governo{
-    background-color: #F5F5F5;
-    width: 100%;
-    height: 1300px;
-}
+    .conselheiro,
+    .fiscal {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: 'Forum', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
 
-/*CARROSEL*/
-.carousel-container {
-    position: relative;
-    width: 70%; /* largura do carrossel */
-    overflow: hidden;
-    text-align: center;
-    margin: auto;
-    border: 2px solid black;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
+    }
 
-.carousel {
-    display: flex;
-    transition: 0.5s;
-}
+    .empresa-feliz {
+        background-color: white;
+        width: 100%;
+        height: 800px;
 
-.carousel ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 ;
-    display: flex;
-    /* align-items: center;
+    }
+
+    .governo {
+        background-color: #F5F5F5;
+        width: 100%;
+        height: 1500px;
+    }
+
+    .projetos {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 7px;
+        font-weight: 600;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    /*CARROSEL*/
+    .carousel-container {
+        position: relative;
+        width: 70%;
+        /* largura do carrossel */
+        overflow: hidden;
+        text-align: center;
+        margin: auto;
+        border: 2px solid black;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .carousel {
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .carousel ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        /* align-items: center;
     justify-content: center; */
 
-}
+    }
 
-.carousel li {
-    flex: 0 0 33.33%; /* define a largura das imagens, 33.33% para exibir 3 por vez */
-    height: 100%; /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
-    box-sizing: border-box; /* Adicionado para garantir que a borda não afete a largura e altura total */
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 55px;
-}
+    .carousel li {
+        flex: 0 0 33.33%;
+        /* define a largura das imagens, 33.33% para exibir 3 por vez */
+        height: 100%;
+        /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
+        box-sizing: border-box;
+        /* Adicionado para garantir que a borda não afete a largura e altura total */
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 40px;
+    }
 
-.carousel img {
-    width: 100%; /* Garante que a imagem ocupe 100% da largura da li */
-    height: auto; /* Garante que a imagem ocupe 100% da altura da li */
- 
-}
+    .carousel img {
+        width: 100%;
+        /* Garante que a imagem ocupe 100% da largura da li */
+        height: auto;
+        /* Garante que a imagem ocupe 100% da altura da li */
 
-.carousel-button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 40px; /* largura dos botões */
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
+    }
 
-.carousel-button-left {
-    left: 0;
-}
+    .carousel-button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        /* largura dos botões */
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
 
-.carousel-button-right {
-    right: 0;
-}
+    .carousel-button-left {
+        left: 0;
+    }
 
-/*Imagens*/
-/* ul li .carrosel-11{
+    .carousel-button-right {
+        right: 0;
+    }
+
+    /*Imagens*/
+    /* ul li .carrosel-11{
     width: 50%;
     
 }
@@ -1547,131 +1663,151 @@ ul li .carrosel-10{
     width: 50%;
 } */
 
-/*FIM CARROSEL */
+    /*FIM CARROSEL */
 
 
 
 
-/* RODAPÉ */
-#contato {
-    background: rgba(255, 228, 133, 0.74);
-    padding: 73px 0;
-    padding-bottom: 15px;
-}
-
-#contato .conteiner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.rodapeCima {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.rodape-lado1 {
-    display: flex;
-    flex-direction: column;
-    margin: 0 70px;
-}
-
-.logoRodape {
-    margin-left: 135px;
-}
-
-.redes {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-
-.icone {
-    width: 55px;
-    padding: 9px;
-}
-
-.icone:hover {
-    width: 62px;
-    transition: 0.5s;
-    filter: brightness(50%);
-}
-
-.texto-rodape {
-    font: 400 20px 'Montserrat', sans-serif;
-}
-
-.rodapeTexto {
-    text-align: justify;
-    width: 33rem;
-}
-
-.enderecoTexto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    margin-right: 15px;
-}
-
-.iconMaps {
-    margin-right: 20px;
-}
-
-.textoMaps {
-    font: 400 20px 'Montserrat', sans-serif;
-}
-
-.rodape-lado2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 70px;
-}
-
-.logoRodape img {
-    width: 170px;
-}
-
-.menina img {
-    width: 180px;
-}
-
-.imgMaps img {
-    width: 380px;
-    border-radius: 10px;
-}
-
-.imgMaps {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.direitos {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 120px;
-}
-
-.autorais {
-    font: 300 2vh 'Montserrat', serif;
-    margin-bottom: 5px;
-}
-
-.direito {
-    font: 300 2.5vh 'Montserrat', serif;
-    margin-bottom: 10px;
-}
-
-  }
-  @media screen and (max-width: 608px){
-    .modal-menu{
+    #contato {
+        padding: 15px;
         width: 100%;
-    } }
+        text-align: center;
+    }
+
+    .rodapeCima {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoRodape {
+        text-align: center;
+        width: 100px;
+        margin-left: 31vw;
+    }
+
+    #contato .menina img {
+        margin-right: 100px;
+        width: 120px;
+    }
+
+    #contato .redes {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        margin: 15px 0;
+    }
+
+    .redes {
+        width: 100%;
+    }
+
+    .redes img {
+        width: 35px;
+        padding: 5px;
+        padding-left: 3px;
+    }
+
+    .icone:hover {
+        width: 40px;
+        transition: 0.5s;
+        filter: brightness(50%);
+    }
+
+    .texto-rodape {
+        padding: 5px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .logoRodape img {
+        width: 120px;
+    }
+
+    .rodapeTexto,
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rodapeTexto {
+        width: 100%;
+    }
+
+    .enderecoTexto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .endereco {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enderecoTexto img {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .textoMaps {
+        font: 400 14px 'Montserrat', sans-serif;
+    }
+
+    .imgMaps {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rodape-lado1 {
+        width: 100%;
+    }
+
+    .rodape-lado2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imgMaps img {
+        border-radius: 10px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .amigo {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .amigo img {
+        width: 270px;
+    }
+    .amigoSurdo{
+        width: 270px;
+    }
+
+    .direitos {
+        width: 100%;
+        margin-top: 90px;
+    }
+    .menina{
+        width: 120px;
+    }
+}
+
+
+
+@media screen and (max-width: 608px) {
+    .modal-menu {
+        width: 100%;
+    }
+}
