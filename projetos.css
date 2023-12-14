@@ -1159,7 +1159,7 @@ h3 {
         transition: none;
     }
 
-    .projeto-item h2 {
+    .projeto-item:hover h2 {
         margin-top: 110px;
         transition: none;
         font-size: 35px;
