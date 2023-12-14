@@ -636,6 +636,81 @@ ul li ul li {
     align-items: center;
 }
 
+/*CARROSEL*/
+.carousel-container {
+    position: relative;
+    width: 60%; /* largura do carrossel */
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carousel {
+    display: flex;
+    transition: 0.5s;
+}
+
+.carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 ;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+
+.carousel li {
+    flex: 0 0 33.33%; /* define a largura das imagens, 33.33% para exibir 3 por vez */
+    height: 100%; /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
+    box-sizing: border-box; /* Adicionado para garantir que a borda não afete a largura e altura total */
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 55px;
+}
+
+.carousel img {
+    width: 70%; /* Garante que a imagem ocupe 100% da largura da li */
+    height: auto; /* Garante que a imagem ocupe 100% da altura da li */
+ 
+}
+
+.carousel-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px; /* largura dos botões */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: 0;
+}
+
+.carousel-button-right {
+    right: 0;
+}
+
+/*Imagens*/
+ul li .carrosel-11{
+    width: 50%;
+    
+}
+/* ul li .carrosel-12{
+width: 50%;
+} */
+/* ul li .carrosel-10{
+    width: 50%;
+} */
+/*FIM CARROSEL */
+
 /* RODAPÉ */
 #contato {
     background: rgba(255, 228, 133, 0.74);
@@ -1150,5 +1225,81 @@ ul li ul li {
     .modal-menu {
         width: 100%;
     }
+
+    /*CARROSEL*/
+.carousel-container {
+    position: relative;
+    width: 70%; /* largura do carrossel */
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carousel {
+    display: flex;
+    transition: 0.5s;
+}
+
+.carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 ;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+
+.carousel li {
+    flex: 0 0 33.33%; /* define a largura das imagens, 33.33% para exibir 3 por vez */
+    height: 100%; /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
+    box-sizing: border-box; /* Adicionado para garantir que a borda não afete a largura e altura total */
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 45px;
+}
+
+.carousel img {
+    width: 100%; /* Garante que a imagem ocupe 100% da largura da li */
+    height: auto; /* Garante que a imagem ocupe 100% da altura da li */
+ 
+}
+
+.carousel-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px; /* largura dos botões */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: 0;
+}
+
+.carousel-button-right {
+    right: 0;
+}
+
+/*Imagens*/
+/* ul li .carrosel-11{
+    width: 50%;
+    
+}
+ul li .carrosel-12{
+width: 50%;
+}
+ul li .carrosel-10{
+    width: 50%;
+} */
+
+/*FIM CARROSEL */
 
 }
