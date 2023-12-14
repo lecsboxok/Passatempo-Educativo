@@ -491,13 +491,13 @@ ul li ul li {
     flex-wrap: wrap;
 }
 
-.tituloSaiba {
+.conteudoSaiba h3 {
     font: 400 3vh 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-.tituloSaiba span {
+.conteudoSaiba span {
     font: 600 3vh 'Montserrat', sans-serif;
 }
 
