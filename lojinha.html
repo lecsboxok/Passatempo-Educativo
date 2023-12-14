@@ -13,36 +13,6 @@
 <body>
     <header id="header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="img/logoIcon.png" alt="logo"></a>
-            </div>
-            <div id="buscar">
-                <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
-                <button onclick="buscarSite()"><i class="fa-solid fa-magnifying-glass"
-                        style="color: #ffffff;"></i></button>
-            </div>
-            
-            <div id="carrinho-icon" onclick="toggleCarrinho()">
-                <div class="imagem">
-                    <img src="img/carrinho-de-compras.png" alt="">
-                </div>
-                <span id="cont-carrinho">0</span>
-            </div>
-            <div id="carrinho-itens" style="display: none;">
-                <div class="titulo-carrinho">
-                    <h1>Carrinho de Compras</h1>
-                    <span id="fechar-carrinho">&times;</span>
-                </div>
-                <div class="baixo">
-                    <div id="mensagem-carrinho-vazio" style="display: none;">
-                        Você não tem nada no carrinho.
-                    </div>
-                    <ul id="itens-lista"></ul>
-                    <span id="preco-total">Total: <span class="separar">R$0.00</span></span>
-                    <button class="limpa" onclick="limparCarrinho()">LIMPAR CARRINHO</button>
-                </div>
-
-            </div>
             <div class="tema">
                 <!-- <button id="trocar-tema"><i class="fa-solid fa-toggle-off" style="color: #000;"></i></button> -->
                 <label class="theme-switch" id="trocar-tema">
@@ -68,9 +38,43 @@
                     </div>
                 </label>
             </div>
-            <div class="login">
-                <i class="fa-solid fa-user"></i>
+            <div class="logo">
+                <a href="index.html"><img src="img/logoIcon.png" alt="logo"></a>
             </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
+                <button onclick="buscarSite()"><i class="fa-solid fa-magnifying-glass"
+                        style="color: #ffffff;"></i></button>
+            </div>
+            <div class="login">
+                <a href="login.html"><i class="fa-regular fa-user"></i>
+                <p>Minha Conta</p></a>
+                
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="img/carrinho-de-compras.png" alt="">
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" style="display: none;">
+                <div class="titulo-carrinho">
+                    <h1>Carrinho de Compras</h1>
+                    <span id="fechar-carrinho">&times;</span>
+                </div>
+                <div class="baixo">
+                    <div id="mensagem-carrinho-vazio" style="display: none;">
+                        Você não tem nada no carrinho.
+                    </div>
+                    <ul id="itens-lista"></ul>
+                    <span id="preco-total">Total: <span class="separar">R$0.00</span></span>
+                    <button class="limpa" onclick="limparCarrinho()">LIMPAR CARRINHO</button>
+                </div>
+
+            </div>
+
+            
+
         </div>
     </header>
 
