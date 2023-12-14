@@ -995,3 +995,16 @@ input {
 
 
 }
+
+@media (max-width: 400px) {
+  .produto{
+    padding: 22px 10px;
+    width: 90%;
+    margin: 30px 0;
+  }
+
+  .produto .imagem img{
+    width: 250px;
+    height: 250px;
+  }
+}
