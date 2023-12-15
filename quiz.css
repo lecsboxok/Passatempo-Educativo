@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@
     src: url(fonts/OpenSans-Regular.ttf);
 }
 
-.cabecalho{
+.cabecalho {
     background-color: white;
     border-bottom: 2px solid rgb(161, 161, 161);
 
@@ -42,66 +42,72 @@
 } */
 
 @keyframes colors {
-    0%{
+    0% {
         background-position: 0% 50%;
     }
 
-    50%{
+    50% {
         background-position: 50% 100%;
     }
 
-    100%{
+    100% {
         background-position: 0% 50%;
     }
 }
+
 .pagina-principal a {
-margin-left: 305px;
-color: #c49190;
-margin-top: 20px;
-text-decoration: none;
+    color: #c49190;
+    margin-top: 20px;
+    text-decoration: none;
+    font: 16px 'OpenRegular', sans-serif;
 }
 
-#questao{
+#questao {
     text-align: center;
 }
-.pagina-principal{
-    margin-top: 20px; 
+
+.pagina-principal {
+    margin-top: 20px;
+    text-align: center;
 }
-.h1{
-    font:32px 'UnbRegular', sans-serif;
+
+.h1 {
+    font: 32px 'UnbRegular', sans-serif;
     padding: 0px 0 0 215px;
     text-align: center;
 }
 
-.teste{
-    margin-left: 150px;
-    font:20px 'UnbRegular', sans-serif;
+.teste {
+    text-align: center;
+    font: 20px 'UnbRegular', sans-serif;
 }
 
-.texto{
-    font:22px 'OpenRegular', sans-serif;
+.texto {
+    font: 22px 'OpenRegular', sans-serif;
     letter-spacing: 1.5px;
-    padding: 20px 120px 0 150px;
+    padding: 20px 130px 0 130px;
     text-align: center;
     text-decoration: none;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    text-align: center;
+    margin: 100px 0;
 }
 
-.conteudo button{
+.conteudo button {
     border-radius: 5px;
     padding: 10px 25px;
     background-color: #c49190;
-    font:18px 'OpenRegular', sans-serif;
+    font: 18px 'OpenRegular', sans-serif;
     color: rgb(247, 246, 246);
     margin: 30px 0 0 368px;
     cursor: pointer;
-margin-left: 350px;
+    margin-left: 0;
 }
 
 .equipe img {
@@ -110,17 +116,18 @@ margin-left: 350px;
     margin-left: 100px;
     margin-top: 100px;
 }
-.equipe{
-   background-color: #eddfdc;
+
+.equipe {
+    background-color: #eddfdc;
     width: 2000px;
     height: 750px;
 }
 
-#body2{
+#body2 {
     background-color: #eddfdc;
 }
 
-.app{
+.app {
     background-color: white;
     width: 90%;
     max-width: 600px;
@@ -129,33 +136,35 @@ margin-left: 350px;
     padding: 30px;
 }
 
-.app h1{
+.app h1 {
     padding: 0;
     color: #c49190;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
 }
 
-.quiz h2{
+.quiz h2 {
     font: 500 22px 'OpenBold', sans-serif;
     color: #000000;
     padding-bottom: 18px;
 }
 
-.quiz{
+.quiz {
     padding: 20px 0;
-  
-}
-.botao2{
-    display: flex;
-}
-.botao2 a {
-    display: flex;
- text-decoration: none;
- color: white;
+
 }
 
-.btn{
+.botao2 {
+    display: flex;
+}
+
+.botao2 a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
     background: #fff;
     color: #222;
     font: 500 20px 'OpenRegular', sans-serif;
@@ -169,16 +178,16 @@ margin-left: 350px;
     transition: all 0.3s;
 }
 
-.btn:hover:not([disabled]){
+.btn:hover:not([disabled]) {
     background: #c49190;
     color: #fff;
 }
 
-.btn:disabled{
+.btn:disabled {
     cursor: no-drop;
 }
 
-#next-btn{
+#next-btn {
     background: #c49190;
     color: white;
     font: 500 20px 'OpenRegular', sans-serif;
@@ -191,11 +200,11 @@ margin-left: 350px;
     display: none;
 }
 
-.correto{
+.correto {
     background: #9aeabc;
 }
 
-.incorreto{
+.incorreto {
     background: #ff9393;
 }
 
@@ -206,7 +215,7 @@ margin-left: 350px;
 }
 
 
-.comeco{
+.comeco {
     background-color: #f9f9f9;
     /* color: white; */
     width: 100%;
@@ -217,49 +226,49 @@ margin-left: 350px;
 
 
 
-#segundoMain{
+#segundoMain {
     padding-top: 80px;
     padding-bottom: 60px;
 }
 
-.fa-solid{
+.fa-solid {
     padding-right: 7px;
 }
 
-.red{
+.red {
     background-color: #ff4141;
 }
 
-.blue{
+.blue {
     background-color: #7d7dff;
 }
 
-.green{
+.green {
     background-color: #56ff56;
 }
 
-.yellow{
+.yellow {
     background-color: #ddda32;
 }
 
 
 
-  
-  .countdown {
+
+.countdown {
     font-size: 2em;
     font-family: 'Arial', sans-serif;
-  }
- 
-  
-  .message {
+}
+
+
+.message {
     margin-left: 780px;
     margin-top: 20px;
     font-size: 1.5em;
     color: #000000
-  }
+}
 
-  
-  .restart-button {
+
+.restart-button {
     margin-top: 10px;
     padding: 10px;
     font-size: 1em;
@@ -269,26 +278,28 @@ margin-left: 350px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
-  }
-  
-  .restart-button:hover {
-    background-color: #555;
-  }
-  
-  #seconds{
-width: 150px;
-  }
+}
 
-  .countdown-container{
+.restart-button:hover {
+    background-color: #555;
+}
+
+#seconds {
+    width: 150px;
+}
+
+.countdown-container {
     font-size: 25px;
     display: flex;
-   
-   }
-  .countdown-separator{
-   margin-top: -0px;
-  
-  }
-  /* ... Outros estilos ... */
+
+}
+
+.countdown-separator {
+    margin-top: -0px;
+
+}
+
+/* ... Outros estilos ... */
 
 .comeco {
     background-color: #f9f9f9;
@@ -297,9 +308,12 @@ width: 150px;
     padding: 0;
     box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.433);
     display: flex;
-    justify-content: space-between; /* Adicionado para espaçar os elementos */
-    align-items: center; /* Alinha os elementos verticalmente */
-    padding: 10px; /* Ajustado o espaçamento interno */
+    justify-content: space-between;
+    /* Adicionado para espaçar os elementos */
+    align-items: center;
+    /* Alinha os elementos verticalmente */
+    padding: 10px;
+    /* Ajustado o espaçamento interno */
 }
 
 #pontuacao {
@@ -307,13 +321,13 @@ width: 150px;
     text-align: center;
     justify-content: center;
     /* padding: 20px 0; Removido o espaçamento, pois agora é ajustado no .comeco */
-        padding: 20px 0;
-        margin-left: 50px;
+    padding: 20px 0;
+    margin-left: 50px;
 
-         }
-    
+}
 
-#voltar{
+
+#voltar {
     background: #c49190;
     color: white;
     font: 500 20px 'OpenRegular', sans-serif;
@@ -330,60 +344,51 @@ width: 150px;
 /* ... Outros estilos ... */
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1150px) {
+
+    .countdown-container{
+        margin-left: 40px;
+    }
+
     .pagina-principal a {
-        margin-left: 180px;
+        margin-left: 0;
         color: black;
-           text-decoration: none  ;
-        }
-
-body{
-    background-color:#eddfdc ;
-    width: 100%;
-    height: 100%;
-}
-        .equipe img {
-            width: 0;
-            height: auto;
-        }
-        .equipe{
-           background-color: #eddfdc;
-            width: 0;
-            height: 0;
-        }
-
-        
-        .texto{
-            font: 20px 'OpenRegular', sans-serif;
-            letter-spacing: 1.5px;
-            padding: 20px 100px 0 100px;
-            text-align: center;
-        }
-
-        h1{
-            font:30px  'UnbRegular', sans-serif;
-       color: #000000;
-       font-weight: 700;
- margin-top: 150px ;
- padding: 0;
- margin-left: -100px;
-;
+        text-decoration: none;
     }
 
-    .conteudo button{
-        border-radius: 5px;
-        padding: 10px 25px;
-        background-color: #c49190;
-        font:18px 'OpenRegular', sans-serif;
-        color: rgb(247, 246, 246);
-        margin: 30px 0 0 368px;
-        cursor: pointer;
-    margin-left:  200px;
+    body {
+        background-color: #eddfdc;
+        width: 100%;
+        height: 100%;
     }
-    .pagina-principal{
-       margin-left: -30px
-     }
-    .app h1{
+
+    .equipe img {
+        width: 0;
+        height: auto;
+    }
+
+    .equipe {
+        display: none;
+    }
+
+    .texto {
+        font: 20px 'OpenRegular', sans-serif;
+        letter-spacing: 1.5px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font: 30px 'UnbRegular', sans-serif;
+        color: #000000;
+        font-weight: 700;
+        margin-top: 150px;
+        padding: 0;
+        margin-left: 0;
+        ;
+    }
+
+    .app h1 {
         margin-left: 5px;
     }
 
@@ -398,13 +403,10 @@ body{
         cursor: pointer;
         display: none;
         margin-left: 200px;
-      }
-      
-      .restart-button:hover {
+    }
+
+    .restart-button:hover {
         background-color: #555;
-      }
-      
+    }
+
 }
-
-
-
