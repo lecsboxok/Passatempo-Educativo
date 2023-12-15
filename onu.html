@@ -117,8 +117,11 @@
                         <img src="img/img2030.png" alt="">
                     </div>
                     <div class="texto-oquee">
-                        <h2 id="Tonu2">Oque é a Agenda 2030?</h2 >
-                        <p id="Tonu3">Em setembro de 2015, líderes mundiais reuniram-se na sede da ONU, em Nova York, e decidiram um plano de ação para erradicar a pobreza, proteger o planeta e garantir que as pessoas alcancem a paz e a prosperidade: a Agenda 2030 para o Desenvolvimento Sustentável, a qual contém o conjunto de 17 Objetivos de Desenvolvimento Sustentável (ODS).</p>
+                        <h2 id="Tonu2">Oque é a Agenda 2030?</h2>
+                        <p id="Tonu3">Em setembro de 2015, líderes mundiais reuniram-se na sede da ONU, em Nova York, e
+                            decidiram um plano de ação para erradicar a pobreza, proteger o planeta e garantir que as
+                            pessoas alcancem a paz e a prosperidade: a Agenda 2030 para o Desenvolvimento Sustentável, a
+                            qual contém o conjunto de 17 Objetivos de Desenvolvimento Sustentável (ODS).</p>
                     </div>
                 </div>
             </div>
@@ -151,7 +154,8 @@
                             da cadeia de negócios, as emissões de carbono, a gestão dos resíduos e rejeitos oriundos de
                             determinada atividade, questões trabalhistas e inclusão dos trabalhadores, a metodologia de
                             contabilidade, apoio a projetos sociais que façam a inclusão de suas comunidades, dentre
-                            outras.</p>
+                            outras.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -180,7 +184,7 @@
                     <div class="iconOnu">
                         <img src="img/iconONU.png" alt="">
                     </div>
-                    <h4>Contagem Regressiva Agenda ONU 2030</h4>
+                    <h4 id="Tonu11">Contagem Regressiva Agenda ONU 2030</h4>
                     <div id="barraProgresso">
                         <div id="progresso"></div>
                     </div>
@@ -198,24 +202,28 @@
             <div class="container">
                 <div class="contribuir">
                     <div class="textoContribuir">
-                        <h2>Como a Passatempo Educativo pode colaborar com sua empresa nas práticas de ESG?</h2>
-                        <p>A Passatempo Educativo pode contribuir e trabalhar em conjunto com sua empresa, em projetos e termos de parceria, emprestando a experiência e o conhecimento adquiridos na defesa de nossas causas e no desenvolvimento de indicadores de desempenho ESG.</p>
+                        <h2 id="Tonu12">Como a Passatempo Educativo pode colaborar com sua empresa nas práticas de ESG?
+                        </h2>
+                        <p id="Tonu13">A Passatempo Educativo pode contribuir e trabalhar em conjunto com sua empresa,
+                            em projetos e termos de parceria, emprestando a experiência e o conhecimento adquiridos na
+                            defesa de nossas causas e no desenvolvimento de indicadores de desempenho ESG.</p>
                     </div>
                     <div class="objetivoContribuir">
                         <div class="textosObjetivo">
                             <div class="textoObjetivo arrumar">
-                                <h2>Ambiental</h2>
-                                <p>Programas e treinamentos</p>
+                                <h2 id="Tonu14">Ambiental</h2>
+                                <p id="Tonu15">Programas e treinamentos</p>
                             </div>
                             <div class="textoObjetivo">
-                                <h2>Social</h2>
-                                <p>Bem-estar dos colaboradores <br>
+                                <h2 id="Tonu16">Social</h2>
+                                <p id="Tonu17">Bem-estar dos colaboradores <br>
                                     Capacitação de Jovens <br>
                                     Projetos de Impacto Socioambiental</p>
                             </div>
                             <div class="textoObjetivo">
-                                <h2>Governança</h2>
-                                <p>Criação de uma estrutura de governança corporativa robusta, que permita a adoção de mecanismos de controle, avaliação e indicadores para projetos sociais</p>
+                                <h2 id="Tonu18">Governança</h2>
+                                <p id="Tonu19">Criação de uma estrutura de governança corporativa robusta, que permita a
+                                    adoção de mecanismos de controle, avaliação e indicadores para projetos sociais</p>
                             </div>
                         </div>
                         <div class="imagemContribuir">
@@ -357,68 +365,100 @@
             document.body.style.overflow = 'hidden';
         });
         const inicioContagem = new Date(2015, 8, 27);
-const agendaONU = new Date(2030, 0, 1);
-let progresso = 0;
-let relogio; // Declare a variável relogio fora do escopo da função setInterval
+        const agendaONU = new Date(2030, 0, 1);
+        let progresso = 0;
+        let relogio; // Declare a variável relogio fora do escopo da função setInterval
 
-function atualizarContador() {
-    let agora = new Date();
-    let diferencaTotal = agendaONU - inicioContagem;
-    let diferencaAtual = agendaONU - agora;
+        function atualizarContador() {
+            let agora = new Date();
+            let diferencaTotal = agendaONU - inicioContagem;
+            let diferencaAtual = agendaONU - agora;
 
-    let anos = Math.floor(diferencaAtual / (1000 * 60 * 60 * 24 * 365));
-    let dias = Math.floor((diferencaAtual % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
-    let horas = Math.floor((diferencaAtual % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutos = Math.floor((diferencaAtual % (1000 * 60 * 60)) / (1000 * 60));
-    let segundos = Math.floor((diferencaAtual % (1000 * 60)) / 1000);
+            let anos = Math.floor(diferencaAtual / (1000 * 60 * 60 * 24 * 365));
+            let dias = Math.floor((diferencaAtual % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+            let horas = Math.floor((diferencaAtual % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutos = Math.floor((diferencaAtual % (1000 * 60 * 60)) / (1000 * 60));
+            let segundos = Math.floor((diferencaAtual % (1000 * 60)) / 1000);
 
-    horas = horas < 10 ? "0" + horas : horas;
-    minutos = minutos < 10 ? "0" + minutos : minutos;
-    segundos = segundos < 10 ? "0" + segundos : segundos;
+            horas = horas < 10 ? "0" + horas : horas;
+            minutos = minutos < 10 ? "0" + minutos : minutos;
+            segundos = segundos < 10 ? "0" + segundos : segundos;
 
-    document.getElementById("anos").innerHTML = `${anos}`;
-    document.getElementById("dias").innerHTML = `${dias}`;
-    document.getElementById("horas").innerHTML = `${horas}`;
-    document.getElementById("minutos").innerHTML = `${minutos}`;
-    document.getElementById("segundos").innerHTML = `${segundos}`;
+            document.getElementById("anos").innerHTML = `${anos}`;
+            document.getElementById("dias").innerHTML = `${dias}`;
+            document.getElementById("horas").innerHTML = `${horas}`;
+            document.getElementById("minutos").innerHTML = `${minutos}`;
+            document.getElementById("segundos").innerHTML = `${segundos}`;
 
-    progresso = ((diferencaTotal - diferencaAtual) / diferencaTotal) * 100;
-    document.getElementById('progresso').style.width = progresso + '%';
+            progresso = ((diferencaTotal - diferencaAtual) / diferencaTotal) * 100;
+            document.getElementById('progresso').style.width = progresso + '%';
 
-    if (agora >= agendaONU) {
-        clearInterval(relogio);
-        document.getElementById("contagem-regressiva").innerHTML = "2030";
-    }
-}
+            if (agora >= agendaONU) {
+                clearInterval(relogio);
+                document.getElementById("contagem-regressiva").innerHTML = "2030";
+            }
+        }
 
-function pausarContador() {
-    clearInterval(relogio);
-}
+        function pausarContador() {
+            clearInterval(relogio);
+        }
 
-// Iniciar o contador assim que a página for carregada
-window.onload = function () {
-    atualizarContador();
-    relogio = setInterval(atualizarContador, 1000);
-};
+        // Iniciar o contador assim que a página for carregada
+        window.onload = function () {
+            atualizarContador();
+            relogio = setInterval(atualizarContador, 1000);
+        };
 
-function Escolher(idioma) {
+        function Escolher(idioma) {
 
-fetch(`textos_${idioma}.json`)
-    .then(resposta => resposta.json())
-    .then(texto => {
-        document.getElementById('Tonu1').innerHTML = texto.Tonu1
-        document.getElementById('Tonu2').innerHTML = texto.Tonu2
-        document.getElementById('Tonu3').innerHTML = texto.Tonu3
-        document.getElementById('Tonu4').innerHTML = texto.Tonu4
-        document.getElementById('Tonu5').innerHTML = texto.Tonu5
-        document.getElementById('Tonu6').innerHTML = texto.Tonu6
-        document.getElementById('Tonu7').innerHTML = texto.Tonu7
-        document.getElementById('Tonu8').innerHTML = texto.Tonu8
-        document.getElementById('Tonu9').innerHTML = texto.Tonu9
-        document.getElementById('Tonu10').innerHTML = texto.Tonu10
-    })
-    .catch(error => console.error('Erro buscando textos:', error));
-}
+            fetch(`textos_${idioma}.json`)
+                .then(resposta => resposta.json())
+                .then(texto => {
+                    document.getElementById('Tonu1').innerHTML = texto.Tonu1
+                    document.getElementById('Tonu2').innerHTML = texto.Tonu2
+                    document.getElementById('Tonu3').innerHTML = texto.Tonu3
+                    document.getElementById('Tonu4').innerHTML = texto.Tonu4
+                    document.getElementById('Tonu5').innerHTML = texto.Tonu5
+                    document.getElementById('Tonu6').innerHTML = texto.Tonu6
+                    document.getElementById('Tonu7').innerHTML = texto.Tonu7
+                    document.getElementById('Tonu8').innerHTML = texto.Tonu8
+                    document.getElementById('Tonu9').innerHTML = texto.Tonu9
+                    document.getElementById('Tonu10').innerHTML = texto.Tonu10
+                    document.getElementById('Tonu11').innerHTML = texto.Tonu11
+                    document.getElementById('Tonu12').innerHTML = texto.Tonu12
+                    document.getElementById('Tonu13').innerHTML = texto.Tonu13
+                    document.getElementById('Tonu14').innerHTML = texto.Tonu14
+                    document.getElementById('Tonu15').innerHTML = texto.Tonu15
+                    document.getElementById('Tonu16').innerHTML = texto.Tonu16
+                    document.getElementById('Tonu17').innerHTML = texto.Tonu17
+                    document.getElementById('Tonu18').innerHTML = texto.Tonu18
+                    document.getElementById('Tonu19').innerHTML = texto.Tonu19
+
+                    // PARTE DO CABEÇALHO E RODAPÉ
+                    document.getElementById('Theader1').innerHTML = texto.Theader1;
+                    document.getElementById('Theader2').innerHTML = texto.Theader2;
+                    document.getElementById('Theader3').innerHTML = texto.Theader3;
+                    document.getElementById('Theader4').innerHTML = texto.Theader4;
+                    document.getElementById('Theader5').innerHTML = texto.Theader5;
+                    document.getElementById('Theader6').innerHTML = texto.Theader6;
+                    document.getElementById('Theader7').innerHTML = texto.Theader7;
+                    document.getElementById('Theader8').innerHTML = texto.Theader8;
+                    document.getElementById('Theader9').innerHTML = texto.Theader9;
+                    document.getElementById('Theader10').innerHTML = texto.Theader10;
+                    document.getElementById('Theader11').innerHTML = texto.Theader11;
+                    document.getElementById('Theader12').innerHTML = texto.Theader12;
+                    document.getElementById('Theader13').innerHTML = texto.Theader13;
+                    document.getElementById('Theader14').innerHTML = texto.Theader14;
+                    document.getElementById('Theader15').innerHTML = texto.Theader15;
+                    document.getElementById('Theader16').innerHTML = texto.Theader16;
+                    document.getElementById('Theader17').innerHTML = texto.Theader17;
+                    document.getElementById('Theader18').innerHTML = texto.Theader18;
+                    document.getElementById('TRodape1').innerHTML = texto.TRodape1;
+                    document.getElementById('TRodape2').innerHTML = texto.TRodape2;
+                    document.getElementById('TRodape3').innerHTML = texto.TRodape3;
+                })
+                .catch(error => console.error('Erro buscando textos:', error));
+        }
 
 
     </script>
