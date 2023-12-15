@@ -210,6 +210,7 @@ p {
 
 .imagem-volunt img{
    width: 100%;
+
 }
 .imagem-voluntario {
     /* imagem de voluntário logo em segida do cabeçalho */
@@ -954,7 +955,7 @@ footer {
 
     .imagem-mao-coracao {
         width: 230px;
-        margin-top: -1vh;
+        margin-top: -120vh;
     }
 
     #carrossel {
@@ -1041,6 +1042,7 @@ footer {
 @media screen and (max-width: 1002px) {
 .imagem-volunt{
     padding-top: 12vh;
+    background-size: cover;
 }
 
 .imagem-volunt{
@@ -1051,7 +1053,8 @@ footer {
 }
 
 .div{
-    margin-top: -24vh;
+    margin-top: -20vh;
+    text-align: left;
    
 }
 .titulo-principal{
