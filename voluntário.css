@@ -1025,6 +1025,13 @@ footer {
 
 }
 
+@media screen and (max-width: 400px) {
+    .img{
+        width: 150px;
+        height: 210px;
+    }
+}
+
 @media screen and (max-width: 608px) {
     .modal-menu {
         width: 100%;
@@ -1038,6 +1045,7 @@ footer {
     .tudo-texto {
         padding-top: 18vh;
     }
+
 
 
 }
