@@ -346,6 +346,9 @@
 
 @media screen and (max-width: 1150px) {
 
+    .countdown-container{
+        margin-left: 40px;
+    }
 
     .pagina-principal a {
         margin-left: 0;
