@@ -454,158 +454,156 @@ margin: 2vh;
 #TqueroDoar2{
     margin-top: -4vh;
 }
-    /* CABEÇALHO */
-    #cabecalho {
-        width: 100%;
-        position: fixed;
-    }
+  /* CABEÇALHO */
+  #cabecalho {
+    width: 100%;
+    position: fixed;
+}
 
-    .modal-tudo {
-        display: block;
-    }
+.modal-tudo {
+    display: block;
+}
 
-    .cabecalho_nav {
-        padding: 8px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: 0;
-    }
+.cabecalho_nav {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
 
-    #cabecalho .cabecalho_sombra {
-        height: 5px;
-        background-color: #FFD233;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        width: 100%;
-    }
+#cabecalho .cabecalho_sombra {
+    height: 5px;
+    background-color: #FFD233;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
 
-    .cabecalho_nav_itens {
-        display: none;
-    }
+.cabecalho_nav_itens {
+    display: none;
+}
 
-    .cabecalho_nav_item {
-        display: none;
-    }
+.cabecalho_nav_item {
+    display: none;
+}
 
-    .cabecalho_nav_item_Doe {
-        display: none;
-    }
+.cabecalho_nav_item_Doe {
+    display: none;
+}
 
-    .cabecalho_Logo {
-        width: 120px;
-    }
+.cabecalho_Logo {
+    width: 120px;
+}
 
-    .navegacao {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .a-teste {
-        padding: 0;
-        display: flex;
-    }
+.a-teste {
+    padding: 0;
+    display: flex;
+}
 
-    .geral {
-        display: block;
-        padding: 0 20px;
-    }
+.geral {
+    display: block;
+    padding: 0 20px;
+}
 
-    .idiomas {
-        margin: 0;
-    }
+.idiomas {
+    margin: 0;
+}
 
-    .img-teste {
-        padding: 0;
-    }
+.img-teste {
+    padding: 0;
+}
 
-    .ul-imagens {
-        margin-top: 20px;
-    }
+.ul-imagens {
+    margin-top: 20px;
+}
 
-    .geral i {
-        color: #FFD233;
-        font-size: 28px;
-        cursor: pointer;
-    }
+.geral i {
+    color: #FFD233;
+    font-size: 28px;
+    cursor: pointer;
+}
 
-    .modal-menu {
-        display: none;
-        position: fixed;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        z-index: 200;
-        width: 50%;
-        animation: fadeInLeft;
-        animation-duration: 0.6s;
-    }
+.modal-menu {
+    display: none;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    width: 50%;
+    overflow-y: scroll;
+    animation: fadeInLeft;
+    animation-duration: 0.6s;
+}
 
-    #modal-menu .fechar {
-        background-color: transparent;
-        cursor: pointer;
-        left: 40px;
-        border-radius: 0;
-        padding: 0;
-        border: 0;
-        box-shadow: none;
-        margin-top: 30px;
-        
-    }
+#modal-menu .fechar {
+    background-color: transparent;
+    cursor: pointer;
+    left: 40px;
+    border-radius: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    margin-top: 30px;
+}
 
-    #fecharMenu span {
-        font-size: 60px;
-    }
+#fecharMenu span {
+    font-size: 60px;
+}
 
-    .modal-menu img {
-        width: 150px;
-        height: auto;
-        margin-top: 20px;
-    }
+.modal-menu img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
 
-    .comeco-menu {
-        display: flex;
-        justify-content: space-around
-    }
+.comeco-menu {
+    display: flex;
+    justify-content: space-around
+}
 
-    .desfocado {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.404);
-        z-index: 1;
-    }
+.desfocado {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    z-index: 1;
+}
 
-    .as a {
-        font: 700 20px 'Montserrat', sans-serif;
-        color: black;
-        margin: 12px 0;
-    }
+.as a {
+    font: 700 20px 'Montserrat', sans-serif;
+    color: black;
+    margin: 12px 0;
+}
 
-    .as {
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left: 50px;
-    }
+.as {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 50px;
+}
 
-    .menina-menu {
-        text-align: left;
-        margin-top: 50px;
-        margin-left: 30px;
-    }
+.menina-menu {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 30px;
+}
 
-    .menina-menu img {
-        width: 140px;
-    }
-
-
+.menina-menu img {
+    width: 140px;
+}
 
 
 
@@ -742,11 +740,15 @@ margin: 2vh;
 
 }
 
-@media screen and (max-width: 608px){
-    .modal-menu{
-        width: 100%;
-    }
 
+@media screen and (max-width: 608px) {
+    .modal-menu {
+        width: 100%;
+
+
+
+
+    }
 
 
 
