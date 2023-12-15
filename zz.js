@@ -14,7 +14,7 @@ function prev(){
 }
 
 // Função para iniciar a animação quando o elemento estiver visível
-function startAnimationIfVisible(entries, observer) {
+function comecaAnimacaoVisivel(entries, observer) {
     entries.forEach(function(entry) {
         if (entry.isIntersecting) {
             var element = entry.target;
@@ -45,7 +45,7 @@ function startAnimationIfVisible(entries, observer) {
 }
 
 // Ouvinte de evento para verificar quando a seção é visível
-var observer = new IntersectionObserver(startAnimationIfVisible, { threshold: 0.5 });
+var observer = new IntersectionObserver(comecaAnimacaoVisivel, { threshold: 0.5 });
 
 // Adiciona os elementos a serem observados
 var elements = document.querySelectorAll('.numero');
