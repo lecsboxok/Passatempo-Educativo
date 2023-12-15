@@ -96,7 +96,6 @@
     justify-content: center;
     flex-direction: row;
     text-align: center;
-    margin: 100px 0;
 }
 
 .conteudo button {
@@ -348,6 +347,10 @@
 
     .countdown-container{
         margin-left: 40px;
+    }
+
+    .conteudo{
+        margin: 100px 0;
     }
 
     .pagina-principal a {
