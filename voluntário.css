@@ -1066,12 +1066,12 @@ margin-left: 3vh;
     }
 
     .titulo-principal {
-        font-size: 17px;
+        font-size: 20px;
         text-align: left;
     }
 
     .titulo-dois-principal {
-        font-size: 10px;
-        margin-top: -2vh;
+        font-size: 14px;
+        margin-top: -3vh;
     }
 }
