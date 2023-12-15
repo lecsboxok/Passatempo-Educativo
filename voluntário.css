@@ -1032,7 +1032,9 @@ footer {
     }
 
 
-
+.tudo-texto{
+    padding-top: 18vh;
+}
 
 
 }
@@ -1041,8 +1043,11 @@ footer {
     padding-top: 12vh;
 }
 
-.imagem-volunt img{
-    height: 250px;
+.imagem-volunt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .div{
