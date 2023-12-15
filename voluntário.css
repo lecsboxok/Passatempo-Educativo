@@ -263,7 +263,7 @@ p {
 }
 
 .titulo,
-.lee {
+.titulo-dois {
     margin-top: 5vh;
 }
 
@@ -292,7 +292,7 @@ p {
 }
 
 
-.lets {
+.tudo-funcionamento {
     /* Aqui é uma div que tem a imgame com o numero e o texto */
 
     display: flex;
@@ -317,7 +317,7 @@ p {
     cursor: pointer;
 }
 
-.lo {
+.div-imagem-funcionamento {
     margin-left: 10vw;
 }
 
@@ -471,7 +471,7 @@ input {
 
 }
 
-.lets img,
+.tudo-funcionamento img,
 h5 {
     /* esssa parte foi para arrumar o top dentro do quadrado as imagens */
     margin-top: 5vh;
@@ -502,7 +502,7 @@ h5 {
 
 }
 
-.ro {
+.botoes-carrossel {
     display: flex;
     align-items: center;
     height: 100%;
@@ -975,7 +975,7 @@ footer {
         margin: 90px 20px 0 20px;
     }
 
-    .lo {
+    .div-imagem-funcionamento {
         margin-left: 0;
     }
 
