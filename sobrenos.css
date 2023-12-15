@@ -1816,3 +1816,78 @@ ul li .carrosel-10{
         width: 100%;
     }
 }
+
+@media screen and (max-width: 321px) {
+    .lets {
+        width: 50%;
+        margin: -110px 0px 0;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .oscip {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: Manrope;
+        color: rgb(255, 255, 255);
+        padding: 0;
+        margin: 0;
+        /* width: 400px; */
+        margin-top: 120px;
+
+
+    }
+    
+
+    .texto1 {
+        left: 90px;
+        top: 2700px;
+    }
+
+    .texto2 {
+        left: 90px;
+        top: 3080px;
+    }
+
+    .texto3 {
+        left: 90px;
+        top: 3330px;
+    }
+
+    .texto4 {
+        left: 90px;
+        top: 2850px;
+    }
+    .denuncia {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: #1F9B6E;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}    
+
+.colaborador {
+    background-color: #C8E9FF;
+    padding: 30px 30px 30px 30px;
+    width: 320px;
+    height: 450px;
+    text-align: center;
+    margin-top: 100px;
+    font: 400 15px 'Manrope', sans-serif;
+   } 
+
+   .maos{
+    width: 10%;
+    margin-left: 245px;
+    margin-top: -30px;
+ 
+   }
+   .mundo{
+    width: 100%;
+   }
+    }
