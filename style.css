@@ -643,7 +643,7 @@ ul li ul li {
     overflow: hidden;
     text-align: center;
     margin: auto;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.242);
     height: 200px;
     display: flex;
     align-items: center;
@@ -675,7 +675,7 @@ ul li ul li {
 }
 
 .carousel img {
-    width: 70%; /* Garante que a imagem ocupe 100% da largura da li */
+    width: 90%; /* Garante que a imagem ocupe 100% da largura da li */
     height: auto; /* Garante que a imagem ocupe 100% da altura da li */
  
 }
@@ -691,7 +691,7 @@ ul li ul li {
 }
 
 .carousel-button-left {
-    left: 0;
+    left:0;
 }
 
 .carousel-button-right {
