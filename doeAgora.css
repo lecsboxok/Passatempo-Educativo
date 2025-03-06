@@ -230,7 +230,7 @@ p{
 }
 
 /* BOTÕES */
-.btn{
+/* .btn{
     width: 176.4px;
     height: 63px;
     border-radius: 27px;
@@ -239,15 +239,15 @@ p{
     background-color: #FFF;
     margin-left: 4vw;
     font-size: 31.5px;
-}
+} */
 
-.botoes{
+/* .botoes{
    
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 10vh;
-}
+} */
 
 .btn, .btnn{
     font-family: Montserrat;

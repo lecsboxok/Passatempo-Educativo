@@ -268,6 +268,11 @@ p {
 }
 
 /*COMO FUNCIONA */
+.tudo-explicacao{
+margin-top: -17vh;
+}
+
+
 
 .funcionamento {
     /* Nesse é uma div onde coloquei as coisas dentro do retangulo rosa coloquei várias coisas para deixar no centro */
@@ -951,7 +956,7 @@ footer {
     }
 
 
-    .imagem-funcionamento {
+    #imagem-funcionamento {
         width: 300px;
     }
 
