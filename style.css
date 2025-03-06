@@ -1212,6 +1212,15 @@ width: 50%;
         width: 100%;
         margin-top: 90px;
     }
+    .carousel li {
+        flex: 0 0 33.33%; /* define a largura das imagens, 33.33% para exibir 3 por vez */
+        height: 100%; /* Alterado para altura de 100% para garantir que a altura seja consistente com o contêiner pai */
+        box-sizing: border-box; /* Adicionado para garantir que a borda não afete a largura e altura total */
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 45px;
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 608px) {
@@ -1264,6 +1273,7 @@ width: 50%;
     display: flex;
     align-items: center;
     padding: 0 0 0 45px;
+    width: 90px;
 }
 
 .carousel img {
