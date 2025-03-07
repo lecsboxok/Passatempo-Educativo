@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passatempo Educativo</title>
     <link rel="stylesheet" href="doeAgora.css">
-    <link rel="icon" href="img/logoIcon.png">
+    <link rel="icon" href="img/logoIcon.pg">
     <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -174,9 +174,11 @@
         .textos-modal {
             margin-top: 2vh;
         }
-#TqueroDoar4{
-    color: #FB2673;
-}
+
+        #TqueroDoar4 {
+            color: #FB2673;
+        }
+
         .texto-modal {
             margin-top: 1vh;
         }
@@ -276,8 +278,47 @@
             /* Remove margens extras */
             margin-top: 1vh;
         }
+
+
+
+
+        @media screen and (max-width: 608px) {
+            .formasDePagamento {
+                flex-direction: column;
+                gap: 3vh;
+            }
+
+            .container-pix,
+            .container-bancaria {
+                width: 80%;
+                height: 20vh;
+                margin-top: 5vh;
+            }
+
+            .img-pix-logo,
+            .img-conta-bancaria {
+                width: 8vh;
+                height: 8vh;
+            }
+
+            .modal-content {
+                width: 90%;
+                max-width: 320px;
+            }
+
+            .qrCode-img {
+                width: 80%;
+                height: auto;
+            }
+
+         
+        }
     </style>
 
+
+
+
+<!-- PARA MODAL DE DOAÇÃO PAGAMENTO -->
     <script>
         function abrirModal(id) {
             document.getElementById(id).style.display = "flex";
@@ -463,7 +504,7 @@
                     document.getElementById('TqueroDoar2').innerHTML = texto.TqueroDoar2;
                     document.getElementById('TqueroDoar3').innerHTML = texto.TqueroDoar3;
                     document.getElementById('TqueroDoar4').innerHTML = texto.TqueroDoar4;
-                 
+
                     document.getElementById('TqueroDoar6').innerHTML = texto.TqueroDoar6;
 
 
