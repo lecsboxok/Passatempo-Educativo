@@ -973,9 +973,14 @@ footer {
         display: none;
     }
 
+   
+.questionario{
+    margin-top: 15vh;
+}
     .funcionamento {
         margin-top: 90px;
         display: flex;
+        flex-direction: column-reverse;
         justify-content: center;
         margin: 90px 20px 0 20px;
     }
