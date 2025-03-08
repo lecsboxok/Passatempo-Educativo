@@ -962,7 +962,7 @@ footer {
 
     .imagem-mao-coracao {
         width: 230px;
-        margin-top: -120vh;
+        /* margin-top: -120vh; */
     }
 
     #carrossel {
@@ -1030,8 +1030,8 @@ footer {
 
     .tudo-carrossel {
         margin-top: 80px;
-    }
 
+    }
 
 }
 
