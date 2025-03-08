@@ -1066,7 +1066,7 @@ footer {
         background-size: cover;
     }
     .imagem-volunt img{
-        height: 30vh;
+        height: 40vh;
     }
 
 
@@ -1080,7 +1080,7 @@ margin-left: 3vh;
 
     .titulo-principal {
         font-size: 24px;
-        text-align: left;
+        text-align:   left;
     }
 
     .titulo-dois-principal {
