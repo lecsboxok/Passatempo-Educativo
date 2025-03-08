@@ -274,6 +274,7 @@ body {
     font-family: Manrope;
     color: white;
     padding: 50px 120px;
+    margin-top: -25px;
 
 }
 
@@ -1203,12 +1204,6 @@ width: 50%;
     }
 
     /* TÉRMINO DO CABEÇALHO */
-
-}
-
-/* MOBILE */
-@media screen and (max-width: 768px) {
-
 
     .mundo {
         width: 0;
